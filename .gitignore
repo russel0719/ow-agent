@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# 환경변수 (절대 커밋 금지)
+.env
+
+# 봇 로그
+bot.log
+
+# 런타임 캐시
+data/cache/

@@ -1,0 +1,184 @@
+{
+  "builds": [
+    {
+      "hero": "ana",
+      "name": "고힐 지속형",
+      "code": "ANA-HEAL-01",
+      "description": "힐 출력을 극대화해 팀의 생존력을 높이는 빌드. 나노강화제 쿨타임 감소에 집중합니다.",
+      "playstyle": "생존형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "ana",
+      "name": "저격 딜형",
+      "code": "ANA-SNIPE-02",
+      "description": "생체 수류탄 강화와 피해량 증가로 딜을 극대화하는 빌드. 힐은 팀원에게 의존합니다.",
+      "playstyle": "딜형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "genji",
+      "name": "칼날 폭풍 특화",
+      "code": "GENJ-BLADE-01",
+      "description": "용검 쿨타임 감소와 피해 증폭에 집중한 울트 중심 빌드.",
+      "playstyle": "공격형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "genji",
+      "name": "반사 생존형",
+      "code": "GENJ-REFL-02",
+      "description": "반사 지속시간 및 이동속도 증가로 생존력을 높인 빌드.",
+      "playstyle": "생존형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "tracer",
+      "name": "점멸 공격형",
+      "code": "TRAC-BLINK-01",
+      "description": "점멸 횟수와 피해량을 늘려 빠른 킬을 노리는 빌드.",
+      "playstyle": "공격형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "reinhardt",
+      "name": "방패 강화형",
+      "code": "REIN-SHLD-01",
+      "description": "방패 체력과 지속시간을 늘려 팀의 생존을 극대화하는 빌드.",
+      "playstyle": "생존형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "reinhardt",
+      "name": "돌격 공격형",
+      "code": "REIN-CHRG-02",
+      "description": "돌격 쿨타임 감소와 근접 피해량 증가로 공격적으로 플레이하는 빌드.",
+      "playstyle": "공격형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "lucio",
+      "name": "속도 극대화형",
+      "code": "LUCI-SPEED-01",
+      "description": "속도 부스트를 극대화해 팀의 기동성을 높이는 빌드.",
+      "playstyle": "균형형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "mercy",
+      "name": "딜 증폭 특화형",
+      "code": "MERC-AMP-01",
+      "description": "딜 증폭 지속시간을 늘려 아군 딜러를 최대한 지원하는 빌드.",
+      "playstyle": "균형형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "dva",
+      "name": "매트릭스 강화형",
+      "code": "DVA-MTRX-01",
+      "description": "방어 매트릭스 지속시간을 늘려 팀의 투사체를 더 오래 막을 수 있는 빌드.",
+      "playstyle": "생존형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "dva",
+      "name": "부스터 다이브형",
+      "code": "DVA-DIVE-02",
+      "description": "부스터 쿨타임 감소와 피해량 증가로 공격적인 다이브를 즐기는 빌드.",
+      "playstyle": "공격형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "zarya",
+      "name": "에너지 충전 특화형",
+      "code": "ZARY-ENRG-01",
+      "description": "방어막 효율과 에너지 최대치를 늘려 고에너지 상태를 오래 유지하는 빌드.",
+      "playstyle": "딜형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "sojourn",
+      "name": "레일건 충전형",
+      "code": "SOJO-RAIL-01",
+      "description": "레일건 게이지 충전 속도와 충전 사격 피해량을 늘린 스나이퍼형 빌드.",
+      "playstyle": "딜형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "soldier76",
+      "name": "전술 조준경 특화",
+      "code": "S76-TACT-01",
+      "description": "전술 조준경 지속시간과 피해량을 늘린 안정적인 딜 빌드.",
+      "playstyle": "딜형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "kiriko",
+      "name": "부적 창 딜형",
+      "code": "KIRI-KUAI-01",
+      "description": "부적 창 발사 속도와 피해량을 늘려 딜과 힐을 동시에 수행하는 빌드.",
+      "playstyle": "딜형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "zenyatta",
+      "name": "불화 주옥 특화",
+      "code": "ZEN-DISC-01",
+      "description": "불화 주옥 피해 증폭량을 극대화해 팀의 딜을 크게 올려주는 빌드.",
+      "playstyle": "딜형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "roadhog",
+      "name": "갈고리 처치형",
+      "code": "RHOG-HOOK-01",
+      "description": "갈고리 쿨타임 감소와 샷건 피해량을 늘린 1킬 특화 빌드.",
+      "playstyle": "공격형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "reaper",
+      "name": "사형 집행 특화",
+      "code": "REAP-DETH-01",
+      "description": "근접 피해량과 자힐량을 늘려 탱커 파괴에 특화된 빌드.",
+      "playstyle": "공격형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "pharah",
+      "name": "로켓 폭격형",
+      "code": "PHAR-RCKT-01",
+      "description": "로켓 피해량과 발사 속도를 늘려 공중 폭격을 극대화하는 빌드.",
+      "playstyle": "딜형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    },
+    {
+      "hero": "winston",
+      "name": "점프 팩 다이브형",
+      "code": "WINS-JUMP-01",
+      "description": "점프 팩 쿨타임과 피해량을 늘려 공격적인 다이브에 특화된 빌드.",
+      "playstyle": "공격형",
+      "source": "커뮤니티 큐레이션",
+      "upvotes": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[project]
+name = "ow"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.9",
+    "apscheduler>=3.10",
+    "beautifulsoup4>=4.12",
+    "discord-py>=2.3",
+    "lxml>=5.0",
+    "python-dotenv>=1.0",
+]
