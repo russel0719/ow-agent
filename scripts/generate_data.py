@@ -27,6 +27,9 @@ ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
 import aiohttp
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from bot.utils.scrapers.meta_scraper import RANK_PARAM, fetch_meta, load_fallback
 from bot.utils.scrapers.patch_scraper import fetch_latest_patch

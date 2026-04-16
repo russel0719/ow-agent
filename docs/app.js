@@ -1,11 +1,10 @@
 /**
  * OW2 메타 대시보드 — SPA 라우터
- * Hash 기반 라우팅: #meta | #stadium | #patch | #heroes
+ * Hash 기반 라우팅: #meta | #stadium | #patch
  */
 import { renderMeta } from './views/meta.js';
 import { renderStadium } from './views/stadium.js';
 import { renderPatch } from './views/patch.js';
-import { renderHeroes } from './views/heroes.js';
 
 // ── 데이터 캐시 ───────────────────────────────────────────────────────────────
 const cache = {};
@@ -24,7 +23,6 @@ const VIEWS = {
   meta:    renderMeta,
   stadium: renderStadium,
   patch:   renderPatch,
-  heroes:  renderHeroes,
 };
 
 const app = document.getElementById('app');

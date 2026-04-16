@@ -8,5 +8,5 @@ dependencies = [
     "beautifulsoup4>=4.12",
     "lxml>=5.0",
     "python-dotenv>=1.0",
-    "deep-translator>=1.11",
+    "requests>=2.28",
 ]

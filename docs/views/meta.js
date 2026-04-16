@@ -1,35 +1,41 @@
 /**
  * 메타 통계 뷰
- * 랭크 드롭다운 + 역할 필터 + 티어별 카드 그리드
- * 카드 클릭 → 인라인 히스토리 차트 토글 (Chart.js)
+ * 상단: 전체 영웅 메타 점수 가로 막대 차트
+ *   → 영웅 카드/막대 클릭 시 해당 영웅 히스토리 라인 차트로 전환
+ *   → "← 전체 보기" 클릭 시 복귀
+ * 하단: 티어별 영웅 카드 그리드
  */
 import { loadJSON } from '../app.js';
 
 const RANKS = ['전체', '브론즈', '실버', '골드', '플래티넘', '다이아몬드', '마스터', '그랜드마스터', '챔피언'];
 const ROLES = ['전체', '탱커', '딜러', '지원가'];
 const TIERS = ['S', 'A', 'B', 'C', 'D'];
-
-// 역할 한→영 매핑 (heroes.json role 필드 대응)
 const ROLE_MAP = { '탱커': 'tank', '딜러': 'damage', '지원가': 'support' };
+const TIER_COLOR = { S: '#ef4444', A: '#f97316', B: '#eab308', C: '#22c55e', D: '#6b7280' };
+const ROLE_LABEL = { tank: '탱커', damage: '딜러', support: '지원가' };
+const ROLE_CLASS = { tank: 'role-tank', damage: 'role-damage', support: 'role-support' };
 
-// Chart 인스턴스 관리
-let activeChart = null;
-let activeHeroId = null;
-
-// 현재 상태
 let currentRank = '전체';
 let currentRole = '전체';
+let selectedHeroId = null;
+let selectedHeroName = null;
+let activeChart = null;
+let cachedMeta = null;
+let cachedHistory = null;
 
 export async function renderMeta(container) {
-  const [meta, history] = await Promise.all([
+  [cachedMeta, cachedHistory] = await Promise.all([
     loadJSON('meta'),
     loadJSON('meta_history').catch(() => null),
   ]);
 
   container.innerHTML = buildHTML();
-  attachEvents(container, meta, history);
-  renderCards(container, meta);
+  attachEvents(container);
+  renderChart(container);
+  renderCards(container);
 }
+
+// ── HTML 골격 ──────────────────────────────────────────────────────────────
 
 function buildHTML() {
   const rankOptions = RANKS.map(r =>
@@ -41,20 +47,41 @@ function buildHTML() {
   ).join('');
 
   return `
-    <div class="mb-5 flex flex-wrap items-center gap-3">
+    <!-- 컨트롤 바 -->
+    <div class="mb-4 flex flex-wrap items-center gap-3">
       <select class="ow-select" id="rank-select">${rankOptions}</select>
       <div class="flex gap-2 flex-wrap">${roleButtons}</div>
       <span class="ml-auto text-xs text-gray-500" id="hero-count"></span>
     </div>
+
+    <!-- 차트 패널 -->
+    <div class="bg-ow-card border border-ow-border rounded-xl mb-6 overflow-hidden" id="chart-panel">
+      <div class="flex items-center justify-between px-5 pt-4 pb-2">
+        <span class="text-sm font-semibold text-gray-200" id="chart-title"></span>
+        <button
+          class="text-xs text-ow-blue hover:text-white transition-colors hidden px-2 py-1 rounded border border-ow-border hover:border-ow-blue"
+          id="chart-back">← 전체 보기</button>
+      </div>
+      <div id="chart-scroll" style="overflow-y:auto; max-height:380px;">
+        <div id="chart-wrapper" class="px-4 pb-4" style="position:relative;">
+          <canvas id="meta-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- 영웅 카드 그리드 -->
     <div id="meta-grid"></div>
   `;
 }
 
-function attachEvents(container, meta, history) {
+// ── 이벤트 ────────────────────────────────────────────────────────────────
+
+function attachEvents(container) {
   container.querySelector('#rank-select').addEventListener('change', e => {
     currentRank = e.target.value;
-    closeChart(container);
-    renderCards(container, meta);
+    resetSelection(container);
+    renderChart(container);
+    renderCards(container);
   });
 
   container.querySelectorAll('.filter-btn').forEach(btn => {
@@ -62,25 +89,215 @@ function attachEvents(container, meta, history) {
       container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentRole = btn.dataset.role;
-      closeChart(container);
-      renderCards(container, meta);
+      if (!selectedHeroId) renderChart(container);
+      renderCards(container);
     });
   });
 
-  // 카드 클릭 이벤트 위임
+  container.querySelector('#chart-back').addEventListener('click', () => {
+    resetSelection(container);
+    renderChart(container);
+    renderCards(container);
+  });
+
   container.querySelector('#meta-grid').addEventListener('click', e => {
     const card = e.target.closest('.hero-card');
     if (!card) return;
-    handleCardClick(container, card, history);
+    selectHero(container, card.dataset.heroId, card.dataset.heroName);
   });
 }
 
-function renderCards(container, meta) {
-  const heroes = meta[currentRank] ?? [];
-  const filtered = currentRole === '전체'
-    ? heroes
-    : heroes.filter(h => h.role === ROLE_MAP[currentRole]);
+function selectHero(container, heroId, heroName) {
+  if (selectedHeroId === heroId) {
+    resetSelection(container);
+    renderChart(container);
+    renderCards(container);
+    return;
+  }
+  selectedHeroId = heroId;
+  selectedHeroName = heroName;
+  container.querySelector('#chart-back').classList.remove('hidden');
+  renderChart(container);
+  renderCards(container);
+  container.querySelector('#chart-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
 
+function resetSelection(container) {
+  selectedHeroId = null;
+  selectedHeroName = null;
+  container.querySelector('#chart-back')?.classList.add('hidden');
+}
+
+// ── 차트 렌더링 ──────────────────────────────────────────────────────────
+
+function renderChart(container) {
+  if (activeChart) { activeChart.destroy(); activeChart = null; }
+  selectedHeroId ? renderHistoryChart(container) : renderOverviewChart(container);
+}
+
+function renderOverviewChart(container) {
+  const heroes = getFiltered().sort((a, b) => (b.meta_score ?? 0) - (a.meta_score ?? 0));
+
+  container.querySelector('#chart-title').textContent =
+    `전체 영웅 메타 점수 — ${currentRank}`;
+  container.querySelector('#chart-scroll').style.maxHeight = '320px';
+
+  const wrapper = container.querySelector('#chart-wrapper');
+  wrapper.style.height = '280px';
+
+  const canvas = container.querySelector('#meta-chart');
+  canvas.style.width = '100%';
+  canvas.style.height = '280px';
+
+  const pointColors = heroes.map(h => TIER_COLOR[h.tier] ?? '#6b7280');
+
+  activeChart = new Chart(canvas, {
+    type: 'line',
+    data: {
+      labels: heroes.map(h => h.hero_name),
+      datasets: [{
+        data: heroes.map(h => h.meta_score ?? 0),
+        borderColor: '#F5A623',
+        backgroundColor: 'rgba(245,166,35,0.06)',
+        borderWidth: 2,
+        pointRadius: 5,
+        pointHoverRadius: 7,
+        pointBackgroundColor: pointColors,
+        pointBorderColor: pointColors,
+        tension: 0.35,
+        fill: true,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 250 },
+      onClick(_, elements) {
+        if (!elements.length) return;
+        const h = heroes[elements[0].index];
+        selectHero(container, h.hero_id, h.hero_name);
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#161B22',
+          borderColor: '#30363D',
+          borderWidth: 1,
+          callbacks: {
+            title: ctx => heroes[ctx[0].dataIndex].hero_name,
+            label: ctx => [
+              ` 메타 점수: ${ctx.parsed.y.toFixed(1)}`,
+              ` 픽률: ${heroes[ctx.dataIndex].pick_rate?.toFixed(1) ?? '-'}%`,
+              ` 승률: ${heroes[ctx.dataIndex].win_rate?.toFixed(1) ?? '-'}%`,
+            ],
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: '#6B7280',
+            font: { size: 10 },
+            maxRotation: 45,
+            autoSkip: true,
+            maxTicksLimit: 25,
+          },
+          grid: { color: '#1F2937' },
+        },
+        y: {
+          min: 0, max: 100,
+          ticks: { color: '#6B7280', font: { size: 10 } },
+          grid: { color: '#1F2937' },
+        },
+      },
+    },
+  });
+}
+
+function renderHistoryChart(container) {
+  container.querySelector('#chart-title').textContent =
+    `${selectedHeroName} — 메타 점수 추이 (${currentRank})`;
+  container.querySelector('#chart-scroll').style.maxHeight = '280px';
+
+  const wrapper = container.querySelector('#chart-wrapper');
+  wrapper.style.height = '240px';
+
+  const canvas = container.querySelector('#meta-chart');
+  canvas.style.width = '100%';
+  canvas.style.height = '240px';
+
+  if (!cachedHistory) {
+    wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.');
+    return;
+  }
+  const rankData = cachedHistory[currentRank] ?? cachedHistory['전체'];
+  if (!rankData) {
+    wrapper.innerHTML = noDataMsg('이 랭크의 히스토리가 없습니다.');
+    return;
+  }
+
+  const dates = Object.keys(rankData).sort();
+  const scores = dates.map(d => rankData[d]?.find(h => h.hero_id === selectedHeroId)?.meta_score ?? null);
+
+  if (!scores.some(s => s !== null)) {
+    wrapper.innerHTML = noDataMsg('히스토리 데이터가 부족합니다.');
+    return;
+  }
+
+  activeChart = new Chart(canvas, {
+    type: 'line',
+    data: {
+      labels: dates.map(d => d.slice(5)),
+      datasets: [{
+        data: scores,
+        borderColor: '#F5A623',
+        backgroundColor: 'rgba(245,166,35,0.07)',
+        borderWidth: 2.5,
+        pointRadius: dates.length <= 14 ? 4 : 2,
+        pointBackgroundColor: '#F5A623',
+        spanGaps: true,
+        tension: 0.35,
+        fill: true,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#161B22',
+          borderColor: '#30363D',
+          borderWidth: 1,
+          callbacks: {
+            title: ctx => dates[ctx[0].dataIndex],
+            label: ctx => ` 메타 점수: ${ctx.parsed.y?.toFixed(1) ?? 'N/A'}`,
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: '#6B7280', maxTicksLimit: 12, font: { size: 10 } },
+          grid: { color: '#1F2937' },
+        },
+        y: {
+          min: 0, max: 100,
+          ticks: { color: '#6B7280', font: { size: 10 } },
+          grid: { color: '#1F2937' },
+        },
+      },
+    },
+  });
+}
+
+function noDataMsg(msg) {
+  return `<p class="flex items-center justify-center h-full text-gray-500 text-sm py-16">${msg}</p>`;
+}
+
+// ── 영웅 카드 그리드 ───────────────────────────────────────────────────────
+
+function renderCards(container) {
+  const filtered = getFiltered();
   const countEl = container.querySelector('#hero-count');
   if (countEl) countEl.textContent = `${filtered.length}명`;
 
@@ -90,40 +307,34 @@ function renderCards(container, meta) {
     return;
   }
 
-  // 티어별 그룹화
-  const byTier = {};
-  TIERS.forEach(t => byTier[t] = []);
-  filtered.forEach(h => {
-    const t = h.tier ?? 'D';
-    if (byTier[t]) byTier[t].push(h);
-    else byTier['D'].push(h);
-  });
+  const byTier = Object.fromEntries(TIERS.map(t => [t, []]));
+  filtered.forEach(h => (byTier[h.tier ?? 'D'] ??= []).push(h));
 
-  const html = TIERS.filter(t => byTier[t].length > 0).map(tier => `
+  grid.innerHTML = TIERS.filter(t => byTier[t]?.length).map(tier => `
     <div class="mb-6">
       <div class="tier-header-${tier} pl-3 mb-3 flex items-center gap-3">
         <span class="text-sm font-bold tier-${tier} border px-2 py-0.5 rounded">${tier}</span>
         <span class="text-sm text-gray-400">${byTier[tier].length}명</span>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-        ${byTier[tier].map(h => heroCard(h)).join('')}
+        ${byTier[tier].map(heroCard).join('')}
       </div>
     </div>
   `).join('');
-
-  grid.innerHTML = html;
 }
 
 function heroCard(h) {
-  const roleClass = { tank: 'role-tank', damage: 'role-damage', support: 'role-support' }[h.role] ?? '';
-  const roleLabel = { tank: '탱커', damage: '딜러', support: '지원가' }[h.role] ?? h.role;
+  const isSelected = h.hero_id === selectedHeroId;
   return `
-    <div class="hero-card" data-hero-id="${h.hero_id}" data-hero-name="${h.hero_name}">
-      <div class="flex items-start justify-between mb-2">
+    <div class="hero-card${isSelected ? ' selected' : ''}"
+         data-hero-id="${h.hero_id}" data-hero-name="${h.hero_name}">
+      <div class="flex items-start justify-between mb-1.5 gap-1">
         <span class="font-semibold text-sm leading-tight">${h.hero_name}</span>
-        <span class="text-xs px-1.5 py-0.5 rounded ${roleClass}">${roleLabel}</span>
+        <span class="text-xs px-1.5 py-0.5 rounded shrink-0 ${ROLE_CLASS[h.role] ?? ''}">
+          ${ROLE_LABEL[h.role] ?? h.role}
+        </span>
       </div>
-      <div class="text-ow-orange font-bold text-lg mb-1">${h.meta_score?.toFixed(1) ?? '-'}</div>
+      <div class="text-ow-orange font-bold text-xl mb-1.5">${h.meta_score?.toFixed(1) ?? '-'}</div>
       <div class="text-xs text-gray-400 space-y-0.5">
         <div>픽률 <span class="text-gray-200">${h.pick_rate?.toFixed(1) ?? '-'}%</span></div>
         <div>승률 <span class="text-gray-200">${h.win_rate?.toFixed(1) ?? '-'}%</span></div>
@@ -132,140 +343,7 @@ function heroCard(h) {
   `;
 }
 
-function handleCardClick(container, card, history) {
-  const heroId = card.dataset.heroId;
-  const heroName = card.dataset.heroName;
-
-  // 같은 카드 재클릭 → 닫기
-  if (activeHeroId === heroId) {
-    closeChart(container);
-    return;
-  }
-
-  // 이전 선택 해제
-  closeChart(container);
-
-  activeHeroId = heroId;
-  card.classList.add('selected');
-
-  // 히스토리 데이터 없으면 안내
-  if (!history) {
-    insertNoHistory(card, '히스토리 데이터가 없습니다.');
-    return;
-  }
-
-  const rankData = history[currentRank] ?? history['전체'];
-  if (!rankData) {
-    insertNoHistory(card, '이 랭크의 히스토리가 없습니다.');
-    return;
-  }
-
-  // 날짜 정렬 후 영웅 데이터 추출
-  const dates = Object.keys(rankData).sort();
-  const scores = dates.map(d => {
-    const entry = rankData[d]?.find(h => h.hero_id === heroId);
-    return entry ? entry.meta_score : null;
-  });
-
-  const hasData = scores.some(s => s !== null);
-  if (!hasData) {
-    insertNoHistory(card, '히스토리 데이터가 부족합니다.');
-    return;
-  }
-
-  insertChart(card, heroName, dates, scores);
-}
-
-function insertNoHistory(card, msg) {
-  const div = document.createElement('div');
-  div.className = 'col-span-full chart-container mb-4';
-  div.dataset.chartContainer = '1';
-  div.innerHTML = `<p class="text-center text-gray-500 text-sm py-4">${msg}</p>`;
-  card.parentElement.parentElement.insertAdjacentElement('afterend', div);
-}
-
-function insertChart(card, heroName, dates, scores) {
-  // 차트 컨테이너를 카드 그리드(col) 바로 뒤에 삽입
-  const gridRow = card.parentElement.parentElement; // tier section의 grid div → 부모 div
-  const chartDiv = document.createElement('div');
-  chartDiv.className = 'chart-container mb-4';
-  chartDiv.dataset.chartContainer = '1';
-  chartDiv.innerHTML = `
-    <div class="flex items-center justify-between mb-3">
-      <span class="text-sm font-semibold text-ow-orange">${heroName} — 메타 점수 추이 (${currentRank})</span>
-      <span class="text-xs text-gray-500">${dates.length}일</span>
-    </div>
-    <canvas id="history-chart" height="80"></canvas>
-  `;
-  gridRow.parentElement.insertAdjacentElement('afterend', chartDiv);
-
-  const ctx = chartDiv.querySelector('#history-chart').getContext('2d');
-
-  const labelDates = dates.map(d => d.slice(5)); // MM-DD
-
-  activeChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: labelDates,
-      datasets: [{
-        label: '메타 점수',
-        data: scores,
-        borderColor: '#F5A623',
-        backgroundColor: 'rgba(245,166,35,0.08)',
-        borderWidth: 2,
-        pointRadius: dates.length <= 14 ? 4 : 2,
-        pointBackgroundColor: '#F5A623',
-        spanGaps: true,
-        tension: 0.3,
-        fill: true,
-      }],
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: '#161B22',
-          borderColor: '#30363D',
-          borderWidth: 1,
-          titleColor: '#9CA3AF',
-          bodyColor: '#F5A623',
-          callbacks: {
-            title: ctx => dates[ctx[0].dataIndex],
-            label: ctx => ` 메타 점수: ${ctx.parsed.y?.toFixed(1) ?? 'N/A'}`,
-          },
-        },
-      },
-      scales: {
-        x: {
-          ticks: {
-            color: '#6B7280',
-            maxTicksLimit: 12,
-            font: { size: 10 },
-          },
-          grid: { color: '#1F2937' },
-        },
-        y: {
-          ticks: { color: '#6B7280', font: { size: 10 } },
-          grid: { color: '#1F2937' },
-          min: 0,
-          max: 100,
-        },
-      },
-    },
-  });
-}
-
-function closeChart(container) {
-  if (activeChart) {
-    activeChart.destroy();
-    activeChart = null;
-  }
-  activeHeroId = null;
-
-  // 선택 해제
-  container.querySelectorAll('.hero-card.selected').forEach(c => c.classList.remove('selected'));
-
-  // 차트 컨테이너 제거
-  container.querySelectorAll('[data-chart-container]').forEach(el => el.remove());
+function getFiltered() {
+  const heroes = cachedMeta?.[currentRank] ?? [];
+  return currentRole === '전체' ? heroes : heroes.filter(h => h.role === ROLE_MAP[currentRole]);
 }

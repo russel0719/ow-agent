@@ -1,381 +1,381 @@
 {
-  "title": "Overwatch 소매 패치 노트 - 2026년 4월 14일",
+  "title": "Overwatch Retail Patch Notes - April 14, 2026",
   "date": "2026년 4월 14일",
   "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
   "hero_changes": [
     {
-      "hero": "시그마",
+      "hero": "Sigma",
       "changes": [
-        "하이퍼 재생 - 부 특성: 이제 적 영웅에게 피해를 줄 때만 장벽 체력을 복원합니다.",
-        "실험적 장벽: (6v6) 최대 체력이 650에서 600으로 감소했습니다."
+        "Hyper Regeneration – Minor Perk: Now restores barrier health only when damaging enemy heroes.",
+        "Experimental Barrier: (6v6) Maximum health reduced from 650 to 600."
       ],
       "is_stadium": false
     },
     {
-      "hero": "라마트라",
+      "hero": "Ramattra",
       "changes": [
-        "Ravenous Vortex: Vengeful Vortex가 특성에서 기본 능력으로 이동되었습니다.",
-        "Ravenous Vortex: 이제 발사체가 지면에 닿으면 폭발합니다.",
-        "Ravenous Vortex: 폭발은 이제 공중에 떠 있는 동안 수동으로 폭발시킬 수 있습니다.",
-        "굶주린 소용돌이: 폭발 피해가 50에서 15로 감소했습니다.",
-        "연장된 장벽 – 사소한 특전: 추가되었습니다.",
-        "연장된 장벽 – 부 특성: 공허 장벽의 지속 시간과 크기가 25% 증가했습니다.",
-        "Vengeful Vortex - 주요 특성: 제거되었습니다.",
-        "보이드 서지 – 주요 특성: 사소한 특성에서 주요 특성으로 이동되었습니다."
+        "Ravenous Vortex: Vengeful Vortex moved from Perk to Baseline ability.",
+        "Ravenous Vortex: Projectile now explodes on contact with the ground.",
+        "Ravenous Vortex: Explosion can now be manually detonated while airborne.",
+        "Ravenous Vortex: Explosion damage reduced from 50 to 15.",
+        "Prolonged Barrier – Minor Perk: Added.",
+        "Prolonged Barrier – Minor Perk: Void Barrier duration and size increased by 25%.",
+        "Vengeful Vortex – Major Perk: Removed.",
+        "Void Surge – Major Perk: Moved from Minor to Major Perk."
       ],
       "is_stadium": false
     },
     {
-      "hero": "라인하르트",
+      "hero": "Reinhardt",
       "changes": [
-        "Shield Slam – Minor Perk: Shield Slam을 Quick Melee에 바인딩할 수 있는 사용자 정의 설정을 추가하여 특전이 장착된 동안 자유롭게 볼 수 있습니다."
+        "Shield Slam – Minor Perk: Added a custom setting allowing Shield Slam to be bound to Quick Melee, enabling free look while the perk is equipped."
       ],
       "is_stadium": false
     },
     {
-      "hero": "로드호그",
+      "hero": "Roadhog",
       "changes": [
-        "고철총: 재장전 시간이 1.5초에서 1.75초로 증가했습니다.",
-        "체인 후크: 재사용 대기시간이 6초에서 8초로 증가했습니다.",
-        "활력 – 주요 특성: 제거되었습니다.",
-        "Hogdrogen 노출 – 주요 특전: 추가되었습니다.",
-        "Hogdrogen 노출 – 주요 특전: 숨을 쉬면 이제 치유량의 50%만큼 근처 아군을 치유합니다."
+        "Scrap Gun: Reload time increased from 1.5 to 1.75 seconds.",
+        "Chain Hook: Cooldown increased from 6 to 8 seconds.",
+        "Invigorate – Major Perk: Removed.",
+        "Hogdrogen Exposure – Major Perk: Added.",
+        "Hogdrogen Exposure – Major Perk: Take a Breather now heals nearby allies for 50% of its healing amount."
       ],
       "is_stadium": false
     },
     {
-      "hero": "윈스턴",
+      "hero": "Winston",
       "changes": [
-        "테슬라 캐논: 배치 가능한 피해량이 50% 증가합니다."
+        "Tesla Cannon: Deals 50% increased damage to deployables."
       ],
       "is_stadium": false
     },
     {
-      "hero": "레킹볼",
+      "hero": "Wrecking Ball",
       "changes": [
-        "(6v6) 기본 체력이 475에서 450으로 감소했습니다. (갑옷과 방패를 포함한 총 체력이 575에서 550으로 감소했습니다.)"
+        "(6v6) Base health reduced from 475 to 450. (Total health including armor and shields reduced from 575 to 550.)"
       ],
       "is_stadium": false
     },
     {
-      "hero": "안란",
+      "hero": "Anran",
       "changes": [
-        "Fan the Flames: 충격 피해가 5에서 6으로 증가했습니다.",
-        "인페르노 러시: 충격 피해가 50에서 30으로 감소했습니다.",
-        "Dancing Blaze: 이제 첫 번째 대상 적중 시 안란의 체력을 50으로 치료하고 다음 대상마다 25의 체력을 회복합니다.",
-        "Hungering Blaze – 주요 특성: 변경되었습니다.",
-        "Hungering Blaze – 주요 특성: Dancing Blaze의 후속 공격의 치유량이 25만큼 증가합니다."
+        "Fan the Flames: Impact damage increased from 5 to 6.",
+        "Inferno Rush: Impact damage reduced from 50 to 30.",
+        "Dancing Blaze: Now heals Anran for 50 health on the first target hit and 25 health for each subsequent target.",
+        "Hungering Blaze – Major Perk: Changed.",
+        "Hungering Blaze – Major Perk: Increases the healing of Dancing Blaze’s subsequent strikes by 25."
       ],
       "is_stadium": false
     },
     {
-      "hero": "애쉬",
+      "hero": "Ashe",
       "changes": [
-        "Double Barreled - Minor Perk: Coach Gun을 다시 트리거하는 데 필요한 시간이 1초에서 2초로 증가했습니다."
+        "Double Barreled – Minor Perk: Time required to retrigger Coach Gun increased from 1 to 2 seconds."
       ],
       "is_stadium": false
     },
     {
-      "hero": "능보",
+      "hero": "Bastion",
       "changes": [
-        "구성 재로드 – 사소한 특전: 더 이상 재사용 대기시간을 완전히 환불하지 않습니다.",
-        "구성 재로드 – 사소한 특전: 이제 재사용 대기시간이 4초 감소합니다.",
-        "기갑 포병 - 부 특성: 초과 건강 저하가 초당 100에서 50으로 감소했습니다."
+        "Configuration Reload – Minor Perk: No longer fully refunds cooldown.",
+        "Configuration Reload – Minor Perk: Now reduces cooldown by 4 seconds.",
+        "Armored Artillery – Minor Perk: Overhealth degeneration reduced from 100 to 50 per second."
       ],
       "is_stadium": false
     },
     {
-      "hero": "에코",
+      "hero": "Echo",
       "changes": [
-        "복제: 이제 아군 영웅을 복제할 수 있습니다.",
-        "Focused Rush – Minor Perk: 범위가 4미터에서 6미터로 증가했습니다."
+        "Duplicate: Can now duplicate allied heroes.",
+        "Focused Rush – Minor Perk: Range increased from 4 to 6 meters."
       ],
       "is_stadium": false
     },
     {
-      "hero": "엠레",
+      "hero": "Emre",
       "changes": [
-        "사이펀 블래스터: 플레이어가 보조 발사를 유지하여 사이펀 블래스터를 감소된 발사 속도로 자동으로 발사할 수 있는 접근성 옵션을 추가했습니다.",
-        "방열판 - 주요 특성: 직접 타격으로 생성되는 열이 100%에서 60%로 감소했습니다."
+        "Siphon Blaster: Added an accessibility option which allows players to hold Secondary Fire to automatically fire Siphon Blaster at a reduced fire rate.",
+        "Heat Sink – Major Perk: Heat generated from direct hits reduced from 100% to 60%."
       ],
       "is_stadium": false
     },
     {
-      "hero": "정크랫",
+      "hero": "Junkrat",
       "changes": [
-        "광산 재활용 - 주요 특성: 사소한 특성에서 주요 특성으로 이동했습니다.",
-        "광산 재활용 – 주요 특전: 뇌진탕 지뢰로 제거하면 충전량이 1회 회복됩니다.",
-        "Bomb Voyage - Minor Perk: Major에서 Minor Perk로 이동되었습니다.",
-        "Bomb Voyage - Minor Perk: 공격 속도 보너스가 35%에서 25%로 감소했습니다."
+        "Mine Recycling – Major Perk: Moved from Minor to Major Perk.",
+        "Mine Recycling – Major Perk: Eliminations with Concussion Mine restore one charge.",
+        "Bomb Voyage – Minor Perk: Moved from Major to Minor Perk.",
+        "Bomb Voyage – Minor Perk: Attack speed bonus reduced from 35% to 25%."
       ],
       "is_stadium": false
     },
     {
-      "hero": "파라",
+      "hero": "Pharah",
       "changes": [
-        "호버 제트: 보너스 이동 속도가 40%에서 30%로 감소했습니다.",
-        "사격: 이제 파라가 사격을 사용하는 동안 이동할 수 있습니다.",
-        "사격: 폭발 피해가 30에서 25로 감소했습니다.",
-        "드리프트 추진기 – 사소한 특전: 제거되었습니다.",
-        "진탕력 – 사소한 특성: 추가되었습니다.",
-        "진탕력 – 부 특성: 진탕 폭발은 최대 50의 폭발 피해를 입힙니다."
+        "Hover Jets: Bonus movement speed reduced from 40% to 30%.",
+        "Barrage: Pharah can now move while using Barrage.",
+        "Barrage: Explosion damage reduced from 30 to 25.",
+        "Drift Thrusters – Minor Perk: Removed.",
+        "Concussive Force – Minor Perk: Added.",
+        "Concussive Force – Minor Perk: Concussive Blast deals up to 50 explosion damage."
       ],
       "is_stadium": false
     },
     {
-      "hero": "사신",
+      "hero": "Reaper",
       "changes": [
-        "다이어 트리거: 특성에서 기본 능력으로 이동되었습니다.",
-        "다이어 트리거: 쿨타임이 3초에서 6초로 증가했습니다.",
-        "방아쇠손가락 – 메이저 퍽: 추가되었습니다.",
-        "방아쇠 손가락 – 주요 특전: 능력을 사용하거나 다시 로드하면 다이어 트리거의 재사용 대기시간이 새로 고쳐집니다."
+        "Dire Triggers: Moved from Perk to Baseline ability.",
+        "Dire Triggers: Cooldown increased from 3 to 6 seconds.",
+        "Trigger Finger – Major Perk: Added.",
+        "Trigger Finger – Major Perk: Using an ability or reloading refreshes Dire Triggers’ cooldown."
       ],
       "is_stadium": false
     },
     {
-      "hero": "군인: 76",
+      "hero": "Soldier: 76",
       "changes": [
-        "질주: 이제 질주하는 동안 재장전할 수 있습니다.",
-        "질주: 질주하는 동안 재장전하면 질주의 이동 속도 보너스가 50% 감소하며 지속 시간이 지남에 따라 감소합니다.",
-        "스프린트: 스프린트가 다시 로드를 취소할 수 있도록 사용자 정의 설정을 추가했습니다.",
-        "민첩성 훈련 - 주요 특성: 제거되었습니다.",
-        "풀 스트라이드 - 주요 특전: 신규.",
-        "Full Stride – 주요 특성: Sprint의 이동 속도 보너스가 2초에 걸쳐 25% 추가로 점차 증가합니다."
+        "Sprint: Can now reload while sprinting.",
+        "Sprint: Reloading while sprinting reduces Sprint’s movement speed bonus by 50%, diminishing over the duration.",
+        "Sprint: Added a custom setting allowing Sprint to cancel reload.",
+        "Agility Training – Major Perk: Removed.",
+        "Full Stride – Major Perk: New.",
+        "Full Stride – Major Perk: Sprint’s movement speed bonus gradually increases by an additional 25% over 2 seconds."
       ],
       "is_stadium": false
     },
     {
-      "hero": "솜브라",
+      "hero": "Sombra",
       "changes": [
-        "은신: 피해를 입으면 이동 속도 보너스가 50% 감소합니다."
+        "Stealth: Movement speed bonus reduced by 50% while revealed by damage."
       ],
       "is_stadium": false
     },
     {
-      "hero": "트레이서",
+      "hero": "Tracer",
       "changes": [
-        "부 특성 비용이 10% 감소했습니다.",
-        "주요 특성 비용이 7% 감소했습니다."
+        "Minor Perk cost reduced by 10%.",
+        "Major Perk cost reduced by 7%."
       ],
       "is_stadium": false
     },
     {
-      "hero": "상호 복수",
+      "hero": "Vendetta",
       "changes": [
-        "맹공(패시브): 중첩당 이동 속도가 4%에서 2%로 감소했습니다.",
-        "Palatine Fang: 오버헤드 스윙 보너스 범위가 2.5미터에서 2.0미터로 감소했습니다."
+        "Onslaught (Passive): Movement speed per stack reduced from 4% to 2%.",
+        "Palatine Fang: Overhead swing bonus range reduced from 2.5 to 2.0 meters."
       ],
       "is_stadium": false
     },
     {
-      "hero": "위도우메이커",
+      "hero": "Widowmaker",
       "changes": [
-        "부 특성 비용이 6% 감소했습니다.",
-        "주요 특성 비용이 4% 감소했습니다."
+        "Minor Perk cost reduced by 6%.",
+        "Major Perk cost reduced by 4%."
       ],
       "is_stadium": false
     },
     {
-      "hero": "잘",
+      "hero": "Ana",
       "changes": [
-        "생체 수류탄: 재사용 대기시간이 14초에서 12초로 감소했습니다."
+        "Biotic Grenade: Cooldown reduced from 14 to 12 seconds."
       ],
       "is_stadium": false
     },
     {
-      "hero": "브리짓",
+      "hero": "Brigitte",
       "changes": [
-        "장벽 방패: 체력이 250에서 300으로 증가했습니다.",
-        "Combat Medic - Minor Perk: 환불된 재사용 대기시간이 0.5초에서 0.75초로 증가했습니다."
+        "Barrier Shield: Health increased from 250 to 300.",
+        "Combat Medic – Minor Perk: Cooldown refunded increased from 0.5 to 0.75 seconds."
       ],
       "is_stadium": false
     },
     {
-      "hero": "제트팩 고양이",
+      "hero": "Jetpack Cat",
       "changes": [
-        "열광적인 비행: 가속도가 11%만큼 감소했습니다.",
-        "Claws Out – Major Perk: 이제 Claws Out 쿨다운에 재사용 대기시간 감소가 적용됩니다."
+        "Frenetic Flight: Acceleration reduced by 11%.",
+        "Claws Out – Major Perk: Cooldown reductions now apply to the Claws Out cooldown."
       ],
       "is_stadium": false
     },
     {
-      "hero": "주노",
+      "hero": "Juno",
       "changes": [
-        "펄서 어뢰: (6v6) 재사용 대기시간이 10초에서 12초로 증가했습니다.",
-        "활공 부스트: 이동 속도 보너스가 50%에서 40%로 감소했습니다."
+        "Pulsar Torpedoes: (6v6) Cooldown increased from 10 to 12 seconds.",
+        "Glide Boost: Movement speed bonus reduced from 50% to 40%."
       ],
       "is_stadium": false
     },
     {
-      "hero": "생명술사",
+      "hero": "Lifeweaver",
       "changes": [
-        "치유의 꽃: 최대 치유량이 80에서 90으로 증가했습니다.",
-        "활력의 질주: 치유량이 45에서 55로 증가했습니다.",
-        "Life Grip: 이제 당기면 아군을 정화합니다.",
-        "씨앗 뿌리기 – 주요 특성: 재사용 대기시간이 14초에서 11초로 감소했습니다."
+        "Healing Blossom: Maximum healing increased from 80 to 90.",
+        "Rejuvenating Dash: Healing increased from 45 to 55.",
+        "Life Grip: Now cleanses allies when pulled.",
+        "Sow the Seed – Major Perk: Cooldown reduced from 14 to 11 seconds."
       ],
       "is_stadium": false
     },
     {
-      "hero": "단창",
+      "hero": "Lúcio",
       "changes": [
-        "크로스페이드: (6v6) 치유량이 20에서 18로 감소했습니다.",
-        "Accelerando – 주요 특성: 변경되었습니다.",
-        "Accelerando - 주요 특성: Lucio의 Speed ​​Song이 활성화되어 있는 동안 공격 속도가 15% 증가하고 Amp It Up 동안에는 3배 증가합니다.",
-        "Soundwave Rider – Minor Perk: 라운드가 시작되기 전에는 더 이상 충전할 수 없습니다."
+        "Crossfade: (6v6) Healing reduced from 20 to 18.",
+        "Accelerando – Major Perk: Changed.",
+        "Accelerando – Major Perk: Gain 15% attack speed while Lucio's Speed Song is active, tripled during Amp It Up.",
+        "Soundwave Rider – Minor Perk: Can no longer be charged before a round begins."
       ],
       "is_stadium": false
     },
     {
-      "hero": "거기 있어요",
+      "hero": "Kiriko",
       "changes": [
-        "신속한 발걸음: 순간이동 범위가 35미터에서 30미터로 감소했습니다.",
-        "힐링 오후다: 발사 속도가 초당 5에서 7로 증가했습니다."
+        "Swift Step: Teleport range reduced from 35 to 30 meters.",
+        "Healing Ofuda: Fire rate increased from 5 to 7 per second."
       ],
       "is_stadium": false
     },
     {
-      "hero": "미즈키",
+      "hero": "Mizuki",
       "changes": [
-        "Remedy Aura: (6v6) 최소 치유량이 5에서 4.5로 감소했습니다.",
-        "Remedy Aura: (6v6) 최대 치유량이 20에서 18로 감소했습니다.",
-        "Kekkai Sanctuary: 시전 시간 동안 Mizuki가 제거되면 더 이상 생성되지 않습니다.",
-        "카타시로 귀환: 이제 Kekkai Sanctuary의 시전 애니메이션을 제외한 다른 애니메이션이 활성화된 동안 귀환을 활성화할 수 있습니다.",
-        "카타시로 귀환: 이동 속도 보너스가 35%에서 30%로 감소했습니다."
+        "Remedy Aura: (6v6) Minimum Healing Reduced from 5 to 4.5.",
+        "Remedy Aura: (6v6) Maximum Healing reduced from 20 to 18.",
+        "Kekkai Sanctuary: No longer spawns if Mizuki is eliminated during the cast time.",
+        "Katashiro Return: Can now activate return while other animations are active, excluding Kekkai Sanctuary's cast animation.",
+        "Katashiro Return: Movement speed bonus reduced from 35% to 30%."
       ],
       "is_stadium": false
     },
     {
-      "hero": "자비",
+      "hero": "Mercy",
       "changes": [
-        "순간 치유: 순간 치유가 특성에서 기본 능력으로 이동되었습니다.",
-        "순간 치유: 재사용 대기시간이 15초에서 12초로 감소했습니다.",
-        "순간 치유: 기본 치유량이 50에서 60으로 증가했습니다.",
-        "순간 치유: 체력이 50% 미만인 아군에 대한 치유 배수가 3배에서 2배로 감소했습니다.",
-        "Caduceus 지팡이: 치유량이 60에서 55로 감소했습니다.",
-        "수호 천사: 발사 속도가 10% 감소했습니다.",
-        "이중 복용량 – 주요 특전: 새로운 기능.",
-        "Double Dose - Major Perk: Flash Heal은 추가 충전을 얻지만 기본 치유량이 10만큼 감소합니다."
+        "Flash Heal: Flash Heal moved from Perk to Baseline ability.",
+        "Flash Heal: Cooldown reduced from 15 to 12 seconds.",
+        "Flash Heal: Base healing increased from 50 to 60.",
+        "Flash Heal: Healing multiplier on allies below 50% health reduced from 3x to 2x.",
+        "Caduceus Staff: Healing reduced from 60 to 55.",
+        "Guardian Angel: Launch speed reduced by 10%.",
+        "Double Dose – Major Perk: New.",
+        "Double Dose – Major Perk: Flash Heal gains an additional charge but its base healing is reduced by 10."
       ],
       "is_stadium": false
     },
     {
-      "hero": "우양",
+      "hero": "Wuyang",
       "changes": [
-        "돌진 급류: 지속 시간이 4초에서 3.5초로 감소했습니다."
+        "Rushing Torrent: Duration reduced from 4 to 3.5 seconds."
       ],
       "is_stadium": false
     },
     {
-      "hero": "젠야타",
+      "hero": "Zenyatta",
       "changes": [
-        "불화의 오브: (6v6) 피해 증폭이 30%에서 25%로 감소했습니다."
+        "Orb of Discord: (6v6) Damage amplification reduced from 30% to 25%."
       ],
       "is_stadium": false
     },
     {
-      "hero": "라마트라",
+      "hero": "Ramattra",
       "changes": [
-        "경기장 명단에 추가되었습니다.",
-        "[보이드 액셀러레이터]는 100 데미지를 준 후 폭발하여 20(WP) 데미지를 주는 나노나이트로 적들을 감염시킵니다.",
-        "[보이드 가속기]는 연속 사격 중에 주기적으로 추가 발사체 6개를 발사합니다.",
-        "[보이드 배리어]가 추가 충전됩니다.",
-        "[공허 방벽] 크기 +25%. [공허 방벽]을 통과하는 [공허 가속기] 발사체와 [Pummel]의 공격력이 10% 증가합니다."
+        "Added to the Stadium roster.",
+        "[Void Accelerator] infects enemies with nanites which explode for 20(WP) damage after dealing 100 damage.",
+        "[Void Accelerator] periodically releases a burst of 6 additional projectiles during continuous fire.",
+        "[Void Barrier] gains an additional charge.",
+        "+25% [Void Barrier] size. [Void Accelerator] projectile and [Pummel] that passes through the [Void Barrier] gain 10% increased damage."
       ],
       "is_stadium": true
     },
     {
-      "hero": "시그마",
+      "hero": "Sigma",
       "changes": [
-        "공격 속도의 피해 흡수 임계값이 100에서 50으로 감소했습니다."
+        "Damage Absorbed threshold for Attack Speed reduced to 50 (Down from 100)."
       ],
       "is_stadium": true
     },
     {
-      "hero": "윈스턴",
+      "hero": "Winston",
       "changes": [
-        "피해와 치유로 인한 화폐량이 12.5% ​​증가했습니다.",
-        "바운스 데미지가 50%에서 75%로 증가했습니다.",
-        "크리티컬 데미지가 175%에서 200%로 증가했습니다.",
-        "\"+25% 시작 얼티밋 차지\"가 추가되었습니다."
+        "Currency from damage and healing increased by 12.5%.",
+        "Bounce Damage increased to 75% (Up from 50%).",
+        "Critical Damage increased to 200% (Up from 175%).",
+        "Added \"+25% Starting Ultimate Charge\"."
       ],
       "is_stadium": true
     },
     {
-      "hero": "프레야",
+      "hero": "Freja",
       "changes": [
-        "최대 탄약 회복량이 40%에서 30%로 감소했습니다.",
-        "최대 생명력 치유량이 6%로 감소했습니다(8%에서 감소)."
+        "Max Ammo restore reduced to 30% (Down from 40%).",
+        "Max Life Healing reduced to 6% (Down from 8%)."
       ],
       "is_stadium": true
     },
     {
-      "hero": "정크랫",
+      "hero": "Junkrat",
       "changes": [
-        "무기력 5%를 제거했습니다.",
-        "최대 생명력 초과 건강 스케일링이 6%로 감소했습니다(8%에서 감소).",
-        "무기력 10%를 제거했습니다.",
-        "주문력이 15%로 증가했습니다(기존 10%).",
-        "자체 폭발 뇌진탕 지뢰의 재사용 대기시간 감소가 15%에서 10%로 감소했습니다."
+        "Removed 5% Weapon Power.",
+        "Max Life Overhealth Scaling reduced to 6% (Down from 8%).",
+        "Removed 10% Weapon Power.",
+        "Ability Power increased to 15% (Up from 10%).",
+        "Cooldown Reduction upon self detonating Concussion Mine reduced to 10% (Down from 15%)."
       ],
       "is_stadium": true
     },
     {
-      "hero": "상호 복수",
+      "hero": "Vendetta",
       "changes": [
-        "피해와 치유로 인한 화폐량이 5% 증가했습니다.",
-        "추가 지속시간 동안의 회오리바람 질주 피해량이 50%에서 75%로 증가했습니다.",
-        "회오리바람 질주 재활성화 피해가 50%에서 75%로 증가했습니다.",
-        "자유 투사 가장자리 피해가 50%에서 75%로 증가했습니다.",
-        "소형 분리 칼날의 공격력이 25%에서 50%로 증가했습니다."
+        "Currency from damage and healing increased by 5%.",
+        "Whirlwind Dash Damage during additional duration increased to 75% (Up from 50%).",
+        "Whirlwind Dash reactivation damage increased to 75% (Up from 50%).",
+        "Free Projected Edge damage increased to 75% (Up from 50%).",
+        "Mini Sundering Blade damage increased to 50% increased damage (Up from 25%)."
       ],
       "is_stadium": true
     },
     {
-      "hero": "잘",
+      "hero": "Ana",
       "changes": [
-        "나노 부스트 지속 시간이 15%에서 25%로 증가했습니다."
+        "Nano Boost Duration increased to 25% (Up from 15%)."
       ],
       "is_stadium": true
     },
     {
-      "hero": "주노",
+      "hero": "Juno",
       "changes": [
-        "중요 배율이 175%로 감소했습니다(200%에서 감소).",
-        "이제 툴팁에 아군에게도 치명타를 가할 수 있다는 내용이 올바르게 표시됩니다.",
-        "새로운",
-        "[하이퍼 링]의 영향을 받는 동안 [메디 블래스터]는 완전 자동 발사 속도를 갖습니다.",
-        "새로운"
+        "Critical Multiplier decreased to 175% (Down from 200%).",
+        "Tooltip now correctly states that it also allows you to crit on allies.",
+        "New",
+        "While affected by [Hyper Ring], [Medi-Blaster] has a fully automatic fire rate.",
+        "New"
       ],
       "is_stadium": true
     },
     {
-      "hero": "우양",
+      "hero": "Wuyang",
       "changes": [
-        "강화되지 않은 기본 발사 발사체 속도가 100%에서 150%로 증가했습니다.",
-        "활성 회복 스트림의 자가 치유가 75%에서 100%로 증가했습니다."
+        "Non-empowered Primary Fire projectile speed increased to 150% (Up from 100%).",
+        "Active Restorative Stream self healing increased to 100% (Up from 75%)."
       ],
       "is_stadium": true
     },
     {
-      "hero": "젠야타",
+      "hero": "Zenyatta",
       "changes": [
-        "피해량에 따른 치유량이 30%로 감소했습니다(35%에서 감소).",
-        "호밍 체력 임계값이 35%에서 50%로 증가했습니다."
+        "Healing based on damage dealt reduced to 30% (Down from 35%).",
+        "Homing Health Threshold increased to 50% (Up from 35%)."
       ],
       "is_stadium": true
     }
   ],
   "general_changes": [
-    "1주 차에는 이벤트 보상 패스 진행 상황을 제공하는 Tier 1 챌린지에 액세스할 수 있습니다. 더 어려운 메타 챌린지도 이용할 수 있습니다. 일반적인 챌린지보다 완료하는 데 시간이 더 걸리지만 완료하면 더 나은 보상을 얻을 수 있습니다.",
-    "더 힘든 메타챌린지도 가능합니다. 일반적인 챌린지보다 완료하는 데 시간이 더 걸리지만 완료하면 더 나은 보상을 얻을 수 있습니다.",
-    "2주차에는 Tier 2 챌린지가 잠금 해제됩니다(Meta Tier 1이 아닌 모든 챌린지를 완료한 경우).",
-    "이벤트 Rewards Pass를 진행하면서 스토리에 빛을 비추는 추가 지식 항목과 통찰력도 잠금 해제할 수 있습니다.",
-    "이벤트가 3주 동안 진행되어 모든 Tier 1, Tier 2 및 메타챌린지를 완료하므로 모든 보상을 획득하고 모든 지식을 잠금 해제할 수 있는 충분한 시간이 있습니다.",
-    "새로운 지도와 재작업된 지도에 태그가 추가되었습니다. 신규 또는 재작업 태그가 있는 지도는 빠른 플레이에서 보너스 배틀 패스 XP를 제공하고 경쟁 플레이에서 자동으로 +10 경쟁 포인트를 제공합니다. 이러한 태그 중 하나가 있는 지도에서 경쟁전에서 패배할 경우 페널티도 감소하므로 한 번 도전해 보시고 패배에 대해 크게 걱정하지 마세요!",
-    "새로운 무작위 지도 옵션이 4번째 선택으로 추가되었습니다. 무작위 지도는 눈에 보이는 3개의 지도 중 하나가 될 수 없습니다.",
-    "지도가 다른 지도보다 6개 이상의 표를 얻으면 산사태로 승리하며, 굴림을 완전히 건너뜁니다. 예를 들어, 7표를 얻은 King's Row는 2표를 얻은 Dorado를 상대로 산사태로 승리하지 못합니다. King's Row가 Dorado보다 5표만 더 많이 얻었기 때문입니다. 5대5에서는 8표, 6대6에서는 9표를 얻으면 산사태가 발생합니다. 무작위 지도 옵션도 산사태로 승리할 수 있습니다!",
-    "새로운 공격 및 방어 아이콘이 하이브리드 및 호위용 지도 카드에 추가되어 Quick Play의 플레이어가 이 지도가 승리할 경우 어느 진영에서 플레이할지 알 수 있습니다. 경쟁전에서는 플레이어에게 어느 진영을 먼저 플레이할지 알려줍니다.",
-    "이제 눈에 보이는 3개의 지도에서 최소 2개의 서로 다른 게임 모드가 제공됩니다."
+    "InWeek 1, you will have access toTier 1challenges which grant you progress on your eventRewards Pass.Also available are tougherMetachallenges; these take longer to complete than typical challenges, but completing them nets you better rewards.",
+    "Also available are tougherMetachallenges; these take longer to complete than typical challenges, but completing them nets you better rewards.",
+    "InWeek 2,Tier 2challenges unlock (provided you've completed allnon-Meta Tier 1challenges).",
+    "As you progress your event Rewards Pass, you'll also unlock additionallore entriesand insights that shine a light on the story.",
+    "You have all 3 weeks that the event runs to complete everyTier 1,Tier 2, andMetachallenge, giving you plenty of time to snag every reward and unlock alllore pieces.",
+    "Tags have been added for New Maps and Reworked Maps. Any map with a New or Reworked tag gives bonus Battle Pass XP in Quick Play and an automatic +10 Competitive Points in Competitive Play. The penalty for losing in Competitive Play on a map with one of these tags is also reduced, so give them a shot and don’t worry as much about losing!",
+    "A new Random Map option has been added as a 4th choice. The Random Map will never be one of the 3 visible maps.",
+    "When a map has 6 or more votes than any other map it wins by a Landslide, skipping the roll entirely. For example, King’s Row with 7 votes does not win by a Landslide against Dorado with 2 votes, because King’s Row only has 5 more votes than Dorado. 8 votes ensures a Landslide in 5v5 and 9 votes in 6v6. Even the Random Map option can win by a Landslide!",
+    "New Attack and Defend icons have been added to map cards for Hybrid and Escort, allowing players in Quick Play to know which side they’ll play if this map wins. In Competitive Play these just let players know which side they’ll play first.",
+    "At least 2 different game modes will now be offered across the 3 visible maps."
   ]
 }
