@@ -136,10 +136,8 @@ function renderChart(container) {
 }
 
 function renderOverviewChart(container) {
-  const heroes = getFiltered().sort((a, b) => (b.meta_score ?? 0) - (a.meta_score ?? 0));
-
   container.querySelector('#chart-title').textContent =
-    `전체 영웅 메타 점수 — ${currentRank}`;
+    `전체 영웅 메타 점수 추이 — ${currentRank}`;
   container.querySelector('#chart-scroll').style.maxHeight = '320px';
 
   const wrapper = container.querySelector('#chart-wrapper');
@@ -149,33 +147,68 @@ function renderOverviewChart(container) {
   canvas.style.width = '100%';
   canvas.style.height = '280px';
 
-  const pointColors = heroes.map(h => TIER_COLOR[h.tier] ?? '#6b7280');
+  // 히스토리 데이터로 멀티라인 구성
+  const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
+  if (!rankData || !Object.keys(rankData).length) {
+    wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다. 내일 다시 확인해주세요.');
+    return;
+  }
+
+  const dates = Object.keys(rankData).sort();
+  const labelDates = dates.map(d => d.slice(5)); // MM-DD
+
+  // 영웅별 점수 배열 구성
+  const heroMap = {};
+  for (const date of dates) {
+    for (const h of rankData[date] ?? []) {
+      if (!heroMap[h.hero_id]) {
+        heroMap[h.hero_id] = { hero_id: h.hero_id, hero_name: h.hero_name, tier: h.tier, scores: new Array(dates.length).fill(null) };
+      }
+      heroMap[h.hero_id].scores[dates.indexOf(date)] = h.meta_score ?? null;
+    }
+  }
+
+  // 역할 필터 적용 (현재 스냅샷 기준)
+  const roleFilter = ROLE_MAP[currentRole];
+  const currentHeroes = cachedMeta?.[currentRank] ?? [];
+  const roleSet = roleFilter
+    ? new Set(currentHeroes.filter(h => h.role === roleFilter).map(h => h.hero_id))
+    : null;
+  // 현재 티어로 갱신
+  const tierMap = Object.fromEntries(currentHeroes.map(h => [h.hero_id, h.tier]));
+
+  const filteredHeroes = Object.values(heroMap).filter(h => !roleSet || roleSet.has(h.hero_id));
+  filteredHeroes.forEach(h => { h.tier = tierMap[h.hero_id] ?? h.tier; });
+
+  const datasets = filteredHeroes.map(hero => {
+    const color = TIER_COLOR[hero.tier] ?? '#6b7280';
+    return {
+      label: hero.hero_name,
+      heroId: hero.hero_id,
+      data: hero.scores,
+      borderColor: color + 'cc',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5,
+      pointRadius: 0,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: color,
+      spanGaps: true,
+      tension: 0.3,
+    };
+  });
 
   activeChart = new Chart(canvas, {
     type: 'line',
-    data: {
-      labels: heroes.map(h => h.hero_name),
-      datasets: [{
-        data: heroes.map(h => h.meta_score ?? 0),
-        borderColor: '#F5A623',
-        backgroundColor: 'rgba(245,166,35,0.06)',
-        borderWidth: 2,
-        pointRadius: 5,
-        pointHoverRadius: 7,
-        pointBackgroundColor: pointColors,
-        pointBorderColor: pointColors,
-        tension: 0.35,
-        fill: true,
-      }],
-    },
+    data: { labels: labelDates, datasets },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      animation: { duration: 250 },
+      animation: { duration: 200 },
+      interaction: { mode: 'index', intersect: false },
       onClick(_, elements) {
         if (!elements.length) return;
-        const h = heroes[elements[0].index];
-        selectHero(container, h.hero_id, h.hero_name);
+        const ds = datasets[elements[0].datasetIndex];
+        selectHero(container, ds.heroId, ds.label);
       },
       plugins: {
         legend: { display: false },
@@ -183,25 +216,16 @@ function renderOverviewChart(container) {
           backgroundColor: '#161B22',
           borderColor: '#30363D',
           borderWidth: 1,
+          itemSort: (a, b) => b.parsed.y - a.parsed.y,
+          filter: item => item.parsed.y !== null,
           callbacks: {
-            title: ctx => heroes[ctx[0].dataIndex].hero_name,
-            label: ctx => [
-              ` 메타 점수: ${ctx.parsed.y.toFixed(1)}`,
-              ` 픽률: ${heroes[ctx.dataIndex].pick_rate?.toFixed(1) ?? '-'}%`,
-              ` 승률: ${heroes[ctx.dataIndex].win_rate?.toFixed(1) ?? '-'}%`,
-            ],
+            label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1) ?? '-'}`,
           },
         },
       },
       scales: {
         x: {
-          ticks: {
-            color: '#6B7280',
-            font: { size: 10 },
-            maxRotation: 45,
-            autoSkip: true,
-            maxTicksLimit: 25,
-          },
+          ticks: { color: '#6B7280', font: { size: 10 }, maxTicksLimit: 14 },
           grid: { color: '#1F2937' },
         },
         y: {
@@ -215,32 +239,30 @@ function renderOverviewChart(container) {
 }
 
 function renderHistoryChart(container) {
+  const color = (() => {
+    const hero = (cachedMeta?.[currentRank] ?? []).find(h => h.hero_id === selectedHeroId);
+    return TIER_COLOR[hero?.tier] ?? '#F5A623';
+  })();
+
   container.querySelector('#chart-title').textContent =
     `${selectedHeroName} — 메타 점수 추이 (${currentRank})`;
-  container.querySelector('#chart-scroll').style.maxHeight = '280px';
+  container.querySelector('#chart-scroll').style.maxHeight = '320px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  wrapper.style.height = '240px';
+  wrapper.style.height = '280px';
 
   const canvas = container.querySelector('#meta-chart');
   canvas.style.width = '100%';
-  canvas.style.height = '240px';
+  canvas.style.height = '280px';
 
-  if (!cachedHistory) {
-    wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.');
-    return;
-  }
-  const rankData = cachedHistory[currentRank] ?? cachedHistory['전체'];
-  if (!rankData) {
-    wrapper.innerHTML = noDataMsg('이 랭크의 히스토리가 없습니다.');
-    return;
-  }
+  const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
+  if (!rankData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
 
   const dates = Object.keys(rankData).sort();
   const scores = dates.map(d => rankData[d]?.find(h => h.hero_id === selectedHeroId)?.meta_score ?? null);
 
   if (!scores.some(s => s !== null)) {
-    wrapper.innerHTML = noDataMsg('히스토리 데이터가 부족합니다.');
+    wrapper.innerHTML = noDataMsg('이 영웅의 히스토리 데이터가 없습니다.');
     return;
   }
 
@@ -249,12 +271,13 @@ function renderHistoryChart(container) {
     data: {
       labels: dates.map(d => d.slice(5)),
       datasets: [{
+        label: selectedHeroName,
         data: scores,
-        borderColor: '#F5A623',
-        backgroundColor: 'rgba(245,166,35,0.07)',
+        borderColor: color,
+        backgroundColor: color + '15',
         borderWidth: 2.5,
         pointRadius: dates.length <= 14 ? 4 : 2,
-        pointBackgroundColor: '#F5A623',
+        pointBackgroundColor: color,
         spanGaps: true,
         tension: 0.35,
         fill: true,
@@ -263,6 +286,7 @@ function renderHistoryChart(container) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      animation: { duration: 200 },
       plugins: {
         legend: { display: false },
         tooltip: {
@@ -277,7 +301,7 @@ function renderHistoryChart(container) {
       },
       scales: {
         x: {
-          ticks: { color: '#6B7280', maxTicksLimit: 12, font: { size: 10 } },
+          ticks: { color: '#6B7280', maxTicksLimit: 14, font: { size: 10 } },
           grid: { color: '#1F2937' },
         },
         y: {
