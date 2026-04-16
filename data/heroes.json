@@ -462,6 +462,39 @@
       "countered_by": ["tracer", "genji", "sombra"],
       "synergies": ["genji", "hanzo", "sojourn"],
       "tips": ["불화 주옥은 탱커보다 하이 퍼텐셜 딜러에게 사용하세요", "초월은 팀이 아군 진영에 뭉쳐있을 때 최대 효과입니다"]
+    },
+    "freja": {
+      "name": "Freja",
+      "role": "damage",
+      "aliases": ["프레야", "freja"],
+      "description": "활과 화살로 적을 사냥하는 딜러.",
+      "difficulty": 2,
+      "counters": [],
+      "countered_by": [],
+      "synergies": [],
+      "tips": []
+    },
+    "vendetta": {
+      "name": "Vendetta",
+      "role": "damage",
+      "aliases": ["벤데타", "vendetta"],
+      "description": "근접 전투에 특화된 암살자형 딜러.",
+      "difficulty": 3,
+      "counters": [],
+      "countered_by": [],
+      "synergies": [],
+      "tips": []
+    },
+    "wuyang": {
+      "name": "Wuyang",
+      "role": "support",
+      "aliases": ["우양", "wuyang"],
+      "description": "환상과 분신을 활용하는 지원가.",
+      "difficulty": 2,
+      "counters": [],
+      "countered_by": [],
+      "synergies": [],
+      "tips": []
     }
   },
   "roles": {
@@ -473,12 +506,12 @@
     "damage": {
       "name": "딜러",
       "description": "적에게 피해를 입혀 처치하는 역할",
-      "heroes": ["ashe", "bastion", "cassidy", "echo", "genji", "hanzo", "junkrat", "mei", "pharah", "reaper", "sojourn", "soldier76", "sombra", "symmetra", "torbjorn", "tracer", "venture", "widowmaker"]
+      "heroes": ["ashe", "bastion", "cassidy", "echo", "freja", "genji", "hanzo", "junkrat", "mei", "pharah", "reaper", "sojourn", "soldier76", "sombra", "symmetra", "torbjorn", "tracer", "vendetta", "venture", "widowmaker"]
     },
     "support": {
       "name": "지원가",
       "description": "아군을 치유하고 버프하는 역할",
-      "heroes": ["ana", "baptiste", "briggitte", "illari", "juno", "kiriko", "lifeweaver", "lucio", "mercy", "moira", "zenyatta"]
+      "heroes": ["ana", "baptiste", "briggitte", "illari", "juno", "kiriko", "lifeweaver", "lucio", "mercy", "moira", "wuyang", "zenyatta"]
     }
   }
 }

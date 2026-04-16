@@ -2,7 +2,7 @@
 영어 → 한국어 번역 / 요약 유틸리티 (Gemini REST API).
 
 환경변수 GEMINI_API_KEY 필요.
-배치 처리로 API 호출 최소화 (최대 50건/요청).
+배치 처리로 API 호출 최소화 (최대 10건/요청).
 """
 from __future__ import annotations
 
@@ -16,9 +16,9 @@ import requests
 logger = logging.getLogger(__name__)
 
 _CACHE: dict[str, str] = {}
-# gemini-3.1-flash-lite-preview 무료 티어 기준 (15 RPM)
+# gemini-3.1-flash-lite-preview 무료 티어 기준 (15 RPM, 250k TPM, 500 RPD)
 # _BATCH_DELAY 6초 → 실효 10 RPM (함수 호출 경계 포함 전역 rate limit)
-_BATCH_SIZE = 50
+_BATCH_SIZE = 10
 _BATCH_DELAY = 6.0
 _RETRY_COUNT = 5
 _RETRY_BASE = 60
@@ -55,17 +55,17 @@ def summarize(text: str) -> str:
     return summarize_list([text])[0]
 
 
-def translate_list(texts: list[str]) -> list[str]:
+def translate_list(texts: list[str], label: str = "번역") -> list[str]:
     """리스트 일괄 번역 (배치 처리)."""
-    return _batch_process(texts, _TRANSLATE_PROMPT, prefix="")
+    return _batch_process(texts, _TRANSLATE_PROMPT, prefix="", label=label)
 
 
-def summarize_list(texts: list[str]) -> list[str]:
+def summarize_list(texts: list[str], label: str = "요약") -> list[str]:
     """리스트 일괄 3줄 요약 (배치 처리)."""
-    return _batch_process(texts, _SUMMARIZE_PROMPT, prefix=_SUM_PREFIX)
+    return _batch_process(texts, _SUMMARIZE_PROMPT, prefix=_SUM_PREFIX, label=label)
 
 
-def _batch_process(texts: list[str], prompt: str, prefix: str) -> list[str]:
+def _batch_process(texts: list[str], prompt: str, prefix: str, label: str) -> list[str]:
     """공통 배치 처리 로직."""
     if not texts:
         return []
@@ -87,16 +87,14 @@ def _batch_process(texts: list[str], prompt: str, prefix: str) -> list[str]:
 
     total = len(to_process)
     n_batches = -(-total // _BATCH_SIZE)
-    action = "요약" if prefix else "번역"
-    logger.info(f"  Gemini {action}: {total}건 ({n_batches}배치)")
 
-    for batch_start in range(0, total, _BATCH_SIZE):
+    for batch_idx, batch_start in enumerate(range(0, total, _BATCH_SIZE)):
+        logger.info(f"  {label} [{batch_idx + 1}/{n_batches}]")
         batch = to_process[batch_start : batch_start + _BATCH_SIZE]
         processed = _call_gemini([t for _, t in batch], prompt)
         for (orig_idx, orig_text), result_text in zip(batch, processed):
             _CACHE[prefix + orig_text] = result_text
             results[orig_idx] = result_text
-        logger.info(f"  {action} 진행: {min(batch_start + _BATCH_SIZE, total)}/{total}건")
 
     return results
 

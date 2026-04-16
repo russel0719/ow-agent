@@ -215,8 +215,8 @@ def _translate_patch_data(data: dict) -> dict:
     data["title"] = translate(data["title"])
     for hc in data["hero_changes"]:
         hc["hero"] = translate(hc["hero"])
-        hc["changes"] = translate_list(hc["changes"])
-    data["general_changes"] = translate_list(data["general_changes"])
+        hc["changes"] = translate_list(hc["changes"], label=f"패치노트 번역 ({hc['hero']})")
+    data["general_changes"] = translate_list(data["general_changes"], label="패치노트 공통 변경사항 번역")
 
     logger.info("  패치 번역 완료")
     return data
@@ -254,8 +254,8 @@ def _translate_stadium_data(by_hero: dict) -> dict:
         descs = [b.get("description") or "" for b in new_builds]
 
         logger.info(f"  스타디움 신규 처리: {len(new_builds)}건 (이름 번역 + 설명 요약)")
-        translated_names = translate_list(names)
-        summarized_descs = summarize_list(descs)
+        translated_names = translate_list(names, label="스타디움 빌드 이름 번역")
+        summarized_descs = summarize_list(descs, label="스타디움 빌드 설명 요약")
 
         for build, name, desc in zip(new_builds, translated_names, summarized_descs):
             build["name"] = name
