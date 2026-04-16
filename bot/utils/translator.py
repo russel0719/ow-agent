@@ -16,14 +16,14 @@ import requests
 logger = logging.getLogger(__name__)
 
 _CACHE: dict[str, str] = {}
-# gemini-2.5-flash-lite 무료 티어 기준 (15 RPM)
+# gemini-3.1-flash-lite-preview 무료 티어 기준 (15 RPM, 250k TPM, 500 RPD)
 # 배치 크기를 키워 총 요청 수를 최소화 (stadium 158건 → 4회, patch 173건 → 4회)
 # _BATCH_DELAY 6초 → 실효 10 RPM, 어떤 무료 모델도 초과하지 않음
-_BATCH_SIZE = 50          # 배치 크기 (요청 횟수 최소화)
+_BATCH_SIZE = 5           # 배치 크기 (요청 횟수 최소화)
 _BATCH_DELAY = 6.0        # 배치 간 딜레이 (초) → 10 RPM (15 RPM 한도의 2/3)
 _RETRY_COUNT = 5          # 429 재시도 횟수
 _RETRY_BASE = 60          # 429 발생 시 첫 대기 시간 (초) — 1분 후 재시도
-_MODEL = "gemini-2.5-flash-lite"
+_MODEL = "gemini-3.1-flash-lite-preview"
 _API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{_MODEL}:generateContent"
 
 
