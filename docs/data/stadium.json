@@ -560,7 +560,7 @@
       "code": "EF7WN",
       "description": "✨ 비행, 치료, 부스트, 부활 — 하지만 특히 죽지는 않습니다 ✨ color:94a3b82016년부터 Mercy 메인에서 마스터 지원 및 스타디움 레전드 지원[/color] <br> <br> color:31da7d🍃 업데이트: 현재 이 빌드를 재작업 중입니다! 일부 둥근 노트는 약간 구식입니다.",
       "playstyle": "생존형",
-      "upvotes": 881
+      "upvotes": 882
     },
     {
       "name": "⚡ QP | 죽일 수 없는 탄력 있는 슈퍼힐러 [S1]",
@@ -1074,16 +1074,16 @@
       "upvotes": 128
     },
     {
-      "name": "🌊 IMMORTAL WUYANG // 무한 힐링 빌드 🩸[SEASON 20] [UP",
-      "code": "DH9V8",
-      "description": "🌊color:01b8fc IMMORTAL WUYANG[/color] // 무한 치유의 신 모드 업데이트됨 🔄 \"무한\" 엔진 합리화: 설정 키입니다. 눈에 보이는 모든 아군에게 패시브 스트림을 즉시 적용합니다.  썰물과 흐름: Guardian Wa의 가치를 두 배로 늘립니다.",
+      "name": "Orbital Wavemaster 🌊✨ (데미지 & 웨이브) [S20]",
+      "code": "VF0TC",
+      "description": "🌊 파도를 타고 비구슬을 적에게 내려주세요! ✨&nbsp; 마스터 지원 및 스타디움 레전드 지원에서 이 빌드는 Guardian Wave(ability_75a71fd9-aa90-4f2f-b716-64a53e6140df)를 사용하여 Paindrops(item_25503639-9f7f-4fdc-a9...)를 트리거하는 데 중점을 둡니다.",
       "playstyle": "딜형",
       "upvotes": 87
     },
     {
-      "name": "Orbital Wavemaster 🌊✨ (데미지 & 웨이브) [S20]",
-      "code": "VF0TC",
-      "description": "🌊 파도를 타고 비구슬을 적에게 내려주세요! ✨&nbsp; 마스터 지원 및 스타디움 레전드 지원에서 이 빌드는 Guardian Wave(ability_75a71fd9-aa90-4f2f-b716-64a53e6140df)를 사용하여 Paindrops(item_25503639-9f7f-4fdc-a9...)를 트리거하는 데 중점을 둡니다.",
+      "name": "🌊 IMMORTAL WUYANG // 무한 힐링 빌드 🩸[SEASON 20] [UP",
+      "code": "DH9V8",
+      "description": "🌊color:01b8fc IMMORTAL WUYANG[/color] // 무한 치유의 신 모드 업데이트됨 🔄 \"무한\" 엔진 합리화: 설정 키입니다. 눈에 보이는 모든 아군에게 패시브 스트림을 즉시 적용합니다.  썰물과 흐름: Guardian Wa의 가치를 두 배로 늘립니다.",
       "playstyle": "딜형",
       "upvotes": 87
     },

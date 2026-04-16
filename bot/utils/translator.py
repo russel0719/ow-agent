@@ -16,13 +16,14 @@ import requests
 logger = logging.getLogger(__name__)
 
 _CACHE: dict[str, str] = {}
-# gemini-2.5-flash-lite 무료 티어 기준 (15 RPM)
-# _BATCH_DELAY 6초 → 실효 10 RPM
+# gemini-3.1-flash-lite-preview 무료 티어 기준 (15 RPM)
+# _BATCH_DELAY 6초 → 실효 10 RPM (함수 호출 경계 포함 전역 rate limit)
 _BATCH_SIZE = 50
 _BATCH_DELAY = 6.0
 _RETRY_COUNT = 5
 _RETRY_BASE = 60
-_MODEL = "gemini-2.5-flash-lite"
+_last_api_call: float = 0.0  # 마지막 API 호출 시각 (전역 rate limit 추적)
+_MODEL = "gemini-3.1-flash-lite-preview"
 _API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{_MODEL}:generateContent"
 
 _TRANSLATE_PROMPT = (
@@ -89,9 +90,7 @@ def _batch_process(texts: list[str], prompt: str, prefix: str) -> list[str]:
     action = "요약" if prefix else "번역"
     logger.info(f"  Gemini {action}: {total}건 ({n_batches}배치)")
 
-    for idx, batch_start in enumerate(range(0, total, _BATCH_SIZE)):
-        if idx > 0:
-            time.sleep(_BATCH_DELAY)
+    for batch_start in range(0, total, _BATCH_SIZE):
         batch = to_process[batch_start : batch_start + _BATCH_SIZE]
         processed = _call_gemini([t for _, t in batch], prompt)
         for (orig_idx, orig_text), result_text in zip(batch, processed):
@@ -104,6 +103,15 @@ def _batch_process(texts: list[str], prompt: str, prefix: str) -> list[str]:
 
 def _call_gemini(texts: list[str], prompt_template: str) -> list[str]:
     """Gemini REST API 배치 호출. 429 시 고정 대기 재시도. 최종 실패 시 원본 반환."""
+    global _last_api_call
+
+    # 전역 rate limit: 마지막 호출로부터 _BATCH_DELAY 미만이면 대기
+    elapsed = time.time() - _last_api_call
+    if elapsed < _BATCH_DELAY:
+        wait = _BATCH_DELAY - elapsed
+        logger.debug(f"  Rate limit 대기: {wait:.1f}초")
+        time.sleep(wait)
+
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise ValueError("GEMINI_API_KEY 환경변수가 설정되지 않았습니다.")
@@ -127,6 +135,7 @@ def _call_gemini(texts: list[str], prompt_template: str) -> list[str]:
 
     for attempt in range(_RETRY_COUNT):
         try:
+            _last_api_call = time.time()
             resp = requests.post(_API_URL, headers=headers, json=payload, timeout=30)
 
             if resp.status_code == 429:
