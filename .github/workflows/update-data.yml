@@ -1,0 +1,38 @@
+name: Update OW Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 매일 15:00 KST (06:00 UTC)
+  workflow_dispatch:        # 수동 트리거
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Generate data
+        run: uv run python scripts/generate_data.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          git diff --staged --quiet || git commit -m "chore: update OW data [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git push

@@ -1,184 +1,1426 @@
 {
   "builds": [
     {
-      "hero": "ana",
-      "name": "고힐 지속형",
-      "code": "ANA-HEAL-01",
-      "description": "힐 출력을 극대화해 팀의 생존력을 높이는 빌드. 나노강화제 쿨타임 감소에 집중합니다.",
+      "hero": "Ana",
+      "name": "[LEGEND 86% WR] - The Ultimate Sleeper Build",
+      "code": "ZRQ8M",
+      "description": "Former T500 ana main, I played with this build a lot. Currently Legend with a 44-10 record W/L. It's the Ultimate Heatlh and Sleep combo. Nobody can touch you. You'll finished with 600 health, movement ability and a very powerfull sleep that you can'...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 831
+    },
+    {
+      "hero": "Ana",
+      "name": "[S21] Hyper-Healer Anti-Dive Ana [Legend] 💤",
+      "code": "7N8VV",
+      "description": "💤 Ana Weapon Power(stat_weapon_power) Build Guide align:centercolor:5835d9S21 Update! - This build has been revised to fit with the new S21 changes, and it's the strongest Ana build from many that i've tested[/color][/align]    EDIT: Please leave fee...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 173
+    },
+    {
+      "hero": "Ana",
+      "name": "(UPDATED S19)💉💊Ana Nade Build [LEGEND RANK] 💉💊",
+      "code": "5JEYR",
+      "description": "IMPORTANT READ Since this website wont let me condense this dang build into 5 rounds, this guide is now slightly outdated! For the new version of this build click here!   https://stadiumbuilds.io/build/1475c74d-787c-483a-87d4-1efb136de338  Tired of b...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 166
+    },
+    {
+      "hero": "Ana",
+      "name": "She heals, she dpses, she nano's, she wins! (ALL-STAR)(UPDAT",
+      "code": "XFEPG",
+      "description": "❤️Ana isn't as easy to get free value out of as other supports like Juno, but that doesn't mean we cant combine some of her powers for free value and insane carry potential! This build aims to help you take control of your games and improve your agen...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 161
+    },
+    {
+      "hero": "Ana",
+      "name": "(S19 Rework) Nano-Nade!",
+      "code": "JC9M1",
+      "description": "This build revolves around nading (and thus nanoing) your tank/dps at key moments to win fights. NanoNade(item_8c3c7104-aa93-4e8f-aace-2aff5111c8ba) is incredibly strong when used at the right time. If you anti someone, AND nano a teammate at the sam...",
       "playstyle": "생존형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "source": "stadiumbuilds.io",
+      "upvotes": 129
     },
     {
-      "hero": "ana",
-      "name": "저격 딜형",
-      "code": "ANA-SNIPE-02",
-      "description": "생체 수류탄 강화와 피해량 증가로 딜을 극대화하는 빌드. 힐은 팀원에게 의존합니다.",
-      "playstyle": "딜형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "genji",
-      "name": "칼날 폭풍 특화",
-      "code": "GENJ-BLADE-01",
-      "description": "용검 쿨타임 감소와 피해 증폭에 집중한 울트 중심 빌드.",
-      "playstyle": "공격형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "genji",
-      "name": "반사 생존형",
-      "code": "GENJ-REFL-02",
-      "description": "반사 지속시간 및 이동속도 증가로 생존력을 높인 빌드.",
-      "playstyle": "생존형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "tracer",
-      "name": "점멸 공격형",
-      "code": "TRAC-BLINK-01",
-      "description": "점멸 횟수와 피해량을 늘려 빠른 킬을 노리는 빌드.",
-      "playstyle": "공격형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "reinhardt",
-      "name": "방패 강화형",
-      "code": "REIN-SHLD-01",
-      "description": "방패 체력과 지속시간을 늘려 팀의 생존을 극대화하는 빌드.",
-      "playstyle": "생존형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "reinhardt",
-      "name": "돌격 공격형",
-      "code": "REIN-CHRG-02",
-      "description": "돌격 쿨타임 감소와 근접 피해량 증가로 공격적으로 플레이하는 빌드.",
-      "playstyle": "공격형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "lucio",
-      "name": "속도 극대화형",
-      "code": "LUCI-SPEED-01",
-      "description": "속도 부스트를 극대화해 팀의 기동성을 높이는 빌드.",
+      "hero": "Ashe",
+      "name": "UPDATED S1 Ashe BURN BABY BURN - Ult Farm",
+      "code": "6PZFF",
+      "description": "Updated for S1!! Still doing some minor changes",
       "playstyle": "균형형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "source": "stadiumbuilds.io",
+      "upvotes": 492
     },
     {
-      "hero": "mercy",
-      "name": "딜 증폭 특화형",
-      "code": "MERC-AMP-01",
-      "description": "딜 증폭 지속시간을 늘려 아군 딜러를 최대한 지원하는 빌드.",
+      "hero": "Ashe",
+      "name": "Ashe Weapon Power-ADS build",
+      "code": "VP16Q",
+      "description": "Season 18 Update With Pharah's addition to Stadium, I'd recommend opting for some of the anti-air Weapon Power items with any excess Cash. Otherwise, the build itself is inherently anti-air already and should help with shutting her down! 💕 Overview T...",
       "playstyle": "균형형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "source": "stadiumbuilds.io",
+      "upvotes": 393
     },
     {
-      "hero": "dva",
-      "name": "매트릭스 강화형",
-      "code": "DVA-MTRX-01",
-      "description": "방어 매트릭스 지속시간을 늘려 팀의 투사체를 더 오래 막을 수 있는 빌드.",
+      "hero": "Ashe",
+      "name": "blazing bob bonanza (updated!!)",
+      "code": "3A5FX",
+      "description": "The objective of this build is the spam as many ults as possible using burning effects.  --- Baby bob should mainly be used to stall objectives, disrupt the enemy backline and flank to split up the enemy. (so... how bob is normally used) The powers y...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 295
+    },
+    {
+      "hero": "Ashe",
+      "name": "[S2 UPDATE] ASHE BURN REWORKED [LEGEND]",
+      "code": "E0Q83",
+      "description": "I loved Ashe's burn build last season, so I made this updated build so I can play her again this season! If you're against a full flyer team, check out the Anti-Flyer Build(https://stadiumbuilds.io/build/ec41591e-ad78-443b-b7b0-4ece713d9f14) Update N...",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 154
+    },
+    {
+      "hero": "Brigitte",
+      "name": "[S19] 100% INSPIRE UPTIME (ALWAYS MVP) 💛",
+      "code": "H49C5",
+      "description": "I'm a top 49 peak Brigitte Onetrick. And have been consistently getting GM every season for 10 seasons now with 80%+ Brigitte time played. Just haven't been playing enough to get those 50 wins for the top 500. This build is around getting as much mon...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 969
+    },
+    {
+      "hero": "Brigitte",
+      "name": "🎨[CREATIVE SPARK] Spam Rally (Peak Top 1) [UPDATED]",
+      "code": "GE5WH",
+      "description": "Hello, A lot of people love my Kiriko(hero_70a0ac5c-2a55-4fab-beeb-2f570886426f) Ability Power(stat_ability_power) Clone Conjuration(item_6c9f6be1-ab29-4f46-af24-34e4835f9af3) Kitsune build (link here(https://stadiumbuilds.io/build/neurosociety-kirik...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 587
+    },
+    {
+      "hero": "Brigitte",
+      "name": "🛡️ Brig is TANK [SEASON 20]",
+      "code": "9WPVG",
+      "description": "🛡️ Brig is TANK 🛡️ Have you ever wanted to live out your fantasies of playing Brigitte(hero_8d4e7c27-fb70-4694-9721-2ecf094ef84a) as a tank? Then this is the right build for you! If you've noticed any oversights or have any questions or suggestions f...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 140
+    },
+    {
+      "hero": "Brigitte",
+      "name": "[TOP 100] UNKILLABLE MONSTER BRIG BUILD",
+      "code": "1ECK6",
+      "description": "[TOP 100] UNKILLABLE MONSTER BRIG BUILD",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 108
+    },
+    {
+      "hero": "Brigitte",
+      "name": "Quick Play: [LEGEND] Hyper Carry ✨Detailed Guide To Win👑 Bes",
+      "code": "H7T7G",
+      "description": "!! IMPORTANT NOTES AT ROUND 3!! •DETAILED GUIDE ✓ •Hi i'm LEGEND support in stadium, i spent hours just expermenting builds to make the best one there is •This build basically just buffs every part of brig and good think to know that this build gets ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 101
+    },
+    {
+      "hero": "Cassidy",
+      "name": "Best Build for Average Players (Season 1)",
+      "code": "ZYYN4",
+      "description": "The Best Build for Average Players Honestly I saw that all the biggest-viewed cassidy loadouts are kinda buns so I made my own. This is the best and most popular Cassidy(hero_3dd63854-7558-4344-86e4-b506f807129b) build on this site! --- Updates Now f...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 715
+    },
+    {
+      "hero": "Cassidy",
+      "name": "The Strongest[LEGEND]",
+      "code": "V87TC",
+      "description": "UPDATED FOR S1 GAMEPLAY TBD",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 326
+    },
+    {
+      "hero": "Cassidy",
+      "name": "Unkillable Lifesteal/Dmg Cass Build [Season 20]",
+      "code": "X1VH7",
+      "description": "Updated build with the new powers buck wild is really op and hot potato makes flashbang feel like it did in overwatch 1",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 67
+    },
+    {
+      "hero": "Cassidy",
+      "name": "Speedy Gonzales - Concept of having fun in high rank solo Q ",
+      "code": "WEPC8",
+      "description": "Build is focused on utilizing  Move Speed(stat_move_speed) as both offensive and defensive tool. As well as source of great fun and joy. I reached Legend in S17 using this approach with great effect while solo queueing. It may seem like a meme, but a...",
+      "playstyle": "지원형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 50
+    },
+    {
+      "hero": "Cassidy",
+      "name": "115% AP Cassidy: The Best Counter for Flyers in Stadium (3x ",
+      "code": "S971K",
+      "description": "Video Guide & Ranked Gameplay: YouTube Video(https://youtube.com/embed/aDYZ0zImYLI \"large\")",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 37
+    },
+    {
+      "hero": "Doomfist",
+      "name": "AP/1 shot doom (stadium legend tank)",
+      "code": "XFE6F",
+      "description": "This build is pretty much just a 1 shot doom build, your empowered punch one shots any dps or supports",
       "playstyle": "생존형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "source": "stadiumbuilds.io",
+      "upvotes": 105
     },
     {
-      "hero": "dva",
-      "name": "부스터 다이브형",
-      "code": "DVA-DIVE-02",
-      "description": "부스터 쿨타임 감소와 피해량 증가로 공격적인 다이브를 즐기는 빌드.",
+      "hero": "Doomfist",
+      "name": "GODFIST V2 [Dps, Survivability, Effectiveness]",
+      "code": "JNKZ7",
+      "description": "GODFIST V2  (Updated for better early game and money constraints) General overview High ability power burst damage doom with the survivability and uptime to back it up Three key items in the build: --- - LumériCo Fusion Drive(item_3da81000-333c-460a-...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 43
+    },
+    {
+      "hero": "Doomfist",
+      "name": "Slamfist (Slam Punch AP AoE Focus)",
+      "code": "0WF3H",
+      "description": "This build focuses on Doom's AoE (area of effect) value of Seismic Slam(ability_d4b9880c-8e44-4446-b632-90faa1060fe7) to generate maximum cash and survivability, two issues I'm frequently noticing Doom players run into. Doom doesn't function well as ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 20
+    },
+    {
+      "hero": "Doomfist",
+      "name": "👑 The Ultimate Carry [Lobby Admin]",
+      "code": "W8WBM",
+      "description": "BUILD NOTES WILL BE UPDATED LATER!      The BEST Doomfist(hero_c3df15d1-619d-4d98-913b-4cc5b068d0c6) build, maximizing your Weapon Power(stat_weapon_power), Ability Power(stat_ability_power) and survivability!",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 16
+    },
+    {
+      "hero": "Doomfist",
+      "name": "RANK 1 DOOMFIST: Full Damage One-Shot Build",
+      "code": "P572C",
+      "description": "Video Guide & Ranked Gameplay: YouTube Video(https://youtube.com/embed/7fveA3wVxqo \"large\")",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 9
+    },
+    {
+      "hero": "D.Va",
+      "name": "🛡️ Matrix Bomber! (Defense Martix & Weapon Power)💥[S1]",
+      "code": "E7NA2",
+      "description": "Defense Matrix and Self-Destruct build to become unkillable! color:94a3b8From a D.Va main since 2016[/color] color:31da7d🍃 I need to rework this build a little now that Crusader Hydraulics is an Epic item. Some information might be outdated![/color] ...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 382
+    },
+    {
+      "hero": "D.Va",
+      "name": "🔥 Fiery Boosters (Ability Power & Ultimate Farm) 🔥[S2]",
+      "code": "PMS1B",
+      "description": "🔥 Fire Boosters & Ultimate Farming Build  color:94a3b8From a D.Va main since 2016[/color] color:31da7d🍃 I am currently reworking this build to make it up to date, so some of the round notes are outdated. I updated most items and powers for now, so yo...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 276
+    },
+    {
+      "hero": "D.Va",
+      "name": "🔥𝗜𝗡𝗦𝗔𝗡𝗘💥𝗢𝗩𝗘𝗥𝗣𝗢𝗪𝗘𝗥𝗘𝗗🛡️𝗗.𝗩𝗔 𝗖𝗔𝗥𝗥𝗬✏️𝗨𝗣𝗗𝗔𝗧𝗘𝗗 𝗩𝗘𝗥𝗦𝗜𝗢𝗡🛠️",
+      "code": "X0KD8",
+      "description": "✏️ ＵＰＤＡＴＥＤ   ＶＥＲＳＩＯＮ 🛠️ Have fun carrying the whole match every game yall. Make sure to read the round notes, they are short. UPDATED SHARE CODE: X0KD8 THEY FIXED THE BUG The ability scaling for Legendary Loadout now scales properly. Even the explosi...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 257
+    },
+    {
+      "hero": "D.Va",
+      "name": "🔥Lava Boosters💨 Guide",
+      "code": "NJY66",
+      "description": "Build Intro ---- This build builds around the lava left behind by D.Va when she uses boosters with the power Ignition Burst(item_52bbc55a-2003-424a-99a0-a53e4941ec58). You will find it most effectively at zoning out your enemies when they want to pus...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 137
+    },
+    {
+      "hero": "D.Va",
+      "name": "Survival Vampire D.Va",
+      "code": "MZVH7",
+      "description": "This build prioritizes survivability above all else, with some modest DPS to go with it. Think of it like a bruiser D.Va build; the idea is to stack damage reduction and general HP/armor/shields and combine them with sustain in order to stay in the f...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 94
+    },
+    {
+      "hero": "Freja",
+      "name": "[ALL-STARS] Freja: Hyper Carry",
+      "code": "FTTB0",
+      "description": "🏹 Build explanation: - This is a Hybrid Build that focuses on right-click one shots and staying alive. - We prioritize survivability in the early rounds to get as much cash as possible with things like Tourniquet(item_f457a404-70c1-4f1b-b6da-8fa2e90a...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 814
+    },
+    {
+      "hero": "Freja",
+      "name": "[LEGEND] Carry your team on Freja + Guide - Machine Gun and ",
+      "code": "YP3PR",
+      "description": "Updated for Season 1 Legend. Unless they hit it with big nerfs in Season 2 this playstyle should still be the best for consistently performing against most matchups unlike Bola, which can struggle a bit more against unfavorable heroes.     I've decid...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 180
+    },
+    {
+      "hero": "Freja",
+      "name": "AP Freja is BROKEN: The One-Shot Build Dominating Top 500 (3",
+      "code": "58SYP",
+      "description": "Video Guide & Gameplay: YouTube Video(https://youtube.com/embed/0BPG8zXqy4Q \"large\")",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 169
+    },
+    {
+      "hero": "Freja",
+      "name": "👑 The Ultimate Carry [Maximum Burst]",
+      "code": "ZJ925",
+      "description": "🪓 Freja: a High Burst Build - Kill Anyone In Seconds 🪓       ---     Yo! I'm Eelix, a Stadium enthusiast and a dedicated build creator who enjoys designing the most optimal builds for each hero. I have made many other builds for heroes like Soldier: ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 124
+    },
+    {
+      "hero": "Freja",
+      "name": "📜[ARCHIVED] Toxin Slowness",
+      "code": "3NS9B",
+      "description": "📜ARCHIVED: This build needs some work to be relevant for the new format of Creative Spark. I don't want to share too weak builds for competitive, so I will do either a v2 of Toxic Slowness in another build or I'll work on a new archetype of build for...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 85
+    },
+    {
+      "hero": "Genji",
+      "name": "Melee Iaido Genji [+Guide] (Bo5 Update)",
+      "code": "9YK5B",
+      "description": "Build Code: 9YK5B Hello everyone! Bo5 Update The change from Bo7 to Bo5 has benefited Genji, since reaching your power spike by round 2 gives you a significant advantage. Having said that please Blizzard give us Bo7 back. Now, Genji is an incredibly ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 283
+    },
+    {
+      "hero": "Genji",
+      "name": "Main Character Genjo Satoru - 71%WR LEGEND 2",
+      "code": "KAS01",
+      "description": "Be the Protagonist : The Genji Build That Obliterates Lobbies 1v5 ⚠️ This build is not beginner-friendly. I am assuming you are capable of consistently scoring at least 10,000 points per round. _I reached Legend 5 with a 67% winrate using this build ...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 143
+    },
+    {
+      "hero": "Genji",
+      "name": "[Undead Unluck] Immortal Andy - UPDATED",
+      "code": "GALHIR",
+      "description": "Updated!      Medium ~ High Effort/Skill aggression build that's very rewarding and consistent.  You become an absolute beast of a brawler.  So you want to be an Immortal Andy? Well, between the holy trinity  Hidden Blade(item_a820416d-85e5-4018-b20a...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 100
+    },
+    {
+      "hero": "Genji",
+      "name": "The Strongest",
+      "code": "CT4FA",
+      "description": "UPDATED FOR S20 Example Video YouTube Video(https://youtube.com/embed/Tt4B-QONwKI \"large\")",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 47
+    },
+    {
+      "hero": "Genji",
+      "name": "[SS + DB] Way of the Blade",
+      "code": "GJW95",
+      "description": "Way of the Blade Genji After getting All Star last season with melee Genji and then grinding it this season, the nerfs can be a little disappointing so I have been theory crafting a different build: Swift Strike and Dragon Blade focused that will kee...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 45
+    },
+    {
+      "hero": "Hazard",
+      "name": "Stadium legend AP/Lifesteal",
+      "code": "VZX56",
+      "description": "Braindead right click lifesteal build, good against almost every character",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 231
+    },
+    {
+      "hero": "Hazard",
+      "name": "Comprehensive Hazard Guide for Season 1 (21) - Top Builds an",
+      "code": "9GATG",
+      "description": "Welcome to the Season 1 beginner guide for Hazard(hero_811ed127-3243-4ff9-85cd-1e30882a2430)! This build will teach you the basics of his build, get you used to his playstyle in stadium, and give you experience with his matchups before you move on to...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 113
+    },
+    {
+      "hero": "Hazard",
+      "name": "110% AP Hazard Unkillable One-Shot Build (3x Legend and Top ",
+      "code": "S27YB",
+      "description": "This build transforms Hazard into an S-tier tank focused on generating high gold and achieving massive burst damage and sustain. The final build features 110% Ability Power (AP), 1,100+ Health, and 25% Ability Life Steal, making him effectively unkil...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 95
+    },
+    {
+      "hero": "Hazard",
+      "name": "The Immortal Maniac - [LEGEND HARD CARRY]",
+      "code": "DZH06",
+      "description": "(check round notes for the numbers and explanations of why this is optimal)  THE PLAYSTYLE-  spec Ability Power(stat_ability_power), Ability Lifesteal(stat_ability_lifesteal) and specific items for the best sustain  Hazard’s wall is the centerpiece o...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 58
+    },
+    {
+      "hero": "Hazard",
+      "name": "87% winrate, unkillable (Legend build)",
+      "code": "PVE8F",
+      "description": "Hazard: The Unstoppable Leap-Spam Build We're not building walls, we're building a body count. > Your job is to live in their backline and make the enemy support's screen permanently grey. This is how you do it. --- HOW TO PLAY: The Simple Art of Bul...",
       "playstyle": "공격형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "source": "stadiumbuilds.io",
+      "upvotes": 51
     },
     {
-      "hero": "zarya",
-      "name": "에너지 충전 특화형",
-      "code": "ZARY-ENRG-01",
-      "description": "방어막 효율과 에너지 최대치를 늘려 고에너지 상태를 오래 유지하는 빌드.",
-      "playstyle": "딜형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "hero": "Junker Queen",
+      "name": "Unkillable Hyper Carry",
+      "code": "XCYNZ",
+      "description": "✨ What is this build? Crazy burst damage, utility, and self-healing. You build a hybrid of Weapon Power(stat_weapon_power) and Ability Power(stat_ability_power), which makes you a damage powerhouse, and you have build options that cover all kinds of ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 1708
     },
     {
-      "hero": "sojourn",
-      "name": "레일건 충전형",
-      "code": "SOJO-RAIL-01",
-      "description": "레일건 게이지 충전 속도와 충전 사격 피해량을 늘린 스나이퍼형 빌드.",
-      "playstyle": "딜형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "hero": "Junker Queen",
+      "name": "👑 The Ultimate Carry [A Detailed Guide]",
+      "code": "S7CJN",
+      "description": "⚔️ The Ultimate Carry - One Of The Strongest Stadium Builds - High Sustain, High Damage ⚔️ --- Yo! I'm Eelix, a Stadium enthusiast and a dedicated build creator who enjoys designing the most optimal builds for each hero. I have made many other builds...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 90
     },
     {
-      "hero": "soldier76",
-      "name": "전술 조준경 특화",
-      "code": "S76-TACT-01",
-      "description": "전술 조준경 지속시간과 피해량을 늘린 안정적인 딜 빌드.",
-      "playstyle": "딜형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "kiriko",
-      "name": "부적 창 딜형",
-      "code": "KIRI-KUAI-01",
-      "description": "부적 창 발사 속도와 피해량을 늘려 딜과 힐을 동시에 수행하는 빌드.",
-      "playstyle": "딜형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "zenyatta",
-      "name": "불화 주옥 특화",
-      "code": "ZEN-DISC-01",
-      "description": "불화 주옥 피해 증폭량을 극대화해 팀의 딜을 크게 올려주는 빌드.",
-      "playstyle": "딜형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "roadhog",
-      "name": "갈고리 처치형",
-      "code": "RHOG-HOOK-01",
-      "description": "갈고리 쿨타임 감소와 샷건 피해량을 늘린 1킬 특화 빌드.",
+      "hero": "Junker Queen",
+      "name": "🎨[CREATIVE SPARK] Shouting Support Rampage (NEW UPDATE)",
+      "code": "2ZGTY",
+      "description": "Hello, I want to share a Weapon Power(stat_weapon_power) Commanding Shout and Rampage Junker Queen(hero_4794d288-27d9-49e0-a1dd-ffe0f4de3ab1) I have fun with it! This build will be updated regularly. ------- ❓WHY DID I CREATE THIS WEAPON POWER(stat_w...",
       "playstyle": "공격형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "source": "stadiumbuilds.io",
+      "upvotes": 84
     },
     {
-      "hero": "reaper",
-      "name": "사형 집행 특화",
-      "code": "REAP-DETH-01",
-      "description": "근접 피해량과 자힐량을 늘려 탱커 파괴에 특화된 빌드.",
-      "playstyle": "공격형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
-    },
-    {
-      "hero": "pharah",
-      "name": "로켓 폭격형",
-      "code": "PHAR-RCKT-01",
-      "description": "로켓 피해량과 발사 속도를 늘려 공중 폭격을 극대화하는 빌드.",
+      "hero": "Junker Queen",
+      "name": "[CODE] Jumper Queen🩸🪓 (High mobility/impact AP JQ Build)",
+      "code": "1PSEY",
+      "description": "Leave a like if uf enjoy my BEAUTIFUL artwork ;) Jumper Queen 🩸🪓 (Code: 1PSEY) Objective: 🎯 This build focuses on buffing Junker Queen's Carnage and utilizing the  Soaring Stone(item_143ba157-b3bc-4071-9689-4be3114b72a1) power to catch opponents off ...",
       "playstyle": "딜형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "source": "stadiumbuilds.io",
+      "upvotes": 43
     },
     {
-      "hero": "winston",
-      "name": "점프 팩 다이브형",
-      "code": "WINS-JUMP-01",
-      "description": "점프 팩 쿨타임과 피해량을 늘려 공격적인 다이브에 특화된 빌드.",
+      "hero": "Junker Queen",
+      "name": "AP RAID BOSS QUEEN",
+      "code": "6TF48",
+      "description": "the only queen build you need.  versus Kiriko(hero_70a0ac5c-2a55-4fab-beeb-2f570886426f) or Zarya(hero_be6cc516-0b7a-4515-8472-f489f08993b0), try to bait Protection Suzu(ability_e0d6579f-d70a-4a5e-a58d-aee40d00c568) and Particle Barrier(ability_30982...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 32
+    },
+    {
+      "hero": "Junkrat",
+      "name": "Plenty of bombs to go around! [Sniper Flamethrower] Junkrat ",
+      "code": "Z54ST",
+      "description": "Plenty of bombs to go around! CODE Z54ST Updated 7/8/2025 The NUMBER ONE Junkrat build. Stand back- Shoot your shots. You are a sniper! Do not go running face first into enemy teams! Very good to run into Orisa, Rein, and anyone else who stands a cha...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 395
+    },
+    {
+      "hero": "Junkrat",
+      "name": "SPAM. (Blizzard will be nerfing junk for this)",
+      "code": "3387F",
+      "description": "I'll write this in more detail for now, but a quick explanation for version 1. I was All-star in supp and dps with barely any effort, close in tank, so I probably know what I'm doing (unless i feed and throw yk as usual). I made the build pretty chea...",
       "playstyle": "공격형",
-      "source": "커뮤니티 큐레이션",
-      "upvotes": 0
+      "source": "stadiumbuilds.io",
+      "upvotes": 295
+    },
+    {
+      "hero": "Junkrat",
+      "name": "Junkrat: Direct Hit one-shots (UPDATED)",
+      "code": "RNG1V",
+      "description": "\"Please understand this character is not meta in Stadium. You won't carry! But you can still have some fun! :)\" 💲 Selling Points of the build: 💲 - This is a build for people who want to deal DAMAGE! - You can one-shot squishies and two-shot heroes wh...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 190
+    },
+    {
+      "hero": "Junkrat",
+      "name": "spamRATT (NO SKILL REQUIRED)",
+      "code": "VEJ9Z",
+      "description": "this build is 100% viable in-game comp and QP! made to rain fiery bombs on your enemy's this build is not made for aiming for those who can't or just don't want to. just spam, kill, and win!  don't forget you are still Junkrat and a squishy (for the ...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 96
+    },
+    {
+      "hero": "Junkrat",
+      "name": "Just Hold Left Click!",
+      "code": "99GEF",
+      "description": "Introduction 🐁 This is a beginner-friendly, foolproof, all-purpose Junkrat build with plenty of variations. The main point is to spam frag grenades as much as possible and provide consistent, annoying damage. The base build is cheap, requiring only 5...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 65
+    },
+    {
+      "hero": "Juno",
+      "name": "[LEGEND] Juno DPS (Blink Boosts) [ARCHIVED]",
+      "code": "02YXM",
+      "description": "⚠️ATTENTION!!! THE BUILD HAS BEEN NERFED!!! [22/07/2025]⚠️ \"👋Hi yall! ReyMercury here! I've decided after the nerfs to Blink Boosts(item_9bac3119-781b-4dc0-94fa-9c293c02dc90), Ironclad Exhaust Ports(item_2d085fa5-ace6-4fab-9323-b7a06268bcd0) and Thre...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 1329
+    },
+    {
+      "hero": "Juno",
+      "name": "Juno Torpedo Power UPDATED",
+      "code": "N7CGY",
+      "description": "Juno Torpedo Power UPDATED",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 535
+    },
+    {
+      "hero": "Juno",
+      "name": "S1 2.0 BROKEN JUNO BEESTING BUILD! [CHALLENGER BUILD]",
+      "code": "T5QKR",
+      "description": "This is the UPDATED version of the original color:ff6babBeesting Build(hhttps://stadiumbuilds.io/build/104f3654-edb2-452a-a35c-a3b2ca6fa190)[/color]. The more I play with this build the more I learn its strengths and weaknesses and getting all of the...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 317
+    },
+    {
+      "hero": "Juno",
+      "name": "🎨[CREATIVE SPARK] Torpedoes & Ring (S20)",
+      "code": "5KA9K",
+      "description": "Hello, I updated this Juno to make it stronger. I hope you will like it. This build will be updated regularly. ❓WHY DID I CREATE THIS ABILITY POWER(stat_ability_power) JUNO(hero_035c63b7-084c-4abd-9de5-c9a00e9b6a18) TORPEDOES AND RING BUILD WITHOUT D...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 311
+    },
+    {
+      "hero": "Juno",
+      "name": "(READ DESC.) JUNO BEESTING BUILD! [CHALLENGER BUILD]",
+      "code": "Q2KBD",
+      "description": "UPDATED, BETTER VESION HERE PLS GO LOOK1 https://stadiumbuilds.io/build/6776f1f2-2daf-4aaf-bc6f-d1c69d1d3da0 This build focuses largely on both having a balance between Weapon Power(stat_weapon_power) and Ability Power(stat_ability_power) whilst also...",
+      "playstyle": "지원형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 294
+    },
+    {
+      "hero": "Kiriko",
+      "name": "🎨[CREATIVE SPARK] AP% Clone Kitsune",
+      "code": "SXXQG",
+      "description": "Hello, I want to share an original Ability Power(stat_ability_power) build for Kiriko(hero_70a0ac5c-2a55-4fab-beeb-2f570886426f). This build will be updated regularly. ------- ❓WHY DID I CREATE THIS ABILITY POWER(stat_ability_power) KIRIKO(hero_70a0a...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 1484
+    },
+    {
+      "hero": "Kiriko",
+      "name": "[Archived] Flanking TP Clone",
+      "code": "C60J8",
+      "description": "Use the power of Clone Conjuration(item_6c9f6be1-ab29-4f46-af24-34e4835f9af3) paired with  Fleet Foot(item_1d58371c-71a9-44c2-8d5a-0663467599e9) in order to create clones in the enemy backline. This build is focused on using Weapon Power(stat_weapon_...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 666
+    },
+    {
+      "hero": "Kiriko",
+      "name": "🦊Busted heal🦊",
+      "code": "6TG55",
+      "description": "You want to outheal your Mercy(hero_0e213bfc-3ca9-49c6-9036-e7f344b752da) so she can dps boost your team ?  This build is perfect for you ! Now works with Healbot style !* Take the most out of kiri's power and be the perfect healer to rivalize with m...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 209
+    },
+    {
+      "hero": "Kiriko",
+      "name": "[S19] COMP LEGEN-DARY Kiriko! Best Clone Build 🥷🥷💨",
+      "code": "M4XHV",
+      "description": "In Season 19, Stadium underwent some changes: not only were new heroes and gadgets introduced, but the number of rounds played during a match was also reduced.  ( That’s why I was forced to create a Quick Play Stadium build designed for competitive p...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 171
+    },
+    {
+      "hero": "Kiriko",
+      "name": "🦊 ✦ Yokai’s Picks ✦ Empowering Support",
+      "code": "P8BTP",
+      "description": "⚙️ How does that build work ? Maximizing your Healing ouput - Increasing stats like Weapon Power(stat_weapon_power) and Attack Speed(stat_attack_speed) allow us to greatly increase the effectiveness of Healing Ofudas. - Using items such as Advanced N...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 118
+    },
+    {
+      "hero": "Lúcio",
+      "name": "[LEGEND] Ultimate Aura Farming! (S19 Nerfs?!)",
+      "code": "MQS4A",
+      "description": "Updated S19   More nerfs as usual... Survivability-focused with strong cooldowns and utility—handles burst, but watch for CC and anti-heal. For Lucios who want to climb by enabling their team with smart positioning and utility—not for solo flankers. ...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 1021
+    },
+    {
+      "hero": "Lúcio",
+      "name": "[LEGEND] UNKILLABLE DEMON FROG AP BUILD",
+      "code": "PEEJ6",
+      "description": "WELCOME TO A GUIDE ON THROWING GAMES WHILE WINNING!!! --- General tips and Playstyle:  - This build does not require a ton of mechanical skill and only demands that the player have a good amount of game sense and awareness  - Play passively and look ...",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 98
+    },
+    {
+      "hero": "Lúcio",
+      "name": "[70% WR] EU S5 S6 Rank 1 Lucio build",
+      "code": "7T0KA",
+      "description": "/!\\ How I choose items depending on the situation & how much cash I have is very easy to understand. I explain it in the \"How to adapt\" section. Credit to ThatOneNPC, this build is a variant of his Bog Build. In season 5, I ended rank one support (so...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 66
+    },
+    {
+      "hero": "Lúcio",
+      "name": "[LEGEND] 60-70% wr build",
+      "code": "SG5KA",
+      "description": "Heal and constant beats build. Strong against almost all comps in high elos. Managed to hit legend SOLO from start to finish.",
+      "playstyle": "지원형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 45
+    },
+    {
+      "hero": "Lúcio",
+      "name": "30% Ultimate Charge in 1 Second (3x Legend & Top 500)",
+      "code": "339DP",
+      "description": "Video Guide & Ranked Gameplay: YouTube Video(https://youtube.com/embed/66vV4MEA7lI \"large\")",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 26
+    },
+    {
+      "hero": "Mei",
+      "name": "CEO of Frosty Cockroaches ❄️🪳",
+      "code": "9RSSP",
+      "description": "ellow    --- i wanted to share my Mei(hero_36fd67f0-19df-4c50-add9-709cfb147cb0) build i created. this build is a high survival one with some Weapon Power(stat_weapon_power). this build is not about to make the most damage, it's about to annoy your e...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 270
+    },
+    {
+      "hero": "Mei",
+      "name": "S17 Flank Mei Build. Best Guide, No BS. [NEW META] [100% WR]",
+      "code": "CM97Q",
+      "description": "Last update (June 28): Posted build. For my non-readers Don't worry I'm the same way. Ain't nobody got time to read all this! I'm just trying to find a good build to follow so I can play with my friends. Well I got you. Anything below this just ignor...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 207
+    },
+    {
+      "hero": "Mei",
+      "name": "[ALL-STAR]Weapon Absorption MEI / last update 25.11.01",
+      "code": "BMY0E",
+      "description": "Thank you. Thanks to your like, the post you are currently viewing has been moved to the top. My build wasn't significantly affected by the patch, so there were no changes. Slowball(item_ff4697d2-df4f-45bb-b9cf-d171716b769a) Power increases. Movement...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 181
+    },
+    {
+      "hero": "Mei",
+      "name": "Become the Snowball",
+      "code": "8N2BW",
+      "description": "Building towards essentially becoming a mini-tank by Round 5 thanks to that extra health, invulnerability, healing reduction while invincible, and movable AOE damage.  Roll around and cause mayhem October 5th 2025 Update: Added build code (8N2BW)",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 138
+    },
+    {
+      "hero": "Mei",
+      "name": "Solo Queue Ecoterrorist",
+      "code": "ECYWB",
+      "description": "Overall Strategy: I do a lot of yapping in this build, so if you don't want to read it all, the gist is: - Maximize weapon power, as it creates a positive cycle of earning match cash - Deprioritize survivability, as Mei is already bulky enough - Disr...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 94
+    },
+    {
+      "hero": "Mercy",
+      "name": "✨🩷Unkillable Flying Rat🩷✨ S20 UPDATE!",
+      "code": "93RNG",
+      "description": "Thank you all so much for making my build the 1 \"most liked\" Mercy build on StadiumBuilds.io! 🩷🪽 ! ⚠️ IMPORTANT – PLEASE READ ⚠️   last updated 8/30/25 OH SO NOW WE'RE ALL AP MERCY USERS, HUH? INTERESTING..... I'm jk, but in all seriousness this buil...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 927
+    },
+    {
+      "hero": "Mercy",
+      "name": "✨ Untouchable Archangel ✨ (Insane AP Heals) [S2 FLASH HEAL U",
+      "code": "EF7WN",
+      "description": "✨ Fly, Heal, Boost, Resurrect—but especially, never die ✨ color:94a3b8From a Mercy main since 2016, Master Support & Stadium Legend Support[/color] <br> <br> color:31da7d🍃 Update: I am currently reworking this build! Some round notes are a bit outdat...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 880
+    },
+    {
+      "hero": "Mercy",
+      "name": "⚡ QP | Unkillable Bouncy Superhealer [S1]",
+      "code": "RHSFT",
+      "description": "🪽 Fly, Heal, Boost, Resurrect—but especially, ✨ never die ✨ ✨&nbsp; From a Mercy main since 2016 This build is Mercy's way to burst heal, making her healing output insanely high, while having crazy Movement(stat_move_speed)<br> Starting Round 2, this...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 217
+    },
+    {
+      "hero": "Mercy",
+      "name": "💞 Eternal Beam · Never Stop Healing! (WP/AS) [S1]",
+      "code": "3P594",
+      "description": "💞 Heal endlessly, survive gracefully ✨&nbsp; From a Mercy main since 2016 This build consists of rising your Weapon Power(stat_weapon_power) and Attack Speed(stat_attack_speed) to maximize your healing output. <br> Since we use Threads of Fate(item_c...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 141
+    },
+    {
+      "hero": "Mercy",
+      "name": "👑 Superhealer Battler 👑 [S20 UPDATE]",
+      "code": "6QMR3",
+      "description": "👑 Superhealer Battler color:94a3b8From a Mercy main since 2016, Master Support & Stadium Legend Support[/color] color:31da7d🍃 Rework coming in the next few days with the new S1 changes! I will also edit some parts of the build fully. Please note that...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 120
+    },
+    {
+      "hero": "Moira",
+      "name": "🐇 [LEGEND] Moira Maxxed (Nonstop Healing) Updated 2/12- Seas",
+      "code": "ZQQQR",
+      "description": "align:centercolor:C729F2Humanity is shackled.[/color]    color:F2E530I will find the key.[/color]    [/align] align:centerWelcome to my Moira build! This build was designed to focus on putting out the color:F2E530maximum[/color] amount of healing whi...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 1284
+    },
+    {
+      "hero": "Moira",
+      "name": "💨Bong Cloud Moira (Max Heals)💨",
+      "code": "H00X5",
+      "description": "How it works The goal of this build is to buy a mix of ability power and attack speed. By having  Optimal Overflow(item_9d85ca48-b27a-435a-8ef9-247440e0f97d) the faster you dump your Biotic energy , the more Biotic orbs you spawn. And by stacking Abi...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 370
+    },
+    {
+      "hero": "Moira",
+      "name": "[LEGEND] Hyper Carry ✨Guide To Win👑 Best Allrounder Build (U",
+      "code": "VHN67",
+      "description": "!! IMPORTANT NOTES AT ROUND 5 !! •DETAILED GUIDE✓ •This Is the build that took me hours PERFECTING & got me to LEGEND with little to no effort (if you have trouble choosing a build to pick, this is the build) •Your goal with this build Is to get as m...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 219
+    },
+    {
+      "hero": "Moira",
+      "name": "Utility Moira™: THE ULTIMATE DEBUFFER",
+      "code": "7N32D",
+      "description": "READ ME S17 UPDATE This build has been updated for S17. The build shown here is the most common build I run in Pro/All-star games. Your items will vary based on your unique situation. Welcome to Utility Moira™ Bootcamp! This guide contains the ultima...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 177
+    },
+    {
+      "hero": "Moira",
+      "name": "[S19 buff] Legendary Moira: HOLLOW PURPLE (AP+AS Damage focu",
+      "code": "GZ7GW",
+      "description": "S19 Update: This core of this build was buffed significantly with Optimal Overflow(item_9d85ca48-b27a-435a-8ef9-247440e0f97d) orbs no longer bouncing off barriers (now all orbs act the same as expected; they don't damage through barriers, but travel ...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 141
+    },
+    {
+      "hero": "Orisa",
+      "name": "Best Orisa Build - Free All Star - Inferno Tank",
+      "code": "DZKP8",
+      "description": "I updated the forge code. First 2 rounds are for cash farming. You turn on Round 3 Pretty Hard adnd even Harder Round 5, if game goes to Round 7, you just become near unkillable unless you make major mistakes. Good teams will avoid you and run past y...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 220
+    },
+    {
+      "hero": "Orisa",
+      "name": "Spin 2 Win - AP Orisa Build",
+      "code": "XM463",
+      "description": "🛠️ Build Overview - This build uses Orisa's Spynstem Update(item_9fbbe756-5dd6-44f6-abd8-a8355f0be2b5) Power to generate Ultimate Charge to farm Terra-Surge extremely fast. - It then aims to further empower and enable Terra-Surge to be more lethal an...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 146
+    },
+    {
+      "hero": "Orisa",
+      "name": "⭐(ALL STAR)⭐99.99%🐴WR 🗣️ORISA CARRY 🐎",
+      "code": "008C9",
+      "description": "this is officially my 2nd build, first was my immortal mei build, time to go with immortal orisa build hm :3      what does this build focus on?   im gladd you asked!!!!!     12k damage each round - 3 onwards   constant damage reduction 75%+ ↑      y...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 118
+    },
+    {
+      "hero": "Orisa",
+      "name": "Unkillable Demon Lord Orisa - Tanky",
+      "code": "0923E",
+      "description": "This build allows you to control the objective very well. It gives healers a bit more freedom to do damage. It does good damage with reduced overheating. In Round 3 you can begin to see the effectiveness of the build. Every Round after that you will ...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 76
+    },
+    {
+      "hero": "Orisa",
+      "name": "98% WR | 40 games | LEGEND Orisa hypercarry",
+      "code": "2TKNB",
+      "description": "Out of the two games lost, one was a 4v5, and the other one I legitimately lost (was still 30k ahead of the next player though). Overall, 33 elims and 21k damage, and 5k heals / 10 minutes. This version of Orisa might be the best character in stadium...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 68
+    },
+    {
+      "hero": "Pharah",
+      "name": "Homey rockets go boom faster",
+      "code": "59JQ2",
+      "description": "Hi I am VeniVidiVici a Pharah OTP.  Season 19 Updates: With the addition of Sojourn(hero_694099cd-b38a-4708-851b-070335c27a63) and her railgun the skies are much more dangerous. Additionally the ability for you to be stationary with Blitz Barrage(ite...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 327
+    },
+    {
+      "hero": "Pharah",
+      "name": "Consistent Carry - A Very Detailed Guide [Legend]",
+      "code": "3TSGQ",
+      "description": "For now, just look at the order of items in the bo7 format, since I am hoping we go back to bo5 so I don't have to change everything :D --- Hi! I'm Laude! I'm around high masters level, and have hit legend every season of stadium. I've been grinding ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 204
+    },
+    {
+      "hero": "Pharah",
+      "name": "Homing Missile Storm - QP",
+      "code": "SV87X",
+      "description": "Homing Missile Storm - Quickplay Build centered around Launch Vector(item_7d4ef8eb-a008-4f63-802d-a67bd9d6989e). Fire a concussion missile into a crowd for large damage output that is very satisfying.   Or use it to nail down a low health target. Rem...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 82
+    },
+    {
+      "hero": "Pharah",
+      "name": "How to f1st(2)",
+      "code": "XB218",
+      "description": "How to f1st(2)",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 74
+    },
+    {
+      "hero": "Pharah",
+      "name": "Lock on Queen WP AP Build",
+      "code": "3W1KW",
+      "description": "Small update! Instead of taking Evasive Maneuvers(item_3725ca88-f12a-4a00-8878-4fa39a18a394) round 2, I would recommend Launch Vector(item_7d4ef8eb-a008-4f63-802d-a67bd9d6989e). This makes use of the excess ability power you have until round 4 way be...",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 32
+    },
+    {
+      "hero": "Ramattra",
+      "name": "👊THE INESCAPABLE NEMESIS — RAMATTRA Raid Boss (Stadium legen",
+      "code": "JZXMB",
+      "description": "👊THE INESCAPABLE NEMESIS — RAMATTRA Raid Boss (Stadium legend)",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 26
+    },
+    {
+      "hero": "Ramattra",
+      "name": "Lebron Ram - Insane Carry [UNSTOPPABLE]",
+      "code": "3DTYN",
+      "description": "Dunk on the ops with lebron ram, double-doubles every game. Throw tons of vortexes into the back line for huge damage, or jump on them with Swirling Ward(item_e7976a54-fa01-47f1-b3d3-6d90405698eb)      General rotation is, Shield + poke -> vortex bef...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 5
+    },
+    {
+      "hero": "Ramattra",
+      "name": "Staff Build WP/ATKSPD Hybrid",
+      "code": "QQ393",
+      "description": "This Build for Ramattra(hero_cb8fc5b9-5edb-44d7-93fa-fc4692817075) will absolutely shred people at range mid or even close range as Void Surge(item_78c12e04-789d-4b94-86fb-c35064ed8a33) basically turns his staff into a shotgun ever 10 ammo he fires a...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 4
+    },
+    {
+      "hero": "Ramattra",
+      "name": "Ramattra - Cash & Ult Farm Pummel",
+      "code": "RBAZV",
+      "description": "Preemptively, Conversion Protocol is bugged to actually be 100%. Fantastic truly.  This is just a day 1 build, I expect alot to change, and to assume this will be meta even a week from now is very presumptuous.    Ram has such a comically large amoun...",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 3
+    },
+    {
+      "hero": "Reaper",
+      "name": "🎨[CREATIVE SPARK] Support Self-Sustain (S18 UPDATE)",
+      "code": "XR8B2",
+      "description": "Hello, I want to share this healing Reaper(hero_0449752f-1c58-487b-b9a0-ca727d784457) Weapon Power(stat_weapon_power) build. This build will be updated regularly. ------- ❓WHY DID I CREATE THIS HEALING WEAPON POWER(stat_weapon_power) Reaper(hero_0449...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 208
+    },
+    {
+      "hero": "Reaper",
+      "name": "[S18] Kitty's Infinite dancing Blossom.",
+      "code": "16XHY",
+      "description": "🎭 Kitty's Infinite dancing Blossom (🏟️ Stadium — Rounds 1–7) Updated for Season 18. * Just reached All-Star with this build! Jeej ⚙️ Patch Notes — Season 18. Removed the shield and Armor. Since in Season 18 (Ability) Life steal is king. ⚙️ Patch Note...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 193
+    },
+    {
+      "hero": "Reaper",
+      "name": "Insane attack speed reaper. LEGEND",
+      "code": "REAP101",
+      "description": "This build is based on being aggressive and using your attack speed to push back the enemies, put pressure on the tank and their backline. If played properly, you can carry the entire team. By round 3 you’re already overpowered and I guarantee the en...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 76
+    },
+    {
+      "hero": "Reaper",
+      "name": "[LEGEND] Do It All Build (S19 UPDATE)",
+      "code": "A5CWR",
+      "description": "This build was created as a slight improvement for the new S19 patch that nerfed Reaper. This build was designed to counter a wide range of opponents, including tanks, supports, and DPS. You can stay behind with your team and help your tank, or flank...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 33
+    },
+    {
+      "hero": "Reaper",
+      "name": "Hyper Carry Reaper Build [LEGEND]",
+      "code": "08A94",
+      "description": "You have only one job. Get as many kills as possible",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 27
+    },
+    {
+      "hero": "Reinhardt",
+      "name": "🎨[CREATIVE SPARK] Support Shatter Farm (S18)",
+      "code": "MY5FJ",
+      "description": "Hello, I want to share an original Reinhardt(hero_a3b6ca2c-6cbd-43dc-bb78-a728e42fba49) build that turns him into a support! This build will be updated regularly. ------ ❓WHY DID I CREATE THIS REINHARDT(hero_a3b6ca2c-6cbd-43dc-bb78-a728e42fba49) SUPP...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 325
+    },
+    {
+      "hero": "Reinhardt",
+      "name": "[HYPER-AGGRESSIVE] The Lumberjack 🪓",
+      "code": "DS6AX",
+      "description": "Hello all! I've noticed a rise in popularity of more complex  Reinhardt(hero_a3b6ca2c-6cbd-43dc-bb78-a728e42fba49) builds, so I wanted to bring it back to basics with this build aptly named \"The Lumberjack.\" This build earned this name due to how eas...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 288
+    },
+    {
+      "hero": "Reinhardt",
+      "name": "[LEGEND] Hyper Carry ✨Guide To Win👑 Unkillable One-Shot Buil",
+      "code": "HE224",
+      "description": "•DETAILED GUIDE✓ •Hi, Well as you might know with most of the tanky builds, the biggest problem in late game is that you just can't kill anyone, but It's easily solvable  •With this build you can carry any team & you dont have rely on supports to hea...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 173
+    },
+    {
+      "hero": "Reinhardt",
+      "name": "[ALL-STAR] Hyper Carry ✨Guide To Win👑 Unkillable One-Shot Bu",
+      "code": "HE224",
+      "description": "•DETAILED GUIDE✓ •Hi, Well as you might know with most of the tanky builds, the biggest problem in late game is that you just can't kill anyone, but It's easily solvable  •With this build you can carry any team & you dont have rely on supports to hea...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 135
+    },
+    {
+      "hero": "Reinhardt",
+      "name": "[S19 UPD] NANOMACHINES, SON! (Immortal Rein)",
+      "code": "5XVCA",
+      "description": "Legendary Build is back on track! Updated for season 19 with some changes to his items.    UPD 31.10.2025 - New optional items added to round 4-7",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 125
+    },
+    {
+      "hero": "Sigma",
+      "name": "Self-Sustain Carry Sigma (Post Buff Updated!)",
+      "code": "V4HCE",
+      "description": "Featured on the official Overwatch Twitter account! https://x.com/PlayOverwatch/status/1945543961604432228 This build has been updated for the Sigma buffs added on 8/7/25. Not much of the actual build has changed, but certain areas of the build are s...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 387
+    },
+    {
+      "hero": "Sigma",
+      "name": "👑 The Ultimate Carry [Unbreakable Singularity]",
+      "code": "AVX6B",
+      "description": "⚖️ Sigma: a High Damage, High Sustain Build - Solo Carry Your Team With Ease ⚖️         ---   🎳 Have a hard time being the tank your team needs? Do you often feel like you need to solo carry your team? Dont worry. I'm sharing, in my opinion, the stro...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 140
+    },
+    {
+      "hero": "Sigma",
+      "name": "Spam, Heal, Protect and Hard Carry",
+      "code": "F2EMJ",
+      "description": "I have made changes to the build to reflect the unfortunate nerfs sig got. This may be changed, but this is the best I could figure out at the moment. I do feel like this is overall weaker and you will feel the noticeable difference in the early roun...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 139
+    },
+    {
+      "hero": "Sigma",
+      "name": "Why the Rank 1 Sigma Build is Dominating Stadium (In-Depth G",
+      "code": "QC7PQ",
+      "description": "Video Guide & Gameplay: YouTube Video(https://youtube.com/embed/WjxT1FaN3Ps \"large\")",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 53
+    },
+    {
+      "hero": "Sigma",
+      "name": "The Flying Dutchman (S20 HAZARD & DF KILLER with conservativ",
+      "code": "SPX0Z",
+      "description": "All I've heard is how big and bad Hazard(hero_811ed127-3243-4ff9-85cd-1e30882a2430) is in Stadium this season and while I took a break over the best of 5 times, now I'm back for best of 7, I found I've not had an issue with him when I've played tank....",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 35
+    },
+    {
+      "hero": "Sojourn",
+      "name": "👑 The Ultimate Carry [Railgun Nukes]",
+      "code": "1VQW5",
+      "description": "💥 Sojourn: a Solo Carry Build - High Weapon Power - Railgun Oneshots 💥    The Sojourn build that got featured on Overwatch's social media accounts!  https://x.com/PlayOverwatch/status/1985799214832480485      ---      🌌 Feeling like your Railgun(abil...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 401
+    },
+    {
+      "hero": "Sojourn",
+      "name": "[QP & COMP] Sojourn carry build | 🌟LEGEND PLAYER BUILD",
+      "code": "KSS3Z",
+      "description": "Thats the best Sojourn(hero_694099cd-b38a-4708-851b-070335c27a63) build out there!       Make sure to read notes on every round!!! This build is focused on Weapon Power(stat_weapon_power) !  - Strong 1st round! 🥇 - Easy money farm! 💲 - Can carry game...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 62
+    },
+    {
+      "hero": "Sojourn",
+      "name": "Rail Your Enemies - WP - 59% Sojourn Winrate",
+      "code": "E9A14",
+      "description": "This is for experienced sojourn players, this build is essentially strictly WP, so you will have to rely on your positioning, slide usage, and most importantly your aim. If you don't have at least 2 of those things down pat I do not suggest using thi...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 27
+    },
+    {
+      "hero": "Sojourn",
+      "name": "The Enemy Will Love Getting Railed",
+      "code": "X6QYG",
+      "description": "The Enemy Will Love Getting Railed Work in progresss Glass cannon, heavy snowball Weapon Power(stat_weapon_power) build. Outside of the ult, use Conductor Chase(item_2ac82d1b-560e-4918-aec1-911efe9b765d) to easily charge railgun off the tank, then de...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 9
+    },
+    {
+      "hero": "Sojourn",
+      "name": "AP SHOCK COLLAR",
+      "code": "BC8DZ",
+      "description": "Ability Power(stat_ability_power) Disruptor Shot(ability_41bcc951-951b-42ac-a6c3-7552524f8232) --- ZAPP YOUR ENEMIES WITH SHOCK COLLAR ! --- I recommend this build to players who are bad at aiming.      Just spam E to show them where they belong.",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 8
+    },
+    {
+      "hero": "Soldier: 76",
+      "name": "Legend Carry Rocket Soldier",
+      "code": "ARDCK",
+      "description": "I'm currently in Legend this patch using this build and strategy. See my Hybrid Dmg Build here: https://stadiumbuilds.io/build/4f304e6d-7ad4-45af-b437-67cd2d941ff4 See my Jumping Bean Build here: https://stadiumbuilds.io/build/b3939aa5-03a5-41f6-8c19...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 451
+    },
+    {
+      "hero": "Soldier: 76",
+      "name": "Aimbot.exe",
+      "code": "VX71P",
+      "description": "Updated for Season 18 Introduction This is a pretty standard aimbot Soldier build with tons of late-game flexibility. It relies on using Helix Rockets on cooldown to maximize the use of Super Visor(item_b3db0ab0-26b4-4d99-893d-175f6726c9e9), so most ...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 356
+    },
+    {
+      "hero": "Soldier: 76",
+      "name": "👑 The Ultimate Carry [Delete Everyone]",
+      "code": "9M583",
+      "description": "⚙️ Soldier 76: a Solo Carry Build - Weapon Power / Attack Speed - Instakill Everyone ⚙️    ---     Yo! I'm Eelix, a Stadium enthusiast and a dedicated build creator who enjoys designing the most optimal builds for each hero. I have made many other bu...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 303
+    },
+    {
+      "hero": "Soldier: 76",
+      "name": "[All-star 1, NO AIM 75%WR] 3-bullet rocket hybrid",
+      "code": "Z1V92",
+      "description": "Main item path:  Three-tap Tommygun(item_39c5d2a4-1db0-444f-86d9-2a1e9a331429), Mark of the Kitsune(item_09a53e39-25aa-4f66-ba51-bedbc543a1eb), Phantasmic Flux(item_5e644a79-cf6e-4196-8d0a-232f75004643) - buy this the moment you need more survivabili...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 279
+    },
+    {
+      "hero": "Soldier: 76",
+      "name": "Chaingun Soldier for Filthy Casuals",
+      "code": "B4RCC",
+      "description": "The idea here is to build a soldier that will absolutely shred squishies by maximizing fire rate and ammo on the Pulse Rifle.   Instead of your standard set of aimbot/helix, focus on powers that synergize well with the pulse rifle. We make the most o...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 265
+    },
+    {
+      "hero": "Torbjörn",
+      "name": "(Season 19 Legend) [4 Variants] Torbjorn is a support (attac",
+      "code": "0GN8P",
+      "description": "Currently the best Torbjorn build on Stadium Builds  --- What is this build? Torbjorn is a support in season 19. He has armor packs back and can heal with his hammer. Abuse Blacksmith(item_d871ddaa-c5a5-4205-9d40-51a62d2097a6) with Attack Speed(stat_...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 86
+    },
+    {
+      "hero": "Torbjörn",
+      "name": "In-Depth Guide: Why the Rank 1 Torbjorn Build Dominates Stad",
+      "code": "PTGPY",
+      "description": "Video Guide & Ranked Gameplay: YouTube Video(https://youtube.com/embed/O551ugpPZDE \"large\")",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 76
+    },
+    {
+      "hero": "Torbjörn",
+      "name": "🔥 Scorched Earth 🔥 (Infinite Torb Lava)",
+      "code": "JR4PZ",
+      "description": "To better deal with competitive now being a 5 round gamemode if you are viewing this in the 7 round format do not reference rounds 2 and 4, they are being skipped over. This build is best viewed in the 5 round format on the website. The core of this ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 33
+    },
+    {
+      "hero": "Torbjörn",
+      "name": "Just hold left click | Best Torb NA (Top 250) | ImmortalJere",
+      "code": "4G2JF",
+      "description": "YouTube Video(https://youtube.com/embed/GM9NTxTFrhQ \"large\")This build focuses mainly on Weapon Power and requires a decent bit of aim at range, but you will also be able to rush opponents that are marked by your turrets. It feels like a hybrid plays...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 25
+    },
+    {
+      "hero": "Torbjörn",
+      "name": "TURRE-FECT BUILD",
+      "code": "T1031",
+      "description": "TURRE-FECT BUILD",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 21
+    },
+    {
+      "hero": "Tracer",
+      "name": "👑 The Ultimate Carry [Unkillable Flanker]",
+      "code": "DDB4Y",
+      "description": "💣 Tracer: an Unkillable, Top Tier Damage Build - Flank Forever 💣    ---      Yo! I'm Eelix, a Stadium enthusiast and a dedicated build creator who enjoys designing the most optimal builds for each hero. I have made many other builds for heroes like S...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 232
+    },
+    {
+      "hero": "Tracer",
+      "name": "glass cannon build :p only build you'll need",
+      "code": "7ZPX8",
+      "description": "This build start off kind of weak, but it scales to an unstoppable DPS.  Your goal is to hunt isolated targets, 1v1s or even 1v2s, and come out on top.  Focus on killing their DPS first to limit them from helping their team, you can also fight suppor...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 128
+    },
+    {
+      "hero": "Tracer",
+      "name": "The Strongest",
+      "code": "2H7XC",
+      "description": "UPDATED FOR S21 GENERAL GAMEPLAY TIPS - Play in third person, Tracer(hero_bcc3aeb4-369e-4abb-b686-3234c169d37a) benefits more than almost any hero and the aiming is easier. - Get used to [T.Racer](item_996e13d5-9521-4312-944f-d672f528776b) range and ...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 76
+    },
+    {
+      "hero": "Tracer",
+      "name": "Consistent Carry - A Very Detailed Guide [Legend 1]",
+      "code": "6F2A0",
+      "description": "For now, just look at the order of items in the bo7 format, since I am hoping we go back to bo5 so I don't have to change everything :D --- About Me Hi! I'm Laude! I'm around high masters level, and have hit legend every season of stadium. I like dee...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 74
+    },
+    {
+      "hero": "Tracer",
+      "name": "ABILITY POWER ⚡ annooooying ⚡",
+      "code": "DHNQV",
+      "description": "This build focus more on pushing the enemy with melee ability power and run away with a strong pulse while recalling and infinite armor every time you blink that can keep you alive while dealing a huge amount of damage ⚡",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 59
+    },
+    {
+      "hero": "Vendetta",
+      "name": "(UPDATED) ⚔️ GLADIATOR'S WRATH — Vendetta God Build (Stadium",
+      "code": "RTPVW",
+      "description": "⚔️ \"GLADIATOR'S WRATH\" — Melee WP Vendetta Build Swing. Stack. Sustain. Slaughter. Your sword IS the build. Everything else just makes it swing faster and hit harder. --- 🎯 WHY THIS BUILD WORKS Vendetta's REAL damage is Palatine Fang: - Swing 1: 45 d...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 203
+    },
+    {
+      "hero": "Vendetta",
+      "name": "(Updated 03/12/2026)👑 Vendetta T500 WP/Unkillable Tank Build",
+      "code": "SCD8T",
+      "description": "Feb 24th 2026 Update:   Gloomgauntlet(item_76cb8fe3-3c1f-4769-a1ec-a9c2dc510ba7) has finally been fixed! It now increases her primary fire damage as it was meant to, though they did decrease her overhead damage from 130 -> 120 (was deserved tbh). I h...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 75
+    },
+    {
+      "hero": "Vendetta",
+      "name": "Let me one shot her [500+ dmg vendetta build]",
+      "code": "Z1P6V",
+      "description": "Vendetta build that maxes out your Survivability, burst damage and assasination abilities, block projectiles post fight, go in and do 500 or 830+ dmg dmg in a single combo, and get out in less then 2s Comment how you liked it IMPORTANT (The Closer(it...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 21
+    },
+    {
+      "hero": "Vendetta",
+      "name": "⚔️ [DISCONTINUED] Overhead Sustain WP Champion/Legend dps' V",
+      "code": "C82CE",
+      "description": "NOTE: VENDETTA HAS BEEN NERFED FOR HER ONSLAUGHT STACKS TO BE LESS EFFECTIVE, OVERHEAD SWING NERFED FROM 2.5M TO 2M RANGE, AND REDUCED ARMOR BY 25. BECAUSE OF THESE NERFED THIS BUILD WILL MOST LIKELY SUCK AS$, IMMA GO PLAY RAMATTRA NOW.     critical ...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 13
+    },
+    {
+      "hero": "Vendetta",
+      "name": "⚔️ #1 WP Duelist Demon Build. (From a Top 500 Stadium DPS)",
+      "code": "QXNYJ",
+      "description": "Vendetta(hero_280559f5-59d9-4d52-b460-a4240381aff4) just released and if you are looking for a reliable build too hit Top 500 with her, this might be perfect for you. What makes Vendetta good? Vendetta(hero_280559f5-59d9-4d52-b460-a4240381aff4) excel...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 11
+    },
+    {
+      "hero": "Winston",
+      "name": "Ultimate Unkillable Melee/Electric Dive Build (T500 Winston ",
+      "code": "7Z59J",
+      "description": "This is a build focused melee damage by utilizing  Primal Punch(item_3b024d32-8fa1-4713-80ee-e042867f5228) to its full extent. You start early rounds by building your tankiness, which builds your melee dmg as well, and then later you shift towards ov...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 193
+    },
+    {
+      "hero": "Winston",
+      "name": "Thunder Dome (#1 Winston NA)",
+      "code": "A6K8A",
+      "description": "This build focuses on debuffing enemies with AOE bubble damage, slowing and anti-healing them constantly. Good passive damage and great at blocking damage since bubble HP scales with AP. You won't be doing an insane amount of damage with bubbles but ...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 163
+    },
+    {
+      "hero": "Winston",
+      "name": "BEST HIGH DAMAGE ELECTRIC CLEAVE BUILD ***ANTI DEATHBALL*** ",
+      "code": "GMNBT",
+      "description": "THIS IS FOR ENEMY DEATHBALL COMPS, IF THEY ARE MORE MOBILE (LIKE DIVE COMP), USE MY OTHER BUILD INSTEAD link text(https://stadiumbuilds.io/build/940829eb-60ca-4715-8068-983bd54f2453) CREATOR OF \"Ultimate Unkillable Melee/Electric Dive Build (T500 Win...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 96
+    },
+    {
+      "hero": "Winston",
+      "name": "9V Tesla Cannon (#1 Winston NA)",
+      "code": "XR4KP",
+      "description": "This build is very consistent. High amounts of lifesteal and damage keep you in the fight for so long. The more enemies you fight at a time, the more damage you do and the more you heal yourself. Good scaling throughout the entire game, last 2 powers...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 71
+    },
+    {
+      "hero": "Winston",
+      "name": "The ULTIMATE WINSTON STADIUM BUILD (3x Legend & Top 500)",
+      "code": "ACKTS",
+      "description": "Video Guide & Ranked Gameplay: YouTube Video(https://youtube.com/embed/py3rvFhWGIo \"large\")",
+      "playstyle": "균형형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 49
+    },
+    {
+      "hero": "Wuyang",
+      "name": "🌊 Rushing Torrent (Infinite Healing) ✨ [SEASON 20]",
+      "code": "JV8W7",
+      "description": "🌊力挽狂澜!💦  Welcome to my Wuyang build! I’ve designed this build around Rushing Torrent and AOE healing. Let's be honest, who wouldn't want to play with the most famous Wuyang build (jk, jk), even so famous that Overwatch saw it!!!! 😱😱      UPDATE: ver2...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 258
+    },
+    {
+      "hero": "Wuyang",
+      "name": "Wuyang is Actually S-Tier 🌊👑Season 2",
+      "code": "6YRQ6",
+      "description": "The \"Tsunami\" Build: Why Wuyang is Actually S-Tier 🌊👑 VERSION 2!!! 4-14-2026 - Season 2 Patch didn't really do much to my boy here Wave Lance - Power Non-empowered Primary Fire projectile speed increased to 150% (Up from 100%). Shore Up - Power Activ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 124
+    },
+    {
+      "hero": "Wuyang",
+      "name": "🌊 IMMORTAL WUYANG // Infinite Healing Build 🩸[SEASON 20] [UP",
+      "code": "DH9V8",
+      "description": "🌊color:01b8fc IMMORTAL WUYANG[/color] // Infinite Healing God Mode UPDATED         🔄 The \"Infinite\" Engine Streamline: The setup key. It applies your Passive Stream to all visible allies instantly.  Ebb and Flow: Doubles the value of your Guardian Wa...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 87
+    },
+    {
+      "hero": "Wuyang",
+      "name": "Orbital Wavemaster 🌊✨ (damage & wave) [S20]",
+      "code": "VF0TC",
+      "description": "🌊 Ride the waves and rain orbs down on your enemies! ✨&nbsp; From a Master Support and Stadium Legend Support This build focuses on using your Guardian Wave(ability_75a71fd9-aa90-4f2f-b716-64a53e6140df) to trigger Paindrops(item_25503639-9f7f-4fdc-a9...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 87
+    },
+    {
+      "hero": "Wuyang",
+      "name": "🎨[CREATIVE SPARK] Hybrid Wave Sustain (Peak Top 1)",
+      "code": "14EDR",
+      "description": "Hello, I'm sharing you my Wuyang build I'm working on since his release. This build will be updated regularly. ------- ❓WHAT TO KNOW BEFORE PLAYING THIS HYBRID Wuyang(hero_66412245-c3d8-453a-a24b-45500385c606) BUILD - You need to have a good cooldown...",
+      "playstyle": "생존형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 47
+    },
+    {
+      "hero": "Zarya",
+      "name": "The Strongest",
+      "code": "VRV9T",
+      "description": "UPDATED FOR S1 Powers (in most rounds) 1. Containment Shield(item_0406217c-a6af-4a19-8c7d-052c4d402848): Makes the game a lot easier because it lets you engage and disengage better.   2. Lifelift(item_641c3e2b-d652-4dc6-9ab9-1e5307b78325): This makes...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 155
+    },
+    {
+      "hero": "Zarya",
+      "name": "Legend 5 Hybrid AP/WP build vs Rein/JQ (Updated for Season 1",
+      "code": "828VX",
+      "description": "With the changes to a lot of Zarya's powers and items a lot of stuff has shifted in the guide. Lifelift(item_641c3e2b-d652-4dc6-9ab9-1e5307b78325) has been changed for the worst and is no longer considered in the build.  Bigger Beam(item_c29f5350-77e...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 111
+    },
+    {
+      "hero": "Zarya",
+      "name": "(ZARYA HYPER-CARRY) I will lead us to victory!",
+      "code": "QXHKV",
+      "description": "No heals? No dps? No problem, who needs them anyway! Most of your powers are focused on surviving, and your items do the dmg. Keep your supports up, kill squishies if the tank isnt harassing your backline and play corners if you REALLY have no healin...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 92
+    },
+    {
+      "hero": "Zarya",
+      "name": "Zarya's Kangaroo Build (71% Winrate Reach Legend 5)",
+      "code": "V0Z45",
+      "description": "FR: On cherche à profiter au maximum du Vortex qui fait un nombre incroyable de dégâts en zone et permet de surprendre en début de partie car vous tuez tout simplement très vite. Ensuite, dès le round 2, on va enlever les seuls défauts de Zarya, c'es...",
+      "playstyle": "딜형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 77
+    },
+    {
+      "hero": "Zarya",
+      "name": "The Strongest[Vortex]",
+      "code": "SYNGQ",
+      "description": "This is mostly based on this build: https://stadiumbuilds.io/build/5f28948d-8f96-4393-9d89-6b27c23415ab The major difference is Volskaya Vortex(item_4a24240a-a0b1-4a0e-83d1-acf8c5647b5b) and Superflexor(item_580b77b4-0d63-469b-99a8-5372c55dfc1b). Sup...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 73
+    },
+    {
+      "hero": "Zenyatta",
+      "name": "The Only Zen Build Worth Playing Legend/GM Zen OTP",
+      "code": "GNDNR",
+      "description": "Hey all, I strongly believe this is the best build for Zenyatta(hero_3c4002ee-e694-48ed-9730-70fd48773317) because it provides the highest effective damage increase,  highest stadium cash, highest healing, and strongest 1v1 potential. This is partly ...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 1173
+    },
+    {
+      "hero": "Zenyatta",
+      "name": "📜[ARCHIVED] AP% Transcendence (S18 UPDATE)",
+      "code": "24RZV",
+      "description": "📜ARCHIVED: This build needs some work to be relevant for the new format of Creative Spark. I don't want to share too weak builds for competitive, so I will do either a v2 of AP% Transcendence in another build or I'll work on a new archetype of build ...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 224
+    },
+    {
+      "hero": "Zenyatta",
+      "name": "UNKILLABLE HEALER V2 - BIG UPDATE",
+      "code": "ZEN007",
+      "description": "Orbs are an ability, imagine having three of them permanently active on 3 different allies!!! Be unkillable and make a difference with this ability/tank build --------------------------------------------------------- UPDATE 29/06 AFTER 20 GAMES You c...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 169
+    },
+    {
+      "hero": "Zenyatta",
+      "name": "Allstar MVP #1 Best Carry No Really I Mean It Build for Filt",
+      "code": "FKXXR",
+      "description": "_updated for S19_ This is a variant of [The Only Zen Build Worth Playing (T500 Zen OTP)](https://stadiumbuilds.io/build/83cd2184-1164-4b84-b00a-6e45ee4e82f5) that veers off drastically starting with round 5. (And yes, I did get to All Star solo queui...",
+      "playstyle": "공격형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 102
+    },
+    {
+      "hero": "Zenyatta",
+      "name": "👑 TANKYATTA [Never Die]",
+      "code": "HKBQP",
+      "description": "☯️ Zenyatta: The Unkillable Monk - Tank / Sustain Build - Carry Through Inner Peace ☯️        ---    🌌 Want to be able to solo carry your games with ease? Look no further. This is my go-to tank Zenyatta(hero_3c4002ee-e694-48ed-9730-70fd48773317) buil...",
+      "playstyle": "메타형",
+      "source": "stadiumbuilds.io",
+      "upvotes": 64
     }
   ]
 }

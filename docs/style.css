@@ -1,0 +1,191 @@
+/* OW2 테마 CSS */
+
+/* 로딩 스피너 */
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #30363D;
+  border-top-color: #F5A623;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* 네비게이션 탭 */
+.nav-tab {
+  padding: 0 16px;
+  height: 100%;
+  font-size: 0.875rem;
+  color: #9CA3AF;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.nav-tab:hover { color: #E5E7EB; }
+.nav-tab.active { color: #F5A623; border-bottom-color: #F5A623; }
+
+/* 영웅 카드 */
+.hero-card {
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.hero-card:hover {
+  border-color: #4FC3F7;
+  box-shadow: 0 0 0 1px rgba(79, 195, 247, 0.25);
+}
+.hero-card.selected {
+  border-color: #F5A623;
+  box-shadow: 0 0 0 1px rgba(245, 166, 35, 0.25);
+}
+
+/* 히스토리 차트 컨테이너 */
+.chart-container {
+  background: #0D1117;
+  border: 1px solid #30363D;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 16px;
+}
+
+/* 티어 배지 */
+.tier-S { background: rgba(239, 68, 68, 0.12); border-color: #ef4444; color: #ef4444; }
+.tier-A { background: rgba(249, 115, 22, 0.12); border-color: #f97316; color: #f97316; }
+.tier-B { background: rgba(234, 179, 8, 0.12);  border-color: #eab308; color: #eab308; }
+.tier-C { background: rgba(34, 197, 94, 0.12);  border-color: #22c55e; color: #22c55e; }
+.tier-D { background: rgba(107, 114, 128, 0.12);border-color: #6b7280; color: #6b7280; }
+
+/* 티어 섹션 헤더 */
+.tier-header-S { border-left: 3px solid #ef4444; }
+.tier-header-A { border-left: 3px solid #f97316; }
+.tier-header-B { border-left: 3px solid #eab308; }
+.tier-header-C { border-left: 3px solid #22c55e; }
+.tier-header-D { border-left: 3px solid #6b7280; }
+
+/* 빌드 코드 배지 */
+.code-badge {
+  font-family: monospace;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  background: #0D1117;
+  border: 1px solid #30363D;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  color: #4FC3F7;
+  transition: border-color 0.15s, color 0.15s;
+  user-select: all;
+}
+.code-badge:hover {
+  border-color: #4FC3F7;
+  color: #fff;
+}
+.code-badge.copied {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+/* 역할 태그 */
+.role-tank    { background: rgba(79, 195, 247, 0.15); color: #4FC3F7; }
+.role-damage  { background: rgba(239, 68, 68, 0.15);  color: #ef4444; }
+.role-support { background: rgba(34, 197, 94, 0.15);  color: #22c55e; }
+
+/* 플레이스타일 뱃지 */
+.playstyle-badge {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: rgba(245, 166, 35, 0.12);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  color: #F5A623;
+}
+
+/* 패치 카드 */
+.patch-hero-card {
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 8px;
+  padding: 16px;
+}
+.patch-hero-card.is-stadium {
+  border-color: rgba(245, 166, 35, 0.4);
+}
+
+/* 영웅 정보 패널 */
+.hero-detail-panel {
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* 필터 버튼 */
+.filter-btn {
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  border: 1px solid #30363D;
+  color: #9CA3AF;
+  transition: all 0.15s;
+}
+.filter-btn:hover { border-color: #6B7280; color: #E5E7EB; }
+.filter-btn.active {
+  background: rgba(245, 166, 35, 0.15);
+  border-color: #F5A623;
+  color: #F5A623;
+}
+
+/* 검색 입력 */
+.search-input {
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.875rem;
+  color: #E5E7EB;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.search-input:focus { border-color: #4FC3F7; }
+.search-input::placeholder { color: #6B7280; }
+
+/* 드롭다운 */
+.ow-select {
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  color: #E5E7EB;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.ow-select:focus { border-color: #4FC3F7; }
+.ow-select option { background: #161B22; }
+
+/* 영웅 pill 버튼 */
+.hero-pill {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  border: 1px solid #30363D;
+  color: #9CA3AF;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.hero-pill:hover { border-color: #6B7280; color: #E5E7EB; }
+.hero-pill.active {
+  background: rgba(245, 166, 35, 0.15);
+  border-color: #F5A623;
+  color: #F5A623;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0D1117; }
+::-webkit-scrollbar-thumb { background: #30363D; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #6B7280; }

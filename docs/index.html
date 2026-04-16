@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OW2 메타 대시보드</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ow-bg':     '#0D1117',
+            'ow-card':   '#161B22',
+            'ow-border': '#30363D',
+            'ow-orange': '#F5A623',
+            'ow-blue':   '#4FC3F7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-ow-bg text-gray-100 min-h-screen">
+  <!-- 네비게이션 -->
+  <nav class="sticky top-0 z-50 bg-ow-card border-b border-ow-border">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center h-14 gap-1">
+        <span class="text-ow-orange font-bold text-lg mr-4 shrink-0">OW2</span>
+        <button class="nav-tab" data-tab="meta">메타 통계</button>
+        <button class="nav-tab" data-tab="stadium">스타디움 빌드</button>
+        <button class="nav-tab" data-tab="patch">패치 노트</button>
+        <button class="nav-tab" data-tab="heroes">영웅 정보</button>
+        <div class="ml-auto text-xs text-gray-500" id="last-updated"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 메인 컨텐츠 -->
+  <main class="max-w-7xl mx-auto px-4 py-6" id="app">
+    <div class="flex items-center justify-center h-64 text-gray-500">
+      <div class="text-center">
+        <div class="loading-spinner mx-auto mb-3"></div>
+        <p>데이터 로드 중...</p>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
