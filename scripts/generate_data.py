@@ -42,6 +42,24 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# hero_id → 정식 영문 표기 (title() 변환으로 처리 불가능한 예외)
+_EN_NAME_EXCEPTIONS: dict[str, str] = {
+    "dva":           "D.Va",
+    "soldier76":     "Soldier: 76",
+    "lucio":         "Lúcio",
+    "torbjorn":      "Torbjörn",
+    "junker_queen":  "Junker Queen",
+    "wrecking_ball": "Wrecking Ball",
+    "jetpack_cat":   "Jetpack Cat",
+}
+
+
+def _hero_id_to_en_name(hero_id: str) -> str:
+    """hero_id → 정식 영문 display name."""
+    if hero_id in _EN_NAME_EXCEPTIONS:
+        return _EN_NAME_EXCEPTIONS[hero_id]
+    return hero_id.replace("_", " ").title()
+
 DOCS_DATA = ROOT / "docs" / "data"
 DOCS_DATA.mkdir(parents=True, exist_ok=True)
 
@@ -267,6 +285,48 @@ def _translate_stadium_data(by_hero: dict) -> dict:
 
 # ── 영웅 DB ──────────────────────────────────────────────────────────────────
 
+def _sync_heroes_json(all_ranks: dict) -> None:
+    """Blizzard 공식 메타 통계 기반으로 data/heroes.json 자동 동기화.
+
+    신규 영웅 발견 시 name / role / aliases 만 채워 추가한다.
+    기존 항목은 수정하지 않는다.
+    """
+    heroes_path = ROOT / "data" / "heroes.json"
+    heroes_data: dict = _load(heroes_path)  # type: ignore
+    if not isinstance(heroes_data, dict):
+        heroes_data = {}
+    heroes: dict = heroes_data.setdefault("heroes", {})
+    existing_ids = set(heroes.keys())
+
+    # 모든 랭크를 순회해 hero_id → {role, hero_name} 수집 (중복 제거)
+    meta_map: dict[str, dict] = {}
+    for rank_heroes in all_ranks.values():
+        for h in rank_heroes:
+            if h["hero_id"] not in meta_map:
+                meta_map[h["hero_id"]] = {
+                    "role": h["role"],
+                    "hero_name": h["hero_name"],
+                }
+
+    added: list[str] = []
+    for hero_id, info in meta_map.items():
+        if hero_id in existing_ids:
+            continue
+        en_name = _hero_id_to_en_name(hero_id)
+        heroes[hero_id] = {
+            "name": en_name,
+            "role": info["role"],
+            "aliases": [info["hero_name"], hero_id],
+        }
+        added.append(f"{en_name}({info['role']})")
+
+    if added:
+        logger.info(f"  heroes.json 자동 추가: {added}")
+        _save(heroes_path, heroes_data)
+    else:
+        logger.info("  heroes.json: 신규 영웅 없음")
+
+
 def _copy_heroes() -> None:
     """data/heroes.json → docs/data/heroes.json 복사."""
     src = ROOT / "data" / "heroes.json"
@@ -287,6 +347,7 @@ async def main() -> None:
         if all_ranks:
             sources["meta"] = "live"
             _update_history(all_ranks)
+            _sync_heroes_json(all_ranks)
         else:
             sources["meta"] = "fallback"
             logger.warning("  메타 전체 실패 — history 갱신 건너뜀")
