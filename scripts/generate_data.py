@@ -223,11 +223,11 @@ def _translate_patch_data(data: dict) -> dict:
 
 
 def _translate_stadium_data(by_hero: dict) -> dict:
-    """스타디움 빌드 이름·설명 영문 → 한국어 번역 (빌드 코드 기반 캐시 활용)."""
-    from bot.utils.translator import translate
+    """스타디움 빌드 이름(번역) · 설명(3줄 요약) 한국어 처리 (빌드 코드 기반 캐시 활용)."""
+    from bot.utils.translator import translate_list, summarize_list
 
-    # 기존 stadium.json에서 이미 번역된 내용 로드 (재실행 시 중복 번역 방지)
-    # 한글이 포함된 경우에만 번역된 것으로 간주
+    # 기존 stadium.json에서 이미 번역된 내용 로드 (재실행 시 중복 처리 방지)
+    # 한글이 포함된 경우에만 처리된 것으로 간주
     existing = _load(DOCS_DATA / "stadium.json")
     prev: dict[str, dict] = {}
     if isinstance(existing, dict):
@@ -238,7 +238,8 @@ def _translate_stadium_data(by_hero: dict) -> dict:
                 if code and _has_korean(name):
                     prev[code] = {"name": name, "description": b.get("description", "")}
 
-    new_count = 0
+    # 신규 빌드만 추출
+    new_builds: list[dict] = []
     for builds in by_hero.values():
         for build in builds:
             code = build.get("code", "")
@@ -246,11 +247,21 @@ def _translate_stadium_data(by_hero: dict) -> dict:
                 build["name"] = prev[code]["name"]
                 build["description"] = prev[code]["description"]
             else:
-                build["name"] = translate(build["name"])
-                build["description"] = translate(build["description"])
-                new_count += 1
+                new_builds.append(build)
 
-    logger.info(f"  스타디움 번역: 신규 {new_count}건, 캐시 재사용 {len(prev)}건")
+    if new_builds:
+        names = [b["name"] for b in new_builds]
+        descs = [b.get("description") or "" for b in new_builds]
+
+        logger.info(f"  스타디움 신규 처리: {len(new_builds)}건 (이름 번역 + 설명 요약)")
+        translated_names = translate_list(names)
+        summarized_descs = summarize_list(descs)
+
+        for build, name, desc in zip(new_builds, translated_names, summarized_descs):
+            build["name"] = name
+            build["description"] = desc
+
+    logger.info(f"  스타디움 번역: 신규 {len(new_builds)}건, 캐시 재사용 {len(prev)}건")
     return by_hero
 
 

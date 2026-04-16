@@ -1,11 +1,16 @@
 /**
  * 스타디움 빌드 뷰
- * 영웅 pill 버튼 + 빌드 카드 (코드 클릭 → 클립보드 복사)
+ * 역할군별 영웅 pill 버튼 + 빌드 카드 (코드 클릭 → 클립보드 복사)
  */
 import { loadJSON } from '../app.js';
 
 let currentHero = null;  // stadium.json 의 영어 키
 let koNameMap = {};       // 영어명 → 한국어명
+let roleMap = {};         // 영어명 → role (tank/damage/support)
+
+const ROLE_ORDER = ['tank', 'damage', 'support'];
+const ROLE_LABEL = { tank: '탱커', damage: '딜러', support: '지원가' };
+const ROLE_CLASS = { tank: 'role-tank', damage: 'role-damage', support: 'role-support' };
 
 export async function renderStadium(container) {
   const [stadium, heroesData] = await Promise.all([
@@ -14,6 +19,7 @@ export async function renderStadium(container) {
   ]);
 
   koNameMap = buildKoNameMap(heroesData);
+  roleMap = buildRoleMap(heroesData);
 
   const heroes = Object.keys(stadium).sort((a, b) =>
     (koNameMap[a] ?? a).localeCompare(koNameMap[b] ?? b, 'ko')
@@ -41,22 +47,64 @@ function buildKoNameMap(heroesData) {
   return map;
 }
 
+/** heroes.json 에서 영어명 → 역할(tank/damage/support) 매핑 생성 */
+function buildRoleMap(heroesData) {
+  const map = {};
+  if (!heroesData) return map;
+  const list = heroesData.heroes ?? heroesData;
+  for (const hero of Object.values(list)) {
+    if (hero.name && hero.role) map[hero.name] = hero.role;
+  }
+  return map;
+}
+
 function koName(enName) {
   return koNameMap[enName] ?? enName;
 }
 
 function buildHTML(heroes) {
-  const pills = heroes.map(h =>
-    `<button class="hero-pill${h === currentHero ? ' active' : ''}" data-hero="${h}">
-      ${escHtml(koName(h))}
-    </button>`
-  ).join('');
+  // 역할군별 그룹화
+  const grouped = { tank: [], damage: [], support: [], unknown: [] };
+  for (const h of heroes) {
+    const role = roleMap[h] ?? 'unknown';
+    (grouped[role] ?? grouped.unknown).push(h);
+  }
+
+  const sections = ROLE_ORDER
+    .filter(r => grouped[r]?.length)
+    .map(r => `
+      <div>
+        <div class="text-xs font-semibold tracking-wide mb-1.5 flex items-center gap-1.5">
+          <span class="px-1.5 py-0.5 rounded ${ROLE_CLASS[r] ?? 'text-gray-400'}">${ROLE_LABEL[r]}</span>
+          <span class="text-gray-500 font-normal">${grouped[r].length}명</span>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          ${grouped[r].map(h => `
+            <button class="hero-pill${h === currentHero ? ' active' : ''}" data-hero="${h}">
+              ${escHtml(koName(h))}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `).join('');
+
+  // unknown 영웅 처리 (역할 정보 없음)
+  const unknownSection = grouped.unknown.length ? `
+    <div>
+      <div class="text-xs text-gray-500 font-semibold tracking-wide mb-1.5">기타</div>
+      <div class="flex flex-wrap gap-1.5">
+        ${grouped.unknown.map(h => `
+          <button class="hero-pill${h === currentHero ? ' active' : ''}" data-hero="${h}">
+            ${escHtml(koName(h))}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  ` : '';
 
   return `
-    <div class="mb-5">
-      <div class="flex flex-wrap gap-2 max-h-28 overflow-y-auto pb-1">
-        ${pills}
-      </div>
+    <div class="mb-5 space-y-3 max-h-52 overflow-y-auto pb-1 pr-1">
+      ${sections}${unknownSection}
     </div>
     <div id="builds-area"></div>
   `;
@@ -123,7 +171,7 @@ function buildCard(b) {
     <div class="patch-hero-card flex flex-col gap-3">
       <div class="flex items-start justify-between gap-2">
         <span class="font-semibold text-sm leading-snug flex-1">${escHtml(b.name)}</span>
-        <span class="playstyle-badge">${escHtml(b.playstyle)}</span>
+        <span class="playstyle-badge shrink-0">${escHtml(b.playstyle)}</span>
       </div>
       <div class="flex items-center gap-2">
         <span class="text-xs text-gray-500">빌드 코드</span>
@@ -131,7 +179,7 @@ function buildCard(b) {
         <span class="ml-auto text-xs text-gray-500">↑ ${b.upvotes ?? 0}</span>
       </div>
       ${b.description ? `
-        <p class="text-xs text-gray-400 leading-relaxed line-clamp-3">${escHtml(b.description)}</p>
+        <p class="text-xs text-gray-400 leading-relaxed">${escHtml(b.description)}</p>
       ` : ''}
     </div>
   `;
