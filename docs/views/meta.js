@@ -320,6 +320,18 @@ function noDataMsg(msg) {
 
 // ── 영웅 카드 그리드 ───────────────────────────────────────────────────────
 
+function getPrevScoreMap(rank) {
+  const rankData = cachedHistory?.[rank] ?? cachedHistory?.['전체'];
+  if (!rankData) return {};
+  const dates = Object.keys(rankData).sort();
+  const today = new Date().toISOString().slice(0, 10);
+  const prevDate = [...dates].reverse().find(d => d < today);
+  if (!prevDate) return {};
+  return Object.fromEntries(
+    (rankData[prevDate] ?? []).map(h => [h.hero_id, h.meta_score])
+  );
+}
+
 function renderCards(container) {
   const filtered = getFiltered();
   const countEl = container.querySelector('#hero-count');
@@ -331,6 +343,8 @@ function renderCards(container) {
     return;
   }
 
+  const prevMap = getPrevScoreMap(currentRank);
+
   const byTier = Object.fromEntries(TIERS.map(t => [t, []]));
   filtered.forEach(h => (byTier[h.tier ?? 'D'] ??= []).push(h));
 
@@ -341,14 +355,19 @@ function renderCards(container) {
         <span class="text-sm text-gray-400">${byTier[tier].length}명</span>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-        ${byTier[tier].map(heroCard).join('')}
+        ${byTier[tier].map(h => heroCard(h, prevMap[h.hero_id])).join('')}
       </div>
     </div>
   `).join('');
 }
 
-function heroCard(h) {
+function heroCard(h, prevScore) {
   const isSelected = h.hero_id === selectedHeroId;
+  const delta = (prevScore != null && h.meta_score != null) ? h.meta_score - prevScore : null;
+  const deltaHtml = delta == null ? ''
+    : delta > 0.05  ? `<span class="delta-up">▲${delta.toFixed(1)}</span>`
+    : delta < -0.05 ? `<span class="delta-down">▼${Math.abs(delta).toFixed(1)}</span>`
+    : `<span class="delta-neutral">–</span>`;
   return `
     <div class="hero-card${isSelected ? ' selected' : ''}"
          data-hero-id="${h.hero_id}" data-hero-name="${h.hero_name}">
@@ -358,7 +377,10 @@ function heroCard(h) {
           ${ROLE_LABEL[h.role] ?? h.role}
         </span>
       </div>
-      <div class="text-ow-orange font-bold text-xl mb-1.5">${h.meta_score?.toFixed(1) ?? '-'}</div>
+      <div class="flex items-baseline gap-1.5 mb-1.5">
+        <span class="text-ow-orange font-bold text-xl">${h.meta_score?.toFixed(1) ?? '-'}</span>
+        ${deltaHtml}
+      </div>
       <div class="text-xs text-gray-400 space-y-0.5">
         <div>픽률 <span class="text-gray-200">${h.pick_rate?.toFixed(1) ?? '-'}%</span></div>
         <div>승률 <span class="text-gray-200">${h.win_rate?.toFixed(1) ?? '-'}%</span></div>

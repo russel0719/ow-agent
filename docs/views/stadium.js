@@ -135,13 +135,13 @@ function renderBuilds(container, stadium) {
   }
 
   area.innerHTML = `
-    <div class="mb-3 flex items-center gap-2">
-      <span class="text-ow-orange font-bold">${escHtml(koName(currentHero))}</span>
+    <div class="mb-4 flex items-center gap-2">
+      <span class="text-ow-orange font-bold text-lg">${escHtml(koName(currentHero))}</span>
       <span class="text-gray-500 text-sm">${escHtml(currentHero)}</span>
       <span class="text-gray-500 text-sm">· ${builds.length}개 빌드</span>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      ${builds.map(b => buildCard(b)).join('')}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      ${builds.map((b, i) => buildCard(b, i + 1)).join('')}
     </div>
   `;
 
@@ -166,20 +166,28 @@ function renderBuilds(container, stadium) {
   });
 }
 
-function buildCard(b) {
+function buildCard(b, rank) {
   return `
-    <div class="patch-hero-card flex flex-col gap-3">
-      <div class="flex items-start justify-between gap-2">
-        <span class="font-semibold text-sm leading-snug flex-1">${escHtml(b.name)}</span>
+    <div class="stadium-card flex flex-col gap-3">
+      <!-- 헤더: 순위 + 이름 + 플레이스타일 -->
+      <div class="flex items-start gap-3">
+        <span class="stadium-rank shrink-0">${rank}</span>
+        <div class="flex-1 min-w-0">
+          <div class="font-semibold text-base leading-snug text-gray-100">${escHtml(b.name)}</div>
+        </div>
         <span class="playstyle-badge shrink-0">${escHtml(b.playstyle)}</span>
       </div>
-      <div class="flex items-center gap-2">
+      <!-- 빌드 코드 + 추천 수 -->
+      <div class="flex items-center gap-3">
         <span class="text-xs text-gray-500">빌드 코드</span>
         <span class="code-badge" data-code="${escHtml(b.code)}">${escHtml(b.code)}</span>
-        <span class="ml-auto text-xs text-gray-500">↑ ${b.upvotes ?? 0}</span>
+        <span class="ml-auto text-sm text-gray-400 flex items-center gap-1">
+          <span class="text-ow-orange">↑</span>${(b.upvotes ?? 0).toLocaleString()}
+        </span>
       </div>
+      <!-- 설명 -->
       ${b.description ? `
-        <p class="text-xs text-gray-400 leading-relaxed">${escHtml(b.description)}</p>
+        <p class="text-sm text-gray-300 leading-relaxed border-t border-ow-border pt-3">${escHtml(b.description)}</p>
       ` : ''}
     </div>
   `;

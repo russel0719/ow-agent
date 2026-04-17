@@ -16,14 +16,14 @@ import requests
 logger = logging.getLogger(__name__)
 
 _CACHE: dict[str, str] = {}
-# gemini-3.1-flash-lite-preview 무료 티어 기준 (15 RPM, 250k TPM, 500 RPD)
+# gemini-2.0-flash-lite 무료 티어 기준 (30 RPM, 1500 RPD)
 # _BATCH_DELAY 6초 → 실효 10 RPM (함수 호출 경계 포함 전역 rate limit)
 _BATCH_SIZE = 10
 _BATCH_DELAY = 6.0
 _RETRY_COUNT = 5
-_RETRY_BASE = 60
+_RETRY_BASE = 60   # 429 시 첫 대기 시간(초), 이후 지수 증가 (최대 300초)
 _last_api_call: float = 0.0  # 마지막 API 호출 시각 (전역 rate limit 추적)
-_MODEL = "gemini-3.1-flash-lite-preview"
+_MODEL = "gemini-2.0-flash-lite"
 _API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{_MODEL}:generateContent"
 
 _TRANSLATE_PROMPT = (
@@ -137,17 +137,19 @@ def _call_gemini(texts: list[str], prompt_template: str) -> list[str]:
             resp = requests.post(_API_URL, headers=headers, json=payload, timeout=30)
 
             if resp.status_code == 429:
-                logger.warning(f"  429 Rate limit, {_RETRY_BASE}초 후 재시도 ({attempt + 1}/{_RETRY_COUNT})...")
-                time.sleep(_RETRY_BASE)
+                wait = min(_RETRY_BASE * (2 ** attempt), 300)
+                logger.warning(f"  429 Rate limit, {wait}초 후 재시도 ({attempt + 1}/{_RETRY_COUNT})...")
+                time.sleep(wait)
                 continue
 
-            resp.raise_for_status()
+            if not resp.ok:
+                logger.warning(f"  Gemini HTTP {resp.status_code} (원본 유지): {resp.text[:200]}")
+                return texts
+
             text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
             data: dict = json.loads(text)
             return [data.get(str(i), texts[i]) for i in range(len(texts))]
 
-        except requests.HTTPError:
-            raise
         except Exception as e:
             logger.warning(f"  Gemini 호출 실패 (원본 유지): {e!r}")
             return texts

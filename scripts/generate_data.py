@@ -207,7 +207,8 @@ async def _generate_patch(session: aiohttp.ClientSession) -> bool:
             ],
             "general_changes": patch.general_changes,
         }
-        data = _translate_patch_data(data)
+        existing_patch = _load(DOCS_DATA / "patch.json")
+        data = _translate_patch_data(data, existing_patch if isinstance(existing_patch, dict) else None)
         _save(DOCS_DATA / "patch.json", data)
         logger.info(f"  패치 완료: {data['title']} ({patch.date})")
         return True
@@ -223,9 +224,20 @@ def _has_korean(text: str) -> bool:
     return any('\uAC00' <= c <= '\uD7A3' for c in (text or ""))
 
 
-def _translate_patch_data(data: dict) -> dict:
-    """패치 노트 영문 → 한국어 번역."""
+def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
+    """패치 노트 영문 → 한국어 번역.
+
+    existing이 있고 동일 URL의 패치가 이미 한국어로 번역되어 있으면 기존 번역을 재사용한다.
+    """
     from bot.utils.translator import translate, translate_list
+
+    if (
+        existing
+        and existing.get("url") == data.get("url")
+        and _has_korean(existing.get("title", ""))
+    ):
+        logger.info("  패치 번역 스킵: 동일 패치 이미 번역됨")
+        return existing
 
     total = 1 + sum(1 + len(hc["changes"]) for hc in data["hero_changes"]) + len(data["general_changes"])
     logger.info(f"  패치 번역 시작: {total}건")

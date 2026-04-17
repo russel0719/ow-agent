@@ -42,6 +42,11 @@
   box-shadow: 0 0 0 1px rgba(245, 166, 35, 0.25);
 }
 
+/* 메타 점수 변화량 */
+.delta-up      { color: #22c55e; font-size: 0.65rem; font-weight: 600; }
+.delta-down    { color: #ef4444; font-size: 0.65rem; font-weight: 600; }
+.delta-neutral { color: #6b7280; font-size: 0.65rem; }
+
 /* 히스토리 차트 컨테이너 */
 .chart-container {
   background: #0D1117;
@@ -101,6 +106,35 @@
   background: rgba(245, 166, 35, 0.12);
   border: 1px solid rgba(245, 166, 35, 0.3);
   color: #F5A623;
+}
+
+/* 스타디움 빌드 카드 */
+.stadium-card {
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 10px;
+  padding: 20px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.stadium-card:hover {
+  border-color: #F5A623;
+  box-shadow: 0 0 0 1px rgba(245, 166, 35, 0.2);
+}
+
+/* 빌드 순위 뱃지 */
+.stadium-rank {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+  background: rgba(245, 166, 35, 0.12);
+  color: #F5A623;
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  flex-shrink: 0;
 }
 
 /* 패치 카드 */
