@@ -1293,20 +1293,20 @@
         "emre"
       ]
     },
-    "domina": {
-      "name": "Domina",
-      "role": "tank",
-      "aliases": [
-        "도미나",
-        "domina"
-      ]
-    },
     "mizuki": {
       "name": "Mizuki",
       "role": "support",
       "aliases": [
         "미즈키",
         "mizuki"
+      ]
+    },
+    "domina": {
+      "name": "Domina",
+      "role": "tank",
+      "aliases": [
+        "도미나",
+        "domina"
       ]
     },
     "brigitte": {
