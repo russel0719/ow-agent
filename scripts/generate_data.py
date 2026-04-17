@@ -254,7 +254,7 @@ def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
 
 def _translate_stadium_data(by_hero: dict) -> dict:
     """스타디움 빌드 이름(번역) · 설명(3줄 요약) 한국어 처리 (빌드 코드 기반 캐시 활용)."""
-    from bot.utils.translator import translate_list, summarize_list
+    from bot.utils.translator import translate_list, translate_stadium_names, summarize_list
 
     # 기존 stadium.json에서 이미 번역된 내용 로드 (재실행 시 중복 처리 방지)
     # 한글이 포함된 경우에만 처리된 것으로 간주
@@ -284,7 +284,7 @@ def _translate_stadium_data(by_hero: dict) -> dict:
         descs = [b.get("description") or "" for b in new_builds]
 
         logger.info(f"  스타디움 신규 처리: {len(new_builds)}건 (이름 번역 + 설명 요약)")
-        translated_names = translate_list(names, label="스타디움 빌드 이름 번역")
+        translated_names = translate_stadium_names(names)
         summarized_descs = summarize_list(descs, label="스타디움 빌드 설명 요약")
 
         for build, name, desc in zip(new_builds, translated_names, summarized_descs):

@@ -3,470 +3,1253 @@
     "dva": {
       "name": "D.Va",
       "role": "tank",
-      "aliases": ["디바", "dva", "d.va"],
+      "aliases": [
+        "디바",
+        "dva",
+        "d.va"
+      ],
       "description": "근접 전투에 특화된 탱커. 매트릭스로 투사체를 막고 부스터로 기동성을 확보합니다.",
       "difficulty": 2,
-      "counters": ["zarya", "roadhog", "symmetra"],
-      "countered_by": ["reaper", "bastion", "mei"],
-      "synergies": ["lucio", "ana", "mercy"],
-      "tips": ["방어 매트릭스로 울트를 흡수하세요", "부스터로 백라인 딜러를 제거하세요"]
+      "counters": [
+        "zarya",
+        "roadhog",
+        "symmetra"
+      ],
+      "countered_by": [
+        "reaper",
+        "bastion",
+        "mei"
+      ],
+      "synergies": [
+        "lucio",
+        "ana",
+        "mercy"
+      ],
+      "tips": [
+        "방어 매트릭스로 울트를 흡수하세요",
+        "부스터로 백라인 딜러를 제거하세요"
+      ]
     },
     "doomfist": {
       "name": "Doomfist",
       "role": "tank",
-      "aliases": ["둠피스트", "둠", "doomfist"],
+      "aliases": [
+        "둠피스트",
+        "둠",
+        "doomfist"
+      ],
       "description": "돌진과 넉백을 활용한 공격적인 탱커.",
       "difficulty": 3,
-      "counters": ["ana", "cassidy", "sombra"],
-      "countered_by": ["mei", "reaper", "roadhog"],
-      "synergies": ["lucio", "kiriko", "ana"],
-      "tips": ["파워 블록으로 피해를 흡수해 강화 주먹을 준비하세요", "어빌리티 콤보로 최대 이동성을 활용하세요"]
+      "counters": [
+        "ana",
+        "cassidy",
+        "sombra"
+      ],
+      "countered_by": [
+        "mei",
+        "reaper",
+        "roadhog"
+      ],
+      "synergies": [
+        "lucio",
+        "kiriko",
+        "ana"
+      ],
+      "tips": [
+        "파워 블록으로 피해를 흡수해 강화 주먹을 준비하세요",
+        "어빌리티 콤보로 최대 이동성을 활용하세요"
+      ]
     },
     "hazard": {
       "name": "Hazard",
       "role": "tank",
-      "aliases": ["해저드", "hazard"],
+      "aliases": [
+        "해저드",
+        "hazard"
+      ],
       "description": "스파이크와 도약을 활용한 공격형 탱커.",
       "difficulty": 2,
-      "counters": ["bastion", "symmetra", "torbjorn"],
-      "countered_by": ["ana", "roadhog", "cassidy"],
-      "synergies": ["lucio", "ana", "mercy"],
-      "tips": ["도약으로 고지대를 선점하세요", "스파이크 가드로 근접 딜러를 처치하세요"]
+      "counters": [
+        "bastion",
+        "symmetra",
+        "torbjorn"
+      ],
+      "countered_by": [
+        "ana",
+        "roadhog",
+        "cassidy"
+      ],
+      "synergies": [
+        "lucio",
+        "ana",
+        "mercy"
+      ],
+      "tips": [
+        "도약으로 고지대를 선점하세요",
+        "스파이크 가드로 근접 딜러를 처치하세요"
+      ]
     },
     "junker_queen": {
       "name": "Junker Queen",
       "role": "tank",
-      "aliases": ["정커 퀸", "jq", "junkerqueen", "junker queen"],
+      "aliases": [
+        "정커 퀸",
+        "jq",
+        "junkerqueen",
+        "junker queen"
+      ],
       "description": "상처를 입혀 체력을 회복하는 공격적인 탱커.",
       "difficulty": 2,
-      "counters": ["reaper", "moira", "lucio"],
-      "countered_by": ["ana", "baptiste", "kiriko"],
-      "synergies": ["lucio", "moira", "ana"],
-      "tips": ["항상 상처 스택을 유지해 체력 회복을 극대화하세요", "카니발이즈드로 상처를 즉시 치유로 전환하세요"]
+      "counters": [
+        "reaper",
+        "moira",
+        "lucio"
+      ],
+      "countered_by": [
+        "ana",
+        "baptiste",
+        "kiriko"
+      ],
+      "synergies": [
+        "lucio",
+        "moira",
+        "ana"
+      ],
+      "tips": [
+        "항상 상처 스택을 유지해 체력 회복을 극대화하세요",
+        "카니발이즈드로 상처를 즉시 치유로 전환하세요"
+      ]
     },
     "mauga": {
       "name": "Mauga",
       "role": "tank",
-      "aliases": ["마우가", "mauga"],
+      "aliases": [
+        "마우가",
+        "mauga"
+      ],
       "description": "두 정의 기관총으로 지속 화력을 퍼붓는 탱커.",
       "difficulty": 1,
-      "counters": ["symmetra", "lucio", "moira"],
-      "countered_by": ["ana", "roadhog", "reaper"],
-      "synergies": ["ana", "kiriko", "baptiste"],
-      "tips": ["점화 총으로 불을 붙인 뒤 심장 저격 총으로 치명상을 노리세요", "울트 중 팀이 안으로 들어오도록 유도하세요"]
+      "counters": [
+        "symmetra",
+        "lucio",
+        "moira"
+      ],
+      "countered_by": [
+        "ana",
+        "roadhog",
+        "reaper"
+      ],
+      "synergies": [
+        "ana",
+        "kiriko",
+        "baptiste"
+      ],
+      "tips": [
+        "점화 총으로 불을 붙인 뒤 심장 저격 총으로 치명상을 노리세요",
+        "울트 중 팀이 안으로 들어오도록 유도하세요"
+      ]
     },
     "orisa": {
       "name": "Orisa",
       "role": "tank",
-      "aliases": ["오리사", "orisa"],
+      "aliases": [
+        "오리사",
+        "orisa"
+      ],
       "description": "창과 스핀 어택으로 근거리 압박이 강한 탱커.",
       "difficulty": 2,
-      "counters": ["pharah", "echo", "mercy"],
-      "countered_by": ["reaper", "bastion", "roadhog"],
-      "synergies": ["bastion", "hanzo", "zenyatta"],
-      "tips": ["요새화로 넉백과 CC를 무시하세요", "창 던지기로 상대를 약화시킨 뒤 근접 공격으로 마무리하세요"]
+      "counters": [
+        "pharah",
+        "echo",
+        "mercy"
+      ],
+      "countered_by": [
+        "reaper",
+        "bastion",
+        "roadhog"
+      ],
+      "synergies": [
+        "bastion",
+        "hanzo",
+        "zenyatta"
+      ],
+      "tips": [
+        "요새화로 넉백과 CC를 무시하세요",
+        "창 던지기로 상대를 약화시킨 뒤 근접 공격으로 마무리하세요"
+      ]
     },
     "ramattra": {
       "name": "Ramattra",
       "role": "tank",
-      "aliases": ["라마트라", "ram", "ramattra"],
+      "aliases": [
+        "라마트라",
+        "ram",
+        "ramattra"
+      ],
       "description": "옴닉 형태와 님버스 형태를 전환하며 싸우는 탱커.",
       "difficulty": 3,
-      "counters": ["pharah", "echo", "bastion"],
-      "countered_by": ["ana", "sombra", "cassidy"],
-      "synergies": ["zenyatta", "ana", "lucio"],
-      "tips": ["님버스 형태에서 근거리 딜러를 처치하세요", "울트로 적 전체 힐을 차단하세요"]
+      "counters": [
+        "pharah",
+        "echo",
+        "bastion"
+      ],
+      "countered_by": [
+        "ana",
+        "sombra",
+        "cassidy"
+      ],
+      "synergies": [
+        "zenyatta",
+        "ana",
+        "lucio"
+      ],
+      "tips": [
+        "님버스 형태에서 근거리 딜러를 처치하세요",
+        "울트로 적 전체 힐을 차단하세요"
+      ]
     },
     "reinhardt": {
       "name": "Reinhardt",
       "role": "tank",
-      "aliases": ["라인하르트", "rein", "reinhardt"],
+      "aliases": [
+        "라인하르트",
+        "rein",
+        "reinhardt"
+      ],
       "description": "방패와 근접 공격으로 팀을 보호하는 클래식 탱커.",
       "difficulty": 1,
-      "counters": ["bastion", "symmetra", "torbjorn"],
-      "countered_by": ["reaper", "sombra", "pharah"],
-      "synergies": ["ana", "mercy", "soldier76"],
-      "tips": ["방패를 아끼고 돌격은 결정적인 순간에 사용하세요", "팀원과 함께 움직이세요"]
+      "counters": [
+        "bastion",
+        "symmetra",
+        "torbjorn"
+      ],
+      "countered_by": [
+        "reaper",
+        "sombra",
+        "pharah"
+      ],
+      "synergies": [
+        "ana",
+        "mercy",
+        "soldier76"
+      ],
+      "tips": [
+        "방패를 아끼고 돌격은 결정적인 순간에 사용하세요",
+        "팀원과 함께 움직이세요"
+      ]
     },
     "roadhog": {
       "name": "Roadhog",
       "role": "tank",
-      "aliases": ["로드호그", "hog", "roadhog"],
+      "aliases": [
+        "로드호그",
+        "hog",
+        "roadhog"
+      ],
       "description": "갈고리로 적을 끌어당겨 처치하는 솔로 플레이형 탱커.",
       "difficulty": 1,
-      "counters": ["dva", "reinhardt", "zarya"],
-      "countered_by": ["ana", "kiriko", "cassidy"],
-      "synergies": ["ana", "mercy", "zenyatta"],
-      "tips": ["갈고리 → 근접 → 샷건 콤보로 대부분의 딜러를 처치하세요", "스크랩 건 자힐을 적재적소에 사용하세요"]
+      "counters": [
+        "dva",
+        "reinhardt",
+        "zarya"
+      ],
+      "countered_by": [
+        "ana",
+        "kiriko",
+        "cassidy"
+      ],
+      "synergies": [
+        "ana",
+        "mercy",
+        "zenyatta"
+      ],
+      "tips": [
+        "갈고리 → 근접 → 샷건 콤보로 대부분의 딜러를 처치하세요",
+        "스크랩 건 자힐을 적재적소에 사용하세요"
+      ]
     },
     "sigma": {
       "name": "Sigma",
       "role": "tank",
-      "aliases": ["시그마", "sigma"],
+      "aliases": [
+        "시그마",
+        "sigma"
+      ],
       "description": "강력한 방어막과 투사체 흡수 능력을 가진 탱커.",
       "difficulty": 3,
-      "counters": ["pharah", "echo", "junkrat"],
-      "countered_by": ["reaper", "mei", "roadhog"],
-      "synergies": ["hanzo", "ana", "zenyatta"],
-      "tips": ["운동 파악으로 투사체를 흡수해 아머를 채우세요", "방어막을 포지셔닝 도구로 활용하세요"]
+      "counters": [
+        "pharah",
+        "echo",
+        "junkrat"
+      ],
+      "countered_by": [
+        "reaper",
+        "mei",
+        "roadhog"
+      ],
+      "synergies": [
+        "hanzo",
+        "ana",
+        "zenyatta"
+      ],
+      "tips": [
+        "운동 파악으로 투사체를 흡수해 아머를 채우세요",
+        "방어막을 포지셔닝 도구로 활용하세요"
+      ]
     },
     "winston": {
       "name": "Winston",
       "role": "tank",
-      "aliases": ["윈스턴", "winston", "monkey"],
-      "description": "점프 팩으로 백라인에 침투하는 다이브 탱커.",
+      "aliases": [
+        "윈스턴",
+        "winston",
+        "monkey"
+      ],
       "description": "점프 팩으로 백라인에 침투하는 다이브 탱커.",
       "difficulty": 2,
-      "counters": ["tracer", "genji", "sombra"],
-      "countered_by": ["reaper", "bastion", "roadhog"],
-      "synergies": ["dva", "tracer", "lucio"],
-      "tips": ["소형 타겟(트레이서, 겐지)을 우선 처치하세요", "방어막 발생기로 팀에게 안전한 공간을 확보하세요"]
+      "counters": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "countered_by": [
+        "reaper",
+        "bastion",
+        "roadhog"
+      ],
+      "synergies": [
+        "dva",
+        "tracer",
+        "lucio"
+      ],
+      "tips": [
+        "소형 타겟(트레이서, 겐지)을 우선 처치하세요",
+        "방어막 발생기로 팀에게 안전한 공간을 확보하세요"
+      ]
     },
     "wrecking_ball": {
       "name": "Wrecking Ball",
       "role": "tank",
-      "aliases":["레킹볼", "ball", "hammond", "wrecking ball", "wreckingball"],
+      "aliases": [
+        "레킹볼",
+        "ball",
+        "hammond",
+        "wrecking ball",
+        "wreckingball"
+      ],
       "description": "구르며 적을 혼란에 빠뜨리는 고기동 탱커.",
       "difficulty": 3,
-      "counters": ["zenyatta", "ana", "baptiste"],
-      "countered_by": ["cassidy", "roadhog", "sombra"],
-      "synergies": ["dva", "lucio", "tracer"],
-      "tips": ["기뢰를 군중 속에 설치한 뒤 울트로 폭발시키세요", "적진을 휘젓고 빠져나오세요"]
+      "counters": [
+        "zenyatta",
+        "ana",
+        "baptiste"
+      ],
+      "countered_by": [
+        "cassidy",
+        "roadhog",
+        "sombra"
+      ],
+      "synergies": [
+        "dva",
+        "lucio",
+        "tracer"
+      ],
+      "tips": [
+        "기뢰를 군중 속에 설치한 뒤 울트로 폭발시키세요",
+        "적진을 휘젓고 빠져나오세요"
+      ]
     },
     "zarya": {
       "name": "Zarya",
       "role": "tank",
-      "aliases": ["자리야", "zarya"],
+      "aliases": [
+        "자리야",
+        "zarya"
+      ],
       "description": "에너지를 축적할수록 강해지는 방어막 탱커.",
       "difficulty": 2,
-      "counters": ["dva", "roadhog", "mei"],
-      "countered_by": ["sombra", "bastion", "symmetra"],
-      "synergies": ["hanzo", "mei", "genji"],
-      "tips": ["방어막을 아군에게 적재적소에 사용해 에너지를 충전하세요", "중력자 탄 + 용의 강타 콤보를 노리세요"]
+      "counters": [
+        "dva",
+        "roadhog",
+        "mei"
+      ],
+      "countered_by": [
+        "sombra",
+        "bastion",
+        "symmetra"
+      ],
+      "synergies": [
+        "hanzo",
+        "mei",
+        "genji"
+      ],
+      "tips": [
+        "방어막을 아군에게 적재적소에 사용해 에너지를 충전하세요",
+        "중력자 탄 + 용의 강타 콤보를 노리세요"
+      ]
     },
     "ashe": {
       "name": "Ashe",
       "role": "damage",
-      "aliases": ["애쉬", "ashe"],
+      "aliases": [
+        "애쉬",
+        "ashe"
+      ],
       "description": "반자동 소총과 코치건으로 싸우는 중거리 딜러.",
       "difficulty": 2,
-      "counters": ["pharah", "echo", "mercy"],
-      "countered_by": ["tracer", "genji", "winston"],
-      "synergies": ["lucio", "ana", "zenyatta"],
-      "tips": ["B.O.B.을 좁은 통로나 목표 지점에 소환하세요", "코치건으로 고지대를 이동하거나 근접 적을 밀어내세요"]
+      "counters": [
+        "pharah",
+        "echo",
+        "mercy"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "winston"
+      ],
+      "synergies": [
+        "lucio",
+        "ana",
+        "zenyatta"
+      ],
+      "tips": [
+        "B.O.B.을 좁은 통로나 목표 지점에 소환하세요",
+        "코치건으로 고지대를 이동하거나 근접 적을 밀어내세요"
+      ]
     },
     "bastion": {
       "name": "Bastion",
       "role": "damage",
-      "aliases": ["바스티온", "bastion"],
+      "aliases": [
+        "바스티온",
+        "bastion"
+      ],
       "description": "강력한 화력을 지닌 기동성 낮은 딜러.",
       "difficulty": 1,
-      "counters": ["reinhardt", "orisa", "sigma"],
-      "countered_by": ["pharah", "genji", "sombra"],
-      "synergies": ["orisa", "ana", "mercy"],
-      "tips": ["팀의 보호 아래 포격 형태를 활용하세요", "탱크 모드 울트는 열린 공간에서 사용하세요"]
+      "counters": [
+        "reinhardt",
+        "orisa",
+        "sigma"
+      ],
+      "countered_by": [
+        "pharah",
+        "genji",
+        "sombra"
+      ],
+      "synergies": [
+        "orisa",
+        "ana",
+        "mercy"
+      ],
+      "tips": [
+        "팀의 보호 아래 포격 형태를 활용하세요",
+        "탱크 모드 울트는 열린 공간에서 사용하세요"
+      ]
     },
     "cassidy": {
       "name": "Cassidy",
       "role": "damage",
-      "aliases": ["캐시디", "cass", "cassidy", "mccree"],
+      "aliases": [
+        "캐시디",
+        "cass",
+        "cassidy",
+        "mccree"
+      ],
       "description": "정확한 조준과 섬광탄으로 딜을 넣는 중거리 딜러.",
       "difficulty": 2,
-      "counters": ["tracer", "genji", "lucio"],
-      "countered_by": ["pharah", "echo", "sigma"],
-      "synergies": ["ana", "zenyatta", "baptiste"],
-      "tips": ["섬광탄으로 CC 후 팬 더 해머를 사용하세요", "자기장 수류탄으로 힐을 차단하세요"]
+      "counters": [
+        "tracer",
+        "genji",
+        "lucio"
+      ],
+      "countered_by": [
+        "pharah",
+        "echo",
+        "sigma"
+      ],
+      "synergies": [
+        "ana",
+        "zenyatta",
+        "baptiste"
+      ],
+      "tips": [
+        "섬광탄으로 CC 후 팬 더 해머를 사용하세요",
+        "자기장 수류탄으로 힐을 차단하세요"
+      ]
     },
     "echo": {
       "name": "Echo",
       "role": "damage",
-      "aliases": ["에코", "echo"],
+      "aliases": [
+        "에코",
+        "echo"
+      ],
       "description": "비행 능력과 복제로 유연하게 싸우는 딜러.",
       "difficulty": 3,
-      "counters": ["pharah", "mercy", "zenyatta"],
-      "countered_by": ["cassidy", "ashe", "soldier76"],
-      "synergies": ["mercy", "ana", "lucio"],
-      "tips": ["복제는 적 탱커보다 지원가나 딜러를 대상으로 하세요", "고지대를 활용한 집속 광선 딜이 핵심입니다"]
+      "counters": [
+        "pharah",
+        "mercy",
+        "zenyatta"
+      ],
+      "countered_by": [
+        "cassidy",
+        "ashe",
+        "soldier76"
+      ],
+      "synergies": [
+        "mercy",
+        "ana",
+        "lucio"
+      ],
+      "tips": [
+        "복제는 적 탱커보다 지원가나 딜러를 대상으로 하세요",
+        "고지대를 활용한 집속 광선 딜이 핵심입니다"
+      ]
     },
     "genji": {
       "name": "Genji",
       "role": "damage",
-      "aliases": ["겐지", "genji"],
+      "aliases": [
+        "겐지",
+        "genji"
+      ],
       "description": "기민하게 움직이며 반사로 투사체를 돌려보내는 다이브 딜러.",
       "difficulty": 3,
-      "counters": ["zenyatta", "ana", "baptiste"],
-      "countered_by": ["cassidy", "roadhog", "mei"],
-      "synergies": ["ana", "lucio", "kiriko"],
-      "tips": ["용검은 나노강화제와 함께 사용하세요", "반사는 섬광탄, 수면 다트 등 CC기에도 유효합니다"]
+      "counters": [
+        "zenyatta",
+        "ana",
+        "baptiste"
+      ],
+      "countered_by": [
+        "cassidy",
+        "roadhog",
+        "mei"
+      ],
+      "synergies": [
+        "ana",
+        "lucio",
+        "kiriko"
+      ],
+      "tips": [
+        "용검은 나노강화제와 함께 사용하세요",
+        "반사는 섬광탄, 수면 다트 등 CC기에도 유효합니다"
+      ]
     },
     "hanzo": {
       "name": "Hanzo",
       "role": "damage",
-      "aliases": ["한조", "hanzo"],
+      "aliases": [
+        "한조",
+        "hanzo"
+      ],
       "description": "강력한 단일 딜과 정보력으로 싸우는 저격수.",
       "difficulty": 3,
-      "counters": ["pharah", "winston", "dva"],
-      "countered_by": ["tracer", "genji", "winston"],
-      "synergies": ["zarya", "sigma", "zenyatta"],
-      "tips": ["음파 화살로 적의 위치를 파악하세요", "용의 강타는 좁은 통로에서 최대 효과를 발휘합니다"]
+      "counters": [
+        "pharah",
+        "winston",
+        "dva"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "winston"
+      ],
+      "synergies": [
+        "zarya",
+        "sigma",
+        "zenyatta"
+      ],
+      "tips": [
+        "음파 화살로 적의 위치를 파악하세요",
+        "용의 강타는 좁은 통로에서 최대 효과를 발휘합니다"
+      ]
     },
     "junkrat": {
       "name": "Junkrat",
       "role": "damage",
-      "aliases": ["정크랫", "junk", "junkrat"],
+      "aliases": [
+        "정크랫",
+        "junk",
+        "junkrat"
+      ],
       "description": "폭발물로 지역을 제압하는 딜러.",
       "difficulty": 1,
-      "counters": ["reinhardt", "orisa", "sigma"],
-      "countered_by": ["pharah", "echo", "soldier76"],
-      "synergies": ["lucio", "ana", "mercy"],
-      "tips": ["강철 덫을 목표 지점 뒤나 좁은 길목에 설치하세요", "폭발 점프로 고지대를 이동하세요"]
+      "counters": [
+        "reinhardt",
+        "orisa",
+        "sigma"
+      ],
+      "countered_by": [
+        "pharah",
+        "echo",
+        "soldier76"
+      ],
+      "synergies": [
+        "lucio",
+        "ana",
+        "mercy"
+      ],
+      "tips": [
+        "강철 덫을 목표 지점 뒤나 좁은 길목에 설치하세요",
+        "폭발 점프로 고지대를 이동하세요"
+      ]
     },
     "mei": {
       "name": "Mei",
       "role": "damage",
-      "aliases": ["메이", "mei"],
+      "aliases": [
+        "메이",
+        "mei"
+      ],
       "description": "빙결과 얼음 벽으로 적을 통제하는 딜러.",
       "difficulty": 2,
-      "counters": ["tracer", "genji", "wrecking_ball"],
-      "countered_by": ["pharah", "echo", "bastion"],
-      "synergies": ["zarya", "hanzo", "reaper"],
-      "tips": ["얼음 벽으로 적 팀을 분리하세요", "한파로 적을 빙결시킨 뒤 고드름으로 처치하세요"]
+      "counters": [
+        "tracer",
+        "genji",
+        "wrecking_ball"
+      ],
+      "countered_by": [
+        "pharah",
+        "echo",
+        "bastion"
+      ],
+      "synergies": [
+        "zarya",
+        "hanzo",
+        "reaper"
+      ],
+      "tips": [
+        "얼음 벽으로 적 팀을 분리하세요",
+        "한파로 적을 빙결시킨 뒤 고드름으로 처치하세요"
+      ]
     },
     "pharah": {
       "name": "Pharah",
       "role": "damage",
-      "aliases": ["파라", "pharah"],
+      "aliases": [
+        "파라",
+        "pharah"
+      ],
       "description": "공중에서 로켓을 발사하는 딜러.",
       "difficulty": 2,
-      "counters": ["reinhardt", "orisa", "roadhog"],
-      "countered_by": ["soldier76", "cassidy", "ashe"],
-      "synergies": ["mercy", "ana", "lucio"],
-      "tips": ["공중에서 적이 쉽게 조준하지 못하도록 계속 움직이세요", "머시와 파라메르시 콤보가 강력합니다"]
+      "counters": [
+        "reinhardt",
+        "orisa",
+        "roadhog"
+      ],
+      "countered_by": [
+        "soldier76",
+        "cassidy",
+        "ashe"
+      ],
+      "synergies": [
+        "mercy",
+        "ana",
+        "lucio"
+      ],
+      "tips": [
+        "공중에서 적이 쉽게 조준하지 못하도록 계속 움직이세요",
+        "머시와 파라메르시 콤보가 강력합니다"
+      ]
     },
     "reaper": {
       "name": "Reaper",
       "role": "damage",
-      "aliases": ["리퍼", "reaper"],
+      "aliases": [
+        "리퍼",
+        "reaper"
+      ],
       "description": "근접 거리에서 강력한 딜과 자힐을 가진 딜러.",
       "difficulty": 1,
-      "counters": ["dva", "winston", "reinhardt"],
-      "countered_by": ["pharah", "echo", "cassidy"],
-      "synergies": ["lucio", "ana", "sombra"],
-      "tips": ["사형 집행은 탱커가 몰려있을 때 사용하세요", "그림자 밟기로 백라인에 침투하세요"]
+      "counters": [
+        "dva",
+        "winston",
+        "reinhardt"
+      ],
+      "countered_by": [
+        "pharah",
+        "echo",
+        "cassidy"
+      ],
+      "synergies": [
+        "lucio",
+        "ana",
+        "sombra"
+      ],
+      "tips": [
+        "사형 집행은 탱커가 몰려있을 때 사용하세요",
+        "그림자 밟기로 백라인에 침투하세요"
+      ]
     },
     "sojourn": {
       "name": "Sojourn",
       "role": "damage",
-      "aliases": ["소전", "sojourn"],
+      "aliases": [
+        "소전",
+        "sojourn"
+      ],
       "description": "레일건 충전 사격으로 고딜을 넣는 딜러.",
       "difficulty": 2,
-      "counters": ["pharah", "echo", "baptiste"],
-      "countered_by": ["tracer", "genji", "winston"],
-      "synergies": ["ana", "zenyatta", "lucio"],
-      "tips": ["빠른 사격으로 레일건 게이지를 충전해 충전 사격을 자주 사용하세요", "파워 슬라이드로 교전 포지션을 바꾸세요"]
+      "counters": [
+        "pharah",
+        "echo",
+        "baptiste"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "winston"
+      ],
+      "synergies": [
+        "ana",
+        "zenyatta",
+        "lucio"
+      ],
+      "tips": [
+        "빠른 사격으로 레일건 게이지를 충전해 충전 사격을 자주 사용하세요",
+        "파워 슬라이드로 교전 포지션을 바꾸세요"
+      ]
     },
     "soldier76": {
       "name": "Soldier: 76",
       "role": "damage",
-      "aliases":["솔저", "soldier76", "soldier: 76", "76"],
+      "aliases": [
+        "솔저",
+        "soldier76",
+        "soldier: 76",
+        "76"
+      ],
       "description": "안정적인 딜과 자힐, 스프린트를 갖춘 올라운더 딜러.",
       "difficulty": 1,
-      "counters": ["pharah", "echo", "mercy"],
-      "countered_by": ["tracer", "genji", "winston"],
-      "synergies": ["ana", "mercy", "lucio"],
-      "tips": ["전술 조준경으로 빠르게 적을 처치한 뒤 빠져나오세요", "회복 바이오틱으로 팀에게 힐을 제공하세요"]
+      "counters": [
+        "pharah",
+        "echo",
+        "mercy"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "winston"
+      ],
+      "synergies": [
+        "ana",
+        "mercy",
+        "lucio"
+      ],
+      "tips": [
+        "전술 조준경으로 빠르게 적을 처치한 뒤 빠져나오세요",
+        "회복 바이오틱으로 팀에게 힐을 제공하세요"
+      ]
     },
     "sombra": {
       "name": "Sombra",
       "role": "damage",
-      "aliases": ["솜브라", "sombra"],
+      "aliases": [
+        "솜브라",
+        "sombra"
+      ],
       "description": "해킹으로 적을 무력화하는 정보전 딜러.",
       "difficulty": 3,
-      "counters": ["dva", "winston", "wrecking_ball"],
-      "countered_by": ["cassidy", "roadhog", "mei"],
-      "synergies": ["zarya", "reaper", "lucio"],
-      "tips": ["체력이 낮은 적을 해킹해 EMP 없이도 처치하세요", "EMP는 방어막을 모두 제거하므로 울트 직전에 사용하세요"]
+      "counters": [
+        "dva",
+        "winston",
+        "wrecking_ball"
+      ],
+      "countered_by": [
+        "cassidy",
+        "roadhog",
+        "mei"
+      ],
+      "synergies": [
+        "zarya",
+        "reaper",
+        "lucio"
+      ],
+      "tips": [
+        "체력이 낮은 적을 해킹해 EMP 없이도 처치하세요",
+        "EMP는 방어막을 모두 제거하므로 울트 직전에 사용하세요"
+      ]
     },
     "symmetra": {
       "name": "Symmetra",
       "role": "damage",
-      "aliases": ["시메트라", "sym", "symmetra"],
+      "aliases": [
+        "시메트라",
+        "sym",
+        "symmetra"
+      ],
       "description": "포탑과 광자 장벽으로 지역을 통제하는 딜러.",
       "difficulty": 2,
-      "counters": ["reinhardt", "zarya", "dva"],
-      "countered_by": ["pharah", "bastion", "soldier76"],
-      "synergies": ["zarya", "roadhog", "lucio"],
-      "tips": ["포탑은 적이 예상 못하는 위치에 설치하세요", "순간이동 장치로 팀의 진입 속도를 높이세요"]
+      "counters": [
+        "reinhardt",
+        "zarya",
+        "dva"
+      ],
+      "countered_by": [
+        "pharah",
+        "bastion",
+        "soldier76"
+      ],
+      "synergies": [
+        "zarya",
+        "roadhog",
+        "lucio"
+      ],
+      "tips": [
+        "포탑은 적이 예상 못하는 위치에 설치하세요",
+        "순간이동 장치로 팀의 진입 속도를 높이세요"
+      ]
     },
     "torbjorn": {
       "name": "Torbjörn",
       "role": "damage",
-      "aliases": ["토르비욘", "torb", "torbjorn"],
+      "aliases": [
+        "토르비욘",
+        "torb",
+        "torbjorn"
+      ],
       "description": "포탑으로 지역을 방어하는 딜러.",
       "difficulty": 1,
-      "counters": ["reinhardt", "roadhog", "dva"],
-      "countered_by": ["pharah", "bastion", "soldier76"],
-      "synergies": ["zarya", "lucio", "ana"],
-      "tips": ["포탑은 목표 지점이나 진입로를 커버하는 위치에 설치하세요", "오버로드는 극한 교전 시 사용하세요"]
+      "counters": [
+        "reinhardt",
+        "roadhog",
+        "dva"
+      ],
+      "countered_by": [
+        "pharah",
+        "bastion",
+        "soldier76"
+      ],
+      "synergies": [
+        "zarya",
+        "lucio",
+        "ana"
+      ],
+      "tips": [
+        "포탑은 목표 지점이나 진입로를 커버하는 위치에 설치하세요",
+        "오버로드는 극한 교전 시 사용하세요"
+      ]
     },
     "tracer": {
       "name": "Tracer",
       "role": "damage",
-      "aliases": ["트레이서", "tracer"],
+      "aliases": [
+        "트레이서",
+        "tracer"
+      ],
       "description": "점멸과 되감기로 빠르게 움직이는 다이브 딜러.",
       "difficulty": 3,
-      "counters": ["zenyatta", "ana", "baptiste"],
-      "countered_by": ["cassidy", "roadhog", "mei"],
-      "synergies": ["winston", "dva", "lucio"],
-      "tips": ["백라인 힐러를 우선 처치하세요", "펄스 폭탄은 벽에 붙은 상태로 사용해 빗나감을 줄이세요"]
+      "counters": [
+        "zenyatta",
+        "ana",
+        "baptiste"
+      ],
+      "countered_by": [
+        "cassidy",
+        "roadhog",
+        "mei"
+      ],
+      "synergies": [
+        "winston",
+        "dva",
+        "lucio"
+      ],
+      "tips": [
+        "백라인 힐러를 우선 처치하세요",
+        "펄스 폭탄은 벽에 붙은 상태로 사용해 빗나감을 줄이세요"
+      ]
     },
     "venture": {
       "name": "Venture",
       "role": "damage",
-      "aliases": ["벤처", "venture"],
+      "aliases": [
+        "벤처",
+        "venture"
+      ],
       "description": "땅 속을 파고들어 기습하는 근접 딜러.",
       "difficulty": 2,
-      "counters": ["reinhardt", "roadhog", "dva"],
-      "countered_by": ["cassidy", "mei", "roadhog"],
-      "synergies": ["lucio", "ana", "kiriko"],
-      "tips": ["굴착 대시로 적에게 접근하거나 도망치세요", "울트는 적이 밀집된 곳에서 사용하세요"]
+      "counters": [
+        "reinhardt",
+        "roadhog",
+        "dva"
+      ],
+      "countered_by": [
+        "cassidy",
+        "mei",
+        "roadhog"
+      ],
+      "synergies": [
+        "lucio",
+        "ana",
+        "kiriko"
+      ],
+      "tips": [
+        "굴착 대시로 적에게 접근하거나 도망치세요",
+        "울트는 적이 밀집된 곳에서 사용하세요"
+      ]
     },
     "widowmaker": {
       "name": "Widowmaker",
       "role": "damage",
-      "aliases": ["위도우메이커", "widow", "widowmaker"],
+      "aliases": [
+        "위도우메이커",
+        "widow",
+        "widowmaker"
+      ],
       "description": "저격으로 적을 처치하는 고위험 고보상 딜러.",
       "difficulty": 3,
-      "counters": ["pharah", "zenyatta", "ana"],
-      "countered_by": ["tracer", "genji", "sombra"],
-      "synergies": ["lucio", "ana", "batman"],
-      "tips": ["시야를 충분히 확보한 안전한 위치에서 저격하세요", "독 지뢰로 근접 딜러의 접근을 막으세요"]
+      "counters": [
+        "pharah",
+        "zenyatta",
+        "ana"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "synergies": [
+        "lucio",
+        "ana",
+        "batman"
+      ],
+      "tips": [
+        "시야를 충분히 확보한 안전한 위치에서 저격하세요",
+        "독 지뢰로 근접 딜러의 접근을 막으세요"
+      ]
     },
     "ana": {
       "name": "Ana",
       "role": "support",
-      "aliases": ["아나", "ana"],
+      "aliases": [
+        "아나",
+        "ana"
+      ],
       "description": "강력한 힐과 CC를 갖춘 저격 힐러.",
       "difficulty": 3,
-      "counters": ["roadhog", "junker_queen", "doomfist"],
-      "countered_by": ["genji", "tracer", "sombra"],
-      "synergies": ["genji", "reinhardt", "winston"],
-      "tips": ["나노강화제는 울트를 보유한 아군에게 사용하세요", "수면 다트로 극한의 울트를 막으세요"]
+      "counters": [
+        "roadhog",
+        "junker_queen",
+        "doomfist"
+      ],
+      "countered_by": [
+        "genji",
+        "tracer",
+        "sombra"
+      ],
+      "synergies": [
+        "genji",
+        "reinhardt",
+        "winston"
+      ],
+      "tips": [
+        "나노강화제는 울트를 보유한 아군에게 사용하세요",
+        "수면 다트로 극한의 울트를 막으세요"
+      ]
     },
     "baptiste": {
       "name": "Baptiste",
       "role": "support",
-      "aliases": ["바티스트", "bap", "baptiste"],
+      "aliases": [
+        "바티스트",
+        "bap",
+        "baptiste"
+      ],
       "description": "불사 지역과 강력한 힐/딜을 겸비한 지원가.",
       "difficulty": 2,
-      "counters": ["roadhog", "dva", "orisa"],
-      "countered_by": ["tracer", "genji", "sombra"],
-      "synergies": ["orisa", "bastion", "hanzo"],
-      "tips": ["불사 지역은 팀이 전멸 직전일 때 사용하세요", "증폭 매트릭스 안에서 아군의 딜/힐이 2배가 됩니다"]
+      "counters": [
+        "roadhog",
+        "dva",
+        "orisa"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "synergies": [
+        "orisa",
+        "bastion",
+        "hanzo"
+      ],
+      "tips": [
+        "불사 지역은 팀이 전멸 직전일 때 사용하세요",
+        "증폭 매트릭스 안에서 아군의 딜/힐이 2배가 됩니다"
+      ]
     },
     "briggitte": {
       "name": "Brigitte",
       "role": "support",
-      "aliases": ["브리기테", "brig", "brigitte", "briggitte"],
+      "aliases": [
+        "브리기테",
+        "brig",
+        "brigitte",
+        "briggitte"
+      ],
       "description": "근접 전투와 방어막으로 팀을 보호하는 지원가.",
       "difficulty": 1,
-      "counters": ["tracer", "genji", "sombra"],
-      "countered_by": ["pharah", "bastion", "soldier76"],
-      "synergies": ["lucio", "reinhardt", "zarya"],
-      "tips": ["방패 강타로 CC를 가한 뒤 채찍질 공격을 연계하세요", "방패 돌진으로 아군을 보호하거나 적을 밀어내세요"]
+      "counters": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "countered_by": [
+        "pharah",
+        "bastion",
+        "soldier76"
+      ],
+      "synergies": [
+        "lucio",
+        "reinhardt",
+        "zarya"
+      ],
+      "tips": [
+        "방패 강타로 CC를 가한 뒤 채찍질 공격을 연계하세요",
+        "방패 돌진으로 아군을 보호하거나 적을 밀어내세요"
+      ]
     },
     "illari": {
       "name": "Illari",
       "role": "support",
-      "aliases": ["일라리", "illari"],
+      "aliases": [
+        "일라리",
+        "illari"
+      ],
       "description": "강력한 단일 힐 포탑과 딜을 겸비한 지원가.",
       "difficulty": 2,
-      "counters": ["pharah", "echo", "soldier76"],
-      "countered_by": ["tracer", "genji", "sombra"],
-      "synergies": ["lucio", "ana", "zarya"],
-      "tips": ["태양 포탑을 보호받는 위치에 설치하세요", "울트로 적을 넉백시켜 팀의 공세를 보조하세요"]
+      "counters": [
+        "pharah",
+        "echo",
+        "soldier76"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "synergies": [
+        "lucio",
+        "ana",
+        "zarya"
+      ],
+      "tips": [
+        "태양 포탑을 보호받는 위치에 설치하세요",
+        "울트로 적을 넉백시켜 팀의 공세를 보조하세요"
+      ]
     },
     "juno": {
       "name": "Juno",
       "role": "support",
-      "aliases": ["주노", "juno"],
+      "aliases": [
+        "주노",
+        "juno"
+      ],
       "description": "기동성과 힐, 속도 부스트를 갖춘 지원가.",
       "difficulty": 2,
-      "counters": ["pharah", "dva", "lucio"],
-      "countered_by": ["tracer", "genji", "sombra"],
-      "synergies": ["lucio", "tracer", "winston"],
-      "tips": ["궤도 링을 아군이 통과하도록 배치하세요", "미사일 발사대로 원거리 딜을 추가하세요"]
+      "counters": [
+        "pharah",
+        "dva",
+        "lucio"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "synergies": [
+        "lucio",
+        "tracer",
+        "winston"
+      ],
+      "tips": [
+        "궤도 링을 아군이 통과하도록 배치하세요",
+        "미사일 발사대로 원거리 딜을 추가하세요"
+      ]
     },
     "kiriko": {
       "name": "Kiriko",
       "role": "support",
-      "aliases": ["키리코", "kiri", "kiriko"],
+      "aliases": [
+        "키리코",
+        "kiri",
+        "kiriko"
+      ],
       "description": "순간이동과 CC 제거를 갖춘 민첩한 지원가.",
       "difficulty": 3,
-      "counters": ["roadhog", "ana", "cassidy"],
-      "countered_by": ["bastion", "soldier76", "ashe"],
-      "synergies": ["genji", "tracer", "winston"],
-      "tips": ["수호 방울로 CC와 치명적인 디버프를 즉시 제거하세요", "부적 창은 헤드샷 판정이므로 정확도가 중요합니다"]
+      "counters": [
+        "roadhog",
+        "ana",
+        "cassidy"
+      ],
+      "countered_by": [
+        "bastion",
+        "soldier76",
+        "ashe"
+      ],
+      "synergies": [
+        "genji",
+        "tracer",
+        "winston"
+      ],
+      "tips": [
+        "수호 방울로 CC와 치명적인 디버프를 즉시 제거하세요",
+        "부적 창은 헤드샷 판정이므로 정확도가 중요합니다"
+      ]
     },
     "lifeweaver": {
       "name": "Lifeweaver",
       "role": "support",
-      "aliases": ["라이프위버", "lw", "lifeweaver"],
+      "aliases": [
+        "라이프위버",
+        "lw",
+        "lifeweaver"
+      ],
       "description": "생명의 고삐로 아군을 당겨 구하는 독특한 지원가.",
       "difficulty": 3,
-      "counters": ["roadhog", "dva", "junker_queen"],
-      "countered_by": ["tracer", "genji", "sombra"],
-      "synergies": ["reinhardt", "ana", "zarya"],
-      "tips": ["생명의 고삐로 죽기 직전의 아군을 구하세요", "자연의 안식처는 팀이 후퇴할 때 사용하세요"]
+      "counters": [
+        "roadhog",
+        "dva",
+        "junker_queen"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "synergies": [
+        "reinhardt",
+        "ana",
+        "zarya"
+      ],
+      "tips": [
+        "생명의 고삐로 죽기 직전의 아군을 구하세요",
+        "자연의 안식처는 팀이 후퇴할 때 사용하세요"
+      ]
     },
     "lucio": {
       "name": "Lúcio",
       "role": "support",
-      "aliases": ["루시우", "lucio"],
+      "aliases": [
+        "루시우",
+        "lucio"
+      ],
       "description": "범위 힐과 속도 부스트로 팀을 지원하는 지원가.",
       "difficulty": 2,
-      "counters": ["roadhog", "junkrat", "symmetra"],
-      "countered_by": ["cassidy", "ashe", "soldier76"],
-      "synergies": ["dva", "tracer", "zarya"],
-      "tips": ["소리 강타는 적을 절벽 아래로 밀어 처치하는 데 유용합니다", "교전 시 힐 비트, 이동 시 속도 비트를 사용하세요"]
+      "counters": [
+        "roadhog",
+        "junkrat",
+        "symmetra"
+      ],
+      "countered_by": [
+        "cassidy",
+        "ashe",
+        "soldier76"
+      ],
+      "synergies": [
+        "dva",
+        "tracer",
+        "zarya"
+      ],
+      "tips": [
+        "소리 강타는 적을 절벽 아래로 밀어 처치하는 데 유용합니다",
+        "교전 시 힐 비트, 이동 시 속도 비트를 사용하세요"
+      ]
     },
     "mercy": {
       "name": "Mercy",
       "role": "support",
-      "aliases": ["메르시", "mercy"],
+      "aliases": [
+        "메르시",
+        "mercy"
+      ],
       "description": "강력한 부활과 딜 증폭을 가진 클래식 힐러.",
       "difficulty": 1,
-      "counters": ["pharah", "echo", "soldier76"],
-      "countered_by": ["tracer", "genji", "sombra"],
-      "synergies": ["pharah", "ashe", "bastion"],
-      "tips": ["딜 증폭은 원거리 딜러에게 사용해 딜을 극대화하세요", "천사의 강림은 은폐하며 사용해 안전하게 부활하세요"]
+      "counters": [
+        "pharah",
+        "echo",
+        "soldier76"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "synergies": [
+        "pharah",
+        "ashe",
+        "bastion"
+      ],
+      "tips": [
+        "딜 증폭은 원거리 딜러에게 사용해 딜을 극대화하세요",
+        "천사의 강림은 은폐하며 사용해 안전하게 부활하세요"
+      ]
     },
     "moira": {
       "name": "Moira",
       "role": "support",
-      "aliases": ["모이라", "moira"],
+      "aliases": [
+        "모이라",
+        "moira"
+      ],
       "description": "힐과 딜을 동시에 할 수 있는 근접형 지원가.",
       "difficulty": 1,
-      "counters": ["roadhog", "dva", "junker_queen"],
-      "countered_by": ["pharah", "bastion", "soldier76"],
-      "synergies": ["zarya", "reaper", "lucio"],
-      "tips": ["생명력 흡수로 딜을 넣으며 회복 오브를 충전하세요", "소멸은 힐을 차단하므로 상대 힐러를 향해 사용하세요"]
+      "counters": [
+        "roadhog",
+        "dva",
+        "junker_queen"
+      ],
+      "countered_by": [
+        "pharah",
+        "bastion",
+        "soldier76"
+      ],
+      "synergies": [
+        "zarya",
+        "reaper",
+        "lucio"
+      ],
+      "tips": [
+        "생명력 흡수로 딜을 넣으며 회복 오브를 충전하세요",
+        "소멸은 힐을 차단하므로 상대 힐러를 향해 사용하세요"
+      ]
     },
     "zenyatta": {
       "name": "Zenyatta",
       "role": "support",
-      "aliases": ["젠야타", "zen", "zenyatta"],
+      "aliases": [
+        "젠야타",
+        "zen",
+        "zenyatta"
+      ],
       "description": "불화 주옥으로 적을 약화시키는 딜형 지원가.",
       "difficulty": 2,
-      "counters": ["roadhog", "dva", "orisa"],
-      "countered_by": ["tracer", "genji", "sombra"],
-      "synergies": ["genji", "hanzo", "sojourn"],
-      "tips": ["불화 주옥은 탱커보다 하이 퍼텐셜 딜러에게 사용하세요", "초월은 팀이 아군 진영에 뭉쳐있을 때 최대 효과입니다"]
+      "counters": [
+        "roadhog",
+        "dva",
+        "orisa"
+      ],
+      "countered_by": [
+        "tracer",
+        "genji",
+        "sombra"
+      ],
+      "synergies": [
+        "genji",
+        "hanzo",
+        "sojourn"
+      ],
+      "tips": [
+        "불화 주옥은 탱커보다 하이 퍼텐셜 딜러에게 사용하세요",
+        "초월은 팀이 아군 진영에 뭉쳐있을 때 최대 효과입니다"
+      ]
     },
     "freja": {
       "name": "Freja",
       "role": "damage",
-      "aliases": ["프레야", "freja"],
+      "aliases": [
+        "프레야",
+        "freja"
+      ],
       "description": "활과 화살로 적을 사냥하는 딜러.",
       "difficulty": 2,
       "counters": [],
@@ -477,7 +1260,10 @@
     "vendetta": {
       "name": "Vendetta",
       "role": "damage",
-      "aliases": ["벤데타", "vendetta"],
+      "aliases": [
+        "벤데타",
+        "vendetta"
+      ],
       "description": "근접 전투에 특화된 암살자형 딜러.",
       "difficulty": 3,
       "counters": [],
@@ -488,30 +1274,129 @@
     "wuyang": {
       "name": "Wuyang",
       "role": "support",
-      "aliases": ["우양", "wuyang"],
+      "aliases": [
+        "우양",
+        "wuyang"
+      ],
       "description": "환상과 분신을 활용하는 지원가.",
       "difficulty": 2,
       "counters": [],
       "countered_by": [],
       "synergies": [],
       "tips": []
+    },
+    "mizuki": {
+      "name": "Mizuki",
+      "role": "support",
+      "aliases": [
+        "미즈키",
+        "mizuki"
+      ]
+    },
+    "emre": {
+      "name": "Emre",
+      "role": "damage",
+      "aliases": [
+        "엠레",
+        "emre"
+      ]
+    },
+    "domina": {
+      "name": "Domina",
+      "role": "tank",
+      "aliases": [
+        "도미나",
+        "domina"
+      ]
+    },
+    "anran": {
+      "name": "Anran",
+      "role": "damage",
+      "aliases": [
+        "안란",
+        "anran"
+      ]
+    },
+    "jetpack_cat": {
+      "name": "Jetpack Cat",
+      "role": "support",
+      "aliases": [
+        "제트팩 캣",
+        "jetpack_cat"
+      ]
+    },
+    "brigitte": {
+      "name": "Brigitte",
+      "role": "support",
+      "aliases": [
+        "브리기테",
+        "brigitte"
+      ]
     }
   },
   "roles": {
     "tank": {
       "name": "탱커",
       "description": "팀을 보호하고 공간을 만드는 역할",
-      "heroes": ["dva", "doomfist", "hazard", "junker_queen", "mauga", "orisa", "ramattra", "reinhardt", "roadhog", "sigma", "winston", "wrecking_ball", "zarya"]
+      "heroes": [
+        "dva",
+        "doomfist",
+        "hazard",
+        "junker_queen",
+        "mauga",
+        "orisa",
+        "ramattra",
+        "reinhardt",
+        "roadhog",
+        "sigma",
+        "winston",
+        "wrecking_ball",
+        "zarya"
+      ]
     },
     "damage": {
       "name": "딜러",
       "description": "적에게 피해를 입혀 처치하는 역할",
-      "heroes": ["ashe", "bastion", "cassidy", "echo", "freja", "genji", "hanzo", "junkrat", "mei", "pharah", "reaper", "sojourn", "soldier76", "sombra", "symmetra", "torbjorn", "tracer", "vendetta", "venture", "widowmaker"]
+      "heroes": [
+        "ashe",
+        "bastion",
+        "cassidy",
+        "echo",
+        "freja",
+        "genji",
+        "hanzo",
+        "junkrat",
+        "mei",
+        "pharah",
+        "reaper",
+        "sojourn",
+        "soldier76",
+        "sombra",
+        "symmetra",
+        "torbjorn",
+        "tracer",
+        "vendetta",
+        "venture",
+        "widowmaker"
+      ]
     },
     "support": {
       "name": "지원가",
       "description": "아군을 치유하고 버프하는 역할",
-      "heroes": ["ana", "baptiste", "briggitte", "illari", "juno", "kiriko", "lifeweaver", "lucio", "mercy", "moira", "wuyang", "zenyatta"]
+      "heroes": [
+        "ana",
+        "baptiste",
+        "briggitte",
+        "illari",
+        "juno",
+        "kiriko",
+        "lifeweaver",
+        "lucio",
+        "mercy",
+        "moira",
+        "wuyang",
+        "zenyatta"
+      ]
     }
   }
 }

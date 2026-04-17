@@ -28,15 +28,57 @@ _API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{_MODEL}:ge
 
 _TRANSLATE_PROMPT = (
     "다음 JSON의 각 값을 영어에서 한국어로 번역하세요.\n"
-    "오버워치 게임 용어는 공식 한국어 명칭을 사용하세요 "
-    "(예: Reinhardt→라인하르트, Ultimate→궁극기, Tank→탱커, Perk→특성).\n"
+    "오버워치 게임 공식 한국어 명칭을 사용하세요 "
+    "(예: Reinhardt→라인하르트, Ultimate→궁극기, Tank→탱커, Perk→특성, Cooldown→재사용 대기시간).\n"
+    "동일한 키를 가진 JSON 객체만 반환하세요. 다른 텍스트는 포함하지 마세요."
+)
+
+# 스타디움 빌드 이름 전용 번역 프롬프트
+_TRANSLATE_STADIUM_NAME_PROMPT = (
+    "다음 JSON의 각 값은 오버워치 스타디움 모드 유저 제작 빌드 이름입니다.\n"
+    "한국어로 자연스럽게 번역하세요. 아래 규칙을 반드시 따르세요.\n\n"
+    "【번역 금지 / 원문 유지】\n"
+    "- 영웅 고유명사: B.O.B, D.Va, Lúcio, Torbjörn, Wrecking Ball 등 공식 영어 표기 그대로\n"
+    "- 빌드 코드([S1], [S19] 등 시즌 표기), 이모지, 숫자·퍼센트(86% WR 등)\n"
+    "- 아직 공식 한국어명이 없는 아이템/특성 이름 (원문 유지 후 괄호 안에 간단 설명 금지)\n\n"
+    "【영웅·스킬 공식 한국어 명칭】\n"
+    "Genji→겐지, Ana→아나, Reinhardt→라인하르트, Brigitte→브리기테, Cassidy→캐시디,\n"
+    "Doomfist→둠피스트, Pharah→파라, Kiriko→키리코, Juno→주노, Freja→프레야,\n"
+    "NanoNade→나노네이드, NanoBlade→나노블레이드, Dragonblade→용의 칼날\n\n"
+    "【스탯·게임 용어 번역】\n"
+    "Ability Power/AP→능력 파워, Weapon Power→무기 파워, Max Health/HP→최대 체력,\n"
+    "Movement Speed→이동 속도, Cooldown→재사용 대기시간, Ultimate/Ult→궁극기,\n"
+    "Lifesteal→생명력 흡수, AoE→광역, Burst→버스트, One-shot/1-shot→원샷,\n"
+    "Perk→특성, Passive→패시브, Uptime→가동 시간\n\n"
+    "【랭크 표기】\n"
+    "Legend→전설, Grandmaster/GM→그랜드마스터, Top 500/T500→탑 500\n\n"
+    "【게임 슬랭】\n"
+    "dive→다이브, poke→포킹, nano→나노 부스트, nade→생체 수류탄,\n"
+    "DPS(딜러 역할 맥락)→딜러, carry→캐리, farm→파밍, nuke→한방킬\n\n"
     "동일한 키를 가진 JSON 객체만 반환하세요. 다른 텍스트는 포함하지 마세요."
 )
 
 _SUMMARIZE_PROMPT = (
     "다음 JSON의 각 값은 오버워치 스타디움 빌드 설명입니다.\n"
-    "각 설명의 핵심 내용(빌드 특징, 주요 특성, 운영 방식)을 3줄 이내 한국어로 요약하세요.\n"
-    "HTML 태그, color:, align:, [/color], [/align] 등 마크업은 반드시 제거하세요.\n"
+    "핵심 내용을 2~3줄 한국어로 요약하세요.\n\n"
+    "【반드시 제거할 것】\n"
+    "- 내부 ID 패턴(hero_XXXX, item_XXXX, stat_XXXX, ability_XXXX 형태) 완전 제거\n"
+    "  단, 패턴 앞에 실제 이름이 있으면 이름만 남기고 ID 제거\n"
+    "  예: '무기 파워(stat_weapon_power)' → '무기 파워'\n"
+    "  예: 'item_3da81000-333c-...' → 제거\n"
+    "- http/https URL, stadiumbuilds.io 링크, YouTube 링크 모두 제거\n"
+    "- BBCode/마크업: color:, align:, [/color], [/align], [color=...], [align=...] 제거\n"
+    "- HTML 태그 제거\n"
+    "- 시즌 업데이트 공지·편집자 메모('S1 업데이트!', '나중에 업데이트 예정' 등) 제거\n\n"
+    "【요약에 포함할 것】\n"
+    "- 빌드의 핵심 전략 (예: 능력 파워 극대화로 광역 폭딜 특화)\n"
+    "- 주요 스탯 또는 플레이 방식 (예: 이동 속도+재사용 대기시간 단축으로 쉬지 않고 교전)\n"
+    "- 승률·랭크 정보가 있으면 간략히 포함 가능\n\n"
+    "【오버워치 용어 (올바른 한국어 사용)】\n"
+    "Ability Power/AP→능력 파워, Weapon Power→무기 파워, Max Health→최대 체력,\n"
+    "Ultimate/Ult→궁극기, Cooldown→재사용 대기시간, Perk→특성,\n"
+    "Lifesteal→생명력 흡수, AoE→광역 피해, Burst→버스트, Uptime→가동 시간,\n"
+    "dive→다이브, poke→포킹, nano→나노 부스트, nade→생체 수류탄\n\n"
     "설명이 없거나 빈 값이면 빈 문자열을 반환하세요.\n"
     "동일한 키를 가진 JSON 객체만 반환하세요. 다른 텍스트는 포함하지 마세요."
 )
@@ -58,6 +100,11 @@ def summarize(text: str) -> str:
 def translate_list(texts: list[str], label: str = "번역") -> list[str]:
     """리스트 일괄 번역 (배치 처리)."""
     return _batch_process(texts, _TRANSLATE_PROMPT, prefix="", label=label)
+
+
+def translate_stadium_names(texts: list[str], label: str = "스타디움 이름 번역") -> list[str]:
+    """스타디움 빌드 이름 전용 번역 (오버워치 맥락 강화 프롬프트)."""
+    return _batch_process(texts, _TRANSLATE_STADIUM_NAME_PROMPT, prefix="\x00stn\x00", label=label)
 
 
 def summarize_list(texts: list[str], label: str = "요약") -> list[str]:
