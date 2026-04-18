@@ -192,19 +192,23 @@ async def _generate_stadium(session: aiohttp.ClientSession, force: bool = False)
 # ── 패치 노트 ─────────────────────────────────────────────────────────────────
 
 async def _generate_patch(session: aiohttp.ClientSession) -> bool:
-    """최근 30일 패치 노트 → patch.json 생성 (누적 리스트)."""
+    """최근 14일 패치 노트 → patch.json 생성 (누적 리스트)."""
     try:
-        patches = await fetch_recent_patches(session, days=30)
+        patches = await fetch_recent_patches(session, days=14)
         if not patches:
             raise ValueError("패치 데이터 없음")
 
         # 기존 patch.json 로드 (리스트 or 레거시 단일 객체)
         existing_raw = _load(DOCS_DATA / "patch.json")
         existing_list: list[dict] = existing_raw if isinstance(existing_raw, list) else []
-        existing_by_url = {p["url"]: p for p in existing_list if isinstance(p, dict)}
+        existing_by_date = {p["date"]: p for p in existing_list if isinstance(p, dict)}
 
+        seen_dates: set[str] = set()
         result: list[dict] = []
         for patch in patches:
+            if patch.date in seen_dates:
+                continue
+            seen_dates.add(patch.date)
             data = {
                 "title": patch.title,
                 "date": patch.date,
@@ -215,7 +219,7 @@ async def _generate_patch(session: aiohttp.ClientSession) -> bool:
                 ],
                 "general_changes": patch.general_changes,
             }
-            existing = existing_by_url.get(patch.url)
+            existing = existing_by_date.get(patch.date)
             data = _translate_patch_data(data, existing)
             result.append(data)
 
@@ -243,7 +247,7 @@ def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
 
     if (
         existing
-        and existing.get("url") == data.get("url")
+        and existing.get("date") == data.get("date")
         and _has_korean(existing.get("title", ""))
         and existing.get("hero_changes")
     ):

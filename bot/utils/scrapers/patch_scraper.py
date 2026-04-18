@@ -57,7 +57,7 @@ def _parse_korean_date(date_str: str) -> datetime | None:
 
 
 async def fetch_recent_patches(
-    session: aiohttp.ClientSession, days: int = 30
+    session: aiohttp.ClientSession, days: int = 14
 ) -> list[PatchNote]:
     """최근 N일 이내 패치 목록 반환."""
     try:
