@@ -1,29 +1,46 @@
 /**
  * 패치 노트 뷰
- * 일반 변경 + 영웅 변경 카드 그리드, 스타디움 섹션 분리
+ * 최근 30일 패치 누적 표시 (아코디언, 최신 패치 기본 펼침)
  */
 import { loadJSON } from '../app.js';
 
 export async function renderPatch(container) {
-  const patch = await loadJSON('patch');
+  const raw = await loadJSON('patch');
+  // 하위 호환: 단일 객체도 처리
+  const patches = Array.isArray(raw) ? raw : (raw ? [raw] : []);
 
+  if (!patches.length) {
+    container.innerHTML = `<p class="text-center text-gray-500 py-12">패치 노트 데이터가 없습니다.</p>`;
+    return;
+  }
+
+  container.innerHTML = patches.map((patch, idx) => `
+    <details ${idx === 0 ? 'open' : ''} class="mb-4 bg-ow-card border border-ow-border rounded-lg overflow-hidden group">
+      <summary class="flex items-center gap-3 px-5 py-4 cursor-pointer select-none list-none hover:bg-white/5 transition-colors">
+        <span class="text-ow-orange font-bold flex-1 text-sm">${escHtml(patch.title ?? '패치 노트')}</span>
+        ${patch.date ? `<span class="text-xs text-gray-400 shrink-0">${escHtml(patch.date)}</span>` : ''}
+        ${patch.url ? `<a href="${escHtml(patch.url)}" target="_blank" rel="noopener"
+            class="text-xs text-ow-blue hover:underline shrink-0" onclick="event.stopPropagation()">공식 페이지 →</a>` : ''}
+        <svg class="w-4 h-4 text-gray-500 shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </summary>
+      <div class="px-5 pb-5 pt-2">
+        ${renderPatchBody(patch)}
+      </div>
+    </details>
+  `).join('');
+}
+
+function renderPatchBody(patch) {
   const regular = patch.hero_changes?.filter(h => !h.is_stadium) ?? [];
   const stadium = patch.hero_changes?.filter(h => h.is_stadium) ?? [];
 
-  container.innerHTML = `
-    <div class="mb-6">
-      <div class="flex items-center gap-3 mb-1">
-        <h2 class="text-xl font-bold text-ow-orange">${escHtml(patch.title ?? '패치 노트')}</h2>
-        ${patch.date ? `<span class="text-sm text-gray-400">${escHtml(patch.date)}</span>` : ''}
-        ${patch.url ? `<a href="${escHtml(patch.url)}" target="_blank" rel="noopener"
-            class="text-xs text-ow-blue hover:underline ml-auto">공식 페이지 →</a>` : ''}
-      </div>
-    </div>
-
+  return `
     ${patch.general_changes?.length ? `
-      <section class="mb-8">
-        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">일반 변경사항</h3>
-        <div class="bg-ow-card border border-ow-border rounded-lg p-4">
+      <section class="mb-6">
+        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">일반 변경사항</h3>
+        <div class="bg-ow-bg border border-ow-border rounded-lg p-4">
           <ul class="space-y-1.5">
             ${patch.general_changes.map(c => `
               <li class="flex gap-2 text-sm text-gray-300">
@@ -37,8 +54,8 @@ export async function renderPatch(container) {
     ` : ''}
 
     ${regular.length ? `
-      <section class="mb-8">
-        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">
+      <section class="mb-6">
+        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
           영웅 변경사항 <span class="text-gray-600 normal-case">(${regular.length}명)</span>
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -48,8 +65,8 @@ export async function renderPatch(container) {
     ` : ''}
 
     ${stadium.length ? `
-      <section class="mb-8">
-        <h3 class="text-sm font-semibold text-ow-orange uppercase tracking-wider mb-3">
+      <section class="mb-2">
+        <h3 class="text-xs font-semibold text-ow-orange uppercase tracking-wider mb-3">
           스타디움 변경사항 <span class="text-ow-orange/60 normal-case">(${stadium.length}명)</span>
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -59,7 +76,7 @@ export async function renderPatch(container) {
     ` : ''}
 
     ${!regular.length && !stadium.length && !patch.general_changes?.length ? `
-      <p class="text-center text-gray-500 py-12">패치 노트 데이터가 없습니다.</p>
+      <p class="text-center text-gray-500 py-6 text-sm">변경사항 데이터가 없습니다.</p>
     ` : ''}
   `;
 }

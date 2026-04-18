@@ -14,6 +14,7 @@
 import logging
 import re
 from dataclasses import dataclass, field
+from datetime import datetime, timedelta
 
 import aiohttp
 from bs4 import BeautifulSoup
@@ -47,7 +48,18 @@ class PatchNote:
     general_changes: list[str] = field(default_factory=list)
 
 
-async def fetch_latest_patch(session: aiohttp.ClientSession) -> PatchNote | None:
+def _parse_korean_date(date_str: str) -> datetime | None:
+    """'2026년 4월 17일' 형식 → datetime. 파싱 실패 시 None."""
+    m = re.match(r'(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일', date_str)
+    if m:
+        return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+    return None
+
+
+async def fetch_recent_patches(
+    session: aiohttp.ClientSession, days: int = 30
+) -> list[PatchNote]:
+    """최근 N일 이내 패치 목록 반환."""
     try:
         async with session.get(
             PATCH_URL, headers=HEADERS, timeout=aiohttp.ClientTimeout(total=20)
@@ -56,44 +68,61 @@ async def fetch_latest_patch(session: aiohttp.ClientSession) -> PatchNote | None
             html = await resp.text()
     except Exception as e:
         logger.error(f"패치노트 페이지 로드 실패: {e}")
-        return None
+        return []
 
-    return _parse_patch(html)
+    return _parse_patches(html, days)
 
 
-def _parse_patch(html: str) -> PatchNote | None:
+async def fetch_latest_patch(session: aiohttp.ClientSession) -> PatchNote | None:
+    """최신 패치 1개 반환 (하위 호환용)."""
+    patches = await fetch_recent_patches(session, days=365)
+    return patches[0] if patches else None
+
+
+def _parse_patches(html: str, days: int = 30) -> list[PatchNote]:
+    """HTML에서 최근 N일 이내 패치 목록 파싱."""
     soup = BeautifulSoup(html, "lxml")
+    cutoff = datetime.now() - timedelta(days=days)
 
-    # 첫 번째(최신) 패치 섹션
-    first_patch = soup.find(class_="PatchNotes-patch")
-    if not first_patch:
+    patch_els = soup.find_all(class_="PatchNotes-patch")
+    if not patch_els:
         logger.warning("PatchNotes-patch 요소를 찾을 수 없음")
-        return _fallback_parse(soup)
+        note = _fallback_parse(soup)
+        return [note] if note else []
 
-    # 제목과 날짜
-    title_el = first_patch.find(class_="PatchNotes-patchTitle")
-    date_el = first_patch.find(class_="PatchNotes-labels")
+    result: list[PatchNote] = []
+    for patch_el in patch_els:
+        note = _parse_single_patch(patch_el)
+        if not note:
+            continue
+        parsed_date = _parse_korean_date(note.date)
+        # 날짜 파싱 실패 시 안전하게 포함, 파싱 성공 시 cutoff 이후만 포함
+        if parsed_date is None or parsed_date >= cutoff:
+            result.append(note)
 
-    title = title_el.get_text(strip=True) if title_el else "최신 패치"
+    return result
+
+
+def _parse_single_patch(patch_el) -> PatchNote | None:
+    """단일 PatchNotes-patch 요소 → PatchNote."""
+    title_el = patch_el.find(class_="PatchNotes-patchTitle")
+    date_el = patch_el.find(class_="PatchNotes-labels")
+
+    title = title_el.get_text(strip=True) if title_el else "패치"
     date = date_el.get_text(strip=True) if date_el else ""
 
-    # 영웅별 변경 사항
     hero_changes: list[HeroChange] = []
     general_changes: list[str] = []
-
-    # 스타디움 섹션 판별: "Stadium" or "스타디움"이 포함된 섹션 제목
     in_stadium = False
 
-    for section in first_patch.find_all(class_="PatchNotes-section"):
+    for section in patch_el.find_all(class_="PatchNotes-section"):
         section_classes = section.get("class", [])
 
-        # 일반 업데이트 섹션 (섹션 제목 확인)
         if "PatchNotes-section-generic_update" in section_classes:
             section_title_el = section.find("h4")
             if section_title_el:
                 section_title = section_title_el.get_text(strip=True).lower()
                 in_stadium = "stadium" in section_title or "스타디움" in section_title
-            # 일반 변경 사항 (li 태그)
             items = section.find_all("li")
             for item in items[:5]:
                 text = item.get_text(strip=True)
@@ -101,7 +130,6 @@ def _parse_patch(html: str) -> PatchNote | None:
                     general_changes.append(text)
             continue
 
-        # 영웅 업데이트 섹션
         if "PatchNotes-section-hero_update" in section_classes:
             hero_updates = section.find_all(class_="PatchNotesHeroUpdate")
             for hu in hero_updates:
@@ -109,8 +137,6 @@ def _parse_patch(html: str) -> PatchNote | None:
                 if not name_el:
                     continue
                 hero_name = name_el.get_text(strip=True)
-
-                # 영웅 변경 내용 추출
                 changes = _extract_hero_changes(hu)
                 if changes:
                     hero_changes.append(
@@ -130,7 +156,6 @@ def _extract_hero_changes(hero_update_el) -> list[str]:
     """PatchNotesHeroUpdate 요소에서 변경 사항 텍스트 추출."""
     changes: list[str] = []
 
-    # 능력 변경 사항
     ability_updates = hero_update_el.find_all(class_="PatchNotesAbilityUpdate")
     for au in ability_updates:
         name_el = au.find(class_="PatchNotesAbilityUpdate-name")
@@ -151,7 +176,6 @@ def _extract_hero_changes(hero_update_el) -> list[str]:
                 prefix = f"{ability_name}: " if ability_name else ""
                 changes.append(f"{prefix}{text}"[:150])
 
-    # 일반 변경 사항 (능력 변경 없는 경우)
     if not changes:
         body_el = hero_update_el.find(class_="PatchNotesHeroUpdate-body")
         if body_el:
@@ -161,7 +185,6 @@ def _extract_hero_changes(hero_update_el) -> list[str]:
                 if text:
                     changes.append(text[:150])
 
-        # li도 없으면 dev 코멘트 텍스트
         if not changes:
             dev_el = hero_update_el.find(class_="PatchNotesHeroUpdate-dev")
             if dev_el:
@@ -169,7 +192,6 @@ def _extract_hero_changes(hero_update_el) -> list[str]:
                 if text:
                     changes.append(text[:200])
 
-    # 직접 텍스트 노드 (능력/li 없는 단순 텍스트)
     if not changes:
         general_el = hero_update_el.find(class_="PatchNotesHeroUpdate-generalUpdates")
         if general_el:

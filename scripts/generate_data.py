@@ -14,6 +14,7 @@ docs/data/ 에 다음 파일을 생성/갱신합니다:
 """
 from __future__ import annotations
 
+import argparse
 import asyncio
 import json
 import logging
@@ -32,7 +33,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from bot.utils.scrapers.meta_scraper import RANK_PARAM, fetch_meta, load_fallback
-from bot.utils.scrapers.patch_scraper import fetch_latest_patch
+from bot.utils.scrapers.patch_scraper import fetch_recent_patches
 from bot.utils.scrapers.stadium_scraper import fetch_all_builds
 
 logging.basicConfig(
@@ -162,7 +163,7 @@ def _hero_to_dict(h) -> dict:
 
 # ── 스타디움 빌드 ─────────────────────────────────────────────────────────────
 
-async def _generate_stadium(session: aiohttp.ClientSession) -> bool:
+async def _generate_stadium(session: aiohttp.ClientSession, force: bool = False) -> bool:
     """모든 영웅 빌드 → stadium.json 생성 (영웅명 키로 그룹화)."""
     try:
         builds = await fetch_all_builds(session)
@@ -179,7 +180,7 @@ async def _generate_stadium(session: aiohttp.ClientSession) -> bool:
                 "upvotes": b.upvotes,
             })
 
-        by_hero = _translate_stadium_data(by_hero)
+        by_hero = _translate_stadium_data(by_hero, force=force)
         _save(DOCS_DATA / "stadium.json", by_hero)
         logger.info(f"  스타디움 완료: {len(builds)}개 빌드, {len(by_hero)}개 영웅")
         return True
@@ -191,26 +192,35 @@ async def _generate_stadium(session: aiohttp.ClientSession) -> bool:
 # ── 패치 노트 ─────────────────────────────────────────────────────────────────
 
 async def _generate_patch(session: aiohttp.ClientSession) -> bool:
-    """최신 패치 노트 → patch.json 생성."""
+    """최근 30일 패치 노트 → patch.json 생성 (누적 리스트)."""
     try:
-        patch = await fetch_latest_patch(session)
-        if not patch:
+        patches = await fetch_recent_patches(session, days=30)
+        if not patches:
             raise ValueError("패치 데이터 없음")
 
-        data = {
-            "title": patch.title,
-            "date": patch.date,
-            "url": patch.url,
-            "hero_changes": [
-                {"hero": hc.hero, "changes": hc.changes, "is_stadium": hc.is_stadium}
-                for hc in patch.hero_changes
-            ],
-            "general_changes": patch.general_changes,
-        }
-        existing_patch = _load(DOCS_DATA / "patch.json")
-        data = _translate_patch_data(data, existing_patch if isinstance(existing_patch, dict) else None)
-        _save(DOCS_DATA / "patch.json", data)
-        logger.info(f"  패치 완료: {data['title']} ({patch.date})")
+        # 기존 patch.json 로드 (리스트 or 레거시 단일 객체)
+        existing_raw = _load(DOCS_DATA / "patch.json")
+        existing_list: list[dict] = existing_raw if isinstance(existing_raw, list) else []
+        existing_by_url = {p["url"]: p for p in existing_list if isinstance(p, dict)}
+
+        result: list[dict] = []
+        for patch in patches:
+            data = {
+                "title": patch.title,
+                "date": patch.date,
+                "url": patch.url,
+                "hero_changes": [
+                    {"hero": hc.hero, "changes": hc.changes, "is_stadium": hc.is_stadium}
+                    for hc in patch.hero_changes
+                ],
+                "general_changes": patch.general_changes,
+            }
+            existing = existing_by_url.get(patch.url)
+            data = _translate_patch_data(data, existing)
+            result.append(data)
+
+        _save(DOCS_DATA / "patch.json", result)
+        logger.info(f"  패치 완료: {len(result)}개 ({', '.join(p['date'] for p in result)})")
         return True
     except Exception as e:
         logger.warning(f"  패치 실패: {e} — 기존 파일 유지")
@@ -235,8 +245,9 @@ def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
         existing
         and existing.get("url") == data.get("url")
         and _has_korean(existing.get("title", ""))
+        and existing.get("hero_changes")
     ):
-        logger.info("  패치 번역 스킵: 동일 패치 이미 번역됨")
+        logger.info(f"  패치 번역 스킵: {data.get('date')} 이미 번역됨")
         return existing
 
     total = 1 + sum(1 + len(hc["changes"]) for hc in data["hero_changes"]) + len(data["general_changes"])
@@ -257,21 +268,22 @@ def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
     return data
 
 
-def _translate_stadium_data(by_hero: dict) -> dict:
+def _translate_stadium_data(by_hero: dict, force: bool = False) -> dict:
     """스타디움 빌드 이름(번역) · 설명(3줄 요약) 한국어 처리 (빌드 코드 기반 캐시 활용)."""
     from bot.utils.translator import translate_list, translate_stadium_names, summarize_list
 
     # 기존 stadium.json에서 이미 번역된 내용 로드 (재실행 시 중복 처리 방지)
-    # 한글이 포함된 경우에만 처리된 것으로 간주
-    existing = _load(DOCS_DATA / "stadium.json")
+    # force=True 시 캐시 무시 → 전체 재번역
     prev: dict[str, dict] = {}
-    if isinstance(existing, dict):
-        for builds in existing.values():
-            for b in builds:
-                code = b.get("code", "")
-                name = b.get("name", "")
-                if code and _has_korean(name):
-                    prev[code] = {"name": name, "description": b.get("description", "")}
+    if not force:
+        existing = _load(DOCS_DATA / "stadium.json")
+        if isinstance(existing, dict):
+            for builds in existing.values():
+                for b in builds:
+                    code = b.get("code", "")
+                    name = b.get("name", "")
+                    if code and _has_korean(name):
+                        prev[code] = {"name": name, "description": b.get("description", "")}
 
     # 신규 빌드만 추출 (소속 영웅 함께 추적)
     new_builds: list[dict] = []
@@ -357,8 +369,21 @@ def _copy_heroes() -> None:
 
 # ── 메인 ─────────────────────────────────────────────────────────────────────
 
+def _parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="OW 데이터 생성 스크립트")
+    p.add_argument(
+        "--force-stadium",
+        action="store_true",
+        help="스타디움 빌드 번역 캐시 무시하고 전체 재번역",
+    )
+    return p.parse_args()
+
+
 async def main() -> None:
+    args = _parse_args()
     logger.info("=== OW 데이터 생성 시작 ===")
+    if args.force_stadium:
+        logger.info("  --force-stadium: 스타디움 전체 재번역 모드")
     sources: dict[str, str] = {}
 
     async with aiohttp.ClientSession() as session:
@@ -373,7 +398,7 @@ async def main() -> None:
             logger.warning("  메타 전체 실패 — history 갱신 건너뜀")
 
         # 2. 스타디움 빌드
-        sources["stadium"] = "live" if await _generate_stadium(session) else "fallback"
+        sources["stadium"] = "live" if await _generate_stadium(session, force=args.force_stadium) else "fallback"
 
         # 3. 패치 노트
         sources["patch"] = "live" if await _generate_patch(session) else "fallback"
