@@ -244,8 +244,13 @@ def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
 
     data["title"] = translate(data["title"])
     for hc in data["hero_changes"]:
-        hc["hero"] = translate(hc["hero"])
-        hc["changes"] = translate_list(hc["changes"], label=f"패치노트 번역 ({hc['hero']})")
+        hero_en = hc["hero"]                    # 번역 전 영문명 보존
+        hc["hero"] = translate(hero_en)
+        hc["changes"] = translate_list(
+            hc["changes"],
+            label=f"패치노트 번역 ({hc['hero']})",
+            heroes=[hero_en],
+        )
     data["general_changes"] = translate_list(data["general_changes"], label="패치노트 공통 변경사항 번역")
 
     logger.info("  패치 번역 완료")
@@ -268,9 +273,10 @@ def _translate_stadium_data(by_hero: dict) -> dict:
                 if code and _has_korean(name):
                     prev[code] = {"name": name, "description": b.get("description", "")}
 
-    # 신규 빌드만 추출
+    # 신규 빌드만 추출 (소속 영웅 함께 추적)
     new_builds: list[dict] = []
-    for builds in by_hero.values():
+    new_build_heroes: list[str] = []
+    for hero_en, builds in by_hero.items():
         for build in builds:
             code = build.get("code", "")
             if code in prev:
@@ -278,14 +284,16 @@ def _translate_stadium_data(by_hero: dict) -> dict:
                 build["description"] = prev[code]["description"]
             else:
                 new_builds.append(build)
+                new_build_heroes.append(hero_en)
 
     if new_builds:
         names = [b["name"] for b in new_builds]
         descs = [b.get("description") or "" for b in new_builds]
+        unique_heroes = list(dict.fromkeys(new_build_heroes))   # 순서 유지 중복 제거
 
         logger.info(f"  스타디움 신규 처리: {len(new_builds)}건 (이름 번역 + 설명 요약)")
-        translated_names = translate_stadium_names(names)
-        summarized_descs = summarize_list(descs, label="스타디움 빌드 설명 요약")
+        translated_names = translate_stadium_names(names, heroes=unique_heroes)
+        summarized_descs = summarize_list(descs, label="스타디움 빌드 설명 요약", heroes=unique_heroes)
 
         for build, name, desc in zip(new_builds, translated_names, summarized_descs):
             build["name"] = name

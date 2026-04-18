@@ -1332,6 +1332,14 @@
         "브리기테",
         "brigitte"
       ]
+    },
+    "sierra": {
+      "name": "Sierra",
+      "role": "damage",
+      "aliases": [
+        "시에라",
+        "sierra"
+      ]
     }
   },
   "roles": {

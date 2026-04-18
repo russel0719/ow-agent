@@ -1285,20 +1285,20 @@
       "synergies": [],
       "tips": []
     },
-    "emre": {
-      "name": "Emre",
-      "role": "damage",
-      "aliases": [
-        "엠레",
-        "emre"
-      ]
-    },
     "mizuki": {
       "name": "Mizuki",
       "role": "support",
       "aliases": [
         "미즈키",
         "mizuki"
+      ]
+    },
+    "emre": {
+      "name": "Emre",
+      "role": "damage",
+      "aliases": [
+        "엠레",
+        "emre"
       ]
     },
     "domina": {
@@ -1309,12 +1309,12 @@
         "domina"
       ]
     },
-    "brigitte": {
-      "name": "Brigitte",
-      "role": "support",
+    "anran": {
+      "name": "Anran",
+      "role": "damage",
       "aliases": [
-        "브리기테",
-        "brigitte"
+        "안란",
+        "anran"
       ]
     },
     "jetpack_cat": {
@@ -1325,12 +1325,20 @@
         "jetpack_cat"
       ]
     },
-    "anran": {
-      "name": "Anran",
+    "brigitte": {
+      "name": "Brigitte",
+      "role": "support",
+      "aliases": [
+        "브리기테",
+        "brigitte"
+      ]
+    },
+    "sierra": {
+      "name": "Sierra",
       "role": "damage",
       "aliases": [
-        "안란",
-        "anran"
+        "시에라",
+        "sierra"
       ]
     }
   },

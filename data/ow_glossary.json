@@ -1,0 +1,535 @@
+{
+  "common": {
+    "terms": {
+      "Ultimate": "궁극기",
+      "Ult": "궁극기",
+      "Ability Power": "능력 파워",
+      "AP": "능력 파워",
+      "Weapon Power": "무기 파워",
+      "Cooldown": "재사용 대기시간",
+      "Max Health": "최대 체력",
+      "HP": "체력",
+      "Healing": "회복량",
+      "Lifesteal": "생명력 흡수",
+      "Movement Speed": "이동 속도",
+      "Perk": "특성",
+      "Passive": "패시브",
+      "Tank": "탱커",
+      "Support": "지원가",
+      "Armor": "방어구",
+      "Shield": "방어막",
+      "Barrier": "장벽",
+      "Knockback": "넉백",
+      "Stun": "기절",
+      "Freeze": "빙결",
+      "Sleep": "수면",
+      "Hack": "해킹",
+      "Crowd Control": "군중 제어",
+      "CC": "CC기",
+      "Anti-Heal": "힐 차단",
+      "Overheal": "초과 회복",
+      "AoE": "광역",
+      "Area of Effect": "광역 범위",
+      "Burst": "버스트",
+      "Uptime": "가동 시간",
+      "Charge": "충전",
+      "Duration": "지속 시간",
+      "Range": "사거리",
+      "Radius": "반경",
+      "Ammo": "탄약",
+      "Magazine": "탄창",
+      "Fire Rate": "발사 속도",
+      "Spread": "탄퍼짐",
+      "Falloff": "거리 감쇠",
+      "Headshot": "헤드샷",
+      "Critical": "치명타",
+      "Projectile": "투사체",
+      "Elimination": "처치",
+      "Assist": "지원",
+      "Respawn": "리스폰",
+      "Win Rate": "승률",
+      "WR": "승률",
+      "Pick Rate": "픽률",
+      "Legend": "전설",
+      "Grandmaster": "그랜드마스터",
+      "GM": "그랜드마스터",
+      "Top 500": "탑 500",
+      "T500": "탑 500",
+      "One-shot": "원샷",
+      "Dive": "다이브",
+      "Poke": "포킹",
+      "Brawl": "난전",
+      "Nano": "나노 부스트",
+      "Nade": "수류탄",
+      "Carry": "캐리",
+      "Farm": "파밍",
+      "Season": "시즌",
+      "Round": "라운드",
+      "Build": "빌드",
+      "Item": "아이템",
+      "Stat": "스탯"
+    }
+  },
+  "heroes": {
+    "ana": {
+      "name": { "Ana": "아나" },
+      "skills": {
+        "Biotic Rifle": "바이오틱 소총",
+        "Sleep Dart": "수면 다트",
+        "Biotic Grenade": "생체 수류탄",
+        "Nano Boost": "나노강화제",
+        "NanoNade": "나노네이드",
+        "NanoBlade": "나노블레이드",
+        "Shrike": "슈라이크"
+      }
+    },
+    "ashe": {
+      "name": { "Ashe": "애쉬" },
+      "skills": {
+        "The Viper": "바이퍼",
+        "Coach Gun": "코치건",
+        "Dynamite": "다이너마이트",
+        "B.O.B.": "B.O.B.",
+        "B.O.B": "B.O.B."
+      }
+    },
+    "baptiste": {
+      "name": { "Baptiste": "바티스트" },
+      "skills": {
+        "Biotic Launcher": "바이오틱 발사기",
+        "Regenerative Burst": "재생 폭발",
+        "Immortality Field": "불사 지역",
+        "Amplification Matrix": "증폭 매트릭스",
+        "Exo Boots": "외골격 부츠"
+      }
+    },
+    "bastion": {
+      "name": { "Bastion": "바스티온" },
+      "skills": {
+        "Configuration: Recon": "정찰 형태",
+        "Configuration: Assault": "공격 형태",
+        "A-36 Tactical Grenade": "A-36 전술 수류탄",
+        "Reconfigure": "형태 변환",
+        "Configuration: Artillery": "포격 형태",
+        "Self-Repair": "자가 수리"
+      }
+    },
+    "brigitte": {
+      "name": { "Brigitte": "브리기테" },
+      "skills": {
+        "Rocket Flail": "로켓 도리깨",
+        "Repair Pack": "수리 팩",
+        "Whip Shot": "채찍질 공격",
+        "Barrier Shield": "방어막 방패",
+        "Shield Bash": "방패 강타",
+        "Rally": "집결",
+        "Inspire": "고무"
+      }
+    },
+    "cassidy": {
+      "name": { "Cassidy": "캐시디" },
+      "skills": {
+        "Peacekeeper": "피스키퍼",
+        "Combat Roll": "전투 구르기",
+        "Magnetic Grenade": "자기장 수류탄",
+        "Fan the Hammer": "팬 더 해머",
+        "Deadeye": "무법자의 눈"
+      }
+    },
+    "dva": {
+      "name": { "D.Va": "D.Va" },
+      "skills": {
+        "Fusion Cannons": "융합 캐논",
+        "Light Gun": "가벼운 총",
+        "Boosters": "추진기",
+        "Defense Matrix": "방어 매트릭스",
+        "Micro Missiles": "마이크로 미사일",
+        "Eject": "탈출",
+        "Call Mech": "메카 소환",
+        "Self-Destruct": "자폭",
+        "Mech": "메카"
+      }
+    },
+    "doomfist": {
+      "name": { "Doomfist": "둠피스트" },
+      "skills": {
+        "Hand Cannon": "핸드 캐논",
+        "Seismic Slam": "지진 강타",
+        "Rising Uppercut": "라이징 어퍼컷",
+        "Rocket Punch": "로켓 주먹",
+        "Power Block": "파워 블록",
+        "Meteor Strike": "유성 강타",
+        "Empowered Punch": "강화 주먹"
+      }
+    },
+    "echo": {
+      "name": { "Echo": "에코" },
+      "skills": {
+        "Tri-Shot": "삼중 사격",
+        "Sticky Bombs": "점착 폭탄",
+        "Flight": "비행",
+        "Focusing Beam": "집속 광선",
+        "Glide": "활공",
+        "Duplicate": "복제"
+      }
+    },
+    "freja": {
+      "name": { "Freja": "프레야" },
+      "skills": {
+        "Recurve Bow": "장궁",
+        "Bola Shot": "볼라 사격",
+        "Grapple": "갈고리",
+        "Relentless": "집요함",
+        "Hunter's Mark": "사냥꾼의 표적"
+      }
+    },
+    "genji": {
+      "name": { "Genji": "겐지" },
+      "skills": {
+        "Shuriken": "표창",
+        "Swift Strike": "질풍참",
+        "Deflect": "반사",
+        "Cyber-Agility": "사이버 민첩성",
+        "Dragonblade": "용의 칼날",
+        "NanoBlade": "나노블레이드"
+      }
+    },
+    "hanzo": {
+      "name": { "Hanzo": "한조" },
+      "skills": {
+        "Storm Bow": "폭풍의 활",
+        "Storm Arrows": "폭풍 화살",
+        "Sonic Arrow": "음파 화살",
+        "Lunge": "도약",
+        "Wall Climb": "벽 타기",
+        "Dragonstrike": "용의 강타"
+      }
+    },
+    "hazard": {
+      "name": { "Hazard": "해저드" },
+      "skills": {
+        "Shards": "파편",
+        "Jagged Wall": "날카로운 벽",
+        "Violent Leap": "도약 강타",
+        "Spike Guard": "스파이크 가드",
+        "Cry Havoc": "대혼란"
+      }
+    },
+    "illari": {
+      "name": { "Illari": "일라리" },
+      "skills": {
+        "Solar Rifle": "태양 소총",
+        "Outburst": "폭발",
+        "Healing Pylon": "태양 포탑",
+        "Captive Sun": "태양 포획"
+      }
+    },
+    "juno": {
+      "name": { "Juno": "주노" },
+      "skills": {
+        "Mediblasters": "메디블래스터",
+        "Hyper Ring": "궤도 링",
+        "Pulsar Torpedoes": "펄서 어뢰",
+        "Glide Boost": "활공 부스트",
+        "Orbital Ray": "궤도 광선"
+      }
+    },
+    "junker_queen": {
+      "name": { "Junker Queen": "정커 퀸" },
+      "skills": {
+        "Scattergun": "산탄총",
+        "Jagged Blade": "울퉁불퉁한 칼날",
+        "Carnage": "카니지",
+        "Commanding Shout": "호령",
+        "Rampage": "광란",
+        "Wound": "상처",
+        "Adrenaline Rush": "아드레날린 돌진"
+      }
+    },
+    "junkrat": {
+      "name": { "Junkrat": "정크랫" },
+      "skills": {
+        "Frag Launcher": "폭탄 발사기",
+        "Concussion Mine": "충격 지뢰",
+        "Steel Trap": "강철 덫",
+        "Total Mayhem": "대혼란",
+        "RIP-Tire": "바퀴 폭탄"
+      }
+    },
+    "kiriko": {
+      "name": { "Kiriko": "키리코" },
+      "skills": {
+        "Healing Ofuda": "치유 부적",
+        "Kunai": "쿠나이",
+        "Swift Step": "신속한 발걸음",
+        "Protection Suzu": "수호 방울",
+        "Kitsune Rush": "여우 강신"
+      }
+    },
+    "lifeweaver": {
+      "name": { "Lifeweaver": "라이프위버" },
+      "skills": {
+        "Thorn Volley": "가시 연발",
+        "Healing Blossom": "치유의 꽃",
+        "Petal Platform": "꽃잎 발판",
+        "Rejuvenating Dash": "활력 질주",
+        "Life Grip": "생명의 고삐",
+        "Tree of Life": "생명의 나무",
+        "Parting Gift": "작별 선물"
+      }
+    },
+    "lucio": {
+      "name": { "Lúcio": "루시우", "Lucio": "루시우" },
+      "skills": {
+        "Sonic Amplifier": "음파 증폭기",
+        "Crossfade": "전환",
+        "Amp It Up": "볼륨 높이기",
+        "Soundwave": "소리 강타",
+        "Wall Ride": "벽 타기",
+        "Sound Barrier": "음파 장벽",
+        "Heal Song": "치유 비트",
+        "Speed Song": "속도 비트"
+      }
+    },
+    "mauga": {
+      "name": { "Mauga": "마우가" },
+      "skills": {
+        "Incendiary Chaingun": "점화 총",
+        "Volatile Chaingun": "폭발 총",
+        "Overrun": "돌격",
+        "Cardiac Overdrive": "심장 오버드라이브",
+        "Cage Fight": "철창 싸움",
+        "Ignited": "점화"
+      }
+    },
+    "mei": {
+      "name": { "Mei": "메이" },
+      "skills": {
+        "Endothermic Blaster": "흡열 광선총",
+        "Ice Wall": "얼음 벽",
+        "Cryo-Freeze": "냉동 상태",
+        "Blizzard": "한파",
+        "Icicle": "고드름"
+      }
+    },
+    "mercy": {
+      "name": { "Mercy": "메르시" },
+      "skills": {
+        "Caduceus Staff": "카두케우스 지팡이",
+        "Caduceus Blaster": "카두케우스 권총",
+        "Guardian Angel": "수호천사",
+        "Resurrect": "부활",
+        "Angelic Descent": "천사의 강림",
+        "Valkyrie": "발키리",
+        "Damage Boost": "피해량 증폭"
+      }
+    },
+    "moira": {
+      "name": { "Moira": "모이라" },
+      "skills": {
+        "Biotic Grasp": "바이오틱 손아귀",
+        "Biotic Orb": "바이오틱 구체",
+        "Fade": "사라지기",
+        "Coalescence": "합체"
+      }
+    },
+    "orisa": {
+      "name": { "Orisa": "오리사" },
+      "skills": {
+        "Augmented Fusion Driver": "증강 융합 추진기",
+        "Energy Javelin": "에너지 창",
+        "Javelin Spin": "창 회전",
+        "Fortify": "요새화",
+        "Terra Surge": "대지 급습"
+      }
+    },
+    "pharah": {
+      "name": { "Pharah": "파라" },
+      "skills": {
+        "Rocket Launcher": "로켓 발사기",
+        "Jump Jet": "점프 제트",
+        "Concussive Blast": "충격파",
+        "Hover Jets": "부양 제트",
+        "Barrage": "집중 포격"
+      }
+    },
+    "ramattra": {
+      "name": { "Ramattra": "라마트라" },
+      "skills": {
+        "Void Accelerator": "공허 가속기",
+        "Void Barrier": "공허 장벽",
+        "Ravenous Vortex": "탐욕스러운 소용돌이",
+        "Nemesis Form": "님버스 형태",
+        "Omnic Form": "옴닉 형태",
+        "Pummel": "강타",
+        "Annihilation": "섬멸"
+      }
+    },
+    "reaper": {
+      "name": { "Reaper": "리퍼" },
+      "skills": {
+        "Hellfire Shotguns": "지옥불 산탄총",
+        "Shadow Step": "그림자 밟기",
+        "Wraith Form": "유령 형태",
+        "The Reaping": "죽음의 추수",
+        "Death Blossom": "사형 집행"
+      }
+    },
+    "reinhardt": {
+      "name": { "Reinhardt": "라인하르트" },
+      "skills": {
+        "Rocket Hammer": "로켓 망치",
+        "Barrier Field": "장벽 방어막",
+        "Charge": "돌격",
+        "Fire Strike": "화염 강타",
+        "Steadfast": "강인함",
+        "Earthshatter": "대지 분쇄"
+      }
+    },
+    "roadhog": {
+      "name": { "Roadhog": "로드호그" },
+      "skills": {
+        "Scrap Gun": "고철 산탄총",
+        "Take a Breather": "한숨 돌리기",
+        "Chain Hook": "갈고리",
+        "Pig Pen": "돼지 우리",
+        "Whole Hog": "완전 개방"
+      }
+    },
+    "sigma": {
+      "name": { "Sigma": "시그마" },
+      "skills": {
+        "Hyperspheres": "초구체",
+        "Experimental Barrier": "실험적 장벽",
+        "Kinetic Grasp": "운동 파악",
+        "Accretion": "강착",
+        "Gravitic Flux": "중력 요동"
+      }
+    },
+    "sojourn": {
+      "name": { "Sojourn": "소전" },
+      "skills": {
+        "Railgun": "레일건",
+        "Power Slide": "파워 슬라이드",
+        "Disruptor Shot": "방해 사격",
+        "Overclock": "오버클록",
+        "Rapid Fire": "빠른 사격",
+        "Charged Shot": "충전 사격"
+      }
+    },
+    "soldier76": {
+      "name": { "Soldier: 76": "솔저: 76" },
+      "skills": {
+        "Heavy Pulse Rifle": "헤비 펄스 소총",
+        "Sprint": "전력 질주",
+        "Biotic Field": "회복 바이오틱",
+        "Helix Rockets": "나선 로켓",
+        "Tactical Visor": "전술 조준경"
+      }
+    },
+    "sombra": {
+      "name": { "Sombra": "솜브라" },
+      "skills": {
+        "Machine Pistol": "기관권총",
+        "Hack": "해킹",
+        "Translocator": "순간이동 장치",
+        "Opportunist": "기회주의자",
+        "EMP": "EMP",
+        "Virus": "바이러스",
+        "Stealth": "은신"
+      }
+    },
+    "symmetra": {
+      "name": { "Symmetra": "시메트라" },
+      "skills": {
+        "Photon Projector": "광자 투영기",
+        "Sentry Turret": "감시 포탑",
+        "Teleporter": "순간이동 장치",
+        "Photon Barrier": "광자 장벽"
+      }
+    },
+    "torbjorn": {
+      "name": { "Torbjörn": "토르비욘", "Torbjorn": "토르비욘" },
+      "skills": {
+        "Rivet Gun": "리벳 총",
+        "Forge Hammer": "단조 망치",
+        "Deploy Turret": "포탑 설치",
+        "Overload": "과부하",
+        "Molten Core": "용암 핵심"
+      }
+    },
+    "tracer": {
+      "name": { "Tracer": "트레이서" },
+      "skills": {
+        "Pulse Pistols": "펄스 권총",
+        "Blink": "점멸",
+        "Recall": "되감기",
+        "Pulse Bomb": "펄스 폭탄"
+      }
+    },
+    "venture": {
+      "name": { "Venture": "벤처" },
+      "skills": {
+        "Smart Excavator": "스마트 굴착기",
+        "Drill Dash": "굴착 대시",
+        "Burrow": "잠복",
+        "Tectonic Shock": "지각 충격",
+        "Clobber": "강타"
+      }
+    },
+    "widowmaker": {
+      "name": { "Widowmaker": "위도우메이커" },
+      "skills": {
+        "Widow's Kiss": "위도우의 키스",
+        "Grappling Hook": "갈고리 발사기",
+        "Venom Mine": "독 지뢰",
+        "Infra-Sight": "적외선 시야"
+      }
+    },
+    "winston": {
+      "name": { "Winston": "윈스턴" },
+      "skills": {
+        "Tesla Cannon": "테슬라 캐논",
+        "Jump Pack": "점프 팩",
+        "Barrier Projector": "방어막 발생기",
+        "Primal Rage": "원초적 분노",
+        "Leap": "도약"
+      }
+    },
+    "wrecking_ball": {
+      "name": { "Wrecking Ball": "레킹볼", "Hammond": "해먼드" },
+      "skills": {
+        "Quad Cannons": "사중 캐논",
+        "Grappling Claw": "갈고리 발톱",
+        "Roll": "구르기",
+        "Adaptive Shield": "적응형 방어막",
+        "Piledriver": "파일 드라이버",
+        "Minefield": "지뢰밭"
+      }
+    },
+    "zarya": {
+      "name": { "Zarya": "자리야" },
+      "skills": {
+        "Particle Cannon": "입자 캐논",
+        "Particle Barrier": "입자 장벽",
+        "Projected Barrier": "투사 장벽",
+        "Graviton Surge": "중력자 탄",
+        "Energy": "에너지"
+      }
+    },
+    "zenyatta": {
+      "name": { "Zenyatta": "젠야타" },
+      "skills": {
+        "Orb of Destruction": "파멸의 주옥",
+        "Orb of Discord": "불화 주옥",
+        "Orb of Harmony": "조화 주옥",
+        "Transcendence": "초월",
+        "Snap Kick": "스냅 킥"
+      }
+    },
+    "jetpack_cat": {
+      "name": { "Jetpack Cat": "제트팩 캣" },
+      "skills": {}
+    }
+  }
+}

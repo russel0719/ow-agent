@@ -1,7 +1,7 @@
 """
-영어 → 한국어 번역 / 요약 유틸리티 (Gemini REST API).
+영어 → 한국어 번역 / 요약 유틸리티 (NVIDIA API, Kimi K2 Instruct).
 
-환경변수 GEMINI_API_KEY 필요.
+환경변수 NVIDIA_API_KEY 필요.
 배치 처리로 API 호출 최소화 (최대 10건/요청).
 """
 from __future__ import annotations
@@ -16,20 +16,17 @@ import requests
 logger = logging.getLogger(__name__)
 
 _CACHE: dict[str, str] = {}
-# gemini-2.0-flash-lite 무료 티어 기준 (30 RPM, 1500 RPD)
-# _BATCH_DELAY 6초 → 실효 10 RPM (함수 호출 경계 포함 전역 rate limit)
 _BATCH_SIZE = 10
-_BATCH_DELAY = 6.0
+_BATCH_DELAY = 1.0     # NVIDIA API rate limit 여유로움
 _RETRY_COUNT = 5
-_RETRY_BASE = 60   # 429 시 첫 대기 시간(초), 이후 지수 증가 (최대 300초)
+_RETRY_BASE = 10   # 429 시 첫 대기 시간(초), 이후 지수 증가 (최대 120초)
 _last_api_call: float = 0.0  # 마지막 API 호출 시각 (전역 rate limit 추적)
-_MODEL = "gemini-2.0-flash-lite"
-_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{_MODEL}:generateContent"
+_MODEL = "moonshotai/kimi-k2-instruct"
+_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 _TRANSLATE_PROMPT = (
     "다음 JSON의 각 값을 영어에서 한국어로 번역하세요.\n"
-    "오버워치 게임 공식 한국어 명칭을 사용하세요 "
-    "(예: Reinhardt→라인하르트, Ultimate→궁극기, Tank→탱커, Perk→특성, Cooldown→재사용 대기시간).\n"
+    "아래 제공되는 공식 번역 용어를 반드시 사용하세요.\n"
     "동일한 키를 가진 JSON 객체만 반환하세요. 다른 텍스트는 포함하지 마세요."
 )
 
@@ -40,21 +37,8 @@ _TRANSLATE_STADIUM_NAME_PROMPT = (
     "【번역 금지 / 원문 유지】\n"
     "- 영웅 고유명사: B.O.B, D.Va, Lúcio, Torbjörn, Wrecking Ball 등 공식 영어 표기 그대로\n"
     "- 빌드 코드([S1], [S19] 등 시즌 표기), 이모지, 숫자·퍼센트(86% WR 등)\n"
-    "- 아직 공식 한국어명이 없는 아이템/특성 이름 (원문 유지 후 괄호 안에 간단 설명 금지)\n\n"
-    "【영웅·스킬 공식 한국어 명칭】\n"
-    "Genji→겐지, Ana→아나, Reinhardt→라인하르트, Brigitte→브리기테, Cassidy→캐시디,\n"
-    "Doomfist→둠피스트, Pharah→파라, Kiriko→키리코, Juno→주노, Freja→프레야,\n"
-    "NanoNade→나노네이드, NanoBlade→나노블레이드, Dragonblade→용의 칼날\n\n"
-    "【스탯·게임 용어 번역】\n"
-    "Ability Power/AP→능력 파워, Weapon Power→무기 파워, Max Health/HP→최대 체력,\n"
-    "Movement Speed→이동 속도, Cooldown→재사용 대기시간, Ultimate/Ult→궁극기,\n"
-    "Lifesteal→생명력 흡수, AoE→광역, Burst→버스트, One-shot/1-shot→원샷,\n"
-    "Perk→특성, Passive→패시브, Uptime→가동 시간\n\n"
-    "【랭크 표기】\n"
-    "Legend→전설, Grandmaster/GM→그랜드마스터, Top 500/T500→탑 500\n\n"
-    "【게임 슬랭】\n"
-    "dive→다이브, poke→포킹, nano→나노 부스트, nade→생체 수류탄,\n"
-    "DPS(딜러 역할 맥락)→딜러, carry→캐리, farm→파밍, nuke→한방킬\n\n"
+    "- 아직 공식 한국어명이 없는 아이템/특성 이름 (원문 유지)\n\n"
+    "아래 제공되는 공식 번역 용어를 반드시 사용하세요.\n"
     "동일한 키를 가진 JSON 객체만 반환하세요. 다른 텍스트는 포함하지 마세요."
 )
 
@@ -74,12 +58,8 @@ _SUMMARIZE_PROMPT = (
     "- 빌드의 핵심 전략 (예: 능력 파워 극대화로 광역 폭딜 특화)\n"
     "- 주요 스탯 또는 플레이 방식 (예: 이동 속도+재사용 대기시간 단축으로 쉬지 않고 교전)\n"
     "- 승률·랭크 정보가 있으면 간략히 포함 가능\n\n"
-    "【오버워치 용어 (올바른 한국어 사용)】\n"
-    "Ability Power/AP→능력 파워, Weapon Power→무기 파워, Max Health→최대 체력,\n"
-    "Ultimate/Ult→궁극기, Cooldown→재사용 대기시간, Perk→특성,\n"
-    "Lifesteal→생명력 흡수, AoE→광역 피해, Burst→버스트, Uptime→가동 시간,\n"
-    "dive→다이브, poke→포킹, nano→나노 부스트, nade→생체 수류탄\n\n"
     "설명이 없거나 빈 값이면 빈 문자열을 반환하세요.\n"
+    "아래 제공되는 공식 번역 용어를 반드시 사용하세요.\n"
     "동일한 키를 가진 JSON 객체만 반환하세요. 다른 텍스트는 포함하지 마세요."
 )
 
@@ -97,22 +77,22 @@ def summarize(text: str) -> str:
     return summarize_list([text])[0]
 
 
-def translate_list(texts: list[str], label: str = "번역") -> list[str]:
+def translate_list(texts: list[str], label: str = "번역", heroes: list[str] | None = None) -> list[str]:
     """리스트 일괄 번역 (배치 처리)."""
-    return _batch_process(texts, _TRANSLATE_PROMPT, prefix="", label=label)
+    return _batch_process(texts, _TRANSLATE_PROMPT, prefix="", label=label, heroes=heroes)
 
 
-def translate_stadium_names(texts: list[str], label: str = "스타디움 이름 번역") -> list[str]:
+def translate_stadium_names(texts: list[str], label: str = "스타디움 이름 번역", heroes: list[str] | None = None) -> list[str]:
     """스타디움 빌드 이름 전용 번역 (오버워치 맥락 강화 프롬프트)."""
-    return _batch_process(texts, _TRANSLATE_STADIUM_NAME_PROMPT, prefix="\x00stn\x00", label=label)
+    return _batch_process(texts, _TRANSLATE_STADIUM_NAME_PROMPT, prefix="\x00stn\x00", label=label, heroes=heroes)
 
 
-def summarize_list(texts: list[str], label: str = "요약") -> list[str]:
+def summarize_list(texts: list[str], label: str = "요약", heroes: list[str] | None = None) -> list[str]:
     """리스트 일괄 3줄 요약 (배치 처리)."""
-    return _batch_process(texts, _SUMMARIZE_PROMPT, prefix=_SUM_PREFIX, label=label)
+    return _batch_process(texts, _SUMMARIZE_PROMPT, prefix=_SUM_PREFIX, label=label, heroes=heroes)
 
 
-def _batch_process(texts: list[str], prompt: str, prefix: str, label: str) -> list[str]:
+def _batch_process(texts: list[str], prompt: str, prefix: str, label: str, heroes: list[str] | None = None) -> list[str]:
     """공통 배치 처리 로직."""
     if not texts:
         return []
@@ -135,10 +115,19 @@ def _batch_process(texts: list[str], prompt: str, prefix: str, label: str) -> li
     total = len(to_process)
     n_batches = -(-total // _BATCH_SIZE)
 
+    # 용어집 섹션 생성 (heroes 지정 시 해당 영웅 스킬 포함)
+    glossary_section = ""
+    if heroes:
+        from bot.utils.glossary import get_glossary_section
+        glossary_section = get_glossary_section(heroes)
+    else:
+        from bot.utils.glossary import get_glossary_section
+        glossary_section = get_glossary_section()
+
     for batch_idx, batch_start in enumerate(range(0, total, _BATCH_SIZE)):
         logger.info(f"  {label} [{batch_idx + 1}/{n_batches}]")
         batch = to_process[batch_start : batch_start + _BATCH_SIZE]
-        processed = _call_gemini([t for _, t in batch], prompt)
+        processed = _call_api([t for _, t in batch], prompt, glossary_section=glossary_section)
         for (orig_idx, orig_text), result_text in zip(batch, processed):
             _CACHE[prefix + orig_text] = result_text
             results[orig_idx] = result_text
@@ -146,59 +135,65 @@ def _batch_process(texts: list[str], prompt: str, prefix: str, label: str) -> li
     return results
 
 
-def _call_gemini(texts: list[str], prompt_template: str) -> list[str]:
-    """Gemini REST API 배치 호출. 429 시 고정 대기 재시도. 최종 실패 시 원본 반환."""
+def _call_api(texts: list[str], prompt_template: str, glossary_section: str = "") -> list[str]:
+    """NVIDIA API (Kimi K2 Instruct) 배치 호출. 429 시 지수 대기 재시도. 최종 실패 시 원본 반환."""
     global _last_api_call
 
-    # 전역 rate limit: 마지막 호출로부터 _BATCH_DELAY 미만이면 대기
     elapsed = time.time() - _last_api_call
     if elapsed < _BATCH_DELAY:
         wait = _BATCH_DELAY - elapsed
         logger.debug(f"  Rate limit 대기: {wait:.1f}초")
         time.sleep(wait)
 
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("NVIDIA_API_KEY")
     if not api_key:
-        raise ValueError("GEMINI_API_KEY 환경변수가 설정되지 않았습니다.")
+        raise ValueError("NVIDIA_API_KEY 환경변수가 설정되지 않았습니다.")
 
     numbered = json.dumps(
         {str(i): t for i, t in enumerate(texts)},
         ensure_ascii=False,
     )
-    prompt = prompt_template + "\n\n" + numbered
+
+    # system: 지시사항 + 용어집 / user: 번역 대상 JSON
+    system_content = prompt_template
+    if glossary_section:
+        system_content = prompt_template + "\n\n" + glossary_section
+
     payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "temperature": 0.1,
-        },
+        "model": _MODEL,
+        "messages": [
+            {"role": "system", "content": system_content},
+            {"role": "user", "content": numbered},
+        ],
+        "response_format": {"type": "json_object"},
+        "temperature": 0.1,
     }
     headers = {
         "Content-Type": "application/json",
-        "x-goog-api-key": api_key,
+        "Authorization": f"Bearer {api_key}",
     }
 
     for attempt in range(_RETRY_COUNT):
         try:
             _last_api_call = time.time()
-            resp = requests.post(_API_URL, headers=headers, json=payload, timeout=30)
+            resp = requests.post(_API_URL, headers=headers, json=payload, timeout=60)
 
             if resp.status_code == 429:
-                wait = min(_RETRY_BASE * (2 ** attempt), 300)
+                wait = min(_RETRY_BASE * (2 ** attempt), 120)
                 logger.warning(f"  429 Rate limit, {wait}초 후 재시도 ({attempt + 1}/{_RETRY_COUNT})...")
                 time.sleep(wait)
                 continue
 
             if not resp.ok:
-                logger.warning(f"  Gemini HTTP {resp.status_code} (원본 유지): {resp.text[:200]}")
+                logger.warning(f"  API HTTP {resp.status_code} (원본 유지): {resp.text[:200]}")
                 return texts
 
-            text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
-            data: dict = json.loads(text)
+            content = resp.json()["choices"][0]["message"]["content"]
+            data: dict = json.loads(content)
             return [data.get(str(i), texts[i]) for i in range(len(texts))]
 
         except Exception as e:
-            logger.warning(f"  Gemini 호출 실패 (원본 유지): {e!r}")
+            logger.warning(f"  API 호출 실패 (원본 유지): {e!r}")
             return texts
 
     logger.warning(f"  {_RETRY_COUNT}회 재시도 후 실패, 원본 유지")
