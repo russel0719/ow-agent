@@ -62,3 +62,28 @@ def get_glossary_section(hero_en_names: list[str] | None = None) -> str:
             lines.extend(hero_lines)
 
     return "\n".join(lines)
+
+
+def get_ability_key(ability_name: str) -> str | None:
+    """능력 이름(EN 또는 KR)으로 키보드 키 반환. 없으면 None."""
+    g = _load()
+    ability_lower = ability_name.lower().strip()
+
+    for hdata in g.get("heroes", {}).values():
+        keys = hdata.get("keys", {})
+        skills = hdata.get("skills", {})
+
+        # EN 이름으로 직접 검색
+        for en_ability, key in keys.items():
+            if en_ability.lower() == ability_lower:
+                return key
+
+        # KR 이름으로 역방향 검색 (skills EN→KR 반전)
+        kr_to_en = {ko.lower(): en for en, ko in skills.items()}
+        en_from_kr = kr_to_en.get(ability_lower)
+        if en_from_kr:
+            key = keys.get(en_from_kr)
+            if key:
+                return key
+
+    return None

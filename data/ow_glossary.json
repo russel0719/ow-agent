@@ -3,16 +3,16 @@
     "terms": {
       "Ultimate": "궁극기",
       "Ult": "궁극기",
-      "Ability Power": "능력 파워",
-      "AP": "능력 파워",
-      "Weapon Power": "무기 파워",
+      "Ability Power": "기술 위력",
+      "AP": "기술 위력",
+      "Weapon Power": "무기 공격력",
       "Cooldown": "재사용 대기시간",
       "Max Health": "최대 체력",
       "HP": "체력",
       "Healing": "회복량",
       "Lifesteal": "생명력 흡수",
       "Movement Speed": "이동 속도",
-      "Perk": "특성",
+      "Perk": "특전",
       "Passive": "패시브",
       "Tank": "탱커",
       "Support": "지원가",
@@ -76,11 +76,16 @@
       "skills": {
         "Biotic Rifle": "바이오틱 소총",
         "Sleep Dart": "수면 다트",
-        "Biotic Grenade": "생체 수류탄",
+        "Biotic Grenade": "바이오틱 수류탄",
         "Nano Boost": "나노강화제",
         "NanoNade": "나노네이드",
         "NanoBlade": "나노블레이드",
         "Shrike": "슈라이크"
+      },
+      "keys": {
+        "Sleep Dart": "Shift",
+        "Biotic Grenade": "E",
+        "Nano Boost": "Q"
       }
     },
     "ashe": {
@@ -91,6 +96,12 @@
         "Dynamite": "다이너마이트",
         "B.O.B.": "B.O.B.",
         "B.O.B": "B.O.B."
+      },
+      "keys": {
+        "Dynamite": "Shift",
+        "Coach Gun": "E",
+        "B.O.B.": "Q",
+        "B.O.B": "Q"
       }
     },
     "baptiste": {
@@ -101,17 +112,28 @@
         "Immortality Field": "불사 지역",
         "Amplification Matrix": "증폭 매트릭스",
         "Exo Boots": "외골격 부츠"
+      },
+      "keys": {
+        "Regenerative Burst": "Shift",
+        "Immortality Field": "E",
+        "Amplification Matrix": "Q",
+        "Exo Boots": "Passive"
       }
     },
     "bastion": {
       "name": { "Bastion": "바스티온" },
       "skills": {
-        "Configuration: Recon": "정찰 형태",
-        "Configuration: Assault": "공격 형태",
+        "Configuration: Recon": "구성: 정찰",
+        "Configuration: Assault": "구성: 공격",
         "A-36 Tactical Grenade": "A-36 전술 수류탄",
-        "Reconfigure": "형태 변환",
-        "Configuration: Artillery": "포격 형태",
+        "Reconfigure": "재구성",
+        "Configuration: Artillery": "구성: 포격",
         "Self-Repair": "자가 수리"
+      },
+      "keys": {
+        "A-36 Tactical Grenade": "Shift",
+        "Reconfigure": "E",
+        "Configuration: Artillery": "Q"
       }
     },
     "brigitte": {
@@ -119,11 +141,18 @@
       "skills": {
         "Rocket Flail": "로켓 도리깨",
         "Repair Pack": "수리 팩",
-        "Whip Shot": "채찍질 공격",
+        "Whip Shot": "채찍 사격",
         "Barrier Shield": "방어막 방패",
         "Shield Bash": "방패 강타",
         "Rally": "집결",
         "Inspire": "고무"
+      },
+      "keys": {
+        "Repair Pack": "Shift",
+        "Whip Shot": "E",
+        "Barrier Shield": "RMB",
+        "Rally": "Q",
+        "Inspire": "Passive"
       }
     },
     "cassidy": {
@@ -131,16 +160,22 @@
       "skills": {
         "Peacekeeper": "피스키퍼",
         "Combat Roll": "전투 구르기",
-        "Magnetic Grenade": "자기장 수류탄",
-        "Fan the Hammer": "팬 더 해머",
+        "Magnetic Grenade": "자기 수류탄",
+        "Fan the Hammer": "연속 사격",
         "Deadeye": "무법자의 눈"
+      },
+      "keys": {
+        "Fan the Hammer": "RMB",
+        "Combat Roll": "Shift",
+        "Magnetic Grenade": "E",
+        "Deadeye": "Q"
       }
     },
     "dva": {
       "name": { "D.Va": "D.Va" },
       "skills": {
         "Fusion Cannons": "융합 캐논",
-        "Light Gun": "가벼운 총",
+        "Light Gun": "라이트 건",
         "Boosters": "추진기",
         "Defense Matrix": "방어 매트릭스",
         "Micro Missiles": "마이크로 미사일",
@@ -148,6 +183,13 @@
         "Call Mech": "메카 소환",
         "Self-Destruct": "자폭",
         "Mech": "메카"
+      },
+      "keys": {
+        "Boosters": "Shift",
+        "Defense Matrix": "RMB",
+        "Micro Missiles": "E",
+        "Self-Destruct": "Q",
+        "Call Mech": "Q"
       }
     },
     "doomfist": {
@@ -160,6 +202,12 @@
         "Power Block": "파워 블록",
         "Meteor Strike": "유성 강타",
         "Empowered Punch": "강화 주먹"
+      },
+      "keys": {
+        "Rocket Punch": "RMB",
+        "Seismic Slam": "Shift",
+        "Power Block": "E",
+        "Meteor Strike": "Q"
       }
     },
     "echo": {
@@ -171,16 +219,29 @@
         "Focusing Beam": "집속 광선",
         "Glide": "활공",
         "Duplicate": "복제"
+      },
+      "keys": {
+        "Sticky Bombs": "RMB",
+        "Flight": "Shift",
+        "Focusing Beam": "E",
+        "Glide": "Passive",
+        "Duplicate": "Q"
       }
     },
     "freja": {
       "name": { "Freja": "프레야" },
       "skills": {
-        "Recurve Bow": "장궁",
+        "Recurve Bow": "리커브 활",
         "Bola Shot": "볼라 사격",
         "Grapple": "갈고리",
         "Relentless": "집요함",
-        "Hunter's Mark": "사냥꾼의 표적"
+        "Hunter's Mark": "사냥꾼의 표식"
+      },
+      "keys": {
+        "Bola Shot": "Shift",
+        "Grapple": "E",
+        "Relentless": "Passive",
+        "Hunter's Mark": "Q"
       }
     },
     "genji": {
@@ -192,6 +253,12 @@
         "Cyber-Agility": "사이버 민첩성",
         "Dragonblade": "용의 칼날",
         "NanoBlade": "나노블레이드"
+      },
+      "keys": {
+        "Swift Strike": "Shift",
+        "Deflect": "E",
+        "Cyber-Agility": "Passive",
+        "Dragonblade": "Q"
       }
     },
     "hanzo": {
@@ -203,35 +270,58 @@
         "Lunge": "도약",
         "Wall Climb": "벽 타기",
         "Dragonstrike": "용의 강타"
+      },
+      "keys": {
+        "Storm Arrows": "Shift",
+        "Sonic Arrow": "E",
+        "Wall Climb": "Passive",
+        "Dragonstrike": "Q"
       }
     },
     "hazard": {
       "name": { "Hazard": "해저드" },
       "skills": {
         "Shards": "파편",
-        "Jagged Wall": "날카로운 벽",
-        "Violent Leap": "도약 강타",
-        "Spike Guard": "스파이크 가드",
-        "Cry Havoc": "대혼란"
+        "Jagged Wall": "울퉁불퉁한 벽",
+        "Violent Leap": "맹렬한 도약",
+        "Spike Guard": "가시 방어",
+        "Cry Havoc": "혼돈의 외침"
+      },
+      "keys": {
+        "Jagged Wall": "Shift",
+        "Violent Leap": "E",
+        "Spike Guard": "Passive",
+        "Cry Havoc": "Q"
       }
     },
     "illari": {
       "name": { "Illari": "일라리" },
       "skills": {
         "Solar Rifle": "태양 소총",
-        "Outburst": "폭발",
-        "Healing Pylon": "태양 포탑",
+        "Outburst": "폭발 질주",
+        "Healing Pylon": "치유 파일런",
         "Captive Sun": "태양 포획"
+      },
+      "keys": {
+        "Outburst": "Shift",
+        "Healing Pylon": "E",
+        "Captive Sun": "Q"
       }
     },
     "juno": {
       "name": { "Juno": "주노" },
       "skills": {
         "Mediblasters": "메디블래스터",
-        "Hyper Ring": "궤도 링",
+        "Hyper Ring": "하이퍼 링",
         "Pulsar Torpedoes": "펄서 어뢰",
         "Glide Boost": "활공 부스트",
         "Orbital Ray": "궤도 광선"
+      },
+      "keys": {
+        "Hyper Ring": "Shift",
+        "Pulsar Torpedoes": "E",
+        "Glide Boost": "Passive",
+        "Orbital Ray": "Q"
       }
     },
     "junker_queen": {
@@ -244,16 +334,29 @@
         "Rampage": "광란",
         "Wound": "상처",
         "Adrenaline Rush": "아드레날린 돌진"
+      },
+      "keys": {
+        "Jagged Blade": "Shift",
+        "Carnage": "E",
+        "Commanding Shout": "RMB",
+        "Rampage": "Q",
+        "Adrenaline Rush": "Passive"
       }
     },
     "junkrat": {
       "name": { "Junkrat": "정크랫" },
       "skills": {
-        "Frag Launcher": "폭탄 발사기",
+        "Frag Launcher": "파편 유탄 발사기",
         "Concussion Mine": "충격 지뢰",
         "Steel Trap": "강철 덫",
         "Total Mayhem": "대혼란",
         "RIP-Tire": "바퀴 폭탄"
+      },
+      "keys": {
+        "Concussion Mine": "Shift",
+        "Steel Trap": "E",
+        "Total Mayhem": "Passive",
+        "RIP-Tire": "Q"
       }
     },
     "kiriko": {
@@ -264,6 +367,11 @@
         "Swift Step": "신속한 발걸음",
         "Protection Suzu": "수호 방울",
         "Kitsune Rush": "여우 강신"
+      },
+      "keys": {
+        "Swift Step": "Shift",
+        "Protection Suzu": "E",
+        "Kitsune Rush": "Q"
       }
     },
     "lifeweaver": {
@@ -276,6 +384,12 @@
         "Life Grip": "생명의 고삐",
         "Tree of Life": "생명의 나무",
         "Parting Gift": "작별 선물"
+      },
+      "keys": {
+        "Rejuvenating Dash": "Shift",
+        "Life Grip": "E",
+        "Tree of Life": "Q",
+        "Parting Gift": "Passive"
       }
     },
     "lucio": {
@@ -284,32 +398,51 @@
         "Sonic Amplifier": "음파 증폭기",
         "Crossfade": "전환",
         "Amp It Up": "볼륨 높이기",
-        "Soundwave": "소리 강타",
+        "Soundwave": "음파 강타",
         "Wall Ride": "벽 타기",
         "Sound Barrier": "음파 장벽",
         "Heal Song": "치유 비트",
         "Speed Song": "속도 비트"
+      },
+      "keys": {
+        "Amp It Up": "Shift",
+        "Crossfade": "E",
+        "Soundwave": "RMB",
+        "Wall Ride": "Passive",
+        "Sound Barrier": "Q"
       }
     },
     "mauga": {
       "name": { "Mauga": "마우가" },
       "skills": {
-        "Incendiary Chaingun": "점화 총",
-        "Volatile Chaingun": "폭발 총",
+        "Incendiary Chaingun": "점화 체인건",
+        "Volatile Chaingun": "폭발 체인건",
         "Overrun": "돌격",
         "Cardiac Overdrive": "심장 오버드라이브",
         "Cage Fight": "철창 싸움",
         "Ignited": "점화"
+      },
+      "keys": {
+        "Volatile Chaingun": "RMB",
+        "Overrun": "Shift",
+        "Cardiac Overdrive": "E",
+        "Cage Fight": "Q"
       }
     },
     "mei": {
       "name": { "Mei": "메이" },
       "skills": {
-        "Endothermic Blaster": "흡열 광선총",
+        "Endothermic Blaster": "흡열 총",
         "Ice Wall": "얼음 벽",
         "Cryo-Freeze": "냉동 상태",
         "Blizzard": "한파",
         "Icicle": "고드름"
+      },
+      "keys": {
+        "Icicle": "RMB",
+        "Cryo-Freeze": "Shift",
+        "Ice Wall": "E",
+        "Blizzard": "Q"
       }
     },
     "mercy": {
@@ -318,10 +451,16 @@
         "Caduceus Staff": "카두케우스 지팡이",
         "Caduceus Blaster": "카두케우스 권총",
         "Guardian Angel": "수호천사",
-        "Resurrect": "부활",
+        "Resurrect": "소생",
         "Angelic Descent": "천사의 강림",
         "Valkyrie": "발키리",
         "Damage Boost": "피해량 증폭"
+      },
+      "keys": {
+        "Guardian Angel": "Shift",
+        "Resurrect": "E",
+        "Angelic Descent": "Passive",
+        "Valkyrie": "Q"
       }
     },
     "moira": {
@@ -331,16 +470,27 @@
         "Biotic Orb": "바이오틱 구체",
         "Fade": "사라지기",
         "Coalescence": "합체"
+      },
+      "keys": {
+        "Fade": "Shift",
+        "Biotic Orb": "E",
+        "Coalescence": "Q"
       }
     },
     "orisa": {
       "name": { "Orisa": "오리사" },
       "skills": {
-        "Augmented Fusion Driver": "증강 융합 추진기",
+        "Augmented Fusion Driver": "강화 융합 추진기",
         "Energy Javelin": "에너지 창",
         "Javelin Spin": "창 회전",
         "Fortify": "요새화",
         "Terra Surge": "대지 급습"
+      },
+      "keys": {
+        "Energy Javelin": "Shift",
+        "Javelin Spin": "E",
+        "Fortify": "RMB",
+        "Terra Surge": "Q"
       }
     },
     "pharah": {
@@ -351,6 +501,12 @@
         "Concussive Blast": "충격파",
         "Hover Jets": "부양 제트",
         "Barrage": "집중 포격"
+      },
+      "keys": {
+        "Jump Jet": "Shift",
+        "Concussive Blast": "E",
+        "Hover Jets": "Passive",
+        "Barrage": "Q"
       }
     },
     "ramattra": {
@@ -359,10 +515,16 @@
         "Void Accelerator": "공허 가속기",
         "Void Barrier": "공허 장벽",
         "Ravenous Vortex": "탐욕스러운 소용돌이",
-        "Nemesis Form": "님버스 형태",
+        "Nemesis Form": "네메시스 형태",
         "Omnic Form": "옴닉 형태",
         "Pummel": "강타",
         "Annihilation": "섬멸"
+      },
+      "keys": {
+        "Void Barrier": "Shift",
+        "Ravenous Vortex": "E",
+        "Nemesis Form": "RMB",
+        "Annihilation": "Q"
       }
     },
     "reaper": {
@@ -373,6 +535,12 @@
         "Wraith Form": "유령 형태",
         "The Reaping": "죽음의 추수",
         "Death Blossom": "사형 집행"
+      },
+      "keys": {
+        "Wraith Form": "Shift",
+        "Shadow Step": "E",
+        "The Reaping": "Passive",
+        "Death Blossom": "Q"
       }
     },
     "reinhardt": {
@@ -384,6 +552,13 @@
         "Fire Strike": "화염 강타",
         "Steadfast": "강인함",
         "Earthshatter": "대지 분쇄"
+      },
+      "keys": {
+        "Barrier Field": "RMB",
+        "Charge": "Shift",
+        "Fire Strike": "E",
+        "Steadfast": "Passive",
+        "Earthshatter": "Q"
       }
     },
     "roadhog": {
@@ -391,9 +566,15 @@
       "skills": {
         "Scrap Gun": "고철 산탄총",
         "Take a Breather": "한숨 돌리기",
-        "Chain Hook": "갈고리",
+        "Chain Hook": "쇠갈고리",
         "Pig Pen": "돼지 우리",
         "Whole Hog": "완전 개방"
+      },
+      "keys": {
+        "Chain Hook": "Shift",
+        "Take a Breather": "E",
+        "Pig Pen": "RMB",
+        "Whole Hog": "Q"
       }
     },
     "sigma": {
@@ -401,9 +582,15 @@
       "skills": {
         "Hyperspheres": "초구체",
         "Experimental Barrier": "실험적 장벽",
-        "Kinetic Grasp": "운동 파악",
+        "Kinetic Grasp": "운동 에너지 포획",
         "Accretion": "강착",
         "Gravitic Flux": "중력 요동"
+      },
+      "keys": {
+        "Experimental Barrier": "RMB",
+        "Kinetic Grasp": "Shift",
+        "Accretion": "E",
+        "Gravitic Flux": "Q"
       }
     },
     "sojourn": {
@@ -411,10 +598,16 @@
       "skills": {
         "Railgun": "레일건",
         "Power Slide": "파워 슬라이드",
-        "Disruptor Shot": "방해 사격",
+        "Disruptor Shot": "교란 사격",
         "Overclock": "오버클록",
-        "Rapid Fire": "빠른 사격",
+        "Rapid Fire": "연속 사격",
         "Charged Shot": "충전 사격"
+      },
+      "keys": {
+        "Charged Shot": "RMB",
+        "Power Slide": "Shift",
+        "Disruptor Shot": "E",
+        "Overclock": "Q"
       }
     },
     "soldier76": {
@@ -422,9 +615,15 @@
       "skills": {
         "Heavy Pulse Rifle": "헤비 펄스 소총",
         "Sprint": "전력 질주",
-        "Biotic Field": "회복 바이오틱",
+        "Biotic Field": "바이오틱 필드",
         "Helix Rockets": "나선 로켓",
         "Tactical Visor": "전술 조준경"
+      },
+      "keys": {
+        "Helix Rockets": "Shift",
+        "Sprint": "Shift",
+        "Biotic Field": "E",
+        "Tactical Visor": "Q"
       }
     },
     "sombra": {
@@ -437,6 +636,13 @@
         "EMP": "EMP",
         "Virus": "바이러스",
         "Stealth": "은신"
+      },
+      "keys": {
+        "Hack": "RMB",
+        "Virus": "Shift",
+        "Translocator": "E",
+        "Opportunist": "Passive",
+        "EMP": "Q"
       }
     },
     "symmetra": {
@@ -446,6 +652,11 @@
         "Sentry Turret": "감시 포탑",
         "Teleporter": "순간이동 장치",
         "Photon Barrier": "광자 장벽"
+      },
+      "keys": {
+        "Sentry Turret": "Shift",
+        "Teleporter": "E",
+        "Photon Barrier": "Q"
       }
     },
     "torbjorn": {
@@ -453,9 +664,14 @@
       "skills": {
         "Rivet Gun": "리벳 총",
         "Forge Hammer": "단조 망치",
-        "Deploy Turret": "포탑 설치",
+        "Deploy Turret": "포탑 배치",
         "Overload": "과부하",
-        "Molten Core": "용암 핵심"
+        "Molten Core": "용암 핵"
+      },
+      "keys": {
+        "Deploy Turret": "Shift",
+        "Overload": "E",
+        "Molten Core": "Q"
       }
     },
     "tracer": {
@@ -465,16 +681,27 @@
         "Blink": "점멸",
         "Recall": "되감기",
         "Pulse Bomb": "펄스 폭탄"
+      },
+      "keys": {
+        "Blink": "Shift",
+        "Recall": "E",
+        "Pulse Bomb": "Q"
       }
     },
     "venture": {
       "name": { "Venture": "벤처" },
       "skills": {
         "Smart Excavator": "스마트 굴착기",
-        "Drill Dash": "굴착 대시",
+        "Drill Dash": "굴착 돌진",
         "Burrow": "잠복",
         "Tectonic Shock": "지각 충격",
         "Clobber": "강타"
+      },
+      "keys": {
+        "Clobber": "RMB",
+        "Drill Dash": "Shift",
+        "Burrow": "E",
+        "Tectonic Shock": "Q"
       }
     },
     "widowmaker": {
@@ -484,6 +711,11 @@
         "Grappling Hook": "갈고리 발사기",
         "Venom Mine": "독 지뢰",
         "Infra-Sight": "적외선 시야"
+      },
+      "keys": {
+        "Grappling Hook": "Shift",
+        "Venom Mine": "E",
+        "Infra-Sight": "Q"
       }
     },
     "winston": {
@@ -494,6 +726,11 @@
         "Barrier Projector": "방어막 발생기",
         "Primal Rage": "원초적 분노",
         "Leap": "도약"
+      },
+      "keys": {
+        "Jump Pack": "Shift",
+        "Barrier Projector": "E",
+        "Primal Rage": "Q"
       }
     },
     "wrecking_ball": {
@@ -505,6 +742,12 @@
         "Adaptive Shield": "적응형 방어막",
         "Piledriver": "파일 드라이버",
         "Minefield": "지뢰밭"
+      },
+      "keys": {
+        "Grappling Claw": "Shift",
+        "Adaptive Shield": "E",
+        "Piledriver": "Shift",
+        "Minefield": "Q"
       }
     },
     "zarya": {
@@ -515,6 +758,11 @@
         "Projected Barrier": "투사 장벽",
         "Graviton Surge": "중력자 탄",
         "Energy": "에너지"
+      },
+      "keys": {
+        "Particle Barrier": "Shift",
+        "Projected Barrier": "E",
+        "Graviton Surge": "Q"
       }
     },
     "zenyatta": {
@@ -525,11 +773,18 @@
         "Orb of Harmony": "조화 주옥",
         "Transcendence": "초월",
         "Snap Kick": "스냅 킥"
+      },
+      "keys": {
+        "Orb of Harmony": "Shift",
+        "Orb of Discord": "E",
+        "Snap Kick": "Passive",
+        "Transcendence": "Q"
       }
     },
     "jetpack_cat": {
       "name": { "Jetpack Cat": "제트팩 캣" },
-      "skills": {}
+      "skills": {},
+      "keys": {}
     }
   }
 }

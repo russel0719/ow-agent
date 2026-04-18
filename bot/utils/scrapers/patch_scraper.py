@@ -164,16 +164,23 @@ def _extract_hero_changes(hero_update_el) -> list[str]:
 
         ability_name = name_el.get_text(strip=True) if name_el else ""
 
+        if ability_name:
+            from bot.utils.glossary import get_ability_key
+            key = get_ability_key(ability_name)
+            ability_label = f"{ability_name} ({key})" if key else ability_name
+        else:
+            ability_label = ""
+
         if detail_list:
             for li in detail_list:
                 text = li.get_text(strip=True)
                 if text:
-                    prefix = f"{ability_name}: " if ability_name else ""
+                    prefix = f"{ability_label}: " if ability_label else ""
                     changes.append(f"{prefix}{text}"[:150])
         elif text_el:
             text = text_el.get_text(strip=True)
             if text:
-                prefix = f"{ability_name}: " if ability_name else ""
+                prefix = f"{ability_label}: " if ability_label else ""
                 changes.append(f"{prefix}{text}"[:150])
 
     if not changes:
