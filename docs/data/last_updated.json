@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-04-18T07:05:34.099404+00:00",
+  "timestamp": "2026-04-18T07:19:03.716035+00:00",
   "sources": {
     "meta": "live",
-    "stadium": "live",
+    "stadium": "fallback",
     "patch": "live"
   }
 }
