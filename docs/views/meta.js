@@ -62,7 +62,7 @@ function buildHTML() {
           class="text-xs text-ow-blue hover:text-white transition-colors hidden px-2 py-1 rounded border border-ow-border hover:border-ow-blue"
           id="chart-back">← 전체 보기</button>
       </div>
-      <div id="chart-scroll" style="overflow-y:auto; max-height:380px;">
+      <div id="chart-scroll" style="overflow-y:auto; max-height:640px;">
         <div id="chart-wrapper" class="px-4 pb-4" style="position:relative;">
           <canvas id="meta-chart"></canvas>
         </div>
@@ -138,14 +138,14 @@ function renderChart(container) {
 function renderOverviewChart(container) {
   container.querySelector('#chart-title').textContent =
     `전체 영웅 메타 점수 추이 — ${currentRank}`;
-  container.querySelector('#chart-scroll').style.maxHeight = '320px';
+  container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  wrapper.style.height = '280px';
+  wrapper.style.height = '560px';
 
   const canvas = container.querySelector('#meta-chart');
   canvas.style.width = '100%';
-  canvas.style.height = '280px';
+  canvas.style.height = '560px';
 
   // 히스토리 데이터로 멀티라인 구성
   const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
@@ -246,14 +246,14 @@ function renderHistoryChart(container) {
 
   container.querySelector('#chart-title').textContent =
     `${selectedHeroName} — 메타 점수 추이 (${currentRank})`;
-  container.querySelector('#chart-scroll').style.maxHeight = '320px';
+  container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  wrapper.style.height = '280px';
+  wrapper.style.height = '560px';
 
   const canvas = container.querySelector('#meta-chart');
   canvas.style.width = '100%';
-  canvas.style.height = '280px';
+  canvas.style.height = '560px';
 
   const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
   if (!rankData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
