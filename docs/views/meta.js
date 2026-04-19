@@ -118,12 +118,14 @@ let activeChart = null;
 let cachedMeta = null;
 let cachedHistory = null;
 let cachedMapMeta = null;
+let cachedMapHistory = null;
 
 export async function renderMeta(container) {
-  [cachedMeta, cachedHistory, cachedMapMeta] = await Promise.all([
+  [cachedMeta, cachedHistory, cachedMapMeta, cachedMapHistory] = await Promise.all([
     loadJSON('meta'),
     loadJSON('meta_history').catch(() => null),
     loadJSON('map_meta').catch(() => null),
+    loadJSON('map_meta_history').catch(() => null),
   ]);
 
   container.innerHTML = buildHTML();
@@ -180,8 +182,8 @@ function buildHTML() {
       </div>
     </div>
 
-    <!-- 차트 패널 (맵 모드에서 숨김) -->
-    <div class="bg-ow-card border border-ow-border rounded-xl mb-6 overflow-hidden${isMap ? ' hidden' : ''}" id="chart-panel">
+    <!-- 차트 패널 -->
+    <div class="bg-ow-card border border-ow-border rounded-xl mb-6 overflow-hidden" id="chart-panel">
       <div class="flex items-center justify-between px-5 pt-4 pb-2">
         <span class="text-sm font-semibold text-gray-200" id="chart-title"></span>
         <button
@@ -211,7 +213,7 @@ function attachEvents(container) {
       resetSelection(container);
       container.innerHTML = buildHTML();
       attachEvents(container);
-      if (currentMode === 'rank') renderChart(container);
+      renderChart(container);
       renderCards(container);
     });
   });
@@ -230,7 +232,7 @@ function attachEvents(container) {
       container.querySelectorAll('.filter-btn[data-role]').forEach(b => b.classList.remove('active'));
       container.querySelectorAll(`.filter-btn[data-role="${btn.dataset.role}"]`).forEach(b => b.classList.add('active'));
       currentRole = btn.dataset.role;
-      if (currentMode === 'rank' && !selectedHeroId) renderChart(container);
+      if (!selectedHeroId) renderChart(container);
       renderCards(container);
     });
   });
@@ -250,7 +252,9 @@ function attachEvents(container) {
     const btn = e.target.closest('.map-btn');
     if (!btn || btn.disabled) return;
     currentMap = btn.dataset.mapId;
+    resetSelection(container);
     container.querySelectorAll('.map-btn').forEach(b => b.classList.toggle('active', b.dataset.mapId === currentMap));
+    renderChart(container);
     renderCards(container);
   });
 
@@ -261,11 +265,11 @@ function attachEvents(container) {
     renderCards(container);
   });
 
-  // 영웅 카드 클릭 (랭크 모드에서만 히스토리 차트)
+  // 영웅 카드 클릭 → 히스토리 차트
   container.querySelector('#meta-grid').addEventListener('click', e => {
     const card = e.target.closest('.hero-card');
     if (!card) return;
-    if (currentMode === 'rank') selectHero(container, card.dataset.heroId, card.dataset.heroName);
+    selectHero(container, card.dataset.heroId, card.dataset.heroName);
   });
 }
 
@@ -293,9 +297,12 @@ function resetSelection(container) {
 // ── 차트 렌더링 ──────────────────────────────────────────────────────────
 
 function renderChart(container) {
-  if (currentMode === 'map') return;
   if (activeChart) { activeChart.destroy(); activeChart = null; }
-  selectedHeroId ? renderHistoryChart(container) : renderOverviewChart(container);
+  if (currentMode === 'map') {
+    selectedHeroId ? renderMapHistoryChart(container) : renderMapOverviewChart(container);
+  } else {
+    selectedHeroId ? renderHistoryChart(container) : renderOverviewChart(container);
+  }
 }
 
 function renderOverviewChart(container) {
@@ -474,6 +481,167 @@ function renderHistoryChart(container) {
   });
 }
 
+// ── 맵별 차트 ────────────────────────────────────────────────────────────────
+
+function renderMapOverviewChart(container) {
+  const mapName = MAP_LIST.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
+  container.querySelector('#chart-title').textContent =
+    currentMap ? `전체 영웅 메타 점수 추이 — ${mapName}` : '맵을 선택하세요';
+  container.querySelector('#chart-scroll').style.maxHeight = '640px';
+
+  const wrapper = container.querySelector('#chart-wrapper');
+  wrapper.style.height = '560px';
+  const canvas = container.querySelector('#meta-chart');
+  canvas.style.width = '100%';
+  canvas.style.height = '560px';
+
+  if (!currentMap) { wrapper.innerHTML = noDataMsg('맵을 선택하면 차트가 표시됩니다.'); return; }
+
+  const mapData = cachedMapHistory?.[currentMap];
+  if (!mapData || !Object.keys(mapData).length) {
+    wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다. 내일 다시 확인해주세요.');
+    return;
+  }
+
+  const dates = Object.keys(mapData).sort();
+  const labelDates = dates.map(d => d.slice(5));
+
+  // hero_name / role은 cachedMapMeta에서 보완
+  const infoMap = Object.fromEntries(
+    (cachedMapMeta?.[currentMap] ?? []).map(h => [h.hero_id, h])
+  );
+  const heroMap = {};
+  for (const date of dates) {
+    for (const h of mapData[date] ?? []) {
+      if (!heroMap[h.hero_id]) {
+        const info = infoMap[h.hero_id] ?? {};
+        heroMap[h.hero_id] = {
+          hero_id: h.hero_id,
+          hero_name: info.hero_name ?? h.hero_id,
+          role: info.role ?? 'damage',
+          scores: new Array(dates.length).fill(null),
+        };
+      }
+      heroMap[h.hero_id].scores[dates.indexOf(date)] = h.meta_score ?? null;
+    }
+  }
+
+  const roleFilter = ROLE_MAP[currentRole];
+  const roleSet = roleFilter
+    ? new Set(Object.values(infoMap).filter(h => h.role === roleFilter).map(h => h.hero_id))
+    : null;
+
+  const filteredHeroes = Object.values(heroMap).filter(h => !roleSet || roleSet.has(h.hero_id));
+  const datasets = filteredHeroes.map(hero => {
+    const color = HERO_COLOR[hero.hero_id] ?? FALLBACK_COLOR;
+    return {
+      label: hero.hero_name,
+      heroId: hero.hero_id,
+      data: hero.scores,
+      borderColor: color + 'cc',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5,
+      pointRadius: 0,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: color,
+      spanGaps: true,
+      tension: 0.3,
+    };
+  });
+
+  activeChart = new Chart(canvas, {
+    type: 'line',
+    data: { labels: labelDates, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 200 },
+      interaction: { mode: 'index', intersect: false },
+      onClick(_, elements) {
+        if (!elements.length) return;
+        const ds = datasets[elements[0].datasetIndex];
+        selectHero(container, ds.heroId, ds.label);
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#161B22', borderColor: '#30363D', borderWidth: 1,
+          itemSort: (a, b) => b.parsed.y - a.parsed.y,
+          filter: item => item.parsed.y !== null,
+          callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1) ?? '-'}` },
+        },
+      },
+      scales: {
+        x: { ticks: { color: '#6B7280', font: { size: 10 }, maxTicksLimit: 14 }, grid: { color: '#1F2937' } },
+        y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
+      },
+    },
+  });
+}
+
+function renderMapHistoryChart(container) {
+  const color = HERO_COLOR[selectedHeroId] ?? FALLBACK_COLOR;
+  const mapName = MAP_LIST.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
+  container.querySelector('#chart-title').textContent =
+    `${selectedHeroName} — 메타 점수 추이 (${mapName})`;
+  container.querySelector('#chart-scroll').style.maxHeight = '640px';
+
+  const wrapper = container.querySelector('#chart-wrapper');
+  wrapper.style.height = '560px';
+  const canvas = container.querySelector('#meta-chart');
+  canvas.style.width = '100%';
+  canvas.style.height = '560px';
+
+  const mapData = cachedMapHistory?.[currentMap];
+  if (!mapData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
+
+  const dates = Object.keys(mapData).sort();
+  const scores = dates.map(d => mapData[d]?.find(h => h.hero_id === selectedHeroId)?.meta_score ?? null);
+
+  if (!scores.some(s => s !== null)) {
+    wrapper.innerHTML = noDataMsg('이 영웅의 히스토리 데이터가 없습니다.');
+    return;
+  }
+
+  activeChart = new Chart(canvas, {
+    type: 'line',
+    data: {
+      labels: dates.map(d => d.slice(5)),
+      datasets: [{
+        label: selectedHeroName,
+        data: scores,
+        borderColor: color,
+        backgroundColor: color + '15',
+        borderWidth: 2.5,
+        pointRadius: dates.length <= 14 ? 4 : 2,
+        pointBackgroundColor: color,
+        spanGaps: true,
+        tension: 0.35,
+        fill: true,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 200 },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#161B22', borderColor: '#30363D', borderWidth: 1,
+          callbacks: {
+            title: ctx => dates[ctx[0].dataIndex],
+            label: ctx => ` 메타 점수: ${ctx.parsed.y?.toFixed(1) ?? 'N/A'}`,
+          },
+        },
+      },
+      scales: {
+        x: { ticks: { color: '#6B7280', maxTicksLimit: 14, font: { size: 10 } }, grid: { color: '#1F2937' } },
+        y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
+      },
+    },
+  });
+}
+
 function noDataMsg(msg) {
   return `<p class="flex items-center justify-center h-full text-gray-500 text-sm py-16">${msg}</p>`;
 }
@@ -569,7 +737,9 @@ function renderMapButtons(container) {
     btn.addEventListener('click', () => {
       if (btn.disabled) return;
       currentMap = btn.dataset.mapId;
+      resetSelection(container);
       grid.querySelectorAll('.map-btn').forEach(b => b.classList.toggle('active', b.dataset.mapId === currentMap));
+      renderChart(container);
       renderCards(container);
     });
   });

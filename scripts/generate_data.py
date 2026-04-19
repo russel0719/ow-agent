@@ -66,6 +66,7 @@ DOCS_DATA.mkdir(parents=True, exist_ok=True)
 
 HISTORY_RANKS = {"전체", "그랜드마스터"}  # 히스토리 저장 대상 랭크
 HISTORY_DAYS = 90                           # rolling window 일수
+MAP_HISTORY_DAYS = 14                       # 맵별 히스토리 rolling window 일수
 
 # 맵 ID → 한국어 이름 (맵별 메타 수집용)
 MAP_IDS: dict[str, str] = {
@@ -208,9 +209,31 @@ async def _generate_map_meta(session: aiohttp.ClientSession) -> bool:
     if result:
         _save(DOCS_DATA / "map_meta.json", result)
         logger.info(f"  맵별 메타 완료: {ok}/{len(MAP_IDS)}개 맵")
+        _update_map_history(result)
         return True
     logger.warning("  맵별 메타: 수집된 데이터 없음")
     return False
+
+
+def _update_map_history(map_result: dict) -> None:
+    """map_meta_history.json에 오늘 날짜 맵별 스냅샷 추가 (14일 rolling)."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    history_path = DOCS_DATA / "map_meta_history.json"
+    history: dict = _load(history_path)  # type: ignore
+
+    for map_id, heroes in map_result.items():
+        if map_id not in history:
+            history[map_id] = {}
+        history[map_id][today] = [
+            {"hero_id": h["hero_id"], "meta_score": h["meta_score"]}
+            for h in heroes
+        ]
+        sorted_dates = sorted(history[map_id].keys())
+        if len(sorted_dates) > MAP_HISTORY_DAYS:
+            for old_date in sorted_dates[:len(sorted_dates) - MAP_HISTORY_DAYS]:
+                del history[map_id][old_date]
+
+    _save(history_path, history)
 
 
 def _hero_to_dict(h) -> dict:

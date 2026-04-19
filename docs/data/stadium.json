@@ -683,7 +683,7 @@
     {
       "name": "How to f1st(2)",
       "code": "XB218",
-      "description": "",
+      "description": "How to f1st(2)",
       "playstyle": "균형형",
       "upvotes": 74
     },
@@ -704,17 +704,17 @@
       "upvotes": 101
     },
     {
-      "name": "Staff 빌드 WP/공격속도 하이브리드",
-      "code": "QQ393",
-      "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
-      "playstyle": "딜형",
-      "upvotes": 15
-    },
-    {
       "name": "(S1 탑 3 탱커) 🌪️ Rampaging Tornado Carry Ramattra 👾",
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타형",
+      "upvotes": 15
+    },
+    {
+      "name": "Staff 빌드 WP/공격속도 하이브리드",
+      "code": "QQ393",
+      "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
+      "playstyle": "딜형",
       "upvotes": 15
     },
     {
@@ -743,7 +743,7 @@
     {
       "name": "[S18] Kitty's Infinite dancing Blossom.",
       "code": "16XHY",
-      "description": "시즌 18 기준 생명력 흡수 중심으로 재구성한 리퍼 ‘무한 꽃’ 빌드, 라운드 1~7 구간에서 올스타 달성.",
+      "description": "🎭 Kitty's Infinite dancing Blossom (🏟️ Stadium — Rounds 1–7) Updated for Season 18. * Just reached All-Star with this build! Jeej ⚙️ Patch Notes — Season 18. Removed the shield and Armor. Since in Season 18 (Ability) Life steal is king. ⚙️ Patch Note...",
       "playstyle": "생존형",
       "upvotes": 193
     },
@@ -780,7 +780,7 @@
     {
       "name": "[HYPER-AGGRESSIVE] The Lumberjack 🪓",
       "code": "DS6AX",
-      "description": "기본기 중심의 간결한 ‘목수’ 라인하르트 빌드, 초보자도 쉽게 따라 할 수 있도록 단순 구성.",
+      "description": "Hello all! I've noticed a rise in popularity of more complex  Reinhardt(hero_a3b6ca2c-6cbd-43dc-bb78-a728e42fba49) builds, so I wanted to bring it back to basics with this build aptly named \"The Lumberjack.\" This build earned this name due to how eas...",
       "playstyle": "공격형",
       "upvotes": 288
     },
@@ -792,7 +792,7 @@
       "upvotes": 172
     },
     {
-      "name": "[ALL-STAR] Hyper Carry ✨Guide To Win👑 Unkillable One-Shot Bu",
+      "name": "[전설] Hyper Carry ✨Guide To Win👑 Unkillable One-Shot Buil",
       "code": "HE224",
       "description": "탱커형 빌드의 라운드 후반 살상력 부족 문제를 해결, 지원 의존 없이도 팀을 캐리 가능.",
       "playstyle": "메타형",
@@ -838,7 +838,7 @@
     {
       "name": "The Flying Dutchman (S20 HAZARD & DF KILLER with conservativ",
       "code": "SPX0Z",
-      "description": "탱커로 하자드 상대 시 문제 없음, 베스트 오브 7에서 효과적",
+      "description": "All I've heard is how big and bad Hazard(hero_811ed127-3243-4ff9-85cd-1e30882a2430) is in Stadium this season and while I took a break over the best of 5 times, now I'm back for best of 7, I found I've not had an issue with him when I've played tank....",
       "playstyle": "메타형",
       "upvotes": 35
     }
@@ -868,14 +868,14 @@
     {
       "name": "The Enemy Will Love Getting Railed",
       "code": "X6QYG",
-      "description": "유리 대포 무기 공격력 빌드, 궁극기 외엔 탱커로 레일건 충전 후 원샷",
+      "description": "The Enemy Will Love Getting Railed Work in progresss Glass cannon, heavy snowball Weapon Power(stat_weapon_power) build. Outside of the ult, use Conductor Chase(item_2ac82d1b-560e-4918-aec1-911efe9b765d) to easily charge railgun off the tank, then de...",
       "playstyle": "생존형",
       "upvotes": 9
     },
     {
       "name": "AP SHOCK COLLAR",
       "code": "BC8DZ",
-      "description": "기술 위력 기반 교란 사격 빌드, 조준 못해도 E 연사로 제압",
+      "description": "Ability Power(stat_ability_power) Disruptor Shot(ability_41bcc951-951b-42ac-a6c3-7552524f8232) --- ZAPP YOUR ENEMIES WITH SHOCK COLLAR ! --- I recommend this build to players who are bad at aiming.      Just spam E to show them where they belong.",
       "playstyle": "균형형",
       "upvotes": 8
     }
@@ -891,7 +891,7 @@
     {
       "name": "Aimbot.exe",
       "code": "VX71P",
-      "description": "헬릭 로켓 쿨타임마다 사용해 슈퍼 비저 극대화, 후반 유연성 높음",
+      "description": "Updated for Season 18 Introduction This is a pretty standard aimbot Soldier build with tons of late-game flexibility. It relies on using Helix Rockets on cooldown to maximize the use of Super Visor(item_b3db0ab0-26b4-4d99-893d-175f6726c9e9), so most ...",
       "playstyle": "공격형",
       "upvotes": 355
     },
@@ -905,7 +905,7 @@
     {
       "name": "[All-star 1, NO AIM 75%WR] 3-bullet rocket hybrid",
       "code": "Z1V92",
-      "description": "쓰리탭 토미건→키츠네 표식→환영 플럭스 코어 아이템, 생존 필요 시 즉시 구매",
+      "description": "Main item path:  Three-tap Tommygun(item_39c5d2a4-1db0-444f-86d9-2a1e9a331429), Mark of the Kitsune(item_09a53e39-25aa-4f66-ba51-bedbc543a1eb), Phantasmic Flux(item_5e644a79-cf6e-4196-8d0a-232f75004643) - buy this the moment you need more survivabili...",
       "playstyle": "생존형",
       "upvotes": 278
     },
@@ -1009,7 +1009,7 @@
     {
       "name": "Let me one shot her [500+ dmg vendetta build]",
       "code": "Z1P6V",
-      "description": "생존력+버스트+암살 특화 벤델타 빌드, 2초 내 500~830+ 딜 후 탈출",
+      "description": "Vendetta build that maxes out your Survivability, burst damage and assasination abilities, block projectiles post fight, go in and do 500 or 830+ dmg dmg in a single combo, and get out in less then 2s Comment how you liked it IMPORTANT (The Closer(it...",
       "playstyle": "공격형",
       "upvotes": 21
     },
