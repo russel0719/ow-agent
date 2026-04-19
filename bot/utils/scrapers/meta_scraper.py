@@ -78,12 +78,13 @@ class HeroMeta:
 async def fetch_meta(
     session: aiohttp.ClientSession,
     rank: str = "전체",
+    map_id: str = "all-maps",
 ) -> list[HeroMeta] | None:
     """Blizzard 공식 사이트에서 메타 통계를 가져옵니다. 실패 시 None."""
     tier_val = RANK_PARAM.get(rank, "All")
     params = {
         "input": "PC",
-        "map": "all-maps",
+        "map": map_id,
         "region": "Asia",
         "role": "All",
         "rq": "2",      # 경쟁전 - 역할 고정

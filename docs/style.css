@@ -38,8 +38,7 @@
   box-shadow: 0 0 0 1px rgba(79, 195, 247, 0.25);
 }
 .hero-card.selected {
-  border-color: #F5A623;
-  box-shadow: 0 0 0 1px rgba(245, 166, 35, 0.25);
+  /* border-left color and box-shadow are set inline with the hero color */
 }
 
 /* 메타 점수 변화량 */
@@ -155,6 +154,45 @@
   border-radius: 8px;
   padding: 20px;
 }
+
+/* 모드 탭 (랭크별 / 맵별) */
+.mode-tab {
+  padding: 5px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #30363D;
+  color: #6B7280;
+  background: transparent;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+.mode-tab:hover:not(.active) { color: #E5E7EB; border-color: #4B5563; }
+.mode-tab.active {
+  color: #F5A623;
+  border-color: #F5A623;
+  background: rgba(245, 166, 35, 0.08);
+}
+
+/* 맵 선택 버튼 */
+.map-btn {
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #30363D;
+  color: #9CA3AF;
+  background: transparent;
+  transition: all 0.15s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.map-btn:hover:not(.active):not(:disabled) { color: #E5E7EB; border-color: #4B5563; }
+.map-btn.active {
+  color: #60A5FA;
+  border-color: #60A5FA;
+  background: rgba(96, 165, 250, 0.08);
+}
+.map-btn:disabled { opacity: 0.35; cursor: not-allowed; }
 
 /* 필터 버튼 */
 .filter-btn {

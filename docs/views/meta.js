@@ -12,21 +12,118 @@ const ROLES = ['전체', '탱커', '딜러', '지원가'];
 const TIERS = ['S', 'A', 'B', 'C', 'D'];
 const ROLE_MAP = { '탱커': 'tank', '딜러': 'damage', '지원가': 'support' };
 const TIER_COLOR = { S: '#ef4444', A: '#f97316', B: '#eab308', C: '#22c55e', D: '#6b7280' };
+const HERO_COLOR = {
+  // Tanks
+  dva:           '#F472B6',
+  doomfist:      '#D97706',
+  hazard:        '#10B981',
+  junker_queen:  '#EF4444',
+  mauga:         '#991B1B',
+  orisa:         '#65A30D',
+  ramattra:      '#7C3AED',
+  reinhardt:     '#94A3B8',
+  roadhog:       '#92400E',
+  sigma:         '#60A5FA',
+  winston:       '#8B5CF6',
+  wrecking_ball: '#F59E0B',
+  zarya:         '#EC4899',
+  // Damage
+  ashe:          '#B91C1C',
+  bastion:       '#4D7C0F',
+  cassidy:       '#B45309',
+  echo:          '#38BDF8',
+  freja:         '#2563EB',
+  genji:         '#4ADE80',
+  hanzo:         '#1D4ED8',
+  junkrat:       '#FBBF24',
+  mei:           '#93C5FD',
+  pharah:        '#3B82F6',
+  reaper:        '#6B7280',
+  sojourn:       '#F97316',
+  soldier76:     '#475569',
+  sombra:        '#A855F7',
+  symmetra:      '#06B6D4',
+  torbjorn:      '#DC2626',
+  tracer:        '#FB923C',
+  vendetta:      '#7F1D1D',
+  venture:       '#C2410C',
+  widowmaker:    '#C026D3',
+  // Support
+  ana:           '#0EA5E9',
+  baptiste:      '#0D9488',
+  briggitte:     '#E97419',
+  illari:        '#EAB308',
+  juno:          '#818CF8',
+  kiriko:        '#F43F5E',
+  lifeweaver:    '#FB7185',
+  lucio:         '#22D3EE',
+  mercy:         '#FCD34D',
+  moira:         '#9333EA',
+  zenyatta:      '#FFD700',
+  // 미출시 영웅
+  wuyang:        '#9CA3AF',
+  mizuki:        '#9CA3AF',
+  emre:          '#9CA3AF',
+  domina:        '#9CA3AF',
+  anran:         '#9CA3AF',
+  jetpack_cat:   '#9CA3AF',
+  sierra:        '#9CA3AF',
+};
+const FALLBACK_COLOR = '#9CA3AF';
 const ROLE_LABEL = { tank: '탱커', damage: '딜러', support: '지원가' };
 const ROLE_CLASS = { tank: 'role-tank', damage: 'role-damage', support: 'role-support' };
 
+const MAP_TYPES = ['전체', '제어', '호위', '혼합', '밀기', '플래시포인트', '격돌'];
+const MAP_LIST = [
+  { id: 'antarctic-peninsula', name: '남극 반도',          type: '제어' },
+  { id: 'busan',               name: '부산',               type: '제어' },
+  { id: 'ilios',               name: '일리오스',           type: '제어' },
+  { id: 'lijiang-tower',       name: '리장 타워',          type: '제어' },
+  { id: 'nepal',               name: '네팔',               type: '제어' },
+  { id: 'oasis',               name: '오아시스',           type: '제어' },
+  { id: 'samoa',               name: '사모아',             type: '제어' },
+  { id: 'circuit-royal',       name: '서킷 로얄',          type: '호위' },
+  { id: 'dorado',              name: '도라도',             type: '호위' },
+  { id: 'havana',              name: '하바나',             type: '호위' },
+  { id: 'junkertown',          name: '쓰레기촌',           type: '호위' },
+  { id: 'rialto',              name: '리알토',             type: '호위' },
+  { id: 'route-66',            name: '66번 국도',          type: '호위' },
+  { id: 'shambali-monastery',  name: '샴발리 수도원',      type: '호위' },
+  { id: 'watchpoint-gibraltar',name: '감시 기지: 지브롤터',type: '호위' },
+  { id: 'blizzard-world',      name: '블리자드 월드',      type: '혼합' },
+  { id: 'eichenwalde',         name: '아이헨발데',         type: '혼합' },
+  { id: 'hollywood',           name: '할리우드',           type: '혼합' },
+  { id: 'kings-row',           name: '왕의 길',            type: '혼합' },
+  { id: 'midtown',             name: '미드타운',           type: '혼합' },
+  { id: 'numbani',             name: '눔바니',             type: '혼합' },
+  { id: 'paraiso',             name: '파라이수',           type: '혼합' },
+  { id: 'colosseum',           name: '콜로세오',           type: '밀기' },
+  { id: 'esperanca',           name: '이스페란사',         type: '밀기' },
+  { id: 'new-queen-street',    name: '뉴 퀸 스트리트',     type: '밀기' },
+  { id: 'runasapi',            name: '루나사피',           type: '밀기' },
+  { id: 'new-junk-city',       name: '뉴 정크 시티',       type: '플래시포인트' },
+  { id: 'suravasa',            name: '수라바사',           type: '플래시포인트' },
+  { id: 'hanaoka',             name: '하나오카',           type: '격돌' },
+  { id: 'throne-of-anubis',    name: '아누비스의 왕좌',    type: '격돌' },
+];
+
 let currentRank = '전체';
 let currentRole = '전체';
+let currentMode = 'rank';   // 'rank' | 'map'
+let currentMap = null;
+let currentMapType = '전체';
 let selectedHeroId = null;
 let selectedHeroName = null;
 let activeChart = null;
 let cachedMeta = null;
 let cachedHistory = null;
+let cachedMapMeta = null;
 
 export async function renderMeta(container) {
-  [cachedMeta, cachedHistory] = await Promise.all([
+  [cachedMeta, cachedHistory, cachedMapMeta] = await Promise.all([
     loadJSON('meta'),
     loadJSON('meta_history').catch(() => null),
+    loadJSON('map_meta').catch(() => null),
   ]);
 
   container.innerHTML = buildHTML();
@@ -46,16 +143,45 @@ function buildHTML() {
     `<button class="filter-btn${r === currentRole ? ' active' : ''}" data-role="${r}">${r}</button>`
   ).join('');
 
+  const mapTypeButtons = MAP_TYPES.map(t =>
+    `<button class="filter-btn${t === currentMapType ? ' active' : ''}" data-map-type="${t}">${t}</button>`
+  ).join('');
+
+  const visibleMaps = currentMapType === '전체' ? MAP_LIST : MAP_LIST.filter(m => m.type === currentMapType);
+  const mapButtons = visibleMaps.map(m => {
+    const hasData = !!(cachedMapMeta?.[m.id]);
+    return `<button class="map-btn${m.id === currentMap ? ' active' : ''}"
+                    data-map-id="${m.id}"${!hasData ? ' disabled' : ''}>${m.name}</button>`;
+  }).join('');
+
+  const isMap = currentMode === 'map';
+
   return `
-    <!-- 컨트롤 바 -->
-    <div class="mb-4 flex flex-wrap items-center gap-3">
-      <select class="ow-select" id="rank-select">${rankOptions}</select>
-      <div class="flex gap-2 flex-wrap">${roleButtons}</div>
-      <span class="ml-auto text-xs text-gray-500" id="hero-count"></span>
+    <!-- 모드 탭 -->
+    <div class="flex gap-2 mb-4">
+      <button class="mode-tab${!isMap ? ' active' : ''}" data-mode="rank">랭크별</button>
+      <button class="mode-tab${isMap ? ' active' : ''}" data-mode="map">맵별</button>
     </div>
 
-    <!-- 차트 패널 -->
-    <div class="bg-ow-card border border-ow-border rounded-xl mb-6 overflow-hidden" id="chart-panel">
+    <!-- 랭크별 컨트롤 -->
+    <div id="rank-controls" class="${isMap ? 'hidden ' : ''}mb-4 flex flex-wrap items-center gap-3">
+      <select class="ow-select" id="rank-select">${rankOptions}</select>
+      <div class="flex gap-2 flex-wrap">${roleButtons}</div>
+      <span class="ml-auto text-xs text-gray-500" class="hero-count"></span>
+    </div>
+
+    <!-- 맵별 컨트롤 -->
+    <div id="map-controls" class="${!isMap ? 'hidden ' : ''}mb-4">
+      <div class="flex gap-2 flex-wrap mb-2">${mapTypeButtons}</div>
+      <div class="flex gap-2 flex-wrap mb-3" id="map-btn-grid">${mapButtons}</div>
+      <div class="flex gap-2 flex-wrap items-center">
+        ${roleButtons.replace(/data-role/g, 'data-role')}
+        <span class="ml-auto text-xs text-gray-500" class="hero-count"></span>
+      </div>
+    </div>
+
+    <!-- 차트 패널 (맵 모드에서 숨김) -->
+    <div class="bg-ow-card border border-ow-border rounded-xl mb-6 overflow-hidden${isMap ? ' hidden' : ''}" id="chart-panel">
       <div class="flex items-center justify-between px-5 pt-4 pb-2">
         <span class="text-sm font-semibold text-gray-200" id="chart-title"></span>
         <button
@@ -77,33 +203,69 @@ function buildHTML() {
 // ── 이벤트 ────────────────────────────────────────────────────────────────
 
 function attachEvents(container) {
-  container.querySelector('#rank-select').addEventListener('change', e => {
+  // 모드 탭
+  container.querySelectorAll('.mode-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.mode === currentMode) return;
+      currentMode = btn.dataset.mode;
+      resetSelection(container);
+      container.innerHTML = buildHTML();
+      attachEvents(container);
+      if (currentMode === 'rank') renderChart(container);
+      renderCards(container);
+    });
+  });
+
+  // 랭크 선택
+  container.querySelector('#rank-select')?.addEventListener('change', e => {
     currentRank = e.target.value;
     resetSelection(container);
     renderChart(container);
     renderCards(container);
   });
 
-  container.querySelectorAll('.filter-btn').forEach(btn => {
+  // 역할 필터 (랭크/맵 양쪽)
+  container.querySelectorAll('.filter-btn[data-role]').forEach(btn => {
     btn.addEventListener('click', () => {
-      container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      container.querySelectorAll('.filter-btn[data-role]').forEach(b => b.classList.remove('active'));
+      container.querySelectorAll(`.filter-btn[data-role="${btn.dataset.role}"]`).forEach(b => b.classList.add('active'));
       currentRole = btn.dataset.role;
-      if (!selectedHeroId) renderChart(container);
+      if (currentMode === 'rank' && !selectedHeroId) renderChart(container);
       renderCards(container);
     });
   });
 
-  container.querySelector('#chart-back').addEventListener('click', () => {
+  // 맵 타입 필터
+  container.querySelectorAll('.filter-btn[data-map-type]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      container.querySelectorAll('.filter-btn[data-map-type]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMapType = btn.dataset.mapType;
+      renderMapButtons(container);
+    });
+  });
+
+  // 맵 선택
+  container.querySelector('#map-btn-grid')?.addEventListener('click', e => {
+    const btn = e.target.closest('.map-btn');
+    if (!btn || btn.disabled) return;
+    currentMap = btn.dataset.mapId;
+    container.querySelectorAll('.map-btn').forEach(b => b.classList.toggle('active', b.dataset.mapId === currentMap));
+    renderCards(container);
+  });
+
+  // 차트 뒤로가기
+  container.querySelector('#chart-back')?.addEventListener('click', () => {
     resetSelection(container);
     renderChart(container);
     renderCards(container);
   });
 
+  // 영웅 카드 클릭 (랭크 모드에서만 히스토리 차트)
   container.querySelector('#meta-grid').addEventListener('click', e => {
     const card = e.target.closest('.hero-card');
     if (!card) return;
-    selectHero(container, card.dataset.heroId, card.dataset.heroName);
+    if (currentMode === 'rank') selectHero(container, card.dataset.heroId, card.dataset.heroName);
   });
 }
 
@@ -131,6 +293,7 @@ function resetSelection(container) {
 // ── 차트 렌더링 ──────────────────────────────────────────────────────────
 
 function renderChart(container) {
+  if (currentMode === 'map') return;
   if (activeChart) { activeChart.destroy(); activeChart = null; }
   selectedHeroId ? renderHistoryChart(container) : renderOverviewChart(container);
 }
@@ -181,7 +344,7 @@ function renderOverviewChart(container) {
   filteredHeroes.forEach(h => { h.tier = tierMap[h.hero_id] ?? h.tier; });
 
   const datasets = filteredHeroes.map(hero => {
-    const color = TIER_COLOR[hero.tier] ?? '#6b7280';
+    const color = HERO_COLOR[hero.hero_id] ?? FALLBACK_COLOR;
     return {
       label: hero.hero_name,
       heroId: hero.hero_id,
@@ -239,10 +402,7 @@ function renderOverviewChart(container) {
 }
 
 function renderHistoryChart(container) {
-  const color = (() => {
-    const hero = (cachedMeta?.[currentRank] ?? []).find(h => h.hero_id === selectedHeroId);
-    return TIER_COLOR[hero?.tier] ?? '#F5A623';
-  })();
+  const color = HERO_COLOR[selectedHeroId] ?? FALLBACK_COLOR;
 
   container.querySelector('#chart-title').textContent =
     `${selectedHeroName} — 메타 점수 추이 (${currentRank})`;
@@ -334,12 +494,14 @@ function getPrevScoreMap(rank) {
 
 function renderCards(container) {
   const filtered = getFiltered();
-  const countEl = container.querySelector('#hero-count');
-  if (countEl) countEl.textContent = `${filtered.length}명`;
+  container.querySelectorAll('.hero-count').forEach(el => { el.textContent = `${filtered.length}명`; });
 
   const grid = container.querySelector('#meta-grid');
   if (!filtered.length) {
-    grid.innerHTML = `<p class="text-center text-gray-500 py-12">데이터가 없습니다.</p>`;
+    const msg = currentMode === 'map' && !currentMap
+      ? '맵을 선택하면 해당 맵의 영웅 통계를 볼 수 있습니다.'
+      : '데이터가 없습니다.';
+    grid.innerHTML = `<p class="text-center text-gray-500 py-12">${msg}</p>`;
     return;
   }
 
@@ -362,15 +524,20 @@ function renderCards(container) {
 }
 
 function heroCard(h, prevScore) {
-  const isSelected = h.hero_id === selectedHeroId;
+  const isSelected = currentMode === 'rank' && h.hero_id === selectedHeroId;
+  const color = HERO_COLOR[h.hero_id] ?? FALLBACK_COLOR;
   const delta = (prevScore != null && h.meta_score != null) ? h.meta_score - prevScore : null;
   const deltaHtml = delta == null ? ''
     : delta > 0.05  ? `<span class="delta-up">▲${delta.toFixed(1)}</span>`
     : delta < -0.05 ? `<span class="delta-down">▼${Math.abs(delta).toFixed(1)}</span>`
     : `<span class="delta-neutral">–</span>`;
+  const borderStyle = isSelected
+    ? `border-left: 3px solid ${color}; box-shadow: 0 0 0 1px ${color}55, inset 0 0 20px ${color}10;`
+    : `border-left: 3px solid ${color}; background: linear-gradient(135deg, ${color}12 0%, transparent 55%);`;
   return `
     <div class="hero-card${isSelected ? ' selected' : ''}"
-         data-hero-id="${h.hero_id}" data-hero-name="${h.hero_name}">
+         data-hero-id="${h.hero_id}" data-hero-name="${h.hero_name}"
+         style="${borderStyle}">
       <div class="flex items-start justify-between mb-1.5 gap-1">
         <span class="font-semibold text-sm leading-tight">${h.hero_name}</span>
         <span class="text-xs px-1.5 py-0.5 rounded shrink-0 ${ROLE_CLASS[h.role] ?? ''}">
@@ -378,7 +545,7 @@ function heroCard(h, prevScore) {
         </span>
       </div>
       <div class="flex items-baseline gap-1.5 mb-1.5">
-        <span class="text-ow-orange font-bold text-xl">${h.meta_score?.toFixed(1) ?? '-'}</span>
+        <span class="font-bold text-xl" style="color:${color}">${h.meta_score?.toFixed(1) ?? '-'}</span>
         ${deltaHtml}
       </div>
       <div class="text-xs text-gray-400 space-y-0.5">
@@ -389,7 +556,30 @@ function heroCard(h, prevScore) {
   `;
 }
 
+function renderMapButtons(container) {
+  const grid = container.querySelector('#map-btn-grid');
+  if (!grid) return;
+  const maps = currentMapType === '전체' ? MAP_LIST : MAP_LIST.filter(m => m.type === currentMapType);
+  grid.innerHTML = maps.map(m => {
+    const hasData = !!(cachedMapMeta?.[m.id]);
+    return `<button class="map-btn${m.id === currentMap ? ' active' : ''}"
+                    data-map-id="${m.id}"${!hasData ? ' disabled' : ''}>${m.name}</button>`;
+  }).join('');
+  grid.querySelectorAll('.map-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      currentMap = btn.dataset.mapId;
+      grid.querySelectorAll('.map-btn').forEach(b => b.classList.toggle('active', b.dataset.mapId === currentMap));
+      renderCards(container);
+    });
+  });
+}
+
 function getFiltered() {
+  if (currentMode === 'map') {
+    const heroes = currentMap ? (cachedMapMeta?.[currentMap] ?? []) : [];
+    return currentRole === '전체' ? heroes : heroes.filter(h => h.role === ROLE_MAP[currentRole]);
+  }
   const heroes = cachedMeta?.[currentRank] ?? [];
   return currentRole === '전체' ? heroes : heroes.filter(h => h.role === ROLE_MAP[currentRole]);
 }

@@ -67,6 +67,46 @@ DOCS_DATA.mkdir(parents=True, exist_ok=True)
 HISTORY_RANKS = {"전체", "그랜드마스터"}  # 히스토리 저장 대상 랭크
 HISTORY_DAYS = 90                           # rolling window 일수
 
+# 맵 ID → 한국어 이름 (맵별 메타 수집용)
+MAP_IDS: dict[str, str] = {
+    # 제어 (Control)
+    "antarctic-peninsula": "남극 반도",
+    "busan":               "부산",
+    "ilios":               "일리오스",
+    "lijiang-tower":       "리장 타워",
+    "nepal":               "네팔",
+    "oasis":               "오아시스",
+    "samoa":               "사모아",
+    # 호위 (Escort)
+    "circuit-royal":       "서킷 로얄",
+    "dorado":              "도라도",
+    "havana":              "하바나",
+    "junkertown":          "쓰레기촌",
+    "rialto":              "리알토",
+    "route-66":            "66번 국도",
+    "shambali-monastery":  "샴발리 수도원",
+    "watchpoint-gibraltar":"감시 기지: 지브롤터",
+    # 혼합 (Hybrid)
+    "blizzard-world":      "블리자드 월드",
+    "eichenwalde":         "아이헨발데",
+    "hollywood":           "할리우드",
+    "kings-row":           "왕의 길",
+    "midtown":             "미드타운",
+    "numbani":             "눔바니",
+    "paraiso":             "파라이수",
+    # 밀기 (Push)
+    "colosseum":           "콜로세오",
+    "esperanca":           "이스페란사",
+    "new-queen-street":    "뉴 퀸 스트리트",
+    "runasapi":            "루나사피",
+    # 플래시포인트 (Flashpoint)
+    "new-junk-city":       "뉴 정크 시티",
+    "suravasa":            "수라바사",
+    # 격돌 (Clash)
+    "hanaoka":             "하나오카",
+    "throne-of-anubis":    "아누비스의 왕좌",
+}
+
 
 def _save(path: Path, data: object) -> None:
     with path.open("w", encoding="utf-8") as f:
@@ -147,6 +187,30 @@ def _update_history(all_ranks: dict) -> None:
                 del history[rank_ko][old_date]
 
     _save(history_path, history)
+
+
+async def _generate_map_meta(session: aiohttp.ClientSession) -> bool:
+    """맵별 메타 통계 스크래핑 → map_meta.json 생성 (전체 랭크 기준)."""
+    result: dict[str, list] = {}
+    ok = 0
+    for map_id, map_ko in MAP_IDS.items():
+        try:
+            heroes = await fetch_meta(session, rank="전체", map_id=map_id)
+            if heroes:
+                result[map_id] = [_hero_to_dict(h) for h in heroes]
+                logger.info(f"  맵 완료: {map_ko} ({len(heroes)}명)")
+                ok += 1
+            else:
+                logger.warning(f"  맵 데이터 없음: {map_ko}")
+        except Exception as e:
+            logger.warning(f"  맵 실패 {map_ko}: {e}")
+
+    if result:
+        _save(DOCS_DATA / "map_meta.json", result)
+        logger.info(f"  맵별 메타 완료: {ok}/{len(MAP_IDS)}개 맵")
+        return True
+    logger.warning("  맵별 메타: 수집된 데이터 없음")
+    return False
 
 
 def _hero_to_dict(h) -> dict:
@@ -401,10 +465,13 @@ async def main() -> None:
             sources["meta"] = "fallback"
             logger.warning("  메타 전체 실패 — history 갱신 건너뜀")
 
-        # 2. 스타디움 빌드
+        # 2. 맵별 메타
+        sources["map_meta"] = "live" if await _generate_map_meta(session) else "fallback"
+
+        # 3. 스타디움 빌드
         sources["stadium"] = "live" if await _generate_stadium(session, force=args.force_stadium) else "fallback"
 
-        # 3. 패치 노트
+        # 4. 패치 노트
         sources["patch"] = "live" if await _generate_patch(session) else "fallback"
 
     # 4. 영웅 DB 복사
