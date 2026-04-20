@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-19T09:59:00.832122+00:00",
+  "timestamp": "2026-04-20T08:21:01.538183+00:00",
   "sources": {
     "meta": "live",
     "map_meta": "live",
-    "stadium": "live",
+    "stadium": "fallback",
     "patch": "live"
   }
 }
