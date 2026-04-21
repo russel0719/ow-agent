@@ -298,11 +298,6 @@ function resetSelection(container) {
 
 function renderChart(container) {
   if (activeChart) { activeChart.destroy(); activeChart = null; }
-  // noDataMsg 호출로 canvas가 제거된 경우 복원
-  const wrapper = container.querySelector('#chart-wrapper');
-  if (wrapper && !wrapper.querySelector('#meta-chart')) {
-    wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
-  }
   if (currentMode === 'map') {
     selectedHeroId ? renderMapHistoryChart(container) : renderMapOverviewChart(container);
   } else {
@@ -316,11 +311,6 @@ function renderOverviewChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  wrapper.style.height = '560px';
-
-  const canvas = container.querySelector('#meta-chart');
-  canvas.style.width = '100%';
-  canvas.style.height = '560px';
 
   // 히스토리 데이터로 멀티라인 구성
   const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
@@ -328,6 +318,12 @@ function renderOverviewChart(container) {
     wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다. 내일 다시 확인해주세요.');
     return;
   }
+
+  wrapper.style.height = '560px';
+  wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
+  const canvas = container.querySelector('#meta-chart');
+  canvas.style.width = '100%';
+  canvas.style.height = '560px';
 
   const dates = Object.keys(rankData).sort();
   const labelDates = dates.map(d => d.slice(5)); // MM-DD
@@ -421,11 +417,6 @@ function renderHistoryChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  wrapper.style.height = '560px';
-
-  const canvas = container.querySelector('#meta-chart');
-  canvas.style.width = '100%';
-  canvas.style.height = '560px';
 
   const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
   if (!rankData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
@@ -437,6 +428,12 @@ function renderHistoryChart(container) {
     wrapper.innerHTML = noDataMsg('이 영웅의 히스토리 데이터가 없습니다.');
     return;
   }
+
+  wrapper.style.height = '560px';
+  wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
+  const canvas = container.querySelector('#meta-chart');
+  canvas.style.width = '100%';
+  canvas.style.height = '560px';
 
   activeChart = new Chart(canvas, {
     type: 'line',
@@ -495,10 +492,6 @@ function renderMapOverviewChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  wrapper.style.height = '560px';
-  const canvas = container.querySelector('#meta-chart');
-  canvas.style.width = '100%';
-  canvas.style.height = '560px';
 
   if (!currentMap) { wrapper.innerHTML = noDataMsg('맵을 선택하면 차트가 표시됩니다.'); return; }
 
@@ -507,6 +500,12 @@ function renderMapOverviewChart(container) {
     wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다. 내일 다시 확인해주세요.');
     return;
   }
+
+  wrapper.style.height = '560px';
+  wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
+  const canvas = container.querySelector('#meta-chart');
+  canvas.style.width = '100%';
+  canvas.style.height = '560px';
 
   const dates = Object.keys(mapData).sort();
   const labelDates = dates.map(d => d.slice(5));
@@ -592,10 +591,6 @@ function renderMapHistoryChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  wrapper.style.height = '560px';
-  const canvas = container.querySelector('#meta-chart');
-  canvas.style.width = '100%';
-  canvas.style.height = '560px';
 
   const mapData = cachedMapHistory?.[currentMap];
   if (!mapData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
@@ -607,6 +602,12 @@ function renderMapHistoryChart(container) {
     wrapper.innerHTML = noDataMsg('이 영웅의 히스토리 데이터가 없습니다.');
     return;
   }
+
+  wrapper.style.height = '560px';
+  wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
+  const canvas = container.querySelector('#meta-chart');
+  canvas.style.width = '100%';
+  canvas.style.height = '560px';
 
   activeChart = new Chart(canvas, {
     type: 'line',
