@@ -2,7 +2,7 @@
  * OW2 메타 대시보드 — SPA 라우터
  * Hash 기반 라우팅: #meta | #stadium | #patch
  */
-import { renderMeta } from './views/meta.js?v=2';
+import { renderMeta } from './views/meta.js?v=3';
 import { renderStadium } from './views/stadium.js?v=2';
 import { renderPatch } from './views/patch.js?v=2';
 

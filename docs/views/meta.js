@@ -375,7 +375,7 @@ function renderOverviewChart(container) {
       responsive: true,
       maintainAspectRatio: false,
       animation: { duration: 200 },
-      interaction: { mode: 'index', intersect: false },
+      interaction: { mode: 'nearest', intersect: false, axis: 'x' },
       onClick(_, elements) {
         if (!elements.length) return;
         const ds = datasets[elements[0].datasetIndex];
@@ -560,7 +560,7 @@ function renderMapOverviewChart(container) {
       responsive: true,
       maintainAspectRatio: false,
       animation: { duration: 200 },
-      interaction: { mode: 'index', intersect: false },
+      interaction: { mode: 'nearest', intersect: false, axis: 'x' },
       onClick(_, elements) {
         if (!elements.length) return;
         const ds = datasets[elements[0].datasetIndex];
