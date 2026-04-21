@@ -660,6 +660,18 @@ function getPrevScoreMap(rank) {
   );
 }
 
+function getPrevMapScoreMap(mapId) {
+  const mapData = cachedMapHistory?.[mapId];
+  if (!mapData) return {};
+  const dates = Object.keys(mapData).sort();
+  const today = new Date().toISOString().slice(0, 10);
+  const prevDate = [...dates].reverse().find(d => d < today);
+  if (!prevDate) return {};
+  return Object.fromEntries(
+    (mapData[prevDate] ?? []).map(h => [h.hero_id, h.meta_score])
+  );
+}
+
 function renderCards(container) {
   const filtered = getFiltered();
   container.querySelectorAll('.hero-count').forEach(el => { el.textContent = `${filtered.length}명`; });
@@ -673,7 +685,9 @@ function renderCards(container) {
     return;
   }
 
-  const prevMap = getPrevScoreMap(currentRank);
+  const prevMap = (currentMode === 'map' && currentMap)
+    ? getPrevMapScoreMap(currentMap)
+    : getPrevScoreMap(currentRank);
 
   const byTier = Object.fromEntries(TIERS.map(t => [t, []]));
   filtered.forEach(h => (byTier[h.tier ?? 'D'] ??= []).push(h));
@@ -692,7 +706,7 @@ function renderCards(container) {
 }
 
 function heroCard(h, prevScore) {
-  const isSelected = currentMode === 'rank' && h.hero_id === selectedHeroId;
+  const isSelected = h.hero_id === selectedHeroId;
   const color = HERO_COLOR[h.hero_id] ?? FALLBACK_COLOR;
   const delta = (prevScore != null && h.meta_score != null) ? h.meta_score - prevScore : null;
   const deltaHtml = delta == null ? ''
@@ -733,16 +747,6 @@ function renderMapButtons(container) {
     return `<button class="map-btn${m.id === currentMap ? ' active' : ''}"
                     data-map-id="${m.id}"${!hasData ? ' disabled' : ''}>${m.name}</button>`;
   }).join('');
-  grid.querySelectorAll('.map-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (btn.disabled) return;
-      currentMap = btn.dataset.mapId;
-      resetSelection(container);
-      grid.querySelectorAll('.map-btn').forEach(b => b.classList.toggle('active', b.dataset.mapId === currentMap));
-      renderChart(container);
-      renderCards(container);
-    });
-  });
 }
 
 function getFiltered() {
