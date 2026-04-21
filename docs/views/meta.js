@@ -298,6 +298,11 @@ function resetSelection(container) {
 
 function renderChart(container) {
   if (activeChart) { activeChart.destroy(); activeChart = null; }
+  // noDataMsg 호출로 canvas가 제거된 경우 복원
+  const wrapper = container.querySelector('#chart-wrapper');
+  if (wrapper && !wrapper.querySelector('#meta-chart')) {
+    wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
+  }
   if (currentMode === 'map') {
     selectedHeroId ? renderMapHistoryChart(container) : renderMapOverviewChart(container);
   } else {
