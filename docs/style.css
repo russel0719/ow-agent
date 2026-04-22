@@ -288,6 +288,96 @@
   color: #F5A623;
 }
 
+/* 이번 주 메타 변화 영웅 버튼 */
+.weekly-hero-btn {
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  border: 1px solid #30363D;
+  color: #9CA3AF;
+  transition: all 0.15s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.weekly-hero-btn:hover { border-color: #6B7280; color: #E5E7EB; }
+
+/* 뷰 토글 버튼 (카드/테이블) */
+.view-toggle-btn {
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px solid #30363D;
+  color: #6B7280;
+  background: transparent;
+  font-size: 0.8rem;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+.view-toggle-btn:hover { color: #E5E7EB; border-color: #4B5563; }
+.view-toggle-btn.active {
+  color: #F5A623;
+  border-color: #F5A623;
+  background: rgba(245, 166, 35, 0.08);
+}
+
+/* 메타 테이블 */
+.meta-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.meta-table th {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6B7280;
+  background: #0D1117;
+  border-bottom: 1px solid #30363D;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s;
+}
+.meta-table th:hover { color: #E5E7EB; }
+.meta-table th.sort-active { color: #F5A623; }
+.meta-table-row td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #21262D;
+  vertical-align: middle;
+}
+.meta-table-row:hover td { background: rgba(255,255,255,0.03); cursor: pointer; }
+.meta-table-row.selected td { background: rgba(245, 166, 35, 0.06); }
+
+/* 영웅 상세 패널 내 빌드 코드 배지 */
+.detail-code-badge {
+  font-family: monospace;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  background: #0D1117;
+  border: 1px solid #30363D;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  color: #4FC3F7;
+  transition: border-color 0.15s, color 0.15s;
+}
+.detail-code-badge:hover { border-color: #4FC3F7; color: #fff; }
+.detail-code-badge.copied { border-color: #22c55e; color: #22c55e; }
+
+/* 패치 카드 티어 배지 */
+.patch-tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 3px;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+
 /* 스크롤바 */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: #0D1117; }

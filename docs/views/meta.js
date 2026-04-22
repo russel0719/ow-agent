@@ -1,9 +1,9 @@
 /**
  * 메타 통계 뷰
- * 상단: 전체 영웅 메타 점수 가로 막대 차트
- *   → 영웅 카드/막대 클릭 시 해당 영웅 히스토리 라인 차트로 전환
- *   → "← 전체 보기" 클릭 시 복귀
- * 하단: 티어별 영웅 카드 그리드
+ * - 이번 주 변화 섹션
+ * - 전체 영웅 메타 점수 차트 (영웅 클릭 → 히스토리 + 통합 상세 패널)
+ * - 티어별 카드 그리드 / 테이블 뷰 전환
+ * - 딥링크: #meta?rank=그랜드마스터&hero=tracer
  */
 import { loadJSON } from '../app.js';
 
@@ -13,7 +13,6 @@ const TIERS = ['S', 'A', 'B', 'C', 'D'];
 const ROLE_MAP = { '탱커': 'tank', '딜러': 'damage', '지원가': 'support' };
 const TIER_COLOR = { S: '#ef4444', A: '#f97316', B: '#eab308', C: '#22c55e', D: '#6b7280' };
 const HERO_COLOR = {
-  // Tanks
   dva:           '#F472B6',
   doomfist:      '#D97706',
   hazard:        '#10B981',
@@ -27,7 +26,6 @@ const HERO_COLOR = {
   winston:       '#8B5CF6',
   wrecking_ball: '#F59E0B',
   zarya:         '#EC4899',
-  // Damage
   ashe:          '#B91C1C',
   bastion:       '#4D7C0F',
   cassidy:       '#B45309',
@@ -48,7 +46,6 @@ const HERO_COLOR = {
   vendetta:      '#7F1D1D',
   venture:       '#C2410C',
   widowmaker:    '#C026D3',
-  // Support
   ana:           '#0EA5E9',
   baptiste:      '#0D9488',
   briggitte:     '#E97419',
@@ -60,7 +57,6 @@ const HERO_COLOR = {
   mercy:         '#FCD34D',
   moira:         '#9333EA',
   zenyatta:      '#FFD700',
-  // 미출시 영웅
   wuyang:        '#9CA3AF',
   mizuki:        '#9CA3AF',
   emre:          '#9CA3AF',
@@ -107,20 +103,32 @@ const MAP_LIST = [
   { id: 'throne-of-anubis',    name: '아누비스의 왕좌',    type: '격돌' },
 ];
 
+// ── 상태 변수 ─────────────────────────────────────────────────────────────────
 let currentRank = '전체';
 let currentRole = '전체';
-let currentMode = 'rank';   // 'rank' | 'map'
+let currentMode = 'rank';
 let currentMap = null;
 let currentMapType = '전체';
 let selectedHeroId = null;
 let selectedHeroName = null;
+let currentView = 'card';    // 'card' | 'table'
+let sortCol = 'meta_score';
+let sortDir = 'desc';
 let activeChart = null;
 let cachedMeta = null;
 let cachedHistory = null;
 let cachedMapMeta = null;
 let cachedMapHistory = null;
 
-export async function renderMeta(container) {
+// ── 진입점 ────────────────────────────────────────────────────────────────────
+
+export async function renderMeta(container, params) {
+  // URL 파라미터로 상태 복원
+  if (params) {
+    const rank = params.get('rank');
+    if (rank && RANKS.includes(rank)) currentRank = rank;
+  }
+
   [cachedMeta, cachedHistory, cachedMapMeta, cachedMapHistory] = await Promise.all([
     loadJSON('meta'),
     loadJSON('meta_history').catch(() => null),
@@ -130,11 +138,33 @@ export async function renderMeta(container) {
 
   container.innerHTML = buildHTML();
   attachEvents(container);
+  renderWeeklyChanges(container);
   renderChart(container);
   renderCards(container);
+
+  // 영웅 선택 복원
+  if (params) {
+    const heroId = params.get('hero');
+    if (heroId) {
+      const allHeroes = Object.values(cachedMeta ?? {}).flat();
+      const hero = allHeroes.find(h => h.hero_id === heroId);
+      if (hero) selectHero(container, heroId, hero.hero_name);
+    }
+  }
 }
 
-// ── HTML 골격 ──────────────────────────────────────────────────────────────
+// ── URL 업데이트 ──────────────────────────────────────────────────────────────
+
+function updateURL() {
+  if (currentMode !== 'rank') return;
+  const p = new URLSearchParams();
+  if (currentRank !== '전체') p.set('rank', currentRank);
+  if (selectedHeroId) p.set('hero', selectedHeroId);
+  const qs = p.toString();
+  history.replaceState(null, '', '#meta' + (qs ? '?' + qs : ''));
+}
+
+// ── HTML 골격 ─────────────────────────────────────────────────────────────────
 
 function buildHTML() {
   const rankOptions = RANKS.map(r =>
@@ -158,6 +188,12 @@ function buildHTML() {
 
   const isMap = currentMode === 'map';
 
+  const viewToggle = `
+    <div class="flex gap-1 ml-auto shrink-0">
+      <button id="view-card-btn" class="view-toggle-btn${currentView === 'card' ? ' active' : ''}">카드</button>
+      <button id="view-table-btn" class="view-toggle-btn${currentView === 'table' ? ' active' : ''}">테이블</button>
+    </div>`;
+
   return `
     <!-- 모드 탭 -->
     <div class="flex gap-2 mb-4">
@@ -169,7 +205,7 @@ function buildHTML() {
     <div id="rank-controls" class="${isMap ? 'hidden ' : ''}mb-4 flex flex-wrap items-center gap-3">
       <select class="ow-select" id="rank-select">${rankOptions}</select>
       <div class="flex gap-2 flex-wrap">${roleButtons}</div>
-      <span class="ml-auto text-xs text-gray-500" class="hero-count"></span>
+      ${viewToggle}
     </div>
 
     <!-- 맵별 컨트롤 -->
@@ -178,9 +214,12 @@ function buildHTML() {
       <div class="flex gap-2 flex-wrap mb-3" id="map-btn-grid">${mapButtons}</div>
       <div class="flex gap-2 flex-wrap items-center">
         ${roleButtons.replace(/data-role/g, 'data-role')}
-        <span class="ml-auto text-xs text-gray-500" class="hero-count"></span>
+        ${viewToggle.replace('id="view-card-btn"', 'id="view-card-btn-map"').replace('id="view-table-btn"', 'id="view-table-btn-map"')}
       </div>
     </div>
+
+    <!-- 이번 주 메타 변화 (랭크 모드 전용) -->
+    ${!isMap ? '<div id="weekly-changes" class="mb-4"></div>' : ''}
 
     <!-- 차트 패널 -->
     <div class="bg-ow-card border border-ow-border rounded-xl mb-6 overflow-hidden" id="chart-panel">
@@ -197,12 +236,15 @@ function buildHTML() {
       </div>
     </div>
 
-    <!-- 영웅 카드 그리드 -->
+    <!-- 영웅 통합 상세 패널 (선택 시 표시) -->
+    <div id="hero-detail" class="hidden mb-6"></div>
+
+    <!-- 영웅 카드 / 테이블 -->
     <div id="meta-grid"></div>
   `;
 }
 
-// ── 이벤트 ────────────────────────────────────────────────────────────────
+// ── 이벤트 ────────────────────────────────────────────────────────────────────
 
 function attachEvents(container) {
   // 모드 탭
@@ -213,6 +255,7 @@ function attachEvents(container) {
       resetSelection(container);
       container.innerHTML = buildHTML();
       attachEvents(container);
+      if (currentMode === 'rank') renderWeeklyChanges(container);
       renderChart(container);
       renderCards(container);
     });
@@ -222,11 +265,13 @@ function attachEvents(container) {
   container.querySelector('#rank-select')?.addEventListener('change', e => {
     currentRank = e.target.value;
     resetSelection(container);
+    renderWeeklyChanges(container);
     renderChart(container);
     renderCards(container);
+    updateURL();
   });
 
-  // 역할 필터 (랭크/맵 양쪽)
+  // 역할 필터
   container.querySelectorAll('.filter-btn[data-role]').forEach(btn => {
     btn.addEventListener('click', () => {
       container.querySelectorAll('.filter-btn[data-role]').forEach(b => b.classList.remove('active'));
@@ -265,12 +310,29 @@ function attachEvents(container) {
     renderCards(container);
   });
 
-  // 영웅 카드 클릭 → 히스토리 차트
+  // 영웅 카드 클릭
   container.querySelector('#meta-grid').addEventListener('click', e => {
     const card = e.target.closest('.hero-card');
     if (!card) return;
     selectHero(container, card.dataset.heroId, card.dataset.heroName);
   });
+
+  // 뷰 토글 (랭크 컨트롤)
+  container.querySelector('#view-card-btn')?.addEventListener('click', () => setView(container, 'card'));
+  container.querySelector('#view-table-btn')?.addEventListener('click', () => setView(container, 'table'));
+  // 뷰 토글 (맵 컨트롤)
+  container.querySelector('#view-card-btn-map')?.addEventListener('click', () => setView(container, 'card'));
+  container.querySelector('#view-table-btn-map')?.addEventListener('click', () => setView(container, 'table'));
+}
+
+function setView(container, view) {
+  currentView = view;
+  ['view-card-btn', 'view-table-btn', 'view-card-btn-map', 'view-table-btn-map'].forEach(id => {
+    const el = container.querySelector(`#${id}`);
+    if (!el) return;
+    el.classList.toggle('active', el.id.includes('card') ? view === 'card' : view === 'table');
+  });
+  renderCards(container);
 }
 
 function selectHero(container, heroId, heroName) {
@@ -285,6 +347,8 @@ function selectHero(container, heroId, heroName) {
   container.querySelector('#chart-back').classList.remove('hidden');
   renderChart(container);
   renderCards(container);
+  renderHeroDetail(container, heroId, heroName);
+  updateURL();
   container.querySelector('#chart-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
@@ -292,9 +356,91 @@ function resetSelection(container) {
   selectedHeroId = null;
   selectedHeroName = null;
   container.querySelector('#chart-back')?.classList.add('hidden');
+  const panel = container.querySelector('#hero-detail');
+  if (panel) { panel.classList.add('hidden'); panel.innerHTML = ''; }
+  updateURL();
 }
 
-// ── 차트 렌더링 ──────────────────────────────────────────────────────────
+// ── 이번 주 메타 변화 ─────────────────────────────────────────────────────────
+
+function getWeeklyDelta(rank) {
+  const rankData = cachedHistory?.[rank] ?? cachedHistory?.['전체'];
+  if (!rankData) return {};
+  const dates = Object.keys(rankData).sort();
+  if (dates.length < 2) return {};
+
+  const latestDate = dates[dates.length - 1];
+  const latestMap = Object.fromEntries(
+    (rankData[latestDate] ?? []).map(h => [h.hero_id, { score: h.meta_score, name: h.hero_name }])
+  );
+
+  // 7일 전에 가장 가까운 날짜 찾기
+  const target = new Date(latestDate);
+  target.setDate(target.getDate() - 7);
+  const targetStr = target.toISOString().slice(0, 10);
+  const olderDate = [...dates].reverse().find(d => d <= targetStr) ?? dates[0];
+
+  const olderMap = Object.fromEntries(
+    (rankData[olderDate] ?? []).map(h => [h.hero_id, h.meta_score])
+  );
+
+  const result = {};
+  for (const [id, { score, name }] of Object.entries(latestMap)) {
+    if (id in olderMap && score != null && olderMap[id] != null) {
+      result[id] = { delta: score - olderMap[id], name };
+    }
+  }
+  return result;
+}
+
+function renderWeeklyChanges(container) {
+  const el = container.querySelector('#weekly-changes');
+  if (!el || !cachedHistory) return;
+
+  const deltas = getWeeklyDelta(currentRank);
+  const entries = Object.entries(deltas).sort((a, b) => b[1].delta - a[1].delta);
+  if (!entries.length) { el.innerHTML = ''; return; }
+
+  const rising = entries.filter(([, v]) => v.delta > 0.1).slice(0, 4);
+  const falling = [...entries].reverse().filter(([, v]) => v.delta < -0.1).slice(0, 4);
+
+  if (!rising.length && !falling.length) { el.innerHTML = ''; return; }
+
+  el.innerHTML = `
+    <div class="bg-ow-card border border-ow-border rounded-xl px-5 py-4 mb-2">
+      <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-3">이번 주 메타 변화 (${currentRank})</div>
+      <div class="flex flex-wrap gap-x-10 gap-y-3">
+        ${rising.length ? `
+          <div>
+            <div class="text-xs text-green-400 font-semibold mb-2">↑ 상승</div>
+            <div class="flex flex-wrap gap-2">
+              ${rising.map(([id, v]) => `
+                <button class="weekly-hero-btn" data-hero-id="${id}" data-hero-name="${escHtml(v.name)}">
+                  <span class="text-gray-200 text-sm">${escHtml(v.name)}</span>
+                  <span class="text-green-400 font-mono text-xs ml-1">+${v.delta.toFixed(1)}</span>
+                </button>`).join('')}
+            </div>
+          </div>` : ''}
+        ${falling.length ? `
+          <div>
+            <div class="text-xs text-red-400 font-semibold mb-2">↓ 하락</div>
+            <div class="flex flex-wrap gap-2">
+              ${falling.map(([id, v]) => `
+                <button class="weekly-hero-btn" data-hero-id="${id}" data-hero-name="${escHtml(v.name)}">
+                  <span class="text-gray-200 text-sm">${escHtml(v.name)}</span>
+                  <span class="text-red-400 font-mono text-xs ml-1">${v.delta.toFixed(1)}</span>
+                </button>`).join('')}
+            </div>
+          </div>` : ''}
+      </div>
+    </div>`;
+
+  el.querySelectorAll('.weekly-hero-btn').forEach(btn => {
+    btn.addEventListener('click', () => selectHero(container, btn.dataset.heroId, btn.dataset.heroName));
+  });
+}
+
+// ── 차트 렌더링 ───────────────────────────────────────────────────────────────
 
 function renderChart(container) {
   if (activeChart) { activeChart.destroy(); activeChart = null; }
@@ -311,8 +457,6 @@ function renderOverviewChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-
-  // 히스토리 데이터로 멀티라인 구성
   const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
   if (!rankData || !Object.keys(rankData).length) {
     wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다. 내일 다시 확인해주세요.');
@@ -326,9 +470,8 @@ function renderOverviewChart(container) {
   canvas.style.height = '560px';
 
   const dates = Object.keys(rankData).sort();
-  const labelDates = dates.map(d => d.slice(5)); // MM-DD
+  const labelDates = dates.map(d => d.slice(5));
 
-  // 영웅별 점수 배열 구성
   const heroMap = {};
   for (const date of dates) {
     for (const h of rankData[date] ?? []) {
@@ -339,13 +482,11 @@ function renderOverviewChart(container) {
     }
   }
 
-  // 역할 필터 적용 (현재 스냅샷 기준)
   const roleFilter = ROLE_MAP[currentRole];
   const currentHeroes = cachedMeta?.[currentRank] ?? [];
   const roleSet = roleFilter
     ? new Set(currentHeroes.filter(h => h.role === roleFilter).map(h => h.hero_id))
     : null;
-  // 현재 티어로 갱신
   const tierMap = Object.fromEntries(currentHeroes.map(h => [h.hero_id, h.tier]));
 
   const filteredHeroes = Object.values(heroMap).filter(h => !roleSet || roleSet.has(h.hero_id));
@@ -384,26 +525,15 @@ function renderOverviewChart(container) {
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: '#161B22',
-          borderColor: '#30363D',
-          borderWidth: 1,
+          backgroundColor: '#161B22', borderColor: '#30363D', borderWidth: 1,
           itemSort: (a, b) => b.parsed.y - a.parsed.y,
           filter: item => item.parsed.y !== null,
-          callbacks: {
-            label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1) ?? '-'}`,
-          },
+          callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(1) ?? '-'}` },
         },
       },
       scales: {
-        x: {
-          ticks: { color: '#6B7280', font: { size: 10 }, maxTicksLimit: 14 },
-          grid: { color: '#1F2937' },
-        },
-        y: {
-          min: 0, max: 100,
-          ticks: { color: '#6B7280', font: { size: 10 } },
-          grid: { color: '#1F2937' },
-        },
+        x: { ticks: { color: '#6B7280', font: { size: 10 }, maxTicksLimit: 14 }, grid: { color: '#1F2937' } },
+        y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
   });
@@ -411,13 +541,11 @@ function renderOverviewChart(container) {
 
 function renderHistoryChart(container) {
   const color = HERO_COLOR[selectedHeroId] ?? FALLBACK_COLOR;
-
   container.querySelector('#chart-title').textContent =
     `${selectedHeroName} — 메타 점수 추이 (${currentRank})`;
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-
   const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
   if (!rankData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
 
@@ -459,9 +587,7 @@ function renderHistoryChart(container) {
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: '#161B22',
-          borderColor: '#30363D',
-          borderWidth: 1,
+          backgroundColor: '#161B22', borderColor: '#30363D', borderWidth: 1,
           callbacks: {
             title: ctx => dates[ctx[0].dataIndex],
             label: ctx => ` 메타 점수: ${ctx.parsed.y?.toFixed(1) ?? 'N/A'}`,
@@ -469,21 +595,14 @@ function renderHistoryChart(container) {
         },
       },
       scales: {
-        x: {
-          ticks: { color: '#6B7280', maxTicksLimit: 14, font: { size: 10 } },
-          grid: { color: '#1F2937' },
-        },
-        y: {
-          min: 0, max: 100,
-          ticks: { color: '#6B7280', font: { size: 10 } },
-          grid: { color: '#1F2937' },
-        },
+        x: { ticks: { color: '#6B7280', maxTicksLimit: 14, font: { size: 10 } }, grid: { color: '#1F2937' } },
+        y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
   });
 }
 
-// ── 맵별 차트 ────────────────────────────────────────────────────────────────
+// ── 맵별 차트 ─────────────────────────────────────────────────────────────────
 
 function renderMapOverviewChart(container) {
   const mapName = MAP_LIST.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
@@ -492,7 +611,6 @@ function renderMapOverviewChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-
   if (!currentMap) { wrapper.innerHTML = noDataMsg('맵을 선택하면 차트가 표시됩니다.'); return; }
 
   const mapData = cachedMapHistory?.[currentMap];
@@ -510,7 +628,6 @@ function renderMapOverviewChart(container) {
   const dates = Object.keys(mapData).sort();
   const labelDates = dates.map(d => d.slice(5));
 
-  // hero_name / role은 cachedMapMeta에서 보완
   const infoMap = Object.fromEntries(
     (cachedMapMeta?.[currentMap] ?? []).map(h => [h.hero_id, h])
   );
@@ -591,7 +708,6 @@ function renderMapHistoryChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-
   const mapData = cachedMapHistory?.[currentMap];
   if (!mapData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
 
@@ -652,7 +768,115 @@ function noDataMsg(msg) {
   return `<p class="flex items-center justify-center h-full text-gray-500 text-sm py-16">${msg}</p>`;
 }
 
-// ── 영웅 카드 그리드 ───────────────────────────────────────────────────────
+// ── 영웅 통합 상세 패널 ───────────────────────────────────────────────────────
+
+async function renderHeroDetail(container, heroId, heroName) {
+  const panel = container.querySelector('#hero-detail');
+  if (!panel) return;
+  panel.classList.remove('hidden');
+  panel.dataset.loadingFor = heroId;
+  panel.innerHTML = `
+    <div class="bg-ow-card border border-ow-border rounded-xl p-5">
+      <div class="flex items-center gap-2 text-gray-500 text-sm py-4">
+        <div class="loading-spinner shrink-0"></div> 상세 정보 로드 중...
+      </div>
+    </div>`;
+
+  const [stadium, patches, heroesData] = await Promise.all([
+    loadJSON('stadium').catch(() => null),
+    loadJSON('patch').catch(() => null),
+    loadJSON('heroes').catch(() => null),
+  ]);
+
+  if (panel.dataset.loadingFor !== heroId) return;
+
+  // hero_id → 영문명, 한국어 별칭
+  const heroesMap = heroesData?.heroes ?? {};
+  const heroEntry = Object.entries(heroesMap).find(([id]) => id === heroId);
+  const englishName = heroEntry?.[1]?.name ?? heroId;
+  const koAlias = (heroEntry?.[1]?.aliases ?? []).find(a => /[가-힣]/.test(a)) ?? heroName;
+
+  // 스타디움 빌드 (영문명 키로 조회)
+  const builds = stadium?.[englishName] ?? [];
+
+  // 최근 패치 이력
+  const patchItems = [];
+  for (const patch of (patches ?? []).slice(0, 4)) {
+    const hc = (patch.hero_changes ?? []).find(h => h.hero === koAlias || h.hero === heroName);
+    if (hc?.changes?.length) {
+      patchItems.push({ date: patch.date ?? patch.title, changes: hc.changes, isStadium: hc.is_stadium });
+    }
+  }
+
+  const color = HERO_COLOR[heroId] ?? FALLBACK_COLOR;
+
+  panel.innerHTML = `
+    <div class="bg-ow-card border border-ow-border rounded-xl p-5" style="border-left: 3px solid ${color}">
+      <div class="flex items-center gap-2 mb-5">
+        <span class="font-bold text-lg" style="color:${color}">${escHtml(heroName)}</span>
+        <span class="text-gray-400 text-sm">통합 정보</span>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- 스타디움 빌드 -->
+        <div>
+          <h3 class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-3">스타디움 인기 빌드</h3>
+          ${builds.length ? `
+            <div class="space-y-2">
+              ${builds.slice(0, 3).map((b, i) => `
+                <div class="bg-ow-bg border border-ow-border rounded-lg p-3 flex items-center gap-3">
+                  <span class="text-xs text-ow-orange font-bold w-4 shrink-0">${i + 1}</span>
+                  <div class="flex-1 min-w-0">
+                    <div class="text-sm text-gray-100 font-medium truncate">${escHtml(b.name)}</div>
+                    <div class="text-xs text-gray-500 mt-0.5">${escHtml(b.playstyle ?? '')}</div>
+                  </div>
+                  <button class="detail-code-badge shrink-0" data-code="${escHtml(b.code)}">${escHtml(b.code)}</button>
+                </div>`).join('')}
+            </div>` : `<p class="text-gray-500 text-sm">스타디움 빌드 데이터가 없습니다.</p>`}
+        </div>
+
+        <!-- 패치 이력 -->
+        <div>
+          <h3 class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-3">최근 패치 이력</h3>
+          ${patchItems.length ? `
+            <div class="space-y-4">
+              ${patchItems.map(p => `
+                <div>
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <span class="text-xs text-ow-orange">${escHtml(p.date ?? '')}</span>
+                    ${p.isStadium ? `<span class="text-xs border border-ow-orange/40 text-ow-orange px-1.5 rounded">스타디움</span>` : ''}
+                  </div>
+                  <ul class="space-y-1">
+                    ${p.changes.map(c => `
+                      <li class="flex gap-1.5 text-xs text-gray-300">
+                        <span class="text-gray-600 shrink-0 mt-0.5">–</span>
+                        <span>${escHtml(c)}</span>
+                      </li>`).join('')}
+                  </ul>
+                </div>`).join('')}
+            </div>` : `<p class="text-gray-500 text-sm">최근 패치에서 변경사항이 없습니다.</p>`}
+        </div>
+      </div>
+    </div>`;
+
+  // 빌드 코드 복사
+  panel.querySelectorAll('.detail-code-badge').forEach(badge => {
+    badge.addEventListener('click', async () => {
+      const code = badge.dataset.code;
+      try { await navigator.clipboard.writeText(code); } catch {
+        const ta = document.createElement('textarea');
+        ta.value = code;
+        document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+      }
+      const orig = badge.textContent;
+      badge.textContent = '복사됨!';
+      badge.style.color = '#22c55e';
+      setTimeout(() => { badge.textContent = orig; badge.style.color = ''; }, 1500);
+    });
+  });
+}
+
+// ── 영웅 카드 그리드 / 테이블 ─────────────────────────────────────────────────
 
 function getPrevScoreMap(rank) {
   const rankData = cachedHistory?.[rank] ?? cachedHistory?.['전체'];
@@ -695,6 +919,11 @@ function renderCards(container) {
     ? getPrevMapScoreMap(currentMap)
     : getPrevScoreMap(currentRank);
 
+  if (currentView === 'table') {
+    renderTable(container, filtered, prevMap);
+    return;
+  }
+
   const byTier = Object.fromEntries(TIERS.map(t => [t, []]));
   filtered.forEach(h => (byTier[h.tier ?? 'D'] ??= []).push(h));
 
@@ -711,6 +940,78 @@ function renderCards(container) {
   `).join('');
 }
 
+function renderTable(container, filtered, prevMap) {
+  const weeklyDelta = currentMode === 'rank' ? getWeeklyDelta(currentRank) : {};
+
+  const sorted = [...filtered].sort((a, b) => {
+    let aVal, bVal;
+    if (sortCol === 'meta_score')   { aVal = a.meta_score ?? 0;  bVal = b.meta_score ?? 0; }
+    else if (sortCol === 'pick_rate') { aVal = a.pick_rate ?? 0;  bVal = b.pick_rate ?? 0; }
+    else if (sortCol === 'win_rate')  { aVal = a.win_rate ?? 0;   bVal = b.win_rate ?? 0; }
+    else if (sortCol === 'delta')     { aVal = weeklyDelta[a.hero_id]?.delta ?? -999; bVal = weeklyDelta[b.hero_id]?.delta ?? -999; }
+    else                              { aVal = a.hero_name ?? ''; bVal = b.hero_name ?? ''; }
+    if (typeof aVal === 'string') return sortDir === 'asc' ? aVal.localeCompare(bVal, 'ko') : bVal.localeCompare(aVal, 'ko');
+    return sortDir === 'asc' ? aVal - bVal : bVal - aVal;
+  });
+
+  const si = col => sortCol === col ? (sortDir === 'asc' ? ' ↑' : ' ↓') : '';
+
+  const rows = sorted.map(h => {
+    const delta = weeklyDelta[h.hero_id]?.delta;
+    const color = HERO_COLOR[h.hero_id] ?? FALLBACK_COLOR;
+    const dHtml = delta == null ? '<span class="delta-neutral">–</span>'
+      : delta > 0.05  ? `<span class="delta-up">▲${delta.toFixed(1)}</span>`
+      : delta < -0.05 ? `<span class="delta-down">▼${Math.abs(delta).toFixed(1)}</span>`
+      : '<span class="delta-neutral">–</span>';
+    return `
+      <tr class="meta-table-row" data-hero-id="${h.hero_id}" data-hero-name="${escHtml(h.hero_name)}">
+        <td class="py-2.5 px-4 font-semibold" style="color:${color}">${escHtml(h.hero_name)}</td>
+        <td class="py-2.5 px-4">
+          <span class="text-xs px-1.5 py-0.5 rounded ${ROLE_CLASS[h.role] ?? ''}">${ROLE_LABEL[h.role] ?? h.role}</span>
+        </td>
+        <td class="py-2.5 px-4">
+          <span class="tier-${h.tier ?? 'D'} text-xs font-bold border px-1.5 py-0.5 rounded">${h.tier ?? '-'}</span>
+        </td>
+        <td class="py-2.5 px-4 font-bold tabular-nums" style="color:${color}">${h.meta_score?.toFixed(1) ?? '-'}</td>
+        <td class="py-2.5 px-4">${dHtml}</td>
+        <td class="py-2.5 px-4 text-gray-300 tabular-nums">${h.pick_rate?.toFixed(1) ?? '-'}%</td>
+        <td class="py-2.5 px-4 text-gray-300 tabular-nums">${h.win_rate?.toFixed(1) ?? '-'}%</td>
+      </tr>`;
+  }).join('');
+
+  const grid = container.querySelector('#meta-grid');
+  grid.innerHTML = `
+    <div class="overflow-x-auto rounded-xl border border-ow-border">
+      <table class="meta-table w-full text-sm">
+        <thead>
+          <tr class="border-b border-ow-border">
+            <th class="meta-th" data-sort="hero_name">영웅${si('hero_name')}</th>
+            <th class="meta-th" data-sort="role">역할</th>
+            <th class="meta-th" data-sort="tier">티어</th>
+            <th class="meta-th" data-sort="meta_score">메타 점수${si('meta_score')}</th>
+            <th class="meta-th" data-sort="delta">7일 변화${si('delta')}</th>
+            <th class="meta-th" data-sort="pick_rate">픽률${si('pick_rate')}</th>
+            <th class="meta-th" data-sort="win_rate">승률${si('win_rate')}</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+
+  grid.querySelectorAll('.meta-th[data-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.sort;
+      sortDir = sortCol === col ? (sortDir === 'desc' ? 'asc' : 'desc') : (col === 'hero_name' ? 'asc' : 'desc');
+      sortCol = col;
+      renderCards(container);
+    });
+  });
+
+  grid.querySelectorAll('.meta-table-row').forEach(row => {
+    row.addEventListener('click', () => selectHero(container, row.dataset.heroId, row.dataset.heroName));
+  });
+}
+
 function heroCard(h, prevScore) {
   const isSelected = h.hero_id === selectedHeroId;
   const color = HERO_COLOR[h.hero_id] ?? FALLBACK_COLOR;
@@ -724,10 +1025,10 @@ function heroCard(h, prevScore) {
     : `border-left: 3px solid ${color}; background: linear-gradient(135deg, ${color}12 0%, transparent 55%);`;
   return `
     <div class="hero-card${isSelected ? ' selected' : ''}"
-         data-hero-id="${h.hero_id}" data-hero-name="${h.hero_name}"
+         data-hero-id="${h.hero_id}" data-hero-name="${escHtml(h.hero_name)}"
          style="${borderStyle}">
       <div class="flex items-start justify-between mb-1.5 gap-1">
-        <span class="font-semibold text-sm leading-tight">${h.hero_name}</span>
+        <span class="font-semibold text-sm leading-tight">${escHtml(h.hero_name)}</span>
         <span class="text-xs px-1.5 py-0.5 rounded shrink-0 ${ROLE_CLASS[h.role] ?? ''}">
           ${ROLE_LABEL[h.role] ?? h.role}
         </span>
@@ -740,8 +1041,7 @@ function heroCard(h, prevScore) {
         <div>픽률 <span class="text-gray-200">${h.pick_rate?.toFixed(1) ?? '-'}%</span></div>
         <div>승률 <span class="text-gray-200">${h.win_rate?.toFixed(1) ?? '-'}%</span></div>
       </div>
-    </div>
-  `;
+    </div>`;
 }
 
 function renderMapButtons(container) {
@@ -762,4 +1062,8 @@ function getFiltered() {
   }
   const heroes = cachedMeta?.[currentRank] ?? [];
   return currentRole === '전체' ? heroes : heroes.filter(h => h.role === ROLE_MAP[currentRole]);
+}
+
+function escHtml(s) {
+  return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }

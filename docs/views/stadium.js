@@ -1,23 +1,28 @@
 /**
  * 스타디움 빌드 뷰
  * 역할군별 영웅 pill 버튼 + 빌드 카드 (코드 클릭 → 클립보드 복사)
+ * 검색/플레이스타일 필터 지원
  */
 import { loadJSON } from '../app.js';
 
 let currentHero = null;  // stadium.json 의 영어 키
 let koNameMap = {};       // 영어명 → 한국어명
 let roleMap = {};         // 영어명 → role (tank/damage/support)
+let searchQuery = '';
+let styleFilter = '전체';
+let stadiumData = null;
 
 const ROLE_ORDER = ['tank', 'damage', 'support'];
 const ROLE_LABEL = { tank: '탱커', damage: '딜러', support: '지원가' };
 const ROLE_CLASS = { tank: 'role-tank', damage: 'role-damage', support: 'role-support' };
 
-export async function renderStadium(container) {
+export async function renderStadium(container, params) {
   const [stadium, heroesData] = await Promise.all([
     loadJSON('stadium'),
     loadJSON('heroes').catch(() => null),
   ]);
 
+  stadiumData = stadium;
   koNameMap = buildKoNameMap(heroesData);
   roleMap = buildRoleMap(heroesData);
 
@@ -25,13 +30,36 @@ export async function renderStadium(container) {
     (koNameMap[a] ?? a).localeCompare(koNameMap[b] ?? b, 'ko')
   );
 
-  if (!currentHero || !stadium[currentHero]) {
+  // URL 파라미터로 영웅 복원
+  const heroParam = params?.get('hero');
+  if (heroParam && stadium[heroParam]) {
+    currentHero = heroParam;
+  } else if (!currentHero || !stadium[currentHero]) {
     currentHero = heroes[0] ?? null;
   }
 
-  container.innerHTML = buildHTML(heroes);
+  // URL 파라미터로 검색어/필터 복원
+  searchQuery = params?.get('q') ?? '';
+  styleFilter = params?.get('style') ?? '전체';
+
+  container.innerHTML = buildHTML(heroes, stadium);
   attachEvents(container, stadium);
-  renderBuilds(container, stadium);
+
+  if (searchQuery || styleFilter !== '전체') {
+    renderBuilds(container, stadium);
+  } else {
+    renderBuilds(container, stadium);
+  }
+}
+
+/** URL 업데이트 (hashchange 없이) */
+function updateURL() {
+  const qs = new URLSearchParams();
+  if (currentHero) qs.set('hero', currentHero);
+  if (searchQuery) qs.set('q', searchQuery);
+  if (styleFilter !== '전체') qs.set('style', styleFilter);
+  const str = qs.toString();
+  history.replaceState(null, '', '#stadium' + (str ? '?' + str : ''));
 }
 
 /** heroes.json 에서 영어명 → 한국어명 매핑 생성 */
@@ -62,7 +90,21 @@ function koName(enName) {
   return koNameMap[enName] ?? enName;
 }
 
-function buildHTML(heroes) {
+/** 모든 플레이스타일 태그 동적 수집 */
+function collectStyles(stadium) {
+  const set = new Set();
+  for (const builds of Object.values(stadium)) {
+    for (const b of builds) {
+      if (b.playstyle) {
+        // "메타 · 무기 파워" → ["메타", "무기 파워"]
+        b.playstyle.split(' · ').forEach(s => set.add(s.trim()));
+      }
+    }
+  }
+  return ['전체', ...Array.from(set).sort()];
+}
+
+function buildHTML(heroes, stadium) {
   // 역할군별 그룹화
   const grouped = { tank: [], damage: [], support: [], unknown: [] };
   for (const h of heroes) {
@@ -80,7 +122,7 @@ function buildHTML(heroes) {
         </div>
         <div class="flex flex-wrap gap-1.5">
           ${grouped[r].map(h => `
-            <button class="hero-pill${h === currentHero ? ' active' : ''}" data-hero="${h}">
+            <button class="hero-pill${h === currentHero && !searchQuery && styleFilter === '전체' ? ' active' : ''}" data-hero="${h}">
               ${escHtml(koName(h))}
             </button>
           `).join('')}
@@ -88,13 +130,12 @@ function buildHTML(heroes) {
       </div>
     `).join('');
 
-  // unknown 영웅 처리 (역할 정보 없음)
   const unknownSection = grouped.unknown.length ? `
     <div>
       <div class="text-xs text-gray-500 font-semibold tracking-wide mb-1.5">기타</div>
       <div class="flex flex-wrap gap-1.5">
         ${grouped.unknown.map(h => `
-          <button class="hero-pill${h === currentHero ? ' active' : ''}" data-hero="${h}">
+          <button class="hero-pill${h === currentHero && !searchQuery && styleFilter === '전체' ? ' active' : ''}" data-hero="${h}">
             ${escHtml(koName(h))}
           </button>
         `).join('')}
@@ -102,7 +143,23 @@ function buildHTML(heroes) {
     </div>
   ` : '';
 
+  const styleOptions = collectStyles(stadium);
+
   return `
+    <!-- 검색 바 -->
+    <div class="flex gap-2 mb-4">
+      <input
+        id="stadium-search"
+        type="text"
+        class="search-input flex-1"
+        placeholder="빌드 이름, 설명, 코드 검색..."
+        value="${escHtml(searchQuery)}"
+      />
+      <select id="style-filter" class="ow-select shrink-0">
+        ${styleOptions.map(s => `<option value="${escHtml(s)}"${s === styleFilter ? ' selected' : ''}>${escHtml(s)}</option>`).join('')}
+      </select>
+    </div>
+    <!-- 영웅 pill -->
     <div class="mb-5 space-y-3 max-h-52 overflow-y-auto pb-1 pr-1">
       ${sections}${unknownSection}
     </div>
@@ -111,18 +168,66 @@ function buildHTML(heroes) {
 }
 
 function attachEvents(container, stadium) {
+  // 영웅 pill
   container.querySelectorAll('.hero-pill').forEach(btn => {
     btn.addEventListener('click', () => {
+      searchQuery = '';
+      styleFilter = '전체';
+      container.querySelector('#stadium-search').value = '';
+      container.querySelector('#style-filter').value = '전체';
       container.querySelectorAll('.hero-pill').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentHero = btn.dataset.hero;
+      updateURL();
       renderBuilds(container, stadium);
     });
+  });
+
+  // 검색어
+  const searchInput = container.querySelector('#stadium-search');
+  let searchTimer;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      searchQuery = searchInput.value.trim();
+      // 검색 모드에서는 hero pill active 해제
+      if (searchQuery || styleFilter !== '전체') {
+        container.querySelectorAll('.hero-pill').forEach(b => b.classList.remove('active'));
+      } else {
+        container.querySelectorAll('.hero-pill').forEach(b => {
+          b.classList.toggle('active', b.dataset.hero === currentHero);
+        });
+      }
+      updateURL();
+      renderBuilds(container, stadium);
+    }, 200);
+  });
+
+  // 플레이스타일 필터
+  container.querySelector('#style-filter').addEventListener('change', e => {
+    styleFilter = e.target.value;
+    if (searchQuery || styleFilter !== '전체') {
+      container.querySelectorAll('.hero-pill').forEach(b => b.classList.remove('active'));
+    } else {
+      container.querySelectorAll('.hero-pill').forEach(b => {
+        b.classList.toggle('active', b.dataset.hero === currentHero);
+      });
+    }
+    updateURL();
+    renderBuilds(container, stadium);
   });
 }
 
 function renderBuilds(container, stadium) {
   const area = container.querySelector('#builds-area');
+
+  // 검색/필터 모드
+  if (searchQuery || styleFilter !== '전체') {
+    renderSearchResults(area, stadium);
+    return;
+  }
+
+  // 영웅 선택 모드
   if (!currentHero) {
     area.innerHTML = `<p class="text-center text-gray-500 py-12">영웅을 선택하세요.</p>`;
     return;
@@ -145,6 +250,67 @@ function renderBuilds(container, stadium) {
     </div>
   `;
 
+  attachCodeBadgeEvents(area);
+}
+
+function renderSearchResults(area, stadium) {
+  const q = searchQuery.toLowerCase();
+
+  // 모든 영웅 빌드 수집
+  const results = [];
+  for (const [heroEn, builds] of Object.entries(stadium)) {
+    for (const b of builds) {
+      // 플레이스타일 필터
+      if (styleFilter !== '전체') {
+        const parts = (b.playstyle ?? '').split(' · ').map(s => s.trim());
+        if (!parts.includes(styleFilter)) continue;
+      }
+      // 검색어 필터
+      if (q) {
+        const hay = [b.name, b.description, b.code, b.playstyle, koName(heroEn), heroEn]
+          .join(' ').toLowerCase();
+        if (!hay.includes(q)) continue;
+      }
+      results.push({ heroEn, build: b });
+    }
+  }
+
+  if (!results.length) {
+    area.innerHTML = `<p class="text-center text-gray-500 py-12">검색 결과가 없습니다.</p>`;
+    return;
+  }
+
+  // 영웅별로 그룹화
+  const grouped = {};
+  for (const { heroEn, build } of results) {
+    (grouped[heroEn] ??= []).push(build);
+  }
+
+  const sections = Object.entries(grouped).map(([heroEn, builds]) => `
+    <div class="mb-6">
+      <div class="mb-3 flex items-center gap-2">
+        <span class="text-ow-orange font-bold">${escHtml(koName(heroEn))}</span>
+        <span class="text-gray-500 text-sm">${escHtml(heroEn)}</span>
+        <span class="text-gray-500 text-sm">· ${builds.length}개</span>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        ${builds.map((b, i) => buildCard(b, i + 1)).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  const filterLabel = styleFilter !== '전체' ? ` · ${styleFilter}` : '';
+  area.innerHTML = `
+    <div class="mb-4 text-sm text-gray-400">
+      ${q ? `"${escHtml(searchQuery)}"` : ''}${filterLabel} 검색 결과: ${results.length}개 빌드 (${Object.keys(grouped).length}명)
+    </div>
+    ${sections}
+  `;
+
+  attachCodeBadgeEvents(area);
+}
+
+function attachCodeBadgeEvents(area) {
   area.querySelectorAll('.code-badge').forEach(badge => {
     badge.addEventListener('click', async () => {
       const code = badge.dataset.code;

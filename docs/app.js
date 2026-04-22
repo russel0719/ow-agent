@@ -1,10 +1,11 @@
 /**
  * OW2 메타 대시보드 — SPA 라우터
  * Hash 기반 라우팅: #meta | #stadium | #patch
+ * 딥링크 지원: #meta?rank=그랜드마스터&hero=tracer
  */
-import { renderMeta } from './views/meta.js?v=4';
-import { renderStadium } from './views/stadium.js?v=2';
-import { renderPatch } from './views/patch.js?v=2';
+import { renderMeta } from './views/meta.js?v=5';
+import { renderStadium } from './views/stadium.js?v=4';
+import { renderPatch } from './views/patch.js?v=4';
 
 // ── 데이터 캐시 ───────────────────────────────────────────────────────────────
 const cache = {};
@@ -28,12 +29,16 @@ const VIEWS = {
 const app = document.getElementById('app');
 
 async function navigate() {
-  const tab = (location.hash.slice(1) || 'meta');
-  const render = VIEWS[tab] || VIEWS.meta;
+  const raw = location.hash.slice(1) || 'meta';
+  const qIdx = raw.indexOf('?');
+  const tab = qIdx >= 0 ? raw.slice(0, qIdx) : raw;
+  const params = new URLSearchParams(qIdx >= 0 ? raw.slice(qIdx + 1) : '');
+  const activeTab = tab in VIEWS ? tab : 'meta';
+  const render = VIEWS[activeTab];
 
   // 탭 활성화
   document.querySelectorAll('.nav-tab').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.tab === tab);
+    btn.classList.toggle('active', btn.dataset.tab === activeTab);
   });
 
   // 로딩 표시
@@ -46,7 +51,7 @@ async function navigate() {
     </div>`;
 
   try {
-    await render(app);
+    await render(app, params);
   } catch (e) {
     app.innerHTML = `
       <div class="flex items-center justify-center h-64 text-red-400">

@@ -1,13 +1,21 @@
 /**
  * 패치 노트 뷰
  * 최근 30일 패치 누적 표시 (아코디언, 최신 패치 기본 펼침)
+ * 영웅 카드에 현재 메타 점수/티어 표시 (그랜드마스터 기준)
  */
 import { loadJSON } from '../app.js';
 
-export async function renderPatch(container) {
-  const raw = await loadJSON('patch');
+export async function renderPatch(container, _params) {
+  const [raw, metaRaw] = await Promise.all([
+    loadJSON('patch'),
+    loadJSON('meta').catch(() => null),
+  ]);
+
   // 하위 호환: 단일 객체도 처리
   const patches = Array.isArray(raw) ? raw : (raw ? [raw] : []);
+
+  // 그랜드마스터 기준 한국어 영웅명 → {meta_score, tier} 맵
+  const metaMap = buildMetaMap(metaRaw);
 
   if (!patches.length) {
     container.innerHTML = `<p class="text-center text-gray-500 py-12">패치 노트 데이터가 없습니다.</p>`;
@@ -26,13 +34,26 @@ export async function renderPatch(container) {
         </svg>
       </summary>
       <div class="px-5 pb-5 pt-2">
-        ${renderPatchBody(patch)}
+        ${renderPatchBody(patch, metaMap)}
       </div>
     </details>
   `).join('');
 }
 
-function renderPatchBody(patch) {
+/** 그랜드마스터 메타 데이터에서 한국어 영웅명 → {meta_score, tier} 맵 생성 */
+function buildMetaMap(metaRaw) {
+  const map = {};
+  if (!metaRaw) return map;
+  const gmList = metaRaw['그랜드마스터'] ?? [];
+  for (const hero of gmList) {
+    if (hero.hero_name) {
+      map[hero.hero_name] = { meta_score: hero.meta_score, tier: hero.tier };
+    }
+  }
+  return map;
+}
+
+function renderPatchBody(patch, metaMap) {
   const regular = patch.hero_changes?.filter(h => !h.is_stadium) ?? [];
   const stadium = patch.hero_changes?.filter(h => h.is_stadium) ?? [];
 
@@ -59,7 +80,7 @@ function renderPatchBody(patch) {
           영웅 변경사항 <span class="text-gray-600 normal-case">(${regular.length}명)</span>
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          ${regular.map(h => heroChangeCard(h)).join('')}
+          ${regular.map(h => heroChangeCard(h, false, metaMap)).join('')}
         </div>
       </section>
     ` : ''}
@@ -70,7 +91,7 @@ function renderPatchBody(patch) {
           스타디움 변경사항 <span class="text-ow-orange/60 normal-case">(${stadium.length}명)</span>
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          ${stadium.map(h => heroChangeCard(h, true)).join('')}
+          ${stadium.map(h => heroChangeCard(h, true, metaMap)).join('')}
         </div>
       </section>
     ` : ''}
@@ -81,12 +102,21 @@ function renderPatchBody(patch) {
   `;
 }
 
-function heroChangeCard(h, isStadium = false) {
+function heroChangeCard(h, isStadium = false, metaMap = {}) {
   const changes = h.changes ?? [];
+  const meta = metaMap[h.hero];
+  const tierBadge = meta?.tier
+    ? `<span class="patch-tier-badge tier-${meta.tier}">${escHtml(meta.tier)}</span>`
+    : '';
+  const scoreLabel = meta?.meta_score != null
+    ? `<span class="text-xs text-gray-500">${meta.meta_score.toFixed(1)}점</span>`
+    : '';
+
   return `
     <div class="patch-hero-card${isStadium ? ' is-stadium' : ''}">
       <div class="flex items-center gap-2 mb-3">
-        <span class="font-semibold text-sm">${escHtml(h.hero)}</span>
+        <span class="font-semibold text-sm flex-1">${escHtml(h.hero)}</span>
+        ${tierBadge}${scoreLabel}
         ${isStadium ? `<span class="text-xs text-ow-orange border border-ow-orange/40 px-1.5 rounded">스타디움</span>` : ''}
       </div>
       ${changes.length ? `
