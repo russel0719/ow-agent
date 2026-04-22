@@ -45,6 +45,8 @@ class StadiumBuild:
     playstyle: str
     source: str = "stadiumbuilds.io"
     upvotes: int = 0
+    stats: dict = field(default_factory=dict)
+    cost: str = ""
 
 
 async def fetch_builds(session: aiohttp.ClientSession, hero: str) -> list[StadiumBuild]:
@@ -139,7 +141,7 @@ async def _fetch_from_supabase(
     try:
         url = f"{SUPABASE_URL}/rest/v1/builds"
         params = {
-            "select": "title,build_code,notes,likes,view_count,hotness_score,build_tag",
+            "select": "title,build_code,notes,likes,build_tag,final_round_stats,average_cost",
             "hero_id": f"eq.{hero_id}",
             "public": "eq.true",
             "build_code": "not.is.null",
@@ -166,9 +168,18 @@ async def _fetch_from_supabase(
         notes = item.get("notes") or ""
         likes = item.get("likes") or 0
         build_tag = item.get("build_tag") or ""
+        cost = item.get("average_cost") or ""
+
+        raw_stats = item.get("final_round_stats") or {}
+        always_keys = {"Weapon Power", "Ability Power", "Total LIFE"}
+        stats = {
+            k: (v or 0)
+            for k, v in raw_stats.items()
+            if k in always_keys or (v is not None and v != 0)
+        }
 
         description = _clean_description(notes, title)
-        playstyle = _tag_to_playstyle(build_tag, title + " " + notes)
+        playstyle = _tag_to_playstyle(build_tag, title + " " + notes, stats)
 
         builds.append(
             StadiumBuild(
@@ -179,6 +190,8 @@ async def _fetch_from_supabase(
                 playstyle=playstyle,
                 source="stadiumbuilds.io",
                 upvotes=likes,
+                stats=stats,
+                cost=cost,
             )
         )
 
@@ -202,22 +215,75 @@ def _clean_description(notes: str, title: str) -> str:
     return text[:250] + "..." if len(text) > 250 else text or title[:200]
 
 
-def _tag_to_playstyle(tag: str, content: str) -> str:
-    """build_tag 또는 내용에서 플레이스타일 추론."""
-    tag_lower = tag.lower()
+def _tag_to_playstyle(tag: str, content: str, stats: dict | None = None) -> str:
+    """build_tag·final_round_stats·내용에서 플레이스타일 추론."""
+    tag_lower = (tag or "").lower()
     content_lower = content.lower()
+    parts: list[str] = []
 
-    if any(w in tag_lower for w in ["meta", "메타"]):
-        return "메타형"
-    if any(w in content_lower for w in ["aggressive", "dive", "공격", "돌진", "carry"]):
-        return "공격형"
-    if any(w in content_lower for w in ["tank", "bruiser", "버티기", "생존", "sustain", "survival"]):
-        return "생존형"
-    if any(w in content_lower for w in ["poke", "range", "원거리", "dps", "damage"]):
-        return "딜형"
-    if any(w in content_lower for w in ["heal", "support", "힐", "지원"]):
-        return "지원형"
-    return "균형형"
+    # 1. build_tag → 태그 레이블
+    if "meta" in tag_lower:
+        parts.append("메타")
+    elif any(w in tag_lower for w in ["fun", "meme", "troll"]):
+        parts.append("재미용")
+
+    # 2. final_round_stats 기반 특성 (최대 2슬롯 사용)
+    if stats and len(parts) < 2:
+        wp = stats.get("Weapon Power", 0) or 0
+        ap = stats.get("Ability Power", 0) or 0
+        life = stats.get("Total LIFE", stats.get("LIFE", 0)) or 0
+        ms = stats.get("Move Speed", 0) or 0
+        cdr = stats.get("Cooldown Reduction", 0) or 0
+        ls = (stats.get("Weapon Lifesteal", 0) or 0) + (stats.get("Ability Lifesteal", 0) or 0)
+
+        # 두드러진 부가 특성 (threshold 이상)
+        candidates: list[tuple[str, float]] = []
+        if ls >= 20:
+            candidates.append(("생명력 흡수", ls + 10))
+        if ms >= 20:
+            candidates.append(("기동형", ms))
+        if cdr >= 20:
+            candidates.append(("재사용 단축", cdr))
+        if life >= 550:
+            candidates.append(("고체력", life - 400))
+        candidates.sort(key=lambda x: -x[1])
+
+        def _power_label() -> str | None:
+            if wp > 0 or ap > 0:
+                if wp > ap * 1.3:
+                    return "무기 파워"
+                if ap > wp * 1.3:
+                    return "능력 파워"
+                return "혼합 파워"
+            return None
+
+        if not parts:
+            # tag 없음 → 파워 타입 먼저, 부가 특성 두 번째
+            if pl := _power_label():
+                parts.append(pl)
+            if candidates and len(parts) < 2:
+                parts.append(candidates[0][0])
+        else:
+            # tag 있음 → 두드러진 특성 우선, 없으면 파워 타입
+            if candidates:
+                parts.append(candidates[0][0])
+            elif pl := _power_label():
+                parts.append(pl)
+
+    # 3. keyword fallback (parts가 비어있을 때)
+    if not parts:
+        if any(w in content_lower for w in ["aggressive", "dive", "공격", "돌진", "carry"]):
+            parts.append("공격형")
+        elif any(w in content_lower for w in ["tank", "bruiser", "버티기", "생존", "sustain", "survival"]):
+            parts.append("생존형")
+        elif any(w in content_lower for w in ["poke", "range", "원거리", "dps", "damage"]):
+            parts.append("딜형")
+        elif any(w in content_lower for w in ["heal", "support", "힐", "지원"]):
+            parts.append("지원형")
+        else:
+            parts.append("균형형")
+
+    return " · ".join(parts)
 
 
 def _normalize_name(name: str) -> str:

@@ -166,6 +166,41 @@ function renderBuilds(container, stadium) {
   });
 }
 
+const STAT_CONFIG = [
+  { key: 'Weapon Power',       label: '무기 파워',   max: 80,  fmt: v => `+${v}%`, color: '#ef4444', always: true },
+  { key: 'Ability Power',      label: '능력 파워',   max: 80,  fmt: v => `+${v}%`, color: '#a855f7', always: true },
+  { key: 'Total LIFE',         label: '최대 체력',   max: 600, fmt: v => `${v}`,   color: '#22c55e', always: true },
+  { key: 'Move Speed',         label: '이동 속도',   max: 40,  fmt: v => `+${v}%`, color: '#4FC3F7', always: false },
+  { key: 'Cooldown Reduction', label: '재사용 단축', max: 40,  fmt: v => `-${v}%`, color: '#f59e0b', always: false },
+  { key: 'Attack Speed',       label: '공격 속도',   max: 40,  fmt: v => `+${v}%`, color: '#f97316', always: false },
+];
+
+function buildStatBars(stats) {
+  if (!stats || Object.keys(stats).length === 0) return '';
+
+  const ls = (stats['Weapon Lifesteal'] ?? 0) + (stats['Ability Lifesteal'] ?? 0);
+  const rows = [
+    ...STAT_CONFIG
+      .filter(s => s.always || (stats[s.key] ?? 0) > 0)
+      .map(s => ({ label: s.label, value: stats[s.key] ?? 0, max: s.max, fmt: s.fmt, color: s.color })),
+    ...(ls > 0 ? [{ label: '생명력 흡수', value: ls, max: 60, fmt: v => `+${v}%`, color: '#ec4899' }] : []),
+  ];
+
+  const bars = rows.map(s => {
+    const pct = Math.min(100, Math.round((s.value / s.max) * 100));
+    return `
+      <div class="stat-bar-row">
+        <span class="stat-bar-label">${escHtml(s.label)}</span>
+        <div class="stat-bar-track">
+          <div class="stat-bar-fill" style="width:${pct}%;background:${s.color}"></div>
+        </div>
+        <span class="stat-bar-value">${escHtml(s.fmt(s.value))}</span>
+      </div>`;
+  }).join('');
+
+  return `<div class="space-y-1.5 border-t border-ow-border pt-3">${bars}</div>`;
+}
+
 function buildCard(b, rank) {
   return `
     <div class="stadium-card flex flex-col gap-3">
@@ -177,14 +212,17 @@ function buildCard(b, rank) {
         </div>
         <span class="playstyle-badge shrink-0">${escHtml(b.playstyle)}</span>
       </div>
-      <!-- 빌드 코드 + 추천 수 -->
+      <!-- 빌드 코드 + 추천 수 + 비용 -->
       <div class="flex items-center gap-3">
         <span class="text-xs text-gray-500">빌드 코드</span>
         <span class="code-badge" data-code="${escHtml(b.code)}">${escHtml(b.code)}</span>
-        <span class="ml-auto text-sm text-gray-400 flex items-center gap-1">
-          <span class="text-ow-orange">↑</span>${(b.upvotes ?? 0).toLocaleString()}
+        <span class="ml-auto text-sm text-gray-400 flex items-center gap-2">
+          ${b.cost ? `<span class="text-xs text-gray-500">${escHtml(b.cost)}</span>` : ''}
+          <span class="flex items-center gap-1"><span class="text-ow-orange">↑</span>${(b.upvotes ?? 0).toLocaleString()}</span>
         </span>
       </div>
+      <!-- 스탯 바 -->
+      ${buildStatBars(b.stats)}
       <!-- 설명 -->
       ${b.description ? `
         <p class="text-sm text-gray-300 leading-relaxed border-t border-ow-border pt-3">${escHtml(b.description)}</p>

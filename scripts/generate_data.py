@@ -265,6 +265,8 @@ async def _generate_stadium(session: aiohttp.ClientSession, force: bool = False)
                 "description": b.description,
                 "playstyle": b.playstyle,
                 "upvotes": b.upvotes,
+                "stats": b.stats,
+                "cost": b.cost,
             })
 
         by_hero = _translate_stadium_data(by_hero, force=force)
