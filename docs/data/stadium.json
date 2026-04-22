@@ -19,7 +19,7 @@
       "code": "5JEYR",
       "description": "",
       "playstyle": "메타형",
-      "upvotes": 165
+      "upvotes": 164
     },
     {
       "name": "치료도 하고, 딜도 넣고, 나노도 주고, 승리도 해! (올스타)(업데이트",
@@ -42,7 +42,7 @@
       "code": "6PZFF",
       "description": "",
       "playstyle": "균형형",
-      "upvotes": 494
+      "upvotes": 495
     },
     {
       "name": "애쉬 무기 공격력-정조준 빌드",
@@ -62,8 +62,8 @@
       "name": "[S2 업데이트] 애쉬 화염 리워크 [전설]",
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
-      "playstyle": "균형형",
-      "upvotes": 160
+      "playstyle": "공격형",
+      "upvotes": 164
     }
   ],
   "Brigitte": [
@@ -72,14 +72,14 @@
       "code": "H49C5",
       "description": "탑49 브리기테 원트릭이 만든 GM 10시즌 연속 달성 빌드, 이동 속도 극대화가 핵심.",
       "playstyle": "메타형",
-      "upvotes": 968
+      "upvotes": 969
     },
     {
       "name": "🎨[CREATIVE SPARK] 집결 스팸 (탑 1 달성) [업데이트됨]",
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "공격형",
-      "upvotes": 588
+      "upvotes": 591
     },
     {
       "name": "🛡️ 브리기테는 탱커다 [시즌 20]",
@@ -93,7 +93,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "균형형",
-      "upvotes": 113
+      "upvotes": 117
     },
     {
       "name": "빠른 대전: [전설] 하이퍼 캐리 ✨승리를 위한 상세 가이드👑 Bes",
@@ -109,7 +109,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "딜형",
-      "upvotes": 718
+      "upvotes": 719
     },
     {
       "name": "최강의 [전설]",
@@ -190,7 +190,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "생존형",
-      "upvotes": 277
+      "upvotes": 279
     },
     {
       "name": "🔥미친💥초강력🛡️D.Va 캐리✏️업데이트 버전🛠️",
@@ -227,14 +227,14 @@
       "code": "YP3PR",
       "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
       "playstyle": "메타형",
-      "upvotes": 182
+      "upvotes": 184
     },
     {
       "name": "기술 위력 프레야가 망가졌다: 탑 500을 지배하는 원샷 빌드 (3",
       "code": "58SYP",
       "description": "",
       "playstyle": "메타형",
-      "upvotes": 175
+      "upvotes": 177
     },
     {
       "name": "👑 궁극의 캐리 [최대 버스트]",
@@ -278,7 +278,7 @@
       "code": "CT4FA",
       "description": "",
       "playstyle": "균형형",
-      "upvotes": 48
+      "upvotes": 49
     },
     {
       "name": "[SS + DB] 검의 길",
@@ -294,14 +294,14 @@
       "code": "VZX56",
       "description": "겐지 우클릭 생명력 흡수 빌드로 대부분의 영웅 상대하기 좋음",
       "playstyle": "메타형",
-      "upvotes": 232
+      "upvotes": 233
     },
     {
       "name": "시즌 1 종합 해저드 가이드 (21) - 탑 빌드 및",
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타형",
-      "upvotes": 116
+      "upvotes": 118
     },
     {
       "name": "110% 기술 위력 해저드 처치 불가 원샷 빌드 (3x 전설 및 탑",
@@ -331,7 +331,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타형",
-      "upvotes": 1711
+      "upvotes": 1713
     },
     {
       "name": "👑 궁극의 캐리 [상세 가이드]",
@@ -389,7 +389,7 @@
       "code": "VEJ9Z",
       "description": "컴페티티브와 QP 모두 가능한 정크랫 빌드. 조준 없이 폭탄만 마구 던지면서 킬과 승리를 노림.",
       "playstyle": "딜형",
-      "upvotes": 99
+      "upvotes": 102
     },
     {
       "name": "그냥 좌클릭만 누르세요!",
@@ -419,7 +419,7 @@
       "code": "T5QKR",
       "description": "Beesting 빌드의 업데이트판. 장단점을 계속 파악하며 개선 중.",
       "playstyle": "메타형",
-      "upvotes": 322
+      "upvotes": 326
     },
     {
       "name": "🎨[크리에이티브 스파크] 어뢰 & 링 (S20)",
@@ -433,7 +433,7 @@
       "code": "Q2KBD",
       "description": "무기 공격력과 기술 위력 균형 잡은 빌드. 업데이트된 더 좋은 버전이 따로 있음.",
       "playstyle": "지원형",
-      "upvotes": 293
+      "upvotes": 292
     }
   ],
   "Kiriko": [
@@ -442,7 +442,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "공격형",
-      "upvotes": 1491
+      "upvotes": 1495
     },
     {
       "name": "[Archived] 측면 텔레포트 클론",
@@ -456,7 +456,7 @@
       "code": "6TG55",
       "description": "키리코의 치유 부적 효율을 극대화해 Mercy보다 강력한 힐량을 발휘, 동시에 피해량 증폭까지 지원하는 힐봇 스타일.",
       "playstyle": "메타형",
-      "upvotes": 210
+      "upvotes": 209
     },
     {
       "name": "[S19] 경쟁 레전-다리 키리코! 최고의 클론 빌드 🥷🥷💨",
@@ -470,7 +470,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "생존형",
-      "upvotes": 119
+      "upvotes": 120
     }
   ],
   "Lúcio": [
@@ -516,7 +516,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "생존형",
-      "upvotes": 274
+      "upvotes": 275
     },
     {
       "name": "S17 플랭크 메이 빌드. 최고의 가이드, 허튼소리 없음. [NEW META] [100% WR]",
@@ -544,7 +544,7 @@
       "code": "ECYWB",
       "description": "무기 공격력 극대화로 매치 골드 순환, 메이는 이미 탱크라 생존성은 낮춤",
       "playstyle": "공격형",
-      "upvotes": 97
+      "upvotes": 100
     }
   ],
   "Mercy": [
@@ -590,7 +590,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "생존형",
-      "upvotes": 1286
+      "upvotes": 1289
     },
     {
       "name": "💨봉 클라우드 모이라 (최대 회복량)💨",
@@ -641,7 +641,7 @@
       "code": "008C9",
       "description": "라운드 3부터 라운드당 1.2만 피해와 75% 이상 피해 감소로 ‘불사 오리사’를 구현한 빌드.",
       "playstyle": "공격형",
-      "upvotes": 118
+      "upvotes": 119
     },
     {
       "name": "죽을 수 없는 악마 군주 오리사 - 탱키",
@@ -683,7 +683,7 @@
     {
       "name": "How to f1st(2)",
       "code": "XB218",
-      "description": "How to f1st(2)",
+      "description": "라마트라 근접 버스트 전용 빌드로, 네메시스 형태에서 강타로 적을 순삭하는 초고위험 고효율 조합.",
       "playstyle": "균형형",
       "upvotes": 74
     },
@@ -692,43 +692,43 @@
       "code": "3W1KW",
       "description": "2라운드 회피 기동 대신 발사 벡터를 먼저 찍어 초반 기술 위력을 극대화하는 수정 팁.",
       "playstyle": "균형형",
-      "upvotes": 35
+      "upvotes": 38
     }
   ],
   "Ramattra": [
     {
-      "name": "👊도망칠 수 없는 네메시스 — 라마트라 레이드 보스 (스타디움 전설",
-      "code": "PNX0N",
-      "description": "라마트라를 자가 회복·감속·방어막으로 죽지 않는 네메시스 형태 레이드 보스로 만드는 빌드.",
+      "name": "👊THE INESCAPABLE NEMESIS — RAMATTRA Raid Boss (Stadium legen",
+      "code": "YYSAS",
+      "description": "라마트라를 광역 회복과 방어막으로 만드는 불사 조합. 네메시스 형태 지속시간 극대화로 전선을 혼자 뚫는다.",
       "playstyle": "생존형",
-      "upvotes": 101
-    },
-    {
-      "name": "(S1 탑 3 탱커) 🌪️ Rampaging Tornado Carry Ramattra 👾",
-      "code": "3KXTT",
-      "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
-      "playstyle": "메타형",
-      "upvotes": 15
+      "upvotes": 128
     },
     {
       "name": "Staff 빌드 WP/공격속도 하이브리드",
       "code": "QQ393",
       "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
       "playstyle": "딜형",
-      "upvotes": 15
+      "upvotes": 17
+    },
+    {
+      "name": "(S1 탑 3 탱커) 🌪️ Rampaging Tornado Carry Ramattra 👾",
+      "code": "3KXTT",
+      "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
+      "playstyle": "메타형",
+      "upvotes": 17
     },
     {
       "name": "Lebron Ram - 기막힌 캐리 [UNSTOPPABLE]",
       "code": "3DTYN",
       "description": "브리기테 장판+소용돌이 방벽으로 백라인에 소용돌이 연발하며 높은 딜과 압박을 주는 공격형 플레이.",
       "playstyle": "공격형",
-      "upvotes": 10
+      "upvotes": 14
     },
     {
-      "name": "🦅The Flying Ram🦅 - [다이브 악마]",
-      "code": "SH7R0",
-      "description": "라마트라의 비행 기술을 활용한 다이브 전용 빌드로 기동성을 극대화해 적진 깊숙이 침투한다.",
-      "playstyle": "공격형",
+      "name": "Ramattra - Cash & Ult Farm Pummel",
+      "code": "RBAZV",
+      "description": "라마트라 초반 실험용 빌드. 변환 프로토콜 버프로 100% 전환 확률을 노리며, 대규모 패치 전까지의 임시 조합.",
+      "playstyle": "균형형",
       "upvotes": 7
     }
   ],
@@ -743,7 +743,7 @@
     {
       "name": "[S18] Kitty's Infinite dancing Blossom.",
       "code": "16XHY",
-      "description": "🎭 Kitty's Infinite dancing Blossom (🏟️ Stadium — Rounds 1–7) Updated for Season 18. * Just reached All-Star with this build! Jeej ⚙️ Patch Notes — Season 18. Removed the shield and Armor. Since in Season 18 (Ability) Life steal is king. ⚙️ Patch Note...",
+      "description": "리퍼의 사형 집행을 지속적으로 쓰는 ‘무한 꽃’ 빌드. 시즌 18 기준 생명력 흡수 최적화로 연속 처치가 가능하다.",
       "playstyle": "생존형",
       "upvotes": 193
     },
@@ -780,7 +780,7 @@
     {
       "name": "[HYPER-AGGRESSIVE] The Lumberjack 🪓",
       "code": "DS6AX",
-      "description": "Hello all! I've noticed a rise in popularity of more complex  Reinhardt(hero_a3b6ca2c-6cbd-43dc-bb78-a728e42fba49) builds, so I wanted to bring it back to basics with this build aptly named \"The Lumberjack.\" This build earned this name due to how eas...",
+      "description": "라인하르트 기본기 중심의 ‘목수’ 빌드. 로켓 망치와 화염 강타로 간단하게 딜링하며, 초보자도 쉽게 따라 할 수 있다.",
       "playstyle": "공격형",
       "upvotes": 288
     },
@@ -838,7 +838,7 @@
     {
       "name": "The Flying Dutchman (S20 HAZARD & DF KILLER with conservativ",
       "code": "SPX0Z",
-      "description": "All I've heard is how big and bad Hazard(hero_811ed127-3243-4ff9-85cd-1e30882a2430) is in Stadium this season and while I took a break over the best of 5 times, now I'm back for best of 7, I found I've not had an issue with him when I've played tank....",
+      "description": "탱커로 하자드 상대하기. 라인하르트 기본기와 장벽으로 하자드의 근접 압박을 무효화하고 팀원 보호에 집중.",
       "playstyle": "메타형",
       "upvotes": 35
     }
@@ -849,7 +849,7 @@
       "code": "1VQW5",
       "description": "소전 솔로 캐리 빌드: 무기 공격력 극대화로 레일건 원샷 가능",
       "playstyle": "메타형",
-      "upvotes": 401
+      "upvotes": 402
     },
     {
       "name": "[QP & COMP] 소전 캐리 빌드 | 🌟전설 플레이어 빌드",
@@ -863,19 +863,19 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "딜형",
-      "upvotes": 29
+      "upvotes": 30
     },
     {
       "name": "The Enemy Will Love Getting Railed",
       "code": "X6QYG",
-      "description": "The Enemy Will Love Getting Railed Work in progresss Glass cannon, heavy snowball Weapon Power(stat_weapon_power) build. Outside of the ult, use Conductor Chase(item_2ac82d1b-560e-4918-aec1-911efe9b765d) to easily charge railgun off the tank, then de...",
+      "description": "소전 무기 공격력 극대화 글래스캐논 빌드. 탱커에게 충전 후 연속 사격으로 즉사 누적, 오버클록으로 폭딜 마무리.",
       "playstyle": "생존형",
       "upvotes": 9
     },
     {
       "name": "AP SHOCK COLLAR",
       "code": "BC8DZ",
-      "description": "Ability Power(stat_ability_power) Disruptor Shot(ability_41bcc951-951b-42ac-a6c3-7552524f8232) --- ZAPP YOUR ENEMIES WITH SHOCK COLLAR ! --- I recommend this build to players who are bad at aiming.      Just spam E to show them where they belong.",
+      "description": "기술 위력 중심 소전 빌드. 교란 사격만 반복해 조준 부담 없이 광역 CC와 딜링을 동시에 처리.",
       "playstyle": "균형형",
       "upvotes": 8
     }
@@ -891,7 +891,7 @@
     {
       "name": "Aimbot.exe",
       "code": "VX71P",
-      "description": "Updated for Season 18 Introduction This is a pretty standard aimbot Soldier build with tons of late-game flexibility. It relies on using Helix Rockets on cooldown to maximize the use of Super Visor(item_b3db0ab0-26b4-4d99-893d-175f6726c9e9), so most ...",
+      "description": "솔저: 76 자동 조준 빌드. 나선 로켓 쿨감 최소화로 전술 조준경 가동 시간을 늘려 후반 캐리력 극대화.",
       "playstyle": "공격형",
       "upvotes": 355
     },
@@ -905,7 +905,7 @@
     {
       "name": "[All-star 1, NO AIM 75%WR] 3-bullet rocket hybrid",
       "code": "Z1V92",
-      "description": "Main item path:  Three-tap Tommygun(item_39c5d2a4-1db0-444f-86d9-2a1e9a331429), Mark of the Kitsune(item_09a53e39-25aa-4f66-ba51-bedbc543a1eb), Phantasmic Flux(item_5e644a79-cf6e-4196-8d0a-232f75004643) - buy this the moment you need more survivabili...",
+      "description": "토르비욘 3연속 토미건 → 여우 문양 → 환영 플럭스 코어 아이템 경로. 생존 필요 시 즉시 환영 플럭스로 전환.",
       "playstyle": "생존형",
       "upvotes": 278
     },
@@ -914,7 +914,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타형",
-      "upvotes": 266
+      "upvotes": 273
     }
   ],
   "Torbjörn": [
@@ -947,11 +947,11 @@
       "upvotes": 25
     },
     {
-      "name": "터렛-펙트 빌드",
-      "code": "T1031",
-      "description": "포탑 특화 빌드",
-      "playstyle": "균형형",
-      "upvotes": 21
+      "name": "Clockin' Steamy Torb Wins",
+      "code": "7V90R",
+      "description": "포탑 토르비욘 상대에 특화된 빌드로 포탑을 빠르게 제거하고 플랭커를 효과적으로 방어할 수 있음. 전설 랭크 DPS가 즐겁게 사용하는 구성.",
+      "playstyle": "공격형",
+      "upvotes": 22
     }
   ],
   "Tracer": [
@@ -974,7 +974,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "생존형",
-      "upvotes": 76
+      "upvotes": 77
     },
     {
       "name": "꾸준한 캐리 - 아주 상세한 가이드 [전설 1위]",
@@ -997,7 +997,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "생존형",
-      "upvotes": 206
+      "upvotes": 208
     },
     {
       "name": "(2026/03/12 업데이트)👑 Vendetta 탑 500 무기 공격력/죽지 않는 탱커 빌드",
@@ -1009,7 +1009,7 @@
     {
       "name": "Let me one shot her [500+ dmg vendetta build]",
       "code": "Z1P6V",
-      "description": "Vendetta build that maxes out your Survivability, burst damage and assasination abilities, block projectiles post fight, go in and do 500 or 830+ dmg dmg in a single combo, and get out in less then 2s Comment how you liked it IMPORTANT (The Closer(it...",
+      "description": "생존력과 버스트 딜을 극대화한 암살 빌드. 전투 후 투사체 차단 후 2초 안에 500~830+ 대미지 콤보로 빠르게 빠져나옴.",
       "playstyle": "공격형",
       "upvotes": 21
     },
@@ -1062,7 +1062,7 @@
       "code": "ACKTS",
       "description": "",
       "playstyle": "균형형",
-      "upvotes": 50
+      "upvotes": 51
     }
   ],
   "Wuyang": [
@@ -1078,19 +1078,19 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타형",
-      "upvotes": 146
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "딜형",
-      "upvotes": 87
+      "upvotes": 159
     },
     {
       "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
+      "playstyle": "딜형",
+      "upvotes": 87
+    },
+    {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
       "playstyle": "딜형",
       "upvotes": 87
     },
@@ -1122,7 +1122,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타형",
-      "upvotes": 92
+      "upvotes": 93
     },
     {
       "name": "자리야의 캥거루 빌드 (71% 승률로 전설 5 달성)",
@@ -1145,7 +1145,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타형",
-      "upvotes": 1177
+      "upvotes": 1178
     },
     {
       "name": "📜[보관됨] 기술 위력% 초월 (S18 업데이트)",

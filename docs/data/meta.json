@@ -1,210 +1,120 @@
 {
-  "골드": [
-    {
-      "hero_id": "kiriko",
-      "hero_name": "키리코",
-      "role": "support",
-      "pick_rate": 48.5,
-      "win_rate": 49.8,
-      "meta_score": 69.4,
-      "tier": "A"
-    },
+  "그랜드마스터": [
     {
       "hero_id": "ana",
       "hero_name": "아나",
       "role": "support",
-      "pick_rate": 45.3,
-      "win_rate": 49.0,
-      "meta_score": 64.4,
+      "pick_rate": 53.2,
+      "win_rate": 51.7,
+      "meta_score": 75.1,
+      "tier": "S"
+    },
+    {
+      "hero_id": "tracer",
+      "hero_name": "트레이서",
+      "role": "damage",
+      "pick_rate": 37.1,
+      "win_rate": 54.1,
+      "meta_score": 70.2,
       "tier": "A"
     },
     {
-      "hero_id": "sierra",
-      "hero_name": "시에라",
-      "role": "damage",
-      "pick_rate": 27.5,
-      "win_rate": 50.9,
-      "meta_score": 55.4,
+      "hero_id": "kiriko",
+      "hero_name": "키리코",
+      "role": "support",
+      "pick_rate": 49.3,
+      "win_rate": 50.8,
+      "meta_score": 69.5,
       "tier": "A"
     },
     {
       "hero_id": "illari",
       "hero_name": "일리아리",
       "role": "support",
-      "pick_rate": 13.7,
-      "win_rate": 54.0,
-      "meta_score": 53.3,
-      "tier": "B"
+      "pick_rate": 18.4,
+      "win_rate": 57.7,
+      "meta_score": 66.9,
+      "tier": "A"
     },
     {
-      "hero_id": "genji",
-      "hero_name": "겐지",
+      "hero_id": "emre",
+      "hero_name": "엠레",
       "role": "damage",
-      "pick_rate": 14.5,
-      "win_rate": 52.3,
-      "meta_score": 48.9,
+      "pick_rate": 26.8,
+      "win_rate": 53.4,
+      "meta_score": 60.4,
+      "tier": "A"
+    },
+    {
+      "hero_id": "sigma",
+      "hero_name": "시그마",
+      "role": "tank",
+      "pick_rate": 12.8,
+      "win_rate": 54.5,
+      "meta_score": 53.1,
       "tier": "B"
     },
     {
       "hero_id": "pharah",
       "hero_name": "파라",
       "role": "damage",
-      "pick_rate": 6.5,
-      "win_rate": 54.3,
-      "meta_score": 48.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "sigma",
-      "hero_name": "시그마",
-      "role": "tank",
-      "pick_rate": 12.3,
-      "win_rate": 52.5,
-      "meta_score": 47.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "reaper",
-      "hero_name": "리퍼",
-      "role": "damage",
-      "pick_rate": 14.1,
-      "win_rate": 51.9,
-      "meta_score": 47.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "anran",
-      "hero_name": "안란",
-      "role": "damage",
-      "pick_rate": 9.9,
-      "win_rate": 52.3,
-      "meta_score": 45.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "symmetra",
-      "hero_name": "시메트라",
-      "role": "damage",
-      "pick_rate": 3.4,
-      "win_rate": 53.7,
-      "meta_score": 43.9,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zenyatta",
-      "hero_name": "젠야타",
-      "role": "support",
-      "pick_rate": 10.6,
-      "win_rate": 51.7,
-      "meta_score": 43.8,
-      "tier": "B"
-    },
-    {
-      "hero_id": "hazard",
-      "hero_name": "해저드",
-      "role": "tank",
-      "pick_rate": 5.2,
-      "win_rate": 53.0,
-      "meta_score": 43.3,
+      "pick_rate": 9.0,
+      "win_rate": 55.3,
+      "meta_score": 52.7,
       "tier": "B"
     },
     {
       "hero_id": "winston",
       "hero_name": "윈스턴",
       "role": "tank",
-      "pick_rate": 10.4,
-      "win_rate": 51.4,
-      "meta_score": 42.8,
+      "pick_rate": 19.8,
+      "win_rate": 51.9,
+      "meta_score": 50.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "hazard",
+      "hero_name": "해저드",
+      "role": "tank",
+      "pick_rate": 15.4,
+      "win_rate": 53.0,
+      "meta_score": 50.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "symmetra",
+      "hero_name": "시메트라",
+      "role": "damage",
+      "pick_rate": 4.3,
+      "win_rate": 54.2,
+      "meta_score": 45.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "cassidy",
+      "hero_name": "캐서디",
+      "role": "damage",
+      "pick_rate": 23.9,
+      "win_rate": 48.6,
+      "meta_score": 43.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "echo",
+      "hero_name": "에코",
+      "role": "damage",
+      "pick_rate": 8.4,
+      "win_rate": 52.3,
+      "meta_score": 43.2,
       "tier": "B"
     },
     {
       "hero_id": "wuyang",
       "hero_name": "우양",
       "role": "support",
-      "pick_rate": 10.3,
-      "win_rate": 51.2,
-      "meta_score": 42.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "emre",
-      "hero_name": "엠레",
-      "role": "damage",
-      "pick_rate": 16.7,
+      "pick_rate": 19.6,
       "win_rate": 49.4,
-      "meta_score": 42.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "domina",
-      "hero_name": "도미나",
-      "role": "tank",
-      "pick_rate": 6.4,
-      "win_rate": 51.7,
-      "meta_score": 40.4,
-      "tier": "B"
-    },
-    {
-      "hero_id": "venture",
-      "hero_name": "벤처",
-      "role": "damage",
-      "pick_rate": 2.9,
-      "win_rate": 52.3,
-      "meta_score": 39.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "soldier76",
-      "hero_name": "솔저: 76",
-      "role": "damage",
-      "pick_rate": 16.9,
-      "win_rate": 48.4,
-      "meta_score": 39.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "mizuki",
-      "hero_name": "미즈키",
-      "role": "support",
-      "pick_rate": 10.9,
-      "win_rate": 49.9,
-      "meta_score": 38.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "moira",
-      "hero_name": "모이라",
-      "role": "support",
-      "pick_rate": 16.9,
-      "win_rate": 47.9,
-      "meta_score": 37.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "ashe",
-      "hero_name": "애쉬",
-      "role": "damage",
-      "pick_rate": 8.8,
-      "win_rate": 50.0,
-      "meta_score": 37.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "doomfist",
-      "hero_name": "둠피스트",
-      "role": "tank",
-      "pick_rate": 4.5,
-      "win_rate": 51.1,
-      "meta_score": 37.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "lifeweaver",
-      "hero_name": "라이프위버",
-      "role": "support",
-      "pick_rate": 8.1,
-      "win_rate": 49.9,
-      "meta_score": 36.4,
+      "meta_score": 42.9,
       "tier": "B"
     },
     {
@@ -212,252 +122,342 @@
       "hero_name": "자리야",
       "role": "tank",
       "pick_rate": 9.2,
-      "win_rate": 49.6,
-      "meta_score": 36.4,
+      "win_rate": 51.7,
+      "meta_score": 42.0,
       "tier": "B"
-    },
-    {
-      "hero_id": "dva",
-      "hero_name": "D.Va",
-      "role": "tank",
-      "pick_rate": 8.8,
-      "win_rate": 49.5,
-      "meta_score": 35.8,
-      "tier": "B"
-    },
-    {
-      "hero_id": "echo",
-      "hero_name": "에코",
-      "role": "damage",
-      "pick_rate": 4.4,
-      "win_rate": 50.7,
-      "meta_score": 35.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "tracer",
-      "hero_name": "트레이서",
-      "role": "damage",
-      "pick_rate": 7.8,
-      "win_rate": 49.7,
-      "meta_score": 35.5,
-      "tier": "B"
-    },
-    {
-      "hero_id": "cassidy",
-      "hero_name": "캐서디",
-      "role": "damage",
-      "pick_rate": 19.1,
-      "win_rate": 46.5,
-      "meta_score": 35.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "widowmaker",
-      "hero_name": "위도우메이커",
-      "role": "damage",
-      "pick_rate": 3.3,
-      "win_rate": 50.5,
-      "meta_score": 34.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "reinhardt",
-      "hero_name": "라인하르트",
-      "role": "tank",
-      "pick_rate": 7.7,
-      "win_rate": 49.2,
-      "meta_score": 34.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "juno",
-      "hero_name": "주노",
-      "role": "support",
-      "pick_rate": 8.0,
-      "win_rate": 49.1,
-      "meta_score": 33.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "ramattra",
-      "hero_name": "라마트라",
-      "role": "tank",
-      "pick_rate": 6.8,
-      "win_rate": 49.0,
-      "meta_score": 32.6,
-      "tier": "C"
     },
     {
       "hero_id": "lucio",
       "hero_name": "루시우",
       "role": "support",
-      "pick_rate": 6.1,
-      "win_rate": 49.1,
-      "meta_score": 32.3,
+      "pick_rate": 10.8,
+      "win_rate": 50.4,
+      "meta_score": 39.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "reaper",
+      "hero_name": "리퍼",
+      "role": "damage",
+      "pick_rate": 9.8,
+      "win_rate": 50.3,
+      "meta_score": 38.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "sojourn",
+      "hero_name": "소전",
+      "role": "damage",
+      "pick_rate": 15.8,
+      "win_rate": 47.8,
+      "meta_score": 35.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "brigitte",
+      "hero_name": "브리기테",
+      "role": "support",
+      "pick_rate": 9.4,
+      "win_rate": 48.8,
+      "meta_score": 33.5,
       "tier": "C"
     },
     {
-      "hero_id": "mei",
-      "hero_name": "메이",
-      "role": "damage",
-      "pick_rate": 5.6,
-      "win_rate": 48.7,
-      "meta_score": 30.7,
+      "hero_id": "mizuki",
+      "hero_name": "미즈키",
+      "role": "support",
+      "pick_rate": 4.8,
+      "win_rate": 49.6,
+      "meta_score": 32.4,
       "tier": "C"
     },
     {
-      "hero_id": "hanzo",
-      "hero_name": "한조",
+      "hero_id": "ashe",
+      "hero_name": "애쉬",
       "role": "damage",
-      "pick_rate": 5.8,
-      "win_rate": 48.6,
-      "meta_score": 30.6,
+      "pick_rate": 5.2,
+      "win_rate": 49.5,
+      "meta_score": 32.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "anran",
+      "hero_name": "안란",
+      "role": "damage",
+      "pick_rate": 3.7,
+      "win_rate": 49.8,
+      "meta_score": 32.2,
       "tier": "C"
     },
     {
       "hero_id": "junker_queen",
       "hero_name": "정커퀸",
       "role": "tank",
-      "pick_rate": 2.3,
-      "win_rate": 49.5,
-      "meta_score": 30.4,
+      "pick_rate": 1.5,
+      "win_rate": 50.2,
+      "meta_score": 31.7,
       "tier": "C"
     },
     {
-      "hero_id": "torbjorn",
-      "hero_name": "토르비욘",
-      "role": "damage",
-      "pick_rate": 3.1,
-      "win_rate": 49.2,
-      "meta_score": 30.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "wrecking_ball",
-      "hero_name": "레킹볼",
+      "hero_id": "ramattra",
+      "hero_name": "라마트라",
       "role": "tank",
-      "pick_rate": 2.8,
-      "win_rate": 49.2,
-      "meta_score": 29.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mauga",
-      "hero_name": "마우가",
-      "role": "tank",
-      "pick_rate": 5.1,
-      "win_rate": 48.5,
-      "meta_score": 29.7,
+      "pick_rate": 3.7,
+      "win_rate": 49.1,
+      "meta_score": 30.1,
       "tier": "C"
     },
     {
       "hero_id": "orisa",
       "hero_name": "오리사",
       "role": "tank",
-      "pick_rate": 12.3,
-      "win_rate": 46.5,
-      "meta_score": 29.6,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mercy",
-      "hero_name": "메르시",
-      "role": "support",
-      "pick_rate": 8.2,
-      "win_rate": 47.5,
+      "pick_rate": 8.3,
+      "win_rate": 47.7,
       "meta_score": 29.3,
       "tier": "C"
     },
     {
-      "hero_id": "brigitte",
-      "hero_name": "브리기테",
-      "role": "support",
-      "pick_rate": 3.8,
-      "win_rate": 48.6,
-      "meta_score": 28.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sombra",
-      "hero_name": "솜브라",
+      "hero_id": "genji",
+      "hero_name": "겐지",
       "role": "damage",
-      "pick_rate": 2.5,
-      "win_rate": 48.8,
-      "meta_score": 28.5,
+      "pick_rate": 12.6,
+      "win_rate": 46.4,
+      "meta_score": 28.7,
       "tier": "C"
     },
     {
-      "hero_id": "junkrat",
-      "hero_name": "정크랫",
+      "hero_id": "hanzo",
+      "hero_name": "한조",
       "role": "damage",
-      "pick_rate": 4.5,
-      "win_rate": 47.8,
-      "meta_score": 27.1,
+      "pick_rate": 5.1,
+      "win_rate": 48.3,
+      "meta_score": 28.7,
       "tier": "C"
     },
     {
-      "hero_id": "jetpack_cat",
-      "hero_name": "제트팩 캣",
-      "role": "support",
-      "pick_rate": 3.7,
-      "win_rate": 47.2,
-      "meta_score": 24.7,
+      "hero_id": "dva",
+      "hero_name": "D.Va",
+      "role": "tank",
+      "pick_rate": 5.0,
+      "win_rate": 48.2,
+      "meta_score": 28.4,
       "tier": "C"
     },
     {
-      "hero_id": "bastion",
-      "hero_name": "바스티온",
+      "hero_id": "domina",
+      "hero_name": "도미나",
+      "role": "tank",
+      "pick_rate": 3.0,
+      "win_rate": 48.7,
+      "meta_score": 28.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "venture",
+      "hero_name": "벤처",
       "role": "damage",
-      "pick_rate": 6.6,
-      "win_rate": 46.3,
-      "meta_score": 24.3,
+      "pick_rate": 3.1,
+      "win_rate": 48.3,
+      "meta_score": 27.2,
       "tier": "C"
     },
     {
-      "hero_id": "freja",
-      "hero_name": "프레야",
-      "role": "damage",
-      "pick_rate": 2.9,
+      "hero_id": "doomfist",
+      "hero_name": "둠피스트",
+      "role": "tank",
+      "pick_rate": 7.4,
       "win_rate": 46.8,
-      "meta_score": 22.8,
+      "meta_score": 26.0,
       "tier": "C"
     },
     {
-      "hero_id": "vendetta",
-      "hero_name": "벤데타",
-      "role": "damage",
-      "pick_rate": 2.5,
-      "win_rate": 46.6,
-      "meta_score": 21.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sojourn",
-      "hero_name": "소전",
-      "role": "damage",
-      "pick_rate": 10.6,
-      "win_rate": 44.4,
-      "meta_score": 21.9,
+      "hero_id": "zenyatta",
+      "hero_name": "젠야타",
+      "role": "support",
+      "pick_rate": 6.3,
+      "win_rate": 47.1,
+      "meta_score": 26.0,
       "tier": "C"
     },
     {
       "hero_id": "baptiste",
       "hero_name": "바티스트",
       "role": "support",
-      "pick_rate": 5.8,
-      "win_rate": 44.0,
+      "pick_rate": 7.6,
+      "win_rate": 46.6,
+      "meta_score": 25.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "wrecking_ball",
+      "hero_name": "레킹볼",
+      "role": "tank",
+      "pick_rate": 4.4,
+      "win_rate": 47.2,
+      "meta_score": 24.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "moira",
+      "hero_name": "모이라",
+      "role": "support",
+      "pick_rate": 4.5,
+      "win_rate": 46.7,
+      "meta_score": 23.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "soldier76",
+      "hero_name": "솔저: 76",
+      "role": "damage",
+      "pick_rate": 6.1,
+      "win_rate": 46.3,
+      "meta_score": 23.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mei",
+      "hero_name": "메이",
+      "role": "damage",
+      "pick_rate": 2.6,
+      "win_rate": 47.0,
+      "meta_score": 23.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "torbjorn",
+      "hero_name": "토르비욘",
+      "role": "damage",
+      "pick_rate": 3.3,
+      "win_rate": 46.8,
+      "meta_score": 22.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "juno",
+      "hero_name": "주노",
+      "role": "support",
+      "pick_rate": 3.5,
+      "win_rate": 45.9,
+      "meta_score": 20.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sombra",
+      "hero_name": "솜브라",
+      "role": "damage",
+      "pick_rate": 2.3,
+      "win_rate": 45.8,
+      "meta_score": 19.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junkrat",
+      "hero_name": "정크랫",
+      "role": "damage",
+      "pick_rate": 1.7,
+      "win_rate": 45.8,
+      "meta_score": 18.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "widowmaker",
+      "hero_name": "위도우메이커",
+      "role": "damage",
+      "pick_rate": 4.8,
+      "win_rate": 44.4,
       "meta_score": 16.8,
       "tier": "C"
+    },
+    {
+      "hero_id": "sierra",
+      "hero_name": "시에라",
+      "role": "damage",
+      "pick_rate": 7.7,
+      "win_rate": 43.4,
+      "meta_score": 16.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mauga",
+      "hero_name": "마우가",
+      "role": "tank",
+      "pick_rate": 3.1,
+      "win_rate": 44.4,
+      "meta_score": 15.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "freja",
+      "hero_name": "프레야",
+      "role": "damage",
+      "pick_rate": 3.1,
+      "win_rate": 44.2,
+      "meta_score": 14.9,
+      "tier": "D"
+    },
+    {
+      "hero_id": "jetpack_cat",
+      "hero_name": "제트팩 캣",
+      "role": "support",
+      "pick_rate": 5.7,
+      "win_rate": 43.4,
+      "meta_score": 14.5,
+      "tier": "D"
+    },
+    {
+      "hero_id": "bastion",
+      "hero_name": "바스티온",
+      "role": "damage",
+      "pick_rate": 2.0,
+      "win_rate": 43.5,
+      "meta_score": 12.0,
+      "tier": "D"
+    },
+    {
+      "hero_id": "mercy",
+      "hero_name": "메르시",
+      "role": "support",
+      "pick_rate": 3.1,
+      "win_rate": 41.9,
+      "meta_score": 8.0,
+      "tier": "D"
+    },
+    {
+      "hero_id": "lifeweaver",
+      "hero_name": "라이프위버",
+      "role": "support",
+      "pick_rate": 3.9,
+      "win_rate": 41.6,
+      "meta_score": 7.7,
+      "tier": "D"
+    },
+    {
+      "hero_id": "reinhardt",
+      "hero_name": "라인하르트",
+      "role": "tank",
+      "pick_rate": 3.2,
+      "win_rate": 41.7,
+      "meta_score": 7.5,
+      "tier": "D"
     },
     {
       "hero_id": "roadhog",
       "hero_name": "로드호그",
       "role": "tank",
-      "pick_rate": 6.3,
-      "win_rate": 43.3,
-      "meta_score": 15.1,
-      "tier": "C"
+      "pick_rate": 3.3,
+      "win_rate": 40.4,
+      "meta_score": 3.7,
+      "tier": "D"
+    },
+    {
+      "hero_id": "vendetta",
+      "hero_name": "벤데타",
+      "role": "damage",
+      "pick_rate": 1.4,
+      "win_rate": 38.8,
+      "meta_score": 1.1,
+      "tier": "D"
     }
   ],
   "실버": [
@@ -918,6 +918,1850 @@
       "pick_rate": 5.6,
       "win_rate": 43.8,
       "meta_score": 16.1,
+      "tier": "C"
+    }
+  ],
+  "다이아몬드": [
+    {
+      "hero_id": "ana",
+      "hero_name": "아나",
+      "role": "support",
+      "pick_rate": 56.6,
+      "win_rate": 50.2,
+      "meta_score": 70.6,
+      "tier": "A"
+    },
+    {
+      "hero_id": "kiriko",
+      "hero_name": "키리코",
+      "role": "support",
+      "pick_rate": 46.4,
+      "win_rate": 49.8,
+      "meta_score": 62.2,
+      "tier": "A"
+    },
+    {
+      "hero_id": "illari",
+      "hero_name": "일리아리",
+      "role": "support",
+      "pick_rate": 16.5,
+      "win_rate": 54.8,
+      "meta_score": 56.1,
+      "tier": "A"
+    },
+    {
+      "hero_id": "pharah",
+      "hero_name": "파라",
+      "role": "damage",
+      "pick_rate": 7.2,
+      "win_rate": 56.5,
+      "meta_score": 54.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "emre",
+      "hero_name": "엠레",
+      "role": "damage",
+      "pick_rate": 19.9,
+      "win_rate": 51.7,
+      "meta_score": 49.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "reaper",
+      "hero_name": "리퍼",
+      "role": "damage",
+      "pick_rate": 11.6,
+      "win_rate": 53.5,
+      "meta_score": 48.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "hazard",
+      "hero_name": "해저드",
+      "role": "tank",
+      "pick_rate": 8.9,
+      "win_rate": 54.0,
+      "meta_score": 48.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "winston",
+      "hero_name": "윈스턴",
+      "role": "tank",
+      "pick_rate": 15.0,
+      "win_rate": 52.3,
+      "meta_score": 47.5,
+      "tier": "B"
+    },
+    {
+      "hero_id": "genji",
+      "hero_name": "겐지",
+      "role": "damage",
+      "pick_rate": 17.9,
+      "win_rate": 51.5,
+      "meta_score": 47.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "sigma",
+      "hero_name": "시그마",
+      "role": "tank",
+      "pick_rate": 11.4,
+      "win_rate": 52.7,
+      "meta_score": 46.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "tracer",
+      "hero_name": "트레이서",
+      "role": "damage",
+      "pick_rate": 16.9,
+      "win_rate": 51.3,
+      "meta_score": 45.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "wuyang",
+      "hero_name": "우양",
+      "role": "support",
+      "pick_rate": 14.7,
+      "win_rate": 51.5,
+      "meta_score": 44.9,
+      "tier": "B"
+    },
+    {
+      "hero_id": "anran",
+      "hero_name": "안란",
+      "role": "damage",
+      "pick_rate": 6.9,
+      "win_rate": 52.1,
+      "meta_score": 41.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "echo",
+      "hero_name": "에코",
+      "role": "damage",
+      "pick_rate": 6.7,
+      "win_rate": 51.9,
+      "meta_score": 40.4,
+      "tier": "B"
+    },
+    {
+      "hero_id": "domina",
+      "hero_name": "도미나",
+      "role": "tank",
+      "pick_rate": 4.5,
+      "win_rate": 52.0,
+      "meta_score": 39.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "venture",
+      "hero_name": "벤처",
+      "role": "damage",
+      "pick_rate": 3.2,
+      "win_rate": 52.0,
+      "meta_score": 38.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "ashe",
+      "hero_name": "애쉬",
+      "role": "damage",
+      "pick_rate": 7.5,
+      "win_rate": 51.0,
+      "meta_score": 38.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zenyatta",
+      "hero_name": "젠야타",
+      "role": "support",
+      "pick_rate": 11.2,
+      "win_rate": 49.9,
+      "meta_score": 37.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "sierra",
+      "hero_name": "시에라",
+      "role": "damage",
+      "pick_rate": 19.1,
+      "win_rate": 47.8,
+      "meta_score": 36.9,
+      "tier": "B"
+    },
+    {
+      "hero_id": "soldier76",
+      "hero_name": "솔저: 76",
+      "role": "damage",
+      "pick_rate": 11.4,
+      "win_rate": 49.6,
+      "meta_score": 36.9,
+      "tier": "B"
+    },
+    {
+      "hero_id": "symmetra",
+      "hero_name": "시메트라",
+      "role": "damage",
+      "pick_rate": 3.0,
+      "win_rate": 51.4,
+      "meta_score": 36.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "dva",
+      "hero_name": "D.Va",
+      "role": "tank",
+      "pick_rate": 6.6,
+      "win_rate": 50.5,
+      "meta_score": 36.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zarya",
+      "hero_name": "자리야",
+      "role": "tank",
+      "pick_rate": 8.0,
+      "win_rate": 50.1,
+      "meta_score": 36.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "cassidy",
+      "hero_name": "캐서디",
+      "role": "damage",
+      "pick_rate": 25.3,
+      "win_rate": 45.8,
+      "meta_score": 35.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "doomfist",
+      "hero_name": "둠피스트",
+      "role": "tank",
+      "pick_rate": 8.6,
+      "win_rate": 49.6,
+      "meta_score": 34.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "juno",
+      "hero_name": "주노",
+      "role": "support",
+      "pick_rate": 4.4,
+      "win_rate": 50.2,
+      "meta_score": 33.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "widowmaker",
+      "hero_name": "위도우메이커",
+      "role": "damage",
+      "pick_rate": 4.1,
+      "win_rate": 49.7,
+      "meta_score": 32.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "ramattra",
+      "hero_name": "라마트라",
+      "role": "tank",
+      "pick_rate": 4.7,
+      "win_rate": 49.5,
+      "meta_score": 31.8,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mizuki",
+      "hero_name": "미즈키",
+      "role": "support",
+      "pick_rate": 7.9,
+      "win_rate": 48.7,
+      "meta_score": 31.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "brigitte",
+      "hero_name": "브리기테",
+      "role": "support",
+      "pick_rate": 6.6,
+      "win_rate": 49.0,
+      "meta_score": 31.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "hanzo",
+      "hero_name": "한조",
+      "role": "damage",
+      "pick_rate": 5.7,
+      "win_rate": 48.6,
+      "meta_score": 29.8,
+      "tier": "C"
+    },
+    {
+      "hero_id": "lucio",
+      "hero_name": "루시우",
+      "role": "support",
+      "pick_rate": 5.5,
+      "win_rate": 48.6,
+      "meta_score": 29.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mercy",
+      "hero_name": "메르시",
+      "role": "support",
+      "pick_rate": 6.0,
+      "win_rate": 48.3,
+      "meta_score": 29.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "orisa",
+      "hero_name": "오리사",
+      "role": "tank",
+      "pick_rate": 9.3,
+      "win_rate": 47.5,
+      "meta_score": 29.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junker_queen",
+      "hero_name": "정커퀸",
+      "role": "tank",
+      "pick_rate": 2.1,
+      "win_rate": 49.2,
+      "meta_score": 29.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "lifeweaver",
+      "hero_name": "라이프위버",
+      "role": "support",
+      "pick_rate": 6.8,
+      "win_rate": 47.4,
+      "meta_score": 27.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junkrat",
+      "hero_name": "정크랫",
+      "role": "damage",
+      "pick_rate": 2.7,
+      "win_rate": 48.0,
+      "meta_score": 25.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sojourn",
+      "hero_name": "소전",
+      "role": "damage",
+      "pick_rate": 12.2,
+      "win_rate": 45.7,
+      "meta_score": 25.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mauga",
+      "hero_name": "마우가",
+      "role": "tank",
+      "pick_rate": 5.3,
+      "win_rate": 47.3,
+      "meta_score": 25.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "moira",
+      "hero_name": "모이라",
+      "role": "support",
+      "pick_rate": 7.5,
+      "win_rate": 46.7,
+      "meta_score": 25.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mei",
+      "hero_name": "메이",
+      "role": "damage",
+      "pick_rate": 4.1,
+      "win_rate": 47.4,
+      "meta_score": 25.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "torbjorn",
+      "hero_name": "토르비욘",
+      "role": "damage",
+      "pick_rate": 2.7,
+      "win_rate": 47.2,
+      "meta_score": 23.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "reinhardt",
+      "hero_name": "라인하르트",
+      "role": "tank",
+      "pick_rate": 6.3,
+      "win_rate": 45.9,
+      "meta_score": 22.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "wrecking_ball",
+      "hero_name": "레킹볼",
+      "role": "tank",
+      "pick_rate": 3.8,
+      "win_rate": 46.5,
+      "meta_score": 22.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sombra",
+      "hero_name": "솜브라",
+      "role": "damage",
+      "pick_rate": 3.3,
+      "win_rate": 46.4,
+      "meta_score": 21.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "freja",
+      "hero_name": "프레야",
+      "role": "damage",
+      "pick_rate": 3.3,
+      "win_rate": 46.3,
+      "meta_score": 21.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "jetpack_cat",
+      "hero_name": "제트팩 캣",
+      "role": "support",
+      "pick_rate": 3.8,
+      "win_rate": 45.6,
+      "meta_score": 19.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "bastion",
+      "hero_name": "바스티온",
+      "role": "damage",
+      "pick_rate": 3.3,
+      "win_rate": 45.6,
+      "meta_score": 19.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "baptiste",
+      "hero_name": "바티스트",
+      "role": "support",
+      "pick_rate": 6.2,
+      "win_rate": 43.9,
+      "meta_score": 16.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "vendetta",
+      "hero_name": "벤데타",
+      "role": "damage",
+      "pick_rate": 2.0,
+      "win_rate": 43.7,
+      "meta_score": 12.5,
+      "tier": "D"
+    },
+    {
+      "hero_id": "roadhog",
+      "hero_name": "로드호그",
+      "role": "tank",
+      "pick_rate": 5.4,
+      "win_rate": 40.2,
+      "meta_score": 4.4,
+      "tier": "D"
+    }
+  ],
+  "플래티넘": [
+    {
+      "hero_id": "ana",
+      "hero_name": "아나",
+      "role": "support",
+      "pick_rate": 52.9,
+      "win_rate": 49.6,
+      "meta_score": 68.8,
+      "tier": "A"
+    },
+    {
+      "hero_id": "kiriko",
+      "hero_name": "키리코",
+      "role": "support",
+      "pick_rate": 47.6,
+      "win_rate": 49.5,
+      "meta_score": 64.5,
+      "tier": "A"
+    },
+    {
+      "hero_id": "illari",
+      "hero_name": "일리아리",
+      "role": "support",
+      "pick_rate": 14.5,
+      "win_rate": 54.5,
+      "meta_score": 54.5,
+      "tier": "B"
+    },
+    {
+      "hero_id": "pharah",
+      "hero_name": "파라",
+      "role": "damage",
+      "pick_rate": 6.7,
+      "win_rate": 55.2,
+      "meta_score": 50.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "genji",
+      "hero_name": "겐지",
+      "role": "damage",
+      "pick_rate": 16.7,
+      "win_rate": 51.8,
+      "meta_score": 48.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "sierra",
+      "hero_name": "시에라",
+      "role": "damage",
+      "pick_rate": 24.2,
+      "win_rate": 49.7,
+      "meta_score": 47.4,
+      "tier": "B"
+    },
+    {
+      "hero_id": "reaper",
+      "hero_name": "리퍼",
+      "role": "damage",
+      "pick_rate": 12.7,
+      "win_rate": 52.5,
+      "meta_score": 47.1,
+      "tier": "B"
+    },
+    {
+      "hero_id": "sigma",
+      "hero_name": "시그마",
+      "role": "tank",
+      "pick_rate": 11.6,
+      "win_rate": 52.6,
+      "meta_score": 46.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "hazard",
+      "hero_name": "해저드",
+      "role": "tank",
+      "pick_rate": 6.9,
+      "win_rate": 53.7,
+      "meta_score": 46.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "winston",
+      "hero_name": "윈스턴",
+      "role": "tank",
+      "pick_rate": 12.4,
+      "win_rate": 52.2,
+      "meta_score": 46.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "emre",
+      "hero_name": "엠레",
+      "role": "damage",
+      "pick_rate": 17.8,
+      "win_rate": 50.5,
+      "meta_score": 45.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "anran",
+      "hero_name": "안란",
+      "role": "damage",
+      "pick_rate": 8.8,
+      "win_rate": 52.7,
+      "meta_score": 44.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "wuyang",
+      "hero_name": "우양",
+      "role": "support",
+      "pick_rate": 11.8,
+      "win_rate": 51.7,
+      "meta_score": 44.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zenyatta",
+      "hero_name": "젠야타",
+      "role": "support",
+      "pick_rate": 11.4,
+      "win_rate": 51.7,
+      "meta_score": 43.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "symmetra",
+      "hero_name": "시메트라",
+      "role": "damage",
+      "pick_rate": 3.5,
+      "win_rate": 53.2,
+      "meta_score": 42.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "tracer",
+      "hero_name": "트레이서",
+      "role": "damage",
+      "pick_rate": 10.8,
+      "win_rate": 50.9,
+      "meta_score": 40.9,
+      "tier": "B"
+    },
+    {
+      "hero_id": "domina",
+      "hero_name": "도미나",
+      "role": "tank",
+      "pick_rate": 5.3,
+      "win_rate": 51.9,
+      "meta_score": 39.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "venture",
+      "hero_name": "벤처",
+      "role": "damage",
+      "pick_rate": 3.1,
+      "win_rate": 52.1,
+      "meta_score": 38.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "echo",
+      "hero_name": "에코",
+      "role": "damage",
+      "pick_rate": 5.5,
+      "win_rate": 51.3,
+      "meta_score": 38.1,
+      "tier": "B"
+    },
+    {
+      "hero_id": "soldier76",
+      "hero_name": "솔저: 76",
+      "role": "damage",
+      "pick_rate": 14.4,
+      "win_rate": 48.9,
+      "meta_score": 37.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "doomfist",
+      "hero_name": "둠피스트",
+      "role": "tank",
+      "pick_rate": 6.2,
+      "win_rate": 50.7,
+      "meta_score": 36.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "dva",
+      "hero_name": "D.Va",
+      "role": "tank",
+      "pick_rate": 7.9,
+      "win_rate": 50.1,
+      "meta_score": 36.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "ashe",
+      "hero_name": "애쉬",
+      "role": "damage",
+      "pick_rate": 8.5,
+      "win_rate": 49.6,
+      "meta_score": 35.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "mizuki",
+      "hero_name": "미즈키",
+      "role": "support",
+      "pick_rate": 9.5,
+      "win_rate": 49.1,
+      "meta_score": 34.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "cassidy",
+      "hero_name": "캐서디",
+      "role": "damage",
+      "pick_rate": 22.3,
+      "win_rate": 45.7,
+      "meta_score": 34.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "lifeweaver",
+      "hero_name": "라이프위버",
+      "role": "support",
+      "pick_rate": 7.9,
+      "win_rate": 48.8,
+      "meta_score": 32.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "widowmaker",
+      "hero_name": "위도우메이커",
+      "role": "damage",
+      "pick_rate": 3.6,
+      "win_rate": 49.9,
+      "meta_score": 32.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "zarya",
+      "hero_name": "자리야",
+      "role": "tank",
+      "pick_rate": 8.8,
+      "win_rate": 48.3,
+      "meta_score": 31.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "juno",
+      "hero_name": "주노",
+      "role": "support",
+      "pick_rate": 6.0,
+      "win_rate": 48.9,
+      "meta_score": 31.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "hanzo",
+      "hero_name": "한조",
+      "role": "damage",
+      "pick_rate": 5.8,
+      "win_rate": 48.9,
+      "meta_score": 31.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "ramattra",
+      "hero_name": "라마트라",
+      "role": "tank",
+      "pick_rate": 5.7,
+      "win_rate": 48.9,
+      "meta_score": 31.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "lucio",
+      "hero_name": "루시우",
+      "role": "support",
+      "pick_rate": 5.3,
+      "win_rate": 48.9,
+      "meta_score": 30.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "moira",
+      "hero_name": "모이라",
+      "role": "support",
+      "pick_rate": 11.6,
+      "win_rate": 47.2,
+      "meta_score": 30.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mercy",
+      "hero_name": "메르시",
+      "role": "support",
+      "pick_rate": 7.0,
+      "win_rate": 48.2,
+      "meta_score": 29.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mei",
+      "hero_name": "메이",
+      "role": "damage",
+      "pick_rate": 5.2,
+      "win_rate": 48.6,
+      "meta_score": 29.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junker_queen",
+      "hero_name": "정커퀸",
+      "role": "tank",
+      "pick_rate": 2.4,
+      "win_rate": 49.3,
+      "meta_score": 29.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "orisa",
+      "hero_name": "오리사",
+      "role": "tank",
+      "pick_rate": 10.8,
+      "win_rate": 47.0,
+      "meta_score": 29.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "reinhardt",
+      "hero_name": "라인하르트",
+      "role": "tank",
+      "pick_rate": 7.0,
+      "win_rate": 47.9,
+      "meta_score": 29.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "wrecking_ball",
+      "hero_name": "레킹볼",
+      "role": "tank",
+      "pick_rate": 3.4,
+      "win_rate": 48.7,
+      "meta_score": 28.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mauga",
+      "hero_name": "마우가",
+      "role": "tank",
+      "pick_rate": 5.3,
+      "win_rate": 47.9,
+      "meta_score": 27.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "torbjorn",
+      "hero_name": "토르비욘",
+      "role": "damage",
+      "pick_rate": 2.8,
+      "win_rate": 48.5,
+      "meta_score": 27.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "brigitte",
+      "hero_name": "브리기테",
+      "role": "support",
+      "pick_rate": 4.9,
+      "win_rate": 47.9,
+      "meta_score": 27.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junkrat",
+      "hero_name": "정크랫",
+      "role": "damage",
+      "pick_rate": 3.4,
+      "win_rate": 48.2,
+      "meta_score": 27.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "freja",
+      "hero_name": "프레야",
+      "role": "damage",
+      "pick_rate": 3.2,
+      "win_rate": 47.7,
+      "meta_score": 25.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sojourn",
+      "hero_name": "소전",
+      "role": "damage",
+      "pick_rate": 10.9,
+      "win_rate": 45.3,
+      "meta_score": 24.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "jetpack_cat",
+      "hero_name": "제트팩 캣",
+      "role": "support",
+      "pick_rate": 3.8,
+      "win_rate": 47.0,
+      "meta_score": 23.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sombra",
+      "hero_name": "솜브라",
+      "role": "damage",
+      "pick_rate": 2.8,
+      "win_rate": 46.7,
+      "meta_score": 22.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "bastion",
+      "hero_name": "바스티온",
+      "role": "damage",
+      "pick_rate": 4.9,
+      "win_rate": 45.8,
+      "meta_score": 21.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "baptiste",
+      "hero_name": "바티스트",
+      "role": "support",
+      "pick_rate": 6.0,
+      "win_rate": 43.9,
+      "meta_score": 16.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "vendetta",
+      "hero_name": "벤데타",
+      "role": "damage",
+      "pick_rate": 2.3,
+      "win_rate": 44.8,
+      "meta_score": 16.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "roadhog",
+      "hero_name": "로드호그",
+      "role": "tank",
+      "pick_rate": 6.2,
+      "win_rate": 42.1,
+      "meta_score": 11.0,
+      "tier": "D"
+    }
+  ],
+  "전체": [
+    {
+      "hero_id": "kiriko",
+      "hero_name": "키리코",
+      "role": "support",
+      "pick_rate": 47.8,
+      "win_rate": 49.8,
+      "meta_score": 69.4,
+      "tier": "A"
+    },
+    {
+      "hero_id": "ana",
+      "hero_name": "아나",
+      "role": "support",
+      "pick_rate": 45.1,
+      "win_rate": 49.3,
+      "meta_score": 65.6,
+      "tier": "A"
+    },
+    {
+      "hero_id": "illari",
+      "hero_name": "일리아리",
+      "role": "support",
+      "pick_rate": 14.6,
+      "win_rate": 54.1,
+      "meta_score": 54.5,
+      "tier": "B"
+    },
+    {
+      "hero_id": "sierra",
+      "hero_name": "시에라",
+      "role": "damage",
+      "pick_rate": 26.0,
+      "win_rate": 50.6,
+      "meta_score": 53.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "pharah",
+      "hero_name": "파라",
+      "role": "damage",
+      "pick_rate": 6.7,
+      "win_rate": 54.5,
+      "meta_score": 49.1,
+      "tier": "B"
+    },
+    {
+      "hero_id": "sigma",
+      "hero_name": "시그마",
+      "role": "tank",
+      "pick_rate": 12.2,
+      "win_rate": 52.6,
+      "meta_score": 48.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "reaper",
+      "hero_name": "리퍼",
+      "role": "damage",
+      "pick_rate": 13.5,
+      "win_rate": 52.2,
+      "meta_score": 47.9,
+      "tier": "B"
+    },
+    {
+      "hero_id": "genji",
+      "hero_name": "겐지",
+      "role": "damage",
+      "pick_rate": 14.3,
+      "win_rate": 51.8,
+      "meta_score": 47.4,
+      "tier": "B"
+    },
+    {
+      "hero_id": "emre",
+      "hero_name": "엠레",
+      "role": "damage",
+      "pick_rate": 17.5,
+      "win_rate": 50.1,
+      "meta_score": 44.9,
+      "tier": "B"
+    },
+    {
+      "hero_id": "anran",
+      "hero_name": "안란",
+      "role": "damage",
+      "pick_rate": 9.3,
+      "win_rate": 52.3,
+      "meta_score": 44.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "hazard",
+      "hero_name": "해저드",
+      "role": "tank",
+      "pick_rate": 6.0,
+      "win_rate": 53.2,
+      "meta_score": 44.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "winston",
+      "hero_name": "윈스턴",
+      "role": "tank",
+      "pick_rate": 11.2,
+      "win_rate": 51.7,
+      "meta_score": 44.5,
+      "tier": "B"
+    },
+    {
+      "hero_id": "wuyang",
+      "hero_name": "우양",
+      "role": "support",
+      "pick_rate": 11.4,
+      "win_rate": 51.4,
+      "meta_score": 43.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zenyatta",
+      "hero_name": "젠야타",
+      "role": "support",
+      "pick_rate": 10.7,
+      "win_rate": 51.4,
+      "meta_score": 43.2,
+      "tier": "B"
+    },
+    {
+      "hero_id": "symmetra",
+      "hero_name": "시메트라",
+      "role": "damage",
+      "pick_rate": 3.3,
+      "win_rate": 53.4,
+      "meta_score": 43.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "domina",
+      "hero_name": "도미나",
+      "role": "tank",
+      "pick_rate": 6.2,
+      "win_rate": 51.8,
+      "meta_score": 40.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "tracer",
+      "hero_name": "트레이서",
+      "role": "damage",
+      "pick_rate": 9.8,
+      "win_rate": 50.6,
+      "meta_score": 40.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "mizuki",
+      "hero_name": "미즈키",
+      "role": "support",
+      "pick_rate": 10.8,
+      "win_rate": 50.2,
+      "meta_score": 39.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "soldier76",
+      "hero_name": "솔저: 76",
+      "role": "damage",
+      "pick_rate": 16.1,
+      "win_rate": 48.6,
+      "meta_score": 39.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "venture",
+      "hero_name": "벤처",
+      "role": "damage",
+      "pick_rate": 2.9,
+      "win_rate": 52.2,
+      "meta_score": 39.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "moira",
+      "hero_name": "모이라",
+      "role": "support",
+      "pick_rate": 15.6,
+      "win_rate": 48.0,
+      "meta_score": 37.1,
+      "tier": "B"
+    },
+    {
+      "hero_id": "echo",
+      "hero_name": "에코",
+      "role": "damage",
+      "pick_rate": 4.9,
+      "win_rate": 50.8,
+      "meta_score": 36.5,
+      "tier": "B"
+    },
+    {
+      "hero_id": "doomfist",
+      "hero_name": "둠피스트",
+      "role": "tank",
+      "pick_rate": 5.1,
+      "win_rate": 50.7,
+      "meta_score": 36.4,
+      "tier": "B"
+    },
+    {
+      "hero_id": "ashe",
+      "hero_name": "애쉬",
+      "role": "damage",
+      "pick_rate": 8.3,
+      "win_rate": 49.8,
+      "meta_score": 36.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zarya",
+      "hero_name": "자리야",
+      "role": "tank",
+      "pick_rate": 8.6,
+      "win_rate": 49.6,
+      "meta_score": 36.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "cassidy",
+      "hero_name": "캐서디",
+      "role": "damage",
+      "pick_rate": 19.5,
+      "win_rate": 46.4,
+      "meta_score": 35.5,
+      "tier": "B"
+    },
+    {
+      "hero_id": "dva",
+      "hero_name": "D.Va",
+      "role": "tank",
+      "pick_rate": 8.4,
+      "win_rate": 49.2,
+      "meta_score": 34.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "juno",
+      "hero_name": "주노",
+      "role": "support",
+      "pick_rate": 8.3,
+      "win_rate": 48.9,
+      "meta_score": 33.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "lifeweaver",
+      "hero_name": "라이프위버",
+      "role": "support",
+      "pick_rate": 7.5,
+      "win_rate": 49.0,
+      "meta_score": 33.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "ramattra",
+      "hero_name": "라마트라",
+      "role": "tank",
+      "pick_rate": 6.7,
+      "win_rate": 49.2,
+      "meta_score": 33.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "reinhardt",
+      "hero_name": "라인하르트",
+      "role": "tank",
+      "pick_rate": 7.3,
+      "win_rate": 48.8,
+      "meta_score": 32.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "widowmaker",
+      "hero_name": "위도우메이커",
+      "role": "damage",
+      "pick_rate": 3.4,
+      "win_rate": 49.8,
+      "meta_score": 32.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mei",
+      "hero_name": "메이",
+      "role": "damage",
+      "pick_rate": 5.2,
+      "win_rate": 49.1,
+      "meta_score": 31.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "lucio",
+      "hero_name": "루시우",
+      "role": "support",
+      "pick_rate": 6.5,
+      "win_rate": 48.7,
+      "meta_score": 31.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "hanzo",
+      "hero_name": "한조",
+      "role": "damage",
+      "pick_rate": 5.7,
+      "win_rate": 48.7,
+      "meta_score": 30.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "orisa",
+      "hero_name": "오리사",
+      "role": "tank",
+      "pick_rate": 12.1,
+      "win_rate": 46.8,
+      "meta_score": 30.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junker_queen",
+      "hero_name": "정커퀸",
+      "role": "tank",
+      "pick_rate": 2.2,
+      "win_rate": 49.4,
+      "meta_score": 30.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "brigitte",
+      "hero_name": "브리기테",
+      "role": "support",
+      "pick_rate": 4.4,
+      "win_rate": 48.6,
+      "meta_score": 29.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "torbjorn",
+      "hero_name": "토르비욘",
+      "role": "damage",
+      "pick_rate": 3.1,
+      "win_rate": 48.9,
+      "meta_score": 29.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "wrecking_ball",
+      "hero_name": "레킹볼",
+      "role": "tank",
+      "pick_rate": 2.9,
+      "win_rate": 48.9,
+      "meta_score": 29.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mauga",
+      "hero_name": "마우가",
+      "role": "tank",
+      "pick_rate": 5.2,
+      "win_rate": 48.1,
+      "meta_score": 28.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mercy",
+      "hero_name": "메르시",
+      "role": "support",
+      "pick_rate": 7.9,
+      "win_rate": 47.1,
+      "meta_score": 27.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junkrat",
+      "hero_name": "정크랫",
+      "role": "damage",
+      "pick_rate": 4.4,
+      "win_rate": 47.7,
+      "meta_score": 26.8,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sombra",
+      "hero_name": "솜브라",
+      "role": "damage",
+      "pick_rate": 2.7,
+      "win_rate": 47.9,
+      "meta_score": 26.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "bastion",
+      "hero_name": "바스티온",
+      "role": "damage",
+      "pick_rate": 6.6,
+      "win_rate": 46.5,
+      "meta_score": 25.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "jetpack_cat",
+      "hero_name": "제트팩 캣",
+      "role": "support",
+      "pick_rate": 3.6,
+      "win_rate": 46.8,
+      "meta_score": 23.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sojourn",
+      "hero_name": "소전",
+      "role": "damage",
+      "pick_rate": 11.4,
+      "win_rate": 44.6,
+      "meta_score": 23.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "freja",
+      "hero_name": "프레야",
+      "role": "damage",
+      "pick_rate": 3.0,
+      "win_rate": 46.9,
+      "meta_score": 23.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "vendetta",
+      "hero_name": "벤데타",
+      "role": "damage",
+      "pick_rate": 2.4,
+      "win_rate": 46.0,
+      "meta_score": 20.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "baptiste",
+      "hero_name": "바티스트",
+      "role": "support",
+      "pick_rate": 5.8,
+      "win_rate": 44.2,
+      "meta_score": 17.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "roadhog",
+      "hero_name": "로드호그",
+      "role": "tank",
+      "pick_rate": 5.8,
+      "win_rate": 42.8,
+      "meta_score": 13.3,
+      "tier": "D"
+    }
+  ],
+  "골드": [
+    {
+      "hero_id": "kiriko",
+      "hero_name": "키리코",
+      "role": "support",
+      "pick_rate": 48.5,
+      "win_rate": 49.8,
+      "meta_score": 69.4,
+      "tier": "A"
+    },
+    {
+      "hero_id": "ana",
+      "hero_name": "아나",
+      "role": "support",
+      "pick_rate": 45.3,
+      "win_rate": 49.0,
+      "meta_score": 64.4,
+      "tier": "A"
+    },
+    {
+      "hero_id": "sierra",
+      "hero_name": "시에라",
+      "role": "damage",
+      "pick_rate": 27.5,
+      "win_rate": 50.9,
+      "meta_score": 55.4,
+      "tier": "A"
+    },
+    {
+      "hero_id": "illari",
+      "hero_name": "일리아리",
+      "role": "support",
+      "pick_rate": 13.7,
+      "win_rate": 54.0,
+      "meta_score": 53.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "genji",
+      "hero_name": "겐지",
+      "role": "damage",
+      "pick_rate": 14.5,
+      "win_rate": 52.3,
+      "meta_score": 48.9,
+      "tier": "B"
+    },
+    {
+      "hero_id": "pharah",
+      "hero_name": "파라",
+      "role": "damage",
+      "pick_rate": 6.5,
+      "win_rate": 54.3,
+      "meta_score": 48.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "sigma",
+      "hero_name": "시그마",
+      "role": "tank",
+      "pick_rate": 12.3,
+      "win_rate": 52.5,
+      "meta_score": 47.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "reaper",
+      "hero_name": "리퍼",
+      "role": "damage",
+      "pick_rate": 14.1,
+      "win_rate": 51.9,
+      "meta_score": 47.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "anran",
+      "hero_name": "안란",
+      "role": "damage",
+      "pick_rate": 9.9,
+      "win_rate": 52.3,
+      "meta_score": 45.1,
+      "tier": "B"
+    },
+    {
+      "hero_id": "symmetra",
+      "hero_name": "시메트라",
+      "role": "damage",
+      "pick_rate": 3.4,
+      "win_rate": 53.7,
+      "meta_score": 43.9,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zenyatta",
+      "hero_name": "젠야타",
+      "role": "support",
+      "pick_rate": 10.6,
+      "win_rate": 51.7,
+      "meta_score": 43.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "hazard",
+      "hero_name": "해저드",
+      "role": "tank",
+      "pick_rate": 5.2,
+      "win_rate": 53.0,
+      "meta_score": 43.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "winston",
+      "hero_name": "윈스턴",
+      "role": "tank",
+      "pick_rate": 10.4,
+      "win_rate": 51.4,
+      "meta_score": 42.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "wuyang",
+      "hero_name": "우양",
+      "role": "support",
+      "pick_rate": 10.3,
+      "win_rate": 51.2,
+      "meta_score": 42.1,
+      "tier": "B"
+    },
+    {
+      "hero_id": "emre",
+      "hero_name": "엠레",
+      "role": "damage",
+      "pick_rate": 16.7,
+      "win_rate": 49.4,
+      "meta_score": 42.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "domina",
+      "hero_name": "도미나",
+      "role": "tank",
+      "pick_rate": 6.4,
+      "win_rate": 51.7,
+      "meta_score": 40.4,
+      "tier": "B"
+    },
+    {
+      "hero_id": "venture",
+      "hero_name": "벤처",
+      "role": "damage",
+      "pick_rate": 2.9,
+      "win_rate": 52.3,
+      "meta_score": 39.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "soldier76",
+      "hero_name": "솔저: 76",
+      "role": "damage",
+      "pick_rate": 16.9,
+      "win_rate": 48.4,
+      "meta_score": 39.1,
+      "tier": "B"
+    },
+    {
+      "hero_id": "mizuki",
+      "hero_name": "미즈키",
+      "role": "support",
+      "pick_rate": 10.9,
+      "win_rate": 49.9,
+      "meta_score": 38.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "moira",
+      "hero_name": "모이라",
+      "role": "support",
+      "pick_rate": 16.9,
+      "win_rate": 47.9,
+      "meta_score": 37.6,
+      "tier": "B"
+    },
+    {
+      "hero_id": "ashe",
+      "hero_name": "애쉬",
+      "role": "damage",
+      "pick_rate": 8.8,
+      "win_rate": 50.0,
+      "meta_score": 37.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "doomfist",
+      "hero_name": "둠피스트",
+      "role": "tank",
+      "pick_rate": 4.5,
+      "win_rate": 51.1,
+      "meta_score": 37.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "lifeweaver",
+      "hero_name": "라이프위버",
+      "role": "support",
+      "pick_rate": 8.1,
+      "win_rate": 49.9,
+      "meta_score": 36.4,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zarya",
+      "hero_name": "자리야",
+      "role": "tank",
+      "pick_rate": 9.2,
+      "win_rate": 49.6,
+      "meta_score": 36.4,
+      "tier": "B"
+    },
+    {
+      "hero_id": "dva",
+      "hero_name": "D.Va",
+      "role": "tank",
+      "pick_rate": 8.8,
+      "win_rate": 49.5,
+      "meta_score": 35.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "echo",
+      "hero_name": "에코",
+      "role": "damage",
+      "pick_rate": 4.4,
+      "win_rate": 50.7,
+      "meta_score": 35.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "tracer",
+      "hero_name": "트레이서",
+      "role": "damage",
+      "pick_rate": 7.8,
+      "win_rate": 49.7,
+      "meta_score": 35.5,
+      "tier": "B"
+    },
+    {
+      "hero_id": "cassidy",
+      "hero_name": "캐서디",
+      "role": "damage",
+      "pick_rate": 19.1,
+      "win_rate": 46.5,
+      "meta_score": 35.3,
+      "tier": "B"
+    },
+    {
+      "hero_id": "widowmaker",
+      "hero_name": "위도우메이커",
+      "role": "damage",
+      "pick_rate": 3.3,
+      "win_rate": 50.5,
+      "meta_score": 34.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "reinhardt",
+      "hero_name": "라인하르트",
+      "role": "tank",
+      "pick_rate": 7.7,
+      "win_rate": 49.2,
+      "meta_score": 34.0,
+      "tier": "C"
+    },
+    {
+      "hero_id": "juno",
+      "hero_name": "주노",
+      "role": "support",
+      "pick_rate": 8.0,
+      "win_rate": 49.1,
+      "meta_score": 33.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "ramattra",
+      "hero_name": "라마트라",
+      "role": "tank",
+      "pick_rate": 6.8,
+      "win_rate": 49.0,
+      "meta_score": 32.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "lucio",
+      "hero_name": "루시우",
+      "role": "support",
+      "pick_rate": 6.1,
+      "win_rate": 49.1,
+      "meta_score": 32.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mei",
+      "hero_name": "메이",
+      "role": "damage",
+      "pick_rate": 5.6,
+      "win_rate": 48.7,
+      "meta_score": 30.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "hanzo",
+      "hero_name": "한조",
+      "role": "damage",
+      "pick_rate": 5.8,
+      "win_rate": 48.6,
+      "meta_score": 30.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junker_queen",
+      "hero_name": "정커퀸",
+      "role": "tank",
+      "pick_rate": 2.3,
+      "win_rate": 49.5,
+      "meta_score": 30.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "torbjorn",
+      "hero_name": "토르비욘",
+      "role": "damage",
+      "pick_rate": 3.1,
+      "win_rate": 49.2,
+      "meta_score": 30.2,
+      "tier": "C"
+    },
+    {
+      "hero_id": "wrecking_ball",
+      "hero_name": "레킹볼",
+      "role": "tank",
+      "pick_rate": 2.8,
+      "win_rate": 49.2,
+      "meta_score": 29.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mauga",
+      "hero_name": "마우가",
+      "role": "tank",
+      "pick_rate": 5.1,
+      "win_rate": 48.5,
+      "meta_score": 29.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "orisa",
+      "hero_name": "오리사",
+      "role": "tank",
+      "pick_rate": 12.3,
+      "win_rate": 46.5,
+      "meta_score": 29.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "mercy",
+      "hero_name": "메르시",
+      "role": "support",
+      "pick_rate": 8.2,
+      "win_rate": 47.5,
+      "meta_score": 29.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "brigitte",
+      "hero_name": "브리기테",
+      "role": "support",
+      "pick_rate": 3.8,
+      "win_rate": 48.6,
+      "meta_score": 28.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sombra",
+      "hero_name": "솜브라",
+      "role": "damage",
+      "pick_rate": 2.5,
+      "win_rate": 48.8,
+      "meta_score": 28.5,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junkrat",
+      "hero_name": "정크랫",
+      "role": "damage",
+      "pick_rate": 4.5,
+      "win_rate": 47.8,
+      "meta_score": 27.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "jetpack_cat",
+      "hero_name": "제트팩 캣",
+      "role": "support",
+      "pick_rate": 3.7,
+      "win_rate": 47.2,
+      "meta_score": 24.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "bastion",
+      "hero_name": "바스티온",
+      "role": "damage",
+      "pick_rate": 6.6,
+      "win_rate": 46.3,
+      "meta_score": 24.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "freja",
+      "hero_name": "프레야",
+      "role": "damage",
+      "pick_rate": 2.9,
+      "win_rate": 46.8,
+      "meta_score": 22.8,
+      "tier": "C"
+    },
+    {
+      "hero_id": "vendetta",
+      "hero_name": "벤데타",
+      "role": "damage",
+      "pick_rate": 2.5,
+      "win_rate": 46.6,
+      "meta_score": 21.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "sojourn",
+      "hero_name": "소전",
+      "role": "damage",
+      "pick_rate": 10.6,
+      "win_rate": 44.4,
+      "meta_score": 21.9,
+      "tier": "C"
+    },
+    {
+      "hero_id": "baptiste",
+      "hero_name": "바티스트",
+      "role": "support",
+      "pick_rate": 5.8,
+      "win_rate": 44.0,
+      "meta_score": 16.8,
+      "tier": "C"
+    },
+    {
+      "hero_id": "roadhog",
+      "hero_name": "로드호그",
+      "role": "tank",
+      "pick_rate": 6.3,
+      "win_rate": 43.3,
+      "meta_score": 15.1,
       "tier": "C"
     }
   ],
@@ -1387,53 +3231,53 @@
       "hero_id": "kiriko",
       "hero_name": "키리코",
       "role": "support",
-      "pick_rate": 48.6,
-      "win_rate": 50.2,
-      "meta_score": 70.6,
+      "pick_rate": 49.1,
+      "win_rate": 50.1,
+      "meta_score": 70.3,
       "tier": "A"
     },
     {
       "hero_id": "sierra",
       "hero_name": "시에라",
       "role": "damage",
-      "pick_rate": 32.4,
-      "win_rate": 52.9,
-      "meta_score": 65.4,
+      "pick_rate": 32.7,
+      "win_rate": 53.4,
+      "meta_score": 66.8,
       "tier": "A"
-    },
-    {
-      "hero_id": "illari",
-      "hero_name": "일리아리",
-      "role": "support",
-      "pick_rate": 15.3,
-      "win_rate": 52.8,
-      "meta_score": 51.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "reaper",
-      "hero_name": "리퍼",
-      "role": "damage",
-      "pick_rate": 13.7,
-      "win_rate": 53.1,
-      "meta_score": 50.6,
-      "tier": "B"
     },
     {
       "hero_id": "sigma",
       "hero_name": "시그마",
       "role": "tank",
       "pick_rate": 13.6,
-      "win_rate": 53.1,
-      "meta_score": 50.5,
+      "win_rate": 53.3,
+      "meta_score": 51.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "illari",
+      "hero_name": "일리아리",
+      "role": "support",
+      "pick_rate": 15.1,
+      "win_rate": 52.8,
+      "meta_score": 50.7,
+      "tier": "B"
+    },
+    {
+      "hero_id": "reaper",
+      "hero_name": "리퍼",
+      "role": "damage",
+      "pick_rate": 13.6,
+      "win_rate": 52.7,
+      "meta_score": 49.2,
       "tier": "B"
     },
     {
       "hero_id": "moira",
       "hero_name": "모이라",
       "role": "support",
-      "pick_rate": 23.9,
-      "win_rate": 49.6,
+      "pick_rate": 23.8,
+      "win_rate": 49.7,
       "meta_score": 48.5,
       "tier": "B"
     },
@@ -1441,45 +3285,18 @@
       "hero_id": "ana",
       "hero_name": "아나",
       "role": "support",
-      "pick_rate": 25.2,
-      "win_rate": 48.7,
-      "meta_score": 46.8,
+      "pick_rate": 25.3,
+      "win_rate": 48.6,
+      "meta_score": 46.4,
       "tier": "B"
     },
     {
       "hero_id": "mizuki",
       "hero_name": "미즈키",
       "role": "support",
-      "pick_rate": 14.1,
-      "win_rate": 51.6,
-      "meta_score": 46.4,
-      "tier": "B"
-    },
-    {
-      "hero_id": "anran",
-      "hero_name": "안란",
-      "role": "damage",
-      "pick_rate": 10.7,
-      "win_rate": 52.3,
-      "meta_score": 45.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zenyatta",
-      "hero_name": "젠야타",
-      "role": "support",
-      "pick_rate": 10.1,
-      "win_rate": 52.3,
-      "meta_score": 45.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "pharah",
-      "hero_name": "파라",
-      "role": "damage",
-      "pick_rate": 6.9,
-      "win_rate": 53.0,
-      "meta_score": 44.7,
+      "pick_rate": 13.7,
+      "win_rate": 51.7,
+      "meta_score": 46.3,
       "tier": "B"
     },
     {
@@ -1487,26 +3304,44 @@
       "hero_name": "시메트라",
       "role": "damage",
       "pick_rate": 3.3,
-      "win_rate": 53.9,
-      "meta_score": 44.4,
+      "win_rate": 54.2,
+      "meta_score": 45.3,
       "tier": "B"
     },
     {
-      "hero_id": "soldier76",
-      "hero_name": "솔저: 76",
+      "hero_id": "pharah",
+      "hero_name": "파라",
       "role": "damage",
-      "pick_rate": 18.8,
-      "win_rate": 49.0,
-      "meta_score": 42.5,
+      "pick_rate": 6.6,
+      "win_rate": 53.2,
+      "meta_score": 45.0,
+      "tier": "B"
+    },
+    {
+      "hero_id": "anran",
+      "hero_name": "안란",
+      "role": "damage",
+      "pick_rate": 10.8,
+      "win_rate": 52.0,
+      "meta_score": 44.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zenyatta",
+      "hero_name": "젠야타",
+      "role": "support",
+      "pick_rate": 10.2,
+      "win_rate": 52.1,
+      "meta_score": 44.6,
       "tier": "B"
     },
     {
       "hero_id": "wuyang",
       "hero_name": "우양",
       "role": "support",
-      "pick_rate": 10.8,
-      "win_rate": 51.2,
-      "meta_score": 42.5,
+      "pick_rate": 11.0,
+      "win_rate": 51.8,
+      "meta_score": 44.4,
       "tier": "B"
     },
     {
@@ -1514,8 +3349,8 @@
       "hero_name": "윈스턴",
       "role": "tank",
       "pick_rate": 7.3,
-      "win_rate": 52.0,
-      "meta_score": 42.0,
+      "win_rate": 52.1,
+      "meta_score": 42.2,
       "tier": "B"
     },
     {
@@ -1524,32 +3359,41 @@
       "role": "tank",
       "pick_rate": 8.6,
       "win_rate": 51.6,
-      "meta_score": 41.9,
+      "meta_score": 41.8,
       "tier": "B"
     },
     {
       "hero_id": "genji",
       "hero_name": "겐지",
       "role": "damage",
-      "pick_rate": 8.4,
-      "win_rate": 51.5,
-      "meta_score": 41.4,
+      "pick_rate": 8.2,
+      "win_rate": 51.6,
+      "meta_score": 41.5,
       "tier": "B"
     },
     {
       "hero_id": "venture",
       "hero_name": "벤처",
       "role": "damage",
-      "pick_rate": 2.3,
-      "win_rate": 53.0,
-      "meta_score": 40.9,
+      "pick_rate": 2.2,
+      "win_rate": 53.1,
+      "meta_score": 41.1,
+      "tier": "B"
+    },
+    {
+      "hero_id": "soldier76",
+      "hero_name": "솔저: 76",
+      "role": "damage",
+      "pick_rate": 18.8,
+      "win_rate": 48.6,
+      "meta_score": 41.1,
       "tier": "B"
     },
     {
       "hero_id": "emre",
       "hero_name": "엠레",
       "role": "damage",
-      "pick_rate": 16.9,
+      "pick_rate": 17.1,
       "win_rate": 49.0,
       "meta_score": 40.9,
       "tier": "B"
@@ -1558,18 +3402,27 @@
       "hero_id": "juno",
       "hero_name": "주노",
       "role": "support",
-      "pick_rate": 16.9,
-      "win_rate": 48.2,
-      "meta_score": 38.5,
+      "pick_rate": 16.6,
+      "win_rate": 48.4,
+      "meta_score": 38.7,
       "tier": "B"
     },
     {
       "hero_id": "reinhardt",
       "hero_name": "라인하르트",
       "role": "tank",
-      "pick_rate": 7.9,
-      "win_rate": 50.5,
-      "meta_score": 38.0,
+      "pick_rate": 7.8,
+      "win_rate": 50.7,
+      "meta_score": 38.5,
+      "tier": "B"
+    },
+    {
+      "hero_id": "hazard",
+      "hero_name": "해저드",
+      "role": "tank",
+      "pick_rate": 3.6,
+      "win_rate": 51.5,
+      "meta_score": 37.4,
       "tier": "B"
     },
     {
@@ -1577,17 +3430,8 @@
       "hero_name": "둠피스트",
       "role": "tank",
       "pick_rate": 2.6,
-      "win_rate": 51.9,
-      "meta_score": 37.8,
-      "tier": "B"
-    },
-    {
-      "hero_id": "hazard",
-      "hero_name": "해저드",
-      "role": "tank",
-      "pick_rate": 3.5,
-      "win_rate": 51.3,
-      "meta_score": 36.8,
+      "win_rate": 51.6,
+      "meta_score": 36.9,
       "tier": "B"
     },
     {
@@ -1595,8 +3439,8 @@
       "hero_name": "라마트라",
       "role": "tank",
       "pick_rate": 9.8,
-      "win_rate": 49.4,
-      "meta_score": 36.3,
+      "win_rate": 49.5,
+      "meta_score": 36.5,
       "tier": "B"
     },
     {
@@ -1604,17 +3448,8 @@
       "hero_name": "메이",
       "role": "damage",
       "pick_rate": 5.2,
-      "win_rate": 50.6,
-      "meta_score": 36.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zarya",
-      "hero_name": "자리야",
-      "role": "tank",
-      "pick_rate": 6.6,
-      "win_rate": 50.0,
-      "meta_score": 35.4,
+      "win_rate": 50.7,
+      "meta_score": 36.3,
       "tier": "B"
     },
     {
@@ -1622,35 +3457,26 @@
       "hero_name": "트레이서",
       "role": "damage",
       "pick_rate": 5.3,
-      "win_rate": 50.3,
-      "meta_score": 35.3,
+      "win_rate": 50.5,
+      "meta_score": 35.8,
+      "tier": "B"
+    },
+    {
+      "hero_id": "zarya",
+      "hero_name": "자리야",
+      "role": "tank",
+      "pick_rate": 6.5,
+      "win_rate": 49.9,
+      "meta_score": 35.0,
       "tier": "B"
     },
     {
       "hero_id": "ashe",
       "hero_name": "애쉬",
       "role": "damage",
-      "pick_rate": 8.2,
-      "win_rate": 49.5,
-      "meta_score": 35.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "bastion",
-      "hero_name": "바스티온",
-      "role": "damage",
-      "pick_rate": 11.8,
-      "win_rate": 47.6,
-      "meta_score": 32.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "orisa",
-      "hero_name": "오리사",
-      "role": "tank",
-      "pick_rate": 15.1,
-      "win_rate": 46.6,
-      "meta_score": 32.2,
+      "pick_rate": 8.1,
+      "win_rate": 49.4,
+      "meta_score": 34.8,
       "tier": "C"
     },
     {
@@ -1658,17 +3484,26 @@
       "hero_name": "캐서디",
       "role": "damage",
       "pick_rate": 12.1,
-      "win_rate": 47.2,
-      "meta_score": 31.6,
+      "win_rate": 47.7,
+      "meta_score": 33.0,
       "tier": "C"
     },
     {
-      "hero_id": "junker_queen",
-      "hero_name": "정커퀸",
+      "hero_id": "orisa",
+      "hero_name": "오리사",
       "role": "tank",
-      "pick_rate": 1.8,
-      "win_rate": 49.9,
-      "meta_score": 31.2,
+      "pick_rate": 15.3,
+      "win_rate": 46.6,
+      "meta_score": 32.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "bastion",
+      "hero_name": "바스티온",
+      "role": "damage",
+      "pick_rate": 11.6,
+      "win_rate": 47.1,
+      "meta_score": 30.8,
       "tier": "C"
     },
     {
@@ -1676,53 +3511,35 @@
       "hero_name": "D.Va",
       "role": "tank",
       "pick_rate": 10.4,
-      "win_rate": 47.5,
-      "meta_score": 31.1,
+      "win_rate": 47.4,
+      "meta_score": 30.7,
+      "tier": "C"
+    },
+    {
+      "hero_id": "junker_queen",
+      "hero_name": "정커퀸",
+      "role": "tank",
+      "pick_rate": 1.7,
+      "win_rate": 49.7,
+      "meta_score": 30.5,
       "tier": "C"
     },
     {
       "hero_id": "lucio",
       "hero_name": "루시우",
       "role": "support",
-      "pick_rate": 8.3,
-      "win_rate": 48.1,
-      "meta_score": 31.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "wrecking_ball",
-      "hero_name": "레킹볼",
-      "role": "tank",
-      "pick_rate": 2.1,
-      "win_rate": 49.7,
-      "meta_score": 30.8,
-      "tier": "C"
-    },
-    {
-      "hero_id": "brigitte",
-      "hero_name": "브리기테",
-      "role": "support",
-      "pick_rate": 2.8,
-      "win_rate": 49.5,
-      "meta_score": 30.8,
+      "pick_rate": 8.4,
+      "win_rate": 47.7,
+      "meta_score": 29.9,
       "tier": "C"
     },
     {
       "hero_id": "mauga",
       "hero_name": "마우가",
       "role": "tank",
-      "pick_rate": 5.9,
-      "win_rate": 48.5,
-      "meta_score": 30.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "torbjorn",
-      "hero_name": "토르비욘",
-      "role": "damage",
-      "pick_rate": 4.1,
-      "win_rate": 48.8,
-      "meta_score": 29.8,
+      "pick_rate": 5.8,
+      "win_rate": 48.4,
+      "meta_score": 29.9,
       "tier": "C"
     },
     {
@@ -1730,26 +3547,44 @@
       "hero_name": "에코",
       "role": "damage",
       "pick_rate": 3.6,
-      "win_rate": 48.8,
-      "meta_score": 29.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "widowmaker",
-      "hero_name": "위도우메이커",
-      "role": "damage",
-      "pick_rate": 2.9,
       "win_rate": 49.0,
-      "meta_score": 29.4,
+      "meta_score": 29.9,
       "tier": "C"
     },
     {
-      "hero_id": "lifeweaver",
-      "hero_name": "라이프위버",
+      "hero_id": "brigitte",
+      "hero_name": "브리기테",
       "role": "support",
-      "pick_rate": 5.9,
-      "win_rate": 48.0,
-      "meta_score": 28.9,
+      "pick_rate": 2.8,
+      "win_rate": 49.1,
+      "meta_score": 29.6,
+      "tier": "C"
+    },
+    {
+      "hero_id": "wrecking_ball",
+      "hero_name": "레킹볼",
+      "role": "tank",
+      "pick_rate": 2.1,
+      "win_rate": 49.2,
+      "meta_score": 29.3,
+      "tier": "C"
+    },
+    {
+      "hero_id": "torbjorn",
+      "hero_name": "토르비욘",
+      "role": "damage",
+      "pick_rate": 4.1,
+      "win_rate": 48.6,
+      "meta_score": 29.1,
+      "tier": "C"
+    },
+    {
+      "hero_id": "hanzo",
+      "hero_name": "한조",
+      "role": "damage",
+      "pick_rate": 5.0,
+      "win_rate": 48.2,
+      "meta_score": 28.7,
       "tier": "C"
     },
     {
@@ -1757,8 +3592,17 @@
       "hero_name": "솜브라",
       "role": "damage",
       "pick_rate": 2.4,
-      "win_rate": 48.9,
-      "meta_score": 28.7,
+      "win_rate": 48.8,
+      "meta_score": 28.4,
+      "tier": "C"
+    },
+    {
+      "hero_id": "lifeweaver",
+      "hero_name": "라이프위버",
+      "role": "support",
+      "pick_rate": 6.0,
+      "win_rate": 47.7,
+      "meta_score": 28.0,
       "tier": "C"
     },
     {
@@ -1771,400 +3615,11 @@
       "tier": "C"
     },
     {
-      "hero_id": "mercy",
-      "hero_name": "메르시",
-      "role": "support",
-      "pick_rate": 9.6,
-      "win_rate": 46.3,
-      "meta_score": 26.8,
-      "tier": "C"
-    },
-    {
-      "hero_id": "hanzo",
-      "hero_name": "한조",
-      "role": "damage",
-      "pick_rate": 4.9,
-      "win_rate": 47.5,
-      "meta_score": 26.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "junkrat",
-      "hero_name": "정크랫",
-      "role": "damage",
-      "pick_rate": 6.9,
-      "win_rate": 46.8,
-      "meta_score": 26.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "freja",
-      "hero_name": "프레야",
-      "role": "damage",
-      "pick_rate": 3.0,
-      "win_rate": 47.4,
-      "meta_score": 24.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "jetpack_cat",
-      "hero_name": "제트팩 캣",
-      "role": "support",
-      "pick_rate": 3.1,
-      "win_rate": 46.7,
-      "meta_score": 22.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sojourn",
-      "hero_name": "소전",
-      "role": "damage",
-      "pick_rate": 13.8,
-      "win_rate": 42.8,
-      "meta_score": 19.8,
-      "tier": "C"
-    },
-    {
-      "hero_id": "baptiste",
-      "hero_name": "바티스트",
-      "role": "support",
-      "pick_rate": 5.4,
-      "win_rate": 44.7,
-      "meta_score": 18.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "roadhog",
-      "hero_name": "로드호그",
-      "role": "tank",
-      "pick_rate": 4.9,
-      "win_rate": 44.5,
-      "meta_score": 17.5,
-      "tier": "C"
-    }
-  ],
-  "다이아몬드": [
-    {
-      "hero_id": "ana",
-      "hero_name": "아나",
-      "role": "support",
-      "pick_rate": 56.6,
-      "win_rate": 50.2,
-      "meta_score": 70.6,
-      "tier": "A"
-    },
-    {
-      "hero_id": "kiriko",
-      "hero_name": "키리코",
-      "role": "support",
-      "pick_rate": 46.4,
-      "win_rate": 49.8,
-      "meta_score": 62.2,
-      "tier": "A"
-    },
-    {
-      "hero_id": "illari",
-      "hero_name": "일리아리",
-      "role": "support",
-      "pick_rate": 16.5,
-      "win_rate": 54.8,
-      "meta_score": 56.1,
-      "tier": "A"
-    },
-    {
-      "hero_id": "pharah",
-      "hero_name": "파라",
-      "role": "damage",
-      "pick_rate": 7.2,
-      "win_rate": 56.5,
-      "meta_score": 54.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "emre",
-      "hero_name": "엠레",
-      "role": "damage",
-      "pick_rate": 19.9,
-      "win_rate": 51.7,
-      "meta_score": 49.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "reaper",
-      "hero_name": "리퍼",
-      "role": "damage",
-      "pick_rate": 11.6,
-      "win_rate": 53.5,
-      "meta_score": 48.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "hazard",
-      "hero_name": "해저드",
-      "role": "tank",
-      "pick_rate": 8.9,
-      "win_rate": 54.0,
-      "meta_score": 48.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "winston",
-      "hero_name": "윈스턴",
-      "role": "tank",
-      "pick_rate": 15.0,
-      "win_rate": 52.3,
-      "meta_score": 47.5,
-      "tier": "B"
-    },
-    {
-      "hero_id": "genji",
-      "hero_name": "겐지",
-      "role": "damage",
-      "pick_rate": 17.9,
-      "win_rate": 51.5,
-      "meta_score": 47.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "sigma",
-      "hero_name": "시그마",
-      "role": "tank",
-      "pick_rate": 11.4,
-      "win_rate": 52.7,
-      "meta_score": 46.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "tracer",
-      "hero_name": "트레이서",
-      "role": "damage",
-      "pick_rate": 16.9,
-      "win_rate": 51.3,
-      "meta_score": 45.8,
-      "tier": "B"
-    },
-    {
-      "hero_id": "wuyang",
-      "hero_name": "우양",
-      "role": "support",
-      "pick_rate": 14.7,
-      "win_rate": 51.5,
-      "meta_score": 44.9,
-      "tier": "B"
-    },
-    {
-      "hero_id": "anran",
-      "hero_name": "안란",
-      "role": "damage",
-      "pick_rate": 6.9,
-      "win_rate": 52.1,
-      "meta_score": 41.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "echo",
-      "hero_name": "에코",
-      "role": "damage",
-      "pick_rate": 6.7,
-      "win_rate": 51.9,
-      "meta_score": 40.4,
-      "tier": "B"
-    },
-    {
-      "hero_id": "domina",
-      "hero_name": "도미나",
-      "role": "tank",
-      "pick_rate": 4.5,
-      "win_rate": 52.0,
-      "meta_score": 39.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "venture",
-      "hero_name": "벤처",
-      "role": "damage",
-      "pick_rate": 3.2,
-      "win_rate": 52.0,
-      "meta_score": 38.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "ashe",
-      "hero_name": "애쉬",
-      "role": "damage",
-      "pick_rate": 7.5,
-      "win_rate": 51.0,
-      "meta_score": 38.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zenyatta",
-      "hero_name": "젠야타",
-      "role": "support",
-      "pick_rate": 11.2,
-      "win_rate": 49.9,
-      "meta_score": 37.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "sierra",
-      "hero_name": "시에라",
-      "role": "damage",
-      "pick_rate": 19.1,
-      "win_rate": 47.8,
-      "meta_score": 36.9,
-      "tier": "B"
-    },
-    {
-      "hero_id": "soldier76",
-      "hero_name": "솔저: 76",
-      "role": "damage",
-      "pick_rate": 11.4,
-      "win_rate": 49.6,
-      "meta_score": 36.9,
-      "tier": "B"
-    },
-    {
-      "hero_id": "symmetra",
-      "hero_name": "시메트라",
-      "role": "damage",
-      "pick_rate": 3.0,
-      "win_rate": 51.4,
-      "meta_score": 36.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "dva",
-      "hero_name": "D.Va",
-      "role": "tank",
-      "pick_rate": 6.6,
-      "win_rate": 50.5,
-      "meta_score": 36.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zarya",
-      "hero_name": "자리야",
-      "role": "tank",
-      "pick_rate": 8.0,
-      "win_rate": 50.1,
-      "meta_score": 36.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "cassidy",
-      "hero_name": "캐서디",
-      "role": "damage",
-      "pick_rate": 25.3,
-      "win_rate": 45.8,
-      "meta_score": 35.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "doomfist",
-      "hero_name": "둠피스트",
-      "role": "tank",
-      "pick_rate": 8.6,
-      "win_rate": 49.6,
-      "meta_score": 34.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "juno",
-      "hero_name": "주노",
-      "role": "support",
-      "pick_rate": 4.4,
-      "win_rate": 50.2,
-      "meta_score": 33.7,
-      "tier": "C"
-    },
-    {
       "hero_id": "widowmaker",
       "hero_name": "위도우메이커",
       "role": "damage",
-      "pick_rate": 4.1,
-      "win_rate": 49.7,
-      "meta_score": 32.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "ramattra",
-      "hero_name": "라마트라",
-      "role": "tank",
-      "pick_rate": 4.7,
-      "win_rate": 49.5,
-      "meta_score": 31.8,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mizuki",
-      "hero_name": "미즈키",
-      "role": "support",
-      "pick_rate": 7.9,
-      "win_rate": 48.7,
-      "meta_score": 31.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "brigitte",
-      "hero_name": "브리기테",
-      "role": "support",
-      "pick_rate": 6.6,
-      "win_rate": 49.0,
-      "meta_score": 31.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "hanzo",
-      "hero_name": "한조",
-      "role": "damage",
-      "pick_rate": 5.7,
-      "win_rate": 48.6,
-      "meta_score": 29.8,
-      "tier": "C"
-    },
-    {
-      "hero_id": "lucio",
-      "hero_name": "루시우",
-      "role": "support",
-      "pick_rate": 5.5,
-      "win_rate": 48.6,
-      "meta_score": 29.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mercy",
-      "hero_name": "메르시",
-      "role": "support",
-      "pick_rate": 6.0,
-      "win_rate": 48.3,
-      "meta_score": 29.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "orisa",
-      "hero_name": "오리사",
-      "role": "tank",
-      "pick_rate": 9.3,
-      "win_rate": 47.5,
-      "meta_score": 29.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "junker_queen",
-      "hero_name": "정커퀸",
-      "role": "tank",
-      "pick_rate": 2.1,
-      "win_rate": 49.2,
-      "meta_score": 29.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "lifeweaver",
-      "hero_name": "라이프위버",
-      "role": "support",
-      "pick_rate": 6.8,
-      "win_rate": 47.4,
+      "pick_rate": 3.0,
+      "win_rate": 48.2,
       "meta_score": 27.0,
       "tier": "C"
     },
@@ -2172,1519 +3627,64 @@
       "hero_id": "junkrat",
       "hero_name": "정크랫",
       "role": "damage",
-      "pick_rate": 2.7,
-      "win_rate": 48.0,
-      "meta_score": 25.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sojourn",
-      "hero_name": "소전",
-      "role": "damage",
-      "pick_rate": 12.2,
-      "win_rate": 45.7,
-      "meta_score": 25.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mauga",
-      "hero_name": "마우가",
-      "role": "tank",
-      "pick_rate": 5.3,
-      "win_rate": 47.3,
-      "meta_score": 25.6,
-      "tier": "C"
-    },
-    {
-      "hero_id": "moira",
-      "hero_name": "모이라",
-      "role": "support",
-      "pick_rate": 7.5,
-      "win_rate": 46.7,
-      "meta_score": 25.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mei",
-      "hero_name": "메이",
-      "role": "damage",
-      "pick_rate": 4.1,
-      "win_rate": 47.4,
-      "meta_score": 25.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "torbjorn",
-      "hero_name": "토르비욘",
-      "role": "damage",
-      "pick_rate": 2.7,
-      "win_rate": 47.2,
-      "meta_score": 23.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "reinhardt",
-      "hero_name": "라인하르트",
-      "role": "tank",
-      "pick_rate": 6.3,
-      "win_rate": 45.9,
-      "meta_score": 22.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "wrecking_ball",
-      "hero_name": "레킹볼",
-      "role": "tank",
-      "pick_rate": 3.8,
-      "win_rate": 46.5,
-      "meta_score": 22.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sombra",
-      "hero_name": "솜브라",
-      "role": "damage",
-      "pick_rate": 3.3,
-      "win_rate": 46.4,
-      "meta_score": 21.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "freja",
-      "hero_name": "프레야",
-      "role": "damage",
-      "pick_rate": 3.3,
-      "win_rate": 46.3,
-      "meta_score": 21.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "jetpack_cat",
-      "hero_name": "제트팩 캣",
-      "role": "support",
-      "pick_rate": 3.8,
-      "win_rate": 45.6,
-      "meta_score": 19.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "bastion",
-      "hero_name": "바스티온",
-      "role": "damage",
-      "pick_rate": 3.3,
-      "win_rate": 45.6,
-      "meta_score": 19.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "baptiste",
-      "hero_name": "바티스트",
-      "role": "support",
-      "pick_rate": 6.2,
-      "win_rate": 43.9,
-      "meta_score": 16.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "vendetta",
-      "hero_name": "벤데타",
-      "role": "damage",
-      "pick_rate": 2.0,
-      "win_rate": 43.7,
-      "meta_score": 12.5,
-      "tier": "D"
-    },
-    {
-      "hero_id": "roadhog",
-      "hero_name": "로드호그",
-      "role": "tank",
-      "pick_rate": 5.4,
-      "win_rate": 40.2,
-      "meta_score": 4.4,
-      "tier": "D"
-    }
-  ],
-  "전체": [
-    {
-      "hero_id": "kiriko",
-      "hero_name": "키리코",
-      "role": "support",
-      "pick_rate": 47.8,
-      "win_rate": 49.8,
-      "meta_score": 69.4,
-      "tier": "A"
-    },
-    {
-      "hero_id": "ana",
-      "hero_name": "아나",
-      "role": "support",
-      "pick_rate": 45.1,
-      "win_rate": 49.3,
-      "meta_score": 65.6,
-      "tier": "A"
-    },
-    {
-      "hero_id": "illari",
-      "hero_name": "일리아리",
-      "role": "support",
-      "pick_rate": 14.6,
-      "win_rate": 54.1,
-      "meta_score": 54.5,
-      "tier": "B"
-    },
-    {
-      "hero_id": "sierra",
-      "hero_name": "시에라",
-      "role": "damage",
-      "pick_rate": 26.0,
-      "win_rate": 50.6,
-      "meta_score": 53.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "pharah",
-      "hero_name": "파라",
-      "role": "damage",
-      "pick_rate": 6.7,
-      "win_rate": 54.5,
-      "meta_score": 49.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "sigma",
-      "hero_name": "시그마",
-      "role": "tank",
-      "pick_rate": 12.2,
-      "win_rate": 52.6,
-      "meta_score": 48.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "reaper",
-      "hero_name": "리퍼",
-      "role": "damage",
-      "pick_rate": 13.5,
-      "win_rate": 52.2,
-      "meta_score": 47.9,
-      "tier": "B"
-    },
-    {
-      "hero_id": "genji",
-      "hero_name": "겐지",
-      "role": "damage",
-      "pick_rate": 14.3,
-      "win_rate": 51.8,
-      "meta_score": 47.4,
-      "tier": "B"
-    },
-    {
-      "hero_id": "emre",
-      "hero_name": "엠레",
-      "role": "damage",
-      "pick_rate": 17.5,
-      "win_rate": 50.1,
-      "meta_score": 44.9,
-      "tier": "B"
-    },
-    {
-      "hero_id": "anran",
-      "hero_name": "안란",
-      "role": "damage",
-      "pick_rate": 9.3,
-      "win_rate": 52.3,
-      "meta_score": 44.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "hazard",
-      "hero_name": "해저드",
-      "role": "tank",
-      "pick_rate": 6.0,
-      "win_rate": 53.2,
-      "meta_score": 44.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "winston",
-      "hero_name": "윈스턴",
-      "role": "tank",
-      "pick_rate": 11.2,
-      "win_rate": 51.7,
-      "meta_score": 44.5,
-      "tier": "B"
-    },
-    {
-      "hero_id": "wuyang",
-      "hero_name": "우양",
-      "role": "support",
-      "pick_rate": 11.4,
-      "win_rate": 51.4,
-      "meta_score": 43.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zenyatta",
-      "hero_name": "젠야타",
-      "role": "support",
-      "pick_rate": 10.7,
-      "win_rate": 51.4,
-      "meta_score": 43.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "symmetra",
-      "hero_name": "시메트라",
-      "role": "damage",
-      "pick_rate": 3.3,
-      "win_rate": 53.4,
-      "meta_score": 43.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "domina",
-      "hero_name": "도미나",
-      "role": "tank",
-      "pick_rate": 6.2,
-      "win_rate": 51.8,
-      "meta_score": 40.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "tracer",
-      "hero_name": "트레이서",
-      "role": "damage",
-      "pick_rate": 9.8,
-      "win_rate": 50.6,
-      "meta_score": 40.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "mizuki",
-      "hero_name": "미즈키",
-      "role": "support",
-      "pick_rate": 10.8,
-      "win_rate": 50.2,
-      "meta_score": 39.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "soldier76",
-      "hero_name": "솔저: 76",
-      "role": "damage",
-      "pick_rate": 16.1,
-      "win_rate": 48.6,
-      "meta_score": 39.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "venture",
-      "hero_name": "벤처",
-      "role": "damage",
-      "pick_rate": 2.9,
-      "win_rate": 52.2,
-      "meta_score": 39.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "moira",
-      "hero_name": "모이라",
-      "role": "support",
-      "pick_rate": 15.6,
-      "win_rate": 48.0,
-      "meta_score": 37.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "echo",
-      "hero_name": "에코",
-      "role": "damage",
-      "pick_rate": 4.9,
-      "win_rate": 50.8,
-      "meta_score": 36.5,
-      "tier": "B"
-    },
-    {
-      "hero_id": "doomfist",
-      "hero_name": "둠피스트",
-      "role": "tank",
-      "pick_rate": 5.1,
-      "win_rate": 50.7,
-      "meta_score": 36.4,
-      "tier": "B"
-    },
-    {
-      "hero_id": "ashe",
-      "hero_name": "애쉬",
-      "role": "damage",
-      "pick_rate": 8.3,
-      "win_rate": 49.8,
-      "meta_score": 36.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zarya",
-      "hero_name": "자리야",
-      "role": "tank",
-      "pick_rate": 8.6,
-      "win_rate": 49.6,
-      "meta_score": 36.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "cassidy",
-      "hero_name": "캐서디",
-      "role": "damage",
-      "pick_rate": 19.5,
-      "win_rate": 46.4,
-      "meta_score": 35.5,
-      "tier": "B"
-    },
-    {
-      "hero_id": "dva",
-      "hero_name": "D.Va",
-      "role": "tank",
-      "pick_rate": 8.4,
-      "win_rate": 49.2,
-      "meta_score": 34.6,
-      "tier": "C"
-    },
-    {
-      "hero_id": "juno",
-      "hero_name": "주노",
-      "role": "support",
-      "pick_rate": 8.3,
-      "win_rate": 48.9,
-      "meta_score": 33.6,
-      "tier": "C"
-    },
-    {
-      "hero_id": "lifeweaver",
-      "hero_name": "라이프위버",
-      "role": "support",
-      "pick_rate": 7.5,
-      "win_rate": 49.0,
-      "meta_score": 33.3,
-      "tier": "C"
-    },
-    {
-      "hero_id": "ramattra",
-      "hero_name": "라마트라",
-      "role": "tank",
-      "pick_rate": 6.7,
-      "win_rate": 49.2,
-      "meta_score": 33.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "reinhardt",
-      "hero_name": "라인하르트",
-      "role": "tank",
-      "pick_rate": 7.3,
-      "win_rate": 48.8,
-      "meta_score": 32.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "widowmaker",
-      "hero_name": "위도우메이커",
-      "role": "damage",
-      "pick_rate": 3.4,
-      "win_rate": 49.8,
-      "meta_score": 32.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mei",
-      "hero_name": "메이",
-      "role": "damage",
-      "pick_rate": 5.2,
-      "win_rate": 49.1,
-      "meta_score": 31.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "lucio",
-      "hero_name": "루시우",
-      "role": "support",
-      "pick_rate": 6.5,
-      "win_rate": 48.7,
-      "meta_score": 31.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "hanzo",
-      "hero_name": "한조",
-      "role": "damage",
-      "pick_rate": 5.7,
-      "win_rate": 48.7,
-      "meta_score": 30.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "orisa",
-      "hero_name": "오리사",
-      "role": "tank",
-      "pick_rate": 12.1,
-      "win_rate": 46.8,
-      "meta_score": 30.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "junker_queen",
-      "hero_name": "정커퀸",
-      "role": "tank",
-      "pick_rate": 2.2,
-      "win_rate": 49.4,
-      "meta_score": 30.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "brigitte",
-      "hero_name": "브리기테",
-      "role": "support",
-      "pick_rate": 4.4,
-      "win_rate": 48.6,
-      "meta_score": 29.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "torbjorn",
-      "hero_name": "토르비욘",
-      "role": "damage",
-      "pick_rate": 3.1,
-      "win_rate": 48.9,
-      "meta_score": 29.3,
-      "tier": "C"
-    },
-    {
-      "hero_id": "wrecking_ball",
-      "hero_name": "레킹볼",
-      "role": "tank",
-      "pick_rate": 2.9,
-      "win_rate": 48.9,
-      "meta_score": 29.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mauga",
-      "hero_name": "마우가",
-      "role": "tank",
-      "pick_rate": 5.2,
-      "win_rate": 48.1,
-      "meta_score": 28.7,
+      "pick_rate": 7.0,
+      "win_rate": 47.0,
+      "meta_score": 26.7,
       "tier": "C"
     },
     {
       "hero_id": "mercy",
       "hero_name": "메르시",
       "role": "support",
-      "pick_rate": 7.9,
-      "win_rate": 47.1,
-      "meta_score": 27.9,
+      "pick_rate": 9.5,
+      "win_rate": 46.3,
+      "meta_score": 26.6,
       "tier": "C"
     },
     {
-      "hero_id": "junkrat",
-      "hero_name": "정크랫",
+      "hero_id": "freja",
+      "hero_name": "프레야",
       "role": "damage",
-      "pick_rate": 4.4,
-      "win_rate": 47.7,
-      "meta_score": 26.8,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sombra",
-      "hero_name": "솜브라",
-      "role": "damage",
-      "pick_rate": 2.7,
-      "win_rate": 47.9,
-      "meta_score": 26.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "bastion",
-      "hero_name": "바스티온",
-      "role": "damage",
-      "pick_rate": 6.6,
-      "win_rate": 46.5,
-      "meta_score": 25.0,
+      "pick_rate": 2.9,
+      "win_rate": 47.4,
+      "meta_score": 24.6,
       "tier": "C"
     },
     {
       "hero_id": "jetpack_cat",
       "hero_name": "제트팩 캣",
       "role": "support",
-      "pick_rate": 3.6,
-      "win_rate": 46.8,
-      "meta_score": 23.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sojourn",
-      "hero_name": "소전",
-      "role": "damage",
-      "pick_rate": 11.4,
-      "win_rate": 44.6,
+      "pick_rate": 3.2,
+      "win_rate": 46.9,
       "meta_score": 23.3,
       "tier": "C"
     },
     {
-      "hero_id": "freja",
-      "hero_name": "프레야",
+      "hero_id": "sojourn",
+      "hero_name": "소전",
       "role": "damage",
-      "pick_rate": 3.0,
-      "win_rate": 46.9,
-      "meta_score": 23.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "vendetta",
-      "hero_name": "벤데타",
-      "role": "damage",
-      "pick_rate": 2.4,
-      "win_rate": 46.0,
-      "meta_score": 20.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "baptiste",
-      "hero_name": "바티스트",
-      "role": "support",
-      "pick_rate": 5.8,
-      "win_rate": 44.2,
-      "meta_score": 17.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "roadhog",
-      "hero_name": "로드호그",
-      "role": "tank",
-      "pick_rate": 5.8,
+      "pick_rate": 13.9,
       "win_rate": 42.8,
-      "meta_score": 13.3,
-      "tier": "D"
-    }
-  ],
-  "플래티넘": [
-    {
-      "hero_id": "ana",
-      "hero_name": "아나",
-      "role": "support",
-      "pick_rate": 52.9,
-      "win_rate": 49.6,
-      "meta_score": 68.8,
-      "tier": "A"
-    },
-    {
-      "hero_id": "kiriko",
-      "hero_name": "키리코",
-      "role": "support",
-      "pick_rate": 47.6,
-      "win_rate": 49.5,
-      "meta_score": 64.5,
-      "tier": "A"
-    },
-    {
-      "hero_id": "illari",
-      "hero_name": "일리아리",
-      "role": "support",
-      "pick_rate": 14.5,
-      "win_rate": 54.5,
-      "meta_score": 54.5,
-      "tier": "B"
-    },
-    {
-      "hero_id": "pharah",
-      "hero_name": "파라",
-      "role": "damage",
-      "pick_rate": 6.7,
-      "win_rate": 55.2,
-      "meta_score": 50.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "genji",
-      "hero_name": "겐지",
-      "role": "damage",
-      "pick_rate": 16.7,
-      "win_rate": 51.8,
-      "meta_score": 48.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "sierra",
-      "hero_name": "시에라",
-      "role": "damage",
-      "pick_rate": 24.2,
-      "win_rate": 49.7,
-      "meta_score": 47.4,
-      "tier": "B"
-    },
-    {
-      "hero_id": "reaper",
-      "hero_name": "리퍼",
-      "role": "damage",
-      "pick_rate": 12.7,
-      "win_rate": 52.5,
-      "meta_score": 47.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "sigma",
-      "hero_name": "시그마",
-      "role": "tank",
-      "pick_rate": 11.6,
-      "win_rate": 52.6,
-      "meta_score": 46.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "hazard",
-      "hero_name": "해저드",
-      "role": "tank",
-      "pick_rate": 6.9,
-      "win_rate": 53.7,
-      "meta_score": 46.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "winston",
-      "hero_name": "윈스턴",
-      "role": "tank",
-      "pick_rate": 12.4,
-      "win_rate": 52.2,
-      "meta_score": 46.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "emre",
-      "hero_name": "엠레",
-      "role": "damage",
-      "pick_rate": 17.8,
-      "win_rate": 50.5,
-      "meta_score": 45.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "anran",
-      "hero_name": "안란",
-      "role": "damage",
-      "pick_rate": 8.8,
-      "win_rate": 52.7,
-      "meta_score": 44.8,
-      "tier": "B"
-    },
-    {
-      "hero_id": "wuyang",
-      "hero_name": "우양",
-      "role": "support",
-      "pick_rate": 11.8,
-      "win_rate": 51.7,
-      "meta_score": 44.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zenyatta",
-      "hero_name": "젠야타",
-      "role": "support",
-      "pick_rate": 11.4,
-      "win_rate": 51.7,
-      "meta_score": 43.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "symmetra",
-      "hero_name": "시메트라",
-      "role": "damage",
-      "pick_rate": 3.5,
-      "win_rate": 53.2,
-      "meta_score": 42.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "tracer",
-      "hero_name": "트레이서",
-      "role": "damage",
-      "pick_rate": 10.8,
-      "win_rate": 50.9,
-      "meta_score": 40.9,
-      "tier": "B"
-    },
-    {
-      "hero_id": "domina",
-      "hero_name": "도미나",
-      "role": "tank",
-      "pick_rate": 5.3,
-      "win_rate": 51.9,
-      "meta_score": 39.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "venture",
-      "hero_name": "벤처",
-      "role": "damage",
-      "pick_rate": 3.1,
-      "win_rate": 52.1,
-      "meta_score": 38.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "echo",
-      "hero_name": "에코",
-      "role": "damage",
-      "pick_rate": 5.5,
-      "win_rate": 51.3,
-      "meta_score": 38.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "soldier76",
-      "hero_name": "솔저: 76",
-      "role": "damage",
-      "pick_rate": 14.4,
-      "win_rate": 48.9,
-      "meta_score": 37.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "doomfist",
-      "hero_name": "둠피스트",
-      "role": "tank",
-      "pick_rate": 6.2,
-      "win_rate": 50.7,
-      "meta_score": 36.8,
-      "tier": "B"
-    },
-    {
-      "hero_id": "dva",
-      "hero_name": "D.Va",
-      "role": "tank",
-      "pick_rate": 7.9,
-      "win_rate": 50.1,
-      "meta_score": 36.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "ashe",
-      "hero_name": "애쉬",
-      "role": "damage",
-      "pick_rate": 8.5,
-      "win_rate": 49.6,
-      "meta_score": 35.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "mizuki",
-      "hero_name": "미즈키",
-      "role": "support",
-      "pick_rate": 9.5,
-      "win_rate": 49.1,
-      "meta_score": 34.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "cassidy",
-      "hero_name": "캐서디",
-      "role": "damage",
-      "pick_rate": 22.3,
-      "win_rate": 45.7,
-      "meta_score": 34.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "lifeweaver",
-      "hero_name": "라이프위버",
-      "role": "support",
-      "pick_rate": 7.9,
-      "win_rate": 48.8,
-      "meta_score": 32.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "widowmaker",
-      "hero_name": "위도우메이커",
-      "role": "damage",
-      "pick_rate": 3.6,
-      "win_rate": 49.9,
-      "meta_score": 32.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "zarya",
-      "hero_name": "자리야",
-      "role": "tank",
-      "pick_rate": 8.8,
-      "win_rate": 48.3,
-      "meta_score": 31.6,
-      "tier": "C"
-    },
-    {
-      "hero_id": "juno",
-      "hero_name": "주노",
-      "role": "support",
-      "pick_rate": 6.0,
-      "win_rate": 48.9,
-      "meta_score": 31.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "hanzo",
-      "hero_name": "한조",
-      "role": "damage",
-      "pick_rate": 5.8,
-      "win_rate": 48.9,
-      "meta_score": 31.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "ramattra",
-      "hero_name": "라마트라",
-      "role": "tank",
-      "pick_rate": 5.7,
-      "win_rate": 48.9,
-      "meta_score": 31.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "lucio",
-      "hero_name": "루시우",
-      "role": "support",
-      "pick_rate": 5.3,
-      "win_rate": 48.9,
-      "meta_score": 30.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "moira",
-      "hero_name": "모이라",
-      "role": "support",
-      "pick_rate": 11.6,
-      "win_rate": 47.2,
-      "meta_score": 30.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mercy",
-      "hero_name": "메르시",
-      "role": "support",
-      "pick_rate": 7.0,
-      "win_rate": 48.2,
-      "meta_score": 29.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mei",
-      "hero_name": "메이",
-      "role": "damage",
-      "pick_rate": 5.2,
-      "win_rate": 48.6,
-      "meta_score": 29.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "junker_queen",
-      "hero_name": "정커퀸",
-      "role": "tank",
-      "pick_rate": 2.4,
-      "win_rate": 49.3,
-      "meta_score": 29.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "orisa",
-      "hero_name": "오리사",
-      "role": "tank",
-      "pick_rate": 10.8,
-      "win_rate": 47.0,
-      "meta_score": 29.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "reinhardt",
-      "hero_name": "라인하르트",
-      "role": "tank",
-      "pick_rate": 7.0,
-      "win_rate": 47.9,
-      "meta_score": 29.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "wrecking_ball",
-      "hero_name": "레킹볼",
-      "role": "tank",
-      "pick_rate": 3.4,
-      "win_rate": 48.7,
-      "meta_score": 28.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mauga",
-      "hero_name": "마우가",
-      "role": "tank",
-      "pick_rate": 5.3,
-      "win_rate": 47.9,
-      "meta_score": 27.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "torbjorn",
-      "hero_name": "토르비욘",
-      "role": "damage",
-      "pick_rate": 2.8,
-      "win_rate": 48.5,
-      "meta_score": 27.6,
-      "tier": "C"
-    },
-    {
-      "hero_id": "brigitte",
-      "hero_name": "브리기테",
-      "role": "support",
-      "pick_rate": 4.9,
-      "win_rate": 47.9,
-      "meta_score": 27.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "junkrat",
-      "hero_name": "정크랫",
-      "role": "damage",
-      "pick_rate": 3.4,
-      "win_rate": 48.2,
-      "meta_score": 27.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "freja",
-      "hero_name": "프레야",
-      "role": "damage",
-      "pick_rate": 3.2,
-      "win_rate": 47.7,
-      "meta_score": 25.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sojourn",
-      "hero_name": "소전",
-      "role": "damage",
-      "pick_rate": 10.9,
-      "win_rate": 45.3,
-      "meta_score": 24.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "jetpack_cat",
-      "hero_name": "제트팩 캣",
-      "role": "support",
-      "pick_rate": 3.8,
-      "win_rate": 47.0,
-      "meta_score": 23.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sombra",
-      "hero_name": "솜브라",
-      "role": "damage",
-      "pick_rate": 2.8,
-      "win_rate": 46.7,
-      "meta_score": 22.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "bastion",
-      "hero_name": "바스티온",
-      "role": "damage",
-      "pick_rate": 4.9,
-      "win_rate": 45.8,
-      "meta_score": 21.1,
+      "meta_score": 19.7,
       "tier": "C"
     },
     {
       "hero_id": "baptiste",
       "hero_name": "바티스트",
       "role": "support",
-      "pick_rate": 6.0,
-      "win_rate": 43.9,
-      "meta_score": 16.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "vendetta",
-      "hero_name": "벤데타",
-      "role": "damage",
-      "pick_rate": 2.3,
+      "pick_rate": 5.3,
       "win_rate": 44.8,
-      "meta_score": 16.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "roadhog",
-      "hero_name": "로드호그",
-      "role": "tank",
-      "pick_rate": 6.2,
-      "win_rate": 42.1,
-      "meta_score": 11.0,
-      "tier": "D"
-    }
-  ],
-  "그랜드마스터": [
-    {
-      "hero_id": "ana",
-      "hero_name": "아나",
-      "role": "support",
-      "pick_rate": 53.2,
-      "win_rate": 51.7,
-      "meta_score": 75.1,
-      "tier": "S"
-    },
-    {
-      "hero_id": "tracer",
-      "hero_name": "트레이서",
-      "role": "damage",
-      "pick_rate": 37.1,
-      "win_rate": 54.1,
-      "meta_score": 70.2,
-      "tier": "A"
-    },
-    {
-      "hero_id": "kiriko",
-      "hero_name": "키리코",
-      "role": "support",
-      "pick_rate": 49.3,
-      "win_rate": 50.8,
-      "meta_score": 69.5,
-      "tier": "A"
-    },
-    {
-      "hero_id": "illari",
-      "hero_name": "일리아리",
-      "role": "support",
-      "pick_rate": 18.4,
-      "win_rate": 57.7,
-      "meta_score": 66.9,
-      "tier": "A"
-    },
-    {
-      "hero_id": "emre",
-      "hero_name": "엠레",
-      "role": "damage",
-      "pick_rate": 26.8,
-      "win_rate": 53.4,
-      "meta_score": 60.4,
-      "tier": "A"
-    },
-    {
-      "hero_id": "sigma",
-      "hero_name": "시그마",
-      "role": "tank",
-      "pick_rate": 12.8,
-      "win_rate": 54.5,
-      "meta_score": 53.1,
-      "tier": "B"
-    },
-    {
-      "hero_id": "pharah",
-      "hero_name": "파라",
-      "role": "damage",
-      "pick_rate": 9.0,
-      "win_rate": 55.3,
-      "meta_score": 52.7,
-      "tier": "B"
-    },
-    {
-      "hero_id": "winston",
-      "hero_name": "윈스턴",
-      "role": "tank",
-      "pick_rate": 19.8,
-      "win_rate": 51.9,
-      "meta_score": 50.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "hazard",
-      "hero_name": "해저드",
-      "role": "tank",
-      "pick_rate": 15.4,
-      "win_rate": 53.0,
-      "meta_score": 50.6,
-      "tier": "B"
-    },
-    {
-      "hero_id": "symmetra",
-      "hero_name": "시메트라",
-      "role": "damage",
-      "pick_rate": 4.3,
-      "win_rate": 54.2,
-      "meta_score": 45.8,
-      "tier": "B"
-    },
-    {
-      "hero_id": "cassidy",
-      "hero_name": "캐서디",
-      "role": "damage",
-      "pick_rate": 23.9,
-      "win_rate": 48.6,
-      "meta_score": 43.8,
-      "tier": "B"
-    },
-    {
-      "hero_id": "echo",
-      "hero_name": "에코",
-      "role": "damage",
-      "pick_rate": 8.4,
-      "win_rate": 52.3,
-      "meta_score": 43.2,
-      "tier": "B"
-    },
-    {
-      "hero_id": "wuyang",
-      "hero_name": "우양",
-      "role": "support",
-      "pick_rate": 19.6,
-      "win_rate": 49.4,
-      "meta_score": 42.9,
-      "tier": "B"
-    },
-    {
-      "hero_id": "zarya",
-      "hero_name": "자리야",
-      "role": "tank",
-      "pick_rate": 9.2,
-      "win_rate": 51.7,
-      "meta_score": 42.0,
-      "tier": "B"
-    },
-    {
-      "hero_id": "lucio",
-      "hero_name": "루시우",
-      "role": "support",
-      "pick_rate": 10.8,
-      "win_rate": 50.4,
-      "meta_score": 39.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "reaper",
-      "hero_name": "리퍼",
-      "role": "damage",
-      "pick_rate": 9.8,
-      "win_rate": 50.3,
-      "meta_score": 38.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "sojourn",
-      "hero_name": "소전",
-      "role": "damage",
-      "pick_rate": 15.8,
-      "win_rate": 47.8,
-      "meta_score": 35.3,
-      "tier": "B"
-    },
-    {
-      "hero_id": "brigitte",
-      "hero_name": "브리기테",
-      "role": "support",
-      "pick_rate": 9.4,
-      "win_rate": 48.8,
-      "meta_score": 33.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mizuki",
-      "hero_name": "미즈키",
-      "role": "support",
-      "pick_rate": 4.8,
-      "win_rate": 49.6,
-      "meta_score": 32.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "ashe",
-      "hero_name": "애쉬",
-      "role": "damage",
-      "pick_rate": 5.2,
-      "win_rate": 49.5,
-      "meta_score": 32.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "anran",
-      "hero_name": "안란",
-      "role": "damage",
-      "pick_rate": 3.7,
-      "win_rate": 49.8,
-      "meta_score": 32.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "junker_queen",
-      "hero_name": "정커퀸",
-      "role": "tank",
-      "pick_rate": 1.5,
-      "win_rate": 50.2,
-      "meta_score": 31.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "ramattra",
-      "hero_name": "라마트라",
-      "role": "tank",
-      "pick_rate": 3.7,
-      "win_rate": 49.1,
-      "meta_score": 30.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "orisa",
-      "hero_name": "오리사",
-      "role": "tank",
-      "pick_rate": 8.3,
-      "win_rate": 47.7,
-      "meta_score": 29.3,
-      "tier": "C"
-    },
-    {
-      "hero_id": "genji",
-      "hero_name": "겐지",
-      "role": "damage",
-      "pick_rate": 12.6,
-      "win_rate": 46.4,
-      "meta_score": 28.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "hanzo",
-      "hero_name": "한조",
-      "role": "damage",
-      "pick_rate": 5.1,
-      "win_rate": 48.3,
-      "meta_score": 28.7,
-      "tier": "C"
-    },
-    {
-      "hero_id": "dva",
-      "hero_name": "D.Va",
-      "role": "tank",
-      "pick_rate": 5.0,
-      "win_rate": 48.2,
-      "meta_score": 28.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "domina",
-      "hero_name": "도미나",
-      "role": "tank",
-      "pick_rate": 3.0,
-      "win_rate": 48.7,
-      "meta_score": 28.4,
-      "tier": "C"
-    },
-    {
-      "hero_id": "venture",
-      "hero_name": "벤처",
-      "role": "damage",
-      "pick_rate": 3.1,
-      "win_rate": 48.3,
-      "meta_score": 27.2,
-      "tier": "C"
-    },
-    {
-      "hero_id": "doomfist",
-      "hero_name": "둠피스트",
-      "role": "tank",
-      "pick_rate": 7.4,
-      "win_rate": 46.8,
-      "meta_score": 26.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "zenyatta",
-      "hero_name": "젠야타",
-      "role": "support",
-      "pick_rate": 6.3,
-      "win_rate": 47.1,
-      "meta_score": 26.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "baptiste",
-      "hero_name": "바티스트",
-      "role": "support",
-      "pick_rate": 7.6,
-      "win_rate": 46.6,
-      "meta_score": 25.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "wrecking_ball",
-      "hero_name": "레킹볼",
-      "role": "tank",
-      "pick_rate": 4.4,
-      "win_rate": 47.2,
-      "meta_score": 24.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "moira",
-      "hero_name": "모이라",
-      "role": "support",
-      "pick_rate": 4.5,
-      "win_rate": 46.7,
-      "meta_score": 23.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "soldier76",
-      "hero_name": "솔저: 76",
-      "role": "damage",
-      "pick_rate": 6.1,
-      "win_rate": 46.3,
-      "meta_score": 23.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mei",
-      "hero_name": "메이",
-      "role": "damage",
-      "pick_rate": 2.6,
-      "win_rate": 47.0,
-      "meta_score": 23.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "torbjorn",
-      "hero_name": "토르비욘",
-      "role": "damage",
-      "pick_rate": 3.3,
-      "win_rate": 46.8,
-      "meta_score": 22.9,
-      "tier": "C"
-    },
-    {
-      "hero_id": "juno",
-      "hero_name": "주노",
-      "role": "support",
-      "pick_rate": 3.5,
-      "win_rate": 45.9,
-      "meta_score": 20.3,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sombra",
-      "hero_name": "솜브라",
-      "role": "damage",
-      "pick_rate": 2.3,
-      "win_rate": 45.8,
-      "meta_score": 19.1,
-      "tier": "C"
-    },
-    {
-      "hero_id": "junkrat",
-      "hero_name": "정크랫",
-      "role": "damage",
-      "pick_rate": 1.7,
-      "win_rate": 45.8,
       "meta_score": 18.7,
       "tier": "C"
     },
     {
-      "hero_id": "widowmaker",
-      "hero_name": "위도우메이커",
-      "role": "damage",
-      "pick_rate": 4.8,
-      "win_rate": 44.4,
-      "meta_score": 16.8,
-      "tier": "C"
-    },
-    {
-      "hero_id": "sierra",
-      "hero_name": "시에라",
-      "role": "damage",
-      "pick_rate": 7.7,
-      "win_rate": 43.4,
-      "meta_score": 16.0,
-      "tier": "C"
-    },
-    {
-      "hero_id": "mauga",
-      "hero_name": "마우가",
-      "role": "tank",
-      "pick_rate": 3.1,
-      "win_rate": 44.4,
-      "meta_score": 15.5,
-      "tier": "C"
-    },
-    {
-      "hero_id": "freja",
-      "hero_name": "프레야",
-      "role": "damage",
-      "pick_rate": 3.1,
-      "win_rate": 44.2,
-      "meta_score": 14.9,
-      "tier": "D"
-    },
-    {
-      "hero_id": "jetpack_cat",
-      "hero_name": "제트팩 캣",
-      "role": "support",
-      "pick_rate": 5.7,
-      "win_rate": 43.4,
-      "meta_score": 14.5,
-      "tier": "D"
-    },
-    {
-      "hero_id": "bastion",
-      "hero_name": "바스티온",
-      "role": "damage",
-      "pick_rate": 2.0,
-      "win_rate": 43.5,
-      "meta_score": 12.0,
-      "tier": "D"
-    },
-    {
-      "hero_id": "mercy",
-      "hero_name": "메르시",
-      "role": "support",
-      "pick_rate": 3.1,
-      "win_rate": 41.9,
-      "meta_score": 8.0,
-      "tier": "D"
-    },
-    {
-      "hero_id": "lifeweaver",
-      "hero_name": "라이프위버",
-      "role": "support",
-      "pick_rate": 3.9,
-      "win_rate": 41.6,
-      "meta_score": 7.7,
-      "tier": "D"
-    },
-    {
-      "hero_id": "reinhardt",
-      "hero_name": "라인하르트",
-      "role": "tank",
-      "pick_rate": 3.2,
-      "win_rate": 41.7,
-      "meta_score": 7.5,
-      "tier": "D"
-    },
-    {
       "hero_id": "roadhog",
       "hero_name": "로드호그",
       "role": "tank",
-      "pick_rate": 3.3,
-      "win_rate": 40.4,
-      "meta_score": 3.7,
-      "tier": "D"
-    },
-    {
-      "hero_id": "vendetta",
-      "hero_name": "벤데타",
-      "role": "damage",
-      "pick_rate": 1.4,
-      "win_rate": 38.8,
-      "meta_score": 1.1,
-      "tier": "D"
+      "pick_rate": 4.8,
+      "win_rate": 43.9,
+      "meta_score": 15.6,
+      "tier": "C"
     }
   ],
   "챔피언": [
