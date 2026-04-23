@@ -3,11 +3,13 @@
  * 역할군별 영웅 pill 버튼 + 빌드 카드 (코드 클릭 → 클립보드 복사)
  * 검색/플레이스타일 필터 지원
  */
-import { loadJSON } from '../app.js';
+import { loadJSON, getPortraitIndex } from '../app.js';
 
 let currentHero = null;  // stadium.json 의 영어 키
 let koNameMap = {};       // 영어명 → 한국어명
 let roleMap = {};         // 영어명 → role (tank/damage/support)
+let heroIdMap = {};       // 영어명 → hero_id (초상화용)
+let portraitIndex = {};   // hero_id → portrait_url
 let searchQuery = '';
 let styleFilter = '전체';
 let stadiumData = null;
@@ -25,6 +27,8 @@ export async function renderStadium(container, params) {
   stadiumData = stadium;
   koNameMap = buildKoNameMap(heroesData);
   roleMap = buildRoleMap(heroesData);
+  heroIdMap = buildHeroIdMap(heroesData);
+  portraitIndex = await getPortraitIndex();
 
   const heroes = Object.keys(stadium).sort((a, b) =>
     (koNameMap[a] ?? a).localeCompare(koNameMap[b] ?? b, 'ko')
@@ -86,8 +90,37 @@ function buildRoleMap(heroesData) {
   return map;
 }
 
+/** heroes.json 에서 영어명 → hero_id 매핑 생성 (초상화 URL용) */
+function buildHeroIdMap(heroesData) {
+  const map = {};
+  if (!heroesData) return map;
+  const list = heroesData.heroes ?? heroesData;
+  for (const [id, hero] of Object.entries(list)) {
+    if (hero.name) map[hero.name] = id;
+  }
+  return map;
+}
+
 function koName(enName) {
   return koNameMap[enName] ?? enName;
+}
+
+function heroPill(enName) {
+  const isActive = enName === currentHero && !searchQuery && styleFilter === '전체';
+  const heroId = heroIdMap[enName];
+  const url = heroId ? portraitIndex[heroId] : null;
+  const initial = escHtml((koNameMap[enName] ?? enName)?.[0] ?? '?');
+  const avatarHtml = url ? `
+    <img src="${url}" alt=""
+         class="hero-portrait hero-portrait-xs"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+         loading="lazy">
+    <span class="hero-portrait-fallback hero-portrait-xs" style="display:none;font-size:0.6rem;">${initial}</span>
+  ` : `<span class="hero-portrait-fallback hero-portrait-xs" style="background:#30363D;font-size:0.6rem;">${initial}</span>`;
+  return `
+    <button class="hero-pill${isActive ? ' active' : ''}" data-hero="${escHtml(enName)}">
+      ${avatarHtml}${escHtml(koName(enName))}
+    </button>`;
 }
 
 /** 모든 플레이스타일 태그 동적 수집 */
@@ -121,11 +154,7 @@ function buildHTML(heroes, stadium) {
           <span class="text-gray-500 font-normal">${grouped[r].length}명</span>
         </div>
         <div class="flex flex-wrap gap-1.5">
-          ${grouped[r].map(h => `
-            <button class="hero-pill${h === currentHero && !searchQuery && styleFilter === '전체' ? ' active' : ''}" data-hero="${h}">
-              ${escHtml(koName(h))}
-            </button>
-          `).join('')}
+          ${grouped[r].map(h => heroPill(h)).join('')}
         </div>
       </div>
     `).join('');
@@ -134,11 +163,7 @@ function buildHTML(heroes, stadium) {
     <div>
       <div class="text-xs text-gray-500 font-semibold tracking-wide mb-1.5">기타</div>
       <div class="flex flex-wrap gap-1.5">
-        ${grouped.unknown.map(h => `
-          <button class="hero-pill${h === currentHero && !searchQuery && styleFilter === '전체' ? ' active' : ''}" data-hero="${h}">
-            ${escHtml(koName(h))}
-          </button>
-        `).join('')}
+        ${grouped.unknown.map(h => heroPill(h)).join('')}
       </div>
     </div>
   ` : '';

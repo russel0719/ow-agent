@@ -67,6 +67,7 @@ class HeroMeta:
     pick_rate: float      # %
     win_rate: float       # %
     ban_rate: float       # % (Blizzard 데이터에 없으므로 항상 0.0)
+    portrait_url: str = ""  # Blizzard CDN 초상화 URL
     meta_score: float = field(init=False, default=0.0)
     tier: str = field(init=False, default="C")
 
@@ -182,6 +183,7 @@ def _parse_blizzard_rates(html: str) -> list[HeroMeta]:
             hero_id = _blizzard_id_to_key(hero_id_raw)
             role_raw = hero_info.get("role", "")
             role = ROLE_MAP.get(role_raw, "damage")
+            portrait_url = hero_info.get("portrait", "")
 
             heroes.append(
                 HeroMeta(
@@ -191,6 +193,7 @@ def _parse_blizzard_rates(html: str) -> list[HeroMeta]:
                     pick_rate=float(pick_rate),
                     win_rate=float(win_rate),
                     ban_rate=0.0,  # Blizzard는 밴률 미제공
+                    portrait_url=portrait_url,
                 )
             )
         except Exception:

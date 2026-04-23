@@ -3,12 +3,13 @@
  * 최근 30일 패치 누적 표시 (아코디언, 최신 패치 기본 펼침)
  * 영웅 카드에 현재 메타 점수/티어 표시 (그랜드마스터 기준)
  */
-import { loadJSON } from '../app.js';
+import { loadJSON, getPortraitIndex } from '../app.js';
 
 export async function renderPatch(container, _params) {
-  const [raw, metaRaw] = await Promise.all([
+  const [raw, metaRaw, heroesData] = await Promise.all([
     loadJSON('patch'),
     loadJSON('meta').catch(() => null),
+    loadJSON('heroes').catch(() => null),
   ]);
 
   // 하위 호환: 단일 객체도 처리
@@ -16,6 +17,10 @@ export async function renderPatch(container, _params) {
 
   // 그랜드마스터 기준 한국어 영웅명 → {meta_score, tier} 맵
   const metaMap = buildMetaMap(metaRaw);
+
+  // 한국어 영웅명 → hero_id 맵 (초상화용)
+  const koToHeroId = buildKoToHeroIdMap(heroesData);
+  const portraitIndex = await getPortraitIndex();
 
   if (!patches.length) {
     container.innerHTML = `<p class="text-center text-gray-500 py-12">패치 노트 데이터가 없습니다.</p>`;
@@ -34,10 +39,22 @@ export async function renderPatch(container, _params) {
         </svg>
       </summary>
       <div class="px-5 pb-5 pt-2">
-        ${renderPatchBody(patch, metaMap)}
+        ${renderPatchBody(patch, metaMap, koToHeroId, portraitIndex)}
       </div>
     </details>
   `).join('');
+}
+
+/** 한국어 영웅명 → hero_id 맵 생성 (초상화용) */
+function buildKoToHeroIdMap(heroesData) {
+  const map = {};
+  if (!heroesData) return map;
+  for (const [id, hero] of Object.entries(heroesData.heroes ?? heroesData)) {
+    for (const alias of hero.aliases ?? []) {
+      if (/[가-힣]/.test(alias)) map[alias] = id;
+    }
+  }
+  return map;
 }
 
 /** 그랜드마스터 메타 데이터에서 한국어 영웅명 → {meta_score, tier} 맵 생성 */
@@ -53,7 +70,7 @@ function buildMetaMap(metaRaw) {
   return map;
 }
 
-function renderPatchBody(patch, metaMap) {
+function renderPatchBody(patch, metaMap, koToHeroId = {}, portraitIndex = {}) {
   const regular = patch.hero_changes?.filter(h => !h.is_stadium) ?? [];
   const stadium = patch.hero_changes?.filter(h => h.is_stadium) ?? [];
 
@@ -80,7 +97,7 @@ function renderPatchBody(patch, metaMap) {
           영웅 변경사항 <span class="text-gray-600 normal-case">(${regular.length}명)</span>
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          ${regular.map(h => heroChangeCard(h, false, metaMap)).join('')}
+          ${regular.map(h => heroChangeCard(h, false, metaMap, koToHeroId, portraitIndex)).join('')}
         </div>
       </section>
     ` : ''}
@@ -91,7 +108,7 @@ function renderPatchBody(patch, metaMap) {
           스타디움 변경사항 <span class="text-ow-orange/60 normal-case">(${stadium.length}명)</span>
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          ${stadium.map(h => heroChangeCard(h, true, metaMap)).join('')}
+          ${stadium.map(h => heroChangeCard(h, true, metaMap, koToHeroId, portraitIndex)).join('')}
         </div>
       </section>
     ` : ''}
@@ -102,19 +119,36 @@ function renderPatchBody(patch, metaMap) {
   `;
 }
 
-function heroChangeCard(h, isStadium = false, metaMap = {}) {
+function heroChangeCard(h, isStadium = false, metaMap = {}, koToHeroId = {}, portraitIndex = {}) {
   const changes = h.changes ?? [];
   const meta = metaMap[h.hero];
+  const heroId = koToHeroId[h.hero];
+  const portraitUrl = heroId ? portraitIndex[heroId] : null;
   const tierBadge = meta?.tier
     ? `<span class="patch-tier-badge tier-${meta.tier}">${escHtml(meta.tier)}</span>`
     : '';
   const scoreLabel = meta?.meta_score != null
     ? `<span class="text-xs text-gray-500">${meta.meta_score.toFixed(1)}점</span>`
     : '';
+  const initial = escHtml(h.hero?.[0] ?? '?');
+  const portraitHtml = portraitUrl ? `
+    <div class="relative shrink-0" style="width:32px;height:32px;">
+      <img src="${portraitUrl}" alt="${escHtml(h.hero)}"
+           class="hero-portrait hero-portrait-md"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+           loading="lazy">
+      <span class="hero-portrait-fallback hero-portrait-md"
+            style="display:none;background:#30363D;font-size:0.65rem;">${initial}</span>
+    </div>
+  ` : `
+    <div class="hero-portrait-fallback hero-portrait-md shrink-0"
+         style="background:#30363D;font-size:0.65rem;">${initial}</div>
+  `;
 
   return `
     <div class="patch-hero-card${isStadium ? ' is-stadium' : ''}">
       <div class="flex items-center gap-2 mb-3">
+        ${portraitHtml}
         <span class="font-semibold text-sm flex-1">${escHtml(h.hero)}</span>
         ${tierBadge}${scoreLabel}
         ${isStadium ? `<span class="text-xs text-ow-orange border border-ow-orange/40 px-1.5 rounded">스타디움</span>` : ''}

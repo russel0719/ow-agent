@@ -64,7 +64,10 @@ def _hero_id_to_en_name(hero_id: str) -> str:
 DOCS_DATA = ROOT / "docs" / "data"
 DOCS_DATA.mkdir(parents=True, exist_ok=True)
 
-HISTORY_RANKS = {"전체", "그랜드마스터"}  # 히스토리 저장 대상 랭크
+HISTORY_RANKS = {  # 히스토리 저장 대상 랭크 (챔피언은 그랜드마스터와 동일하여 제외)
+    "전체", "브론즈", "실버", "골드", "플래티넘",
+    "다이아몬드", "마스터", "그랜드마스터",
+}
 HISTORY_DAYS = 90                           # rolling window 일수
 MAP_HISTORY_DAYS = 14                       # 맵별 히스토리 rolling window 일수
 
@@ -237,7 +240,7 @@ def _update_map_history(map_result: dict) -> None:
 
 
 def _hero_to_dict(h) -> dict:
-    return {
+    d = {
         "hero_id": h.hero_id,
         "hero_name": h.hero_name,
         "role": h.role,
@@ -246,6 +249,9 @@ def _hero_to_dict(h) -> dict:
         "meta_score": h.meta_score,
         "tier": h.tier,
     }
+    if h.portrait_url:
+        d["portrait_url"] = h.portrait_url
+    return d
 
 
 # ── 스타디움 빌드 ─────────────────────────────────────────────────────────────

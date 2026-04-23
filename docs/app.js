@@ -6,6 +6,7 @@
 import { renderMeta } from './views/meta.js?v=5';
 import { renderStadium } from './views/stadium.js?v=4';
 import { renderPatch } from './views/patch.js?v=4';
+import { mountChat } from './views/chat.js?v=1';
 
 // ── 데이터 캐시 ───────────────────────────────────────────────────────────────
 const cache = {};
@@ -17,6 +18,33 @@ export async function loadJSON(name) {
   if (!res.ok) throw new Error(`${name}.json 로드 실패: ${res.status}`);
   cache[name] = await res.json();
   return cache[name];
+}
+
+// ── 영웅 초상화 URL ───────────────────────────────────────────────────────────
+// meta.json의 portrait_url(Blizzard CDN 해시 URL)을 우선 사용.
+// 없는 경우(stadium/patch 등) null 반환 → 이니셜 폴백.
+export function heroPortraitUrl(portraitUrl) {
+  return portraitUrl || null;
+}
+
+// meta.json에서 hero_id → portrait_url 인덱스 빌드 (stadium/patch 뷰에서 사용)
+let _portraitIndex = null;
+export async function getPortraitIndex() {
+  if (_portraitIndex) return _portraitIndex;
+  try {
+    const meta = await loadJSON('meta');
+    _portraitIndex = {};
+    for (const heroes of Object.values(meta)) {
+      for (const h of heroes) {
+        if (h.portrait_url && !_portraitIndex[h.hero_id]) {
+          _portraitIndex[h.hero_id] = h.portrait_url;
+        }
+      }
+    }
+  } catch {
+    _portraitIndex = {};
+  }
+  return _portraitIndex;
 }
 
 // ── 라우터 ────────────────────────────────────────────────────────────────────
@@ -89,3 +117,4 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
 window.addEventListener('hashchange', navigate);
 showLastUpdated();
 navigate();
+mountChat();

@@ -273,7 +273,10 @@
 
 /* 영웅 pill 버튼 */
 .hero-pill {
-  padding: 4px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px 4px 5px;
   border-radius: 9999px;
   font-size: 0.8rem;
   border: 1px solid #30363D;
@@ -383,3 +386,251 @@
 ::-webkit-scrollbar-track { background: #0D1117; }
 ::-webkit-scrollbar-thumb { background: #30363D; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #6B7280; }
+
+/* ── 영웅 초상화 ────────────────────────────────────────────────────────────── */
+
+.hero-portrait {
+  object-fit: cover;
+  object-position: top center;
+  flex-shrink: 0;
+  display: block;
+}
+.hero-portrait-fallback {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: rgba(0,0,0,0.7);
+  flex-shrink: 0;
+  letter-spacing: -0.5px;
+}
+/* 메타 카드 (40×40) */
+.hero-portrait-sm { width: 40px; height: 40px; border-radius: 6px; }
+/* 패치 카드 (32×32) */
+.hero-portrait-md { width: 32px; height: 32px; border-radius: 6px; }
+/* 스타디움 pill (24×24) */
+.hero-portrait-xs { width: 24px; height: 24px; border-radius: 50%; }
+
+/* ── AI 챗봇 플로팅 버튼 + 팝업 ────────────────────────────────────────────── */
+
+#ow-chat-root {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+/* 플로팅 버튼 (FAB) */
+#ow-chat-fab {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #F5A623;
+  color: #0D1117;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(245, 166, 35, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+#ow-chat-fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.55);
+}
+#ow-chat-fab.active {
+  background: #D4891A;
+}
+
+/* 팝업 창 */
+.ow-chat-popup {
+  width: 340px;
+  max-height: 520px;
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: chatPopIn 0.2s ease;
+}
+.ow-chat-popup.hidden { display: none; }
+@keyframes chatPopIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* 헤더 */
+.ow-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #30363D;
+  background: #0D1117;
+  flex-shrink: 0;
+}
+.ow-chat-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #E5E7EB;
+}
+.ow-chat-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: chatPulse 2s ease-in-out infinite;
+}
+@keyframes chatPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+#ow-chat-close {
+  background: none;
+  border: none;
+  color: #6B7280;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+}
+#ow-chat-close:hover { color: #E5E7EB; background: #21262D; }
+
+/* 메시지 영역 */
+.ow-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+}
+
+/* 말풍선 */
+.ow-chat-bubble {
+  max-width: 88%;
+  padding: 10px 13px;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  word-break: break-word;
+}
+.ow-chat-bubble-ai {
+  background: #21262D;
+  color: #D1D5DB;
+  border: 1px solid #30363D;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+.ow-chat-bubble-user {
+  background: #92400E;
+  color: #FDE68A;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+.ow-chat-bubble-hint {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: #6B7280;
+  font-style: italic;
+}
+
+/* 로딩 타이핑 점 */
+.ow-chat-typing {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  animation: chatTyping 1.2s ease-in-out infinite;
+}
+@keyframes chatTyping {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* 입력 영역 */
+.ow-chat-input-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid #30363D;
+  background: #0D1117;
+  flex-shrink: 0;
+}
+.ow-chat-input {
+  flex: 1;
+  background: #21262D;
+  border: 1px solid #30363D;
+  border-radius: 8px;
+  color: #E5E7EB;
+  font-size: 0.82rem;
+  padding: 8px 10px;
+  resize: none;
+  line-height: 1.5;
+  min-height: 36px;
+  max-height: 96px;
+  overflow-y: auto;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+.ow-chat-input::placeholder { color: #6B7280; }
+.ow-chat-input:focus { outline: none; border-color: #F5A623; }
+
+.ow-chat-send {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #F5A623;
+  color: #0D1117;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s, opacity 0.15s;
+}
+.ow-chat-send:hover:not(:disabled) { background: #D4891A; }
+.ow-chat-send:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.ow-chat-send.loading svg {
+  animation: spin 0.8s linear infinite;
+}
+
+/* WORKER_URL 미설정 경고 */
+.ow-chat-worker-warn {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  background: #7c2d12;
+  color: #fed7aa;
+  font-size: 0.75rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ea580c;
+  max-width: 300px;
+  z-index: 999;
+}
+
+/* 모바일 */
+@media (max-width: 480px) {
+  #ow-chat-root { bottom: 16px; right: 16px; }
+  .ow-chat-popup { width: calc(100vw - 32px); }
+}

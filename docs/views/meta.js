@@ -364,7 +364,8 @@ function resetSelection(container) {
 // ── 이번 주 메타 변화 ─────────────────────────────────────────────────────────
 
 function getWeeklyDelta(rank) {
-  const rankData = cachedHistory?.[rank] ?? cachedHistory?.['전체'];
+  const historyRank = rank === '챔피언' ? '그랜드마스터' : rank;
+  const rankData = cachedHistory?.[historyRank];
   if (!rankData) return {};
   const dates = Object.keys(rankData).sort();
   if (dates.length < 2) return {};
@@ -457,7 +458,8 @@ function renderOverviewChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
+  const historyRank = currentRank === '챔피언' ? '그랜드마스터' : currentRank;
+  const rankData = cachedHistory?.[historyRank];
   if (!rankData || !Object.keys(rankData).length) {
     wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다. 내일 다시 확인해주세요.');
     return;
@@ -546,7 +548,8 @@ function renderHistoryChart(container) {
   container.querySelector('#chart-scroll').style.maxHeight = '640px';
 
   const wrapper = container.querySelector('#chart-wrapper');
-  const rankData = cachedHistory?.[currentRank] ?? cachedHistory?.['전체'];
+  const historyRank = currentRank === '챔피언' ? '그랜드마스터' : currentRank;
+  const rankData = cachedHistory?.[historyRank];
   if (!rankData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
 
   const dates = Object.keys(rankData).sort();
@@ -879,7 +882,8 @@ async function renderHeroDetail(container, heroId, heroName) {
 // ── 영웅 카드 그리드 / 테이블 ─────────────────────────────────────────────────
 
 function getPrevScoreMap(rank) {
-  const rankData = cachedHistory?.[rank] ?? cachedHistory?.['전체'];
+  const historyRank = rank === '챔피언' ? '그랜드마스터' : rank;
+  const rankData = cachedHistory?.[historyRank];
   if (!rankData) return {};
   const dates = Object.keys(rankData).sort();
   const today = new Date().toISOString().slice(0, 10);
@@ -1023,19 +1027,35 @@ function heroCard(h, prevScore) {
   const borderStyle = isSelected
     ? `border-left: 3px solid ${color}; box-shadow: 0 0 0 1px ${color}55, inset 0 0 20px ${color}10;`
     : `border-left: 3px solid ${color}; background: linear-gradient(135deg, ${color}12 0%, transparent 55%);`;
+  const initial = escHtml(h.hero_name?.[0] ?? '?');
   return `
     <div class="hero-card${isSelected ? ' selected' : ''}"
          data-hero-id="${h.hero_id}" data-hero-name="${escHtml(h.hero_name)}"
          style="${borderStyle}">
-      <div class="flex items-start justify-between mb-1.5 gap-1">
-        <span class="font-semibold text-sm leading-tight">${escHtml(h.hero_name)}</span>
-        <span class="text-xs px-1.5 py-0.5 rounded shrink-0 ${ROLE_CLASS[h.role] ?? ''}">
-          ${ROLE_LABEL[h.role] ?? h.role}
-        </span>
-      </div>
-      <div class="flex items-baseline gap-1.5 mb-1.5">
-        <span class="font-bold text-xl" style="color:${color}">${h.meta_score?.toFixed(1) ?? '-'}</span>
-        ${deltaHtml}
+      <div class="flex items-start gap-2 mb-1.5">
+        <div class="relative shrink-0" style="width:40px;height:40px;">
+          ${h.portrait_url ? `
+          <img src="${h.portrait_url}" alt="${escHtml(h.hero_name)}"
+               class="hero-portrait hero-portrait-sm"
+               style="border:1px solid ${color}44;"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+               loading="lazy">
+          ` : ''}
+          <span class="hero-portrait-fallback hero-portrait-sm"
+                style="${h.portrait_url ? 'display:none;' : ''}background:${color}33;border:1px solid ${color}44;">${initial}</span>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-start justify-between gap-1 mb-0.5">
+            <span class="font-semibold text-sm leading-tight truncate">${escHtml(h.hero_name)}</span>
+            <span class="text-xs px-1.5 py-0.5 rounded shrink-0 ${ROLE_CLASS[h.role] ?? ''}">
+              ${ROLE_LABEL[h.role] ?? h.role}
+            </span>
+          </div>
+          <div class="flex items-baseline gap-1.5">
+            <span class="font-bold text-lg" style="color:${color}">${h.meta_score?.toFixed(1) ?? '-'}</span>
+            ${deltaHtml}
+          </div>
+        </div>
       </div>
       <div class="text-xs text-gray-400 space-y-0.5">
         <div>픽률 <span class="text-gray-200">${h.pick_rate?.toFixed(1) ?? '-'}%</span></div>

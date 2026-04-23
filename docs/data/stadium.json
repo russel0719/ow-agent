@@ -704,7 +704,7 @@
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 119,
+      "upvotes": 120,
       "stats": {
         "LIFE": 729,
         "Armor": 225,
@@ -1029,7 +1029,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1498,
+      "upvotes": 1499,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1582,7 +1582,7 @@
     {
       "name": "How to f1st(2)",
       "code": "XB218",
-      "description": "기술 위력 극대화로 소전 교란 사격(E)만 반복해 광역 CC기로 압박, 조준 약한 유저도 쉽게 활용 가능",
+      "description": "솔저: 76 기본 에임봇 빌드로, 나선 로켓을 재사용 대기시간마다 쏴서 전술 조준경 활용 극대화. 후반 유동성이 뛰어남.",
       "playstyle": "무기 파워",
       "upvotes": 74,
       "stats": {
@@ -2098,7 +2098,7 @@
     {
       "name": "Aimbot.exe",
       "code": "VX71P",
-      "description": "라마트라 생존·버스트·암살 능력 극대화, 한 번에 500~830+ 대미지 폭딜 후 2초 내 탈출",
+      "description": "파라 생존·버스트·암살 능력 극대화 빌드. 한 콤보로 500~830+ 대미지를 2초 안에 넣고 탈출, 전투 후 투사체 차단 가능.",
       "playstyle": "재미용 · 무기 파워",
       "upvotes": 355,
       "stats": {
@@ -2393,7 +2393,7 @@
     {
       "name": "Let me one shot her [500+ dmg vendetta build]",
       "code": "Z1P6V",
-      "description": "Vendetta build that maxes out your Survivability, burst damage and assasination abilities, block projectiles post fight, go in and do 500 or 830+ dmg dmg in a single combo, and get out in less then 2s Comment how you liked it IMPORTANT (The Closer(it...",
+      "description": "",
       "playstyle": "혼합 파워 · 생명력 흡수",
       "upvotes": 21,
       "stats": {
