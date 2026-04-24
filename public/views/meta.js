@@ -119,6 +119,7 @@ let cachedMeta = null;
 let cachedHistory = null;
 let cachedMapMeta = null;
 let cachedMapHistory = null;
+let cachedPatches = null;
 
 // ── 진입점 ────────────────────────────────────────────────────────────────────
 
@@ -129,11 +130,12 @@ export async function renderMeta(container, params) {
     if (rank && RANKS.includes(rank)) currentRank = rank;
   }
 
-  [cachedMeta, cachedHistory, cachedMapMeta, cachedMapHistory] = await Promise.all([
+  [cachedMeta, cachedHistory, cachedMapMeta, cachedMapHistory, cachedPatches] = await Promise.all([
     loadJSON('meta'),
     loadJSON('meta_history').catch(() => null),
     loadJSON('map_meta').catch(() => null),
     loadJSON('map_meta_history').catch(() => null),
+    loadJSON('patch').catch(() => null),
   ]);
 
   container.innerHTML = buildHTML();
@@ -441,6 +443,59 @@ function renderWeeklyChanges(container) {
   });
 }
 
+// ── 패치 세로선 플러그인 ──────────────────────────────────────────────────────
+
+function parsePatchDate(dateStr) {
+  // "2026년 4월 17일" → "2026-04-17"
+  const m = String(dateStr ?? '').match(/(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일/);
+  if (!m) return null;
+  return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`;
+}
+
+function makePatchLinePlugin(dates) {
+  // dates: ["2026-04-10", "2026-04-11", ...] (히스토리 날짜 배열, 정렬됨)
+  if (!cachedPatches?.length || !dates?.length) return null;
+
+  // 패치 날짜별로 히스토리에서 "그 날짜 이후 첫 번째 데이터 인덱스" 계산
+  // → 패치가 17일이면 17일(인덱스 n)과 18일(인덱스 n+1) 사이에 선을 그려야 함
+  // → 즉 dates에서 patchDate < d 를 만족하는 첫 번째 인덱스를 찾음
+  const lines = [];
+  for (const p of cachedPatches) {
+    const pd = parsePatchDate(p.date);
+    if (!pd) continue;
+    const idx = dates.findIndex(d => d > pd);
+    // idx=0은 패치가 히스토리 시작 이전 → 표시 생략
+    if (idx > 0) lines.push({ idx, label: p.date });
+  }
+  if (!lines.length) return null;
+
+  return {
+    id: 'patchLines',
+    afterDraw(chart) {
+      const { ctx, chartArea, scales } = chart;
+      ctx.save();
+      ctx.strokeStyle = 'rgba(245, 166, 35, 0.55)';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([4, 3]);
+
+      for (const { idx } of lines) {
+        // idx-1과 idx 사이 중간 x 좌표
+        const x = (scales.x.getPixelForValue(idx - 1) + scales.x.getPixelForValue(idx)) / 2;
+        ctx.beginPath();
+        ctx.moveTo(x, chartArea.top);
+        ctx.lineTo(x, chartArea.bottom);
+        ctx.stroke();
+
+        // "패치" 텍스트 레이블
+        ctx.fillStyle = 'rgba(245, 166, 35, 0.75)';
+        ctx.font = 'bold 9px sans-serif';
+        ctx.fillText('PATCH', x + 3, chartArea.top + 10);
+      }
+      ctx.restore();
+    },
+  };
+}
+
 // ── 차트 렌더링 ───────────────────────────────────────────────────────────────
 
 function renderChart(container) {
@@ -511,6 +566,7 @@ function renderOverviewChart(container) {
     };
   });
 
+  const patchPlugin = makePatchLinePlugin(dates);
   activeChart = new Chart(canvas, {
     type: 'line',
     data: { labels: labelDates, datasets },
@@ -538,6 +594,7 @@ function renderOverviewChart(container) {
         y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
+    plugins: patchPlugin ? [patchPlugin] : [],
   });
 }
 
@@ -566,6 +623,7 @@ function renderHistoryChart(container) {
   canvas.style.width = '100%';
   canvas.style.height = '560px';
 
+  const patchPlugin = makePatchLinePlugin(dates);
   activeChart = new Chart(canvas, {
     type: 'line',
     data: {
@@ -602,6 +660,7 @@ function renderHistoryChart(container) {
         y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
+    plugins: patchPlugin ? [patchPlugin] : [],
   });
 }
 
@@ -673,6 +732,7 @@ function renderMapOverviewChart(container) {
     };
   });
 
+  const patchPlugin = makePatchLinePlugin(dates);
   activeChart = new Chart(canvas, {
     type: 'line',
     data: { labels: labelDates, datasets },
@@ -700,6 +760,7 @@ function renderMapOverviewChart(container) {
         y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
+    plugins: patchPlugin ? [patchPlugin] : [],
   });
 }
 
@@ -728,6 +789,7 @@ function renderMapHistoryChart(container) {
   canvas.style.width = '100%';
   canvas.style.height = '560px';
 
+  const patchPlugin = makePatchLinePlugin(dates);
   activeChart = new Chart(canvas, {
     type: 'line',
     data: {
@@ -764,6 +826,7 @@ function renderMapHistoryChart(container) {
         y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
+    plugins: patchPlugin ? [patchPlugin] : [],
   });
 }
 

@@ -7,6 +7,7 @@ from functools import lru_cache
 from pathlib import Path
 
 _GLOSSARY_PATH = Path(__file__).parent.parent.parent / "data" / "ow_glossary.json"
+_HEROES_PATH = Path(__file__).parent.parent.parent / "data" / "heroes.json"
 
 
 @lru_cache(maxsize=1)
@@ -16,15 +17,34 @@ def _load() -> dict:
 
 
 @lru_cache(maxsize=1)
+def _load_heroes() -> dict:
+    with _HEROES_PATH.open(encoding="utf-8") as f:
+        return json.load(f)
+
+
+@lru_cache(maxsize=1)
 def _name_to_id() -> dict[str, str]:
-    """EN display name → hero_id 역방향 테이블 (프로세스당 1회 빌드)."""
+    """EN/KR display name → hero_id 역방향 테이블 (프로세스당 1회 빌드).
+
+    glossary.json(수동, 우선) + heroes.json aliases(자동 갱신, 신규 영웅 보완) 통합.
+    """
     g = _load()
     m: dict[str, str] = {}
+
+    # glossary.json 기반 (수동 관리, 우선)
     for hid, hdata in g.get("heroes", {}).items():
         m[hid.lower()] = hid
         m[hid.lower().replace("_", " ")] = hid
-        for en_name in hdata.get("name", {}):
+        for en_name, kr_name in hdata.get("name", {}).items():
             m[en_name.lower()] = hid
+            m[kr_name.lower()] = hid
+
+    # heroes.json aliases 추가 (자동 갱신, glossary에 없는 신규 영웅 보완)
+    for hid, hdata in _load_heroes().get("heroes", {}).items():
+        m.setdefault(hid.lower(), hid)
+        for alias in hdata.get("aliases", []):
+            m.setdefault(alias.lower(), hid)
+
     return m
 
 
@@ -37,6 +57,29 @@ def _resolve(en_name: str) -> str | None:
     # 특수문자 제거 후 재시도 (예: "Torbjörn" → "torbjorn")
     simplified = re.sub(r"[^a-z0-9 ]", "", key)
     return tbl.get(simplified)
+
+
+def get_korean_name(en_name: str) -> str | None:
+    """영어 영웅 이름 → 한국어 이름.
+
+    조회 순서:
+    1. glossary.json name 필드 (수동 관리, 공식 표기 우선)
+    2. heroes.json aliases 중 한국어 항목 (자동 갱신)
+    """
+    hid = _resolve(en_name)
+    if not hid:
+        return None
+
+    # 1. glossary name 필드
+    for kr_name in _load().get("heroes", {}).get(hid, {}).get("name", {}).values():
+        return kr_name
+
+    # 2. heroes.json aliases 중 한국어
+    for alias in _load_heroes().get("heroes", {}).get(hid, {}).get("aliases", []):
+        if any("가" <= c <= "힣" for c in alias):
+            return alias
+
+    return None
 
 
 def get_glossary_section(hero_en_names: list[str] | None = None) -> str:

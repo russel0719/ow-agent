@@ -26,13 +26,13 @@ cron: '0 6 * * *'   # 매일 15:00 KST
 ```
 
 실행 순서:
-1. Blizzard 공식 통계 (`overwatch.blizzard.com/ko-kr/rates/`) 크롤링 → `docs/data/meta.json`
-2. 90일 히스토리 롤링 갱신 → `docs/data/meta_history.json`
+1. Blizzard 공식 통계 (`overwatch.blizzard.com/ko-kr/rates/`) 크롤링 → `public/data/meta.json`
+2. 90일 히스토리 롤링 갱신 → `public/data/meta_history.json`
 3. **신규 영웅 자동 감지** → `data/heroes.json` 자동 추가
-4. stadiumbuilds.io 빌드 크롤링 + Gemini 한국어 번역/요약 → `docs/data/stadium.json`
-5. Blizzard 패치 노트 크롤링 + Gemini 한국어 번역 → `docs/data/patch.json`
-6. `data/heroes.json` → `docs/data/heroes.json` 복사
-7. `docs/data/` 커밋 & push → GitHub Pages 자동 배포
+4. stadiumbuilds.io 빌드 크롤링 + Gemini 한국어 번역/요약 → `public/data/stadium.json`
+5. Blizzard 패치 노트 크롤링 + Gemini 한국어 번역 → `public/data/patch.json`
+6. `data/heroes.json` → `public/data/heroes.json` 복사
+7. `public/data/` 커밋 & push → GitHub Pages 자동 배포
 
 수동 실행: GitHub Actions 탭 → **Update OW Data** → **Run workflow**
 
@@ -62,12 +62,12 @@ cp .env.example .env
 uv run python scripts/generate_data.py
 ```
 
-`docs/data/` 하위에 JSON 파일이 생성됩니다.
+`public/data/` 하위에 JSON 파일이 생성됩니다.
 
 ### 로컬 서버 실행
 
 ```bash
-python -m http.server 8080 --directory docs
+python -m http.server 8080 --directory public
 # http://localhost:8080 접속
 ```
 
@@ -88,7 +88,7 @@ ow-agent/
 ├── data/
 │   ├── heroes.json            # 영웅 DB (자동 동기화)
 │   └── meta_baseline.json     # 크롤링 실패 시 fallback 데이터
-├── docs/                      # GitHub Pages 서빙 루트
+├── public/                      # GitHub Pages 서빙 루트
 │   ├── data/                  # 자동 생성 JSON (Actions이 커밋)
 │   ├── views/
 │   │   ├── meta.js            # 메타 통계 뷰 (Chart.js 히스토리)

@@ -7,6 +7,7 @@
 import { loadJSON } from '../app.js';
 
 const WORKER_URL = 'https://withered-disk-becf.russel0719.workers.dev/';
+const DAILY_LIMIT = 20;
 
 // ── 랭크 감지 ─────────────────────────────────────────────────────────────────
 
@@ -165,6 +166,24 @@ function buildSystemPrompt(question, { meta, heroes, patches, stadium }) {
 
 // ── API 호출 ──────────────────────────────────────────────────────────────────
 
+function updateLimitDisplay(remaining) {
+  const el = document.getElementById('ow-chat-limit');
+  if (!el) return;
+  el.style.display = 'inline';
+  el.textContent = `남은 질문 ${remaining}/${DAILY_LIMIT}회`;
+  el.style.color = remaining <= 5 ? '#f87171' : '#9ca3af';
+}
+
+async function fetchRemainingCount() {
+  try {
+    const resp = await fetch(WORKER_URL, { method: 'GET' });
+    const data = await resp.json();
+    if (data.remaining !== null && data.remaining !== undefined) {
+      updateLimitDisplay(data.remaining);
+    }
+  } catch { /* 무시 */ }
+}
+
 async function askAI(question, contextData) {
   const systemPrompt = buildSystemPrompt(question, contextData);
   const resp = await fetch(WORKER_URL, {
@@ -179,6 +198,21 @@ async function askAI(question, contextData) {
       max_tokens: 600,
     }),
   });
+
+  // 남은 횟수 헤더가 있으면 UI 업데이트 (KV 제한 활성화 시)
+  const remainingHeader = resp.headers.get('X-Remaining-Count');
+  if (remainingHeader !== null) {
+    updateLimitDisplay(parseInt(remainingHeader));
+  }
+
+  if (resp.status === 429) {
+    const errData = await resp.json().catch(() => ({}));
+    if (errData.error === 'daily_limit_exceeded') {
+      throw new Error('오늘 AI 질문 횟수(20회)가 모두 소진되었습니다. 내일 다시 이용해주세요.');
+    }
+    throw new Error(`API 오류: ${resp.status}`);
+  }
+
   if (!resp.ok) throw new Error(`API 오류: ${resp.status}`);
   const data = await resp.json();
   const content = data?.choices?.[0]?.message?.content;
@@ -225,6 +259,7 @@ export function mountChat() {
           <span class="ow-chat-dot"></span>
           OW2 AI 전문가
         </span>
+        <span id="ow-chat-limit" class="ow-chat-limit"></span>
         <button id="ow-chat-close" aria-label="닫기">✕</button>
       </div>
       <div id="ow-chat-messages" class="ow-chat-messages">
@@ -260,6 +295,7 @@ export function mountChat() {
     fab.classList.add('active');
     input.focus();
     msgs.scrollTop = msgs.scrollHeight;
+    fetchRemainingCount();
   }
   function closePopup() {
     popupOpen = false;

@@ -61,7 +61,7 @@ def _hero_id_to_en_name(hero_id: str) -> str:
         return _EN_NAME_EXCEPTIONS[hero_id]
     return hero_id.replace("_", " ").title()
 
-DOCS_DATA = ROOT / "docs" / "data"
+DOCS_DATA = ROOT / "public" / "data"
 DOCS_DATA.mkdir(parents=True, exist_ok=True)
 
 HISTORY_RANKS = {  # 히스토리 저장 대상 랭크 (챔피언은 그랜드마스터와 동일하여 제외)
@@ -334,36 +334,79 @@ def _has_korean(text: str) -> bool:
 
 
 def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
-    """패치 노트 영문 → 한국어 번역.
+    """패치 노트 한국어 처리.
 
-    existing이 있고 동일 URL의 패치가 이미 한국어로 번역되어 있으면 기존 번역을 재사용한다.
+    translation_source 필드로 번역 출처를 구분:
+    - "official": Blizzard 공식 한국어 패치노트 (우선)
+    - "llm": 영어 원문을 LLM으로 번역한 결과
+
+    공식 한국어가 올라오면 기존 LLM 번역을 교체한다.
     """
-    from bot.utils.translator import translate, translate_list
+    from bot.utils.glossary import get_korean_name
 
-    if (
-        existing
-        and existing.get("date") == data.get("date")
-        and _has_korean(existing.get("title", ""))
-        and existing.get("hero_changes")
-    ):
-        logger.info(f"  패치 번역 스킵: {data.get('date')} 이미 번역됨")
+    def _fix_hero_names(patch: dict) -> None:
+        """영어로 남아있는 영웅명을 glossary/heroes 기반으로 한국어로 교체."""
+        for hc in patch.get("hero_changes", []):
+            if not _has_korean(hc.get("hero", "")):
+                kr = get_korean_name(hc["hero"])
+                if kr:
+                    hc["hero"] = kr
+
+    same_date = existing and existing.get("date") == data.get("date")
+
+    # 크롤링 원본이 공식 한국어인지 판단 (제목 기준)
+    if _has_korean(data.get("title", "")):
+        if same_date and existing.get("translation_source") == "official":
+            logger.info(f"  패치 스킵: {data.get('date')} 공식 한국어 재사용")
+            _fix_hero_names(existing)
+            return existing
+        src = existing.get('translation_source', '-') if existing else '-'
+        logger.info(f"  패치 공식 한국어 적용: {data.get('date')} (기존: {src})")
+        _fix_hero_names(data)
+        data["translation_source"] = "official"
+        return data
+
+    # 원본이 영어 → 기존 번역(LLM·official 모두) 재사용
+    if same_date and _has_korean(existing.get("title", "")) and existing.get("hero_changes"):
+        logger.info(f"  패치 스킵: {data.get('date')} 기존 번역 재사용 ({existing.get('translation_source', 'unknown')})")
+        _fix_hero_names(existing)
         return existing
 
-    total = 1 + sum(1 + len(hc["changes"]) for hc in data["hero_changes"]) + len(data["general_changes"])
-    logger.info(f"  패치 번역 시작: {total}건")
+    # LLM 번역 진행
+    logger.info("  패치 LLM 번역 시작")
+    from bot.utils.translator import translate, translate_list
 
-    data["title"] = translate(data["title"])
+    if not _has_korean(data["title"]):
+        data["title"] = translate(data["title"])
+
     for hc in data["hero_changes"]:
-        hero_en = hc["hero"]                    # 번역 전 영문명 보존
-        hc["hero"] = translate(hero_en)
-        hc["changes"] = translate_list(
-            hc["changes"],
-            label=f"패치노트 번역 ({hc['hero']})",
-            heroes=[hero_en],
-        )
-    data["general_changes"] = translate_list(data["general_changes"], label="패치노트 공통 변경사항 번역")
+        hero_raw = hc["hero"]
+        if not _has_korean(hero_raw):
+            # glossary/heroes 우선, 없으면 LLM
+            kr = get_korean_name(hero_raw)
+            hc["hero"] = kr if kr else translate(hero_raw)
 
-    logger.info("  패치 번역 완료")
+        # 이미 한국어인 항목은 건너뛰고 영어 항목만 번역
+        indices = [i for i, c in enumerate(hc["changes"]) if not _has_korean(c)]
+        if indices:
+            texts = [hc["changes"][i] for i in indices]
+            translated = translate_list(
+                texts,
+                label=f"패치노트 번역 ({hc['hero']})",
+                heroes=[hero_raw],
+            )
+            for idx, t in zip(indices, translated):
+                hc["changes"][idx] = t
+
+    general_indices = [i for i, c in enumerate(data["general_changes"]) if not _has_korean(c)]
+    if general_indices:
+        texts = [data["general_changes"][i] for i in general_indices]
+        translated = translate_list(texts, label="패치노트 공통 변경사항 번역")
+        for idx, t in zip(general_indices, translated):
+            data["general_changes"][idx] = t
+
+    data["translation_source"] = "llm"
+    logger.info("  패치 LLM 번역 완료")
     return data
 
 
