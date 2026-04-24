@@ -704,7 +704,7 @@
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 121,
+      "upvotes": 122,
       "stats": {
         "LIFE": 729,
         "Armor": 225,
@@ -1029,7 +1029,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1501,
+      "upvotes": 1502,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1092,7 +1092,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 120,
+      "upvotes": 121,
       "stats": {
         "LIFE": 488,
         "Total LIFE": 488,
@@ -1582,7 +1582,7 @@
     {
       "name": "How to f1st(2)",
       "code": "XB218",
-      "description": "라마트라 근접 버스트 빌드, 네메시스 형태에서 강타로 순삭 후 빠른 탈출",
+      "description": "",
       "playstyle": "무기 파워",
       "upvotes": 74,
       "stats": {
@@ -1618,7 +1618,7 @@
     {
       "name": "👊THE INESCAPABLE NEMESIS — RAMATTRA Raid Boss (Stadium legen",
       "code": "RHWGK",
-      "description": "라마트라를 죽지 않는 레이드 보스로 만드는 생존형 빌드, 강력한 자가 회복과 지속 전투 능력",
+      "description": "라마트라를 죽지 않는 네메시스 형태 레이드 보스로 만드는 빌드. 막대한 자체 회복과 생존기로 적진을 장악한다.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 140,
       "stats": {
@@ -2098,7 +2098,7 @@
     {
       "name": "Aimbot.exe",
       "code": "VX71P",
-      "description": "솔저: 76의 헬릭 로켓 쿨타임 활용해 궁극기 충전 가속, 후반전 유연성 극대화",
+      "description": "솔저: 76의 헬릭 로켓을 재사용 대기시간마다 쏴대며 궁극기 활용 극대화하는 표준 에임봇 빌드.",
       "playstyle": "재미용 · 무기 파워",
       "upvotes": 355,
       "stats": {
@@ -2393,7 +2393,7 @@
     {
       "name": "Let me one shot her [500+ dmg vendetta build]",
       "code": "Z1P6V",
-      "description": "라마트라 암살 빌드, 500~830+ 버스트 딜로 순삭 후 2초 내 탈출, 생존기로 투사체 차단",
+      "description": "파라의 생존력과 폭딜, 암살 능력을 극대화해 한 방에 500~830+ 피해를 주고 2초 만에 빠져나오는 복수 빌드.",
       "playstyle": "혼합 파워 · 생명력 흡수",
       "upvotes": 21,
       "stats": {
@@ -2429,19 +2429,22 @@
       "cost": "$$"
     },
     {
-      "name": "⚔️ #1 무기 공격력 Duelist Demon 빌드. (From a Top 500 Stadium DPS)",
-      "code": "QXNYJ",
-      "description": "베네타 탑 500 진입용 안정적 빌드. 높은 기술 위력과 생존 능력으로 상위 랭크에서도 강력.",
-      "playstyle": "메타 · 생명력 흡수",
+      "name": "VENDETTA [Top 100] Build Guide - Maximize Your Impact!",
+      "code": "7M8YH",
+      "description": "파라의 강점을 극대화해 스타디움 탑100까지 오른 개인 최적화 빌드.",
+      "playstyle": "메타 · 무기 파워",
       "upvotes": 11,
       "stats": {
-        "LIFE": 329,
+        "LIFE": 285,
         "Armor": 175,
-        "Total LIFE": 504,
-        "Weapon Power": 60,
-        "Ability Power": 10,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "Shield": 50,
+        "Move Speed": 10,
+        "Total LIFE": 510,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 55,
+        "Ability Power": 0,
+        "Critical Damage": 10
       },
       "cost": "$$"
     }
@@ -2574,6 +2577,22 @@
       "cost": "$$"
     },
     {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$"
+    },
+    {
       "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
@@ -2587,22 +2606,6 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
