@@ -1029,6 +1029,212 @@
         "hero_id": "widowmaker",
         "meta_score": 0.5
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 70.9
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 56.2
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 56.0
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 52.5
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 50.1
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 47.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 47.6
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 46.2
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 45.7
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 45.5
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 45.3
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 44.1
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 43.4
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 43.3
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 42.4
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 41.7
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 41.4
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 41.4
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 41.2
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 38.4
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 38.4
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 38.2
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 37.9
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 37.4
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 35.7
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 35.5
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 33.1
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 32.7
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 32.1
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 32.1
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 31.7
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 30.1
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 30.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 28.8
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 28.5
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 27.9
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 27.7
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 27.2
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 24.7
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 24.2
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 23.7
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 19.6
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 18.8
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 18.4
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 17.6
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 14.9
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.5
+      }
     ]
   },
   "busan": {
@@ -1857,6 +2063,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 70.0
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 55.9
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 54.0
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 53.6
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 49.0
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 49.0
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 48.8
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 47.7
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 47.5
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 47.5
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 46.7
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 45.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 44.9
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 43.7
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 43.6
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 41.3
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 41.2
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 41.1
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 40.2
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 39.6
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 38.7
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 38.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 37.8
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 36.3
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 36.1
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 35.6
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 34.1
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 33.9
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 33.0
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 32.7
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 31.2
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 30.9
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 30.3
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 28.7
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 27.6
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 26.9
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 26.0
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 25.3
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 25.3
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 24.9
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 24.0
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 23.1
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 18.9
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 17.8
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 15.6
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 15.0
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 70.0
@@ -3093,6 +3505,212 @@
         "hero_id": "baptiste",
         "meta_score": 13.8
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 69.7
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 59.7
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 56.1
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 54.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 53.7
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 50.6
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 48.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 48.7
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 48.7
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 47.8
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 46.5
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 43.5
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 43.2
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 42.3
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 42.3
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 41.9
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 41.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 40.1
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 39.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 39.0
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 38.3
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 38.2
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 37.3
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 37.1
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 35.3
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 35.2
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 35.1
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 34.7
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 34.5
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 33.0
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 31.6
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 31.5
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 31.4
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 31.3
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 31.3
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 30.8
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 29.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 27.6
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 26.9
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 26.5
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 26.3
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 25.9
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 24.0
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 21.2
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 21.1
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 20.8
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 15.9
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 13.8
+      }
     ]
   },
   "lijiang-tower": {
@@ -3921,6 +4539,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 70.3
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 66.1
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 65.2
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 55.8
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 53.4
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 51.4
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 50.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 50.4
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 50.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 47.6
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 46.7
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 46.1
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 44.8
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 44.2
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 42.3
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 42.2
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 41.6
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 41.3
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 39.9
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 39.9
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 39.7
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 39.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 38.9
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 38.8
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 38.4
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 37.7
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 37.0
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 37.0
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 36.1
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 35.7
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 35.7
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 31.8
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 31.7
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 31.0
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 29.8
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 28.7
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 27.2
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 27.1
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 25.5
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 25.3
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 23.9
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 22.4
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 21.4
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 18.3
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 17.7
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 12.7
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 12.1
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.7
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 70.3
@@ -5157,6 +5981,212 @@
         "hero_id": "widowmaker",
         "meta_score": 0.7
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 70.9
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 62.8
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 59.2
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 52.8
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 52.7
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 52.2
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 49.9
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 49.8
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 47.7
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 46.5
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 45.4
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 45.1
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 44.9
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 43.2
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 42.7
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 42.2
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 42.0
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 41.4
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 39.0
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 38.6
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 38.5
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 38.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 38.2
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 38.1
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 38.1
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 37.6
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 36.6
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 36.2
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 36.2
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 34.9
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 33.0
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 31.2
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 30.5
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 29.5
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 28.9
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 27.8
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 27.4
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 26.4
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 24.3
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 24.0
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 23.4
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 22.8
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 20.9
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 19.4
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 19.1
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 17.3
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.7
+      }
     ]
   },
   "oasis": {
@@ -5985,6 +7015,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 69.7
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 55.2
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 53.8
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 51.7
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 50.1
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 49.8
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 49.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 47.7
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 46.6
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 46.6
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 45.8
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 45.2
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 45.0
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 44.2
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 44.1
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 42.7
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 42.2
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 42.1
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 41.0
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 40.7
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 36.9
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 36.2
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 36.0
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 36.0
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 35.4
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 33.1
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 32.8
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 32.1
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 32.1
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 31.9
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 31.9
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 30.4
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 29.4
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 27.4
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 27.2
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 26.7
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 26.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 25.9
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 24.4
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 23.0
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 22.2
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 20.7
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 20.3
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 18.8
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 16.1
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.5
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 69.7
@@ -7221,6 +8457,212 @@
         "hero_id": "widowmaker",
         "meta_score": 0.5
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 70.6
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 57.6
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 55.6
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 51.5
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 51.1
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 49.9
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 49.1
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 47.0
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 46.1
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 45.8
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 45.7
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 45.4
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 44.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 43.3
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 42.8
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 42.7
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 42.4
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 41.3
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 41.2
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 40.8
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 40.0
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 39.8
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 39.2
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 38.9
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 38.3
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 37.7
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 37.4
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 36.6
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 34.9
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 34.1
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 34.0
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 33.1
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 32.1
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 32.0
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 30.8
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 28.9
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 28.5
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 28.3
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 27.7
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 26.9
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 25.0
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 22.0
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 19.5
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 18.6
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 17.6
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 16.7
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 16.4
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.5
+      }
     ]
   },
   "circuit-royal": {
@@ -8049,6 +9491,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "sigma",
+        "meta_score": 72.1
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 71.2
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 60.4
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 60.3
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 57.8
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 52.3
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 50.9
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 50.2
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 48.9
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 46.7
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 45.1
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 44.4
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 40.0
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 37.8
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 37.5
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 36.7
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 36.7
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 36.2
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 35.4
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 35.4
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 34.9
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 34.7
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 34.4
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 33.4
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 33.3
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 33.2
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 32.7
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 32.0
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 32.0
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 30.5
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 29.7
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 29.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 28.9
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 28.8
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 28.4
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 26.9
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 26.5
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 25.5
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 23.8
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 22.6
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 22.5
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 22.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 22.0
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 21.6
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 17.7
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 16.5
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 12.0
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 3.0
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "sigma",
         "meta_score": 72.1
@@ -9285,6 +10933,212 @@
         "hero_id": "roadhog",
         "meta_score": 6.0
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 72.4
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 72.3
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 61.7
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 60.5
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 55.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 53.9
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 49.6
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 49.6
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 46.2
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 45.8
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 45.7
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 44.2
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 44.0
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 42.1
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 41.9
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 41.5
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 41.5
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 40.7
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 39.2
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 38.4
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 38.2
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 37.2
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 34.7
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 34.4
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 33.3
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 32.9
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 32.6
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 32.0
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 31.3
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 29.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 29.0
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 28.7
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 28.6
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 28.4
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 28.3
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 27.5
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 25.9
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 25.3
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 24.3
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 23.4
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 23.2
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 22.7
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 22.1
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 22.0
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 20.0
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 18.7
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 17.5
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 6.0
+      }
     ]
   },
   "havana": {
@@ -10113,6 +11967,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "ana",
+        "meta_score": 75.1
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 63.3
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 62.5
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 59.2
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 58.4
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 51.6
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 50.4
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 50.0
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 46.8
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 45.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 45.5
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 44.6
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 42.3
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 40.9
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 40.5
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 39.8
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 39.0
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 38.1
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 37.1
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 36.2
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 35.4
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 34.1
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 34.1
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 33.9
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 33.8
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 33.8
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 32.2
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 31.8
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 31.2
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 30.9
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 30.1
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 29.7
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 29.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 28.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 28.2
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 26.3
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 26.3
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 25.8
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 24.8
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 24.7
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 24.3
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 21.7
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 21.6
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 20.6
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 19.1
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 18.3
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 15.6
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 13.2
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 7.1
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "ana",
         "meta_score": 75.1
@@ -11349,6 +13409,212 @@
         "hero_id": "roadhog",
         "meta_score": 11.8
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "ana",
+        "meta_score": 76.0
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 64.3
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 60.9
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 60.5
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 56.4
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 49.7
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 49.1
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 48.8
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 48.4
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 46.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 45.9
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 45.1
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 42.7
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 41.9
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 41.2
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 40.1
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 39.7
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 39.7
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 37.4
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 36.7
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 35.7
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 35.0
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 34.5
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 34.4
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 33.1
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 32.6
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 32.1
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 30.6
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 29.9
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 29.4
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 29.2
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 28.4
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 27.5
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 26.1
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 25.8
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 25.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 22.3
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 21.4
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 21.4
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 21.1
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 19.9
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 13.6
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 12.3
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 11.8
+      }
     ]
   },
   "rialto": {
@@ -12177,6 +14443,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "ana",
+        "meta_score": 74.8
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 64.8
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 62.5
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 56.3
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 50.3
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 49.9
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 47.5
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 47.0
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 45.9
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 45.8
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 44.6
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 43.7
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 42.6
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 42.4
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 41.4
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 40.7
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 40.1
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 39.7
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 38.9
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 38.9
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 38.0
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 35.9
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 35.1
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 34.1
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 34.0
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 33.7
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 32.9
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 32.8
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 31.5
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 31.4
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 30.4
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 30.3
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 28.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 28.5
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 28.3
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 28.2
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 27.4
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 25.7
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 25.6
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 24.1
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 22.5
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 21.0
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 20.2
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 17.9
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 17.1
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 12.2
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "ana",
         "meta_score": 74.8
@@ -13413,6 +15885,212 @@
         "hero_id": "roadhog",
         "meta_score": 13.5
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "ana",
+        "meta_score": 75.1
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 68.1
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 59.9
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 54.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 53.4
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 53.4
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 50.8
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 46.7
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 45.4
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 43.2
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 42.5
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 41.8
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 41.4
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 41.0
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 40.1
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 39.4
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 39.2
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 38.5
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 38.2
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 38.1
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 37.4
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 36.8
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 36.5
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 35.5
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 35.0
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 34.4
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 34.0
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 33.4
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 31.1
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 30.2
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 30.0
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 29.8
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 27.6
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 26.9
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 26.2
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 25.7
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 25.2
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 24.6
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 24.2
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 24.0
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 23.5
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 23.1
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 23.1
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 19.8
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 19.5
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 13.5
+      }
     ]
   },
   "shambali-monastery": {
@@ -14241,6 +16919,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "ana",
+        "meta_score": 70.3
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 69.6
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 59.7
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 57.0
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 56.5
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 53.2
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 49.4
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 48.6
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 47.9
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 47.1
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 45.1
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 45.0
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 44.6
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 43.9
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 42.8
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 42.6
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 41.4
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 40.9
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 39.3
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 39.2
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 39.0
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 37.0
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 36.8
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 36.7
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 36.7
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 35.7
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 35.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 34.8
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 33.3
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 32.8
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 32.8
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 32.1
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 31.0
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 30.1
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 30.0
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 27.5
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 27.4
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 25.5
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 25.4
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 23.9
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 23.7
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 23.6
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 21.7
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 21.1
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 20.8
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 20.5
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 19.7
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 4.7
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "ana",
         "meta_score": 70.3
@@ -15477,6 +18361,212 @@
         "hero_id": "roadhog",
         "meta_score": 6.2
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 73.9
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 71.8
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 60.0
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 57.1
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 53.9
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 53.4
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 50.7
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 49.6
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 48.9
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 45.8
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 45.3
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 44.1
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 43.7
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 42.6
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 42.1
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 41.7
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 40.3
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 39.7
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 39.3
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 38.9
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 38.2
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 38.2
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 37.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 35.9
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 35.1
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 34.7
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 30.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 30.4
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 30.3
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 29.7
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 29.4
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 29.3
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 27.9
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 26.2
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 25.8
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 25.0
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 24.2
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 24.1
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 23.0
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 23.0
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 23.0
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 21.9
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 21.9
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 21.8
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 21.4
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 19.6
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 11.3
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 6.2
+      }
     ]
   },
   "blizzard-world": {
@@ -16305,6 +19395,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 70.3
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 67.4
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 56.3
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 51.5
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 50.5
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 49.4
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 46.7
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 44.8
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 40.9
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 40.5
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 39.6
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 39.0
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 38.3
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 37.9
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 37.8
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 37.6
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 36.7
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 34.5
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 34.5
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 34.3
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 34.0
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 33.7
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 31.4
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 30.9
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 30.3
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 28.6
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 28.5
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 27.5
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 27.1
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 25.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 25.4
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 24.4
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 24.3
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 24.2
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 24.2
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 24.2
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 23.9
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 23.4
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 22.7
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 22.0
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 21.5
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 20.6
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 18.2
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 17.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 14.7
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 10.4
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 9.4
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 4.4
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 70.3
@@ -17541,6 +20837,212 @@
         "hero_id": "roadhog",
         "meta_score": 5.2
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "ana",
+        "meta_score": 70.6
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 61.9
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 55.4
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 51.4
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 50.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 49.0
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 47.3
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 45.3
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 43.6
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 43.5
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 42.3
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 42.2
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 42.1
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 40.6
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 39.4
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 39.0
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 38.6
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 37.3
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 37.2
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 36.1
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 35.5
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 34.8
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 34.5
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 31.4
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 30.5
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 29.9
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 29.8
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 29.8
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 29.7
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 28.8
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 28.7
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 28.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 28.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 28.1
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 27.3
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 27.0
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 26.7
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 25.4
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 23.8
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 23.7
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 23.2
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 22.2
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 21.8
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 20.2
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 17.6
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 15.2
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 14.0
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 5.2
+      }
     ]
   },
   "hollywood": {
@@ -18369,6 +21871,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "ana",
+        "meta_score": 71.2
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 60.5
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 54.8
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 52.8
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 48.4
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 46.1
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 44.2
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 43.4
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 42.0
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 42.0
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 41.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 40.2
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 39.5
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 39.0
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 38.6
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 37.5
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 36.6
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 35.4
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 35.2
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 34.8
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 34.0
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 30.9
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 29.8
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 28.7
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 28.7
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 27.2
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 26.9
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 26.7
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 26.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 25.6
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 25.5
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 24.7
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 23.3
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 22.1
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 21.3
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 20.8
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 20.8
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 20.0
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 19.8
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 19.3
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 17.7
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 17.5
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 17.5
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 15.6
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 15.3
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 15.0
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 12.7
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 4.3
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "ana",
         "meta_score": 71.2
@@ -19605,6 +23313,212 @@
         "hero_id": "roadhog",
         "meta_score": 3.6
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "ana",
+        "meta_score": 71.5
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 62.3
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 57.8
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 51.9
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 49.7
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 48.5
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 46.4
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 46.0
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 44.4
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 41.9
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 41.4
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 40.7
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 40.5
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 39.9
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 38.5
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 38.5
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 37.6
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 35.9
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 35.3
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 35.0
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 33.9
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 33.3
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 33.1
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 32.1
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 30.6
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 30.4
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 29.5
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 27.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 27.4
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 27.4
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 27.1
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 26.3
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 25.7
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 25.4
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 25.3
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 25.1
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 23.0
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 22.8
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 22.6
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 22.6
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 21.9
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 20.4
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 19.9
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 18.6
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 17.4
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 16.7
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 16.6
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 3.6
+      }
     ]
   },
   "midtown": {
@@ -20433,6 +24347,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "ana",
+        "meta_score": 67.9
+      },
+      {
+        "hero_id": "kiriko",
+        "meta_score": 64.0
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 57.3
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 57.2
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 53.7
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 48.1
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 46.3
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 43.0
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 42.5
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 42.4
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 42.4
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 41.1
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 39.3
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 39.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 38.6
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 37.2
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 36.5
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 36.1
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 35.6
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 33.4
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 33.0
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 32.6
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 31.5
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 31.4
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 30.8
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 29.4
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 29.3
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 28.7
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 27.9
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 27.3
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 27.1
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 27.0
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 26.5
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 26.4
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 24.4
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 24.0
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 22.0
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 21.3
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 20.7
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 19.8
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 19.5
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 19.5
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 18.1
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 16.8
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 16.2
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 13.3
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 4.0
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "ana",
         "meta_score": 67.9
@@ -21669,6 +25789,212 @@
         "hero_id": "roadhog",
         "meta_score": 4.3
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 68.8
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 67.2
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 57.0
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 53.7
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 48.8
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 47.9
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 44.4
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 42.2
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 40.6
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 40.3
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 39.7
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 39.6
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 38.9
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 36.8
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 34.2
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 33.1
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 32.8
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 31.9
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 31.2
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 30.4
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 30.3
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 29.1
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 26.7
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 26.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 24.0
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 23.7
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 22.9
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 21.8
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 21.7
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 21.5
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 21.5
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 20.9
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 20.0
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 19.4
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 17.6
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 17.4
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 17.1
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 16.1
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 16.0
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 14.8
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 11.7
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 11.6
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 4.3
+      }
     ]
   },
   "paraiso": {
@@ -22497,6 +26823,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 67.9
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 60.7
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 55.9
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 50.2
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 48.4
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 47.3
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 43.3
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 41.9
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 41.2
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 40.8
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 40.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 38.8
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 38.7
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 36.8
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 35.7
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 33.3
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 32.6
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 31.7
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 31.4
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 30.3
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 29.4
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 29.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 29.2
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 28.6
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 28.6
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 28.1
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 26.9
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 26.7
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 25.5
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 24.3
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 23.7
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 23.1
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 23.0
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 22.4
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 21.9
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 21.0
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 20.7
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 19.9
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 19.9
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 17.2
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 17.0
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 16.9
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 16.3
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 14.0
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 12.3
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 5.0
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 67.9
@@ -23733,6 +28265,212 @@
         "hero_id": "roadhog",
         "meta_score": 12.6
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 69.4
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 65.4
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 55.4
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 54.4
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 49.1
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 47.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 45.0
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 44.6
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 44.4
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 44.1
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 43.1
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 40.2
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 40.0
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 39.4
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 38.7
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 38.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 36.6
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 36.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 35.9
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 35.3
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 35.2
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 33.5
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 32.8
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 32.2
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 31.5
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 31.0
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 30.9
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 30.7
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 30.1
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 29.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 27.8
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 25.3
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 24.6
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 23.7
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 23.1
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 22.7
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 19.9
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 17.1
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 12.6
+      }
     ]
   },
   "esperanca": {
@@ -24561,6 +29299,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 75.1
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 56.3
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 53.5
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 52.5
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 48.7
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 48.2
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 47.9
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 47.0
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 47.0
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 46.5
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 46.5
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 43.0
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 42.4
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 41.8
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 41.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 39.9
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 37.9
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 37.5
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 36.5
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 36.2
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 36.2
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 35.9
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 35.7
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 34.9
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 34.8
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 34.7
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 33.2
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 32.4
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 31.3
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 30.6
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 30.5
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 29.5
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 29.2
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 28.3
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 27.3
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 24.3
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 23.0
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 22.0
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 21.0
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 14.7
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 14.2
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 12.7
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 12.6
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.6
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 75.1
@@ -25797,6 +30741,212 @@
         "hero_id": "widowmaker",
         "meta_score": 9.7
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 75.4
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 56.6
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 53.8
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 52.7
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 49.0
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 48.9
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 48.6
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 45.6
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 45.6
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 45.1
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 45.0
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 43.3
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 41.8
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 41.5
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 40.8
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 40.6
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 39.8
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 39.7
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 38.7
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 38.1
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 38.0
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 37.5
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 37.0
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 36.9
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 35.9
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 34.1
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 33.8
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 33.4
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 32.0
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 32.0
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 31.9
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 31.4
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 31.1
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 30.6
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 30.5
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 29.2
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 29.0
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 28.5
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 25.2
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 23.8
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 23.2
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 23.1
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 20.0
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 18.4
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 16.6
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 15.2
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 15.1
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 14.0
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 9.7
+      }
     ]
   },
   "runasapi": {
@@ -26625,6 +31775,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 73.3
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 57.9
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 52.2
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 51.3
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 51.1
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 49.7
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 48.1
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 47.8
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 46.7
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 45.9
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 44.8
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 41.5
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 41.3
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 40.6
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 40.0
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 39.1
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 39.1
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 38.7
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 38.0
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 37.8
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 37.2
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 36.7
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 36.0
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 35.1
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 35.0
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 34.1
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 33.5
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 32.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 32.0
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 32.0
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 31.3
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 31.2
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 31.1
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 30.7
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 29.7
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 28.5
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 27.7
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 25.1
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 24.4
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 20.0
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 19.5
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 15.8
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 12.1
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 11.9
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 11.6
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.6
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 73.3
@@ -27861,6 +33217,212 @@
         "hero_id": "widowmaker",
         "meta_score": 0.3
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 71.2
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 54.6
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 52.6
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 51.5
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 49.0
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 48.3
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 47.3
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 47.0
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 46.6
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 46.3
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 45.1
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 45.0
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 43.9
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 43.3
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 41.2
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 41.2
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 40.4
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 39.7
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 39.5
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 39.3
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 38.5
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 37.9
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 37.1
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 37.1
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 37.0
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 36.4
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 36.2
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 35.4
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 34.9
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 34.9
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 32.6
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 31.4
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 30.6
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 30.4
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 30.3
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 29.4
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 28.3
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 26.6
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 25.8
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 25.4
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 24.8
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 23.8
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 19.2
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 14.8
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 12.6
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 11.9
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 5.2
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.3
+      }
     ]
   },
   "suravasa": {
@@ -28689,6 +34251,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 72.4
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 55.3
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 54.5
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 53.0
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 51.7
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 51.5
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 48.4
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 48.1
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 47.9
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 46.6
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 46.5
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 46.3
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 44.7
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 44.6
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 44.4
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 43.5
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 43.3
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 42.1
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 41.9
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 41.2
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 40.2
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 39.8
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 37.9
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 36.8
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 36.5
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 36.5
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 35.4
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 33.9
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 33.6
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 33.3
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 33.2
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 33.2
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 33.1
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 29.7
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 29.3
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 27.7
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 26.9
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 26.3
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 25.9
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 25.2
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 22.8
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 22.2
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 22.0
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 18.9
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 16.6
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 15.4
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 12.1
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 3.8
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 0.3
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 72.4
@@ -29925,6 +35693,212 @@
         "hero_id": "roadhog",
         "meta_score": 12.6
       }
+    ],
+    "2026-04-24": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 69.4
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 65.4
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 55.4
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 54.4
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 49.1
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 47.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 45.0
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 44.6
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 44.4
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 44.1
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 43.1
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 40.2
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 40.0
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 39.4
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 38.7
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 38.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 36.6
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 36.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 35.9
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 35.3
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 35.2
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 33.5
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 32.8
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 32.2
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 31.5
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 31.0
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 30.9
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 30.7
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 30.1
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 29.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 27.8
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 25.3
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 24.6
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 23.7
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 23.1
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 22.7
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 19.9
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 17.1
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 12.6
+      }
     ]
   },
   "throne-of-anubis": {
@@ -30753,6 +36727,212 @@
       }
     ],
     "2026-04-23": [
+      {
+        "hero_id": "kiriko",
+        "meta_score": 69.4
+      },
+      {
+        "hero_id": "ana",
+        "meta_score": 65.4
+      },
+      {
+        "hero_id": "sierra",
+        "meta_score": 55.4
+      },
+      {
+        "hero_id": "illari",
+        "meta_score": 54.4
+      },
+      {
+        "hero_id": "pharah",
+        "meta_score": 49.1
+      },
+      {
+        "hero_id": "sigma",
+        "meta_score": 47.9
+      },
+      {
+        "hero_id": "genji",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "reaper",
+        "meta_score": 47.4
+      },
+      {
+        "hero_id": "hazard",
+        "meta_score": 45.0
+      },
+      {
+        "hero_id": "emre",
+        "meta_score": 44.6
+      },
+      {
+        "hero_id": "winston",
+        "meta_score": 44.4
+      },
+      {
+        "hero_id": "wuyang",
+        "meta_score": 44.3
+      },
+      {
+        "hero_id": "anran",
+        "meta_score": 44.1
+      },
+      {
+        "hero_id": "zenyatta",
+        "meta_score": 43.1
+      },
+      {
+        "hero_id": "symmetra",
+        "meta_score": 42.9
+      },
+      {
+        "hero_id": "domina",
+        "meta_score": 40.2
+      },
+      {
+        "hero_id": "tracer",
+        "meta_score": 40.0
+      },
+      {
+        "hero_id": "mizuki",
+        "meta_score": 39.4
+      },
+      {
+        "hero_id": "soldier76",
+        "meta_score": 38.7
+      },
+      {
+        "hero_id": "venture",
+        "meta_score": 38.3
+      },
+      {
+        "hero_id": "moira",
+        "meta_score": 36.6
+      },
+      {
+        "hero_id": "doomfist",
+        "meta_score": 36.1
+      },
+      {
+        "hero_id": "ashe",
+        "meta_score": 35.9
+      },
+      {
+        "hero_id": "echo",
+        "meta_score": 35.8
+      },
+      {
+        "hero_id": "zarya",
+        "meta_score": 35.3
+      },
+      {
+        "hero_id": "cassidy",
+        "meta_score": 35.2
+      },
+      {
+        "hero_id": "dva",
+        "meta_score": 34.6
+      },
+      {
+        "hero_id": "juno",
+        "meta_score": 33.5
+      },
+      {
+        "hero_id": "ramattra",
+        "meta_score": 32.8
+      },
+      {
+        "hero_id": "reinhardt",
+        "meta_score": 32.5
+      },
+      {
+        "hero_id": "widowmaker",
+        "meta_score": 32.3
+      },
+      {
+        "hero_id": "lifeweaver",
+        "meta_score": 32.2
+      },
+      {
+        "hero_id": "lucio",
+        "meta_score": 31.5
+      },
+      {
+        "hero_id": "mei",
+        "meta_score": 31.0
+      },
+      {
+        "hero_id": "hanzo",
+        "meta_score": 30.9
+      },
+      {
+        "hero_id": "orisa",
+        "meta_score": 30.7
+      },
+      {
+        "hero_id": "brigitte",
+        "meta_score": 30.1
+      },
+      {
+        "hero_id": "junker_queen",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "torbjorn",
+        "meta_score": 29.6
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "meta_score": 29.2
+      },
+      {
+        "hero_id": "mauga",
+        "meta_score": 28.0
+      },
+      {
+        "hero_id": "mercy",
+        "meta_score": 27.8
+      },
+      {
+        "hero_id": "junkrat",
+        "meta_score": 26.8
+      },
+      {
+        "hero_id": "sombra",
+        "meta_score": 25.3
+      },
+      {
+        "hero_id": "bastion",
+        "meta_score": 24.6
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "meta_score": 23.7
+      },
+      {
+        "hero_id": "freja",
+        "meta_score": 23.1
+      },
+      {
+        "hero_id": "sojourn",
+        "meta_score": 22.7
+      },
+      {
+        "hero_id": "vendetta",
+        "meta_score": 19.9
+      },
+      {
+        "hero_id": "baptiste",
+        "meta_score": 17.1
+      },
+      {
+        "hero_id": "roadhog",
+        "meta_score": 12.6
+      }
+    ],
+    "2026-04-24": [
       {
         "hero_id": "kiriko",
         "meta_score": 69.4
