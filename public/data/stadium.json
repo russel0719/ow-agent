@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 170,
+      "upvotes": 171,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -775,7 +775,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1717,
+      "upvotes": 1718,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1478,7 +1478,7 @@
       "code": "008C9",
       "description": "라운드 3부터 라운드당 1.2만 피해와 75% 이상 피해 감소로 ‘불사 오리사’를 구현한 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 120,
+      "upvotes": 121,
       "stats": {
         "LIFE": 696,
         "Armor": 506,
@@ -2301,7 +2301,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워",
-      "upvotes": 77,
+      "upvotes": 78,
       "stats": {
         "LIFE": 251,
         "Armor": 16,
@@ -2429,22 +2429,19 @@
       "cost": "$$"
     },
     {
-      "name": "벤델타 [탑 100] 빌드 가이드 - 임팩트 극대화!",
-      "code": "7M8YH",
-      "description": "",
-      "playstyle": "메타 · 무기 파워",
+      "name": "⚔️ #1 무기 공격력 결투가 악마 빌드. (탑 500 스타디움 딜러가 만든)",
+      "code": "QXNYJ",
+      "description": "신규 영웅 Vendetta의 탑 500 진입용 빌드로, 높은 기술 위력과 기동성을 바탕으로 빠른 처치와 생존을 동시에 확보하는 전략이 핵심입니다.",
+      "playstyle": "메타 · 생명력 흡수",
       "upvotes": 11,
       "stats": {
-        "LIFE": 285,
+        "LIFE": 329,
         "Armor": 175,
-        "Shield": 50,
-        "Move Speed": 10,
-        "Total LIFE": 510,
-        "Attack Speed": 10,
-        "Melee Damage": 15,
-        "Weapon Power": 55,
-        "Ability Power": 0,
-        "Critical Damage": 10
+        "Total LIFE": 504,
+        "Weapon Power": 60,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
       },
       "cost": "$$"
     }
@@ -2577,22 +2574,6 @@
       "cost": "$$"
     },
     {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
-      },
-      "cost": "$$"
-    },
-    {
       "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
@@ -2606,6 +2587,22 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
