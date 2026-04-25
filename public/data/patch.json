@@ -41,14 +41,14 @@
           "이동 속도 감소 효과 감소량이 90%에서 50%로 감소했습니다.",
           "추가 [날카로운 저항] 자원 보너스가 50%에서 25%로 감소했습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "정커퀸",
         "changes": [
           "부상 피해가 40에서 25로 감소했습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "오리사",
@@ -58,7 +58,7 @@
           "공격 속도 능력치 보너스가 10%에서 5%로 감소했습니다.",
           "비용이 4,000에서 5,000으로 증가했습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "라마트라",
@@ -69,35 +69,35 @@
           "[탐식의 소용돌이]에 적중한 적당 [네메시스 형태] 재사용 대기시간 감소 효과가 1초에서 0.5초로 감소했습니다.",
           "공허 역병 피해가 20에서 30으로 증가했습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "자리야",
         "changes": [
           "치유와 피해를 통해 획득하는 재화량이 7.14% 증가했습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "프레야",
         "changes": [
           "추가 화살 피해가 50% 감소한 피해에서 60% 감소한 피해로 감소했습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "아나",
         "changes": [
           "다시 사용할 수 있게 되었습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "브리기테",
         "changes": [
           "[수리 팩] 지속 시간 보너스가 50%에서 25%로 감소했습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "주노",
@@ -106,7 +106,7 @@
           "[메디블라스터] 감소율 사거리 보너스가 5미터에서 15미터로 증가했습니다.",
           "다시 사용할 수 있게 되었습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       },
       {
         "hero": "우양",
@@ -116,7 +116,7 @@
           "최대 추가 생명력이 30에서 15로 감소했습니다.",
           "비용이 4,000에서 5,000으로 증가했습니다."
         ],
-        "is_stadium": false
+        "is_stadium": true
       }
     ],
     "general_changes": [

@@ -352,24 +352,35 @@ def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
                 if kr:
                     hc["hero"] = kr
 
+    def _sync_is_stadium(target: dict, source: dict) -> None:
+        """신규 크롤링의 is_stadium 값을 기존 데이터에 동기화 (영웅명 매칭)."""
+        source_map = {
+            hc.get("hero", ""): hc.get("is_stadium", False)
+            for hc in source.get("hero_changes", [])
+        }
+        if not source_map:
+            return
+        for hc in target.get("hero_changes", []):
+            hero = hc.get("hero", "")
+            if hero in source_map:
+                hc["is_stadium"] = source_map[hero]
+
     same_date = existing and existing.get("date") == data.get("date")
 
     # 크롤링 원본이 공식 한국어인지 판단 (제목 기준)
+    # 번역 비용이 없으므로 항상 신규 크롤링 데이터를 사용해 is_stadium 등 최신 반영
     if _has_korean(data.get("title", "")):
-        if same_date and existing.get("translation_source") == "official":
-            logger.info(f"  패치 스킵: {data.get('date')} 공식 한국어 재사용")
-            _fix_hero_names(existing)
-            return existing
         src = existing.get('translation_source', '-') if existing else '-'
         logger.info(f"  패치 공식 한국어 적용: {data.get('date')} (기존: {src})")
         _fix_hero_names(data)
         data["translation_source"] = "official"
         return data
 
-    # 원본이 영어 → 기존 번역(LLM·official 모두) 재사용
+    # 원본이 영어 → 기존 번역(LLM·official 모두) 재사용 + is_stadium 동기화
     if same_date and _has_korean(existing.get("title", "")) and existing.get("hero_changes"):
         logger.info(f"  패치 스킵: {data.get('date')} 기존 번역 재사용 ({existing.get('translation_source', 'unknown')})")
         _fix_hero_names(existing)
+        _sync_is_stadium(existing, data)
         return existing
 
     # LLM 번역 진행

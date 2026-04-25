@@ -131,6 +131,17 @@ def _parse_single_patch(patch_el) -> PatchNote | None:
             continue
 
         if "PatchNotes-section-hero_update" in section_classes:
+            # 섹션 제목에 명시적으로 "스타디움" 포함 시 True,
+            # 아니면 앞선 generic_update 섹션에서 설정된 in_stadium 상속
+            section_h4 = section.find("h4") or section.find("h3")
+            if section_h4:
+                section_h4_text = section_h4.get_text(strip=True).lower()
+                if "stadium" in section_h4_text or "스타디움" in section_h4_text:
+                    section_is_stadium = True
+                else:
+                    section_is_stadium = in_stadium
+            else:
+                section_is_stadium = in_stadium
             hero_updates = section.find_all(class_="PatchNotesHeroUpdate")
             for hu in hero_updates:
                 name_el = hu.find(class_="PatchNotesHeroUpdate-name")
@@ -140,7 +151,7 @@ def _parse_single_patch(patch_el) -> PatchNote | None:
                 changes = _extract_hero_changes(hu)
                 if changes:
                     hero_changes.append(
-                        HeroChange(hero=hero_name, changes=changes, is_stadium=in_stadium)
+                        HeroChange(hero=hero_name, changes=changes, is_stadium=section_is_stadium)
                     )
 
     return PatchNote(

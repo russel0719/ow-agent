@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 595,
+      "upvotes": 596,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -439,7 +439,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 280,
+      "upvotes": 281,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -720,7 +720,7 @@
       "code": "S27YB",
       "description": "기술 위력 110%, 체력 1,100 이상, 기술 생명력 흡수 25%로 버스트 딜과 생존을 동시에 갖춘 S급 탱커.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 99,
+      "upvotes": 100,
       "stats": {
         "LIFE": 675,
         "Armor": 275,
@@ -775,7 +775,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1718,
+      "upvotes": 1720,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1192,7 +1192,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 276,
+      "upvotes": 277,
       "stats": {
         "LIFE": 471,
         "Armor": 100,
@@ -1580,9 +1580,9 @@
       "cost": "$$$"
     },
     {
-      "name": "주먹으로 때리는 법(2)",
+      "name": "How to f1st(2)",
       "code": "XB218",
-      "description": "라마트라를 네메시스 형태에서 죽지 않는 레이드 보스로 만드는 생존 중심 빌드.",
+      "description": "",
       "playstyle": "무기 파워",
       "upvotes": 74,
       "stats": {
@@ -1616,11 +1616,11 @@
   ],
   "Ramattra": [
     {
-      "name": "👊탈출 불가능한 네메시스 — 라마트라 레이드 보스 (스타디움 전설",
+      "name": "👊THE INESCAPABLE NEMESIS — RAMATTRA Raid Boss (Stadium legen",
       "code": "RHWGK",
-      "description": "솔저: 76의 나선 로켓을 끊임없이 써서 궁극기 활용 극대화하는 표준 에임봇 빌드.",
+      "description": "라마트라를 궁극기 지속 중 거의 죽지 않는 레이드 보스로 만드는 빌드. 네메시스 형태 가동 시간 극대화와 막대한 자체 회복으로 전선을 장악한다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 140,
+      "upvotes": 142,
       "stats": {
         "LIFE": 749,
         "Armor": 100,
@@ -1656,7 +1656,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 19,
+      "upvotes": 20,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -2058,19 +2058,18 @@
       "cost": "$$$"
     },
     {
-      "name": "기술 위력 SHOCK COLLAR",
-      "code": "BC8DZ",
-      "description": "솔저: 76 표준 에임봇 빌드, 나선 로켓 쿨타임마다 사용해 전술 조준경 활용 극대화, 후반 유연성 우수",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 8,
+      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
+      "code": "DB1X6",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 9,
       "stats": {
-        "LIFE": 358,
-        "Total LIFE": 358,
-        "Weapon Power": 20,
-        "Ability Power": 60,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
+        "LIFE": 377,
+        "Armor": 50,
+        "Total LIFE": 427,
+        "Weapon Power": 10,
+        "Ability Power": 100,
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -2096,9 +2095,9 @@
       "cost": "$$"
     },
     {
-      "name": "에임봇.exe",
+      "name": "Aimbot.exe",
       "code": "VX71P",
-      "description": "파라의 생존·버스트·암살 능력을 극대화해 한 번에 500~830+ 대미지를 주고 2초 안에 탈출하는 복수 빌드.",
+      "description": "솔저: 76의 나선 로켓을 재사용 대기시간마다 쏘며 궁극기 활용 극대화를 노리는 표준 에임봇 빌드. 후반 유연성이 높다.",
       "playstyle": "재미용 · 무기 파워",
       "upvotes": 355,
       "stats": {
@@ -2118,7 +2117,7 @@
       "code": "9M583",
       "description": "솔저: 76 솔로 캐리 빌드, 무기 공격력+공격 속도로 즉사",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 303,
+      "upvotes": 304,
       "stats": {
         "LIFE": 366,
         "Armor": 25,
@@ -2391,9 +2390,9 @@
       "cost": "$$"
     },
     {
-      "name": "원샷만 시켜줘 [500+ 대미지 벤델타 빌드]",
+      "name": "Let me one shot her [500+ dmg vendetta build]",
       "code": "Z1P6V",
-      "description": "파라의 강점을 극대화해 탑 100까지 오른 개인 최적화 빌드.",
+      "description": "벤데타의 생존력과 폭딜, 암살 능력을 극한으로 끌어올린 빌드. 2초 안에 500~830+ 피해를 넣고 빠져나오는 원샷 암살형 플레이.",
       "playstyle": "혼합 파워 · 생명력 흡수",
       "upvotes": 21,
       "stats": {
@@ -2429,9 +2428,9 @@
       "cost": "$$"
     },
     {
-      "name": "⚔️ #1 무기 공격력 결투가 악마 빌드. (탑 500 스타디움 딜러가 만든)",
+      "name": "⚔️ #1 무기 공격력 Duelist Demon Build. (From a Top 500 Stadium DPS)",
       "code": "QXNYJ",
-      "description": "신규 영웅 Vendetta의 탑 500 진입용 빌드로, 높은 기술 위력과 기동성을 바탕으로 빠른 처치와 생존을 동시에 확보하는 전략이 핵심입니다.",
+      "description": "새 영웅 벤데타로 탑 500에 도전할 수 있는 빌드. 높은 생존과 폭딜로 암살자 역할을 완벽 수행한다.",
       "playstyle": "메타 · 생명력 흡수",
       "upvotes": 11,
       "stats": {
@@ -2525,7 +2524,7 @@
       "code": "ACKTS",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 56,
+      "upvotes": 57,
       "stats": {
         "LIFE": 690,
         "Armor": 225,
@@ -2574,6 +2573,22 @@
       "cost": "$$"
     },
     {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$"
+    },
+    {
       "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
@@ -2587,22 +2602,6 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
