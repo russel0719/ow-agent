@@ -26,7 +26,7 @@ Cloudflare Worker (worker.js)
 1. [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → 새 Worker 생성
 2. `cloudflare-worker/worker.js` 내용 붙여넣기 후 배포
 3. **Settings → Variables** → `NVIDIA_API_KEY` 추가
-4. `public/views/chat.js` 상단의 `WORKER_URL` 상수를 배포된 Worker URL로 변경
+4. `public/app.js`의 `WORKER_URL` 상수를 배포된 Worker URL로 변경 (`chat.js`와 `home.js`가 공유)
 
 ## KV 기반 일일 20회 제한 설정
 

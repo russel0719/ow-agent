@@ -3,7 +3,7 @@
 ## 시스템 구성
 
 ```
-[GitHub Actions - 매일 15:00 KST]
+[GitHub Actions - 매일 15:00 KST + main push 시]
         │
         ▼
 scripts/generate_data.py
@@ -22,12 +22,13 @@ https://russel0719.github.io/ow-agent/
         ▼
 [사용자 브라우저]
 public/index.html + app.js + views/
+  ├── 홈 대시보드 (home.js) — AI 요약, TOP3, 초상화 버블 차트
   ├── 메타 통계 (meta.js) — 패치 날짜 세로선 포함
   ├── 스타디움 빌드 (stadium.js)
   ├── 패치노트 (patch.js)
   └── AI 챗봇 (chat.js)
         │
-        ▼ (챗봇 질문)
+        ▼ (홈 AI 요약 / 챗봇 질문)
 Cloudflare Worker (worker.js)
   ├── GET: 남은 횟수 조회
   ├── KV: 전체 일일 20회 제한 (ow:chat:YYYY-MM-DD)
@@ -61,7 +62,8 @@ Cloudflare Worker (worker.js)
 | `bot/utils/hero_data.py` | 영웅 DB 관리 (신규 영웅 자동 감지) |
 | `data/heroes.json` | 영웅 DB (카운터, 시너지, 팁, aliases) — 매일 자동 갱신 |
 | `data/ow_glossary.json` | 번역 용어집 (공통 + 영웅별 스킬명) — 수동 관리 |
-| `public/app.js` | SPA 라우터 + `loadJSON()` 유틸 |
+| `public/app.js` | SPA 라우터 + `loadJSON()` + `WORKER_URL` / `getPortraitIndex()` export |
+| `public/views/home.js` | 홈 대시보드 (AI 요약, 꿀/똥 TOP3, 초상화 버블 차트) |
 | `cloudflare-worker/worker.js` | CORS 프록시 + KV 일일 제한 + GET 남은 횟수 조회 |
 
 ## 데이터 흐름
