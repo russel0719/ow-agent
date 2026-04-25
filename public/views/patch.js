@@ -31,7 +31,8 @@ export async function renderPatch(container, _params) {
     <details ${idx === 0 ? 'open' : ''} class="mb-4 bg-ow-card border border-ow-border rounded-lg overflow-hidden group">
       <summary class="flex items-center gap-3 px-5 py-4 cursor-pointer select-none list-none hover:bg-white/5 transition-colors">
         <span class="text-ow-orange font-bold flex-1 text-sm">${escHtml(patch.title ?? '패치 노트')}</span>
-        ${patch.date ? `<span class="text-xs text-gray-400 shrink-0">${escHtml(patch.date)}</span>` : ''}
+        ${patch.date ? `<span class="text-xs text-gray-400 shrink-0">${escHtml(patch.date)}</span>
+        <span class="text-xs text-gray-600 shrink-0">(${daysAgo(patch.date)})</span>` : ''}
         ${patch.url ? `<a href="${escHtml(patch.url)}" target="_blank" rel="noopener"
             class="text-xs text-ow-blue hover:underline shrink-0" onclick="event.stopPropagation()">공식 페이지 →</a>` : ''}
         <svg class="w-4 h-4 text-gray-500 shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,11 +58,11 @@ function buildKoToHeroIdMap(heroesData) {
   return map;
 }
 
-/** 그랜드마스터 메타 데이터에서 한국어 영웅명 → {meta_score, tier} 맵 생성 */
+/** 전체 랭크 메타 데이터에서 한국어 영웅명 → {meta_score, tier} 맵 생성 */
 function buildMetaMap(metaRaw) {
   const map = {};
   if (!metaRaw) return map;
-  const gmList = metaRaw['그랜드마스터'] ?? [];
+  const gmList = metaRaw['전체'] ?? [];
   for (const hero of gmList) {
     if (hero.hero_name) {
       map[hero.hero_name] = { meta_score: hero.meta_score, tier: hero.tier };
@@ -165,6 +166,20 @@ function heroChangeCard(h, isStadium = false, metaMap = {}, koToHeroId = {}, por
       ` : '<p class="text-xs text-gray-500">세부 변경 내용 없음</p>'}
     </div>
   `;
+}
+
+function parseKoDate(s) {
+  const m = s?.match(/(\d+)년\s*(\d+)월\s*(\d+)일/);
+  if (!m) return null;
+  return new Date(+m[1], +m[2] - 1, +m[3]);
+}
+
+function daysAgo(dateStr) {
+  const d = parseKoDate(dateStr);
+  if (!d) return '';
+  const diff = Math.floor((Date.now() - d.getTime()) / 86400000);
+  if (diff === 0) return '오늘';
+  return `${diff}일 전`;
 }
 
 function escHtml(s) {

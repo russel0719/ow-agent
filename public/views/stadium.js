@@ -360,7 +360,7 @@ function attachCodeBadgeEvents(area) {
 const STAT_CONFIG = [
   { key: 'Weapon Power',       label: '무기 파워',   max: 80,  fmt: v => `+${v}%`, color: '#ef4444', always: true },
   { key: 'Ability Power',      label: '능력 파워',   max: 80,  fmt: v => `+${v}%`, color: '#a855f7', always: true },
-  { key: 'Total LIFE',         label: '최대 체력',   max: 600, fmt: v => `${v}`,   color: '#22c55e', always: true },
+  { key: 'Total LIFE',         label: '최대 체력',   max: 600, fmt: v => `+${v} HP`, color: '#22c55e', always: true },
   { key: 'Move Speed',         label: '이동 속도',   max: 40,  fmt: v => `+${v}%`, color: '#4FC3F7', always: false },
   { key: 'Cooldown Reduction', label: '재사용 단축', max: 40,  fmt: v => `-${v}%`, color: '#f59e0b', always: false },
   { key: 'Attack Speed',       label: '공격 속도',   max: 40,  fmt: v => `+${v}%`, color: '#f97316', always: false },

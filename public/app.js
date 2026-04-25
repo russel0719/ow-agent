@@ -1,12 +1,15 @@
 /**
  * OW2 메타 대시보드 — SPA 라우터
- * Hash 기반 라우팅: #meta | #stadium | #patch
+ * Hash 기반 라우팅: #home | #meta | #stadium | #patch
  * 딥링크 지원: #meta?rank=그랜드마스터&hero=tracer
  */
+import { renderHome } from './views/home.js';
 import { renderMeta } from './views/meta.js?v=5';
 import { renderStadium } from './views/stadium.js?v=4';
 import { renderPatch } from './views/patch.js?v=4';
 import { mountChat } from './views/chat.js?v=1';
+
+export const WORKER_URL = 'https://withered-disk-becf.russel0719.workers.dev/';
 
 // ── 데이터 캐시 ───────────────────────────────────────────────────────────────
 const cache = {};
@@ -49,6 +52,7 @@ export async function getPortraitIndex() {
 
 // ── 라우터 ────────────────────────────────────────────────────────────────────
 const VIEWS = {
+  home:    renderHome,
   meta:    renderMeta,
   stadium: renderStadium,
   patch:   renderPatch,
@@ -57,11 +61,11 @@ const VIEWS = {
 const app = document.getElementById('app');
 
 async function navigate() {
-  const raw = location.hash.slice(1) || 'meta';
+  const raw = location.hash.slice(1) || 'home';
   const qIdx = raw.indexOf('?');
   const tab = qIdx >= 0 ? raw.slice(0, qIdx) : raw;
   const params = new URLSearchParams(qIdx >= 0 ? raw.slice(qIdx + 1) : '');
-  const activeTab = tab in VIEWS ? tab : 'meta';
+  const activeTab = tab in VIEWS ? tab : 'home';
   const render = VIEWS[activeTab];
 
   // 탭 활성화

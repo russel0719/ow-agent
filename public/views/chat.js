@@ -4,9 +4,7 @@
  * 사용 전: cloudflare-worker/worker.js 를 Cloudflare에 배포 후
  * 아래 WORKER_URL 을 실제 Worker URL로 교체하세요.
  */
-import { loadJSON } from '../app.js';
-
-const WORKER_URL = 'https://withered-disk-becf.russel0719.workers.dev/';
+import { loadJSON, WORKER_URL } from '../app.js';
 const DAILY_LIMIT = 20;
 
 // ── 랭크 감지 ─────────────────────────────────────────────────────────────────
@@ -167,11 +165,16 @@ function buildSystemPrompt(question, { meta, heroes, patches, stadium }) {
 // ── API 호출 ──────────────────────────────────────────────────────────────────
 
 function updateLimitDisplay(remaining) {
-  const el = document.getElementById('ow-chat-limit');
-  if (!el) return;
-  el.style.display = 'inline';
-  el.textContent = `남은 질문 ${remaining}/${DAILY_LIMIT}회`;
-  el.style.color = remaining <= 5 ? '#f87171' : '#9ca3af';
+  const bar = document.getElementById('ow-chat-limit');
+  if (!bar) return;
+  bar.style.display = 'flex';
+  const fill = document.getElementById('ow-chat-limit-fill');
+  const text = document.getElementById('ow-chat-limit-text');
+  const color = remaining >= 10 ? '#4ade80' : remaining >= 5 ? '#facc15' : '#f87171';
+  fill.style.width = `${(remaining / DAILY_LIMIT) * 100}%`;
+  fill.style.background = color;
+  text.textContent = `${remaining}/${DAILY_LIMIT}`;
+  text.style.color = color;
 }
 
 async function fetchRemainingCount() {
@@ -259,7 +262,10 @@ export function mountChat() {
           <span class="ow-chat-dot"></span>
           OW2 AI 전문가
         </span>
-        <span id="ow-chat-limit" class="ow-chat-limit"></span>
+        <div id="ow-chat-limit" class="ow-chat-limit-bar">
+          <div class="ow-chat-limit-track"><div id="ow-chat-limit-fill" class="ow-chat-limit-fill"></div></div>
+          <span id="ow-chat-limit-text" class="ow-chat-limit-text"></span>
+        </div>
         <button id="ow-chat-close" aria-label="닫기">✕</button>
       </div>
       <div id="ow-chat-messages" class="ow-chat-messages">

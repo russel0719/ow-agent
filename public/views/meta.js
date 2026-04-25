@@ -848,8 +848,7 @@ async function renderHeroDetail(container, heroId, heroName) {
       </div>
     </div>`;
 
-  const [stadium, patches, heroesData] = await Promise.all([
-    loadJSON('stadium').catch(() => null),
+  const [patches, heroesData] = await Promise.all([
     loadJSON('patch').catch(() => null),
     loadJSON('heroes').catch(() => null),
   ]);
@@ -859,11 +858,7 @@ async function renderHeroDetail(container, heroId, heroName) {
   // hero_id → 영문명, 한국어 별칭
   const heroesMap = heroesData?.heroes ?? {};
   const heroEntry = Object.entries(heroesMap).find(([id]) => id === heroId);
-  const englishName = heroEntry?.[1]?.name ?? heroId;
   const koAlias = (heroEntry?.[1]?.aliases ?? []).find(a => /[가-힣]/.test(a)) ?? heroName;
-
-  // 스타디움 빌드 (영문명 키로 조회)
-  const builds = stadium?.[englishName] ?? [];
 
   // 최근 패치 이력
   const patchItems = [];
@@ -882,24 +877,7 @@ async function renderHeroDetail(container, heroId, heroName) {
         <span class="font-bold text-lg" style="color:${color}">${escHtml(heroName)}</span>
         <span class="text-gray-400 text-sm">통합 정보</span>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-        <!-- 스타디움 빌드 -->
-        <div>
-          <h3 class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-3">스타디움 인기 빌드</h3>
-          ${builds.length ? `
-            <div class="space-y-2">
-              ${builds.slice(0, 3).map((b, i) => `
-                <div class="bg-ow-bg border border-ow-border rounded-lg p-3 flex items-center gap-3">
-                  <span class="text-xs text-ow-orange font-bold w-4 shrink-0">${i + 1}</span>
-                  <div class="flex-1 min-w-0">
-                    <div class="text-sm text-gray-100 font-medium truncate">${escHtml(b.name)}</div>
-                    <div class="text-xs text-gray-500 mt-0.5">${escHtml(b.playstyle ?? '')}</div>
-                  </div>
-                  <button class="detail-code-badge shrink-0" data-code="${escHtml(b.code)}">${escHtml(b.code)}</button>
-                </div>`).join('')}
-            </div>` : `<p class="text-gray-500 text-sm">스타디움 빌드 데이터가 없습니다.</p>`}
-        </div>
+      <div class="grid grid-cols-1 gap-6">
 
         <!-- 패치 이력 -->
         <div>
@@ -925,21 +903,6 @@ async function renderHeroDetail(container, heroId, heroName) {
       </div>
     </div>`;
 
-  // 빌드 코드 복사
-  panel.querySelectorAll('.detail-code-badge').forEach(badge => {
-    badge.addEventListener('click', async () => {
-      const code = badge.dataset.code;
-      try { await navigator.clipboard.writeText(code); } catch {
-        const ta = document.createElement('textarea');
-        ta.value = code;
-        document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
-      }
-      const orig = badge.textContent;
-      badge.textContent = '복사됨!';
-      badge.style.color = '#22c55e';
-      setTimeout(() => { badge.textContent = orig; badge.style.color = ''; }, 1500);
-    });
-  });
 }
 
 // ── 영웅 카드 그리드 / 테이블 ─────────────────────────────────────────────────
