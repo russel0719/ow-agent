@@ -1582,7 +1582,7 @@
     {
       "name": "How to f1st(2)",
       "code": "XB218",
-      "description": "",
+      "description": "라마트라 근접 버스트 빌드, 근접 콤보로 순삭 후 빠른 탈출.",
       "playstyle": "무기 파워",
       "upvotes": 74,
       "stats": {
@@ -1618,7 +1618,7 @@
     {
       "name": "👊THE INESCAPABLE NEMESIS — RAMATTRA Raid Boss (Stadium legen",
       "code": "RHWGK",
-      "description": "라마트라를 궁극기 지속 중 거의 죽지 않는 레이드 보스로 만드는 빌드. 네메시스 형태 가동 시간 극대화와 막대한 자체 회복으로 전선을 장악한다.",
+      "description": "라마트라를 궁극기로도 끄떡없는 불사 조커로 만드는 생존 특화 빌드.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 142,
       "stats": {
@@ -2040,6 +2040,22 @@
       "cost": "$$"
     },
     {
+      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
+      "code": "DB1X6",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 9,
+      "stats": {
+        "LIFE": 377,
+        "Armor": 50,
+        "Total LIFE": 427,
+        "Weapon Power": 10,
+        "Ability Power": 100,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "적들이 레일을 맞는 걸 좋아하게 될 거야",
       "code": "X6QYG",
       "description": "소전의 무기 공격력을 극대화한 글래스 캐논 빌드. 궁극기 외에는 탱커를 노려 충전 후 강력한 원샷 딜링.",
@@ -2053,22 +2069,6 @@
         "Attack Speed": 5,
         "Weapon Power": 70,
         "Ability Power": 0,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
-      "code": "DB1X6",
-      "description": "",
-      "playstyle": "능력 파워",
-      "upvotes": 9,
-      "stats": {
-        "LIFE": 377,
-        "Armor": 50,
-        "Total LIFE": 427,
-        "Weapon Power": 10,
-        "Ability Power": 100,
         "Cooldown Reduction": 10
       },
       "cost": "$$$"
@@ -2097,7 +2097,7 @@
     {
       "name": "Aimbot.exe",
       "code": "VX71P",
-      "description": "솔저: 76의 나선 로켓을 재사용 대기시간마다 쏘며 궁극기 활용 극대화를 노리는 표준 에임봇 빌드. 후반 유연성이 높다.",
+      "description": "솔저: 76의 나선 로켓을 궁극기 충전용으로 써서 후반 슈퍼 조준경을 자주 쓰는 표준 에임봇 빌드.",
       "playstyle": "재미용 · 무기 파워",
       "upvotes": 355,
       "stats": {
@@ -2392,7 +2392,7 @@
     {
       "name": "Let me one shot her [500+ dmg vendetta build]",
       "code": "Z1P6V",
-      "description": "벤데타의 생존력과 폭딜, 암살 능력을 극한으로 끌어올린 빌드. 2초 안에 500~830+ 피해를 넣고 빠져나오는 원샷 암살형 플레이.",
+      "description": "파라의 생존·순삭·탈출을 극대화한 복수 빌드, 콤보로 500~830+ 대미지 후 2초 내 탈출.",
       "playstyle": "혼합 파워 · 생명력 흡수",
       "upvotes": 21,
       "stats": {
