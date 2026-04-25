@@ -1580,9 +1580,9 @@
       "cost": "$$$"
     },
     {
-      "name": "How to f1st(2)",
+      "name": "주먹으로 때리는 법(2)",
       "code": "XB218",
-      "description": "라마트라를 네메시스 형태로 전환해 극강의 생존력과 광역 압박으로 적진을 쑥대밭으로 만드는 탱커 빌드.",
+      "description": "라마트라를 네메시스 형태에서 죽지 않는 레이드 보스로 만드는 생존 중심 빌드.",
       "playstyle": "무기 파워",
       "upvotes": 74,
       "stats": {
@@ -1616,9 +1616,9 @@
   ],
   "Ramattra": [
     {
-      "name": "👊THE INESCAPABLE NEMESIS — RAMATTRA Raid Boss (Stadium legen",
+      "name": "👊탈출 불가능한 네메시스 — 라마트라 레이드 보스 (스타디움 전설",
       "code": "RHWGK",
-      "description": "솔저: 76의 나선 로켓을 끊임없이 발사해 궁극기 가동 시간을 극대화하는 표준 에임봇 빌드.",
+      "description": "솔저: 76의 나선 로켓을 끊임없이 써서 궁극기 활용 극대화하는 표준 에임봇 빌드.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 140,
       "stats": {
@@ -2096,9 +2096,9 @@
       "cost": "$$"
     },
     {
-      "name": "Aimbot.exe",
+      "name": "에임봇.exe",
       "code": "VX71P",
-      "description": "빠른 교전-탈출이 가능한 암살자 스타일로 단일 콤보로 500~830+ 버스트 피해를 뿌리는 생존형 빌드.",
+      "description": "파라의 생존·버스트·암살 능력을 극대화해 한 번에 500~830+ 대미지를 주고 2초 안에 탈출하는 복수 빌드.",
       "playstyle": "재미용 · 무기 파워",
       "upvotes": 355,
       "stats": {
@@ -2391,9 +2391,9 @@
       "cost": "$$"
     },
     {
-      "name": "Let me one shot her [500+ dmg vendetta build]",
+      "name": "원샷만 시켜줘 [500+ 대미지 벤델타 빌드]",
       "code": "Z1P6V",
-      "description": "탑 100 클라이밍 경험을 바탕으로 벤데타의 강점을 극대화한 개인 최적화 초안.",
+      "description": "파라의 강점을 극대화해 탑 100까지 오른 개인 최적화 빌드.",
       "playstyle": "혼합 파워 · 생명력 흡수",
       "upvotes": 21,
       "stats": {
@@ -2429,7 +2429,7 @@
       "cost": "$$"
     },
     {
-      "name": "VENDETTA [Top 100] Build Guide - Maximize Your Impact!",
+      "name": "벤델타 [탑 100] 빌드 가이드 - 임팩트 극대화!",
       "code": "7M8YH",
       "description": "",
       "playstyle": "메타 · 무기 파워",
