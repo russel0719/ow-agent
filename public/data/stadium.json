@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 176,
+      "upvotes": 177,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 599,
+      "upvotes": 601,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -859,7 +859,7 @@
       "code": "Z54ST",
       "description": "정크랫 원거리 스나이퍼 스타일. 오리사·라인하르트 같은 정면 영웅 상대에 최적.",
       "playstyle": "혼합 파워",
-      "upvotes": 394,
+      "upvotes": 393,
       "stats": {
         "LIFE": 325,
         "Total LIFE": 325,
@@ -1029,7 +1029,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1511,
+      "upvotes": 1512,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1077,7 +1077,7 @@
       "code": "M4XHV",
       "description": "",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 171,
+      "upvotes": 170,
       "stats": {
         "LIFE": 348,
         "Total LIFE": 348,
@@ -1092,7 +1092,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 122,
+      "upvotes": 123,
       "stats": {
         "LIFE": 488,
         "Total LIFE": 488,
@@ -1142,7 +1142,7 @@
       "code": "7T0KA",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 75,
+      "upvotes": 76,
       "stats": {
         "LIFE": 400,
         "Armor": 50,
@@ -1261,7 +1261,7 @@
       "code": "ECYWB",
       "description": "무기 공격력 극대화로 매치 골드 순환, 메이는 이미 탱크라 생존성은 낮춤",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 102,
+      "upvotes": 103,
       "stats": {
         "LIFE": 445,
         "Armor": 50,
@@ -1280,7 +1280,7 @@
       "code": "93RNG",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 926,
+      "upvotes": 927,
       "stats": {
         "LIFE": 336,
         "Total LIFE": 336,
@@ -1478,7 +1478,7 @@
       "code": "008C9",
       "description": "라운드 3부터 라운드당 1.2만 피해와 75% 이상 피해 감소로 ‘불사 오리사’를 구현한 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 121,
+      "upvotes": 120,
       "stats": {
         "LIFE": 696,
         "Armor": 506,
@@ -1580,9 +1580,9 @@
       "cost": "$$$"
     },
     {
-      "name": "How to f1st(2)",
+      "name": "주먹으로 때리는 법(2)",
       "code": "XB218",
-      "description": "라마트라 근접 버스트 빌드, 네메시스 형태로 순간 폭딜 후 빠른 탈출",
+      "description": "라마트라 근접 버스트 빌드, 네메시스 형태로 순식간에 500~800+ 대미지 폭딜 후 빠르게 탈출",
       "playstyle": "무기 파워",
       "upvotes": 74,
       "stats": {
@@ -1616,11 +1616,11 @@
   ],
   "Ramattra": [
     {
-      "name": "👊THE INESCAPABLE NEMESIS — RAMATTRA Raid Boss (Stadium legen",
+      "name": "👊탈출할 수 없는 네메시스 — 라마트라 레이드 보스 (스타디움 전설",
       "code": "RHWGK",
-      "description": "라마트라 탱커형 ‘레이드 보스’ 빌드, 강타-섬멸 콤보로 광역 CC와 지속 피해 극대화",
+      "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 149,
+      "upvotes": 152,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -2027,7 +2027,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 38,
+      "upvotes": 39,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2097,9 +2097,9 @@
       "cost": "$$"
     },
     {
-      "name": "Aimbot.exe",
+      "name": "에임봇.exe",
       "code": "VX71P",
-      "description": "솔저: 76 헬릭 로켓 중심 빌드, 재사용 대기시간 단축으로 전술 조준경 가동 시간 극대화",
+      "description": "솔저: 76 표준 에임봇 빌드, 나선 로켓 연사로 전술 조준경 가동 시간 극대화",
       "playstyle": "재미용 · 무기 파워",
       "upvotes": 355,
       "stats": {
@@ -2392,9 +2392,9 @@
       "cost": "$$"
     },
     {
-      "name": "Let me one shot her [500+ dmg vendetta build]",
+      "name": "한 방에 죽여줘 [500+ 데미지 벤데타 빌드]",
       "code": "Z1P6V",
-      "description": "라마트라 암살형 빌드, 2초 내 500~830+ 버스트 딜 후 방어막으로 빠른 탈출",
+      "description": "Vendetta 생존·버스트·암살 특화, 2초 내 500~830 대미지 콤보 후 투사체 차단 탈출",
       "playstyle": "혼합 파워 · 생명력 흡수",
       "upvotes": 21,
       "stats": {
@@ -2430,19 +2430,22 @@
       "cost": "$$"
     },
     {
-      "name": "⚔️ #1 무기 공격력 Duelist Demon Build. (From a Top 500 Stadium DPS)",
-      "code": "QXNYJ",
-      "description": "새 영웅 벤데타로 탑 500에 도전할 수 있는 빌드. 높은 생존과 폭딜로 암살자 역할을 완벽 수행한다.",
-      "playstyle": "메타 · 생명력 흡수",
+      "name": "벤데타 [탑 100] 빌드 가이드 - 임팩트 극대화!",
+      "code": "7M8YH",
+      "description": "Vendetta 개인 탑100 빌드, 가치 극대화를 위한 필살기·생존 스탯 조합",
+      "playstyle": "메타 · 무기 파워",
       "upvotes": 11,
       "stats": {
-        "LIFE": 329,
+        "LIFE": 285,
         "Armor": 175,
-        "Total LIFE": 504,
-        "Weapon Power": 60,
-        "Ability Power": 10,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "Shield": 50,
+        "Move Speed": 10,
+        "Total LIFE": 510,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 55,
+        "Ability Power": 0,
+        "Critical Damage": 10
       },
       "cost": "$$"
     }
@@ -2526,7 +2529,7 @@
       "code": "ACKTS",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 59,
+      "upvotes": 60,
       "stats": {
         "LIFE": 690,
         "Armor": 225,
@@ -2562,7 +2565,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 174,
+      "upvotes": 178,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2723,7 +2726,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1186,
+      "upvotes": 1187,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
