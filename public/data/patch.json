@@ -1,5 +1,16 @@
 [
   {
+    "title": "오버워치 패치 노트 - 2026년 4월 29일",
+    "date": "2026년 4월 28일",
+    "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
+    "hero_changes": [],
+    "general_changes": [
+      "점수판이 열려 있는 동안 플레이어가 점프할 수 없던 문제를 수정했습니다.",
+      "라마트라의 궁극기가 때때로 의도한 것보다 크게 재생되던 문제를 수정했습니다."
+    ],
+    "translation_source": "official"
+  },
+  {
     "title": "오버워치 패치 노트 - 2026년 4월 24일",
     "date": "2026년 4월 23일",
     "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
