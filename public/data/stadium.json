@@ -54,7 +54,7 @@
       "code": "XFEPG",
       "description": "아나의 숙련도 요구를 보완해 게임 주도권을 잡고 캐리할 수 있도록 설계된 빌드.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 161,
+      "upvotes": 160,
       "stats": {
         "LIFE": 373,
         "Shield": 50,
@@ -106,7 +106,7 @@
       "code": "VP16Q",
       "description": "S18 파라 대응 무기 공격력 빌드, 기본적으로 대공 능력 내장.",
       "playstyle": "무기 파워",
-      "upvotes": 393,
+      "upvotes": 392,
       "stats": {
         "LIFE": 421,
         "Total LIFE": 421,
@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 178,
+      "upvotes": 179,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -156,7 +156,7 @@
       "code": "H49C5",
       "description": "탑49 브리기테 원트릭이 만든 GM 10시즌 연속 달성 빌드, 이동 속도 극대화가 핵심.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 968,
+      "upvotes": 967,
       "stats": {
         "LIFE": 314,
         "Armor": 50,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 603,
+      "upvotes": 604,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -208,7 +208,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "능력 파워",
-      "upvotes": 122,
+      "upvotes": 124,
       "stats": {
         "LIFE": 327,
         "Armor": 200,
@@ -226,7 +226,7 @@
       "code": "H7T7G",
       "description": "라운드 3 주의사항 포함. 브리기테 전 능력치 강화로 최적화.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 101,
+      "upvotes": 100,
       "stats": {
         "LIFE": 299,
         "Armor": 225,
@@ -264,7 +264,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 330,
+      "upvotes": 331,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -422,7 +422,7 @@
       "code": "E7NA2",
       "description": "D.Va 방어 매트릭스+자폭 빌드로 생존 극대화.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 384,
+      "upvotes": 386,
       "stats": {
         "LIFE": 771,
         "Armor": 345,
@@ -524,7 +524,7 @@
       "code": "YP3PR",
       "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 188,
+      "upvotes": 189,
       "stats": {
         "LIFE": 402,
         "Shield": 50,
@@ -542,7 +542,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 182,
+      "upvotes": 183,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -775,7 +775,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1721,
+      "upvotes": 1722,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1192,7 +1192,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 278,
+      "upvotes": 279,
       "stats": {
         "LIFE": 471,
         "Armor": 100,
@@ -1295,7 +1295,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 895,
+      "upvotes": 896,
       "stats": {
         "LIFE": 345,
         "Armor": 50,
@@ -1327,7 +1327,7 @@
       "code": "3P594",
       "description": "무기 공격력과 공격 속도로 치유량을 극대화하며 Threads of Fate 아이템을 활용한 메르시 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 143,
+      "upvotes": 141,
       "stats": {
         "LIFE": 436,
         "Total LIFE": 436,
@@ -1363,7 +1363,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1300,
+      "upvotes": 1303,
       "stats": {
         "LIFE": 425,
         "Total LIFE": 425,
@@ -1620,7 +1620,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 154,
+      "upvotes": 158,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1957,7 +1957,7 @@
       "code": "QC7PQ",
       "description": "",
       "playstyle": "메타 · 고체력",
-      "upvotes": 55,
+      "upvotes": 56,
       "stats": {
         "LIFE": 708,
         "Shield": 350,
@@ -2027,7 +2027,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 40,
+      "upvotes": 41,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2361,7 +2361,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 209,
+      "upvotes": 210,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2430,22 +2430,19 @@
       "cost": "$$"
     },
     {
-      "name": "벤데타 [탑 100] 빌드 가이드 - 임팩트 극대화!",
-      "code": "7M8YH",
-      "description": "Vendetta 개인 탑100 빌드, 가치 극대화를 위한 필살기·생존 스탯 조합",
-      "playstyle": "메타 · 무기 파워",
+      "name": "⚔️ #1 무기 공격력 결투광 악마 빌드. (탑 500 스타디움 딜러)",
+      "code": "QXNYJ",
+      "description": "신규 영웅 Vendetta의 탑 500 진입용 빌드. 핵심은 높은 기술 위력과 재사용 대기시간 단축으로 지속적인 버스트 딜링과 생존을 동시에 확보하는 전략.",
+      "playstyle": "메타 · 생명력 흡수",
       "upvotes": 11,
       "stats": {
-        "LIFE": 285,
+        "LIFE": 329,
         "Armor": 175,
-        "Shield": 50,
-        "Move Speed": 10,
-        "Total LIFE": 510,
-        "Attack Speed": 10,
-        "Melee Damage": 15,
-        "Weapon Power": 55,
-        "Ability Power": 0,
-        "Critical Damage": 10
+        "Total LIFE": 504,
+        "Weapon Power": 60,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
       },
       "cost": "$$"
     }
@@ -2529,7 +2526,7 @@
       "code": "ACKTS",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 61,
+      "upvotes": 60,
       "stats": {
         "LIFE": 690,
         "Armor": 225,
@@ -2565,7 +2562,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 179,
+      "upvotes": 180,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2726,7 +2723,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1187,
+      "upvotes": 1188,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
