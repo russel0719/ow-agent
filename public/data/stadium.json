@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 180,
+      "upvotes": 183,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 605,
+      "upvotes": 606,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -319,7 +319,7 @@
       "code": "S971K",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 37,
+      "upvotes": 38,
       "stats": {
         "LIFE": 436,
         "Armor": 50,
@@ -775,7 +775,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1723,
+      "upvotes": 1725,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1142,7 +1142,7 @@
       "code": "7T0KA",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 76,
+      "upvotes": 77,
       "stats": {
         "LIFE": 400,
         "Armor": 50,
@@ -1192,7 +1192,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 279,
+      "upvotes": 282,
       "stats": {
         "LIFE": 471,
         "Armor": 100,
@@ -1261,7 +1261,7 @@
       "code": "ECYWB",
       "description": "무기 공격력 극대화로 매치 골드 순환, 메이는 이미 탱크라 생존성은 낮춤",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 104,
+      "upvotes": 105,
       "stats": {
         "LIFE": 445,
         "Armor": 50,
@@ -1601,7 +1601,7 @@
       "code": "3W1KW",
       "description": "2라운드 회피 기동 대신 발사 벡터를 먼저 찍어 초반 기술 위력을 극대화하는 수정 팁.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 42,
+      "upvotes": 43,
       "stats": {
         "LIFE": 250,
         "Total LIFE": 250,
@@ -1620,7 +1620,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 163,
+      "upvotes": 171,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1690,23 +1690,23 @@
       "cost": "$$$"
     },
     {
-      "name": "🦅날으는 라마트라🦅 - [다이브 악마]",
-      "code": "SH7R0",
-      "description": "라마트라의 비행 기술을 활용한 다이브 전략 빌드로, 공중에서 기습해 적을 교란하고 빠르게 제거하는 방식",
+      "name": "Ramattra 그랜드마스터 가이드: 이 기술 위력 Vortex 빌드는 BROKEN",
+      "code": "42JPW",
+      "description": "",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 9,
       "stats": {
-        "LIFE": 701,
+        "LIFE": 722,
         "Armor": 100,
-        "Total LIFE": 801,
+        "Total LIFE": 822,
         "Attack Speed": 10,
         "Weapon Power": 20,
-        "Ability Power": 45,
+        "Ability Power": 80,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
-        "Cooldown Reduction": 20
+        "Cooldown Reduction": 5
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Reaper": [
@@ -2027,7 +2027,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 41,
+      "upvotes": 42,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2136,7 +2136,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 280,
+      "upvotes": 282,
       "stats": {
         "LIFE": 381,
         "Armor": 25,
@@ -2170,23 +2170,6 @@
   ],
   "Torbjörn": [
     {
-      "name": "(시즌 19 전설) [4종 변형] Torbjorn이 지원가(공격",
-      "code": "0GN8P",
-      "description": "시즌 19 토르비욘은 지원가로 변해 망치로 힐하고 공격 속도로 블랙스미스 특전 활용",
-      "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 85,
-      "stats": {
-        "LIFE": 335,
-        "Armor": 75,
-        "Total LIFE": 410,
-        "Attack Speed": 30,
-        "Weapon Power": 35,
-        "Ability Power": 0,
-        "Weapon Lifesteal": 20
-      },
-      "cost": "$"
-    },
-    {
       "name": "심층 가이드: 랭킹 1위 Torbjorn 빌드가 스타디움을 지배하는 이유",
       "code": "PTGPY",
       "description": "",
@@ -2204,6 +2187,23 @@
         "Weapon Lifesteal": 10
       },
       "cost": "$$$"
+    },
+    {
+      "name": "(시즌 19 전설) [4종 변형] Torbjorn이 지원가(공격",
+      "code": "0GN8P",
+      "description": "시즌 19 토르비욘은 지원가로 변해 망치로 힐하고 공격 속도로 블랙스미스 특전 활용",
+      "playstyle": "무기 파워 · 생명력 흡수",
+      "upvotes": 85,
+      "stats": {
+        "LIFE": 335,
+        "Armor": 75,
+        "Total LIFE": 410,
+        "Attack Speed": 30,
+        "Weapon Power": 35,
+        "Ability Power": 0,
+        "Weapon Lifesteal": 20
+      },
+      "cost": "$"
     },
     {
       "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
@@ -2302,7 +2302,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워",
-      "upvotes": 80,
+      "upvotes": 81,
       "stats": {
         "LIFE": 251,
         "Armor": 16,
@@ -2562,7 +2562,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 181,
+      "upvotes": 183,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2571,6 +2571,22 @@
         "Weapon Power": 10,
         "Ability Power": 40,
         "Cooldown Reduction": 15
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
@@ -2588,22 +2604,6 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
@@ -2723,7 +2723,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1189,
+      "upvotes": 1191,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
