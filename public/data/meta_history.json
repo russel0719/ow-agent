@@ -55,7 +55,7 @@
         "meta_score": 52.9,
         "pick_rate": 23.3,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -63,7 +63,7 @@
         "meta_score": 51.7,
         "pick_rate": 14.2,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -71,7 +71,7 @@
         "meta_score": 51.2,
         "pick_rate": 4.4,
         "win_rate": 55.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zarya",
@@ -79,7 +79,7 @@
         "meta_score": 46.9,
         "pick_rate": 8.5,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "echo",
@@ -87,7 +87,7 @@
         "meta_score": 46.0,
         "pick_rate": 10.6,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -327,7 +327,7 @@
         "meta_score": 18.4,
         "pick_rate": 3.6,
         "win_rate": 45.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -335,7 +335,7 @@
         "meta_score": 17.3,
         "pick_rate": 5.2,
         "win_rate": 44.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -457,7 +457,7 @@
         "meta_score": 52.9,
         "pick_rate": 23.3,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -465,7 +465,7 @@
         "meta_score": 51.7,
         "pick_rate": 14.2,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -473,7 +473,7 @@
         "meta_score": 51.2,
         "pick_rate": 4.4,
         "win_rate": 55.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zarya",
@@ -481,7 +481,7 @@
         "meta_score": 46.9,
         "pick_rate": 8.5,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "echo",
@@ -489,7 +489,7 @@
         "meta_score": 46.0,
         "pick_rate": 10.6,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -729,7 +729,7 @@
         "meta_score": 18.4,
         "pick_rate": 3.6,
         "win_rate": 45.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -737,7 +737,7 @@
         "meta_score": 17.3,
         "pick_rate": 5.2,
         "win_rate": 44.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -859,7 +859,7 @@
         "meta_score": 52.9,
         "pick_rate": 23.3,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -867,7 +867,7 @@
         "meta_score": 51.7,
         "pick_rate": 14.2,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -875,7 +875,7 @@
         "meta_score": 51.2,
         "pick_rate": 4.4,
         "win_rate": 55.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zarya",
@@ -883,7 +883,7 @@
         "meta_score": 46.9,
         "pick_rate": 8.5,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "echo",
@@ -891,7 +891,7 @@
         "meta_score": 46.0,
         "pick_rate": 10.6,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -1131,7 +1131,7 @@
         "meta_score": 18.4,
         "pick_rate": 3.6,
         "win_rate": 45.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -1139,7 +1139,7 @@
         "meta_score": 17.3,
         "pick_rate": 5.2,
         "win_rate": 44.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -1269,7 +1269,7 @@
         "meta_score": 52.5,
         "pick_rate": 15.6,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -1277,7 +1277,7 @@
         "meta_score": 49.8,
         "pick_rate": 19.5,
         "win_rate": 51.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "cassidy",
@@ -1285,7 +1285,7 @@
         "meta_score": 47.5,
         "pick_rate": 22.4,
         "win_rate": 50.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "echo",
@@ -1525,7 +1525,7 @@
         "meta_score": 21.7,
         "pick_rate": 2.9,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junker_queen",
@@ -1533,7 +1533,7 @@
         "meta_score": 20.1,
         "pick_rate": 1.2,
         "win_rate": 46.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -1541,7 +1541,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.5,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -1549,7 +1549,7 @@
         "meta_score": 19.2,
         "pick_rate": 2.0,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "venture",
@@ -1557,7 +1557,7 @@
         "meta_score": 18.7,
         "pick_rate": 2.9,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -1565,7 +1565,7 @@
         "meta_score": 17.2,
         "pick_rate": 2.1,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "reinhardt",
@@ -1573,7 +1573,7 @@
         "meta_score": 16.1,
         "pick_rate": 2.6,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -1679,7 +1679,7 @@
         "meta_score": 52.5,
         "pick_rate": 15.6,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -1687,7 +1687,7 @@
         "meta_score": 49.8,
         "pick_rate": 19.5,
         "win_rate": 51.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "cassidy",
@@ -1695,7 +1695,7 @@
         "meta_score": 47.5,
         "pick_rate": 22.4,
         "win_rate": 50.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "echo",
@@ -1935,7 +1935,7 @@
         "meta_score": 21.7,
         "pick_rate": 2.9,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junker_queen",
@@ -1943,7 +1943,7 @@
         "meta_score": 20.1,
         "pick_rate": 1.2,
         "win_rate": 46.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -1951,7 +1951,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.5,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -1959,7 +1959,7 @@
         "meta_score": 19.2,
         "pick_rate": 2.0,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "venture",
@@ -1967,7 +1967,7 @@
         "meta_score": 18.7,
         "pick_rate": 2.9,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -1975,7 +1975,7 @@
         "meta_score": 17.2,
         "pick_rate": 2.1,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "reinhardt",
@@ -1983,7 +1983,7 @@
         "meta_score": 16.1,
         "pick_rate": 2.6,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -2089,7 +2089,7 @@
         "meta_score": 52.5,
         "pick_rate": 15.6,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -2097,7 +2097,7 @@
         "meta_score": 49.8,
         "pick_rate": 19.5,
         "win_rate": 51.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "cassidy",
@@ -2105,7 +2105,7 @@
         "meta_score": 47.5,
         "pick_rate": 22.4,
         "win_rate": 50.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "echo",
@@ -2345,7 +2345,7 @@
         "meta_score": 21.7,
         "pick_rate": 2.9,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junker_queen",
@@ -2353,7 +2353,7 @@
         "meta_score": 20.1,
         "pick_rate": 1.2,
         "win_rate": 46.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -2361,7 +2361,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.5,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -2369,7 +2369,7 @@
         "meta_score": 19.2,
         "pick_rate": 2.0,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "venture",
@@ -2377,7 +2377,7 @@
         "meta_score": 18.7,
         "pick_rate": 2.9,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -2385,7 +2385,7 @@
         "meta_score": 17.2,
         "pick_rate": 2.1,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "reinhardt",
@@ -2393,7 +2393,7 @@
         "meta_score": 16.1,
         "pick_rate": 2.6,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -2483,7 +2483,7 @@
         "meta_score": 53.1,
         "pick_rate": 12.8,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -2491,7 +2491,7 @@
         "meta_score": 52.7,
         "pick_rate": 9.0,
         "win_rate": 55.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -2499,7 +2499,7 @@
         "meta_score": 50.6,
         "pick_rate": 19.8,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -2507,7 +2507,7 @@
         "meta_score": 50.6,
         "pick_rate": 15.4,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -2515,7 +2515,7 @@
         "meta_score": 45.8,
         "pick_rate": 4.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "cassidy",
@@ -2739,7 +2739,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.5,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -2747,7 +2747,7 @@
         "meta_score": 19.1,
         "pick_rate": 2.3,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junkrat",
@@ -2755,7 +2755,7 @@
         "meta_score": 18.7,
         "pick_rate": 1.7,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -2763,7 +2763,7 @@
         "meta_score": 16.8,
         "pick_rate": 4.8,
         "win_rate": 44.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -2771,7 +2771,7 @@
         "meta_score": 16.0,
         "pick_rate": 7.7,
         "win_rate": 43.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -2779,7 +2779,7 @@
         "meta_score": 15.5,
         "pick_rate": 3.1,
         "win_rate": 44.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -2893,7 +2893,7 @@
         "meta_score": 53.1,
         "pick_rate": 12.8,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -2901,7 +2901,7 @@
         "meta_score": 52.7,
         "pick_rate": 9.0,
         "win_rate": 55.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -2909,7 +2909,7 @@
         "meta_score": 50.6,
         "pick_rate": 19.8,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -2917,7 +2917,7 @@
         "meta_score": 50.6,
         "pick_rate": 15.4,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -2925,7 +2925,7 @@
         "meta_score": 45.8,
         "pick_rate": 4.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "cassidy",
@@ -3149,7 +3149,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.5,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -3157,7 +3157,7 @@
         "meta_score": 19.1,
         "pick_rate": 2.3,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junkrat",
@@ -3165,7 +3165,7 @@
         "meta_score": 18.7,
         "pick_rate": 1.7,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -3173,7 +3173,7 @@
         "meta_score": 16.8,
         "pick_rate": 4.8,
         "win_rate": 44.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -3181,7 +3181,7 @@
         "meta_score": 16.0,
         "pick_rate": 7.7,
         "win_rate": 43.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -3189,7 +3189,7 @@
         "meta_score": 15.5,
         "pick_rate": 3.1,
         "win_rate": 44.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -3311,7 +3311,7 @@
         "meta_score": 54.3,
         "pick_rate": 12.3,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -3319,7 +3319,7 @@
         "meta_score": 50.4,
         "pick_rate": 15.5,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -3327,7 +3327,7 @@
         "meta_score": 49.7,
         "pick_rate": 20.2,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -3335,7 +3335,7 @@
         "meta_score": 45.8,
         "pick_rate": 19.8,
         "win_rate": 50.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -3559,7 +3559,7 @@
         "meta_score": 21.1,
         "pick_rate": 2.1,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -3567,7 +3567,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.2,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -3575,7 +3575,7 @@
         "meta_score": 18.6,
         "pick_rate": 7.9,
         "win_rate": 44.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -3583,7 +3583,7 @@
         "meta_score": 18.5,
         "pick_rate": 2.7,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -3591,7 +3591,7 @@
         "meta_score": 18.5,
         "pick_rate": 5.1,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -3599,7 +3599,7 @@
         "meta_score": 17.6,
         "pick_rate": 2.3,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "juno",
@@ -3607,7 +3607,7 @@
         "meta_score": 16.9,
         "pick_rate": 3.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -3615,7 +3615,7 @@
         "meta_score": 15.4,
         "pick_rate": 3.3,
         "win_rate": 44.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -3721,7 +3721,7 @@
         "meta_score": 54.3,
         "pick_rate": 12.3,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -3729,7 +3729,7 @@
         "meta_score": 50.4,
         "pick_rate": 15.5,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -3737,7 +3737,7 @@
         "meta_score": 49.7,
         "pick_rate": 20.2,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -3745,7 +3745,7 @@
         "meta_score": 45.8,
         "pick_rate": 19.8,
         "win_rate": 50.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -3969,7 +3969,7 @@
         "meta_score": 21.1,
         "pick_rate": 2.1,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -3977,7 +3977,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.2,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -3985,7 +3985,7 @@
         "meta_score": 18.6,
         "pick_rate": 7.9,
         "win_rate": 44.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -3993,7 +3993,7 @@
         "meta_score": 18.5,
         "pick_rate": 2.7,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -4001,7 +4001,7 @@
         "meta_score": 18.5,
         "pick_rate": 5.1,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -4009,7 +4009,7 @@
         "meta_score": 17.6,
         "pick_rate": 2.3,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "juno",
@@ -4017,7 +4017,7 @@
         "meta_score": 16.9,
         "pick_rate": 3.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -4025,7 +4025,7 @@
         "meta_score": 15.4,
         "pick_rate": 3.3,
         "win_rate": 44.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -4131,7 +4131,7 @@
         "meta_score": 54.3,
         "pick_rate": 12.3,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -4139,7 +4139,7 @@
         "meta_score": 50.4,
         "pick_rate": 15.5,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -4147,7 +4147,7 @@
         "meta_score": 49.7,
         "pick_rate": 20.2,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -4155,7 +4155,7 @@
         "meta_score": 45.8,
         "pick_rate": 19.8,
         "win_rate": 50.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -4379,7 +4379,7 @@
         "meta_score": 21.1,
         "pick_rate": 2.1,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -4387,7 +4387,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.2,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -4395,7 +4395,7 @@
         "meta_score": 18.6,
         "pick_rate": 7.9,
         "win_rate": 44.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -4403,7 +4403,7 @@
         "meta_score": 18.5,
         "pick_rate": 2.7,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -4411,7 +4411,7 @@
         "meta_score": 18.5,
         "pick_rate": 5.1,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -4419,7 +4419,7 @@
         "meta_score": 17.6,
         "pick_rate": 2.3,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "juno",
@@ -4427,7 +4427,7 @@
         "meta_score": 16.9,
         "pick_rate": 3.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -4435,7 +4435,7 @@
         "meta_score": 15.4,
         "pick_rate": 3.3,
         "win_rate": 44.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -4541,7 +4541,7 @@
         "meta_score": 54.3,
         "pick_rate": 12.3,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -4549,7 +4549,7 @@
         "meta_score": 50.4,
         "pick_rate": 15.5,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -4557,7 +4557,7 @@
         "meta_score": 49.7,
         "pick_rate": 20.2,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -4565,7 +4565,7 @@
         "meta_score": 45.8,
         "pick_rate": 19.8,
         "win_rate": 50.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -4789,7 +4789,7 @@
         "meta_score": 21.1,
         "pick_rate": 2.1,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -4797,7 +4797,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.2,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -4805,7 +4805,7 @@
         "meta_score": 18.6,
         "pick_rate": 7.9,
         "win_rate": 44.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -4813,7 +4813,7 @@
         "meta_score": 18.5,
         "pick_rate": 2.7,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -4821,7 +4821,7 @@
         "meta_score": 18.5,
         "pick_rate": 5.1,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -4829,7 +4829,7 @@
         "meta_score": 17.6,
         "pick_rate": 2.3,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "juno",
@@ -4837,7 +4837,7 @@
         "meta_score": 16.9,
         "pick_rate": 3.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -4845,7 +4845,7 @@
         "meta_score": 15.4,
         "pick_rate": 3.3,
         "win_rate": 44.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -4951,7 +4951,7 @@
         "meta_score": 54.3,
         "pick_rate": 12.3,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -4959,7 +4959,7 @@
         "meta_score": 50.4,
         "pick_rate": 15.5,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -4967,7 +4967,7 @@
         "meta_score": 49.7,
         "pick_rate": 20.2,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -4975,7 +4975,7 @@
         "meta_score": 45.8,
         "pick_rate": 19.8,
         "win_rate": 50.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -5199,7 +5199,7 @@
         "meta_score": 21.1,
         "pick_rate": 2.1,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -5207,7 +5207,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.2,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -5215,7 +5215,7 @@
         "meta_score": 18.6,
         "pick_rate": 7.9,
         "win_rate": 44.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -5223,7 +5223,7 @@
         "meta_score": 18.5,
         "pick_rate": 2.7,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -5231,7 +5231,7 @@
         "meta_score": 18.5,
         "pick_rate": 5.1,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -5239,7 +5239,7 @@
         "meta_score": 17.6,
         "pick_rate": 2.3,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "juno",
@@ -5247,7 +5247,7 @@
         "meta_score": 16.9,
         "pick_rate": 3.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -5255,7 +5255,7 @@
         "meta_score": 15.4,
         "pick_rate": 3.3,
         "win_rate": 44.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -5361,7 +5361,7 @@
         "meta_score": 53.2,
         "pick_rate": 16.4,
         "win_rate": 53.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -5369,7 +5369,7 @@
         "meta_score": 51.7,
         "pick_rate": 12.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -5377,7 +5377,7 @@
         "meta_score": 48.7,
         "pick_rate": 19.6,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -5601,7 +5601,7 @@
         "meta_score": 21.9,
         "pick_rate": 4.4,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "moira",
@@ -5609,7 +5609,7 @@
         "meta_score": 21.7,
         "pick_rate": 3.8,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -5617,7 +5617,7 @@
         "meta_score": 21.4,
         "pick_rate": 7.0,
         "win_rate": 45.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -5625,7 +5625,7 @@
         "meta_score": 21.0,
         "pick_rate": 2.9,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -5633,7 +5633,7 @@
         "meta_score": 21.0,
         "pick_rate": 5.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "juno",
@@ -5641,7 +5641,7 @@
         "meta_score": 20.5,
         "pick_rate": 3.0,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -5649,7 +5649,7 @@
         "meta_score": 20.0,
         "pick_rate": 6.3,
         "win_rate": 45.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -5657,7 +5657,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.1,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -5665,7 +5665,7 @@
         "meta_score": 18.3,
         "pick_rate": 3.7,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -5673,7 +5673,7 @@
         "meta_score": 15.8,
         "pick_rate": 2.3,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mercy",
@@ -5771,7 +5771,7 @@
         "meta_score": 53.2,
         "pick_rate": 16.4,
         "win_rate": 53.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -5779,7 +5779,7 @@
         "meta_score": 51.7,
         "pick_rate": 12.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -5787,7 +5787,7 @@
         "meta_score": 48.7,
         "pick_rate": 19.6,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -6011,7 +6011,7 @@
         "meta_score": 21.9,
         "pick_rate": 4.4,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "moira",
@@ -6019,7 +6019,7 @@
         "meta_score": 21.7,
         "pick_rate": 3.8,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sierra",
@@ -6027,7 +6027,7 @@
         "meta_score": 21.4,
         "pick_rate": 7.0,
         "win_rate": 45.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -6035,7 +6035,7 @@
         "meta_score": 21.0,
         "pick_rate": 2.9,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "widowmaker",
@@ -6043,7 +6043,7 @@
         "meta_score": 21.0,
         "pick_rate": 5.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "juno",
@@ -6051,7 +6051,7 @@
         "meta_score": 20.5,
         "pick_rate": 3.0,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -6059,7 +6059,7 @@
         "meta_score": 20.0,
         "pick_rate": 6.3,
         "win_rate": 45.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -6067,7 +6067,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.1,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mauga",
@@ -6075,7 +6075,7 @@
         "meta_score": 18.3,
         "pick_rate": 3.7,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -6083,7 +6083,7 @@
         "meta_score": 15.8,
         "pick_rate": 2.3,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mercy",
@@ -6157,7 +6157,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -6165,7 +6165,7 @@
         "meta_score": 51.2,
         "pick_rate": 11.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -6173,7 +6173,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -6181,7 +6181,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -6189,7 +6189,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -6197,7 +6197,7 @@
         "meta_score": 49.8,
         "pick_rate": 7.4,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -6205,7 +6205,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.3,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -6213,7 +6213,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -6221,7 +6221,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -6229,7 +6229,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.1,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -6237,7 +6237,7 @@
         "meta_score": 45.6,
         "pick_rate": 8.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -6509,7 +6509,7 @@
         "meta_score": 20.9,
         "pick_rate": 6.4,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -6517,7 +6517,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -6525,7 +6525,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -6533,7 +6533,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-05-01": [
@@ -6567,7 +6567,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -6575,7 +6575,7 @@
         "meta_score": 51.3,
         "pick_rate": 11.7,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -6583,7 +6583,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -6591,7 +6591,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -6599,7 +6599,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -6607,7 +6607,7 @@
         "meta_score": 49.9,
         "pick_rate": 7.5,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -6615,7 +6615,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.2,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -6623,7 +6623,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -6631,7 +6631,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -6639,7 +6639,7 @@
         "meta_score": 45.9,
         "pick_rate": 8.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -6647,7 +6647,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.0,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -6919,7 +6919,7 @@
         "meta_score": 21.2,
         "pick_rate": 6.4,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -6927,7 +6927,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -6935,7 +6935,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -6943,7 +6943,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ]
   },
@@ -6971,7 +6971,7 @@
         "meta_score": 52.6,
         "pick_rate": 13.1,
         "win_rate": 53.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -6979,7 +6979,7 @@
         "meta_score": 51.4,
         "pick_rate": 14.1,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -6987,7 +6987,7 @@
         "meta_score": 50.6,
         "pick_rate": 20.7,
         "win_rate": 50.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -6995,7 +6995,7 @@
         "meta_score": 49.3,
         "pick_rate": 15.5,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -7003,7 +7003,7 @@
         "meta_score": 49.2,
         "pick_rate": 13.6,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -7011,7 +7011,7 @@
         "meta_score": 46.4,
         "pick_rate": 13.2,
         "win_rate": 51.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -7019,7 +7019,7 @@
         "meta_score": 46.3,
         "pick_rate": 4.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -7027,7 +7027,7 @@
         "meta_score": 46.0,
         "pick_rate": 11.7,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "domina",
@@ -7035,7 +7035,7 @@
         "meta_score": 45.3,
         "pick_rate": 7.5,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -7347,7 +7347,7 @@
         "meta_score": 15.4,
         "pick_rate": 3.9,
         "win_rate": 44.0,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-16": [
@@ -7373,7 +7373,7 @@
         "meta_score": 52.6,
         "pick_rate": 13.1,
         "win_rate": 53.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -7381,7 +7381,7 @@
         "meta_score": 51.4,
         "pick_rate": 14.1,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -7389,7 +7389,7 @@
         "meta_score": 50.6,
         "pick_rate": 20.7,
         "win_rate": 50.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -7397,7 +7397,7 @@
         "meta_score": 49.3,
         "pick_rate": 15.5,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -7405,7 +7405,7 @@
         "meta_score": 49.2,
         "pick_rate": 13.6,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -7413,7 +7413,7 @@
         "meta_score": 46.4,
         "pick_rate": 13.2,
         "win_rate": 51.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -7421,7 +7421,7 @@
         "meta_score": 46.3,
         "pick_rate": 4.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -7429,7 +7429,7 @@
         "meta_score": 46.0,
         "pick_rate": 11.7,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "domina",
@@ -7437,7 +7437,7 @@
         "meta_score": 45.3,
         "pick_rate": 7.5,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -7749,7 +7749,7 @@
         "meta_score": 15.4,
         "pick_rate": 3.9,
         "win_rate": 44.0,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-17": [
@@ -7775,7 +7775,7 @@
         "meta_score": 52.6,
         "pick_rate": 13.1,
         "win_rate": 53.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -7783,7 +7783,7 @@
         "meta_score": 51.4,
         "pick_rate": 14.1,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -7791,7 +7791,7 @@
         "meta_score": 50.6,
         "pick_rate": 20.7,
         "win_rate": 50.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -7799,7 +7799,7 @@
         "meta_score": 49.3,
         "pick_rate": 15.5,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -7807,7 +7807,7 @@
         "meta_score": 49.2,
         "pick_rate": 13.6,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -7815,7 +7815,7 @@
         "meta_score": 46.4,
         "pick_rate": 13.2,
         "win_rate": 51.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -7823,7 +7823,7 @@
         "meta_score": 46.3,
         "pick_rate": 4.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -7831,7 +7831,7 @@
         "meta_score": 46.0,
         "pick_rate": 11.7,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "domina",
@@ -7839,7 +7839,7 @@
         "meta_score": 45.3,
         "pick_rate": 7.5,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -8151,7 +8151,7 @@
         "meta_score": 15.4,
         "pick_rate": 3.9,
         "win_rate": 44.0,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-18": [
@@ -8177,7 +8177,7 @@
         "meta_score": 54.6,
         "pick_rate": 14.5,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -8185,7 +8185,7 @@
         "meta_score": 50.3,
         "pick_rate": 13.7,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -8193,7 +8193,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.9,
         "win_rate": 54.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -8201,7 +8201,7 @@
         "meta_score": 48.8,
         "pick_rate": 12.2,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -8209,7 +8209,7 @@
         "meta_score": 48.4,
         "pick_rate": 14.6,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -8217,7 +8217,7 @@
         "meta_score": 46.4,
         "pick_rate": 9.4,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -8225,7 +8225,7 @@
         "meta_score": 46.2,
         "pick_rate": 17.3,
         "win_rate": 50.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -8553,7 +8553,7 @@
         "meta_score": 18.2,
         "pick_rate": 5.9,
         "win_rate": 44.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -8587,7 +8587,7 @@
         "meta_score": 54.6,
         "pick_rate": 14.5,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -8595,7 +8595,7 @@
         "meta_score": 50.3,
         "pick_rate": 13.7,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -8603,7 +8603,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.9,
         "win_rate": 54.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -8611,7 +8611,7 @@
         "meta_score": 48.8,
         "pick_rate": 12.2,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -8619,7 +8619,7 @@
         "meta_score": 48.4,
         "pick_rate": 14.6,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -8627,7 +8627,7 @@
         "meta_score": 46.4,
         "pick_rate": 9.4,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -8635,7 +8635,7 @@
         "meta_score": 46.2,
         "pick_rate": 17.3,
         "win_rate": 50.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -8963,7 +8963,7 @@
         "meta_score": 18.2,
         "pick_rate": 5.9,
         "win_rate": 44.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -8997,7 +8997,7 @@
         "meta_score": 54.6,
         "pick_rate": 14.5,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -9005,7 +9005,7 @@
         "meta_score": 50.3,
         "pick_rate": 13.7,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -9013,7 +9013,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.9,
         "win_rate": 54.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -9021,7 +9021,7 @@
         "meta_score": 48.8,
         "pick_rate": 12.2,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -9029,7 +9029,7 @@
         "meta_score": 48.4,
         "pick_rate": 14.6,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -9037,7 +9037,7 @@
         "meta_score": 46.4,
         "pick_rate": 9.4,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -9045,7 +9045,7 @@
         "meta_score": 46.2,
         "pick_rate": 17.3,
         "win_rate": 50.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -9373,7 +9373,7 @@
         "meta_score": 18.2,
         "pick_rate": 5.9,
         "win_rate": 44.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -9407,7 +9407,7 @@
         "meta_score": 54.5,
         "pick_rate": 14.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -9415,7 +9415,7 @@
         "meta_score": 53.6,
         "pick_rate": 26.0,
         "win_rate": 50.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -9423,7 +9423,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.7,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -9431,7 +9431,7 @@
         "meta_score": 48.0,
         "pick_rate": 12.2,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -9439,7 +9439,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -9447,7 +9447,7 @@
         "meta_score": 47.4,
         "pick_rate": 14.3,
         "win_rate": 51.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -9775,7 +9775,7 @@
         "meta_score": 20.0,
         "pick_rate": 2.4,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -9783,7 +9783,7 @@
         "meta_score": 17.5,
         "pick_rate": 5.8,
         "win_rate": 44.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -9817,7 +9817,7 @@
         "meta_score": 54.5,
         "pick_rate": 14.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -9825,7 +9825,7 @@
         "meta_score": 53.6,
         "pick_rate": 26.0,
         "win_rate": 50.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -9833,7 +9833,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.7,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -9841,7 +9841,7 @@
         "meta_score": 48.0,
         "pick_rate": 12.2,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -9849,7 +9849,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -9857,7 +9857,7 @@
         "meta_score": 47.4,
         "pick_rate": 14.3,
         "win_rate": 51.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -10185,7 +10185,7 @@
         "meta_score": 20.0,
         "pick_rate": 2.4,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -10193,7 +10193,7 @@
         "meta_score": 17.5,
         "pick_rate": 5.8,
         "win_rate": 44.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -10235,7 +10235,7 @@
         "meta_score": 54.4,
         "pick_rate": 14.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -10243,7 +10243,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.7,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -10251,7 +10251,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.2,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -10259,7 +10259,7 @@
         "meta_score": 47.4,
         "pick_rate": 14.1,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -10267,7 +10267,7 @@
         "meta_score": 47.4,
         "pick_rate": 13.4,
         "win_rate": 52.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -10275,7 +10275,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.2,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -10595,7 +10595,7 @@
         "meta_score": 19.9,
         "pick_rate": 2.3,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -10603,7 +10603,7 @@
         "meta_score": 17.1,
         "pick_rate": 5.8,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -10645,7 +10645,7 @@
         "meta_score": 54.4,
         "pick_rate": 14.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -10653,7 +10653,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.7,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -10661,7 +10661,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.2,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -10669,7 +10669,7 @@
         "meta_score": 47.4,
         "pick_rate": 14.1,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -10677,7 +10677,7 @@
         "meta_score": 47.4,
         "pick_rate": 13.4,
         "win_rate": 52.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -10685,7 +10685,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.2,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -11005,7 +11005,7 @@
         "meta_score": 19.9,
         "pick_rate": 2.3,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -11013,7 +11013,7 @@
         "meta_score": 17.1,
         "pick_rate": 5.8,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -11055,7 +11055,7 @@
         "meta_score": 54.4,
         "pick_rate": 14.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -11063,7 +11063,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.7,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -11071,7 +11071,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.2,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -11079,7 +11079,7 @@
         "meta_score": 47.4,
         "pick_rate": 14.1,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -11087,7 +11087,7 @@
         "meta_score": 47.4,
         "pick_rate": 13.4,
         "win_rate": 52.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -11095,7 +11095,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.2,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -11415,7 +11415,7 @@
         "meta_score": 19.9,
         "pick_rate": 2.3,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -11423,7 +11423,7 @@
         "meta_score": 17.1,
         "pick_rate": 5.8,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -11465,7 +11465,7 @@
         "meta_score": 54.4,
         "pick_rate": 14.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -11473,7 +11473,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.7,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -11481,7 +11481,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.2,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -11489,7 +11489,7 @@
         "meta_score": 47.4,
         "pick_rate": 14.1,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -11497,7 +11497,7 @@
         "meta_score": 47.4,
         "pick_rate": 13.4,
         "win_rate": 52.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -11505,7 +11505,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.2,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -11825,7 +11825,7 @@
         "meta_score": 19.9,
         "pick_rate": 2.3,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -11833,7 +11833,7 @@
         "meta_score": 17.1,
         "pick_rate": 5.8,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -11875,7 +11875,7 @@
         "meta_score": 54.4,
         "pick_rate": 14.6,
         "win_rate": 54.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -11883,7 +11883,7 @@
         "meta_score": 49.1,
         "pick_rate": 6.7,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -11891,7 +11891,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.2,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -11899,7 +11899,7 @@
         "meta_score": 47.4,
         "pick_rate": 14.1,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -11907,7 +11907,7 @@
         "meta_score": 47.4,
         "pick_rate": 13.4,
         "win_rate": 52.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -11915,7 +11915,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.2,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -12235,7 +12235,7 @@
         "meta_score": 19.9,
         "pick_rate": 2.3,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -12243,7 +12243,7 @@
         "meta_score": 17.1,
         "pick_rate": 5.8,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -12285,7 +12285,7 @@
         "meta_score": 53.9,
         "pick_rate": 14.6,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -12293,7 +12293,7 @@
         "meta_score": 49.9,
         "pick_rate": 6.7,
         "win_rate": 54.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -12301,7 +12301,7 @@
         "meta_score": 47.7,
         "pick_rate": 12.1,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -12309,7 +12309,7 @@
         "meta_score": 47.0,
         "pick_rate": 13.8,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -12317,7 +12317,7 @@
         "meta_score": 46.7,
         "pick_rate": 13.4,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -12325,7 +12325,7 @@
         "meta_score": 45.5,
         "pick_rate": 6.5,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -12645,7 +12645,7 @@
         "meta_score": 21.4,
         "pick_rate": 2.3,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -12653,7 +12653,7 @@
         "meta_score": 16.9,
         "pick_rate": 5.6,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -12695,7 +12695,7 @@
         "meta_score": 53.9,
         "pick_rate": 14.6,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -12703,7 +12703,7 @@
         "meta_score": 49.9,
         "pick_rate": 6.7,
         "win_rate": 54.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -12711,7 +12711,7 @@
         "meta_score": 47.7,
         "pick_rate": 12.1,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -12719,7 +12719,7 @@
         "meta_score": 47.0,
         "pick_rate": 13.8,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -12727,7 +12727,7 @@
         "meta_score": 46.7,
         "pick_rate": 13.4,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -12735,7 +12735,7 @@
         "meta_score": 45.5,
         "pick_rate": 6.5,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -13055,7 +13055,7 @@
         "meta_score": 21.4,
         "pick_rate": 2.3,
         "win_rate": 46.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -13063,7 +13063,7 @@
         "meta_score": 16.9,
         "pick_rate": 5.6,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -13105,7 +13105,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -13113,7 +13113,7 @@
         "meta_score": 51.2,
         "pick_rate": 11.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -13121,7 +13121,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -13129,7 +13129,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -13137,7 +13137,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -13145,7 +13145,7 @@
         "meta_score": 49.8,
         "pick_rate": 7.4,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -13153,7 +13153,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.3,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -13161,7 +13161,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -13169,7 +13169,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -13177,7 +13177,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.1,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -13185,7 +13185,7 @@
         "meta_score": 45.6,
         "pick_rate": 8.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -13457,7 +13457,7 @@
         "meta_score": 20.9,
         "pick_rate": 6.4,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -13465,7 +13465,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -13473,7 +13473,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -13481,7 +13481,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-05-01": [
@@ -13515,7 +13515,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -13523,7 +13523,7 @@
         "meta_score": 51.3,
         "pick_rate": 11.7,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -13531,7 +13531,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -13539,7 +13539,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -13547,7 +13547,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -13555,7 +13555,7 @@
         "meta_score": 49.9,
         "pick_rate": 7.5,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -13563,7 +13563,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.2,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -13571,7 +13571,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -13579,7 +13579,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -13587,7 +13587,7 @@
         "meta_score": 45.9,
         "pick_rate": 8.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -13595,7 +13595,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.0,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -13867,7 +13867,7 @@
         "meta_score": 21.2,
         "pick_rate": 6.4,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -13875,7 +13875,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -13883,7 +13883,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -13891,7 +13891,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ]
   },
@@ -13927,7 +13927,7 @@
         "meta_score": 51.8,
         "pick_rate": 13.9,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -13935,7 +13935,7 @@
         "meta_score": 47.7,
         "pick_rate": 12.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -13943,7 +13943,7 @@
         "meta_score": 47.5,
         "pick_rate": 14.9,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -13951,7 +13951,7 @@
         "meta_score": 46.1,
         "pick_rate": 11.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -13959,7 +13959,7 @@
         "meta_score": 45.0,
         "pick_rate": 12.9,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -14287,7 +14287,7 @@
         "meta_score": 20.2,
         "pick_rate": 11.2,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -14295,7 +14295,7 @@
         "meta_score": 18.6,
         "pick_rate": 5.4,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -14303,7 +14303,7 @@
         "meta_score": 16.1,
         "pick_rate": 5.6,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-24": [
@@ -14337,7 +14337,7 @@
         "meta_score": 51.8,
         "pick_rate": 13.9,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -14345,7 +14345,7 @@
         "meta_score": 47.7,
         "pick_rate": 12.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -14353,7 +14353,7 @@
         "meta_score": 47.5,
         "pick_rate": 14.9,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -14361,7 +14361,7 @@
         "meta_score": 46.1,
         "pick_rate": 11.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -14369,7 +14369,7 @@
         "meta_score": 45.0,
         "pick_rate": 12.9,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -14697,7 +14697,7 @@
         "meta_score": 20.2,
         "pick_rate": 11.2,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -14705,7 +14705,7 @@
         "meta_score": 18.6,
         "pick_rate": 5.4,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -14713,7 +14713,7 @@
         "meta_score": 16.1,
         "pick_rate": 5.6,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-25": [
@@ -14747,7 +14747,7 @@
         "meta_score": 51.8,
         "pick_rate": 13.9,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -14755,7 +14755,7 @@
         "meta_score": 47.7,
         "pick_rate": 12.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -14763,7 +14763,7 @@
         "meta_score": 47.5,
         "pick_rate": 14.9,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -14771,7 +14771,7 @@
         "meta_score": 46.1,
         "pick_rate": 11.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -14779,7 +14779,7 @@
         "meta_score": 45.0,
         "pick_rate": 12.9,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -15107,7 +15107,7 @@
         "meta_score": 20.2,
         "pick_rate": 11.2,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -15115,7 +15115,7 @@
         "meta_score": 18.6,
         "pick_rate": 5.4,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -15123,7 +15123,7 @@
         "meta_score": 16.1,
         "pick_rate": 5.6,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-26": [
@@ -15157,7 +15157,7 @@
         "meta_score": 51.8,
         "pick_rate": 13.9,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -15165,7 +15165,7 @@
         "meta_score": 47.7,
         "pick_rate": 12.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -15173,7 +15173,7 @@
         "meta_score": 47.5,
         "pick_rate": 14.9,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -15181,7 +15181,7 @@
         "meta_score": 46.1,
         "pick_rate": 11.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -15189,7 +15189,7 @@
         "meta_score": 45.0,
         "pick_rate": 12.9,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -15517,7 +15517,7 @@
         "meta_score": 20.2,
         "pick_rate": 11.2,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -15525,7 +15525,7 @@
         "meta_score": 18.6,
         "pick_rate": 5.4,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -15533,7 +15533,7 @@
         "meta_score": 16.1,
         "pick_rate": 5.6,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-27": [
@@ -15567,7 +15567,7 @@
         "meta_score": 51.8,
         "pick_rate": 13.9,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -15575,7 +15575,7 @@
         "meta_score": 47.7,
         "pick_rate": 12.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -15583,7 +15583,7 @@
         "meta_score": 47.5,
         "pick_rate": 14.9,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -15591,7 +15591,7 @@
         "meta_score": 46.1,
         "pick_rate": 11.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -15599,7 +15599,7 @@
         "meta_score": 45.0,
         "pick_rate": 12.9,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -15927,7 +15927,7 @@
         "meta_score": 20.2,
         "pick_rate": 11.2,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -15935,7 +15935,7 @@
         "meta_score": 18.6,
         "pick_rate": 5.4,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -15943,7 +15943,7 @@
         "meta_score": 16.1,
         "pick_rate": 5.6,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-28": [
@@ -15977,7 +15977,7 @@
         "meta_score": 51.6,
         "pick_rate": 13.9,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -15985,7 +15985,7 @@
         "meta_score": 47.7,
         "pick_rate": 15.0,
         "win_rate": 51.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -15993,7 +15993,7 @@
         "meta_score": 47.4,
         "pick_rate": 12.8,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -16001,7 +16001,7 @@
         "meta_score": 46.4,
         "pick_rate": 11.2,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -16009,7 +16009,7 @@
         "meta_score": 46.1,
         "pick_rate": 6.4,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -16017,7 +16017,7 @@
         "meta_score": 45.0,
         "pick_rate": 11.3,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -16337,7 +16337,7 @@
         "meta_score": 19.5,
         "pick_rate": 11.3,
         "win_rate": 43.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -16345,7 +16345,7 @@
         "meta_score": 17.9,
         "pick_rate": 5.3,
         "win_rate": 44.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -16353,7 +16353,7 @@
         "meta_score": 16.2,
         "pick_rate": 5.5,
         "win_rate": 43.9,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-29": [
@@ -16387,7 +16387,7 @@
         "meta_score": 51.6,
         "pick_rate": 13.9,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -16395,7 +16395,7 @@
         "meta_score": 47.7,
         "pick_rate": 15.0,
         "win_rate": 51.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -16403,7 +16403,7 @@
         "meta_score": 47.4,
         "pick_rate": 12.8,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -16411,7 +16411,7 @@
         "meta_score": 46.4,
         "pick_rate": 11.2,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -16419,7 +16419,7 @@
         "meta_score": 46.1,
         "pick_rate": 6.4,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -16427,7 +16427,7 @@
         "meta_score": 45.0,
         "pick_rate": 11.3,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -16747,7 +16747,7 @@
         "meta_score": 19.5,
         "pick_rate": 11.3,
         "win_rate": 43.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -16755,7 +16755,7 @@
         "meta_score": 17.9,
         "pick_rate": 5.3,
         "win_rate": 44.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -16763,7 +16763,7 @@
         "meta_score": 16.2,
         "pick_rate": 5.5,
         "win_rate": 43.9,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-30": [
@@ -16797,7 +16797,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -16805,7 +16805,7 @@
         "meta_score": 51.2,
         "pick_rate": 11.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -16813,7 +16813,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -16821,7 +16821,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -16829,7 +16829,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -16837,7 +16837,7 @@
         "meta_score": 49.8,
         "pick_rate": 7.4,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -16845,7 +16845,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.3,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -16853,7 +16853,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -16861,7 +16861,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -16869,7 +16869,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.1,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -16877,7 +16877,7 @@
         "meta_score": 45.6,
         "pick_rate": 8.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -17149,7 +17149,7 @@
         "meta_score": 20.9,
         "pick_rate": 6.4,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -17157,7 +17157,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -17165,7 +17165,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -17173,7 +17173,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-05-01": [
@@ -17207,7 +17207,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -17215,7 +17215,7 @@
         "meta_score": 51.3,
         "pick_rate": 11.7,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -17223,7 +17223,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -17231,7 +17231,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -17239,7 +17239,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -17247,7 +17247,7 @@
         "meta_score": 49.9,
         "pick_rate": 7.5,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -17255,7 +17255,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.2,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -17263,7 +17263,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -17271,7 +17271,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -17279,7 +17279,7 @@
         "meta_score": 45.9,
         "pick_rate": 8.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -17287,7 +17287,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.0,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -17559,7 +17559,7 @@
         "meta_score": 21.2,
         "pick_rate": 6.4,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -17567,7 +17567,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -17575,7 +17575,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -17583,7 +17583,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ]
   },
@@ -17635,7 +17635,7 @@
         "meta_score": 53.1,
         "pick_rate": 11.4,
         "win_rate": 54.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -17643,7 +17643,7 @@
         "meta_score": 52.5,
         "pick_rate": 7.9,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -17651,7 +17651,7 @@
         "meta_score": 50.9,
         "pick_rate": 18.9,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -17659,7 +17659,7 @@
         "meta_score": 49.5,
         "pick_rate": 11.9,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -17667,7 +17667,7 @@
         "meta_score": 46.3,
         "pick_rate": 17.9,
         "win_rate": 50.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -17675,7 +17675,7 @@
         "meta_score": 46.0,
         "pick_rate": 11.2,
         "win_rate": 52.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -17683,7 +17683,7 @@
         "meta_score": 45.7,
         "pick_rate": 2.5,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -17915,7 +17915,7 @@
         "meta_score": 21.7,
         "pick_rate": 2.1,
         "win_rate": 46.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -17923,7 +17923,7 @@
         "meta_score": 21.5,
         "pick_rate": 3.4,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "moira",
@@ -17931,7 +17931,7 @@
         "meta_score": 21.3,
         "pick_rate": 4.8,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -17939,7 +17939,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.9,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -17947,7 +17947,7 @@
         "meta_score": 18.9,
         "pick_rate": 3.2,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junkrat",
@@ -17955,7 +17955,7 @@
         "meta_score": 18.6,
         "pick_rate": 2.4,
         "win_rate": 45.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -17963,7 +17963,7 @@
         "meta_score": 18.0,
         "pick_rate": 3.1,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -17971,7 +17971,7 @@
         "meta_score": 16.6,
         "pick_rate": 6.8,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "reinhardt",
@@ -18045,7 +18045,7 @@
         "meta_score": 53.1,
         "pick_rate": 11.4,
         "win_rate": 54.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -18053,7 +18053,7 @@
         "meta_score": 52.5,
         "pick_rate": 7.9,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -18061,7 +18061,7 @@
         "meta_score": 50.9,
         "pick_rate": 18.9,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -18069,7 +18069,7 @@
         "meta_score": 49.5,
         "pick_rate": 11.9,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -18077,7 +18077,7 @@
         "meta_score": 46.3,
         "pick_rate": 17.9,
         "win_rate": 50.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -18085,7 +18085,7 @@
         "meta_score": 46.0,
         "pick_rate": 11.2,
         "win_rate": 52.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -18093,7 +18093,7 @@
         "meta_score": 45.7,
         "pick_rate": 2.5,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -18325,7 +18325,7 @@
         "meta_score": 21.7,
         "pick_rate": 2.1,
         "win_rate": 46.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -18333,7 +18333,7 @@
         "meta_score": 21.5,
         "pick_rate": 3.4,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "moira",
@@ -18341,7 +18341,7 @@
         "meta_score": 21.3,
         "pick_rate": 4.8,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -18349,7 +18349,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.9,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -18357,7 +18357,7 @@
         "meta_score": 18.9,
         "pick_rate": 3.2,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junkrat",
@@ -18365,7 +18365,7 @@
         "meta_score": 18.6,
         "pick_rate": 2.4,
         "win_rate": 45.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -18373,7 +18373,7 @@
         "meta_score": 18.0,
         "pick_rate": 3.1,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -18381,7 +18381,7 @@
         "meta_score": 16.6,
         "pick_rate": 6.8,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "reinhardt",
@@ -18455,7 +18455,7 @@
         "meta_score": 53.1,
         "pick_rate": 11.4,
         "win_rate": 54.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -18463,7 +18463,7 @@
         "meta_score": 52.5,
         "pick_rate": 7.9,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -18471,7 +18471,7 @@
         "meta_score": 50.9,
         "pick_rate": 18.9,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -18479,7 +18479,7 @@
         "meta_score": 49.5,
         "pick_rate": 11.9,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -18487,7 +18487,7 @@
         "meta_score": 46.3,
         "pick_rate": 17.9,
         "win_rate": 50.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -18495,7 +18495,7 @@
         "meta_score": 46.0,
         "pick_rate": 11.2,
         "win_rate": 52.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -18503,7 +18503,7 @@
         "meta_score": 45.7,
         "pick_rate": 2.5,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -18735,7 +18735,7 @@
         "meta_score": 21.7,
         "pick_rate": 2.1,
         "win_rate": 46.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -18743,7 +18743,7 @@
         "meta_score": 21.5,
         "pick_rate": 3.4,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "moira",
@@ -18751,7 +18751,7 @@
         "meta_score": 21.3,
         "pick_rate": 4.8,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -18759,7 +18759,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.9,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -18767,7 +18767,7 @@
         "meta_score": 18.9,
         "pick_rate": 3.2,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junkrat",
@@ -18775,7 +18775,7 @@
         "meta_score": 18.6,
         "pick_rate": 2.4,
         "win_rate": 45.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -18783,7 +18783,7 @@
         "meta_score": 18.0,
         "pick_rate": 3.1,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -18791,7 +18791,7 @@
         "meta_score": 16.6,
         "pick_rate": 6.8,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "reinhardt",
@@ -18865,7 +18865,7 @@
         "meta_score": 53.1,
         "pick_rate": 11.4,
         "win_rate": 54.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -18873,7 +18873,7 @@
         "meta_score": 52.5,
         "pick_rate": 7.9,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -18881,7 +18881,7 @@
         "meta_score": 50.9,
         "pick_rate": 18.9,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -18889,7 +18889,7 @@
         "meta_score": 49.5,
         "pick_rate": 11.9,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -18897,7 +18897,7 @@
         "meta_score": 46.3,
         "pick_rate": 17.9,
         "win_rate": 50.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -18905,7 +18905,7 @@
         "meta_score": 46.0,
         "pick_rate": 11.2,
         "win_rate": 52.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -18913,7 +18913,7 @@
         "meta_score": 45.7,
         "pick_rate": 2.5,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -19145,7 +19145,7 @@
         "meta_score": 21.7,
         "pick_rate": 2.1,
         "win_rate": 46.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -19153,7 +19153,7 @@
         "meta_score": 21.5,
         "pick_rate": 3.4,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "moira",
@@ -19161,7 +19161,7 @@
         "meta_score": 21.3,
         "pick_rate": 4.8,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -19169,7 +19169,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.9,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -19177,7 +19177,7 @@
         "meta_score": 18.9,
         "pick_rate": 3.2,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junkrat",
@@ -19185,7 +19185,7 @@
         "meta_score": 18.6,
         "pick_rate": 2.4,
         "win_rate": 45.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -19193,7 +19193,7 @@
         "meta_score": 18.0,
         "pick_rate": 3.1,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -19201,7 +19201,7 @@
         "meta_score": 16.6,
         "pick_rate": 6.8,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "reinhardt",
@@ -19275,7 +19275,7 @@
         "meta_score": 53.1,
         "pick_rate": 11.4,
         "win_rate": 54.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -19283,7 +19283,7 @@
         "meta_score": 52.5,
         "pick_rate": 7.9,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -19291,7 +19291,7 @@
         "meta_score": 50.9,
         "pick_rate": 18.9,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -19299,7 +19299,7 @@
         "meta_score": 49.5,
         "pick_rate": 11.9,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -19307,7 +19307,7 @@
         "meta_score": 46.3,
         "pick_rate": 17.9,
         "win_rate": 50.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -19315,7 +19315,7 @@
         "meta_score": 46.0,
         "pick_rate": 11.2,
         "win_rate": 52.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -19323,7 +19323,7 @@
         "meta_score": 45.7,
         "pick_rate": 2.5,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -19555,7 +19555,7 @@
         "meta_score": 21.7,
         "pick_rate": 2.1,
         "win_rate": 46.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -19563,7 +19563,7 @@
         "meta_score": 21.5,
         "pick_rate": 3.4,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "moira",
@@ -19571,7 +19571,7 @@
         "meta_score": 21.3,
         "pick_rate": 4.8,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -19579,7 +19579,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.9,
         "win_rate": 46.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -19587,7 +19587,7 @@
         "meta_score": 18.9,
         "pick_rate": 3.2,
         "win_rate": 45.5,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "junkrat",
@@ -19595,7 +19595,7 @@
         "meta_score": 18.6,
         "pick_rate": 2.4,
         "win_rate": 45.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -19603,7 +19603,7 @@
         "meta_score": 18.0,
         "pick_rate": 3.1,
         "win_rate": 45.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -19611,7 +19611,7 @@
         "meta_score": 16.6,
         "pick_rate": 6.8,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "reinhardt",
@@ -19677,7 +19677,7 @@
         "meta_score": 54.4,
         "pick_rate": 22.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -19685,7 +19685,7 @@
         "meta_score": 54.0,
         "pick_rate": 7.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -19693,7 +19693,7 @@
         "meta_score": 53.0,
         "pick_rate": 12.2,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -19701,7 +19701,7 @@
         "meta_score": 49.9,
         "pick_rate": 18.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -19709,7 +19709,7 @@
         "meta_score": 47.3,
         "pick_rate": 17.8,
         "win_rate": 51.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -19717,7 +19717,7 @@
         "meta_score": 47.0,
         "pick_rate": 11.9,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -19725,7 +19725,7 @@
         "meta_score": 46.8,
         "pick_rate": 11.2,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -19981,7 +19981,7 @@
         "meta_score": 21.0,
         "pick_rate": 4.4,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -19989,7 +19989,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.1,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -19997,7 +19997,7 @@
         "meta_score": 18.7,
         "pick_rate": 3.3,
         "win_rate": 45.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -20005,7 +20005,7 @@
         "meta_score": 18.3,
         "pick_rate": 3.2,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -20013,7 +20013,7 @@
         "meta_score": 17.7,
         "pick_rate": 2.4,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -20021,7 +20021,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.5,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -20087,7 +20087,7 @@
         "meta_score": 54.4,
         "pick_rate": 22.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -20095,7 +20095,7 @@
         "meta_score": 54.0,
         "pick_rate": 7.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -20103,7 +20103,7 @@
         "meta_score": 53.0,
         "pick_rate": 12.2,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -20111,7 +20111,7 @@
         "meta_score": 49.9,
         "pick_rate": 18.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -20119,7 +20119,7 @@
         "meta_score": 47.3,
         "pick_rate": 17.8,
         "win_rate": 51.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -20127,7 +20127,7 @@
         "meta_score": 47.0,
         "pick_rate": 11.9,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -20135,7 +20135,7 @@
         "meta_score": 46.8,
         "pick_rate": 11.2,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -20391,7 +20391,7 @@
         "meta_score": 21.0,
         "pick_rate": 4.4,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "mei",
@@ -20399,7 +20399,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.1,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -20407,7 +20407,7 @@
         "meta_score": 18.7,
         "pick_rate": 3.3,
         "win_rate": 45.4,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -20415,7 +20415,7 @@
         "meta_score": 18.3,
         "pick_rate": 3.2,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "torbjorn",
@@ -20423,7 +20423,7 @@
         "meta_score": 17.7,
         "pick_rate": 2.4,
         "win_rate": 45.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -20431,7 +20431,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.5,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -20489,7 +20489,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -20497,7 +20497,7 @@
         "meta_score": 51.2,
         "pick_rate": 11.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -20505,7 +20505,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -20513,7 +20513,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -20521,7 +20521,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -20529,7 +20529,7 @@
         "meta_score": 49.8,
         "pick_rate": 7.4,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -20537,7 +20537,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.3,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -20545,7 +20545,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -20553,7 +20553,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -20561,7 +20561,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.1,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -20569,7 +20569,7 @@
         "meta_score": 45.6,
         "pick_rate": 8.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -20841,7 +20841,7 @@
         "meta_score": 20.9,
         "pick_rate": 6.4,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -20849,7 +20849,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -20857,7 +20857,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -20865,7 +20865,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-05-01": [
@@ -20899,7 +20899,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -20907,7 +20907,7 @@
         "meta_score": 51.3,
         "pick_rate": 11.7,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -20915,7 +20915,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -20923,7 +20923,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -20931,7 +20931,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -20939,7 +20939,7 @@
         "meta_score": 49.9,
         "pick_rate": 7.5,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -20947,7 +20947,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.2,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -20955,7 +20955,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -20963,7 +20963,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -20971,7 +20971,7 @@
         "meta_score": 45.9,
         "pick_rate": 8.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -20979,7 +20979,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.0,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -21251,7 +21251,7 @@
         "meta_score": 21.2,
         "pick_rate": 6.4,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -21259,7 +21259,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -21267,7 +21267,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -21275,7 +21275,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ]
   },
@@ -21311,7 +21311,7 @@
         "meta_score": 54.5,
         "pick_rate": 7.1,
         "win_rate": 56.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -21319,7 +21319,7 @@
         "meta_score": 49.0,
         "pick_rate": 9.1,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -21327,7 +21327,7 @@
         "meta_score": 48.7,
         "pick_rate": 20.1,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -21335,7 +21335,7 @@
         "meta_score": 48.0,
         "pick_rate": 11.4,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -21343,7 +21343,7 @@
         "meta_score": 47.6,
         "pick_rate": 15.1,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -21351,7 +21351,7 @@
         "meta_score": 46.8,
         "pick_rate": 11.4,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -21359,7 +21359,7 @@
         "meta_score": 46.6,
         "pick_rate": 17.5,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -21367,7 +21367,7 @@
         "meta_score": 45.6,
         "pick_rate": 14.8,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "tracer",
@@ -21375,7 +21375,7 @@
         "meta_score": 45.4,
         "pick_rate": 17.1,
         "win_rate": 51.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -21631,7 +21631,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.8,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -21639,7 +21639,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.4,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -21647,7 +21647,7 @@
         "meta_score": 20.9,
         "pick_rate": 3.2,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -21655,7 +21655,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.2,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -21663,7 +21663,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.8,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -21671,7 +21671,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.1,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -21721,7 +21721,7 @@
         "meta_score": 54.5,
         "pick_rate": 7.1,
         "win_rate": 56.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -21729,7 +21729,7 @@
         "meta_score": 49.0,
         "pick_rate": 9.1,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -21737,7 +21737,7 @@
         "meta_score": 48.7,
         "pick_rate": 20.1,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -21745,7 +21745,7 @@
         "meta_score": 48.0,
         "pick_rate": 11.4,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -21753,7 +21753,7 @@
         "meta_score": 47.6,
         "pick_rate": 15.1,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -21761,7 +21761,7 @@
         "meta_score": 46.8,
         "pick_rate": 11.4,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -21769,7 +21769,7 @@
         "meta_score": 46.6,
         "pick_rate": 17.5,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -21777,7 +21777,7 @@
         "meta_score": 45.6,
         "pick_rate": 14.8,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "tracer",
@@ -21785,7 +21785,7 @@
         "meta_score": 45.4,
         "pick_rate": 17.1,
         "win_rate": 51.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -22041,7 +22041,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.8,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -22049,7 +22049,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.4,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -22057,7 +22057,7 @@
         "meta_score": 20.9,
         "pick_rate": 3.2,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -22065,7 +22065,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.2,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -22073,7 +22073,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.8,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -22081,7 +22081,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.1,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -22131,7 +22131,7 @@
         "meta_score": 54.5,
         "pick_rate": 7.1,
         "win_rate": 56.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -22139,7 +22139,7 @@
         "meta_score": 49.0,
         "pick_rate": 9.1,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -22147,7 +22147,7 @@
         "meta_score": 48.7,
         "pick_rate": 20.1,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -22155,7 +22155,7 @@
         "meta_score": 48.0,
         "pick_rate": 11.4,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -22163,7 +22163,7 @@
         "meta_score": 47.6,
         "pick_rate": 15.1,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -22171,7 +22171,7 @@
         "meta_score": 46.8,
         "pick_rate": 11.4,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -22179,7 +22179,7 @@
         "meta_score": 46.6,
         "pick_rate": 17.5,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -22187,7 +22187,7 @@
         "meta_score": 45.6,
         "pick_rate": 14.8,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "tracer",
@@ -22195,7 +22195,7 @@
         "meta_score": 45.4,
         "pick_rate": 17.1,
         "win_rate": 51.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -22451,7 +22451,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.8,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -22459,7 +22459,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.4,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -22467,7 +22467,7 @@
         "meta_score": 20.9,
         "pick_rate": 3.2,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -22475,7 +22475,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.2,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -22483,7 +22483,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.8,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -22491,7 +22491,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.1,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -22541,7 +22541,7 @@
         "meta_score": 54.5,
         "pick_rate": 7.1,
         "win_rate": 56.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -22549,7 +22549,7 @@
         "meta_score": 49.0,
         "pick_rate": 9.1,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -22557,7 +22557,7 @@
         "meta_score": 48.7,
         "pick_rate": 20.1,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -22565,7 +22565,7 @@
         "meta_score": 48.0,
         "pick_rate": 11.4,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -22573,7 +22573,7 @@
         "meta_score": 47.6,
         "pick_rate": 15.1,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -22581,7 +22581,7 @@
         "meta_score": 46.8,
         "pick_rate": 11.4,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -22589,7 +22589,7 @@
         "meta_score": 46.6,
         "pick_rate": 17.5,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -22597,7 +22597,7 @@
         "meta_score": 45.6,
         "pick_rate": 14.8,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "tracer",
@@ -22605,7 +22605,7 @@
         "meta_score": 45.4,
         "pick_rate": 17.1,
         "win_rate": 51.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -22861,7 +22861,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.8,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -22869,7 +22869,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.4,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -22877,7 +22877,7 @@
         "meta_score": 20.9,
         "pick_rate": 3.2,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -22885,7 +22885,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.2,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -22893,7 +22893,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.8,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -22901,7 +22901,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.1,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -22951,7 +22951,7 @@
         "meta_score": 54.5,
         "pick_rate": 7.1,
         "win_rate": 56.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -22959,7 +22959,7 @@
         "meta_score": 49.0,
         "pick_rate": 9.1,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -22967,7 +22967,7 @@
         "meta_score": 48.7,
         "pick_rate": 20.1,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -22975,7 +22975,7 @@
         "meta_score": 48.0,
         "pick_rate": 11.4,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -22983,7 +22983,7 @@
         "meta_score": 47.6,
         "pick_rate": 15.1,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -22991,7 +22991,7 @@
         "meta_score": 46.8,
         "pick_rate": 11.4,
         "win_rate": 52.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -22999,7 +22999,7 @@
         "meta_score": 46.6,
         "pick_rate": 17.5,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -23007,7 +23007,7 @@
         "meta_score": 45.6,
         "pick_rate": 14.8,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "tracer",
@@ -23015,7 +23015,7 @@
         "meta_score": 45.4,
         "pick_rate": 17.1,
         "win_rate": 51.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -23271,7 +23271,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.8,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -23279,7 +23279,7 @@
         "meta_score": 21.0,
         "pick_rate": 3.4,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -23287,7 +23287,7 @@
         "meta_score": 20.9,
         "pick_rate": 3.2,
         "win_rate": 46.2,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -23295,7 +23295,7 @@
         "meta_score": 20.0,
         "pick_rate": 3.2,
         "win_rate": 45.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -23303,7 +23303,7 @@
         "meta_score": 19.8,
         "pick_rate": 3.8,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -23311,7 +23311,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.1,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -23361,7 +23361,7 @@
         "meta_score": 54.3,
         "pick_rate": 7.2,
         "win_rate": 56.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -23369,7 +23369,7 @@
         "meta_score": 50.6,
         "pick_rate": 9.6,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -23377,7 +23377,7 @@
         "meta_score": 48.9,
         "pick_rate": 19.9,
         "win_rate": 51.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -23385,7 +23385,7 @@
         "meta_score": 47.8,
         "pick_rate": 15.0,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -23393,7 +23393,7 @@
         "meta_score": 47.1,
         "pick_rate": 11.4,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -23401,7 +23401,7 @@
         "meta_score": 46.4,
         "pick_rate": 14.6,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -23409,7 +23409,7 @@
         "meta_score": 46.3,
         "pick_rate": 17.0,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -23417,7 +23417,7 @@
         "meta_score": 46.3,
         "pick_rate": 11.1,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "tracer",
@@ -23425,7 +23425,7 @@
         "meta_score": 46.0,
         "pick_rate": 17.5,
         "win_rate": 51.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -23681,7 +23681,7 @@
         "meta_score": 21.8,
         "pick_rate": 6.2,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -23689,7 +23689,7 @@
         "meta_score": 21.6,
         "pick_rate": 3.8,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -23697,7 +23697,7 @@
         "meta_score": 21.2,
         "pick_rate": 3.2,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -23705,7 +23705,7 @@
         "meta_score": 21.1,
         "pick_rate": 4.0,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -23713,7 +23713,7 @@
         "meta_score": 20.8,
         "pick_rate": 3.5,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -23721,7 +23721,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.0,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -23729,7 +23729,7 @@
         "meta_score": 15.2,
         "pick_rate": 2.0,
         "win_rate": 44.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -23771,7 +23771,7 @@
         "meta_score": 54.3,
         "pick_rate": 7.2,
         "win_rate": 56.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -23779,7 +23779,7 @@
         "meta_score": 50.6,
         "pick_rate": 9.6,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "emre",
@@ -23787,7 +23787,7 @@
         "meta_score": 48.9,
         "pick_rate": 19.9,
         "win_rate": 51.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -23795,7 +23795,7 @@
         "meta_score": 47.8,
         "pick_rate": 15.0,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -23803,7 +23803,7 @@
         "meta_score": 47.1,
         "pick_rate": 11.4,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -23811,7 +23811,7 @@
         "meta_score": 46.4,
         "pick_rate": 14.6,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -23819,7 +23819,7 @@
         "meta_score": 46.3,
         "pick_rate": 17.0,
         "win_rate": 51.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -23827,7 +23827,7 @@
         "meta_score": 46.3,
         "pick_rate": 11.1,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "tracer",
@@ -23835,7 +23835,7 @@
         "meta_score": 46.0,
         "pick_rate": 17.5,
         "win_rate": 51.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -24091,7 +24091,7 @@
         "meta_score": 21.8,
         "pick_rate": 6.2,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "bastion",
@@ -24099,7 +24099,7 @@
         "meta_score": 21.6,
         "pick_rate": 3.8,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -24107,7 +24107,7 @@
         "meta_score": 21.2,
         "pick_rate": 3.2,
         "win_rate": 46.3,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "jetpack_cat",
@@ -24115,7 +24115,7 @@
         "meta_score": 21.1,
         "pick_rate": 4.0,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sombra",
@@ -24123,7 +24123,7 @@
         "meta_score": 20.8,
         "pick_rate": 3.5,
         "win_rate": 46.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -24131,7 +24131,7 @@
         "meta_score": 15.7,
         "pick_rate": 6.0,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -24139,7 +24139,7 @@
         "meta_score": 15.2,
         "pick_rate": 2.0,
         "win_rate": 44.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -24181,7 +24181,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -24189,7 +24189,7 @@
         "meta_score": 51.2,
         "pick_rate": 11.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -24197,7 +24197,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -24205,7 +24205,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -24213,7 +24213,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -24221,7 +24221,7 @@
         "meta_score": 49.8,
         "pick_rate": 7.4,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -24229,7 +24229,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.3,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -24237,7 +24237,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -24245,7 +24245,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -24253,7 +24253,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.1,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -24261,7 +24261,7 @@
         "meta_score": 45.6,
         "pick_rate": 8.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -24533,7 +24533,7 @@
         "meta_score": 20.9,
         "pick_rate": 6.4,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -24541,7 +24541,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -24549,7 +24549,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -24557,7 +24557,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-05-01": [
@@ -24591,7 +24591,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -24599,7 +24599,7 @@
         "meta_score": 51.3,
         "pick_rate": 11.7,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -24607,7 +24607,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -24615,7 +24615,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -24623,7 +24623,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -24631,7 +24631,7 @@
         "meta_score": 49.9,
         "pick_rate": 7.5,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -24639,7 +24639,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.2,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -24647,7 +24647,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -24655,7 +24655,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -24663,7 +24663,7 @@
         "meta_score": 45.9,
         "pick_rate": 8.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -24671,7 +24671,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.0,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -24943,7 +24943,7 @@
         "meta_score": 21.2,
         "pick_rate": 6.4,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -24951,7 +24951,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -24959,7 +24959,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -24967,7 +24967,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ]
   },
@@ -24995,7 +24995,7 @@
         "meta_score": 51.0,
         "pick_rate": 13.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "illari",
@@ -25003,7 +25003,7 @@
         "meta_score": 50.7,
         "pick_rate": 15.1,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -25011,7 +25011,7 @@
         "meta_score": 49.2,
         "pick_rate": 13.6,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "moira",
@@ -25019,7 +25019,7 @@
         "meta_score": 48.5,
         "pick_rate": 23.8,
         "win_rate": 49.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "ana",
@@ -25027,7 +25027,7 @@
         "meta_score": 46.4,
         "pick_rate": 25.3,
         "win_rate": 48.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -25035,7 +25035,7 @@
         "meta_score": 46.3,
         "pick_rate": 13.7,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -25043,7 +25043,7 @@
         "meta_score": 45.3,
         "pick_rate": 3.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -25051,7 +25051,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.6,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -25363,7 +25363,7 @@
         "meta_score": 19.7,
         "pick_rate": 13.9,
         "win_rate": 42.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -25371,7 +25371,7 @@
         "meta_score": 18.7,
         "pick_rate": 5.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -25379,7 +25379,7 @@
         "meta_score": 15.6,
         "pick_rate": 4.8,
         "win_rate": 43.9,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-24": [
@@ -25405,7 +25405,7 @@
         "meta_score": 51.0,
         "pick_rate": 13.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "illari",
@@ -25413,7 +25413,7 @@
         "meta_score": 50.7,
         "pick_rate": 15.1,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -25421,7 +25421,7 @@
         "meta_score": 49.2,
         "pick_rate": 13.6,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "moira",
@@ -25429,7 +25429,7 @@
         "meta_score": 48.5,
         "pick_rate": 23.8,
         "win_rate": 49.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "ana",
@@ -25437,7 +25437,7 @@
         "meta_score": 46.4,
         "pick_rate": 25.3,
         "win_rate": 48.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -25445,7 +25445,7 @@
         "meta_score": 46.3,
         "pick_rate": 13.7,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -25453,7 +25453,7 @@
         "meta_score": 45.3,
         "pick_rate": 3.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -25461,7 +25461,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.6,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -25773,7 +25773,7 @@
         "meta_score": 19.7,
         "pick_rate": 13.9,
         "win_rate": 42.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -25781,7 +25781,7 @@
         "meta_score": 18.7,
         "pick_rate": 5.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -25789,7 +25789,7 @@
         "meta_score": 15.6,
         "pick_rate": 4.8,
         "win_rate": 43.9,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-25": [
@@ -25815,7 +25815,7 @@
         "meta_score": 51.0,
         "pick_rate": 13.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "illari",
@@ -25823,7 +25823,7 @@
         "meta_score": 50.7,
         "pick_rate": 15.1,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -25831,7 +25831,7 @@
         "meta_score": 49.2,
         "pick_rate": 13.6,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "moira",
@@ -25839,7 +25839,7 @@
         "meta_score": 48.5,
         "pick_rate": 23.8,
         "win_rate": 49.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "ana",
@@ -25847,7 +25847,7 @@
         "meta_score": 46.4,
         "pick_rate": 25.3,
         "win_rate": 48.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -25855,7 +25855,7 @@
         "meta_score": 46.3,
         "pick_rate": 13.7,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -25863,7 +25863,7 @@
         "meta_score": 45.3,
         "pick_rate": 3.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -25871,7 +25871,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.6,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -26183,7 +26183,7 @@
         "meta_score": 19.7,
         "pick_rate": 13.9,
         "win_rate": 42.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -26191,7 +26191,7 @@
         "meta_score": 18.7,
         "pick_rate": 5.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -26199,7 +26199,7 @@
         "meta_score": 15.6,
         "pick_rate": 4.8,
         "win_rate": 43.9,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-26": [
@@ -26225,7 +26225,7 @@
         "meta_score": 51.0,
         "pick_rate": 13.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "illari",
@@ -26233,7 +26233,7 @@
         "meta_score": 50.7,
         "pick_rate": 15.1,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -26241,7 +26241,7 @@
         "meta_score": 49.2,
         "pick_rate": 13.6,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "moira",
@@ -26249,7 +26249,7 @@
         "meta_score": 48.5,
         "pick_rate": 23.8,
         "win_rate": 49.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "ana",
@@ -26257,7 +26257,7 @@
         "meta_score": 46.4,
         "pick_rate": 25.3,
         "win_rate": 48.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -26265,7 +26265,7 @@
         "meta_score": 46.3,
         "pick_rate": 13.7,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -26273,7 +26273,7 @@
         "meta_score": 45.3,
         "pick_rate": 3.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -26281,7 +26281,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.6,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -26593,7 +26593,7 @@
         "meta_score": 19.7,
         "pick_rate": 13.9,
         "win_rate": 42.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -26601,7 +26601,7 @@
         "meta_score": 18.7,
         "pick_rate": 5.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -26609,7 +26609,7 @@
         "meta_score": 15.6,
         "pick_rate": 4.8,
         "win_rate": 43.9,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-27": [
@@ -26635,7 +26635,7 @@
         "meta_score": 51.0,
         "pick_rate": 13.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "illari",
@@ -26643,7 +26643,7 @@
         "meta_score": 50.7,
         "pick_rate": 15.1,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -26651,7 +26651,7 @@
         "meta_score": 49.2,
         "pick_rate": 13.6,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "moira",
@@ -26659,7 +26659,7 @@
         "meta_score": 48.5,
         "pick_rate": 23.8,
         "win_rate": 49.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "ana",
@@ -26667,7 +26667,7 @@
         "meta_score": 46.4,
         "pick_rate": 25.3,
         "win_rate": 48.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -26675,7 +26675,7 @@
         "meta_score": 46.3,
         "pick_rate": 13.7,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -26683,7 +26683,7 @@
         "meta_score": 45.3,
         "pick_rate": 3.3,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -26691,7 +26691,7 @@
         "meta_score": 45.0,
         "pick_rate": 6.6,
         "win_rate": 53.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -27003,7 +27003,7 @@
         "meta_score": 19.7,
         "pick_rate": 13.9,
         "win_rate": 42.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -27011,7 +27011,7 @@
         "meta_score": 18.7,
         "pick_rate": 5.3,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -27019,7 +27019,7 @@
         "meta_score": 15.6,
         "pick_rate": 4.8,
         "win_rate": 43.9,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-28": [
@@ -27045,7 +27045,7 @@
         "meta_score": 50.3,
         "pick_rate": 14.8,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -27053,7 +27053,7 @@
         "meta_score": 49.9,
         "pick_rate": 13.6,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -27061,7 +27061,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.5,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "moira",
@@ -27069,7 +27069,7 @@
         "meta_score": 47.1,
         "pick_rate": 23.6,
         "win_rate": 49.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "ana",
@@ -27077,7 +27077,7 @@
         "meta_score": 46.7,
         "pick_rate": 25.7,
         "win_rate": 48.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -27085,7 +27085,7 @@
         "meta_score": 46.5,
         "pick_rate": 13.5,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -27093,7 +27093,7 @@
         "meta_score": 46.1,
         "pick_rate": 3.2,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -27101,7 +27101,7 @@
         "meta_score": 45.6,
         "pick_rate": 11.2,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -27109,7 +27109,7 @@
         "meta_score": 45.5,
         "pick_rate": 6.6,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -27413,7 +27413,7 @@
         "meta_score": 20.1,
         "pick_rate": 13.8,
         "win_rate": 43.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -27421,7 +27421,7 @@
         "meta_score": 18.3,
         "pick_rate": 5.3,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -27429,7 +27429,7 @@
         "meta_score": 15.2,
         "pick_rate": 4.7,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-29": [
@@ -27455,7 +27455,7 @@
         "meta_score": 50.3,
         "pick_rate": 14.8,
         "win_rate": 52.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -27463,7 +27463,7 @@
         "meta_score": 49.9,
         "pick_rate": 13.6,
         "win_rate": 53.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -27471,7 +27471,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.5,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "moira",
@@ -27479,7 +27479,7 @@
         "meta_score": 47.1,
         "pick_rate": 23.6,
         "win_rate": 49.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "ana",
@@ -27487,7 +27487,7 @@
         "meta_score": 46.7,
         "pick_rate": 25.7,
         "win_rate": 48.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -27495,7 +27495,7 @@
         "meta_score": 46.5,
         "pick_rate": 13.5,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -27503,7 +27503,7 @@
         "meta_score": 46.1,
         "pick_rate": 3.2,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -27511,7 +27511,7 @@
         "meta_score": 45.6,
         "pick_rate": 11.2,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -27519,7 +27519,7 @@
         "meta_score": 45.5,
         "pick_rate": 6.6,
         "win_rate": 53.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -27823,7 +27823,7 @@
         "meta_score": 20.1,
         "pick_rate": 13.8,
         "win_rate": 43.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -27831,7 +27831,7 @@
         "meta_score": 18.3,
         "pick_rate": 5.3,
         "win_rate": 44.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -27839,7 +27839,7 @@
         "meta_score": 15.2,
         "pick_rate": 4.7,
         "win_rate": 43.8,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-04-30": [
@@ -27873,7 +27873,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -27881,7 +27881,7 @@
         "meta_score": 51.2,
         "pick_rate": 11.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -27889,7 +27889,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -27897,7 +27897,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -27905,7 +27905,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -27913,7 +27913,7 @@
         "meta_score": 49.8,
         "pick_rate": 7.4,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -27921,7 +27921,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.3,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -27929,7 +27929,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -27937,7 +27937,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -27945,7 +27945,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.1,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -27953,7 +27953,7 @@
         "meta_score": 45.6,
         "pick_rate": 8.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -28225,7 +28225,7 @@
         "meta_score": 20.9,
         "pick_rate": 6.4,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -28233,7 +28233,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -28241,7 +28241,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -28249,7 +28249,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-05-01": [
@@ -28283,7 +28283,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -28291,7 +28291,7 @@
         "meta_score": 51.3,
         "pick_rate": 11.7,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -28299,7 +28299,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -28307,7 +28307,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -28315,7 +28315,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -28323,7 +28323,7 @@
         "meta_score": 49.9,
         "pick_rate": 7.5,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -28331,7 +28331,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.2,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -28339,7 +28339,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -28347,7 +28347,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -28355,7 +28355,7 @@
         "meta_score": 45.9,
         "pick_rate": 8.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -28363,7 +28363,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.0,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -28635,7 +28635,7 @@
         "meta_score": 21.2,
         "pick_rate": 6.4,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -28643,7 +28643,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -28651,7 +28651,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -28659,7 +28659,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ]
   },
@@ -28695,7 +28695,7 @@
         "meta_score": 52.9,
         "pick_rate": 13.7,
         "win_rate": 53.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -28703,7 +28703,7 @@
         "meta_score": 48.3,
         "pick_rate": 14.3,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -28711,7 +28711,7 @@
         "meta_score": 48.1,
         "pick_rate": 6.4,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -28719,7 +28719,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.3,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -28727,7 +28727,7 @@
         "meta_score": 46.6,
         "pick_rate": 14.0,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -29055,7 +29055,7 @@
         "meta_score": 21.1,
         "pick_rate": 10.7,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -29063,7 +29063,7 @@
         "meta_score": 16.7,
         "pick_rate": 5.7,
         "win_rate": 44.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -29105,7 +29105,7 @@
         "meta_score": 52.9,
         "pick_rate": 13.7,
         "win_rate": 53.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -29113,7 +29113,7 @@
         "meta_score": 48.3,
         "pick_rate": 14.3,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -29121,7 +29121,7 @@
         "meta_score": 48.1,
         "pick_rate": 6.4,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -29129,7 +29129,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.3,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -29137,7 +29137,7 @@
         "meta_score": 46.6,
         "pick_rate": 14.0,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -29465,7 +29465,7 @@
         "meta_score": 21.1,
         "pick_rate": 10.7,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -29473,7 +29473,7 @@
         "meta_score": 16.7,
         "pick_rate": 5.7,
         "win_rate": 44.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -29515,7 +29515,7 @@
         "meta_score": 52.9,
         "pick_rate": 13.7,
         "win_rate": 53.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -29523,7 +29523,7 @@
         "meta_score": 48.3,
         "pick_rate": 14.3,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -29531,7 +29531,7 @@
         "meta_score": 48.1,
         "pick_rate": 6.4,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -29539,7 +29539,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.3,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -29547,7 +29547,7 @@
         "meta_score": 46.6,
         "pick_rate": 14.0,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -29875,7 +29875,7 @@
         "meta_score": 21.1,
         "pick_rate": 10.7,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -29883,7 +29883,7 @@
         "meta_score": 16.7,
         "pick_rate": 5.7,
         "win_rate": 44.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -29925,7 +29925,7 @@
         "meta_score": 52.9,
         "pick_rate": 13.7,
         "win_rate": 53.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -29933,7 +29933,7 @@
         "meta_score": 48.3,
         "pick_rate": 14.3,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -29941,7 +29941,7 @@
         "meta_score": 48.1,
         "pick_rate": 6.4,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -29949,7 +29949,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.3,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -29957,7 +29957,7 @@
         "meta_score": 46.6,
         "pick_rate": 14.0,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -30285,7 +30285,7 @@
         "meta_score": 21.1,
         "pick_rate": 10.7,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -30293,7 +30293,7 @@
         "meta_score": 16.7,
         "pick_rate": 5.7,
         "win_rate": 44.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -30335,7 +30335,7 @@
         "meta_score": 52.9,
         "pick_rate": 13.7,
         "win_rate": 53.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -30343,7 +30343,7 @@
         "meta_score": 48.3,
         "pick_rate": 14.3,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -30351,7 +30351,7 @@
         "meta_score": 48.1,
         "pick_rate": 6.4,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -30359,7 +30359,7 @@
         "meta_score": 47.9,
         "pick_rate": 12.3,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -30367,7 +30367,7 @@
         "meta_score": 46.6,
         "pick_rate": 14.0,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -30695,7 +30695,7 @@
         "meta_score": 21.1,
         "pick_rate": 10.7,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -30703,7 +30703,7 @@
         "meta_score": 16.7,
         "pick_rate": 5.7,
         "win_rate": 44.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -30745,7 +30745,7 @@
         "meta_score": 52.5,
         "pick_rate": 13.7,
         "win_rate": 53.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -30753,7 +30753,7 @@
         "meta_score": 48.4,
         "pick_rate": 6.4,
         "win_rate": 54.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -30761,7 +30761,7 @@
         "meta_score": 47.7,
         "pick_rate": 14.1,
         "win_rate": 52.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -30769,7 +30769,7 @@
         "meta_score": 47.4,
         "pick_rate": 12.3,
         "win_rate": 52.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -30777,7 +30777,7 @@
         "meta_score": 45.8,
         "pick_rate": 14.0,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -30785,7 +30785,7 @@
         "meta_score": 45.1,
         "pick_rate": 10.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -31105,7 +31105,7 @@
         "meta_score": 20.9,
         "pick_rate": 10.7,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -31113,7 +31113,7 @@
         "meta_score": 16.8,
         "pick_rate": 5.6,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -31155,7 +31155,7 @@
         "meta_score": 52.5,
         "pick_rate": 13.7,
         "win_rate": 53.8,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -31163,7 +31163,7 @@
         "meta_score": 48.4,
         "pick_rate": 6.4,
         "win_rate": 54.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -31171,7 +31171,7 @@
         "meta_score": 47.7,
         "pick_rate": 14.1,
         "win_rate": 52.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -31179,7 +31179,7 @@
         "meta_score": 47.4,
         "pick_rate": 12.3,
         "win_rate": 52.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -31187,7 +31187,7 @@
         "meta_score": 45.8,
         "pick_rate": 14.0,
         "win_rate": 51.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -31195,7 +31195,7 @@
         "meta_score": 45.1,
         "pick_rate": 10.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -31515,7 +31515,7 @@
         "meta_score": 20.9,
         "pick_rate": 10.7,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -31523,7 +31523,7 @@
         "meta_score": 16.8,
         "pick_rate": 5.6,
         "win_rate": 44.1,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -31565,7 +31565,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -31573,7 +31573,7 @@
         "meta_score": 51.2,
         "pick_rate": 11.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -31581,7 +31581,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -31589,7 +31589,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -31597,7 +31597,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -31605,7 +31605,7 @@
         "meta_score": 49.8,
         "pick_rate": 7.4,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -31613,7 +31613,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.3,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -31621,7 +31621,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -31629,7 +31629,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -31637,7 +31637,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.1,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -31645,7 +31645,7 @@
         "meta_score": 45.6,
         "pick_rate": 8.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -31917,7 +31917,7 @@
         "meta_score": 20.9,
         "pick_rate": 6.4,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -31925,7 +31925,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -31933,7 +31933,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -31941,7 +31941,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-05-01": [
@@ -31975,7 +31975,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -31983,7 +31983,7 @@
         "meta_score": 51.3,
         "pick_rate": 11.7,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -31991,7 +31991,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -31999,7 +31999,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -32007,7 +32007,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -32015,7 +32015,7 @@
         "meta_score": 49.9,
         "pick_rate": 7.5,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -32023,7 +32023,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.2,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -32031,7 +32031,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -32039,7 +32039,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -32047,7 +32047,7 @@
         "meta_score": 45.9,
         "pick_rate": 8.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -32055,7 +32055,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.0,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -32327,7 +32327,7 @@
         "meta_score": 21.2,
         "pick_rate": 6.4,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -32335,7 +32335,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -32343,7 +32343,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -32351,7 +32351,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ]
   },
@@ -32379,7 +32379,7 @@
         "meta_score": 54.8,
         "pick_rate": 14.6,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -32387,7 +32387,7 @@
         "meta_score": 51.5,
         "pick_rate": 6.6,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -32395,7 +32395,7 @@
         "meta_score": 50.0,
         "pick_rate": 24.5,
         "win_rate": 50.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -32403,7 +32403,7 @@
         "meta_score": 48.5,
         "pick_rate": 16.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -32411,7 +32411,7 @@
         "meta_score": 47.4,
         "pick_rate": 7.1,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -32419,7 +32419,7 @@
         "meta_score": 46.6,
         "pick_rate": 11.6,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -32427,7 +32427,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -32435,7 +32435,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -32739,7 +32739,7 @@
         "meta_score": 21.1,
         "pick_rate": 4.9,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -32747,7 +32747,7 @@
         "meta_score": 16.1,
         "pick_rate": 2.2,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -32755,7 +32755,7 @@
         "meta_score": 15.6,
         "pick_rate": 5.9,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -32789,7 +32789,7 @@
         "meta_score": 54.8,
         "pick_rate": 14.6,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -32797,7 +32797,7 @@
         "meta_score": 51.5,
         "pick_rate": 6.6,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -32805,7 +32805,7 @@
         "meta_score": 50.0,
         "pick_rate": 24.5,
         "win_rate": 50.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -32813,7 +32813,7 @@
         "meta_score": 48.5,
         "pick_rate": 16.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -32821,7 +32821,7 @@
         "meta_score": 47.4,
         "pick_rate": 7.1,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -32829,7 +32829,7 @@
         "meta_score": 46.6,
         "pick_rate": 11.6,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -32837,7 +32837,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -32845,7 +32845,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -33149,7 +33149,7 @@
         "meta_score": 21.1,
         "pick_rate": 4.9,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -33157,7 +33157,7 @@
         "meta_score": 16.1,
         "pick_rate": 2.2,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -33165,7 +33165,7 @@
         "meta_score": 15.6,
         "pick_rate": 5.9,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -33199,7 +33199,7 @@
         "meta_score": 54.8,
         "pick_rate": 14.6,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -33207,7 +33207,7 @@
         "meta_score": 51.5,
         "pick_rate": 6.6,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -33215,7 +33215,7 @@
         "meta_score": 50.0,
         "pick_rate": 24.5,
         "win_rate": 50.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -33223,7 +33223,7 @@
         "meta_score": 48.5,
         "pick_rate": 16.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -33231,7 +33231,7 @@
         "meta_score": 47.4,
         "pick_rate": 7.1,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -33239,7 +33239,7 @@
         "meta_score": 46.6,
         "pick_rate": 11.6,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -33247,7 +33247,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -33255,7 +33255,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -33559,7 +33559,7 @@
         "meta_score": 21.1,
         "pick_rate": 4.9,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -33567,7 +33567,7 @@
         "meta_score": 16.1,
         "pick_rate": 2.2,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -33575,7 +33575,7 @@
         "meta_score": 15.6,
         "pick_rate": 5.9,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -33609,7 +33609,7 @@
         "meta_score": 54.8,
         "pick_rate": 14.6,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -33617,7 +33617,7 @@
         "meta_score": 51.5,
         "pick_rate": 6.6,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -33625,7 +33625,7 @@
         "meta_score": 50.0,
         "pick_rate": 24.5,
         "win_rate": 50.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -33633,7 +33633,7 @@
         "meta_score": 48.5,
         "pick_rate": 16.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -33641,7 +33641,7 @@
         "meta_score": 47.4,
         "pick_rate": 7.1,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -33649,7 +33649,7 @@
         "meta_score": 46.6,
         "pick_rate": 11.6,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -33657,7 +33657,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -33665,7 +33665,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -33969,7 +33969,7 @@
         "meta_score": 21.1,
         "pick_rate": 4.9,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -33977,7 +33977,7 @@
         "meta_score": 16.1,
         "pick_rate": 2.2,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -33985,7 +33985,7 @@
         "meta_score": 15.6,
         "pick_rate": 5.9,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -34019,7 +34019,7 @@
         "meta_score": 54.8,
         "pick_rate": 14.6,
         "win_rate": 54.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -34027,7 +34027,7 @@
         "meta_score": 51.5,
         "pick_rate": 6.6,
         "win_rate": 55.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -34035,7 +34035,7 @@
         "meta_score": 50.0,
         "pick_rate": 24.5,
         "win_rate": 50.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -34043,7 +34043,7 @@
         "meta_score": 48.5,
         "pick_rate": 16.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -34051,7 +34051,7 @@
         "meta_score": 47.4,
         "pick_rate": 7.1,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -34059,7 +34059,7 @@
         "meta_score": 46.6,
         "pick_rate": 11.6,
         "win_rate": 52.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -34067,7 +34067,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.5,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -34075,7 +34075,7 @@
         "meta_score": 46.0,
         "pick_rate": 12.4,
         "win_rate": 52.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -34379,7 +34379,7 @@
         "meta_score": 21.1,
         "pick_rate": 4.9,
         "win_rate": 45.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "vendetta",
@@ -34387,7 +34387,7 @@
         "meta_score": 16.1,
         "pick_rate": 2.2,
         "win_rate": 44.8,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -34395,7 +34395,7 @@
         "meta_score": 15.6,
         "pick_rate": 5.9,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -34429,7 +34429,7 @@
         "meta_score": 54.5,
         "pick_rate": 14.6,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -34437,7 +34437,7 @@
         "meta_score": 52.2,
         "pick_rate": 6.8,
         "win_rate": 55.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -34445,7 +34445,7 @@
         "meta_score": 51.0,
         "pick_rate": 23.1,
         "win_rate": 51.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -34453,7 +34453,7 @@
         "meta_score": 47.8,
         "pick_rate": 16.1,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -34461,7 +34461,7 @@
         "meta_score": 47.6,
         "pick_rate": 7.4,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -34469,7 +34469,7 @@
         "meta_score": 46.7,
         "pick_rate": 11.5,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -34477,7 +34477,7 @@
         "meta_score": 46.1,
         "pick_rate": 12.3,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -34485,7 +34485,7 @@
         "meta_score": 45.4,
         "pick_rate": 12.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -34797,7 +34797,7 @@
         "meta_score": 18.8,
         "pick_rate": 2.2,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -34805,7 +34805,7 @@
         "meta_score": 15.2,
         "pick_rate": 5.8,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -34839,7 +34839,7 @@
         "meta_score": 54.5,
         "pick_rate": 14.6,
         "win_rate": 54.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -34847,7 +34847,7 @@
         "meta_score": 52.2,
         "pick_rate": 6.8,
         "win_rate": 55.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sierra",
@@ -34855,7 +34855,7 @@
         "meta_score": 51.0,
         "pick_rate": 23.1,
         "win_rate": 51.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -34863,7 +34863,7 @@
         "meta_score": 47.8,
         "pick_rate": 16.1,
         "win_rate": 51.9,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -34871,7 +34871,7 @@
         "meta_score": 47.6,
         "pick_rate": 7.4,
         "win_rate": 54.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -34879,7 +34879,7 @@
         "meta_score": 46.7,
         "pick_rate": 11.5,
         "win_rate": 52.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "winston",
@@ -34887,7 +34887,7 @@
         "meta_score": 46.1,
         "pick_rate": 12.3,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -34895,7 +34895,7 @@
         "meta_score": 45.4,
         "pick_rate": 12.5,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -35207,7 +35207,7 @@
         "meta_score": 18.8,
         "pick_rate": 2.2,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -35215,7 +35215,7 @@
         "meta_score": 15.2,
         "pick_rate": 5.8,
         "win_rate": 43.6,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "roadhog",
@@ -35257,7 +35257,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -35265,7 +35265,7 @@
         "meta_score": 51.2,
         "pick_rate": 11.6,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -35273,7 +35273,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -35281,7 +35281,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -35289,7 +35289,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -35297,7 +35297,7 @@
         "meta_score": 49.8,
         "pick_rate": 7.4,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -35305,7 +35305,7 @@
         "meta_score": 48.0,
         "pick_rate": 13.3,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -35313,7 +35313,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -35321,7 +35321,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -35329,7 +35329,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.1,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -35337,7 +35337,7 @@
         "meta_score": 45.6,
         "pick_rate": 8.9,
         "win_rate": 52.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -35609,7 +35609,7 @@
         "meta_score": 20.9,
         "pick_rate": 6.4,
         "win_rate": 44.9,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -35617,7 +35617,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -35625,7 +35625,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -35633,7 +35633,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ],
     "2026-05-01": [
@@ -35667,7 +35667,7 @@
         "meta_score": 54.3,
         "pick_rate": 11.7,
         "win_rate": 54.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "anran",
@@ -35675,7 +35675,7 @@
         "meta_score": 51.3,
         "pick_rate": 11.7,
         "win_rate": 53.3,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "symmetra",
@@ -35683,7 +35683,7 @@
         "meta_score": 50.8,
         "pick_rate": 2.6,
         "win_rate": 56.1,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "reaper",
@@ -35691,7 +35691,7 @@
         "meta_score": 50.7,
         "pick_rate": 10.2,
         "win_rate": 53.6,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "zenyatta",
@@ -35699,7 +35699,7 @@
         "meta_score": 50.3,
         "pick_rate": 10.1,
         "win_rate": 53.5,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "pharah",
@@ -35707,7 +35707,7 @@
         "meta_score": 49.9,
         "pick_rate": 7.5,
         "win_rate": 54.2,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "mizuki",
@@ -35715,7 +35715,7 @@
         "meta_score": 47.9,
         "pick_rate": 13.2,
         "win_rate": 51.7,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "torbjorn",
@@ -35723,7 +35723,7 @@
         "meta_score": 47.7,
         "pick_rate": 2.8,
         "win_rate": 55.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "wuyang",
@@ -35731,7 +35731,7 @@
         "meta_score": 47.6,
         "pick_rate": 11.9,
         "win_rate": 52.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "sigma",
@@ -35739,7 +35739,7 @@
         "meta_score": 45.9,
         "pick_rate": 8.9,
         "win_rate": 52.4,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "genji",
@@ -35747,7 +35747,7 @@
         "meta_score": 45.7,
         "pick_rate": 13.0,
         "win_rate": 51.0,
-        "tier": "B"
+        "tier": "A"
       },
       {
         "hero_id": "hazard",
@@ -36019,7 +36019,7 @@
         "meta_score": 21.2,
         "pick_rate": 6.4,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "freja",
@@ -36027,7 +36027,7 @@
         "meta_score": 20.3,
         "pick_rate": 3.3,
         "win_rate": 45.7,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "baptiste",
@@ -36035,7 +36035,7 @@
         "meta_score": 20.2,
         "pick_rate": 5.3,
         "win_rate": 45.0,
-        "tier": "C"
+        "tier": "D"
       },
       {
         "hero_id": "sojourn",
@@ -36043,7 +36043,7 @@
         "meta_score": 19.7,
         "pick_rate": 8.8,
         "win_rate": 43.7,
-        "tier": "C"
+        "tier": "D"
       }
     ]
   }

@@ -37,7 +37,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -47,7 +47,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -57,7 +57,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -67,7 +67,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -77,7 +77,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -87,7 +87,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -97,7 +97,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -107,7 +107,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -117,7 +117,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -127,7 +127,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -137,7 +137,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -477,7 +477,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -487,7 +487,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -497,7 +497,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -507,7 +507,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ],
@@ -549,7 +549,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -559,7 +559,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -569,7 +569,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -579,7 +579,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -589,7 +589,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -599,7 +599,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -609,7 +609,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -619,7 +619,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -629,7 +629,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -639,7 +639,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -649,7 +649,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -989,7 +989,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -999,7 +999,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -1009,7 +1009,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -1019,7 +1019,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ],
@@ -1061,7 +1061,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -1071,7 +1071,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -1081,7 +1081,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -1091,7 +1091,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -1101,7 +1101,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -1111,7 +1111,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -1121,7 +1121,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -1131,7 +1131,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -1141,7 +1141,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -1151,7 +1151,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -1161,7 +1161,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -1501,7 +1501,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -1511,7 +1511,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -1521,7 +1521,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -1531,7 +1531,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ],
@@ -1573,7 +1573,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -1583,7 +1583,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -1593,7 +1593,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -1603,7 +1603,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -1613,7 +1613,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -1623,7 +1623,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -1633,7 +1633,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -1643,7 +1643,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -1653,7 +1653,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -1663,7 +1663,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -1673,7 +1673,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -2013,7 +2013,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -2023,7 +2023,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -2033,7 +2033,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -2043,7 +2043,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ],
@@ -2085,7 +2085,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -2095,7 +2095,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -2105,7 +2105,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -2115,7 +2115,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -2125,7 +2125,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -2135,7 +2135,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -2145,7 +2145,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -2155,7 +2155,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -2165,7 +2165,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -2175,7 +2175,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -2185,7 +2185,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -2525,7 +2525,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -2535,7 +2535,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -2545,7 +2545,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -2555,7 +2555,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ],
@@ -2597,7 +2597,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -2607,7 +2607,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -2617,7 +2617,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -2627,7 +2627,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -2637,7 +2637,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -2647,7 +2647,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -2657,7 +2657,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -2667,7 +2667,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -2677,7 +2677,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -2687,7 +2687,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -2697,7 +2697,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -3037,7 +3037,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -3047,7 +3047,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -3057,7 +3057,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -3067,7 +3067,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ],
@@ -3109,7 +3109,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -3119,7 +3119,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -3129,7 +3129,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -3139,7 +3139,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -3149,7 +3149,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -3159,7 +3159,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -3169,7 +3169,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -3179,7 +3179,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -3189,7 +3189,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -3199,7 +3199,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -3209,7 +3209,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -3549,7 +3549,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -3559,7 +3559,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -3569,7 +3569,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -3579,7 +3579,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ],
@@ -3621,7 +3621,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -3631,7 +3631,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -3641,7 +3641,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -3651,7 +3651,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -3661,7 +3661,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -3671,7 +3671,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -3681,7 +3681,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -3691,7 +3691,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -3701,7 +3701,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -3711,7 +3711,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -3721,7 +3721,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -4061,7 +4061,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -4071,7 +4071,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -4081,7 +4081,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -4091,7 +4091,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ],
@@ -4133,7 +4133,7 @@
       "pick_rate": 11.7,
       "win_rate": 54.3,
       "meta_score": 54.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
     },
     {
@@ -4143,7 +4143,7 @@
       "pick_rate": 11.7,
       "win_rate": 53.3,
       "meta_score": 51.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
     },
     {
@@ -4153,7 +4153,7 @@
       "pick_rate": 2.6,
       "win_rate": 56.1,
       "meta_score": 50.8,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ebec57e8bd68b3d4383edfeb34f8f52dd0b94a6467d594c2fee722e8a97c32aa.png"
     },
     {
@@ -4163,7 +4163,7 @@
       "pick_rate": 10.2,
       "win_rate": 53.6,
       "meta_score": 50.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
     },
     {
@@ -4173,7 +4173,7 @@
       "pick_rate": 10.1,
       "win_rate": 53.5,
       "meta_score": 50.3,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
     },
     {
@@ -4183,7 +4183,7 @@
       "pick_rate": 7.5,
       "win_rate": 54.2,
       "meta_score": 49.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
     },
     {
@@ -4193,7 +4193,7 @@
       "pick_rate": 13.2,
       "win_rate": 51.7,
       "meta_score": 47.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
     },
     {
@@ -4203,7 +4203,7 @@
       "pick_rate": 2.8,
       "win_rate": 55.0,
       "meta_score": 47.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
     },
     {
@@ -4213,7 +4213,7 @@
       "pick_rate": 11.9,
       "win_rate": 52.0,
       "meta_score": 47.6,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
     },
     {
@@ -4223,7 +4223,7 @@
       "pick_rate": 8.9,
       "win_rate": 52.4,
       "meta_score": 45.9,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
     },
     {
@@ -4233,7 +4233,7 @@
       "pick_rate": 13.0,
       "win_rate": 51.0,
       "meta_score": 45.7,
-      "tier": "B",
+      "tier": "A",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
     },
     {
@@ -4573,7 +4573,7 @@
       "pick_rate": 6.4,
       "win_rate": 45.0,
       "meta_score": 21.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89ddf07e4b619ed96169042e296a1b8856d102746f35add88284b44a9a5a6a03.png"
     },
     {
@@ -4583,7 +4583,7 @@
       "pick_rate": 3.3,
       "win_rate": 45.7,
       "meta_score": 20.3,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
     },
     {
@@ -4593,7 +4593,7 @@
       "pick_rate": 5.3,
       "win_rate": 45.0,
       "meta_score": 20.2,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png"
     },
     {
@@ -4603,7 +4603,7 @@
       "pick_rate": 8.8,
       "win_rate": 43.7,
       "meta_score": 19.7,
-      "tier": "C",
+      "tier": "D",
       "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
     }
   ]

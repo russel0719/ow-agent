@@ -223,11 +223,11 @@ def _calculate_scores(heroes: list[HeroMeta]) -> list[HeroMeta]:
 def _score_to_tier(score: float) -> str:
     if score >= 75:
         return "S"
-    if score >= 55:
+    if score >= 45:
         return "A"
     if score >= 35:
         return "B"
-    if score >= 15:
+    if score >= 22:
         return "C"
     return "D"
 
