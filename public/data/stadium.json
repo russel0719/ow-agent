@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 606,
+      "upvotes": 607,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -775,7 +775,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1725,
+      "upvotes": 1726,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1620,7 +1620,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 171,
+      "upvotes": 172,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1641,7 +1641,7 @@
       "code": "QQ393",
       "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 27,
+      "upvotes": 28,
       "stats": {
         "LIFE": 673,
         "Armor": 125,
@@ -1658,7 +1658,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 24,
+      "upvotes": 25,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -2042,22 +2042,6 @@
       "cost": "$$"
     },
     {
-      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
-      "code": "DB1X6",
-      "description": "",
-      "playstyle": "능력 파워",
-      "upvotes": 9,
-      "stats": {
-        "LIFE": 377,
-        "Armor": 50,
-        "Total LIFE": 427,
-        "Weapon Power": 10,
-        "Ability Power": 100,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "적들이 레일을 맞는 걸 좋아하게 될 거야",
       "code": "X6QYG",
       "description": "소전의 무기 공격력을 극대화한 글래스 캐논 빌드. 궁극기 외에는 탱커를 노려 충전 후 강력한 원샷 딜링.",
@@ -2071,6 +2055,22 @@
         "Attack Speed": 5,
         "Weapon Power": 70,
         "Ability Power": 0,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
+    },
+    {
+      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
+      "code": "DB1X6",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 9,
+      "stats": {
+        "LIFE": 377,
+        "Armor": 50,
+        "Total LIFE": 427,
+        "Weapon Power": 10,
+        "Ability Power": 100,
         "Cooldown Reduction": 10
       },
       "cost": "$$$"
@@ -2170,6 +2170,23 @@
   ],
   "Torbjörn": [
     {
+      "name": "(시즌 19 전설) [4종 변형] Torbjorn이 지원가(공격",
+      "code": "0GN8P",
+      "description": "시즌 19 토르비욘은 지원가로 변해 망치로 힐하고 공격 속도로 블랙스미스 특전 활용",
+      "playstyle": "무기 파워 · 생명력 흡수",
+      "upvotes": 85,
+      "stats": {
+        "LIFE": 335,
+        "Armor": 75,
+        "Total LIFE": 410,
+        "Attack Speed": 30,
+        "Weapon Power": 35,
+        "Ability Power": 0,
+        "Weapon Lifesteal": 20
+      },
+      "cost": "$"
+    },
+    {
       "name": "심층 가이드: 랭킹 1위 Torbjorn 빌드가 스타디움을 지배하는 이유",
       "code": "PTGPY",
       "description": "",
@@ -2187,23 +2204,6 @@
         "Weapon Lifesteal": 10
       },
       "cost": "$$$"
-    },
-    {
-      "name": "(시즌 19 전설) [4종 변형] Torbjorn이 지원가(공격",
-      "code": "0GN8P",
-      "description": "시즌 19 토르비욘은 지원가로 변해 망치로 힐하고 공격 속도로 블랙스미스 특전 활용",
-      "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 85,
-      "stats": {
-        "LIFE": 335,
-        "Armor": 75,
-        "Total LIFE": 410,
-        "Attack Speed": 30,
-        "Weapon Power": 35,
-        "Ability Power": 0,
-        "Weapon Lifesteal": 20
-      },
-      "cost": "$"
     },
     {
       "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
@@ -2430,19 +2430,22 @@
       "cost": "$$"
     },
     {
-      "name": "⚔️ #1 무기 공격력 결투광 악마 빌드. (탑 500 스타디움 딜러)",
-      "code": "QXNYJ",
-      "description": "신규 영웅 Vendetta의 탑 500 진입용 빌드. 핵심은 높은 기술 위력과 재사용 대기시간 단축으로 지속적인 버스트 딜링과 생존을 동시에 확보하는 전략.",
-      "playstyle": "메타 · 생명력 흡수",
+      "name": "VENDETTA [Top 100] 빌드 가이드 - 임팩트 극대화!",
+      "code": "7M8YH",
+      "description": "개인적인 경험으로 탑 100에 오르며 검증한 Vendetta 빌드. 그녀의 강점을 극대화하고 약점을 보완하는 방향으로 구성됨.",
+      "playstyle": "메타 · 무기 파워",
       "upvotes": 11,
       "stats": {
-        "LIFE": 329,
+        "LIFE": 285,
         "Armor": 175,
-        "Total LIFE": 504,
-        "Weapon Power": 60,
-        "Ability Power": 10,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "Shield": 50,
+        "Move Speed": 10,
+        "Total LIFE": 510,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 55,
+        "Ability Power": 0,
+        "Critical Damage": 10
       },
       "cost": "$$"
     }
@@ -2562,7 +2565,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 183,
+      "upvotes": 184,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2571,22 +2574,6 @@
         "Weapon Power": 10,
         "Ability Power": 40,
         "Cooldown Reduction": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
@@ -2604,6 +2591,22 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
