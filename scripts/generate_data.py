@@ -32,7 +32,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from bot.utils.scrapers.meta_scraper import RANK_PARAM, fetch_meta, load_fallback
+from bot.utils import cache
+from bot.utils.scrapers.meta_scraper import RANK_PARAM, fetch_meta, load_fallback, _score_to_tier
 from bot.utils.scrapers.patch_scraper import fetch_recent_patches
 from bot.utils.scrapers.stadium_scraper import fetch_all_builds
 
@@ -150,6 +151,27 @@ async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
 
     if not all_ranks:
         return None
+
+    # Blizzard API가 tier 파라미터를 무시하고 전 랭크에 동일 데이터를 반환할 때 감지 후 stale 캐시로 교체
+    if "전체" in all_ranks:
+        global_key = frozenset(
+            (h["hero_id"], h["pick_rate"], h["win_rate"]) for h in all_ranks["전체"]
+        )
+        portrait_map = {h["hero_id"]: h.get("portrait_url", "") for h in all_ranks["전체"]}
+        for rank_ko in list(all_ranks.keys()):
+            if rank_ko in ("전체", "챔피언"):
+                continue
+            rank_key = frozenset(
+                (h["hero_id"], h["pick_rate"], h["win_rate"]) for h in all_ranks[rank_ko]
+            )
+            if rank_key == global_key:
+                stale = cache.get_stale(f"meta_{rank_ko}")
+                if stale:
+                    for h in stale:
+                        h["portrait_url"] = portrait_map.get(h["hero_id"], "")
+                        h["tier"] = _score_to_tier(h["meta_score"])
+                    all_ranks[rank_ko] = stale
+                    logger.info(f"  동일 데이터 감지 → stale 캐시 교체: {rank_ko}")
 
     # 챔피언 = 그랜드마스터 복사
     if "그랜드마스터" in all_ranks:
