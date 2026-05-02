@@ -172,6 +172,15 @@ async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
                         h["tier"] = _score_to_tier(h["meta_score"])
                     all_ranks[rank_ko] = stale
                     logger.info(f"  동일 데이터 감지 → stale 캐시 교체: {rank_ko}")
+                else:
+                    # CI 환경 등 캐시 없을 때 → meta_baseline.json fallback 사용
+                    fallback = load_fallback(rank_ko)
+                    if fallback:
+                        hero_dicts = [_hero_to_dict(h) for h in fallback]
+                        for h in hero_dicts:
+                            h["portrait_url"] = portrait_map.get(h["hero_id"], "")
+                        all_ranks[rank_ko] = hero_dicts
+                        logger.info(f"  동일 데이터 감지 → fallback 교체: {rank_ko}")
 
     # 챔피언 = 그랜드마스터 복사
     if "그랜드마스터" in all_ranks:
