@@ -1690,23 +1690,23 @@
       "cost": "$$$"
     },
     {
-      "name": "🦅The Flying Ram🦅 - [다이브 악마]",
-      "code": "SH7R0",
-      "description": "라마트라 비행 기술 기반 다이브 빌드로 공중 기동으로 교전 주도",
+      "name": "Ramattra 그랜드마스터 가이드: 이 기술 위력 소용돌이 빌드는 BROKEN",
+      "code": "42JPW",
+      "description": "",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 9,
       "stats": {
-        "LIFE": 701,
+        "LIFE": 722,
         "Armor": 100,
-        "Total LIFE": 801,
+        "Total LIFE": 822,
         "Attack Speed": 10,
         "Weapon Power": 20,
-        "Ability Power": 45,
+        "Ability Power": 80,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
-        "Cooldown Reduction": 20
+        "Cooldown Reduction": 5
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Reaper": [
@@ -2042,22 +2042,6 @@
       "cost": "$$"
     },
     {
-      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
-      "code": "DB1X6",
-      "description": "",
-      "playstyle": "능력 파워",
-      "upvotes": 9,
-      "stats": {
-        "LIFE": 377,
-        "Armor": 50,
-        "Total LIFE": 427,
-        "Weapon Power": 10,
-        "Ability Power": 100,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "적들이 레일을 맞는 걸 좋아하게 될 거야",
       "code": "X6QYG",
       "description": "소전의 무기 공격력을 극대화한 글래스 캐논 빌드. 궁극기 외에는 탱커를 노려 충전 후 강력한 원샷 딜링.",
@@ -2071,6 +2055,22 @@
         "Attack Speed": 5,
         "Weapon Power": 70,
         "Ability Power": 0,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
+    },
+    {
+      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
+      "code": "DB1X6",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 9,
+      "stats": {
+        "LIFE": 377,
+        "Armor": 50,
+        "Total LIFE": 427,
+        "Weapon Power": 10,
+        "Ability Power": 100,
         "Cooldown Reduction": 10
       },
       "cost": "$$$"
@@ -2170,23 +2170,6 @@
   ],
   "Torbjörn": [
     {
-      "name": "(시즌 19 전설) [4종 변형] Torbjorn이 지원가(공격",
-      "code": "0GN8P",
-      "description": "시즌 19 토르비욘은 지원가로 변해 망치로 힐하고 공격 속도로 블랙스미스 특전 활용",
-      "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 85,
-      "stats": {
-        "LIFE": 335,
-        "Armor": 75,
-        "Total LIFE": 410,
-        "Attack Speed": 30,
-        "Weapon Power": 35,
-        "Ability Power": 0,
-        "Weapon Lifesteal": 20
-      },
-      "cost": "$"
-    },
-    {
       "name": "심층 가이드: 랭킹 1위 Torbjorn 빌드가 스타디움을 지배하는 이유",
       "code": "PTGPY",
       "description": "",
@@ -2204,6 +2187,23 @@
         "Weapon Lifesteal": 10
       },
       "cost": "$$$"
+    },
+    {
+      "name": "(시즌 19 전설) [4종 변형] Torbjorn이 지원가(공격",
+      "code": "0GN8P",
+      "description": "시즌 19 토르비욘은 지원가로 변해 망치로 힐하고 공격 속도로 블랙스미스 특전 활용",
+      "playstyle": "무기 파워 · 생명력 흡수",
+      "upvotes": 85,
+      "stats": {
+        "LIFE": 335,
+        "Armor": 75,
+        "Total LIFE": 410,
+        "Attack Speed": 30,
+        "Weapon Power": 35,
+        "Ability Power": 0,
+        "Weapon Lifesteal": 20
+      },
+      "cost": "$"
     },
     {
       "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
