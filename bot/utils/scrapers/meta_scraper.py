@@ -2,7 +2,7 @@
 메타 통계 스크래퍼.
 
 수집 순서:
-1. overwatch.blizzard.com/ko-kr/rates/ 크롤링 (픽률, 승률)
+1. overwatch.blizzard.com/ko-kr/rates/data/ JSON API 호출 (픽률, 승률)
 2. 실패 시 data/meta_baseline.json fallback
 
 메타 점수 공식:
@@ -19,11 +19,10 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 import aiohttp
-from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
-BLIZZARD_RATES_URL = "https://overwatch.blizzard.com/ko-kr/rates/"
+BLIZZARD_RATES_URL = "https://overwatch.blizzard.com/ko-kr/rates/data/"
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -31,7 +30,7 @@ HEADERS = {
         "Chrome/124.0.0.0 Safari/537.36"
     ),
     "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept": "application/json, text/html;q=0.9",
 }
 FALLBACK_PATH = Path(__file__).parent.parent.parent.parent / "data" / "meta_baseline.json"
 
@@ -100,9 +99,9 @@ async def fetch_meta(
             timeout=aiohttp.ClientTimeout(total=20),
         ) as resp:
             resp.raise_for_status()
-            html = await resp.text()
+            data = await resp.json(content_type=None)
 
-        heroes = _parse_blizzard_rates(html)
+        heroes = _parse_rows(data.get("rates", []))
         if heroes:
             return _calculate_scores(heroes)
         logger.warning("Blizzard 데이터 파싱 결과 없음")
@@ -137,34 +136,12 @@ def load_fallback(rank: str = "전체") -> list[HeroMeta]:
         return []
 
 
-def _parse_blizzard_rates(html: str) -> list[HeroMeta]:
-    """Blizzard 공식 통계 페이지 HTML에서 영웅 통계 파싱.
+def _parse_rows(rows: list) -> list[HeroMeta]:
+    """Blizzard JSON API rates 배열에서 HeroMeta 목록 생성.
 
-    blz-data-table 요소의 allrows 속성에 JSON 데이터가 내장되어 있음.
     형식: [{"id": "ana", "cells": {"name": "아나", "pickrate": 39, "winrate": 47.1},
-             "hero": {"role": "SUPPORT", ...}}, ...]
+             "hero": {"role": "SUPPORT", "portrait": "https://..."}}, ...]
     """
-    soup = BeautifulSoup(html, "lxml")
-
-    # blz-data-table의 allrows 속성에서 JSON 추출
-    table = soup.find(class_="herostats-data-table")
-    if not table:
-        table = soup.find("blz-data-table")
-    if not table:
-        logger.warning("herostats-data-table 요소를 찾을 수 없음")
-        return []
-
-    allrows_json = table.get("allrows", "")
-    if not allrows_json:
-        logger.warning("allrows 속성이 비어있음")
-        return []
-
-    try:
-        rows = json.loads(allrows_json)
-    except json.JSONDecodeError as e:
-        logger.warning(f"allrows JSON 파싱 실패: {e}")
-        return []
-
     heroes: list[HeroMeta] = []
     for row in rows:
         try:

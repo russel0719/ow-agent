@@ -2430,22 +2430,19 @@
       "cost": "$$"
     },
     {
-      "name": "VENDETTA [Top 100] 빌드 가이드 - 임팩트 극대화!",
-      "code": "7M8YH",
-      "description": "개인적인 경험으로 탑 100에 오르며 검증한 Vendetta 빌드. 그녀의 강점을 극대화하고 약점을 보완하는 방향으로 구성됨.",
-      "playstyle": "메타 · 무기 파워",
+      "name": "⚔️ #1 무기 공격력 결투가 악마 빌드. (탑 500 스타디움 딜러에서)",
+      "code": "QXNYJ",
+      "description": "Vendetta(hero_280559f5-59d9-4d52-b460-a4240381aff4) just released and if you are looking for a reliable build too hit Top 500 with her, this might be perfect for you. What makes Vendetta good? Vendetta(hero_280559f5-59d9-4d52-b460-a4240381aff4) excel...",
+      "playstyle": "메타 · 생명력 흡수",
       "upvotes": 11,
       "stats": {
-        "LIFE": 285,
+        "LIFE": 329,
         "Armor": 175,
-        "Shield": 50,
-        "Move Speed": 10,
-        "Total LIFE": 510,
-        "Attack Speed": 10,
-        "Melee Damage": 15,
-        "Weapon Power": 55,
-        "Ability Power": 0,
-        "Critical Damage": 10
+        "Total LIFE": 504,
+        "Weapon Power": 60,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
       },
       "cost": "$$"
     }
