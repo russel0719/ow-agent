@@ -42,7 +42,7 @@ Cloudflare Worker (worker.js)
 
 | 영역 | 기술 |
 |------|------|
-| 백엔드 (데이터 수집) | Python 3.11, aiohttp, BeautifulSoup4, uv |
+| 백엔드 (데이터 수집) | Python 3.11, aiohttp, BeautifulSoup4 (패치노트), uv |
 | 번역·요약 | NVIDIA API (Kimi K2 Instruct) |
 | 챗봇 AI | NVIDIA API (Kimi K2 Instruct) |
 | 프론트엔드 | Vanilla JS (ES Modules), Chart.js, Tailwind CSS |
@@ -54,7 +54,7 @@ Cloudflare Worker (worker.js)
 | 파일 | 역할 |
 |------|------|
 | `scripts/generate_data.py` | Actions 진입점. 크롤링→번역→JSON 저장 전체 조율 |
-| `bot/utils/scrapers/meta_scraper.py` | Blizzard 공식 통계 크롤러 |
+| `bot/utils/scrapers/meta_scraper.py` | Blizzard JSON API(`/rates/data/`) 크롤러. 랭크별 픽률·승률 수집 |
 | `bot/utils/scrapers/stadium_scraper.py` | stadiumbuilds.io 빌드 크롤러 |
 | `bot/utils/scrapers/patch_scraper.py` | Blizzard 패치노트 크롤러 (ko-kr) |
 | `bot/utils/translator.py` | NVIDIA API 배치 번역·요약 (캐시 포함) |

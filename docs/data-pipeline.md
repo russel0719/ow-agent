@@ -37,9 +37,16 @@ asyncio.run(run())
 ## 크롤러
 
 ### `bot/utils/scrapers/meta_scraper.py`
-- **소스**: `https://overwatch.blizzard.com/ko-kr/rates/`
+- **소스**: `https://overwatch.blizzard.com/ko-kr/rates/data/` (JSON API)
+  - HTML 페이지(`/rates/`)가 아닌 JS가 호출하는 JSON 엔드포인트를 직접 사용
+  - tier 파라미터(Bronze/Gold/…)가 JSON API에서 정상 작동 → 랭크별 실제 데이터 수집 가능
 - 9개 랭크(전체~챔피언) × 전 영웅 픽률·승률·메타점수 수집
 - 90일 히스토리 rolling 업데이트
+- **메타 점수 공식**: `win_score × 0.60 + pick_score × 0.40`
+  - `win_score = clamp((win_rate - 40) / 20, 0, 1) × 100`
+  - `pick_score = (pick_rate / 최대픽률) × 100`
+- **티어 기준**: S(≥75) / A(≥45) / B(≥35) / C(≥22) / D(<22)
+- **Blizzard API 이상 감지** (`generate_data.py`): 특정 랭크 데이터가 전체와 동일하면 stale 캐시 → `meta_baseline.json` 순으로 폴백
 
 ### `bot/utils/scrapers/stadium_scraper.py`
 - **소스**: `https://stadiumbuilds.io/`
