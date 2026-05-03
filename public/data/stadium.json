@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 183,
+      "upvotes": 185,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 607,
+      "upvotes": 609,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -439,7 +439,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 282,
+      "upvotes": 283,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -542,7 +542,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 184,
+      "upvotes": 185,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -704,7 +704,7 @@
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 125,
+      "upvotes": 126,
       "stats": {
         "LIFE": 729,
         "Armor": 225,
@@ -720,7 +720,7 @@
       "code": "S27YB",
       "description": "기술 위력 110%, 체력 1,100 이상, 기술 생명력 흡수 25%로 버스트 딜과 생존을 동시에 갖춘 S급 탱커.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 102,
+      "upvotes": 103,
       "stats": {
         "LIFE": 675,
         "Armor": 275,
@@ -1092,7 +1092,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 125,
+      "upvotes": 126,
       "stats": {
         "LIFE": 488,
         "Total LIFE": 488,
@@ -1192,7 +1192,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 282,
+      "upvotes": 283,
       "stats": {
         "LIFE": 471,
         "Armor": 100,
@@ -1363,7 +1363,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1305,
+      "upvotes": 1306,
       "stats": {
         "LIFE": 425,
         "Total LIFE": 425,
@@ -1620,7 +1620,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 172,
+      "upvotes": 175,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1658,7 +1658,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 25,
+      "upvotes": 26,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1694,7 +1694,7 @@
       "code": "42JPW",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 9,
+      "upvotes": 10,
       "stats": {
         "LIFE": 722,
         "Armor": 100,
@@ -1957,7 +1957,7 @@
       "code": "QC7PQ",
       "description": "",
       "playstyle": "메타 · 고체력",
-      "upvotes": 56,
+      "upvotes": 57,
       "stats": {
         "LIFE": 708,
         "Shield": 350,
@@ -2027,7 +2027,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 42,
+      "upvotes": 44,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2136,7 +2136,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 282,
+      "upvotes": 283,
       "stats": {
         "LIFE": 381,
         "Armor": 25,
@@ -2526,7 +2526,7 @@
       "code": "ACKTS",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 60,
+      "upvotes": 61,
       "stats": {
         "LIFE": 690,
         "Armor": 225,
@@ -2562,7 +2562,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 184,
+      "upvotes": 186,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2723,7 +2723,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1191,
+      "upvotes": 1192,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
