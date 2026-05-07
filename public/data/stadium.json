@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 610,
+      "upvotes": 612,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -208,7 +208,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "능력 파워",
-      "upvotes": 124,
+      "upvotes": 125,
       "stats": {
         "LIFE": 327,
         "Armor": 200,
@@ -246,7 +246,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 723,
+      "upvotes": 724,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -264,7 +264,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 332,
+      "upvotes": 333,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -403,7 +403,7 @@
       "code": "P572C",
       "description": "",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 9,
+      "upvotes": 10,
       "stats": {
         "LIFE": 833,
         "Armor": 50,
@@ -422,7 +422,7 @@
       "code": "E7NA2",
       "description": "D.Va 방어 매트릭스+자폭 빌드로 생존 극대화.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 386,
+      "upvotes": 387,
       "stats": {
         "LIFE": 771,
         "Armor": 345,
@@ -439,7 +439,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 284,
+      "upvotes": 285,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -520,6 +520,24 @@
       "cost": "$$"
     },
     {
+      "name": "[전설] 팀을 캐리하는 프레야 + 가이드 - 기관총과",
+      "code": "YP3PR",
+      "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 192,
+      "stats": {
+        "LIFE": 402,
+        "Shield": 50,
+        "Max Ammo": 40,
+        "Total LIFE": 452,
+        "Attack Speed": 10,
+        "Weapon Power": 25,
+        "Ability Power": 0,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "기술 위력 프레야가 망가졌다: 탑 500을 지배하는 원샷 빌드 (3",
       "code": "58SYP",
       "description": "",
@@ -533,24 +551,6 @@
         "Ability Power": 90,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "[전설] 팀을 캐리하는 프레야 + 가이드 - 기관총과",
-      "code": "YP3PR",
-      "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 190,
-      "stats": {
-        "LIFE": 402,
-        "Shield": 50,
-        "Max Ammo": 40,
-        "Total LIFE": 452,
-        "Attack Speed": 10,
-        "Weapon Power": 25,
-        "Ability Power": 0,
         "Cooldown Reduction": 5
       },
       "cost": "$$$"
@@ -665,11 +665,11 @@
       "cost": "$$"
     },
     {
-      "name": "🐉The Undying Oni🐉 - [90% WR / RANK 64] (Super in depth)",
+      "name": "🐉불사의 오니🐉 - [90% 승률 / 랭크 64] (Super in depth)",
       "code": "6V2XC",
-      "description": "🐉The Undying Oni🐉 Before we start (you can skip this bit) Hey guys! Thanks for checking my build out. If you don't know me as a creator, I make quite a few in-depth guides on characters I like to play and cover a lot of numbers the game doesn't tell ...",
+      "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 46,
+      "upvotes": 47,
       "stats": {
         "LIFE": 396,
         "Armor": 100,
@@ -722,7 +722,7 @@
       "code": "S27YB",
       "description": "기술 위력 110%, 체력 1,100 이상, 기술 생명력 흡수 25%로 버스트 딜과 생존을 동시에 갖춘 S급 탱커.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 105,
+      "upvotes": 106,
       "stats": {
         "LIFE": 675,
         "Armor": 275,
@@ -777,7 +777,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1729,
+      "upvotes": 1731,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -907,7 +907,7 @@
       "code": "VEJ9Z",
       "description": "컴페티티브와 QP 모두 가능한 정크랫 빌드. 조준 없이 폭탄만 마구 던지면서 킬과 승리를 노림.",
       "playstyle": "재미용 · 무기 파워",
-      "upvotes": 103,
+      "upvotes": 104,
       "stats": {
         "LIFE": 378,
         "Shield": 50,
@@ -1282,7 +1282,7 @@
       "code": "93RNG",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 927,
+      "upvotes": 928,
       "stats": {
         "LIFE": 336,
         "Total LIFE": 336,
@@ -1297,7 +1297,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 903,
+      "upvotes": 902,
       "stats": {
         "LIFE": 345,
         "Armor": 50,
@@ -1622,7 +1622,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 182,
+      "upvotes": 186,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -2176,7 +2176,7 @@
       "code": "PTGPY",
       "description": "",
       "playstyle": "무기 파워",
-      "upvotes": 86,
+      "upvotes": 87,
       "stats": {
         "LIFE": 387,
         "Armor": 100,
@@ -2304,7 +2304,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워",
-      "upvotes": 81,
+      "upvotes": 82,
       "stats": {
         "LIFE": 251,
         "Armor": 16,
@@ -2380,7 +2380,7 @@
       "code": "SCD8T",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 75,
+      "upvotes": 76,
       "stats": {
         "LIFE": 359,
         "Armor": 220,
@@ -2567,7 +2567,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 188,
+      "upvotes": 189,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2669,7 +2669,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 101,
+      "upvotes": 102,
       "stats": {
         "LIFE": 569,
         "Armor": 25,
