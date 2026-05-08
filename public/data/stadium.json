@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 612,
+      "upvotes": 615,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -264,7 +264,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 333,
+      "upvotes": 334,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -422,7 +422,7 @@
       "code": "E7NA2",
       "description": "D.Va 방어 매트릭스+자폭 빌드로 생존 극대화.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 387,
+      "upvotes": 388,
       "stats": {
         "LIFE": 771,
         "Armor": 345,
@@ -524,7 +524,7 @@
       "code": "YP3PR",
       "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 192,
+      "upvotes": 193,
       "stats": {
         "LIFE": 402,
         "Shield": 50,
@@ -542,7 +542,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 190,
+      "upvotes": 191,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -669,7 +669,7 @@
       "code": "6V2XC",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 47,
+      "upvotes": 48,
       "stats": {
         "LIFE": 396,
         "Armor": 100,
@@ -1008,18 +1008,17 @@
       "cost": "$$"
     },
     {
-      "name": "(설명 읽으세요) 주노 비스팅 빌드! [챌린저 빌드]",
-      "code": "Q2KBD",
-      "description": "무기 공격력과 기술 위력 균형 잡은 빌드. 업데이트된 더 좋은 버전이 따로 있음.",
-      "playstyle": "능력 파워",
-      "upvotes": 291,
+      "name": "[🔥S2 2026] 💞 완전히 재작업된 무기 공격력 주노! 💞",
+      "code": "35AAN",
+      "description": "주노 메디마스터 빌드로 2026 시즌 2 기준 최신 설정. 메디블래스터와 하이퍼 링 중심으로 팀원 회복과 기동성을 극대화하는 지원형 플레이.",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 194,
       "stats": {
-        "LIFE": 258,
-        "Armor": 50,
-        "Shield": 150,
-        "Total LIFE": 458,
-        "Weapon Power": 35,
-        "Ability Power": 50,
+        "LIFE": 208,
+        "Shield": 175,
+        "Total LIFE": 383,
+        "Weapon Power": 55,
+        "Ability Power": 15,
         "Cooldown Reduction": 5
       },
       "cost": "$$"
@@ -1263,7 +1262,7 @@
       "code": "ECYWB",
       "description": "무기 공격력 극대화로 매치 골드 순환, 메이는 이미 탱크라 생존성은 낮춤",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 106,
+      "upvotes": 107,
       "stats": {
         "LIFE": 445,
         "Armor": 50,
@@ -1297,7 +1296,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 902,
+      "upvotes": 903,
       "stats": {
         "LIFE": 345,
         "Armor": 50,
@@ -1622,7 +1621,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 186,
+      "upvotes": 189,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1959,7 +1958,7 @@
       "code": "QC7PQ",
       "description": "",
       "playstyle": "메타 · 고체력",
-      "upvotes": 57,
+      "upvotes": 58,
       "stats": {
         "LIFE": 708,
         "Shield": 350,
@@ -2044,6 +2043,22 @@
       "cost": "$$"
     },
     {
+      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
+      "code": "DB1X6",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 10,
+      "stats": {
+        "LIFE": 377,
+        "Armor": 50,
+        "Total LIFE": 427,
+        "Weapon Power": 10,
+        "Ability Power": 100,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "적들이 레일을 맞는 걸 좋아하게 될 거야",
       "code": "X6QYG",
       "description": "소전의 무기 공격력을 극대화한 글래스 캐논 빌드. 궁극기 외에는 탱커를 노려 충전 후 강력한 원샷 딜링.",
@@ -2057,22 +2072,6 @@
         "Attack Speed": 5,
         "Weapon Power": 70,
         "Ability Power": 0,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
-      "code": "DB1X6",
-      "description": "",
-      "playstyle": "능력 파워",
-      "upvotes": 9,
-      "stats": {
-        "LIFE": 377,
-        "Armor": 50,
-        "Total LIFE": 427,
-        "Weapon Power": 10,
-        "Ability Power": 100,
         "Cooldown Reduction": 10
       },
       "cost": "$$$"
@@ -2413,6 +2412,25 @@
       "cost": "$$"
     },
     {
+      "name": "⚔️ [단종] Overhead Sustain 무기 공격력 Champion/Legend dps' V",
+      "code": "C82CE",
+      "description": "베네타 너프로 인해 기존 빌드 효율 하락. 방어막·공격 범위 축소로 현재 빌드 사용 불가.",
+      "playstyle": "무기 파워",
+      "upvotes": 13,
+      "stats": {
+        "LIFE": 276,
+        "Armor": 200,
+        "Shield": 50,
+        "Move Speed": 10,
+        "Total LIFE": 526,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 45,
+        "Ability Power": 0
+      },
+      "cost": "$$"
+    },
+    {
       "name": "VENDETTA [WP] 빌드 가이드 - 임팩트 극대화!",
       "code": "7M8YH",
       "description": "개인 경험 기반 탑 100 빌드로, 벤데타의 강점 극대화와 약점 보완에 초점을 둔 최적화 구성입니다.",
@@ -2429,25 +2447,6 @@
         "Weapon Power": 55,
         "Ability Power": 0,
         "Critical Damage": 10
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "⚔️ [단종] Overhead Sustain 무기 공격력 Champion/Legend dps' V",
-      "code": "C82CE",
-      "description": "베네타 너프로 인해 기존 빌드 효율 하락. 방어막·공격 범위 축소로 현재 빌드 사용 불가.",
-      "playstyle": "무기 파워",
-      "upvotes": 13,
-      "stats": {
-        "LIFE": 276,
-        "Armor": 200,
-        "Shield": 50,
-        "Move Speed": 10,
-        "Total LIFE": 526,
-        "Attack Speed": 10,
-        "Melee Damage": 15,
-        "Weapon Power": 45,
-        "Ability Power": 0
       },
       "cost": "$$"
     }
@@ -2580,22 +2579,6 @@
       "cost": "$$"
     },
     {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
-      },
-      "cost": "$$"
-    },
-    {
       "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
@@ -2609,6 +2592,22 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
@@ -2728,7 +2727,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1195,
+      "upvotes": 1196,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
