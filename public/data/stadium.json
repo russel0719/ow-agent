@@ -91,7 +91,7 @@
       "code": "6PZFF",
       "description": "",
       "playstyle": "재미용 · 능력 파워",
-      "upvotes": 498,
+      "upvotes": 499,
       "stats": {
         "LIFE": 373,
         "Total LIFE": 373,
@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 188,
+      "upvotes": 190,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -246,7 +246,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 724,
+      "upvotes": 726,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -264,7 +264,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 334,
+      "upvotes": 335,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -777,7 +777,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1731,
+      "upvotes": 1732,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -976,7 +976,7 @@
       "code": "T5QKR",
       "description": "Beesting 빌드의 업데이트판. 장단점을 계속 파악하며 개선 중.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 331,
+      "upvotes": 332,
       "stats": {
         "LIFE": 119,
         "Armor": 160,
@@ -1364,7 +1364,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1311,
+      "upvotes": 1313,
       "stats": {
         "LIFE": 425,
         "Total LIFE": 425,
@@ -1621,7 +1621,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 189,
+      "upvotes": 190,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1659,7 +1659,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 26,
+      "upvotes": 27,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -2059,20 +2059,19 @@
       "cost": "$$$"
     },
     {
-      "name": "적들이 레일을 맞는 걸 좋아하게 될 거야",
-      "code": "X6QYG",
-      "description": "소전의 무기 공격력을 극대화한 글래스 캐논 빌드. 궁극기 외에는 탱커를 노려 충전 후 강력한 원샷 딜링.",
-      "playstyle": "무기 파워",
-      "upvotes": 9,
+      "name": "11만 6천 캐시?! 랭크 1 소전 빌드가 미쳤어요",
+      "code": "64TYG",
+      "description": "",
+      "playstyle": "무기 파워 · 생명력 흡수",
+      "upvotes": 10,
       "stats": {
-        "LIFE": 333,
-        "Max Ammo": 25,
-        "Move Speed": 10,
-        "Total LIFE": 333,
-        "Attack Speed": 5,
-        "Weapon Power": 70,
-        "Ability Power": 0,
-        "Cooldown Reduction": 10
+        "LIFE": 431,
+        "Total LIFE": 431,
+        "Weapon Power": 85,
+        "Ability Power": 20,
+        "Critical Damage": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
       },
       "cost": "$$$"
     }
@@ -2412,6 +2411,26 @@
       "cost": "$$"
     },
     {
+      "name": "VENDETTA [WP] 빌드 가이드 - 임팩트 극대화!",
+      "code": "7M8YH",
+      "description": "개인 경험 기반 탑 100 빌드로, 벤데타의 강점 극대화와 약점 보완에 초점을 둔 최적화 구성입니다.",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 14,
+      "stats": {
+        "LIFE": 278,
+        "Armor": 175,
+        "Shield": 50,
+        "Move Speed": 10,
+        "Total LIFE": 503,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 55,
+        "Ability Power": 0,
+        "Critical Damage": 10
+      },
+      "cost": "$$"
+    },
+    {
       "name": "⚔️ [단종] Overhead Sustain 무기 공격력 Champion/Legend dps' V",
       "code": "C82CE",
       "description": "베네타 너프로 인해 기존 빌드 효율 하락. 방어막·공격 범위 축소로 현재 빌드 사용 불가.",
@@ -2427,26 +2446,6 @@
         "Melee Damage": 15,
         "Weapon Power": 45,
         "Ability Power": 0
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "VENDETTA [WP] 빌드 가이드 - 임팩트 극대화!",
-      "code": "7M8YH",
-      "description": "개인 경험 기반 탑 100 빌드로, 벤데타의 강점 극대화와 약점 보완에 초점을 둔 최적화 구성입니다.",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 13,
-      "stats": {
-        "LIFE": 278,
-        "Armor": 175,
-        "Shield": 50,
-        "Move Speed": 10,
-        "Total LIFE": 503,
-        "Attack Speed": 10,
-        "Melee Damage": 15,
-        "Weapon Power": 55,
-        "Ability Power": 0,
-        "Critical Damage": 10
       },
       "cost": "$$"
     }
@@ -2566,7 +2565,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 189,
+      "upvotes": 193,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2575,6 +2574,22 @@
         "Weapon Power": 10,
         "Ability Power": 40,
         "Cooldown Reduction": 15
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
@@ -2592,22 +2607,6 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
