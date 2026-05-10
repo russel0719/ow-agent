@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 190,
+      "upvotes": 193,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 615,
+      "upvotes": 616,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -208,7 +208,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "능력 파워",
-      "upvotes": 125,
+      "upvotes": 126,
       "stats": {
         "LIFE": 327,
         "Armor": 200,
@@ -264,7 +264,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 335,
+      "upvotes": 336,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -315,20 +315,23 @@
       "cost": "$$"
     },
     {
-      "name": "115% 기술 위력 캐시디: 스타디움에서 비행기 카운터로 최고 (3x",
-      "code": "S971K",
-      "description": "",
-      "playstyle": "능력 파워 · 재사용 단축",
+      "name": "IT'S PAST YOUR BEDTIME (탑 500 빌드) [UPGRADED FOR MORE IN",
+      "code": "14N84",
+      "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
+      "playstyle": "메타 · 생명력 흡수",
       "upvotes": 38,
       "stats": {
-        "LIFE": 436,
+        "LIFE": 407,
         "Armor": 50,
-        "Total LIFE": 486,
-        "Weapon Power": 10,
-        "Ability Power": 115,
-        "Cooldown Reduction": 20
+        "Shield": 25,
+        "Total LIFE": 482,
+        "Weapon Power": 55,
+        "Ability Power": 55,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
       },
-      "cost": "$$$"
+      "cost": "$$"
     }
   ],
   "Doomfist": [
@@ -422,7 +425,7 @@
       "code": "E7NA2",
       "description": "D.Va 방어 매트릭스+자폭 빌드로 생존 극대화.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 388,
+      "upvotes": 389,
       "stats": {
         "LIFE": 771,
         "Armor": 345,
@@ -439,7 +442,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 285,
+      "upvotes": 284,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -706,7 +709,7 @@
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 126,
+      "upvotes": 128,
       "stats": {
         "LIFE": 729,
         "Armor": 225,
@@ -777,7 +780,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1732,
+      "upvotes": 1734,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1030,7 +1033,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1515,
+      "upvotes": 1516,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1143,7 +1146,7 @@
       "code": "7T0KA",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 79,
+      "upvotes": 80,
       "stats": {
         "LIFE": 400,
         "Armor": 50,
@@ -1193,7 +1196,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 283,
+      "upvotes": 286,
       "stats": {
         "LIFE": 471,
         "Armor": 100,
@@ -1262,7 +1265,7 @@
       "code": "ECYWB",
       "description": "무기 공격력 극대화로 매치 골드 순환, 메이는 이미 탱크라 생존성은 낮춤",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 107,
+      "upvotes": 108,
       "stats": {
         "LIFE": 445,
         "Armor": 50,
@@ -1296,7 +1299,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 903,
+      "upvotes": 905,
       "stats": {
         "LIFE": 345,
         "Armor": 50,
@@ -1621,7 +1624,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 190,
+      "upvotes": 191,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1659,7 +1662,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 27,
+      "upvotes": 28,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1678,7 +1681,7 @@
       "code": "3DTYN",
       "description": "브리기테 장판+소용돌이 방벽으로 백라인에 소용돌이 연발하며 높은 딜과 압박을 주는 공격형 플레이.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 15,
+      "upvotes": 16,
       "stats": {
         "LIFE": 734,
         "Armor": 100,
@@ -1958,7 +1961,7 @@
       "code": "QC7PQ",
       "description": "",
       "playstyle": "메타 · 고체력",
-      "upvotes": 58,
+      "upvotes": 59,
       "stats": {
         "LIFE": 708,
         "Shield": 350,
@@ -2043,27 +2046,11 @@
       "cost": "$$"
     },
     {
-      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
-      "code": "DB1X6",
-      "description": "",
-      "playstyle": "능력 파워",
-      "upvotes": 10,
-      "stats": {
-        "LIFE": 377,
-        "Armor": 50,
-        "Total LIFE": 427,
-        "Weapon Power": 10,
-        "Ability Power": 100,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "11만 6천 캐시?! 랭크 1 소전 빌드가 미쳤어요",
       "code": "64TYG",
       "description": "",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 10,
+      "upvotes": 14,
       "stats": {
         "LIFE": 431,
         "Total LIFE": 431,
@@ -2072,6 +2059,22 @@
         "Critical Damage": 10,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
+      },
+      "cost": "$$$"
+    },
+    {
+      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
+      "code": "DB1X6",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 11,
+      "stats": {
+        "LIFE": 377,
+        "Armor": 50,
+        "Total LIFE": 427,
+        "Weapon Power": 10,
+        "Ability Power": 100,
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -2136,7 +2139,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 286,
+      "upvotes": 287,
       "stats": {
         "LIFE": 381,
         "Armor": 25,
@@ -2415,7 +2418,7 @@
       "code": "7M8YH",
       "description": "개인 경험 기반 탑 100 빌드로, 벤데타의 강점 극대화와 약점 보완에 초점을 둔 최적화 구성입니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 14,
+      "upvotes": 15,
       "stats": {
         "LIFE": 278,
         "Armor": 175,
@@ -2565,7 +2568,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 193,
+      "upvotes": 195,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2726,7 +2729,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1196,
+      "upvotes": 1197,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
