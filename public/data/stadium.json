@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 195,
+      "upvotes": 196,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 618,
+      "upvotes": 621,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -319,7 +319,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 40,
+      "upvotes": 41,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -425,7 +425,7 @@
       "code": "E7NA2",
       "description": "D.Va 방어 매트릭스+자폭 빌드로 생존 극대화.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 389,
+      "upvotes": 391,
       "stats": {
         "LIFE": 771,
         "Armor": 345,
@@ -545,7 +545,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 191,
+      "upvotes": 192,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -709,7 +709,7 @@
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 128,
+      "upvotes": 129,
       "stats": {
         "LIFE": 729,
         "Armor": 225,
@@ -725,7 +725,7 @@
       "code": "S27YB",
       "description": "기술 위력 110%, 체력 1,100 이상, 기술 생명력 흡수 25%로 버스트 딜과 생존을 동시에 갖춘 S급 탱커.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 106,
+      "upvotes": 107,
       "stats": {
         "LIFE": 675,
         "Armor": 275,
@@ -780,7 +780,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1735,
+      "upvotes": 1736,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1033,7 +1033,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1517,
+      "upvotes": 1518,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1196,7 +1196,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 286,
+      "upvotes": 287,
       "stats": {
         "LIFE": 471,
         "Armor": 100,
@@ -1265,7 +1265,7 @@
       "code": "ECYWB",
       "description": "무기 공격력 극대화로 매치 골드 순환, 메이는 이미 탱크라 생존성은 낮춤",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 108,
+      "upvotes": 110,
       "stats": {
         "LIFE": 445,
         "Armor": 50,
@@ -1367,7 +1367,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1313,
+      "upvotes": 1314,
       "stats": {
         "LIFE": 425,
         "Total LIFE": 425,
@@ -1849,7 +1849,7 @@
       "code": "HE224",
       "description": "탱커형 빌드의 라운드 후반 살상력 부족 문제를 해결, 지원 의존 없이도 팀을 캐리 가능.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 172,
+      "upvotes": 171,
       "stats": {
         "LIFE": 755,
         "Armor": 325,
@@ -2050,7 +2050,7 @@
       "code": "64TYG",
       "description": "",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 18,
+      "upvotes": 17,
       "stats": {
         "LIFE": 431,
         "Total LIFE": 431,
@@ -2139,7 +2139,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 288,
+      "upvotes": 289,
       "stats": {
         "LIFE": 381,
         "Armor": 25,
@@ -2568,7 +2568,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 195,
+      "upvotes": 198,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -2577,22 +2577,6 @@
         "Weapon Power": 10,
         "Ability Power": 40,
         "Cooldown Reduction": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
@@ -2610,6 +2594,22 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
