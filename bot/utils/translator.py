@@ -1,5 +1,5 @@
 """
-영어 → 한국어 번역 / 요약 유틸리티 (NVIDIA API, Kimi K2 Instruct).
+영어 → 한국어 번역 / 요약 유틸리티 (NVIDIA API, Llama 3.3 70B Instruct).
 
 환경변수 NVIDIA_API_KEY 필요.
 배치 처리로 API 호출 최소화 (최대 10건/요청).
@@ -21,7 +21,7 @@ _BATCH_DELAY = 1.0     # NVIDIA API rate limit 여유로움
 _RETRY_COUNT = 5
 _RETRY_BASE = 10   # 429 시 첫 대기 시간(초), 이후 지수 증가 (최대 120초)
 _last_api_call: float = 0.0  # 마지막 API 호출 시각 (전역 rate limit 추적)
-_MODEL = "moonshotai/kimi-k2-instruct"
+_MODEL = "meta/llama-3.3-70b-instruct"
 _API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 _TRANSLATE_PROMPT = (

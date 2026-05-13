@@ -101,7 +101,11 @@ async def fetch_meta(
             resp.raise_for_status()
             data = await resp.json(content_type=None)
 
-        heroes = _parse_rows(data.get("rates", []))
+        rates = data.get("rates", [])
+        # API 응답이 {"rates": {"rates": [...]}} 구조로 바뀐 경우 대응
+        if isinstance(rates, dict):
+            rates = rates.get("rates", [])
+        heroes = _parse_rows(rates)
         if heroes:
             return _calculate_scores(heroes)
         logger.warning("Blizzard 데이터 파싱 결과 없음")

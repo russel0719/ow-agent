@@ -93,7 +93,7 @@ export default {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'moonshotai/kimi-k2-instruct',
+          model: 'meta/llama-3.3-70b-instruct',
           messages,
           temperature,
           max_tokens,
