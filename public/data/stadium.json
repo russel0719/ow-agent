@@ -757,28 +757,28 @@
       "cost": "$$"
     },
     {
-      "name": "87% 승률, 처치 불가 (전설 빌드)",
-      "code": "PVE8F",
-      "description": "맹렬한 도약 남발로 적 후방을 끊고 지원군을 무력화하는 돌진형 플레이.",
-      "playstyle": "능력 파워 · 고체력",
+      "name": "124K 데미지?! 1위 해저드 빌드는 너무 강력하다",
+      "code": "T06Q4",
+      "description": "",
+      "playstyle": "메타 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 706,
+        "LIFE": 704,
         "Armor": 225,
-        "Total LIFE": 931,
+        "Total LIFE": 929,
         "Weapon Power": 0,
-        "Ability Power": 70,
+        "Ability Power": 85,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 5
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
   ],
   "Jetpack Cat": [
     {
-      "name": "[2X T500] Machine Gun Kitty",
+      "name": "[2X 탑 500] 머신건 키티",
       "code": "ZGAS3",
-      "description": "Blast away at your teammates and healbot How does this work? With Bouncing Biscuits(item_e1a2b3c4-d5e6-f7a8-b9c0-d1e2f3a4b5cb) you healing will bounce off allies nearby to the person you're originally healing. Combining this with attack speed will he...",
+      "description": "공격 속도와 함께 사용하는 바운싱 비스킷으로 근처 동료에게 힐이 반사되어 원래 힐링 대상에게 힐링이 됩니다.",
       "playstyle": "무기 파워",
       "upvotes": 14,
       "stats": {
@@ -792,9 +792,9 @@
       "cost": "$$$"
     },
     {
-      "name": "Apelka cat OP build",
+      "name": "아펠카 캣 OP 빌드",
       "code": "Q2155",
-      "description": "right now 6 game o row win    Superflexor best item on cat   last power give so much HP for team      Nowadays, soldiers and freya are in every game, so it's very difficult for the cat to fly peacefully. This build allows you to stay behind your tank...",
+      "description": "탱커 뒤에서 안전하게 비행할 수 있는 빌드로, 팀에게 많은 체력을 제공합니다.",
       "playstyle": "무기 파워",
       "upvotes": 9,
       "stats": {
@@ -808,9 +808,26 @@
       "cost": "$$"
     },
     {
-      "name": "WP Burst Heal",
+      "name": "[2X 탑 500] 마이크로웨이브 키티",
+      "code": "BDPF8",
+      "description": "퍼는 이 빌드에서 중요한 기술로, 오라를 통해 지속적인 힐링과 피해를 줍니다.",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 2,
+      "stats": {
+        "LIFE": 375,
+        "Total LIFE": 375,
+        "Weapon Power": 20,
+        "Ability Power": 75,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "무기 버스트 힐",
       "code": "Z23W0",
-      "description": "Try to build efficiently, minimizing cash loss and utilizing greens/blues when available.",
+      "description": "효율적으로 빌드를 구성하여 현금 손실을 최소화하고 가능할 때 녹색/파란색 아이템을 사용합니다.",
       "playstyle": "무기 파워",
       "upvotes": 2,
       "stats": {
@@ -826,26 +843,9 @@
       "cost": "$$"
     },
     {
-      "name": "[2X T500] Microwave Kitty",
-      "code": "BDPF8",
-      "description": "Purr(ability_160b3c75-8260-4775-845c-a75fdc4877bc) is going to be your best friend for this build, doing constant heals and damage with your aura. How does this work? Once you get Territorial(item_e1a2b3c4-d5e6-f7a8-b9c0-d1e2f3a4b5c3) your Purr(abili...",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 2,
-      "stats": {
-        "LIFE": 375,
-        "Total LIFE": 375,
-        "Weapon Power": 20,
-        "Ability Power": 75,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "Kamikaze",
+      "name": "카미카제",
       "code": "ZVNR2",
-      "description": "Kamikaze",
+      "description": "카미카제",
       "playstyle": "무기 파워",
       "upvotes": 1,
       "stats": {
@@ -2668,22 +2668,6 @@
       "cost": "$$"
     },
     {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
-      },
-      "cost": "$$"
-    },
-    {
       "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
@@ -2697,6 +2681,22 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
