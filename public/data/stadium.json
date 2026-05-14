@@ -319,7 +319,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 41,
+      "upvotes": 43,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -356,7 +356,7 @@
       "code": "JNKZ7",
       "description": "둠피스트 기술 위력 버스트 빌드. 생존성과 가동 시간 확보로 초반 자원 확보와 지속 전투 능력 강화.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 43,
+      "upvotes": 44,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -425,7 +425,7 @@
       "code": "E7NA2",
       "description": "D.Va 방어 매트릭스+자폭 빌드로 생존 극대화.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 391,
+      "upvotes": 393,
       "stats": {
         "LIFE": 771,
         "Armor": 345,
@@ -442,7 +442,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 284,
+      "upvotes": 285,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -527,7 +527,7 @@
       "code": "YP3PR",
       "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 194,
+      "upvotes": 195,
       "stats": {
         "LIFE": 402,
         "Shield": 50,
@@ -545,7 +545,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 192,
+      "upvotes": 193,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -757,19 +757,19 @@
       "cost": "$$"
     },
     {
-      "name": "124K 데미지?! 1위 해저드 빌드는 너무 강력하다",
-      "code": "T06Q4",
-      "description": "",
-      "playstyle": "메타 · 고체력",
+      "name": "87% 승률, 무적 (전설 빌드)",
+      "code": "PVE8F",
+      "description": "해저드: 멈출 수 없는 도약 스팸 빌드. 적의 지원가가 사망한 것으로 표시되도록 하며, 이를 위해 적의 후방에서 살아남는 것이 목표이다.",
+      "playstyle": "능력 파워 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 704,
+        "LIFE": 706,
         "Armor": 225,
-        "Total LIFE": 929,
+        "Total LIFE": 931,
         "Weapon Power": 0,
-        "Ability Power": 85,
+        "Ability Power": 70,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 10
+        "Cooldown Reduction": 5
       },
       "cost": "$$$"
     }
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하는 바운싱 비스킷으로 근처 동료에게 힐이 반사되어 원래 힐링 대상에게 힐링이 됩니다.",
       "playstyle": "무기 파워",
-      "upvotes": 14,
+      "upvotes": 26,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -792,11 +792,11 @@
       "cost": "$$$"
     },
     {
-      "name": "아펠카 캣 OP 빌드",
-      "code": "Q2155",
-      "description": "탱커 뒤에서 안전하게 비행할 수 있는 빌드로, 팀에게 많은 체력을 제공합니다.",
+      "name": "Apelka cat OP 빌드",
+      "code": "96GA5",
+      "description": "현재 6연승 중인 슈퍼플렉서 빌드. 이 빌드는 탱커 뒤에서 안전하게 비행할 수 있도록 해준다.",
       "playstyle": "무기 파워",
-      "upvotes": 9,
+      "upvotes": 12,
       "stats": {
         "LIFE": 444,
         "Shield": 75,
@@ -812,7 +812,7 @@
       "code": "BDPF8",
       "description": "퍼는 이 빌드에서 중요한 기술로, 오라를 통해 지속적인 힐링과 피해를 줍니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 2,
+      "upvotes": 5,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -843,19 +843,17 @@
       "cost": "$$"
     },
     {
-      "name": "카미카제",
-      "code": "ZVNR2",
-      "description": "카미카제",
-      "playstyle": "무기 파워",
+      "name": "AP 궁극기 스팸",
+      "code": "7S9GX",
+      "description": "일반 정보: 이 빌드는 멸망의 도약을 사용하는 빌드이며, 곧 추가 설명을 제공할 예정이다.",
+      "playstyle": "능력 파워",
       "upvotes": 1,
       "stats": {
-        "LIFE": 360,
-        "Shield": 25,
-        "Total LIFE": 385,
-        "Attack Speed": 5,
-        "Weapon Power": 30,
-        "Ability Power": 15,
-        "Weapon Lifesteal": 10,
+        "LIFE": 350,
+        "Armor": 50,
+        "Total LIFE": 400,
+        "Weapon Power": 0,
+        "Ability Power": 85,
         "Cooldown Reduction": 5
       },
       "cost": "$$"
@@ -867,7 +865,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1737,
+      "upvotes": 1739,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1183,7 +1181,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 126,
+      "upvotes": 127,
       "stats": {
         "LIFE": 488,
         "Total LIFE": 488,
@@ -1386,7 +1384,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 905,
+      "upvotes": 906,
       "stats": {
         "LIFE": 345,
         "Armor": 50,
@@ -1454,7 +1452,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1314,
+      "upvotes": 1315,
       "stats": {
         "LIFE": 425,
         "Total LIFE": 425,
@@ -1569,7 +1567,7 @@
       "code": "008C9",
       "description": "라운드 3부터 라운드당 1.2만 피해와 75% 이상 피해 감소로 ‘불사 오리사’를 구현한 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 121,
+      "upvotes": 123,
       "stats": {
         "LIFE": 696,
         "Armor": 506,
@@ -1711,7 +1709,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 196,
+      "upvotes": 201,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1732,7 +1730,7 @@
       "code": "QQ393",
       "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 29,
+      "upvotes": 30,
       "stats": {
         "LIFE": 673,
         "Armor": 125,
@@ -2260,25 +2258,6 @@
   ],
   "Torbjörn": [
     {
-      "name": "심층 가이드: 랭킹 1위 Torbjorn 빌드가 스타디움을 지배하는 이유",
-      "code": "PTGPY",
-      "description": "",
-      "playstyle": "무기 파워",
-      "upvotes": 86,
-      "stats": {
-        "LIFE": 387,
-        "Armor": 100,
-        "Shield": 50,
-        "Total LIFE": 537,
-        "Attack Speed": 10,
-        "Weapon Power": 70,
-        "Ability Power": 0,
-        "Critical Damage": 10,
-        "Weapon Lifesteal": 10
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "(시즌 19 전설) [4종 변형] Torbjorn이 지원가(공격",
       "code": "0GN8P",
       "description": "시즌 19 토르비욘은 지원가로 변해 망치로 힐하고 공격 속도로 블랙스미스 특전 활용",
@@ -2294,6 +2273,25 @@
         "Weapon Lifesteal": 20
       },
       "cost": "$"
+    },
+    {
+      "name": "심층 가이드: 랭킹 1위 Torbjorn 빌드가 스타디움을 지배하는 이유",
+      "code": "PTGPY",
+      "description": "",
+      "playstyle": "무기 파워",
+      "upvotes": 85,
+      "stats": {
+        "LIFE": 387,
+        "Armor": 100,
+        "Shield": 50,
+        "Total LIFE": 537,
+        "Attack Speed": 10,
+        "Weapon Power": 70,
+        "Ability Power": 0,
+        "Critical Damage": 10,
+        "Weapon Lifesteal": 10
+      },
+      "cost": "$$$"
     },
     {
       "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
@@ -2655,12 +2653,12 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 200,
+      "upvotes": 202,
       "stats": {
-        "LIFE": 338,
+        "LIFE": 333,
         "Armor": 50,
         "Shield": 75,
-        "Total LIFE": 463,
+        "Total LIFE": 458,
         "Weapon Power": 10,
         "Ability Power": 40,
         "Cooldown Reduction": 15
@@ -2757,7 +2755,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 102,
+      "upvotes": 103,
       "stats": {
         "LIFE": 569,
         "Armor": 25,
@@ -2816,7 +2814,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1198,
+      "upvotes": 1199,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
