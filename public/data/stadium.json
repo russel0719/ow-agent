@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 197,
+      "upvotes": 198,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 622,
+      "upvotes": 624,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -319,7 +319,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 43,
+      "upvotes": 44,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -475,7 +475,7 @@
       "code": "NJY66",
       "description": "D.Va 부스터 사용 시 남는 용암으로 적 진영 압박 및 거점 방어.",
       "playstyle": "재미용 · 고체력",
-      "upvotes": 136,
+      "upvotes": 135,
       "stats": {
         "LIFE": 683,
         "Armor": 350,
@@ -672,7 +672,7 @@
       "code": "6V2XC",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 49,
+      "upvotes": 50,
       "stats": {
         "LIFE": 396,
         "Armor": 100,
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하는 바운싱 비스킷으로 근처 동료에게 힐이 반사되어 원래 힐링 대상에게 힐링이 됩니다.",
       "playstyle": "무기 파워",
-      "upvotes": 26,
+      "upvotes": 31,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -796,7 +796,7 @@
       "code": "96GA5",
       "description": "현재 6연승 중인 슈퍼플렉서 빌드. 이 빌드는 탱커 뒤에서 안전하게 비행할 수 있도록 해준다.",
       "playstyle": "무기 파워",
-      "upvotes": 12,
+      "upvotes": 17,
       "stats": {
         "LIFE": 444,
         "Shield": 75,
@@ -825,29 +825,11 @@
       "cost": "$$"
     },
     {
-      "name": "무기 버스트 힐",
-      "code": "Z23W0",
-      "description": "효율적으로 빌드를 구성하여 현금 손실을 최소화하고 가능할 때 녹색/파란색 아이템을 사용합니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 2,
-      "stats": {
-        "LIFE": 367,
-        "Armor": 25,
-        "Shield": 50,
-        "Max Ammo": 40,
-        "Total LIFE": 442,
-        "Attack Speed": 25,
-        "Weapon Power": 40,
-        "Ability Power": 0
-      },
-      "cost": "$$"
-    },
-    {
       "name": "AP 궁극기 스팸",
       "code": "7S9GX",
       "description": "일반 정보: 이 빌드는 멸망의 도약을 사용하는 빌드이며, 곧 추가 설명을 제공할 예정이다.",
       "playstyle": "능력 파워",
-      "upvotes": 1,
+      "upvotes": 2,
       "stats": {
         "LIFE": 350,
         "Armor": 50,
@@ -857,6 +839,24 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$"
+    },
+    {
+      "name": "하이브리드 퍼 오펜시브",
+      "code": "JPXJW",
+      "description": "제트팩 캣 빌드는 강력한 힐을 통해 팀을 지원하면서도 공격적인 위협으로 남는 것을 목표로 합니다. 팀을 지원하기 위해 지속적인 힐이나 피해를 주는 퍼를 사용합니다.",
+      "playstyle": "혼합 파워 · 생명력 흡수",
+      "upvotes": 2,
+      "stats": {
+        "LIFE": 382,
+        "Shield": 50,
+        "Total LIFE": 432,
+        "Attack Speed": 20,
+        "Weapon Power": 50,
+        "Ability Power": 45,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$$"
     }
   ],
   "Junker Queen": [
@@ -865,7 +865,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1739,
+      "upvotes": 1741,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -949,7 +949,7 @@
       "code": "Z54ST",
       "description": "정크랫 원거리 스나이퍼 스타일. 오리사·라인하르트 같은 정면 영웅 상대에 최적.",
       "playstyle": "혼합 파워",
-      "upvotes": 393,
+      "upvotes": 392,
       "stats": {
         "LIFE": 325,
         "Total LIFE": 325,
@@ -964,7 +964,7 @@
       "code": "3387F",
       "description": "간단한 빌드 설명. 작성자는 All-star 수준의 실력을 갖춘 것으로 보이며, 빌드는 저렴하게 구성됨.",
       "playstyle": "무기 파워",
-      "upvotes": 293,
+      "upvotes": 292,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -1030,7 +1030,7 @@
       "code": "02YXM",
       "description": "빌드가 너프됨. Blink Boosts, Ironclad Exhaust Ports, Three 등이 너프되어 업데이트 필요.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 1326,
+      "upvotes": 1325,
       "stats": {
         "LIFE": 195,
         "Armor": 50,
@@ -1100,7 +1100,7 @@
       "code": "35AAN",
       "description": "주노 메디마스터 빌드로 2026 시즌 2 기준 최신 설정. 메디블래스터와 하이퍼 링 중심으로 팀원 회복과 기동성을 극대화하는 지원형 플레이.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 194,
+      "upvotes": 195,
       "stats": {
         "LIFE": 208,
         "Shield": 175,
@@ -1118,7 +1118,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1518,
+      "upvotes": 1520,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1134,7 +1134,7 @@
       "code": "C60J8",
       "description": "무기 공격력 중심으로 복제체를 적 후방에 소환해 교란하는 빌드. Fleet Foot로 기동성을 높여 기습 후 빠른 탈출 가능.",
       "playstyle": "무기 파워 · 재사용 단축",
-      "upvotes": 664,
+      "upvotes": 663,
       "stats": {
         "LIFE": 376,
         "Total LIFE": 376,
@@ -1181,7 +1181,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 127,
+      "upvotes": 128,
       "stats": {
         "LIFE": 488,
         "Total LIFE": 488,
@@ -1199,7 +1199,7 @@
       "code": "MQS4A",
       "description": "생존과 재사용 대기시간 단축에 특화된 루시우 빌드. 강한 유틸리티로 팀 지원에 초점, CC기와 힐 차단 주의 필요.",
       "playstyle": "능력 파워",
-      "upvotes": 1020,
+      "upvotes": 1019,
       "stats": {
         "LIFE": 283,
         "Armor": 160,
@@ -1227,18 +1227,17 @@
       "cost": "$$"
     },
     {
-      "name": "[70% 승률] EU S5 S6 랭크 1 루시오 빌드",
-      "code": "7T0KA",
+      "name": "[70% WR] EU S5 S6 랭크 1 루시우 빌드",
+      "code": "GCMH6",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 82,
+      "upvotes": 83,
       "stats": {
-        "LIFE": 400,
-        "Armor": 50,
-        "Total LIFE": 450,
+        "LIFE": 390,
+        "Armor": 100,
+        "Total LIFE": 490,
         "Weapon Power": 10,
-        "Ability Power": 95,
-        "Cooldown Reduction": 10
+        "Ability Power": 75
       },
       "cost": "$$"
     },
@@ -1281,7 +1280,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 288,
+      "upvotes": 289,
       "stats": {
         "LIFE": 471,
         "Armor": 100,
@@ -1384,7 +1383,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 906,
+      "upvotes": 908,
       "stats": {
         "LIFE": 345,
         "Armor": 50,
@@ -1709,7 +1708,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 201,
+      "upvotes": 202,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1896,7 +1895,7 @@
       "code": "MY5FJ",
       "description": "라인하르트를 지원가로 변신시킨 실험 빌드, 팀원 보조와 지속 회복에 초점.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 325,
+      "upvotes": 324,
       "stats": {
         "LIFE": 897,
         "Armor": 325,
@@ -1994,7 +1993,7 @@
       "code": "V4HCE",
       "description": "시그마 버프 반영 빌드, 실제 구성은 큰 변화 없음",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 386,
+      "upvotes": 385,
       "stats": {
         "LIFE": 585,
         "Shield": 325,
@@ -2135,7 +2134,7 @@
       "code": "64TYG",
       "description": "",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 17,
+      "upvotes": 16,
       "stats": {
         "LIFE": 431,
         "Total LIFE": 431,
@@ -2258,6 +2257,25 @@
   ],
   "Torbjörn": [
     {
+      "name": "심층 가이드: 랭킹 1위 Torbjorn 빌드가 스타디움을 지배하는 이유",
+      "code": "PTGPY",
+      "description": "",
+      "playstyle": "무기 파워",
+      "upvotes": 86,
+      "stats": {
+        "LIFE": 387,
+        "Armor": 100,
+        "Shield": 50,
+        "Total LIFE": 537,
+        "Attack Speed": 10,
+        "Weapon Power": 70,
+        "Ability Power": 0,
+        "Critical Damage": 10,
+        "Weapon Lifesteal": 10
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "(시즌 19 전설) [4종 변형] Torbjorn이 지원가(공격",
       "code": "0GN8P",
       "description": "시즌 19 토르비욘은 지원가로 변해 망치로 힐하고 공격 속도로 블랙스미스 특전 활용",
@@ -2273,25 +2291,6 @@
         "Weapon Lifesteal": 20
       },
       "cost": "$"
-    },
-    {
-      "name": "심층 가이드: 랭킹 1위 Torbjorn 빌드가 스타디움을 지배하는 이유",
-      "code": "PTGPY",
-      "description": "",
-      "playstyle": "무기 파워",
-      "upvotes": 85,
-      "stats": {
-        "LIFE": 387,
-        "Armor": 100,
-        "Shield": 50,
-        "Total LIFE": 537,
-        "Attack Speed": 10,
-        "Weapon Power": 70,
-        "Ability Power": 0,
-        "Critical Damage": 10,
-        "Weapon Lifesteal": 10
-      },
-      "cost": "$$$"
     },
     {
       "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
@@ -2449,7 +2448,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 210,
+      "upvotes": 211,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2503,7 +2502,7 @@
       "code": "7M8YH",
       "description": "개인 경험 기반 탑 100 빌드로, 벤데타의 강점 극대화와 약점 보완에 초점을 둔 최적화 구성입니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 16,
+      "upvotes": 17,
       "stats": {
         "LIFE": 278,
         "Armor": 175,
@@ -2544,7 +2543,7 @@
       "code": "7Z59J",
       "description": "초반 탱킹으로 근접 대미지를 키우고, 후반 근접 극딜로 마무리하는 둠피스트 근접 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 193,
+      "upvotes": 192,
       "stats": {
         "LIFE": 599,
         "Armor": 410,
@@ -2562,7 +2561,7 @@
       "code": "A6K8A",
       "description": "광역 버블로 지속적인 둔화와 힐 차단 디버프를 걸며, 기술 위력에 비례해 튼튼한 방어막 제공",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 163,
+      "upvotes": 162,
       "stats": {
         "LIFE": 706,
         "Armor": 200,
@@ -2653,7 +2652,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 202,
+      "upvotes": 204,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
@@ -2721,7 +2720,7 @@
       "code": "VRV9T",
       "description": "격리 방패로 교전/탈출이 쉬워지고 생명력 상승으로 생존성이 강화된 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 155,
+      "upvotes": 154,
       "stats": {
         "LIFE": 702,
         "Armor": 28,
@@ -2774,7 +2773,7 @@
       "code": "V0Z45",
       "description": "자리야: Vortex 광역 딜 최대화, 초반 빠른 처치로 기선 제압 후 라운드 2부터 약점 제거",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 76,
+      "upvotes": 75,
       "stats": {
         "LIFE": 585,
         "Armor": 25,
@@ -2794,7 +2793,7 @@
       "code": "SYNGQ",
       "description": "자리야 빌드: Volskaya Vortex와 Superflexor로 광역 딜 강화, 기존 빌드 변형",
       "playstyle": "메타 · 고체력",
-      "upvotes": 73,
+      "upvotes": 72,
       "stats": {
         "LIFE": 576,
         "Armor": 25,
@@ -2814,7 +2813,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1199,
+      "upvotes": 1200,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
@@ -2832,7 +2831,7 @@
       "code": "24RZV",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 223,
+      "upvotes": 222,
       "stats": {
         "LIFE": 241,
         "Shield": 175,
