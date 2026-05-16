@@ -33,6 +33,9 @@ const HERO_COLOR = {
 };
 const FALLBACK_COLOR = '#9CA3AF';
 
+// ── 차트 높이 헬퍼 (모바일 반응형) ───────────────────────────────────────────
+const CHART_H = () => window.innerWidth < 640 ? '260px' : '420px';
+
 // ── 상태 변수 ─────────────────────────────────────────────────────────────────
 let currentRank = '전체';
 let currentRole = '전체';
@@ -93,7 +96,7 @@ function buildHTML() {
       <div class="bg-ow-card border border-ow-border rounded-xl p-4">
         <h2 class="font-semibold text-gray-200 mb-1">존재감 vs 통합 메타지수</h2>
         <p class="text-xs text-gray-500 mb-4">X축: 존재감(픽+밴) &nbsp;|&nbsp; Y축: 통합 메타지수 &nbsp;|&nbsp; 크기: 밴 효율</p>
-        <div class="relative" style="height:420px;">
+        <div class="relative" style="height:${CHART_H()};">
           <canvas id="bubble-chart"></canvas>
         </div>
       </div>
@@ -140,7 +143,7 @@ function buildHTML() {
           </p>
         </div>
 
-        <div id="ban-chart-inner" class="relative" style="height:420px;">
+        <div id="ban-chart-inner" class="relative" style="height:${CHART_H()};">
           <canvas id="ban-chart"></canvas>
         </div>
         <div id="ban-chart-empty" class="hidden flex items-center justify-center h-32 text-gray-500 text-sm">

@@ -103,6 +103,10 @@ const MAP_LIST = [
   { id: 'throne-of-anubis',    name: '아누비스의 왕좌',    type: '격돌' },
 ];
 
+// ── 차트 높이 헬퍼 (모바일 반응형) ───────────────────────────────────────────
+const CHART_H    = () => window.innerWidth < 640 ? '300px' : '560px';
+const CHART_MAXH = () => window.innerWidth < 640 ? '320px' : '640px';
+
 // ── 상태 변수 ─────────────────────────────────────────────────────────────────
 let currentRank = '전체';
 let currentRole = '전체';
@@ -231,7 +235,7 @@ function buildHTML() {
           class="text-xs text-ow-blue hover:text-white transition-colors hidden px-2 py-1 rounded border border-ow-border hover:border-ow-blue"
           id="chart-back">← 전체 보기</button>
       </div>
-      <div id="chart-scroll" style="overflow-y:auto; max-height:640px;">
+      <div id="chart-scroll" style="overflow-y:auto; max-height:${CHART_MAXH()};">
         <div id="chart-wrapper" class="px-4 pb-4" style="position:relative;">
           <canvas id="meta-chart"></canvas>
         </div>
@@ -510,7 +514,7 @@ function renderChart(container) {
 function renderOverviewChart(container) {
   container.querySelector('#chart-title').textContent =
     `전체 영웅 메타 점수 추이 — ${currentRank}`;
-  container.querySelector('#chart-scroll').style.maxHeight = '640px';
+  container.querySelector('#chart-scroll').style.maxHeight = CHART_MAXH();
 
   const wrapper = container.querySelector('#chart-wrapper');
   const historyRank = currentRank === '챔피언' ? '그랜드마스터' : currentRank;
@@ -520,11 +524,11 @@ function renderOverviewChart(container) {
     return;
   }
 
-  wrapper.style.height = '560px';
+  wrapper.style.height = CHART_H();
   wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
   const canvas = container.querySelector('#meta-chart');
   canvas.style.width = '100%';
-  canvas.style.height = '560px';
+  canvas.style.height = CHART_H();
 
   const dates = Object.keys(rankData).sort();
   const labelDates = dates.map(d => d.slice(5));
@@ -602,7 +606,7 @@ function renderHistoryChart(container) {
   const color = HERO_COLOR[selectedHeroId] ?? FALLBACK_COLOR;
   container.querySelector('#chart-title').textContent =
     `${selectedHeroName} — 메타 점수 추이 (${currentRank})`;
-  container.querySelector('#chart-scroll').style.maxHeight = '640px';
+  container.querySelector('#chart-scroll').style.maxHeight = CHART_MAXH();
 
   const wrapper = container.querySelector('#chart-wrapper');
   const historyRank = currentRank === '챔피언' ? '그랜드마스터' : currentRank;
@@ -617,11 +621,11 @@ function renderHistoryChart(container) {
     return;
   }
 
-  wrapper.style.height = '560px';
+  wrapper.style.height = CHART_H();
   wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
   const canvas = container.querySelector('#meta-chart');
   canvas.style.width = '100%';
-  canvas.style.height = '560px';
+  canvas.style.height = CHART_H();
 
   const patchPlugin = makePatchLinePlugin(dates);
   activeChart = new Chart(canvas, {
@@ -670,7 +674,7 @@ function renderMapOverviewChart(container) {
   const mapName = MAP_LIST.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
   container.querySelector('#chart-title').textContent =
     currentMap ? `전체 영웅 메타 점수 추이 — ${mapName}` : '맵을 선택하세요';
-  container.querySelector('#chart-scroll').style.maxHeight = '640px';
+  container.querySelector('#chart-scroll').style.maxHeight = CHART_MAXH();
 
   const wrapper = container.querySelector('#chart-wrapper');
   if (!currentMap) { wrapper.innerHTML = noDataMsg('맵을 선택하면 차트가 표시됩니다.'); return; }
@@ -681,11 +685,11 @@ function renderMapOverviewChart(container) {
     return;
   }
 
-  wrapper.style.height = '560px';
+  wrapper.style.height = CHART_H();
   wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
   const canvas = container.querySelector('#meta-chart');
   canvas.style.width = '100%';
-  canvas.style.height = '560px';
+  canvas.style.height = CHART_H();
 
   const dates = Object.keys(mapData).sort();
   const labelDates = dates.map(d => d.slice(5));
@@ -769,7 +773,7 @@ function renderMapHistoryChart(container) {
   const mapName = MAP_LIST.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
   container.querySelector('#chart-title').textContent =
     `${selectedHeroName} — 메타 점수 추이 (${mapName})`;
-  container.querySelector('#chart-scroll').style.maxHeight = '640px';
+  container.querySelector('#chart-scroll').style.maxHeight = CHART_MAXH();
 
   const wrapper = container.querySelector('#chart-wrapper');
   const mapData = cachedMapHistory?.[currentMap];
@@ -783,11 +787,11 @@ function renderMapHistoryChart(container) {
     return;
   }
 
-  wrapper.style.height = '560px';
+  wrapper.style.height = CHART_H();
   wrapper.innerHTML = '<canvas id="meta-chart"></canvas>';
   const canvas = container.querySelector('#meta-chart');
   canvas.style.width = '100%';
-  canvas.style.height = '560px';
+  canvas.style.height = CHART_H();
 
   const patchPlugin = makePatchLinePlugin(dates);
   activeChart = new Chart(canvas, {

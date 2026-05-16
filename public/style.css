@@ -654,8 +654,62 @@
   z-index: 999;
 }
 
-/* 모바일 */
+/* 챗봇 모바일 */
 @media (max-width: 480px) {
   #ow-chat-root { bottom: 16px; right: 16px; }
   .ow-chat-popup { width: calc(100vw - 32px); }
+}
+
+/* ── 전역 터치 최적화 ─────────────────────────────────────────────── */
+* { -webkit-tap-highlight-color: transparent; }
+
+button, .nav-tab, .filter-btn, .map-btn, .hero-card,
+.mode-tab, .view-toggle-btn, .weekly-hero-btn {
+  touch-action: manipulation;
+}
+
+.nav-tab:active, .filter-btn:active, .map-btn:active,
+.mode-tab:active, .view-toggle-btn:active {
+  opacity: 0.65;
+  transform: scale(0.96);
+}
+
+.hero-card:active { opacity: 0.8; }
+
+/* ── 모바일 레이아웃 (≤640px) ─────────────────────────────────────── */
+@media (max-width: 640px) {
+  /* 앱 여백 축소 */
+  #app { padding-top: 1rem !important; padding-bottom: 1.5rem !important; }
+
+  /* 네비게이션 탭 가로 스크롤 */
+  .nav-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-scroll::-webkit-scrollbar { display: none; }
+
+  /* nav-tab 모바일 크기 */
+  .nav-tab {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* 테이블 셀 패딩 축소 */
+  .meta-table td, .meta-table th, .meta-th {
+    padding: 6px 8px !important;
+    font-size: 0.75rem;
+  }
+
+  /* 챗봇 팝업 높이 vh 기반으로 제한 */
+  .ow-chat-popup { max-height: min(520px, 75vh); }
+
+  /* 스타디움 스탯 바 */
+  .stat-bar-label { width: 52px; font-size: 0.72rem; }
+  .stat-bar-value { width: 32px; font-size: 0.7rem; }
+
+  /* 영웅 카드 패딩 축소 */
+  .hero-card { padding: 10px 10px 8px; }
 }

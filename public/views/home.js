@@ -165,11 +165,21 @@ async function renderBubbleChart(container, heroes, portraitIndex) {
   if (existing) existing.destroy();
   homeChart = null;
 
-  const validHeroes = heroes.filter(h => h.pick_rate > 0 && h.win_rate > 0);
+  const isMobile = window.innerWidth < 640;
+
+  // 모바일: 메타 점수 상위 22명만 표시 (나머지는 겹침이 심해 가시성 저하)
+  const allValid = heroes
+    .filter(h => h.pick_rate > 0 && h.win_rate > 0)
+    .sort((a, b) => (b.meta_score ?? 0) - (a.meta_score ?? 0));
+  const validHeroes = isMobile ? allValid.slice(0, 22) : allValid;
+
   const imageMap = await preloadPortraits(validHeroes, portraitIndex);
 
   // 이미지 로딩 중 canvas가 DOM에서 사라졌으면 중단
   if (!canvas.isConnected) return;
+
+  const bubbleR = (score) =>
+    Math.max(isMobile ? 10 : 14, Math.sqrt(score) * (isMobile ? 1.1 : 1.6));
 
   const datasets = Object.entries(ROLE_COLOR).map(([role, color]) => ({
     label: role === 'tank' ? '탱커' : role === 'damage' ? '딜러' : '지원가',
@@ -178,7 +188,7 @@ async function renderBubbleChart(container, heroes, portraitIndex) {
       .map(h => ({
         x: h.pick_rate,
         y: h.win_rate,
-        r: Math.max(14, Math.sqrt(h.meta_score) * 1.6),
+        r: bubbleR(h.meta_score ?? 0),
         hero: h,
       })),
     backgroundColor: 'rgba(0,0,0,0)',
@@ -376,7 +386,7 @@ export async function renderHome(container) {
       <div class="bg-ow-card border border-ow-border rounded-xl p-5">
         <div class="text-sm font-semibold text-gray-300 mb-1">메타 맵 — 픽률 vs 승률</div>
         <div class="text-xs text-gray-500 mb-4">버블 크기 = 메타 점수 · 전체 랭크 기준</div>
-        <div style="height: 780px; position: relative;">
+        <div style="height: ${window.innerWidth < 640 ? '420px' : '780px'}; position: relative;">
           <canvas id="home-bubble-chart"></canvas>
         </div>
       </div>
