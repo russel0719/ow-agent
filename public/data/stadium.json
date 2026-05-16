@@ -757,19 +757,19 @@
       "cost": "$$"
     },
     {
-      "name": "87% 승률, 죽지 않는 (전설 빌드)",
-      "code": "PVE8F",
-      "description": "해저드: 멈출 수 없는 도약 스팸 빌드. 적의 지원가의 화면을 영원히 회색으로 유지하는 것이 목표입니다. 이 빌드는 적의 후방에서 살아남고 공격하는 것을 목표로 합니다.",
-      "playstyle": "능력 파워 · 고체력",
+      "name": "124K 데미지?! 랭크 1 해저드 빌드는 너무 강력하다",
+      "code": "T06Q4",
+      "description": "",
+      "playstyle": "메타 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 706,
+        "LIFE": 704,
         "Armor": 225,
-        "Total LIFE": 931,
+        "Total LIFE": 929,
         "Weapon Power": 0,
-        "Ability Power": 70,
+        "Ability Power": 85,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 5
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -843,20 +843,18 @@
       "cost": "$$$"
     },
     {
-      "name": "무기 버스트 회복",
-      "code": "Z23W0",
-      "description": "효율적으로 빌드를 구성하여 현금 손실을 최소화하고 가능한 경우 초록색/파란색 아이템을 사용하세요.",
-      "playstyle": "무기 파워",
+      "name": "기술 위력 궁극기 스팸",
+      "code": "7S9GX",
+      "description": "이 빌드는 저가 파워를 살펴보다가 생각해낸 멤 빌드입니다. 곧 노트를 추가할 예정입니다.",
+      "playstyle": "능력 파워",
       "upvotes": 2,
       "stats": {
-        "LIFE": 367,
-        "Armor": 25,
-        "Shield": 50,
-        "Max Ammo": 40,
-        "Total LIFE": 442,
-        "Attack Speed": 25,
-        "Weapon Power": 40,
-        "Ability Power": 0
+        "LIFE": 350,
+        "Armor": 50,
+        "Total LIFE": 400,
+        "Weapon Power": 0,
+        "Ability Power": 85,
+        "Cooldown Reduction": 5
       },
       "cost": "$$"
     }
