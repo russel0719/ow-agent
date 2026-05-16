@@ -29,8 +29,8 @@ cron: '0 6 * * *'   # 매일 15:00 KST
 1. Blizzard 공식 통계 (`overwatch.blizzard.com/ko-kr/rates/`) 크롤링 → `public/data/meta.json`
 2. 90일 히스토리 롤링 갱신 → `public/data/meta_history.json`
 3. **신규 영웅 자동 감지** → `data/heroes.json` 자동 추가
-4. stadiumbuilds.io 빌드 크롤링 + Gemini 한국어 번역/요약 → `public/data/stadium.json`
-5. Blizzard 패치 노트 크롤링 + Gemini 한국어 번역 → `public/data/patch.json`
+4. stadiumbuilds.io 빌드 크롤링 + NVIDIA API (Llama 3.3 70B) 한국어 번역/요약 → `public/data/stadium.json`
+5. Blizzard 패치 노트 크롤링 + NVIDIA API (Llama 3.3 70B) 한국어 번역 → `public/data/patch.json`
 6. `data/heroes.json` → `public/data/heroes.json` 복사
 7. `public/data/` 커밋 & push → GitHub Pages 자동 배포
 
@@ -53,7 +53,7 @@ uv sync
 
 # 환경변수 설정
 cp .env.example .env
-# .env 에 GEMINI_API_KEY 입력
+# .env 에 NVIDIA_API_KEY 입력
 ```
 
 ### 데이터 생성
@@ -84,7 +84,7 @@ ow-agent/
 │   │   ├── meta_scraper.py    # Blizzard 공식 통계 크롤러
 │   │   ├── stadium_scraper.py # stadiumbuilds.io 크롤러
 │   │   └── patch_scraper.py   # Blizzard 패치 노트 크롤러
-│   └── translator.py          # Gemini API 번역·요약 (배치 처리)
+│   └── translator.py          # NVIDIA API (Llama 3.3 70B) API 번역·요약 (배치 처리)
 ├── data/
 │   ├── heroes.json            # 영웅 DB (자동 동기화)
 │   └── meta_baseline.json     # 크롤링 실패 시 fallback 데이터
@@ -107,15 +107,15 @@ ow-agent/
 
 | 변수 | 필수 | 설명 |
 |------|------|------|
-| `GEMINI_API_KEY` | ✅ | Gemini API 키 (번역·요약에 사용). [Google AI Studio](https://aistudio.google.com/)에서 발급 |
+| `NVIDIA_API_KEY` | ✅ | NVIDIA API 키 (번역·요약·챗봇 AI). [NVIDIA build](https://build.nvidia.com/)에서 발급 |
 
-GitHub Actions에서는 **Settings → Secrets → `GEMINI_API_KEY`** 로 등록합니다.
+GitHub Actions에서는 **Settings → Secrets → `NVIDIA_API_KEY`** 로 등록합니다.
 
 ---
 
 ## 기술 스택
 
 - **백엔드**: Python, aiohttp, BeautifulSoup4
-- **번역·요약**: Google Gemini API (`gemini-3.1-flash-lite-preview`)
+- **번역·요약·AI**: NVIDIA API (`meta/llama-3.3-70b-instruct`)
 - **프론트엔드**: Vanilla JS (ES Modules), Chart.js, Tailwind CSS
 - **배포**: GitHub Pages + GitHub Actions

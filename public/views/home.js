@@ -1,6 +1,6 @@
 /**
  * OW2 홈 대시보드
- * - AI 주간 메타 요약 (NVIDIA Kimi K2 via Cloudflare Worker)
+ * - AI 주간 메타 요약 (NVIDIA Llama 3.3 70B via Cloudflare Worker)
  * - 이번주 꿀/똥 영웅 TOP3
  * - 픽률 vs 승률 버블 차트 (메타 맵)
  */
@@ -346,7 +346,7 @@ export async function renderHome(container) {
       <div class="bg-ow-card border border-ow-border rounded-xl p-5">
         <div class="flex items-center gap-2 mb-3">
           <span class="text-base font-semibold text-ow-blue">AI 주간 메타 요약</span>
-          <span class="text-xs text-gray-500">Kimi K2</span>
+          <span class="text-xs text-gray-500">Llama 3.3 70B</span>
           <span id="ai-data-date" class="text-xs text-gray-600"></span>
         </div>
         <div id="ai-summary" class="text-sm text-gray-300 leading-relaxed space-y-1">

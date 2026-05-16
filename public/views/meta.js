@@ -972,12 +972,14 @@ function renderCards(container) {
 
 function renderTable(container, filtered, prevMap) {
   const weeklyDelta = currentMode === 'rank' ? getWeeklyDelta(currentRank) : {};
+  const hasBan = filtered.some(h => (h.ban_rate ?? 0) > 0);
 
   const sorted = [...filtered].sort((a, b) => {
     let aVal, bVal;
     if (sortCol === 'meta_score')   { aVal = a.meta_score ?? 0;  bVal = b.meta_score ?? 0; }
     else if (sortCol === 'pick_rate') { aVal = a.pick_rate ?? 0;  bVal = b.pick_rate ?? 0; }
     else if (sortCol === 'win_rate')  { aVal = a.win_rate ?? 0;   bVal = b.win_rate ?? 0; }
+    else if (sortCol === 'ban_rate')  { aVal = a.ban_rate ?? 0;   bVal = b.ban_rate ?? 0; }
     else if (sortCol === 'delta')     { aVal = weeklyDelta[a.hero_id]?.delta ?? -999; bVal = weeklyDelta[b.hero_id]?.delta ?? -999; }
     else                              { aVal = a.hero_name ?? ''; bVal = b.hero_name ?? ''; }
     if (typeof aVal === 'string') return sortDir === 'asc' ? aVal.localeCompare(bVal, 'ko') : bVal.localeCompare(aVal, 'ko');
@@ -993,6 +995,9 @@ function renderTable(container, filtered, prevMap) {
       : delta > 0.05  ? `<span class="delta-up">▲${delta.toFixed(1)}</span>`
       : delta < -0.05 ? `<span class="delta-down">▼${Math.abs(delta).toFixed(1)}</span>`
       : '<span class="delta-neutral">–</span>';
+    const banCell = hasBan
+      ? `<td class="py-2.5 px-4 tabular-nums" style="color:#c084fc">${(h.ban_rate ?? 0) > 0 ? h.ban_rate.toFixed(1) + '%' : '-'}</td>`
+      : '';
     return `
       <tr class="meta-table-row" data-hero-id="${h.hero_id}" data-hero-name="${escHtml(h.hero_name)}">
         <td class="py-2.5 px-4 font-semibold" style="color:${color}">${escHtml(h.hero_name)}</td>
@@ -1006,8 +1011,13 @@ function renderTable(container, filtered, prevMap) {
         <td class="py-2.5 px-4">${dHtml}</td>
         <td class="py-2.5 px-4 text-gray-300 tabular-nums">${h.pick_rate?.toFixed(1) ?? '-'}%</td>
         <td class="py-2.5 px-4 text-gray-300 tabular-nums">${h.win_rate?.toFixed(1) ?? '-'}%</td>
+        ${banCell}
       </tr>`;
   }).join('');
+
+  const banHeader = hasBan
+    ? `<th class="meta-th" data-sort="ban_rate">밴률${si('ban_rate')}</th>`
+    : '';
 
   const grid = container.querySelector('#meta-grid');
   grid.innerHTML = `
@@ -1022,6 +1032,7 @@ function renderTable(container, filtered, prevMap) {
             <th class="meta-th" data-sort="delta">7일 변화${si('delta')}</th>
             <th class="meta-th" data-sort="pick_rate">픽률${si('pick_rate')}</th>
             <th class="meta-th" data-sort="win_rate">승률${si('win_rate')}</th>
+            ${banHeader}
           </tr>
         </thead>
         <tbody>${rows}</tbody>
@@ -1084,8 +1095,9 @@ function heroCard(h, prevScore) {
         </div>
       </div>
       <div class="text-xs text-gray-400 space-y-0.5">
-        <div>픽률 <span class="text-gray-200">${h.pick_rate?.toFixed(1) ?? '-'}%</span></div>
-        <div>승률 <span class="text-gray-200">${h.win_rate?.toFixed(1) ?? '-'}%</span></div>
+        <div>픽률 <span class="text-white">${h.pick_rate?.toFixed(1) ?? '-'}%</span></div>
+        ${(h.ban_rate ?? 0) > 0 ? `<div>밴률 <span class="text-white">${h.ban_rate.toFixed(1)}%</span></div>` : ''}
+        <div>승률 <span class="text-white">${h.win_rate?.toFixed(1) ?? '-'}%</span></div>
       </div>
     </div>`;
 }

@@ -124,7 +124,7 @@ function heroChangeCard(h, isStadium = false, metaMap = {}, koToHeroId = {}, por
   const changes = h.changes ?? [];
   const meta = metaMap[h.hero];
   const heroId = koToHeroId[h.hero];
-  const portraitUrl = heroId ? portraitIndex[heroId] : null;
+  const portraitUrl = h.portrait_url || (heroId ? portraitIndex[heroId] : null);
   const tierBadge = meta?.tier
     ? `<span class="patch-tier-badge tier-${meta.tier}">${escHtml(meta.tier)}</span>`
     : '';

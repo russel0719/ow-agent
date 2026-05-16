@@ -40,13 +40,21 @@ asyncio.run(run())
 - **소스**: `https://overwatch.blizzard.com/ko-kr/rates/data/` (JSON API)
   - HTML 페이지(`/rates/`)가 아닌 JS가 호출하는 JSON 엔드포인트를 직접 사용
   - tier 파라미터(Bronze/Gold/…)가 JSON API에서 정상 작동 → 랭크별 실제 데이터 수집 가능
-- 9개 랭크(전체~챔피언) × 전 영웅 픽률·승률·메타점수 수집
-- 90일 히스토리 rolling 업데이트
-- **메타 점수 공식**: `win_score × 0.60 + pick_score × 0.40`
+  - **`rq=1` (역할고정 경쟁전)** 사용 — 픽률·승률·밴률 모두 포함. `rq=2`/`rq=3`은 빠른대전이라 밴률 없음
+- 9개 랭크(전체~챔피언) × 전 영웅 픽률·승률·밴률·통합 메타지수·존재감·밴 효율 수집
+- 90일 히스토리 rolling 업데이트 (밴률·존재감 포함)
+- **통합 메타 점수 공식** (ban 데이터 있을 때):
+  - `win_score × 0.55 + pick_score × 0.25 + ban_score × 0.20`
   - `win_score = clamp((win_rate - 40) / 20, 0, 1) × 100`
   - `pick_score = (pick_rate / 최대픽률) × 100`
+  - `ban_score = (ban_rate / 최대밴률) × 100`
+  - ban 데이터 없을 때 fallback: `win_score × 0.60 + pick_score × 0.40`
+- **파생 지수**:
+  - `presence_rate` (존재감): `min(pick_rate + ban_rate, 100)` — 픽 또는 밴으로 경기에 관여하는 비율
+  - `ban_efficiency` (밴 효율): `ban_rate × (win_rate / 50)` 정규화 0~100 — 밴 가치가 실제로 높은 영웅
 - **티어 기준**: S(≥75) / A(≥45) / B(≥35) / C(≥22) / D(<22)
 - **Blizzard API 이상 감지** (`generate_data.py`): 특정 랭크 데이터가 전체와 동일하면 stale 캐시 → `meta_baseline.json` 순으로 폴백
+- **portrait_url 안정화**: 업데이트 전 기존 `meta.json`에서 `saved_portrait_map` 구축 → stale 캐시/fallback 복구 시 portrait을 빈 문자열로 덮어쓰지 않음
 
 ### `bot/utils/scrapers/stadium_scraper.py`
 - **소스**: `https://stadiumbuilds.io/`
@@ -57,11 +65,12 @@ asyncio.run(run())
 - **소스**: `https://overwatch.blizzard.com/ko-kr/news/patch-notes/`
 - 최근 14일 이내 패치 수집
 - 한국어 URL이지만 패치 초기에는 영어로 제공될 수 있음 → 번역 로직 적용
+- `hero_changes` 각 항목에 `portrait_url` 저장: `_generate_meta()`에서 구축한 한국어 영웅명→portrait 맵을 `_generate_patch(portrait_by_name=...)`에 전달. 기존 `patch.json`에 이미 portrait이 있으면 유지
 
 ## 번역 파이프라인
 
 ### `bot/utils/translator.py`
-- **모델**: `moonshotai/kimi-k2-instruct` (NVIDIA API)
+- **모델**: `meta/llama-3.3-70b-instruct` (NVIDIA API)
 - **배치 처리**: 최대 10건/요청
 - **캐시**: 프로세스 내 메모리 캐시 (`_CACHE` dict)
 - **재시도**: 429 시 지수 백오프 (최대 5회)
@@ -162,6 +171,6 @@ summarize_list(texts)              # 3줄 요약
 
 | 시크릿 | 용도 |
 |--------|------|
-| `NVIDIA_API_KEY` | NVIDIA API (Kimi K2, 번역·요약) |
+| `NVIDIA_API_KEY` | NVIDIA API (Llama 3.3 70B, 번역·요약) |
 
 Settings → Secrets and variables → Actions 에서 등록.

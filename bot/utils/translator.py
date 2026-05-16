@@ -1,5 +1,5 @@
 """
-영어 → 한국어 번역 / 요약 유틸리티 (NVIDIA API, Llama 3.3 70B Instruct).
+영어 → 한국어 번역 / 요약 유틸리티 (NVIDIA API — meta/llama-3.3-70b-instruct).
 
 환경변수 NVIDIA_API_KEY 필요.
 배치 처리로 API 호출 최소화 (최대 10건/요청).
@@ -136,7 +136,7 @@ def _batch_process(texts: list[str], prompt: str, prefix: str, label: str, heroe
 
 
 def _call_api(texts: list[str], prompt_template: str, glossary_section: str = "") -> list[str]:
-    """NVIDIA API (Kimi K2 Instruct) 배치 호출. 429 시 지수 대기 재시도. 최종 실패 시 원본 반환."""
+    """NVIDIA API (Llama 3.3 70B Instruct) 배치 호출. 429 시 지수 대기 재시도. 최종 실패 시 원본 반환."""
     global _last_api_call
 
     elapsed = time.time() - _last_api_call

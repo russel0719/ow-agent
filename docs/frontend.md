@@ -9,15 +9,16 @@ public/
 ├── style.css        # 다크 테마 커스텀 CSS
 └── views/
     ├── home.js      # 홈 대시보드 (AI 요약, 꿀/똥 영웅 TOP3, 초상화 버블 차트)
-    ├── meta.js      # 메타 통계 + 90일 히스토리 차트 + 패치 세로선
+    ├── meta.js      # 메타 통계 + 밴률 + 90일 히스토리 차트 + 패치 세로선
+    ├── analysis.js  # 메타 분석 (통합 지수·존재감·밴 효율 시각화)
     ├── stadium.js   # 스타디움 빌드 카드
-    ├── patch.js     # 패치노트 뷰
+    ├── patch.js     # 패치노트 뷰 (영웅 portrait_url 직접 사용)
     └── chat.js      # AI 챗봇 (플로팅 FAB + 팝업)
 ```
 
 ## 라우팅 (`public/app.js`)
 
-Hash 기반 SPA 라우터. URL 해시(`#home`, `#meta`, `#stadium`, `#patch`)에 따라 뷰 마운트. 기본 진입점은 `#home`.
+Hash 기반 SPA 라우터. URL 해시(`#home`, `#meta`, `#analysis`, `#stadium`, `#patch`)에 따라 뷰 마운트. 기본 진입점은 `#home`.
 
 ```javascript
 // 데이터 로드 (캐시 포함)
@@ -35,7 +36,7 @@ const data = await loadJSON('meta');   // public/data/meta.json
 
 `getPortraitIndex()` (export):
 - `meta.json`에서 `hero_id → portrait_url` 인덱스 빌드 (최초 1회, 이후 캐시)
-- `stadium.js`, `patch.js`, `home.js`에서 초상화 표시에 재사용
+- `stadium.js`, `patch.js`, `home.js`, `analysis.js`에서 초상화 표시에 재사용
 
 ## 뷰 컴포넌트
 
@@ -43,7 +44,7 @@ const data = await loadJSON('meta');   // public/data/meta.json
 진입 시 첫 화면. 세 섹션으로 구성:
 
 **AI 주간 메타 요약**
-- 상승·하락 TOP5, 현재 S/A 티어, 최근 패치 요약을 컨텍스트로 구성해 Cloudflare Worker(Kimi K2)에 요청
+- 상승·하락 TOP5, 현재 S/A 티어, 최근 패치 요약을 컨텍스트로 구성해 Cloudflare Worker(Llama 3.3 70B)에 요청
 - 결과를 `sessionStorage['ow2-summary-{latestDate}']`에 캐시 → 같은 탭 재방문 시 재호출 없음
 - 헤더에 "N월 D일 데이터 기준" 표시
 
@@ -59,11 +60,32 @@ const data = await loadJSON('meta');   // public/data/meta.json
 - 기준선: 승률 50% 수평선 + 평균 픽률 수직선 + 사분면 레이블
 
 ### `views/meta.js`
-- 랭크별·맵별 영웅 픽률·승률·티어 카드/테이블
+- 랭크별·맵별 영웅 픽률·승률·밴률·티어 카드/테이블
+- 카드 표시 순서: 픽률 → 밴률(있을 때) → 승률, 글자색 흰색 통일
+- 테이블: 밴 데이터 있을 때 밴률 컬럼 자동 표시 (클릭 정렬 지원)
 - Chart.js로 90일 히스토리 라인차트 렌더링
 - 티어 필터, 역할군 필터 (탱커/딜러/지원가)
-- 영웅 클릭 → 패치 이력 상세 패널 (스타디움 빌드 섹션 제거됨)
+- 영웅 클릭 → 패치 이력 상세 패널
 - **패치 날짜 세로선**: `patch.json` 로드 후 `makePatchLinePlugin(dates)`로 Chart.js 커스텀 플러그인 생성
+
+### `views/analysis.js`
+메타 분석 전용 탭. 밴률 데이터를 활용한 4개 섹션:
+
+**섹션 A — 지수 요약 카드** (3개 가로 배열):
+- **통합 메타 지수**: `win×0.55 + pick×0.25 + ban×0.20` — 종합 파워
+- **존재감 지수**: `pick_rate + ban_rate` — 경기 관여 비율
+- **밴 효율 지수**: `ban_rate × (win_rate/50)` 정규화 — 밴 가치가 실제로 높은 영웅
+- 각 지수 Top 5 영웅 목록 + 초상화 표시
+- ban 데이터 없을 때 fallback 공식 안내 배너 표시
+
+**섹션 B — 버블 차트**:
+- X축: 존재감, Y축: 통합 메타지수, 버블 크기: 밴 효율
+- 역할별 색상, 사분면 레이블 (메타 지배자 / 숨겨진 강캐 / 인기 but 약세 / 비주류)
+
+**섹션 C — 종합 지수 테이블**: 전 지수 컬럼 클릭 정렬
+
+**섹션 D — 밴 효율 TOP15 수평 바 차트** (ban 데이터 없으면 숨김)
+- 하단에 밴 효율 계산 방식 설명 패널 포함
 
 ### `views/stadium.js`
 - 역할군별 영웅 카드 레이아웃
@@ -75,6 +97,7 @@ const data = await loadJSON('meta');   // public/data/meta.json
 - 티어 배지: 전체 랭크 기준 현재 티어 표시
 - 날짜 옆 경과일 표시 ("N일 전" / "오늘")
 - 스타디움/본게임 뱃지 구분
+- 초상화: `h.portrait_url` (patch.json 직접 저장) 우선 → `portraitIndex[heroId]` fallback
 
 ### `views/chat.js`
 - 플로팅 버튼(FAB) + 팝업 챗봇 UI

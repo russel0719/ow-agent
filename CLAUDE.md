@@ -24,20 +24,20 @@ python -m http.server 8080 --directory public
 |------|------|
 | `public/` | GitHub Pages 서빙 루트 (웹 앱 정적 파일) |
 | `public/data/` | 자동 생성 JSON (GitHub Actions가 매일 커밋) |
-| `public/views/` | 뷰 컴포넌트 (meta, stadium, patch, chat) |
+| `public/views/` | 뷰 컴포넌트 (home, meta, analysis, stadium, patch, chat) |
 | `bot/utils/` | 크롤러, 번역기, 용어집 유틸리티 |
 | `scripts/generate_data.py` | 전체 데이터 생성 스크립트 (Actions 진입점) |
 | `data/heroes.json` | 영웅 DB — 카운터·시너지·팁 (수동 관리) |
 | `data/ow_glossary.json` | 번역 용어집 — 영웅명·스킬명 (수동 관리) |
-| `cloudflare-worker/worker.js` | 챗봇 AI 프록시 (NVIDIA API + KV 일일 제한) |
+| `public/views/analysis.js` | 메타 분석 탭 — 통합 지수·존재감·밴 효율 시각화 |
+| `cloudflare-worker/worker.js` | 챗봇·AI 요약 프록시 (NVIDIA API + KV 일일 제한) |
 | `.github/workflows/update-data.yml` | 매일 15:00 KST 자동 갱신 + Pages 배포 |
 
 ## 환경변수
 
 | 변수 | 필수 | 용도 |
 |------|------|------|
-| `GEMINI_API_KEY` | ✅ | 번역·요약 (Google Gemini) |
-| `NVIDIA_API_KEY` | ✅ | 챗봇 AI (Kimi K2) + 로컬 번역 |
+| `NVIDIA_API_KEY` | ✅ | 챗봇 AI + 번역·요약 (meta/llama-3.3-70b-instruct) |
 
 GitHub Actions: **Settings → Secrets** 에 등록.
 로컬 개발: `.env` 파일에 설정 (`.env.example` 참고).

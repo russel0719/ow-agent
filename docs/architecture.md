@@ -23,7 +23,8 @@ https://russel0719.github.io/ow-agent/
 [사용자 브라우저]
 public/index.html + app.js + views/
   ├── 홈 대시보드 (home.js) — AI 요약, TOP3, 초상화 버블 차트
-  ├── 메타 통계 (meta.js) — 패치 날짜 세로선 포함
+  ├── 메타 통계 (meta.js) — 랭크별/맵별, 밴률 포함, 패치 세로선
+  ├── 메타 분석 (analysis.js) — 통합 지수·존재감·밴 효율 시각화
   ├── 스타디움 빌드 (stadium.js)
   ├── 패치노트 (patch.js)
   └── AI 챗봇 (chat.js)
@@ -32,7 +33,7 @@ public/index.html + app.js + views/
 Cloudflare Worker (worker.js)
   ├── GET: 남은 횟수 조회
   ├── KV: 전체 일일 20회 제한 (ow:chat:YYYY-MM-DD)
-  └── NVIDIA API → Kimi K2 Instruct
+  └── NVIDIA API → Llama 3.3 70B Instruct
         │ 응답 + X-Remaining-Count 헤더
         ▼
 [브라우저: 남은 횟수 UI 업데이트]
@@ -43,8 +44,8 @@ Cloudflare Worker (worker.js)
 | 영역 | 기술 |
 |------|------|
 | 백엔드 (데이터 수집) | Python 3.11, aiohttp, BeautifulSoup4 (패치노트), uv |
-| 번역·요약 | NVIDIA API (Kimi K2 Instruct) |
-| 챗봇 AI | NVIDIA API (Kimi K2 Instruct) |
+| 번역·요약 | NVIDIA API (Llama 3.3 70B Instruct) |
+| 챗봇 AI | NVIDIA API (Llama 3.3 70B Instruct) |
 | 프론트엔드 | Vanilla JS (ES Modules), Chart.js, Tailwind CSS |
 | 챗봇 프록시 | Cloudflare Worker + KV |
 | 배포 | GitHub Pages + GitHub Actions (Actions 기반 배포) |
@@ -54,7 +55,7 @@ Cloudflare Worker (worker.js)
 | 파일 | 역할 |
 |------|------|
 | `scripts/generate_data.py` | Actions 진입점. 크롤링→번역→JSON 저장 전체 조율 |
-| `bot/utils/scrapers/meta_scraper.py` | Blizzard JSON API(`/rates/data/`) 크롤러. 랭크별 픽률·승률 수집 |
+| `bot/utils/scrapers/meta_scraper.py` | Blizzard JSON API(`/rates/data/?rq=1`) 크롤러. 랭크별 픽률·승률·밴률 수집 |
 | `bot/utils/scrapers/stadium_scraper.py` | stadiumbuilds.io 빌드 크롤러 |
 | `bot/utils/scrapers/patch_scraper.py` | Blizzard 패치노트 크롤러 (ko-kr) |
 | `bot/utils/translator.py` | NVIDIA API 배치 번역·요약 (캐시 포함) |
@@ -64,6 +65,7 @@ Cloudflare Worker (worker.js)
 | `data/ow_glossary.json` | 번역 용어집 (공통 + 영웅별 스킬명) — 수동 관리 |
 | `public/app.js` | SPA 라우터 + `loadJSON()` + `WORKER_URL` / `getPortraitIndex()` export |
 | `public/views/home.js` | 홈 대시보드 (AI 요약, 꿀/똥 TOP3, 초상화 버블 차트) |
+| `public/views/analysis.js` | 메타 분석 탭 (통합 메타·존재감·밴 효율 지수 + 버블 차트 + 테이블) |
 | `cloudflare-worker/worker.js` | CORS 프록시 + KV 일일 제한 + GET 남은 횟수 조회 |
 
 ## 데이터 흐름
@@ -101,11 +103,11 @@ _name_to_id() 테이블 빌드
 
 | 파일 | 내용 | 갱신 주기 |
 |------|------|-----------|
-| `meta.json` | 9개 랭크 × 영웅별 픽률·승률·티어 | 매일 |
-| `meta_history.json` | 90일 rolling 히스토리 | 매일 |
+| `meta.json` | 9개 랭크 × 영웅별 픽률·승률·밴률·통합 메타지수·존재감·밴 효율·티어 | 매일 |
+| `meta_history.json` | 90일 rolling 히스토리 (밴률·존재감 포함) | 매일 |
 | `map_meta.json` | 맵별 메타 통계 | 매일 |
 | `map_meta_history.json` | 14일 맵 히스토리 | 매일 |
 | `stadium.json` | 영웅별 스타디움 빌드 (번역+요약) | 매일 |
-| `patch.json` | 최근 패치노트 + `translation_source` 필드 | 매일 |
+| `patch.json` | 최근 패치노트 + `translation_source` + 영웅별 `portrait_url` | 매일 |
 | `heroes.json` | 영웅 DB 복사본 | 매일 |
 | `last_updated.json` | 갱신 타임스탬프 | 매일 |

@@ -5,6 +5,7 @@
  */
 import { renderHome } from './views/home.js';
 import { renderMeta } from './views/meta.js?v=5';
+import { renderAnalysis } from './views/analysis.js?v=1';
 import { renderStadium } from './views/stadium.js?v=4';
 import { renderPatch } from './views/patch.js?v=4';
 import { mountChat } from './views/chat.js?v=1';
@@ -52,10 +53,11 @@ export async function getPortraitIndex() {
 
 // ── 라우터 ────────────────────────────────────────────────────────────────────
 const VIEWS = {
-  home:    renderHome,
-  meta:    renderMeta,
-  stadium: renderStadium,
-  patch:   renderPatch,
+  home:     renderHome,
+  meta:     renderMeta,
+  analysis: renderAnalysis,
+  stadium:  renderStadium,
+  patch:    renderPatch,
 };
 
 const app = document.getElementById('app');

@@ -130,6 +130,16 @@ def _load(path: Path) -> object:
 
 async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
     """전 랭크 메타 통계 스크래핑 → meta.json 생성."""
+    # 기존 meta.json에서 portrait_url 보존 맵 구축 — 업데이트 중 덮어쓰기 방지
+    saved_portrait_map: dict[str, str] = {}
+    existing_meta = _load(DOCS_DATA / "meta.json")
+    if isinstance(existing_meta, dict):
+        for heroes in existing_meta.values():
+            for h in (heroes if isinstance(heroes, list) else []):
+                pid = h.get("hero_id", "")
+                if pid and h.get("portrait_url") and pid not in saved_portrait_map:
+                    saved_portrait_map[pid] = h["portrait_url"]
+
     all_ranks: dict[str, list] = {}
     failed = 0
 
@@ -157,7 +167,10 @@ async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
         global_key = frozenset(
             (h["hero_id"], h["pick_rate"], h["win_rate"]) for h in all_ranks["전체"]
         )
-        portrait_map = {h["hero_id"]: h.get("portrait_url", "") for h in all_ranks["전체"]}
+        portrait_map = {
+            h["hero_id"]: h.get("portrait_url") or saved_portrait_map.get(h["hero_id"], "")
+            for h in all_ranks["전체"]
+        }
         for rank_ko in list(all_ranks.keys()):
             if rank_ko in ("전체", "챔피언"):
                 continue
@@ -168,7 +181,7 @@ async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
                 stale = cache.get_stale(f"meta_{rank_ko}")
                 if stale:
                     for h in stale:
-                        h["portrait_url"] = portrait_map.get(h["hero_id"], "")
+                        h["portrait_url"] = portrait_map.get(h["hero_id"]) or saved_portrait_map.get(h["hero_id"], "")
                         h["tier"] = _score_to_tier(h["meta_score"])
                     all_ranks[rank_ko] = stale
                     logger.info(f"  동일 데이터 감지 → stale 캐시 교체: {rank_ko}")
@@ -178,7 +191,7 @@ async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
                     if fallback:
                         hero_dicts = [_hero_to_dict(h) for h in fallback]
                         for h in hero_dicts:
-                            h["portrait_url"] = portrait_map.get(h["hero_id"], "")
+                            h["portrait_url"] = portrait_map.get(h["hero_id"]) or saved_portrait_map.get(h["hero_id"], "")
                         all_ranks[rank_ko] = hero_dicts
                         logger.info(f"  동일 데이터 감지 → fallback 교체: {rank_ko}")
 
@@ -202,15 +215,17 @@ def _update_history(all_ranks: dict) -> None:
         if rank_ko not in history:
             history[rank_ko] = {}
 
-        # 오늘 스냅샷 저장 (점수·픽률·승률·티어만 저장해 크기 절약)
+        # 오늘 스냅샷 저장 (점수·픽률·승률·밴률·존재감·티어만 저장해 크기 절약)
         history[rank_ko][today] = [
             {
-                "hero_id": h["hero_id"],
-                "hero_name": h["hero_name"],
-                "meta_score": h["meta_score"],
-                "pick_rate": h["pick_rate"],
-                "win_rate": h["win_rate"],
-                "tier": h["tier"],
+                "hero_id":       h["hero_id"],
+                "hero_name":     h["hero_name"],
+                "meta_score":    h["meta_score"],
+                "pick_rate":     h["pick_rate"],
+                "win_rate":      h["win_rate"],
+                "ban_rate":      h.get("ban_rate", 0.0),
+                "presence_rate": h.get("presence_rate", 0.0),
+                "tier":          h["tier"],
             }
             for h in all_ranks[rank_ko]
         ]
@@ -272,13 +287,16 @@ def _update_map_history(map_result: dict) -> None:
 
 def _hero_to_dict(h) -> dict:
     d = {
-        "hero_id": h.hero_id,
-        "hero_name": h.hero_name,
-        "role": h.role,
-        "pick_rate": h.pick_rate,
-        "win_rate": h.win_rate,
-        "meta_score": h.meta_score,
-        "tier": h.tier,
+        "hero_id":        h.hero_id,
+        "hero_name":      h.hero_name,
+        "role":           h.role,
+        "pick_rate":      h.pick_rate,
+        "win_rate":       h.win_rate,
+        "ban_rate":       h.ban_rate,
+        "meta_score":     h.meta_score,
+        "tier":           h.tier,
+        "presence_rate":  h.presence_rate,
+        "ban_efficiency": h.ban_efficiency,
     }
     if h.portrait_url:
         d["portrait_url"] = h.portrait_url
@@ -317,7 +335,10 @@ async def _generate_stadium(session: aiohttp.ClientSession, force: bool = False)
 
 # ── 패치 노트 ─────────────────────────────────────────────────────────────────
 
-async def _generate_patch(session: aiohttp.ClientSession) -> bool:
+async def _generate_patch(
+    session: aiohttp.ClientSession,
+    portrait_by_name: dict[str, str] | None = None,
+) -> bool:
     """최근 14일 패치 노트 → patch.json 생성 (누적 리스트)."""
     try:
         patches = await fetch_recent_patches(session, days=14)
@@ -335,17 +356,29 @@ async def _generate_patch(session: aiohttp.ClientSession) -> bool:
             if patch.date in seen_dates:
                 continue
             seen_dates.add(patch.date)
+            existing = existing_by_date.get(patch.date)
+
+            # 기존 패치의 영웅별 portrait_url 보존
+            existing_hc_portraits = {
+                hc["hero"]: hc.get("portrait_url", "")
+                for hc in (existing.get("hero_changes", []) if existing else [])
+            }
             data = {
                 "title": patch.title,
                 "date": patch.date,
                 "url": patch.url,
                 "hero_changes": [
-                    {"hero": hc.hero, "changes": hc.changes, "is_stadium": hc.is_stadium}
+                    {
+                        "hero": hc.hero,
+                        "changes": hc.changes,
+                        "is_stadium": hc.is_stadium,
+                        "portrait_url": (portrait_by_name or {}).get(hc.hero, "")
+                                        or existing_hc_portraits.get(hc.hero, ""),
+                    }
                     for hc in patch.hero_changes
                 ],
                 "general_changes": patch.general_changes,
             }
-            existing = existing_by_date.get(patch.date)
             data = _translate_patch_data(data, existing)
             result.append(data)
 
@@ -587,8 +620,15 @@ async def main() -> None:
         # 3. 스타디움 빌드
         sources["stadium"] = "live" if await _generate_stadium(session, force=args.force_stadium) else "fallback"
 
-        # 4. 패치 노트
-        sources["patch"] = "live" if await _generate_patch(session) else "fallback"
+        # 4. 패치 노트 (메타 portrait_url을 영웅명 기준으로 전달)
+        portrait_by_name: dict[str, str] = {}
+        if all_ranks:
+            for heroes in all_ranks.values():
+                for h in heroes:
+                    name = h.get("hero_name", "")
+                    if name and h.get("portrait_url") and name not in portrait_by_name:
+                        portrait_by_name[name] = h["portrait_url"]
+        sources["patch"] = "live" if await _generate_patch(session, portrait_by_name=portrait_by_name) else "fallback"
 
     # 4. 영웅 DB 복사
     _copy_heroes()

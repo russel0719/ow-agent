@@ -17,3 +17,6 @@ bot.log
 
 # 런타임 캐시
 data/cache/
+
+# Cloudflare Wrangler 로컬 캐시
+cloudflare-worker/.wrangler/

@@ -1,0 +1,18 @@
+{
+  "name": "OW2 메타 대시보드",
+  "short_name": "OW2 메타",
+  "description": "오버워치 2 영웅 픽률·승률·밴률 메타 통계 대시보드",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#161B22",
+  "background_color": "#0D1117",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "ko"
+}
