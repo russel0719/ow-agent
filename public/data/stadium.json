@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 198,
+      "upvotes": 200,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -208,7 +208,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "능력 파워",
-      "upvotes": 127,
+      "upvotes": 128,
       "stats": {
         "LIFE": 327,
         "Armor": 200,
@@ -246,7 +246,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 727,
+      "upvotes": 728,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -319,7 +319,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 44,
+      "upvotes": 46,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -356,7 +356,7 @@
       "code": "JNKZ7",
       "description": "둠피스트 기술 위력 버스트 빌드. 생존성과 가동 시간 확보로 초반 자원 확보와 지속 전투 능력 강화.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 44,
+      "upvotes": 45,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -510,7 +510,7 @@
       "code": "FTTB0",
       "description": "프레야 하이브리드 빌드. 우클릭 원샷과 생존성 중심으로 초반 돈 확보.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 814,
+      "upvotes": 813,
       "stats": {
         "LIFE": 383,
         "Shield": 75,
@@ -527,7 +527,7 @@
       "code": "YP3PR",
       "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 195,
+      "upvotes": 194,
       "stats": {
         "LIFE": 402,
         "Shield": 50,
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하는 바운싱 비스킷으로 근처 동료에게 힐이 반사되어 원래 힐링 대상에게 힐링이 됩니다.",
       "playstyle": "무기 파워",
-      "upvotes": 31,
+      "upvotes": 36,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -796,7 +796,7 @@
       "code": "96GA5",
       "description": "현재 6연승 중인 슈퍼플렉서 빌드. 이 빌드는 탱커 뒤에서 안전하게 비행할 수 있도록 해준다.",
       "playstyle": "무기 파워",
-      "upvotes": 17,
+      "upvotes": 19,
       "stats": {
         "LIFE": 444,
         "Shield": 75,
@@ -812,7 +812,7 @@
       "code": "BDPF8",
       "description": "퍼는 이 빌드에서 중요한 기술로, 오라를 통해 지속적인 힐링과 피해를 줍니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 5,
+      "upvotes": 7,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -823,6 +823,24 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$"
+    },
+    {
+      "name": "하이브리드 퍼 오펜시브",
+      "code": "JPXJW",
+      "description": "제트팩 캣 빌드는 강력한 힐을 통해 팀을 지원하면서도 공격적인 위협으로 남는 것을 목표로 합니다. 팀을 지원하기 위해 지속적인 힐이나 피해를 주는 퍼를 사용합니다.",
+      "playstyle": "혼합 파워 · 생명력 흡수",
+      "upvotes": 3,
+      "stats": {
+        "LIFE": 382,
+        "Shield": 50,
+        "Total LIFE": 432,
+        "Attack Speed": 20,
+        "Weapon Power": 50,
+        "Ability Power": 45,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$$"
     },
     {
       "name": "AP 궁극기 스팸",
@@ -839,24 +857,6 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$"
-    },
-    {
-      "name": "하이브리드 퍼 오펜시브",
-      "code": "JPXJW",
-      "description": "제트팩 캣 빌드는 강력한 힐을 통해 팀을 지원하면서도 공격적인 위협으로 남는 것을 목표로 합니다. 팀을 지원하기 위해 지속적인 힐이나 피해를 주는 퍼를 사용합니다.",
-      "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 2,
-      "stats": {
-        "LIFE": 382,
-        "Shield": 50,
-        "Total LIFE": 432,
-        "Attack Speed": 20,
-        "Weapon Power": 50,
-        "Ability Power": 45,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
-      },
-      "cost": "$$$"
     }
   ],
   "Junker Queen": [
@@ -1064,7 +1064,7 @@
       "code": "T5QKR",
       "description": "Beesting 빌드의 업데이트판. 장단점을 계속 파악하며 개선 중.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 332,
+      "upvotes": 333,
       "stats": {
         "LIFE": 119,
         "Armor": 160,
@@ -1100,7 +1100,7 @@
       "code": "35AAN",
       "description": "주노 메디마스터 빌드로 2026 시즌 2 기준 최신 설정. 메디블래스터와 하이퍼 링 중심으로 팀원 회복과 기동성을 극대화하는 지원형 플레이.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 195,
+      "upvotes": 196,
       "stats": {
         "LIFE": 208,
         "Shield": 175,
@@ -1118,7 +1118,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1520,
+      "upvotes": 1521,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1385,9 +1385,9 @@
       "playstyle": "능력 파워 · 재사용 단축",
       "upvotes": 908,
       "stats": {
-        "LIFE": 345,
+        "LIFE": 338,
         "Armor": 50,
-        "Total LIFE": 395,
+        "Total LIFE": 388,
         "Weapon Power": 10,
         "Ability Power": 70,
         "Cooldown Reduction": 20
@@ -1451,7 +1451,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1315,
+      "upvotes": 1316,
       "stats": {
         "LIFE": 425,
         "Total LIFE": 425,
@@ -1708,7 +1708,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 202,
+      "upvotes": 204,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1746,7 +1746,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 28,
+      "upvotes": 29,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -2261,7 +2261,7 @@
       "code": "PTGPY",
       "description": "",
       "playstyle": "무기 파워",
-      "upvotes": 86,
+      "upvotes": 87,
       "stats": {
         "LIFE": 387,
         "Armor": 100,
@@ -2522,7 +2522,7 @@
       "code": "C82CE",
       "description": "베네타 너프로 인해 기존 빌드 효율 하락. 방어막·공격 범위 축소로 현재 빌드 사용 불가.",
       "playstyle": "무기 파워",
-      "upvotes": 13,
+      "upvotes": 14,
       "stats": {
         "LIFE": 276,
         "Armor": 200,
@@ -2665,6 +2665,22 @@
       "cost": "$$"
     },
     {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$"
+    },
+    {
       "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
@@ -2678,22 +2694,6 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
