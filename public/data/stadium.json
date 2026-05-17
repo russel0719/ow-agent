@@ -208,7 +208,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "능력 파워",
-      "upvotes": 129,
+      "upvotes": 130,
       "stats": {
         "LIFE": 327,
         "Armor": 200,
@@ -757,19 +757,19 @@
       "cost": "$$"
     },
     {
-      "name": "87% 승률, 무적 (전설 빌드)",
-      "code": "PVE8F",
-      "description": "해저드: 멈출 수 없는 도약 스팸 빌드 우리가 벽을 쌓는 것이 아니라, 적의 사망자를 늘리는 것입니다. > 당신의 역할은 적의 후방에서 살아남고 적의 지원가의 화면을 영원히 회색으로 유지하는 것입니다. 이렇게 하면 됩니다. --- HOW TO PLAY: 단순한 폭력의 기술",
-      "playstyle": "능력 파워 · 고체력",
+      "name": "124K 데미지?! 랭크 1 해저드 빌드는 너무 강력하다",
+      "code": "T06Q4",
+      "description": "",
+      "playstyle": "메타 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 706,
+        "LIFE": 704,
         "Armor": 225,
-        "Total LIFE": 931,
+        "Total LIFE": 929,
         "Weapon Power": 0,
-        "Ability Power": 70,
+        "Ability Power": 85,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 5
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -2665,6 +2665,22 @@
       "cost": "$$"
     },
     {
+      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
+      "code": "DH9V8",
+      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 87,
+      "stats": {
+        "LIFE": 338,
+        "Shield": 75,
+        "Total LIFE": 413,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$"
+    },
+    {
       "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
@@ -2678,22 +2694,6 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 87,
-      "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$"
     },
