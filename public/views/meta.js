@@ -500,6 +500,43 @@ function makePatchLinePlugin(dates) {
   };
 }
 
+function makeBanStartPlugin(dates, rankData) {
+  if (!rankData || !dates?.length) return null;
+
+  let banStartIdx = -1;
+  for (let i = 0; i < dates.length; i++) {
+    if ((rankData[dates[i]] ?? []).some(h => h.ban_rate != null)) {
+      banStartIdx = i;
+      break;
+    }
+  }
+  // 첫 날짜이거나 없으면 표시 생략
+  if (banStartIdx <= 0) return null;
+
+  return {
+    id: 'banStartLine',
+    afterDraw(chart) {
+      const { ctx, chartArea, scales } = chart;
+      ctx.save();
+      ctx.strokeStyle = 'rgba(139, 92, 246, 0.7)';
+      ctx.lineWidth = 1.5;
+      ctx.setLineDash([5, 3]);
+
+      const x = (scales.x.getPixelForValue(banStartIdx - 1) + scales.x.getPixelForValue(banStartIdx)) / 2;
+      ctx.beginPath();
+      ctx.moveTo(x, chartArea.top);
+      ctx.lineTo(x, chartArea.bottom);
+      ctx.stroke();
+
+      ctx.setLineDash([]);
+      ctx.fillStyle = 'rgba(139, 92, 246, 0.9)';
+      ctx.font = 'bold 9px sans-serif';
+      ctx.fillText('밴 도입', x + 3, chartArea.top + 22);
+      ctx.restore();
+    },
+  };
+}
+
 // ── 차트 렌더링 ───────────────────────────────────────────────────────────────
 
 function renderChart(container) {
@@ -571,6 +608,7 @@ function renderOverviewChart(container) {
   });
 
   const patchPlugin = makePatchLinePlugin(dates);
+  const banPlugin = makeBanStartPlugin(dates, rankData);
   activeChart = new Chart(canvas, {
     type: 'line',
     data: { labels: labelDates, datasets },
@@ -598,14 +636,14 @@ function renderOverviewChart(container) {
         y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
-    plugins: patchPlugin ? [patchPlugin] : [],
+    plugins: [patchPlugin, banPlugin].filter(Boolean),
   });
 }
 
 function renderHistoryChart(container) {
   const color = HERO_COLOR[selectedHeroId] ?? FALLBACK_COLOR;
   container.querySelector('#chart-title').textContent =
-    `${selectedHeroName} — 메타 점수 추이 (${currentRank})`;
+    `${selectedHeroName} — 메타점수·픽률·승률 추이 (${currentRank})`;
   container.querySelector('#chart-scroll').style.maxHeight = CHART_MAXH();
 
   const wrapper = container.querySelector('#chart-wrapper');
@@ -614,7 +652,10 @@ function renderHistoryChart(container) {
   if (!rankData) { wrapper.innerHTML = noDataMsg('히스토리 데이터가 없습니다.'); return; }
 
   const dates = Object.keys(rankData).sort();
-  const scores = dates.map(d => rankData[d]?.find(h => h.hero_id === selectedHeroId)?.meta_score ?? null);
+  const heroEntries = dates.map(d => rankData[d]?.find(h => h.hero_id === selectedHeroId) ?? null);
+  const scores    = heroEntries.map(e => e?.meta_score ?? null);
+  const pickRates = heroEntries.map(e => e?.pick_rate  ?? null);
+  const winRates  = heroEntries.map(e => e?.win_rate   ?? null);
 
   if (!scores.some(s => s !== null)) {
     wrapper.innerHTML = noDataMsg('이 영웅의 히스토리 데이터가 없습니다.');
@@ -627,35 +668,73 @@ function renderHistoryChart(container) {
   canvas.style.width = '100%';
   canvas.style.height = CHART_H();
 
+  const ptR = dates.length <= 14 ? 3 : 2;
   const patchPlugin = makePatchLinePlugin(dates);
+  const banPlugin = makeBanStartPlugin(dates, rankData);
   activeChart = new Chart(canvas, {
     type: 'line',
     data: {
       labels: dates.map(d => d.slice(5)),
-      datasets: [{
-        label: selectedHeroName,
-        data: scores,
-        borderColor: color,
-        backgroundColor: color + '15',
-        borderWidth: 2.5,
-        pointRadius: dates.length <= 14 ? 4 : 2,
-        pointBackgroundColor: color,
-        spanGaps: true,
-        tension: 0.35,
-        fill: true,
-      }],
+      datasets: [
+        {
+          label: '메타점수',
+          data: scores,
+          borderColor: color,
+          backgroundColor: color + '15',
+          borderWidth: 2.5,
+          pointRadius: ptR,
+          pointBackgroundColor: color,
+          spanGaps: true,
+          tension: 0.35,
+          fill: true,
+        },
+        {
+          label: '픽률',
+          data: pickRates,
+          borderColor: '#60A5FA',
+          backgroundColor: 'transparent',
+          borderWidth: 1.5,
+          pointRadius: ptR,
+          pointBackgroundColor: '#60A5FA',
+          spanGaps: true,
+          tension: 0.35,
+          fill: false,
+          borderDash: [4, 2],
+        },
+        {
+          label: '승률',
+          data: winRates,
+          borderColor: '#34D399',
+          backgroundColor: 'transparent',
+          borderWidth: 1.5,
+          pointRadius: ptR,
+          pointBackgroundColor: '#34D399',
+          spanGaps: true,
+          tension: 0.35,
+          fill: false,
+          borderDash: [2, 2],
+        },
+      ],
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
       animation: { duration: 200 },
+      interaction: { mode: 'index', intersect: false },
       plugins: {
-        legend: { display: false },
+        legend: {
+          display: true,
+          labels: { color: '#9CA3AF', font: { size: 11 }, boxWidth: 16, padding: 12 },
+        },
         tooltip: {
           backgroundColor: '#161B22', borderColor: '#30363D', borderWidth: 1,
           callbacks: {
             title: ctx => dates[ctx[0].dataIndex],
-            label: ctx => ` 메타 점수: ${ctx.parsed.y?.toFixed(1) ?? 'N/A'}`,
+            label: ctx => {
+              const v = ctx.parsed.y?.toFixed(1) ?? 'N/A';
+              const unit = ctx.dataset.label === '메타점수' ? '' : '%';
+              return ` ${ctx.dataset.label}: ${v}${unit}`;
+            },
           },
         },
       },
@@ -664,7 +743,7 @@ function renderHistoryChart(container) {
         y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
-    plugins: patchPlugin ? [patchPlugin] : [],
+    plugins: [patchPlugin, banPlugin].filter(Boolean),
   });
 }
 
