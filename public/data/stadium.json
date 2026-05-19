@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 201,
+      "upvotes": 202,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -264,7 +264,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 338,
+      "upvotes": 339,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -319,7 +319,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 47,
+      "upvotes": 48,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -442,7 +442,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 285,
+      "upvotes": 286,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -523,6 +523,24 @@
       "cost": "$$"
     },
     {
+      "name": "[전설] 팀을 캐리하는 프레야 + 가이드 - 기관총과",
+      "code": "YP3PR",
+      "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 195,
+      "stats": {
+        "LIFE": 402,
+        "Shield": 50,
+        "Max Ammo": 40,
+        "Total LIFE": 452,
+        "Attack Speed": 10,
+        "Weapon Power": 25,
+        "Ability Power": 0,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "기술 위력 프레야가 망가졌다: 탑 500을 지배하는 원샷 빌드 (3",
       "code": "58SYP",
       "description": "",
@@ -536,24 +554,6 @@
         "Ability Power": 90,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "[전설] 팀을 캐리하는 프레야 + 가이드 - 기관총과",
-      "code": "YP3PR",
-      "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 194,
-      "stats": {
-        "LIFE": 402,
-        "Shield": 50,
-        "Max Ammo": 40,
-        "Total LIFE": 452,
-        "Attack Speed": 10,
-        "Weapon Power": 25,
-        "Ability Power": 0,
         "Cooldown Reduction": 5
       },
       "cost": "$$$"
@@ -651,6 +651,24 @@
       "cost": "$$$"
     },
     {
+      "name": "🐉불사의 오니🐉 - [90% 승률 / 랭크 64] (Super in depth)",
+      "code": "6V2XC",
+      "description": "",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 51,
+      "stats": {
+        "LIFE": 396,
+        "Armor": 100,
+        "Total LIFE": 496,
+        "Weapon Power": 55,
+        "Ability Power": 45,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "최강",
       "code": "CT4FA",
       "description": "",
@@ -666,24 +684,6 @@
         "Ability Lifesteal": 15
       },
       "cost": "$$"
-    },
-    {
-      "name": "🐉불사의 오니🐉 - [90% 승률 / 랭크 64] (Super in depth)",
-      "code": "6V2XC",
-      "description": "",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 50,
-      "stats": {
-        "LIFE": 396,
-        "Armor": 100,
-        "Total LIFE": 496,
-        "Weapon Power": 55,
-        "Ability Power": 45,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$$"
     }
   ],
   "Hazard": [
@@ -812,7 +812,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 7,
+      "upvotes": 8,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -825,17 +825,18 @@
       "cost": "$$"
     },
     {
-      "name": "기술 위력 궁극기 스팸",
-      "code": "7S9GX",
-      "description": "일반 정보 이것은 제가 능력치를 살펴본 후에 생각해 낸 멤 빌드입니다. 곧 노트를 추가할 것입니다.",
-      "playstyle": "능력 파워",
-      "upvotes": 3,
+      "name": "완벽한 기술 위력 빌드!",
+      "code": "KXT9C",
+      "description": "이 빌드는 많은 게임에서 승리했으며 지금까지 본 가장 강력한 빌드 중 하나일 수 있습니다. 각 기술이 함께 작동하여 퍼(Purr)로 좋은 회복량을 제공하고,同時에 일부 피해를 줄 수 있습니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 4,
       "stats": {
-        "LIFE": 350,
-        "Armor": 50,
+        "LIFE": 400,
         "Total LIFE": 400,
-        "Weapon Power": 0,
+        "Weapon Power": 10,
         "Ability Power": 85,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
         "Cooldown Reduction": 5
       },
       "cost": "$$"
@@ -865,7 +866,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1741,
+      "upvotes": 1742,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1118,7 +1119,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1522,
+      "upvotes": 1523,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1383,7 +1384,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 912,
+      "upvotes": 913,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1566,7 +1567,7 @@
       "code": "008C9",
       "description": "라운드 3부터 라운드당 1.2만 피해와 75% 이상 피해 감소로 ‘불사 오리사’를 구현한 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 123,
+      "upvotes": 124,
       "stats": {
         "LIFE": 696,
         "Armor": 506,
@@ -1822,7 +1823,7 @@
       "code": "16XHY",
       "description": "리퍼의 사형 집행으로 지속적인 회복과 생명력 흡수로 살아남으며 광역 딜링을 하는 빌드. 올스타 달성.",
       "playstyle": "재미용 · 생명력 흡수",
-      "upvotes": 192,
+      "upvotes": 193,
       "stats": {
         "LIFE": 438,
         "Move Speed": 20,
@@ -2115,7 +2116,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 45,
+      "upvotes": 46,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2169,7 +2170,7 @@
       "code": "ARDCK",
       "description": "현재 전설 랭크 사용 중, 하이브리드 딜과 점핑 빈 빌드 링크 포함",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 450,
+      "upvotes": 451,
       "stats": {
         "LIFE": 383,
         "Armor": 50,
@@ -2389,7 +2390,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워",
-      "upvotes": 82,
+      "upvotes": 83,
       "stats": {
         "LIFE": 251,
         "Armor": 16,
@@ -2754,7 +2755,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 104,
+      "upvotes": 105,
       "stats": {
         "LIFE": 569,
         "Armor": 25,
@@ -2813,7 +2814,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1200,
+      "upvotes": 1201,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
