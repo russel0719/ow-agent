@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 202,
+      "upvotes": 203,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -264,7 +264,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 338,
+      "upvotes": 339,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -295,6 +295,25 @@
       "cost": "$$$"
     },
     {
+      "name": "IT'S PAST YOUR BEDTIME (탑 500 빌드) [UPGRADED FOR MORE IN",
+      "code": "14N84",
+      "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 54,
+      "stats": {
+        "LIFE": 407,
+        "Armor": 50,
+        "Shield": 25,
+        "Total LIFE": 482,
+        "Weapon Power": 55,
+        "Ability Power": 55,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$"
+    },
+    {
       "name": "스피디 곤잘레스 - 높은 랭크 솔로 큐에서 재미를 위한 콘셉트",
       "code": "WEPC8",
       "description": "이동 속도 중심 솔저: 76 빌드. 공수 양면 활용으로 그랜드마스터 달성.",
@@ -311,25 +330,6 @@
         "Critical Damage": 10,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "IT'S PAST YOUR BEDTIME (탑 500 빌드) [UPGRADED FOR MORE IN",
-      "code": "14N84",
-      "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 50,
-      "stats": {
-        "LIFE": 407,
-        "Armor": 50,
-        "Shield": 25,
-        "Total LIFE": 482,
-        "Weapon Power": 55,
-        "Ability Power": 55,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 10
       },
       "cost": "$$"
     }
@@ -402,21 +402,21 @@
       "cost": "$$"
     },
     {
-      "name": "랭크 1 둠피스트: 풀 딜 원샷 빌드",
-      "code": "P572C",
-      "description": "",
-      "playstyle": "혼합 파워 · 고체력",
+      "name": "고급 플레이를 위한 최고의 둠피스트 빌드 [UPDATE",
+      "code": "N40BS",
+      "description": "둠피스트의 생존과 기술 위력(AP)을 결합한 하이브리드 빌드로, 적들을 괴롭히고 후방을 보호하며 공간을 제어하는 것이 주된 역할입니다.",
+      "playstyle": "능력 파워 · 고체력",
       "upvotes": 10,
       "stats": {
-        "LIFE": 833,
+        "LIFE": 753,
         "Armor": 50,
-        "Total LIFE": 883,
-        "Weapon Power": 55,
-        "Ability Power": 70,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 20
+        "Shield": 50,
+        "Total LIFE": 853,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 10
       },
-      "cost": "$$$"
+      "cost": "$$"
     }
   ],
   "D.Va": [
@@ -523,24 +523,6 @@
       "cost": "$$"
     },
     {
-      "name": "[전설] 팀을 캐리하는 프레야 + 가이드 - 기관총과",
-      "code": "YP3PR",
-      "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 195,
-      "stats": {
-        "LIFE": 402,
-        "Shield": 50,
-        "Max Ammo": 40,
-        "Total LIFE": 452,
-        "Attack Speed": 10,
-        "Weapon Power": 25,
-        "Ability Power": 0,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "기술 위력 프레야가 망가졌다: 탑 500을 지배하는 원샷 빌드 (3",
       "code": "58SYP",
       "description": "",
@@ -554,6 +536,24 @@
         "Ability Power": 90,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$$"
+    },
+    {
+      "name": "[전설] 팀을 캐리하는 프레야 + 가이드 - 기관총과",
+      "code": "YP3PR",
+      "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 195,
+      "stats": {
+        "LIFE": 402,
+        "Shield": 50,
+        "Max Ammo": 40,
+        "Total LIFE": 452,
+        "Attack Speed": 10,
+        "Weapon Power": 25,
+        "Ability Power": 0,
         "Cooldown Reduction": 5
       },
       "cost": "$$$"
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 47,
+      "upvotes": 48,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -796,7 +796,7 @@
       "code": "96GA5",
       "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
       "playstyle": "무기 파워",
-      "upvotes": 20,
+      "upvotes": 21,
       "stats": {
         "LIFE": 444,
         "Shield": 75,
@@ -842,22 +842,22 @@
       "cost": "$$"
     },
     {
-      "name": "카미카제",
-      "code": "ZVNR2",
-      "description": "카미카제",
-      "playstyle": "무기 파워",
+      "name": "하이브리드 퍼 오펜시브",
+      "code": "JPXJW",
+      "description": "제트팩 캣 빌드로, 강력한 회복량을 제공하면서도 공격적인 위협으로 팀을 지원합니다. 퍼(회복 또는 피해)를 사용하여 팀을 지원합니다.",
+      "playstyle": "혼합 파워 · 생명력 흡수",
       "upvotes": 3,
       "stats": {
-        "LIFE": 360,
-        "Shield": 25,
-        "Total LIFE": 385,
-        "Attack Speed": 5,
-        "Weapon Power": 30,
-        "Ability Power": 15,
-        "Weapon Lifesteal": 10,
-        "Cooldown Reduction": 5
+        "LIFE": 382,
+        "Shield": 50,
+        "Total LIFE": 432,
+        "Attack Speed": 20,
+        "Weapon Power": 50,
+        "Ability Power": 45,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Junker Queen": [
@@ -1232,7 +1232,7 @@
       "code": "GCMH6",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 83,
+      "upvotes": 84,
       "stats": {
         "LIFE": 390,
         "Armor": 100,
@@ -1280,17 +1280,16 @@
       "name": "빙결 바퀴벌레 CEO ❄️🪳",
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
-      "playstyle": "무기 파워 · 고체력",
-      "upvotes": 289,
+      "playstyle": "고체력",
+      "upvotes": 290,
       "stats": {
-        "LIFE": 471,
-        "Armor": 100,
-        "Shield": 100,
-        "Total LIFE": 671,
-        "Weapon Power": 15,
-        "Ability Power": 10,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "LIFE": 538,
+        "Armor": 110,
+        "Shield": 110,
+        "Total LIFE": 758,
+        "Weapon Power": 0,
+        "Ability Power": 0,
+        "Cooldown Reduction": 5
       },
       "cost": "$$$"
     },
@@ -1384,7 +1383,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 914,
+      "upvotes": 915,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1452,7 +1451,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1316,
+      "upvotes": 1315,
       "stats": {
         "LIFE": 425,
         "Total LIFE": 425,
@@ -1511,19 +1510,17 @@
       "cost": "$$$"
     },
     {
-      "name": "깨진 모이라 볼 빌드 (3x 전설 & 탑 500)",
-      "code": "H0V3E",
-      "description": "",
-      "playstyle": "메타 · 생명력 흡수",
+      "name": "[S19 버프] 전설 모이라: HOLLOW PURPLE (AP+AS 데미지 포커스",
+      "code": "GZ7GW",
+      "description": "시즌 19 업데이트: 이 빌드의 핵심은 Optimal Overflow로 버프되었으며, 장벽을 통과하지 않는 모든 구슬이 예상대로 작동합니다.",
+      "playstyle": "능력 파워",
       "upvotes": 140,
       "stats": {
-        "LIFE": 353,
-        "Armor": 50,
-        "Total LIFE": 403,
-        "Weapon Power": 10,
-        "Ability Power": 105,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
+        "LIFE": 351,
+        "Total LIFE": 351,
+        "Attack Speed": 35,
+        "Weapon Power": 0,
+        "Ability Power": 90,
         "Cooldown Reduction": 15
       },
       "cost": "$$$"
@@ -1692,7 +1689,7 @@
       "code": "3W1KW",
       "description": "2라운드 회피 기동 대신 발사 벡터를 먼저 찍어 초반 기술 위력을 극대화하는 수정 팁.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 44,
+      "upvotes": 43,
       "stats": {
         "LIFE": 250,
         "Total LIFE": 250,
@@ -1728,28 +1725,11 @@
       "cost": "$$"
     },
     {
-      "name": "Staff 빌드 WP/공격속도 하이브리드",
-      "code": "QQ393",
-      "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
-      "playstyle": "무기 파워 · 고체력",
-      "upvotes": 30,
-      "stats": {
-        "LIFE": 673,
-        "Armor": 125,
-        "Max Ammo": 40,
-        "Total LIFE": 798,
-        "Attack Speed": 30,
-        "Weapon Power": 50,
-        "Ability Power": 0
-      },
-      "cost": "$$"
-    },
-    {
       "name": "(S1 탑 3 탱커) 🌪️ Rampaging Tornado Carry Ramattra 👾",
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 30,
+      "upvotes": 33,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1760,6 +1740,23 @@
         "Weapon Lifesteal": 25,
         "Ability Lifesteal": 25,
         "Cooldown Reduction": 5
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "Staff 빌드 WP/공격속도 하이브리드",
+      "code": "QQ393",
+      "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
+      "playstyle": "무기 파워 · 고체력",
+      "upvotes": 32,
+      "stats": {
+        "LIFE": 673,
+        "Armor": 125,
+        "Max Ammo": 40,
+        "Total LIFE": 798,
+        "Attack Speed": 30,
+        "Weapon Power": 50,
+        "Ability Power": 0
       },
       "cost": "$$"
     },
@@ -2118,7 +2115,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 47,
+      "upvotes": 48,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2451,7 +2448,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 214,
+      "upvotes": 215,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2468,7 +2465,7 @@
       "code": "SCD8T",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 76,
+      "upvotes": 78,
       "stats": {
         "LIFE": 359,
         "Armor": 220,
@@ -2655,7 +2652,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 207,
+      "upvotes": 209,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
@@ -2816,7 +2813,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1200,
+      "upvotes": 1202,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
