@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 206,
+      "upvotes": 207,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 627,
+      "upvotes": 628,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -246,7 +246,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 728,
+      "upvotes": 729,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -264,7 +264,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 339,
+      "upvotes": 340,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -523,6 +523,24 @@
       "cost": "$$"
     },
     {
+      "name": "기술 위력 프레야가 망가졌다: 탑 500을 지배하는 원샷 빌드 (3",
+      "code": "58SYP",
+      "description": "",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 197,
+      "stats": {
+        "LIFE": 411,
+        "Armor": 50,
+        "Total LIFE": 461,
+        "Weapon Power": 10,
+        "Ability Power": 90,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "[전설] 팀을 캐리하는 프레야 + 가이드 - 기관총과",
       "code": "YP3PR",
       "description": "프레야 능력 파워 극대화 빌드로 대부분의 매치업에서 안정적인 성능 발휘",
@@ -536,24 +554,6 @@
         "Attack Speed": 10,
         "Weapon Power": 25,
         "Ability Power": 0,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "기술 위력 프레야가 망가졌다: 탑 500을 지배하는 원샷 빌드 (3",
-      "code": "58SYP",
-      "description": "",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 195,
-      "stats": {
-        "LIFE": 411,
-        "Armor": 50,
-        "Total LIFE": 461,
-        "Weapon Power": 10,
-        "Ability Power": 90,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
         "Cooldown Reduction": 5
       },
       "cost": "$$$"
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 53,
+      "upvotes": 57,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -829,7 +829,7 @@
       "code": "PHX7F",
       "description": "",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 5,
+      "upvotes": 8,
       "stats": {
         "LIFE": 361,
         "Total LIFE": 361,
@@ -995,7 +995,7 @@
       "code": "VEJ9Z",
       "description": "컴페티티브와 QP 모두 가능한 정크랫 빌드. 조준 없이 폭탄만 마구 던지면서 킬과 승리를 노림.",
       "playstyle": "재미용 · 무기 파워",
-      "upvotes": 106,
+      "upvotes": 107,
       "stats": {
         "LIFE": 378,
         "Shield": 50,
@@ -1118,7 +1118,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1525,
+      "upvotes": 1526,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1181,7 +1181,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 128,
+      "upvotes": 129,
       "stats": {
         "LIFE": 488,
         "Total LIFE": 488,
@@ -1382,7 +1382,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 916,
+      "upvotes": 917,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1398,7 +1398,7 @@
       "code": "RHSFT",
       "description": "기술 위력으로 치유량을 폭발시키고 이동 속도를 극대화해 죽지 않는 메르시 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 220,
+      "upvotes": 221,
       "stats": {
         "LIFE": 366,
         "Armor": 50,
@@ -1450,7 +1450,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1315,
+      "upvotes": 1316,
       "stats": {
         "LIFE": 425,
         "Total LIFE": 425,
@@ -1513,7 +1513,7 @@
       "code": "H0V3E",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 140,
+      "upvotes": 142,
       "stats": {
         "LIFE": 353,
         "Armor": 50,
@@ -1567,7 +1567,7 @@
       "code": "008C9",
       "description": "라운드 3부터 라운드당 1.2만 피해와 75% 이상 피해 감소로 ‘불사 오리사’를 구현한 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 124,
+      "upvotes": 125,
       "stats": {
         "LIFE": 696,
         "Armor": 506,
@@ -1730,7 +1730,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 33,
+      "upvotes": 35,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1783,7 +1783,7 @@
       "code": "42JPW",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 13,
+      "upvotes": 14,
       "stats": {
         "LIFE": 722,
         "Armor": 100,
@@ -2029,7 +2029,7 @@
       "code": "F2EMJ",
       "description": "시그마 너프 반영 초반 라운드 약화된 빌드, 현재 최선의 조합이지만 체감 성능 저하 있음.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 139,
+      "upvotes": 138,
       "stats": {
         "LIFE": 606,
         "Armor": 25,
@@ -2617,7 +2617,7 @@
       "code": "ACKTS",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 61,
+      "upvotes": 63,
       "stats": {
         "LIFE": 690,
         "Armor": 225,
@@ -2653,7 +2653,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 211,
+      "upvotes": 213,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
@@ -2755,7 +2755,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 106,
+      "upvotes": 107,
       "stats": {
         "LIFE": 569,
         "Armor": 25,
