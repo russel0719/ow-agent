@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 632,
+      "upvotes": 634,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -356,7 +356,7 @@
       "code": "JNKZ7",
       "description": "둠피스트 기술 위력 버스트 빌드. 생존성과 가동 시간 확보로 초반 자원 확보와 지속 전투 능력 강화.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 48,
+      "upvotes": 50,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -406,7 +406,7 @@
       "code": "P572C",
       "description": "",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 10,
+      "upvotes": 11,
       "stats": {
         "LIFE": 833,
         "Armor": 50,
@@ -527,7 +527,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 198,
+      "upvotes": 200,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -545,7 +545,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 197,
+      "upvotes": 198,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -759,19 +759,19 @@
       "cost": "$$"
     },
     {
-      "name": "87% 승률, 죽지 않는 (전설 빌드)",
-      "code": "PVE8F",
-      "description": "해저드: 멈출 수 없는 도약 스팸 빌드. 우리는 벽을 쌓는 것이 아니라, 적의 사망자를 늘리는 것이다. 적의 지원가의 화면을 영원히 회색으로 유지하는 것이 목표이다.",
-      "playstyle": "능력 파워 · 고체력",
+      "name": "124K 데미지?! 랭크 1 해저드 빌드는 너무 강력하다",
+      "code": "T06Q4",
+      "description": "",
+      "playstyle": "메타 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 706,
+        "LIFE": 704,
         "Armor": 225,
-        "Total LIFE": 931,
+        "Total LIFE": 929,
         "Weapon Power": 0,
-        "Ability Power": 70,
+        "Ability Power": 85,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 5
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -814,7 +814,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 11,
+      "upvotes": 13,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -1066,7 +1066,7 @@
       "code": "T5QKR",
       "description": "Beesting 빌드의 업데이트판. 장단점을 계속 파악하며 개선 중.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 333,
+      "upvotes": 334,
       "stats": {
         "LIFE": 119,
         "Armor": 160,
@@ -1233,7 +1233,7 @@
       "code": "GCMH6",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 85,
+      "upvotes": 86,
       "stats": {
         "LIFE": 390,
         "Armor": 100,
@@ -1282,7 +1282,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "고체력",
-      "upvotes": 292,
+      "upvotes": 295,
       "stats": {
         "LIFE": 538,
         "Armor": 110,
@@ -1384,7 +1384,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 920,
+      "upvotes": 921,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1711,7 +1711,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 205,
+      "upvotes": 206,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1732,7 +1732,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 40,
+      "upvotes": 41,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1764,6 +1764,23 @@
       "cost": "$$"
     },
     {
+      "name": "폭력 - 높은 이동 속도와 매우 높은 피해량",
+      "code": "WW50N",
+      "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
+      "playstyle": "능력 파워 · 고체력",
+      "upvotes": 19,
+      "stats": {
+        "LIFE": 718,
+        "Armor": 100,
+        "Total LIFE": 818,
+        "Attack Speed": 30,
+        "Weapon Power": 10,
+        "Ability Power": 80,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "Lebron Ram - 기막힌 캐리 [UNSTOPPABLE]",
       "code": "3DTYN",
       "description": "브리기테 장판+소용돌이 방벽으로 백라인에 소용돌이 연발하며 높은 딜과 압박을 주는 공격형 플레이.",
@@ -1777,23 +1794,6 @@
         "Weapon Power": 0,
         "Ability Power": 100,
         "Cooldown Reduction": 25
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "폭력 - 높은 이동 속도와 매우 높은 피해량",
-      "code": "WW50N",
-      "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
-      "playstyle": "능력 파워 · 고체력",
-      "upvotes": 15,
-      "stats": {
-        "LIFE": 718,
-        "Armor": 100,
-        "Total LIFE": 818,
-        "Attack Speed": 30,
-        "Weapon Power": 10,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
       },
       "cost": "$$$"
     }
@@ -2755,7 +2755,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 107,
+      "upvotes": 108,
       "stats": {
         "LIFE": 569,
         "Armor": 25,

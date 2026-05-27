@@ -1,5 +1,18 @@
 [
   {
+    "title": "오버워치 패치 노트 - 2026년 5월 27일",
+    "date": "2026년 5월 26일",
+    "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
+    "hero_changes": [],
+    "general_changes": [
+      "플레이어가 상점에서 여러 화폐 옵션 중에 선택할 수 없던 문제를 수정했습니다.",
+      "경기 후 칭찬에서 정커퀸 통계가 잘못 계산되던 문제를 수정했습니다.",
+      "배틀 패스의 남은 시간 계산과 관련된 문제를 수정했습니다.",
+      "나노 강화제의 대상에게 적절한 시각 효과가 표시되지 않던 문제를 수정했습니다."
+    ],
+    "translation_source": "official"
+  },
+  {
     "title": "오버워치 패치 노트 - 2026년 5월 22일",
     "date": "2026년 5월 21일",
     "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
