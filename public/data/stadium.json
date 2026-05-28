@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 209,
+      "upvotes": 210,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 634,
+      "upvotes": 635,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -246,7 +246,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 731,
+      "upvotes": 732,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -299,7 +299,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 57,
+      "upvotes": 58,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -356,7 +356,7 @@
       "code": "JNKZ7",
       "description": "둠피스트 기술 위력 버스트 빌드. 생존성과 가동 시간 확보로 초반 자원 확보와 지속 전투 능력 강화.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 50,
+      "upvotes": 53,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -442,7 +442,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 292,
+      "upvotes": 293,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -545,7 +545,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 198,
+      "upvotes": 199,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -638,7 +638,7 @@
       "code": "GALHIR",
       "description": "겐지 중~고난이도 난전 빌드로 불사신처럼 싸우며 꾸준한 성과",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 101,
+      "upvotes": 102,
       "stats": {
         "LIFE": 382,
         "Armor": 50,
@@ -657,7 +657,7 @@
       "code": "N1MZE",
       "description": "겐지 빌드는 매우 공격적인 플레이 스타일을 위한 것으로, 높은 버스트 데미지와 팀 와이프를 위한 것입니다. 이는 유리 대포 같은 빌드로, 매우 공격적으로 플레이하는 것을 보상하지만,同時에 팀워크를 알고 있어야 합니다.",
       "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 54,
+      "upvotes": 55,
       "stats": {
         "LIFE": 403,
         "Total LIFE": 403,
@@ -674,7 +674,7 @@
       "code": "6V2XC",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 53,
+      "upvotes": 54,
       "stats": {
         "LIFE": 396,
         "Armor": 100,
@@ -782,7 +782,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 65,
+      "upvotes": 67,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -814,7 +814,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 13,
+      "upvotes": 14,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -831,7 +831,7 @@
       "code": "PHX7F",
       "description": "",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 10,
+      "upvotes": 11,
       "stats": {
         "LIFE": 361,
         "Total LIFE": 361,
@@ -997,7 +997,7 @@
       "code": "VEJ9Z",
       "description": "컴페티티브와 QP 모두 가능한 정크랫 빌드. 조준 없이 폭탄만 마구 던지면서 킬과 승리를 노림.",
       "playstyle": "재미용 · 무기 파워",
-      "upvotes": 107,
+      "upvotes": 108,
       "stats": {
         "LIFE": 378,
         "Shield": 50,
@@ -1102,7 +1102,7 @@
       "code": "35AAN",
       "description": "주노 메디마스터 빌드로 2026 시즌 2 기준 최신 설정. 메디블래스터와 하이퍼 링 중심으로 팀원 회복과 기동성을 극대화하는 지원형 플레이.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 198,
+      "upvotes": 199,
       "stats": {
         "LIFE": 208,
         "Shield": 175,
@@ -1120,7 +1120,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1526,
+      "upvotes": 1528,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1183,7 +1183,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 129,
+      "upvotes": 128,
       "stats": {
         "LIFE": 488,
         "Total LIFE": 488,
@@ -1264,7 +1264,7 @@
       "code": "1RFME",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 28,
+      "upvotes": 29,
       "stats": {
         "LIFE": 402,
         "Armor": 50,
@@ -1282,7 +1282,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "고체력",
-      "upvotes": 295,
+      "upvotes": 298,
       "stats": {
         "LIFE": 538,
         "Armor": 110,
@@ -1350,7 +1350,7 @@
       "code": "ECYWB",
       "description": "무기 공격력 극대화로 매치 골드 순환, 메이는 이미 탱크라 생존성은 낮춤",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 110,
+      "upvotes": 111,
       "stats": {
         "LIFE": 445,
         "Armor": 50,
@@ -1384,7 +1384,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 921,
+      "upvotes": 923,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1452,10 +1452,10 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1317,
+      "upvotes": 1319,
       "stats": {
-        "LIFE": 425,
-        "Total LIFE": 425,
+        "LIFE": 418,
+        "Total LIFE": 418,
         "Attack Speed": 15,
         "Weapon Power": 10,
         "Ability Power": 55,
@@ -1515,7 +1515,7 @@
       "code": "H0V3E",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 146,
+      "upvotes": 148,
       "stats": {
         "LIFE": 353,
         "Armor": 50,
@@ -1751,7 +1751,7 @@
       "code": "QQ393",
       "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 32,
+      "upvotes": 33,
       "stats": {
         "LIFE": 673,
         "Armor": 125,
@@ -2116,7 +2116,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 53,
+      "upvotes": 52,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2135,7 +2135,7 @@
       "code": "64TYG",
       "description": "",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 19,
+      "upvotes": 20,
       "stats": {
         "LIFE": 431,
         "Total LIFE": 431,
@@ -2653,7 +2653,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 219,
+      "upvotes": 221,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
