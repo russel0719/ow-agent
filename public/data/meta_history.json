@@ -18521,6 +18521,518 @@
         "presence_rate": 2.5,
         "tier": "D"
       }
+    ],
+    "2026-05-29": [
+      {
+        "hero_id": "ana",
+        "hero_name": "아나",
+        "meta_score": 66.7,
+        "pick_rate": 65.4,
+        "win_rate": 48.9,
+        "ban_rate": 0.0,
+        "presence_rate": 65.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "kiriko",
+        "hero_name": "키리코",
+        "meta_score": 52.3,
+        "pick_rate": 39.4,
+        "win_rate": 49.4,
+        "ban_rate": 0.0,
+        "presence_rate": 39.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "tracer",
+        "hero_name": "트레이서",
+        "meta_score": 49.7,
+        "pick_rate": 25.4,
+        "win_rate": 51.4,
+        "ban_rate": 0.0,
+        "presence_rate": 25.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reaper",
+        "hero_name": "리퍼",
+        "meta_score": 48.8,
+        "pick_rate": 8.6,
+        "win_rate": 54.5,
+        "ban_rate": 0.0,
+        "presence_rate": 8.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "wuyang",
+        "hero_name": "우양",
+        "meta_score": 46.8,
+        "pick_rate": 14.3,
+        "win_rate": 52.7,
+        "ban_rate": 0.0,
+        "presence_rate": 14.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "pharah",
+        "hero_name": "파라",
+        "meta_score": 46.2,
+        "pick_rate": 7.4,
+        "win_rate": 53.9,
+        "ban_rate": 0.0,
+        "presence_rate": 7.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "hazard",
+        "hero_name": "해저드",
+        "meta_score": 45.7,
+        "pick_rate": 7.0,
+        "win_rate": 53.8,
+        "ban_rate": 0.0,
+        "presence_rate": 7.0,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sigma",
+        "hero_name": "시그마",
+        "meta_score": 45.6,
+        "pick_rate": 6.4,
+        "win_rate": 53.9,
+        "ban_rate": 0.0,
+        "presence_rate": 6.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "cassidy",
+        "hero_name": "캐서디",
+        "meta_score": 44.3,
+        "pick_rate": 34.6,
+        "win_rate": 47.7,
+        "ban_rate": 0.0,
+        "presence_rate": 34.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "zenyatta",
+        "hero_name": "젠야타",
+        "meta_score": 44.2,
+        "pick_rate": 11.0,
+        "win_rate": 52.5,
+        "ban_rate": 0.0,
+        "presence_rate": 11.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "symmetra",
+        "hero_name": "시메트라",
+        "meta_score": 43.7,
+        "pick_rate": 2.7,
+        "win_rate": 54.0,
+        "ban_rate": 0.0,
+        "presence_rate": 2.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "domina",
+        "hero_name": "도미나",
+        "meta_score": 42.9,
+        "pick_rate": 3.9,
+        "win_rate": 53.5,
+        "ban_rate": 0.0,
+        "presence_rate": 3.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "winston",
+        "hero_name": "윈스턴",
+        "meta_score": 41.9,
+        "pick_rate": 9.2,
+        "win_rate": 52.1,
+        "ban_rate": 0.0,
+        "presence_rate": 9.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "doomfist",
+        "hero_name": "둠피스트",
+        "meta_score": 41.8,
+        "pick_rate": 18.3,
+        "win_rate": 50.2,
+        "ban_rate": 0.0,
+        "presence_rate": 18.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "soldier76",
+        "hero_name": "솔저: 76",
+        "meta_score": 41.4,
+        "pick_rate": 10.3,
+        "win_rate": 51.7,
+        "ban_rate": 0.0,
+        "presence_rate": 10.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "genji",
+        "hero_name": "겐지",
+        "meta_score": 41.3,
+        "pick_rate": 15.6,
+        "win_rate": 50.6,
+        "ban_rate": 0.0,
+        "presence_rate": 15.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "illari",
+        "hero_name": "일리아리",
+        "meta_score": 40.1,
+        "pick_rate": 10.6,
+        "win_rate": 51.2,
+        "ban_rate": 0.0,
+        "presence_rate": 10.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "brigitte",
+        "hero_name": "브리기테",
+        "meta_score": 39.4,
+        "pick_rate": 7.0,
+        "win_rate": 51.7,
+        "ban_rate": 0.0,
+        "presence_rate": 7.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junker_queen",
+        "hero_name": "정커퀸",
+        "meta_score": 39.2,
+        "pick_rate": 3.3,
+        "win_rate": 52.4,
+        "ban_rate": 0.0,
+        "presence_rate": 3.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ashe",
+        "hero_name": "애쉬",
+        "meta_score": 39.1,
+        "pick_rate": 7.0,
+        "win_rate": 51.6,
+        "ban_rate": 0.0,
+        "presence_rate": 7.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "echo",
+        "hero_name": "에코",
+        "meta_score": 38.4,
+        "pick_rate": 6.3,
+        "win_rate": 51.5,
+        "ban_rate": 0.0,
+        "presence_rate": 6.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "anran",
+        "hero_name": "안란",
+        "meta_score": 37.5,
+        "pick_rate": 6.9,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "venture",
+        "hero_name": "벤처",
+        "meta_score": 37.0,
+        "pick_rate": 2.2,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 2.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "emre",
+        "hero_name": "엠레",
+        "meta_score": 36.8,
+        "pick_rate": 10.6,
+        "win_rate": 50.1,
+        "ban_rate": 0.0,
+        "presence_rate": 10.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mercy",
+        "hero_name": "메르시",
+        "meta_score": 36.5,
+        "pick_rate": 9.7,
+        "win_rate": 50.2,
+        "ban_rate": 0.0,
+        "presence_rate": 9.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "zarya",
+        "hero_name": "자리야",
+        "meta_score": 36.0,
+        "pick_rate": 6.9,
+        "win_rate": 50.6,
+        "ban_rate": 0.0,
+        "presence_rate": 6.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "juno",
+        "hero_name": "주노",
+        "meta_score": 36.0,
+        "pick_rate": 5.4,
+        "win_rate": 50.9,
+        "ban_rate": 0.0,
+        "presence_rate": 5.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mizuki",
+        "hero_name": "미즈키",
+        "meta_score": 35.8,
+        "pick_rate": 9.9,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 9.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "sierra",
+        "hero_name": "시에라",
+        "meta_score": 35.0,
+        "pick_rate": 10.1,
+        "win_rate": 49.6,
+        "ban_rate": 0.0,
+        "presence_rate": 10.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junkrat",
+        "hero_name": "정크랫",
+        "meta_score": 34.9,
+        "pick_rate": 3.1,
+        "win_rate": 51.0,
+        "ban_rate": 0.0,
+        "presence_rate": 3.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "torbjorn",
+        "hero_name": "토르비욘",
+        "meta_score": 33.3,
+        "pick_rate": 2.0,
+        "win_rate": 50.7,
+        "ban_rate": 0.0,
+        "presence_rate": 2.0,
+        "tier": "C"
+      },
+      {
+        "hero_id": "hanzo",
+        "hero_name": "한조",
+        "meta_score": 33.3,
+        "pick_rate": 6.9,
+        "win_rate": 49.7,
+        "ban_rate": 0.0,
+        "presence_rate": 6.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "mei",
+        "hero_name": "메이",
+        "meta_score": 32.3,
+        "pick_rate": 3.7,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 3.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "orisa",
+        "hero_name": "오리사",
+        "meta_score": 32.2,
+        "pick_rate": 6.5,
+        "win_rate": 49.4,
+        "ban_rate": 0.0,
+        "presence_rate": 6.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "lucio",
+        "hero_name": "루시우",
+        "meta_score": 32.0,
+        "pick_rate": 4.7,
+        "win_rate": 49.7,
+        "ban_rate": 0.0,
+        "presence_rate": 4.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "lifeweaver",
+        "hero_name": "라이프위버",
+        "meta_score": 31.6,
+        "pick_rate": 7.1,
+        "win_rate": 49.1,
+        "ban_rate": 0.0,
+        "presence_rate": 7.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "mauga",
+        "hero_name": "마우가",
+        "meta_score": 29.9,
+        "pick_rate": 10.7,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 10.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "dva",
+        "hero_name": "D.Va",
+        "meta_score": 29.5,
+        "pick_rate": 7.5,
+        "win_rate": 48.3,
+        "ban_rate": 0.0,
+        "presence_rate": 7.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "bastion",
+        "hero_name": "바스티온",
+        "meta_score": 29.4,
+        "pick_rate": 3.5,
+        "win_rate": 49.1,
+        "ban_rate": 0.0,
+        "presence_rate": 3.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "ramattra",
+        "hero_name": "라마트라",
+        "meta_score": 28.4,
+        "pick_rate": 3.2,
+        "win_rate": 48.8,
+        "ban_rate": 0.0,
+        "presence_rate": 3.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "moira",
+        "hero_name": "모이라",
+        "meta_score": 28.1,
+        "pick_rate": 3.7,
+        "win_rate": 48.6,
+        "ban_rate": 0.0,
+        "presence_rate": 3.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sojourn",
+        "hero_name": "소전",
+        "meta_score": 27.9,
+        "pick_rate": 11.7,
+        "win_rate": 46.9,
+        "ban_rate": 0.0,
+        "presence_rate": 11.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "hero_name": "레킹볼",
+        "meta_score": 27.8,
+        "pick_rate": 5.3,
+        "win_rate": 48.2,
+        "ban_rate": 0.0,
+        "presence_rate": 5.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "reinhardt",
+        "hero_name": "라인하르트",
+        "meta_score": 27.7,
+        "pick_rate": 6.6,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 6.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "baptiste",
+        "hero_name": "바티스트",
+        "meta_score": 24.8,
+        "pick_rate": 5.3,
+        "win_rate": 47.2,
+        "ban_rate": 0.0,
+        "presence_rate": 5.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "freja",
+        "hero_name": "프레야",
+        "meta_score": 24.7,
+        "pick_rate": 8.5,
+        "win_rate": 46.5,
+        "ban_rate": 0.0,
+        "presence_rate": 8.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "vendetta",
+        "hero_name": "벤데타",
+        "meta_score": 24.5,
+        "pick_rate": 2.7,
+        "win_rate": 47.6,
+        "ban_rate": 0.0,
+        "presence_rate": 2.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "hero_name": "제트팩 캣",
+        "meta_score": 24.1,
+        "pick_rate": 6.6,
+        "win_rate": 46.7,
+        "ban_rate": 0.0,
+        "presence_rate": 6.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "widowmaker",
+        "hero_name": "위도우메이커",
+        "meta_score": 23.2,
+        "pick_rate": 5.6,
+        "win_rate": 46.6,
+        "ban_rate": 0.0,
+        "presence_rate": 5.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sombra",
+        "hero_name": "솜브라",
+        "meta_score": 20.7,
+        "pick_rate": 4.4,
+        "win_rate": 46.0,
+        "ban_rate": 0.0,
+        "presence_rate": 4.4,
+        "tier": "D"
+      },
+      {
+        "hero_id": "roadhog",
+        "hero_name": "로드호그",
+        "meta_score": 13.4,
+        "pick_rate": 5.3,
+        "win_rate": 43.4,
+        "ban_rate": 0.0,
+        "presence_rate": 5.3,
+        "tier": "D"
+      }
     ]
   },
   "전체": {
@@ -37045,6 +37557,518 @@
         "presence_rate": 9.0,
         "tier": "D"
       }
+    ],
+    "2026-05-29": [
+      {
+        "hero_id": "kiriko",
+        "hero_name": "키리코",
+        "meta_score": 63.8,
+        "pick_rate": 42.4,
+        "win_rate": 49.1,
+        "ban_rate": 0.0,
+        "presence_rate": 42.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "ana",
+        "hero_name": "아나",
+        "meta_score": 63.7,
+        "pick_rate": 46.5,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 46.5,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sierra",
+        "hero_name": "시에라",
+        "meta_score": 56.3,
+        "pick_rate": 24.0,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 24.0,
+        "tier": "A"
+      },
+      {
+        "hero_id": "zenyatta",
+        "hero_name": "젠야타",
+        "meta_score": 52.6,
+        "pick_rate": 11.6,
+        "win_rate": 54.2,
+        "ban_rate": 0.0,
+        "presence_rate": 11.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reaper",
+        "hero_name": "리퍼",
+        "meta_score": 51.6,
+        "pick_rate": 11.8,
+        "win_rate": 53.8,
+        "ban_rate": 0.0,
+        "presence_rate": 11.8,
+        "tier": "A"
+      },
+      {
+        "hero_id": "symmetra",
+        "hero_name": "시메트라",
+        "meta_score": 51.4,
+        "pick_rate": 2.9,
+        "win_rate": 56.3,
+        "ban_rate": 0.0,
+        "presence_rate": 2.9,
+        "tier": "A"
+      },
+      {
+        "hero_id": "anran",
+        "hero_name": "안란",
+        "meta_score": 50.4,
+        "pick_rate": 11.8,
+        "win_rate": 53.4,
+        "ban_rate": 0.0,
+        "presence_rate": 11.8,
+        "tier": "A"
+      },
+      {
+        "hero_id": "wuyang",
+        "hero_name": "우양",
+        "meta_score": 49.8,
+        "pick_rate": 13.2,
+        "win_rate": 52.8,
+        "ban_rate": 0.0,
+        "presence_rate": 13.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "torbjorn",
+        "hero_name": "토르비욘",
+        "meta_score": 48.7,
+        "pick_rate": 3.3,
+        "win_rate": 55.3,
+        "ban_rate": 0.0,
+        "presence_rate": 3.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "mizuki",
+        "hero_name": "미즈키",
+        "meta_score": 45.5,
+        "pick_rate": 11.7,
+        "win_rate": 51.8,
+        "ban_rate": 0.0,
+        "presence_rate": 11.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sigma",
+        "hero_name": "시그마",
+        "meta_score": 45.3,
+        "pick_rate": 8.7,
+        "win_rate": 52.6,
+        "ban_rate": 0.0,
+        "presence_rate": 8.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "mei",
+        "hero_name": "메이",
+        "meta_score": 44.3,
+        "pick_rate": 5.1,
+        "win_rate": 53.3,
+        "ban_rate": 0.0,
+        "presence_rate": 5.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "domina",
+        "hero_name": "도미나",
+        "meta_score": 44.1,
+        "pick_rate": 6.6,
+        "win_rate": 52.8,
+        "ban_rate": 0.0,
+        "presence_rate": 6.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junker_queen",
+        "hero_name": "정커퀸",
+        "meta_score": 43.6,
+        "pick_rate": 3.3,
+        "win_rate": 53.6,
+        "ban_rate": 0.0,
+        "presence_rate": 3.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "genji",
+        "hero_name": "겐지",
+        "meta_score": 43.5,
+        "pick_rate": 12.9,
+        "win_rate": 50.8,
+        "ban_rate": 0.0,
+        "presence_rate": 12.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "doomfist",
+        "hero_name": "둠피스트",
+        "meta_score": 43.2,
+        "pick_rate": 9.8,
+        "win_rate": 51.6,
+        "ban_rate": 0.0,
+        "presence_rate": 9.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "pharah",
+        "hero_name": "파라",
+        "meta_score": 42.9,
+        "pick_rate": 6.3,
+        "win_rate": 52.5,
+        "ban_rate": 0.0,
+        "presence_rate": 6.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "illari",
+        "hero_name": "일리아리",
+        "meta_score": 42.5,
+        "pick_rate": 8.3,
+        "win_rate": 51.8,
+        "ban_rate": 0.0,
+        "presence_rate": 8.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "reinhardt",
+        "hero_name": "라인하르트",
+        "meta_score": 42.0,
+        "pick_rate": 7.7,
+        "win_rate": 51.8,
+        "ban_rate": 0.0,
+        "presence_rate": 7.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "venture",
+        "hero_name": "벤처",
+        "meta_score": 41.5,
+        "pick_rate": 2.5,
+        "win_rate": 53.1,
+        "ban_rate": 0.0,
+        "presence_rate": 2.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "moira",
+        "hero_name": "모이라",
+        "meta_score": 40.9,
+        "pick_rate": 12.7,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 12.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mauga",
+        "hero_name": "마우가",
+        "meta_score": 40.2,
+        "pick_rate": 12.5,
+        "win_rate": 49.8,
+        "ban_rate": 0.0,
+        "presence_rate": 12.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "brigitte",
+        "hero_name": "브리기테",
+        "meta_score": 40.2,
+        "pick_rate": 5.2,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 5.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "juno",
+        "hero_name": "주노",
+        "meta_score": 40.2,
+        "pick_rate": 11.2,
+        "win_rate": 50.2,
+        "ban_rate": 0.0,
+        "presence_rate": 11.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "hazard",
+        "hero_name": "해저드",
+        "meta_score": 39.7,
+        "pick_rate": 4.6,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 4.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "winston",
+        "hero_name": "윈스턴",
+        "meta_score": 39.4,
+        "pick_rate": 6.0,
+        "win_rate": 51.4,
+        "ban_rate": 0.0,
+        "presence_rate": 6.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "cassidy",
+        "hero_name": "캐서디",
+        "meta_score": 39.1,
+        "pick_rate": 20.3,
+        "win_rate": 47.2,
+        "ban_rate": 0.0,
+        "presence_rate": 20.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lifeweaver",
+        "hero_name": "라이프위버",
+        "meta_score": 39.0,
+        "pick_rate": 9.1,
+        "win_rate": 50.4,
+        "ban_rate": 0.0,
+        "presence_rate": 9.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junkrat",
+        "hero_name": "정크랫",
+        "meta_score": 39.0,
+        "pick_rate": 6.6,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "tracer",
+        "hero_name": "트레이서",
+        "meta_score": 38.6,
+        "pick_rate": 10.3,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 10.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "soldier76",
+        "hero_name": "솔저: 76",
+        "meta_score": 37.5,
+        "pick_rate": 13.9,
+        "win_rate": 48.5,
+        "ban_rate": 0.0,
+        "presence_rate": 13.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ashe",
+        "hero_name": "애쉬",
+        "meta_score": 36.9,
+        "pick_rate": 8.4,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 8.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lucio",
+        "hero_name": "루시우",
+        "meta_score": 35.9,
+        "pick_rate": 6.5,
+        "win_rate": 50.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ramattra",
+        "hero_name": "라마트라",
+        "meta_score": 35.7,
+        "pick_rate": 7.0,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 7.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "echo",
+        "hero_name": "에코",
+        "meta_score": 35.2,
+        "pick_rate": 4.7,
+        "win_rate": 50.4,
+        "ban_rate": 0.0,
+        "presence_rate": 4.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "emre",
+        "hero_name": "엠레",
+        "meta_score": 32.9,
+        "pick_rate": 10.7,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 10.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "hanzo",
+        "hero_name": "한조",
+        "meta_score": 32.9,
+        "pick_rate": 6.2,
+        "win_rate": 49.2,
+        "ban_rate": 0.0,
+        "presence_rate": 6.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "zarya",
+        "hero_name": "자리야",
+        "meta_score": 32.6,
+        "pick_rate": 6.5,
+        "win_rate": 49.0,
+        "ban_rate": 0.0,
+        "presence_rate": 6.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "bastion",
+        "hero_name": "바스티온",
+        "meta_score": 32.3,
+        "pick_rate": 9.0,
+        "win_rate": 48.2,
+        "ban_rate": 0.0,
+        "presence_rate": 9.0,
+        "tier": "C"
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "hero_name": "레킹볼",
+        "meta_score": 30.7,
+        "pick_rate": 3.2,
+        "win_rate": 49.3,
+        "ban_rate": 0.0,
+        "presence_rate": 3.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "vendetta",
+        "hero_name": "벤데타",
+        "meta_score": 30.3,
+        "pick_rate": 3.5,
+        "win_rate": 49.1,
+        "ban_rate": 0.0,
+        "presence_rate": 3.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "hero_name": "제트팩 캣",
+        "meta_score": 30.1,
+        "pick_rate": 6.7,
+        "win_rate": 48.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "orisa",
+        "hero_name": "오리사",
+        "meta_score": 29.9,
+        "pick_rate": 10.3,
+        "win_rate": 47.0,
+        "ban_rate": 0.0,
+        "presence_rate": 10.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "mercy",
+        "hero_name": "메르시",
+        "meta_score": 28.7,
+        "pick_rate": 9.0,
+        "win_rate": 47.0,
+        "ban_rate": 0.0,
+        "presence_rate": 9.0,
+        "tier": "C"
+      },
+      {
+        "hero_id": "baptiste",
+        "hero_name": "바티스트",
+        "meta_score": 27.3,
+        "pick_rate": 5.9,
+        "win_rate": 47.4,
+        "ban_rate": 0.0,
+        "presence_rate": 5.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "freja",
+        "hero_name": "프레야",
+        "meta_score": 27.1,
+        "pick_rate": 6.7,
+        "win_rate": 47.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "dva",
+        "hero_name": "D.Va",
+        "meta_score": 26.1,
+        "pick_rate": 7.7,
+        "win_rate": 46.5,
+        "ban_rate": 0.0,
+        "presence_rate": 7.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sombra",
+        "hero_name": "솜브라",
+        "meta_score": 25.2,
+        "pick_rate": 5.2,
+        "win_rate": 46.9,
+        "ban_rate": 0.0,
+        "presence_rate": 5.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "widowmaker",
+        "hero_name": "위도우메이커",
+        "meta_score": 22.1,
+        "pick_rate": 4.4,
+        "win_rate": 46.1,
+        "ban_rate": 0.0,
+        "presence_rate": 4.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sojourn",
+        "hero_name": "소전",
+        "meta_score": 20.8,
+        "pick_rate": 9.2,
+        "win_rate": 44.3,
+        "ban_rate": 0.0,
+        "presence_rate": 9.2,
+        "tier": "D"
+      },
+      {
+        "hero_id": "roadhog",
+        "hero_name": "로드호그",
+        "meta_score": 19.9,
+        "pick_rate": 6.0,
+        "win_rate": 44.9,
+        "ban_rate": 0.0,
+        "presence_rate": 6.0,
+        "tier": "D"
+      }
     ]
   },
   "실버": {
@@ -52311,6 +53335,518 @@
         "win_rate": 43.9,
         "ban_rate": 2.5,
         "presence_rate": 8.1,
+        "tier": "D"
+      }
+    ],
+    "2026-05-29": [
+      {
+        "hero_id": "kiriko",
+        "hero_name": "키리코",
+        "meta_score": 67.0,
+        "pick_rate": 43.2,
+        "win_rate": 49.0,
+        "ban_rate": 0.0,
+        "presence_rate": 43.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sierra",
+        "hero_name": "시에라",
+        "meta_score": 62.2,
+        "pick_rate": 27.6,
+        "win_rate": 52.2,
+        "ban_rate": 0.0,
+        "presence_rate": 27.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "ana",
+        "hero_name": "아나",
+        "meta_score": 58.7,
+        "pick_rate": 37.2,
+        "win_rate": 48.1,
+        "ban_rate": 0.0,
+        "presence_rate": 37.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "zenyatta",
+        "hero_name": "젠야타",
+        "meta_score": 53.9,
+        "pick_rate": 11.9,
+        "win_rate": 54.3,
+        "ban_rate": 0.0,
+        "presence_rate": 11.9,
+        "tier": "A"
+      },
+      {
+        "hero_id": "symmetra",
+        "hero_name": "시메트라",
+        "meta_score": 53.7,
+        "pick_rate": 2.6,
+        "win_rate": 57.1,
+        "ban_rate": 0.0,
+        "presence_rate": 2.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reaper",
+        "hero_name": "리퍼",
+        "meta_score": 52.1,
+        "pick_rate": 12.8,
+        "win_rate": 53.4,
+        "ban_rate": 0.0,
+        "presence_rate": 12.8,
+        "tier": "A"
+      },
+      {
+        "hero_id": "anran",
+        "hero_name": "안란",
+        "meta_score": 52.0,
+        "pick_rate": 12.1,
+        "win_rate": 53.6,
+        "ban_rate": 0.0,
+        "presence_rate": 12.1,
+        "tier": "A"
+      },
+      {
+        "hero_id": "torbjorn",
+        "hero_name": "토르비욘",
+        "meta_score": 50.7,
+        "pick_rate": 3.6,
+        "win_rate": 55.8,
+        "ban_rate": 0.0,
+        "presence_rate": 3.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "wuyang",
+        "hero_name": "우양",
+        "meta_score": 50.4,
+        "pick_rate": 13.0,
+        "win_rate": 52.8,
+        "ban_rate": 0.0,
+        "presence_rate": 13.0,
+        "tier": "A"
+      },
+      {
+        "hero_id": "mizuki",
+        "hero_name": "미즈키",
+        "meta_score": 49.5,
+        "pick_rate": 12.3,
+        "win_rate": 52.7,
+        "ban_rate": 0.0,
+        "presence_rate": 12.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "mei",
+        "hero_name": "메이",
+        "meta_score": 47.5,
+        "pick_rate": 5.3,
+        "win_rate": 54.2,
+        "ban_rate": 0.0,
+        "presence_rate": 5.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sigma",
+        "hero_name": "시그마",
+        "meta_score": 46.0,
+        "pick_rate": 9.8,
+        "win_rate": 52.3,
+        "ban_rate": 0.0,
+        "presence_rate": 9.8,
+        "tier": "A"
+      },
+      {
+        "hero_id": "moira",
+        "hero_name": "모이라",
+        "meta_score": 45.2,
+        "pick_rate": 16.7,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 16.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "junker_queen",
+        "hero_name": "정커퀸",
+        "meta_score": 43.7,
+        "pick_rate": 2.8,
+        "win_rate": 53.7,
+        "ban_rate": 0.0,
+        "presence_rate": 2.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "illari",
+        "hero_name": "일리아리",
+        "meta_score": 43.6,
+        "pick_rate": 8.5,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 8.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "domina",
+        "hero_name": "도미나",
+        "meta_score": 43.5,
+        "pick_rate": 7.4,
+        "win_rate": 52.2,
+        "ban_rate": 0.0,
+        "presence_rate": 7.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "reinhardt",
+        "hero_name": "라인하르트",
+        "meta_score": 43.1,
+        "pick_rate": 7.7,
+        "win_rate": 52.0,
+        "ban_rate": 0.0,
+        "presence_rate": 7.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "doomfist",
+        "hero_name": "둠피스트",
+        "meta_score": 42.9,
+        "pick_rate": 7.1,
+        "win_rate": 52.1,
+        "ban_rate": 0.0,
+        "presence_rate": 7.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "brigitte",
+        "hero_name": "브리기테",
+        "meta_score": 42.3,
+        "pick_rate": 4.5,
+        "win_rate": 52.7,
+        "ban_rate": 0.0,
+        "presence_rate": 4.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "juno",
+        "hero_name": "주노",
+        "meta_score": 42.2,
+        "pick_rate": 14.1,
+        "win_rate": 49.7,
+        "ban_rate": 0.0,
+        "presence_rate": 14.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "venture",
+        "hero_name": "벤처",
+        "meta_score": 42.1,
+        "pick_rate": 2.4,
+        "win_rate": 53.3,
+        "ban_rate": 0.0,
+        "presence_rate": 2.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "pharah",
+        "hero_name": "파라",
+        "meta_score": 41.9,
+        "pick_rate": 6.1,
+        "win_rate": 52.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "genji",
+        "hero_name": "겐지",
+        "meta_score": 41.8,
+        "pick_rate": 11.1,
+        "win_rate": 50.5,
+        "ban_rate": 0.0,
+        "presence_rate": 11.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mauga",
+        "hero_name": "마우가",
+        "meta_score": 41.7,
+        "pick_rate": 13.0,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 13.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lifeweaver",
+        "hero_name": "라이프위버",
+        "meta_score": 40.6,
+        "pick_rate": 8.5,
+        "win_rate": 50.9,
+        "ban_rate": 0.0,
+        "presence_rate": 8.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junkrat",
+        "hero_name": "정크랫",
+        "meta_score": 39.2,
+        "pick_rate": 8.0,
+        "win_rate": 50.6,
+        "ban_rate": 0.0,
+        "presence_rate": 8.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ramattra",
+        "hero_name": "라마트라",
+        "meta_score": 38.9,
+        "pick_rate": 8.3,
+        "win_rate": 50.4,
+        "ban_rate": 0.0,
+        "presence_rate": 8.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "winston",
+        "hero_name": "윈스턴",
+        "meta_score": 38.6,
+        "pick_rate": 5.1,
+        "win_rate": 51.3,
+        "ban_rate": 0.0,
+        "presence_rate": 5.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "hazard",
+        "hero_name": "해저드",
+        "meta_score": 38.6,
+        "pick_rate": 3.8,
+        "win_rate": 51.7,
+        "ban_rate": 0.0,
+        "presence_rate": 3.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lucio",
+        "hero_name": "루시우",
+        "meta_score": 38.4,
+        "pick_rate": 8.1,
+        "win_rate": 50.3,
+        "ban_rate": 0.0,
+        "presence_rate": 8.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "soldier76",
+        "hero_name": "솔저: 76",
+        "meta_score": 37.2,
+        "pick_rate": 15.9,
+        "win_rate": 47.5,
+        "ban_rate": 0.0,
+        "presence_rate": 15.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "cassidy",
+        "hero_name": "캐서디",
+        "meta_score": 37.2,
+        "pick_rate": 15.9,
+        "win_rate": 47.5,
+        "ban_rate": 0.0,
+        "presence_rate": 15.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ashe",
+        "hero_name": "애쉬",
+        "meta_score": 36.2,
+        "pick_rate": 8.3,
+        "win_rate": 49.5,
+        "ban_rate": 0.0,
+        "presence_rate": 8.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "bastion",
+        "hero_name": "바스티온",
+        "meta_score": 36.0,
+        "pick_rate": 11.7,
+        "win_rate": 48.4,
+        "ban_rate": 0.0,
+        "presence_rate": 11.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "tracer",
+        "hero_name": "트레이서",
+        "meta_score": 35.8,
+        "pick_rate": 6.9,
+        "win_rate": 49.8,
+        "ban_rate": 0.0,
+        "presence_rate": 6.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "zarya",
+        "hero_name": "자리야",
+        "meta_score": 34.5,
+        "pick_rate": 6.2,
+        "win_rate": 49.6,
+        "ban_rate": 0.0,
+        "presence_rate": 6.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "echo",
+        "hero_name": "에코",
+        "meta_score": 33.9,
+        "pick_rate": 4.2,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 4.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "emre",
+        "hero_name": "엠레",
+        "meta_score": 33.2,
+        "pick_rate": 10.9,
+        "win_rate": 47.7,
+        "ban_rate": 0.0,
+        "presence_rate": 10.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "hanzo",
+        "hero_name": "한조",
+        "meta_score": 32.9,
+        "pick_rate": 6.1,
+        "win_rate": 49.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "vendetta",
+        "hero_name": "벤데타",
+        "meta_score": 32.7,
+        "pick_rate": 3.9,
+        "win_rate": 49.7,
+        "ban_rate": 0.0,
+        "presence_rate": 3.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "hero_name": "레킹볼",
+        "meta_score": 32.3,
+        "pick_rate": 2.5,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 2.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "orisa",
+        "hero_name": "오리사",
+        "meta_score": 31.9,
+        "pick_rate": 11.8,
+        "win_rate": 47.0,
+        "ban_rate": 0.0,
+        "presence_rate": 11.8,
+        "tier": "C"
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "hero_name": "제트팩 캣",
+        "meta_score": 31.0,
+        "pick_rate": 6.9,
+        "win_rate": 48.2,
+        "ban_rate": 0.0,
+        "presence_rate": 6.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "freja",
+        "hero_name": "프레야",
+        "meta_score": 28.6,
+        "pick_rate": 5.9,
+        "win_rate": 47.7,
+        "ban_rate": 0.0,
+        "presence_rate": 5.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sombra",
+        "hero_name": "솜브라",
+        "meta_score": 28.0,
+        "pick_rate": 5.0,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 5.0,
+        "tier": "C"
+      },
+      {
+        "hero_id": "dva",
+        "hero_name": "D.Va",
+        "meta_score": 27.1,
+        "pick_rate": 8.5,
+        "win_rate": 46.4,
+        "ban_rate": 0.0,
+        "presence_rate": 8.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "baptiste",
+        "hero_name": "바티스트",
+        "meta_score": 26.1,
+        "pick_rate": 5.8,
+        "win_rate": 46.9,
+        "ban_rate": 0.0,
+        "presence_rate": 5.8,
+        "tier": "C"
+      },
+      {
+        "hero_id": "mercy",
+        "hero_name": "메르시",
+        "meta_score": 24.1,
+        "pick_rate": 9.2,
+        "win_rate": 45.2,
+        "ban_rate": 0.0,
+        "presence_rate": 9.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "roadhog",
+        "hero_name": "로드호그",
+        "meta_score": 20.4,
+        "pick_rate": 5.8,
+        "win_rate": 45.0,
+        "ban_rate": 0.0,
+        "presence_rate": 5.8,
+        "tier": "D"
+      },
+      {
+        "hero_id": "widowmaker",
+        "hero_name": "위도우메이커",
+        "meta_score": 20.0,
+        "pick_rate": 4.4,
+        "win_rate": 45.3,
+        "ban_rate": 0.0,
+        "presence_rate": 4.4,
+        "tier": "D"
+      },
+      {
+        "hero_id": "sojourn",
+        "hero_name": "소전",
+        "meta_score": 19.9,
+        "pick_rate": 9.2,
+        "win_rate": 43.8,
+        "ban_rate": 0.0,
+        "presence_rate": 9.2,
         "tier": "D"
       }
     ]
@@ -67581,6 +69117,518 @@
         "presence_rate": 4.7,
         "tier": "D"
       }
+    ],
+    "2026-05-29": [
+      {
+        "hero_id": "ana",
+        "hero_name": "아나",
+        "meta_score": 65.5,
+        "pick_rate": 62.7,
+        "win_rate": 48.5,
+        "ban_rate": 0.0,
+        "presence_rate": 62.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "kiriko",
+        "hero_name": "키리코",
+        "meta_score": 53.3,
+        "pick_rate": 39.4,
+        "win_rate": 49.4,
+        "ban_rate": 0.0,
+        "presence_rate": 39.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reaper",
+        "hero_name": "리퍼",
+        "meta_score": 49.1,
+        "pick_rate": 9.7,
+        "win_rate": 54.3,
+        "ban_rate": 0.0,
+        "presence_rate": 9.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "wuyang",
+        "hero_name": "우양",
+        "meta_score": 47.7,
+        "pick_rate": 13.7,
+        "win_rate": 53.0,
+        "ban_rate": 0.0,
+        "presence_rate": 13.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "zenyatta",
+        "hero_name": "젠야타",
+        "meta_score": 46.6,
+        "pick_rate": 11.4,
+        "win_rate": 53.1,
+        "ban_rate": 0.0,
+        "presence_rate": 11.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "symmetra",
+        "hero_name": "시메트라",
+        "meta_score": 46.5,
+        "pick_rate": 2.8,
+        "win_rate": 54.9,
+        "ban_rate": 0.0,
+        "presence_rate": 2.8,
+        "tier": "A"
+      },
+      {
+        "hero_id": "pharah",
+        "hero_name": "파라",
+        "meta_score": 44.7,
+        "pick_rate": 7.0,
+        "win_rate": 53.4,
+        "ban_rate": 0.0,
+        "presence_rate": 7.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "hazard",
+        "hero_name": "해저드",
+        "meta_score": 44.5,
+        "pick_rate": 6.3,
+        "win_rate": 53.5,
+        "ban_rate": 0.0,
+        "presence_rate": 6.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "anran",
+        "hero_name": "안란",
+        "meta_score": 44.4,
+        "pick_rate": 9.8,
+        "win_rate": 52.7,
+        "ban_rate": 0.0,
+        "presence_rate": 9.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "genji",
+        "hero_name": "겐지",
+        "meta_score": 43.8,
+        "pick_rate": 16.0,
+        "win_rate": 51.2,
+        "ban_rate": 0.0,
+        "presence_rate": 16.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "sigma",
+        "hero_name": "시그마",
+        "meta_score": 43.6,
+        "pick_rate": 6.8,
+        "win_rate": 53.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "tracer",
+        "hero_name": "트레이서",
+        "meta_score": 43.3,
+        "pick_rate": 19.0,
+        "win_rate": 50.4,
+        "ban_rate": 0.0,
+        "presence_rate": 19.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "domina",
+        "hero_name": "도미나",
+        "meta_score": 43.0,
+        "pick_rate": 4.8,
+        "win_rate": 53.3,
+        "ban_rate": 0.0,
+        "presence_rate": 4.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junker_queen",
+        "hero_name": "정커퀸",
+        "meta_score": 42.3,
+        "pick_rate": 3.7,
+        "win_rate": 53.3,
+        "ban_rate": 0.0,
+        "presence_rate": 3.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "doomfist",
+        "hero_name": "둠피스트",
+        "meta_score": 42.2,
+        "pick_rate": 15.9,
+        "win_rate": 50.7,
+        "ban_rate": 0.0,
+        "presence_rate": 15.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "winston",
+        "hero_name": "윈스턴",
+        "meta_score": 41.5,
+        "pick_rate": 8.1,
+        "win_rate": 52.1,
+        "ban_rate": 0.0,
+        "presence_rate": 8.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "cassidy",
+        "hero_name": "캐서디",
+        "meta_score": 41.4,
+        "pick_rate": 30.1,
+        "win_rate": 47.4,
+        "ban_rate": 0.0,
+        "presence_rate": 30.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "sierra",
+        "hero_name": "시에라",
+        "meta_score": 40.5,
+        "pick_rate": 15.1,
+        "win_rate": 50.3,
+        "ban_rate": 0.0,
+        "presence_rate": 15.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "soldier76",
+        "hero_name": "솔저: 76",
+        "meta_score": 39.3,
+        "pick_rate": 10.4,
+        "win_rate": 50.9,
+        "ban_rate": 0.0,
+        "presence_rate": 10.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ashe",
+        "hero_name": "애쉬",
+        "meta_score": 39.2,
+        "pick_rate": 7.8,
+        "win_rate": 51.4,
+        "ban_rate": 0.0,
+        "presence_rate": 7.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "illari",
+        "hero_name": "일리아리",
+        "meta_score": 38.9,
+        "pick_rate": 8.8,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 8.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "echo",
+        "hero_name": "에코",
+        "meta_score": 38.6,
+        "pick_rate": 5.9,
+        "win_rate": 51.6,
+        "ban_rate": 0.0,
+        "presence_rate": 5.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mei",
+        "hero_name": "메이",
+        "meta_score": 38.4,
+        "pick_rate": 4.2,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 4.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "venture",
+        "hero_name": "벤처",
+        "meta_score": 38.2,
+        "pick_rate": 2.5,
+        "win_rate": 52.2,
+        "ban_rate": 0.0,
+        "presence_rate": 2.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "juno",
+        "hero_name": "주노",
+        "meta_score": 37.1,
+        "pick_rate": 6.4,
+        "win_rate": 51.0,
+        "ban_rate": 0.0,
+        "presence_rate": 6.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mizuki",
+        "hero_name": "미즈키",
+        "meta_score": 35.9,
+        "pick_rate": 10.6,
+        "win_rate": 49.7,
+        "ban_rate": 0.0,
+        "presence_rate": 10.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "torbjorn",
+        "hero_name": "토르비욘",
+        "meta_score": 35.5,
+        "pick_rate": 2.5,
+        "win_rate": 51.3,
+        "ban_rate": 0.0,
+        "presence_rate": 2.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mercy",
+        "hero_name": "메르시",
+        "meta_score": 35.3,
+        "pick_rate": 8.7,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 8.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junkrat",
+        "hero_name": "정크랫",
+        "meta_score": 35.3,
+        "pick_rate": 4.1,
+        "win_rate": 50.9,
+        "ban_rate": 0.0,
+        "presence_rate": 4.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "brigitte",
+        "hero_name": "브리기테",
+        "meta_score": 35.2,
+        "pick_rate": 6.8,
+        "win_rate": 50.3,
+        "ban_rate": 0.0,
+        "presence_rate": 6.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mauga",
+        "hero_name": "마우가",
+        "meta_score": 34.9,
+        "pick_rate": 11.4,
+        "win_rate": 49.2,
+        "ban_rate": 0.0,
+        "presence_rate": 11.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "hanzo",
+        "hero_name": "한조",
+        "meta_score": 34.0,
+        "pick_rate": 6.8,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 6.8,
+        "tier": "C"
+      },
+      {
+        "hero_id": "moira",
+        "hero_name": "모이라",
+        "meta_score": 33.9,
+        "pick_rate": 5.7,
+        "win_rate": 50.1,
+        "ban_rate": 0.0,
+        "presence_rate": 5.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "emre",
+        "hero_name": "엠레",
+        "meta_score": 33.9,
+        "pick_rate": 10.8,
+        "win_rate": 49.0,
+        "ban_rate": 0.0,
+        "presence_rate": 10.8,
+        "tier": "C"
+      },
+      {
+        "hero_id": "zarya",
+        "hero_name": "자리야",
+        "meta_score": 33.1,
+        "pick_rate": 6.7,
+        "win_rate": 49.6,
+        "ban_rate": 0.0,
+        "presence_rate": 6.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "lifeweaver",
+        "hero_name": "라이프위버",
+        "meta_score": 33.0,
+        "pick_rate": 8.4,
+        "win_rate": 49.2,
+        "ban_rate": 0.0,
+        "presence_rate": 8.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "reinhardt",
+        "hero_name": "라인하르트",
+        "meta_score": 32.3,
+        "pick_rate": 7.3,
+        "win_rate": 49.2,
+        "ban_rate": 0.0,
+        "presence_rate": 7.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "lucio",
+        "hero_name": "루시우",
+        "meta_score": 31.5,
+        "pick_rate": 4.7,
+        "win_rate": 49.5,
+        "ban_rate": 0.0,
+        "presence_rate": 4.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "ramattra",
+        "hero_name": "라마트라",
+        "meta_score": 31.2,
+        "pick_rate": 4.2,
+        "win_rate": 49.5,
+        "ban_rate": 0.0,
+        "presence_rate": 4.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "hero_name": "제트팩 캣",
+        "meta_score": 28.6,
+        "pick_rate": 6.7,
+        "win_rate": 48.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "bastion",
+        "hero_name": "바스티온",
+        "meta_score": 28.1,
+        "pick_rate": 4.5,
+        "win_rate": 48.4,
+        "ban_rate": 0.0,
+        "presence_rate": 4.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "hero_name": "레킹볼",
+        "meta_score": 27.9,
+        "pick_rate": 4.7,
+        "win_rate": 48.3,
+        "ban_rate": 0.0,
+        "presence_rate": 4.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "orisa",
+        "hero_name": "오리사",
+        "meta_score": 27.8,
+        "pick_rate": 7.3,
+        "win_rate": 47.7,
+        "ban_rate": 0.0,
+        "presence_rate": 7.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "baptiste",
+        "hero_name": "바티스트",
+        "meta_score": 27.5,
+        "pick_rate": 5.9,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 5.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "widowmaker",
+        "hero_name": "위도우메이커",
+        "meta_score": 26.3,
+        "pick_rate": 4.6,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 4.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "freja",
+        "hero_name": "프레야",
+        "meta_score": 24.9,
+        "pick_rate": 8.4,
+        "win_rate": 46.5,
+        "ban_rate": 0.0,
+        "presence_rate": 8.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "dva",
+        "hero_name": "D.Va",
+        "meta_score": 24.1,
+        "pick_rate": 6.7,
+        "win_rate": 46.6,
+        "ban_rate": 0.0,
+        "presence_rate": 6.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sojourn",
+        "hero_name": "소전",
+        "meta_score": 23.5,
+        "pick_rate": 10.0,
+        "win_rate": 45.7,
+        "ban_rate": 0.0,
+        "presence_rate": 10.0,
+        "tier": "C"
+      },
+      {
+        "hero_id": "vendetta",
+        "hero_name": "벤데타",
+        "meta_score": 23.0,
+        "pick_rate": 2.7,
+        "win_rate": 47.1,
+        "ban_rate": 0.0,
+        "presence_rate": 2.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sombra",
+        "hero_name": "솜브라",
+        "meta_score": 22.6,
+        "pick_rate": 5.3,
+        "win_rate": 46.4,
+        "ban_rate": 0.0,
+        "presence_rate": 5.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "roadhog",
+        "hero_name": "로드호그",
+        "meta_score": 17.7,
+        "pick_rate": 6.1,
+        "win_rate": 44.6,
+        "ban_rate": 0.0,
+        "presence_rate": 6.1,
+        "tier": "D"
+      }
     ]
   },
   "다이아몬드": {
@@ -82847,6 +84895,518 @@
         "win_rate": 41.8,
         "ban_rate": 3.5,
         "presence_rate": 9.2,
+        "tier": "D"
+      }
+    ],
+    "2026-05-29": [
+      {
+        "hero_id": "ana",
+        "hero_name": "아나",
+        "meta_score": 63.4,
+        "pick_rate": 58.4,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 58.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "kiriko",
+        "hero_name": "키리코",
+        "meta_score": 56.4,
+        "pick_rate": 41.1,
+        "win_rate": 49.4,
+        "ban_rate": 0.0,
+        "presence_rate": 41.1,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reaper",
+        "hero_name": "리퍼",
+        "meta_score": 50.2,
+        "pick_rate": 10.7,
+        "win_rate": 54.3,
+        "ban_rate": 0.0,
+        "presence_rate": 10.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "zenyatta",
+        "hero_name": "젠야타",
+        "meta_score": 49.1,
+        "pick_rate": 11.3,
+        "win_rate": 53.8,
+        "ban_rate": 0.0,
+        "presence_rate": 11.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "torbjorn",
+        "hero_name": "토르비욘",
+        "meta_score": 47.9,
+        "pick_rate": 2.9,
+        "win_rate": 55.3,
+        "ban_rate": 0.0,
+        "presence_rate": 2.9,
+        "tier": "A"
+      },
+      {
+        "hero_id": "wuyang",
+        "hero_name": "우양",
+        "meta_score": 47.7,
+        "pick_rate": 13.6,
+        "win_rate": 52.8,
+        "ban_rate": 0.0,
+        "presence_rate": 13.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "symmetra",
+        "hero_name": "시메트라",
+        "meta_score": 47.4,
+        "pick_rate": 3.1,
+        "win_rate": 55.1,
+        "ban_rate": 0.0,
+        "presence_rate": 3.1,
+        "tier": "A"
+      },
+      {
+        "hero_id": "anran",
+        "hero_name": "안란",
+        "meta_score": 46.5,
+        "pick_rate": 11.4,
+        "win_rate": 52.9,
+        "ban_rate": 0.0,
+        "presence_rate": 11.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sierra",
+        "hero_name": "시에라",
+        "meta_score": 46.3,
+        "pick_rate": 19.0,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 19.0,
+        "tier": "A"
+      },
+      {
+        "hero_id": "genji",
+        "hero_name": "겐지",
+        "meta_score": 45.0,
+        "pick_rate": 15.7,
+        "win_rate": 51.4,
+        "ban_rate": 0.0,
+        "presence_rate": 15.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "pharah",
+        "hero_name": "파라",
+        "meta_score": 44.1,
+        "pick_rate": 6.6,
+        "win_rate": 53.2,
+        "ban_rate": 0.0,
+        "presence_rate": 6.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "sigma",
+        "hero_name": "시그마",
+        "meta_score": 43.5,
+        "pick_rate": 7.5,
+        "win_rate": 52.8,
+        "ban_rate": 0.0,
+        "presence_rate": 7.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "domina",
+        "hero_name": "도미나",
+        "meta_score": 43.4,
+        "pick_rate": 5.5,
+        "win_rate": 53.2,
+        "ban_rate": 0.0,
+        "presence_rate": 5.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junker_queen",
+        "hero_name": "정커퀸",
+        "meta_score": 42.6,
+        "pick_rate": 3.9,
+        "win_rate": 53.3,
+        "ban_rate": 0.0,
+        "presence_rate": 3.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "doomfist",
+        "hero_name": "둠피스트",
+        "meta_score": 42.5,
+        "pick_rate": 13.5,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 13.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "illari",
+        "hero_name": "일리아리",
+        "meta_score": 40.9,
+        "pick_rate": 8.1,
+        "win_rate": 51.8,
+        "ban_rate": 0.0,
+        "presence_rate": 8.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "hazard",
+        "hero_name": "해저드",
+        "meta_score": 40.7,
+        "pick_rate": 5.6,
+        "win_rate": 52.3,
+        "ban_rate": 0.0,
+        "presence_rate": 5.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "winston",
+        "hero_name": "윈스턴",
+        "meta_score": 40.4,
+        "pick_rate": 7.3,
+        "win_rate": 51.8,
+        "ban_rate": 0.0,
+        "presence_rate": 7.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "tracer",
+        "hero_name": "트레이서",
+        "meta_score": 40.0,
+        "pick_rate": 15.0,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 15.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mei",
+        "hero_name": "메이",
+        "meta_score": 39.9,
+        "pick_rate": 4.8,
+        "win_rate": 52.2,
+        "ban_rate": 0.0,
+        "presence_rate": 4.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "reinhardt",
+        "hero_name": "라인하르트",
+        "meta_score": 39.1,
+        "pick_rate": 7.6,
+        "win_rate": 51.3,
+        "ban_rate": 0.0,
+        "presence_rate": 7.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "venture",
+        "hero_name": "벤처",
+        "meta_score": 38.7,
+        "pick_rate": 2.6,
+        "win_rate": 52.3,
+        "ban_rate": 0.0,
+        "presence_rate": 2.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "cassidy",
+        "hero_name": "캐서디",
+        "meta_score": 38.6,
+        "pick_rate": 26.2,
+        "win_rate": 46.9,
+        "ban_rate": 0.0,
+        "presence_rate": 26.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "brigitte",
+        "hero_name": "브리기테",
+        "meta_score": 38.5,
+        "pick_rate": 6.3,
+        "win_rate": 51.4,
+        "ban_rate": 0.0,
+        "presence_rate": 6.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junkrat",
+        "hero_name": "정크랫",
+        "meta_score": 38.4,
+        "pick_rate": 4.8,
+        "win_rate": 51.7,
+        "ban_rate": 0.0,
+        "presence_rate": 4.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "soldier76",
+        "hero_name": "솔저: 76",
+        "meta_score": 38.3,
+        "pick_rate": 11.2,
+        "win_rate": 50.2,
+        "ban_rate": 0.0,
+        "presence_rate": 11.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mizuki",
+        "hero_name": "미즈키",
+        "meta_score": 38.1,
+        "pick_rate": 11.0,
+        "win_rate": 50.2,
+        "ban_rate": 0.0,
+        "presence_rate": 11.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mauga",
+        "hero_name": "마우가",
+        "meta_score": 37.6,
+        "pick_rate": 11.9,
+        "win_rate": 49.8,
+        "ban_rate": 0.0,
+        "presence_rate": 11.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ashe",
+        "hero_name": "애쉬",
+        "meta_score": 37.2,
+        "pick_rate": 8.3,
+        "win_rate": 50.5,
+        "ban_rate": 0.0,
+        "presence_rate": 8.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "juno",
+        "hero_name": "주노",
+        "meta_score": 37.2,
+        "pick_rate": 7.4,
+        "win_rate": 50.7,
+        "ban_rate": 0.0,
+        "presence_rate": 7.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "echo",
+        "hero_name": "에코",
+        "meta_score": 37.1,
+        "pick_rate": 5.5,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 5.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lifeweaver",
+        "hero_name": "라이프위버",
+        "meta_score": 36.5,
+        "pick_rate": 9.5,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 9.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "moira",
+        "hero_name": "모이라",
+        "meta_score": 34.5,
+        "pick_rate": 7.9,
+        "win_rate": 49.7,
+        "ban_rate": 0.0,
+        "presence_rate": 7.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "lucio",
+        "hero_name": "루시우",
+        "meta_score": 34.3,
+        "pick_rate": 4.9,
+        "win_rate": 50.3,
+        "ban_rate": 0.0,
+        "presence_rate": 4.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "hanzo",
+        "hero_name": "한조",
+        "meta_score": 32.7,
+        "pick_rate": 6.5,
+        "win_rate": 49.4,
+        "ban_rate": 0.0,
+        "presence_rate": 6.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "emre",
+        "hero_name": "엠레",
+        "meta_score": 32.0,
+        "pick_rate": 10.4,
+        "win_rate": 48.3,
+        "ban_rate": 0.0,
+        "presence_rate": 10.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "mercy",
+        "hero_name": "메르시",
+        "meta_score": 31.9,
+        "pick_rate": 8.1,
+        "win_rate": 48.8,
+        "ban_rate": 0.0,
+        "presence_rate": 8.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "ramattra",
+        "hero_name": "라마트라",
+        "meta_score": 30.9,
+        "pick_rate": 5.2,
+        "win_rate": 49.1,
+        "ban_rate": 0.0,
+        "presence_rate": 5.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "hero_name": "레킹볼",
+        "meta_score": 29.5,
+        "pick_rate": 4.1,
+        "win_rate": 48.9,
+        "ban_rate": 0.0,
+        "presence_rate": 4.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "zarya",
+        "hero_name": "자리야",
+        "meta_score": 29.3,
+        "pick_rate": 6.8,
+        "win_rate": 48.2,
+        "ban_rate": 0.0,
+        "presence_rate": 6.8,
+        "tier": "C"
+      },
+      {
+        "hero_id": "baptiste",
+        "hero_name": "바티스트",
+        "meta_score": 28.1,
+        "pick_rate": 6.0,
+        "win_rate": 48.0,
+        "ban_rate": 0.0,
+        "presence_rate": 6.0,
+        "tier": "C"
+      },
+      {
+        "hero_id": "bastion",
+        "hero_name": "바스티온",
+        "meta_score": 27.9,
+        "pick_rate": 5.7,
+        "win_rate": 48.0,
+        "ban_rate": 0.0,
+        "presence_rate": 5.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "hero_name": "제트팩 캣",
+        "meta_score": 27.9,
+        "pick_rate": 6.6,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 6.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "orisa",
+        "hero_name": "오리사",
+        "meta_score": 27.5,
+        "pick_rate": 8.2,
+        "win_rate": 47.3,
+        "ban_rate": 0.0,
+        "presence_rate": 8.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "vendetta",
+        "hero_name": "벤데타",
+        "meta_score": 25.8,
+        "pick_rate": 3.0,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 3.0,
+        "tier": "C"
+      },
+      {
+        "hero_id": "widowmaker",
+        "hero_name": "위도우메이커",
+        "meta_score": 24.5,
+        "pick_rate": 4.3,
+        "win_rate": 47.2,
+        "ban_rate": 0.0,
+        "presence_rate": 4.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "dva",
+        "hero_name": "D.Va",
+        "meta_score": 24.3,
+        "pick_rate": 6.5,
+        "win_rate": 46.6,
+        "ban_rate": 0.0,
+        "presence_rate": 6.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "freja",
+        "hero_name": "프레야",
+        "meta_score": 24.2,
+        "pick_rate": 7.7,
+        "win_rate": 46.3,
+        "ban_rate": 0.0,
+        "presence_rate": 7.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sombra",
+        "hero_name": "솜브라",
+        "meta_score": 22.7,
+        "pick_rate": 5.6,
+        "win_rate": 46.3,
+        "ban_rate": 0.0,
+        "presence_rate": 5.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sojourn",
+        "hero_name": "소전",
+        "meta_score": 21.8,
+        "pick_rate": 9.1,
+        "win_rate": 45.2,
+        "ban_rate": 0.0,
+        "presence_rate": 9.1,
+        "tier": "D"
+      },
+      {
+        "hero_id": "roadhog",
+        "hero_name": "로드호그",
+        "meta_score": 18.4,
+        "pick_rate": 6.3,
+        "win_rate": 44.7,
+        "ban_rate": 0.0,
+        "presence_rate": 6.3,
         "tier": "D"
       }
     ]
@@ -98117,6 +100677,518 @@
         "presence_rate": 7.0,
         "tier": "D"
       }
+    ],
+    "2026-05-29": [
+      {
+        "hero_id": "sierra",
+        "hero_name": "시에라",
+        "meta_score": 68.0,
+        "pick_rate": 29.3,
+        "win_rate": 53.5,
+        "ban_rate": 0.0,
+        "presence_rate": 29.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "kiriko",
+        "hero_name": "키리코",
+        "meta_score": 67.6,
+        "pick_rate": 42.6,
+        "win_rate": 49.2,
+        "ban_rate": 0.0,
+        "presence_rate": 42.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "zenyatta",
+        "hero_name": "젠야타",
+        "meta_score": 54.5,
+        "pick_rate": 12.7,
+        "win_rate": 54.2,
+        "ban_rate": 0.0,
+        "presence_rate": 12.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "torbjorn",
+        "hero_name": "토르비욘",
+        "meta_score": 53.1,
+        "pick_rate": 3.5,
+        "win_rate": 56.6,
+        "ban_rate": 0.0,
+        "presence_rate": 3.5,
+        "tier": "A"
+      },
+      {
+        "hero_id": "mizuki",
+        "hero_name": "미즈키",
+        "meta_score": 52.9,
+        "pick_rate": 12.3,
+        "win_rate": 53.8,
+        "ban_rate": 0.0,
+        "presence_rate": 12.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "ana",
+        "hero_name": "아나",
+        "meta_score": 52.3,
+        "pick_rate": 27.6,
+        "win_rate": 48.8,
+        "ban_rate": 0.0,
+        "presence_rate": 27.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "moira",
+        "hero_name": "모이라",
+        "meta_score": 51.2,
+        "pick_rate": 20.0,
+        "win_rate": 50.8,
+        "ban_rate": 0.0,
+        "presence_rate": 20.0,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reaper",
+        "hero_name": "리퍼",
+        "meta_score": 51.1,
+        "pick_rate": 12.3,
+        "win_rate": 53.2,
+        "ban_rate": 0.0,
+        "presence_rate": 12.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "symmetra",
+        "hero_name": "시메트라",
+        "meta_score": 51.0,
+        "pick_rate": 2.2,
+        "win_rate": 56.3,
+        "ban_rate": 0.0,
+        "presence_rate": 2.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sigma",
+        "hero_name": "시그마",
+        "meta_score": 50.1,
+        "pick_rate": 10.2,
+        "win_rate": 53.5,
+        "ban_rate": 0.0,
+        "presence_rate": 10.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "anran",
+        "hero_name": "안란",
+        "meta_score": 49.9,
+        "pick_rate": 10.3,
+        "win_rate": 53.4,
+        "ban_rate": 0.0,
+        "presence_rate": 10.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "venture",
+        "hero_name": "벤처",
+        "meta_score": 49.1,
+        "pick_rate": 1.8,
+        "win_rate": 55.8,
+        "ban_rate": 0.0,
+        "presence_rate": 1.8,
+        "tier": "A"
+      },
+      {
+        "hero_id": "wuyang",
+        "hero_name": "우양",
+        "meta_score": 48.1,
+        "pick_rate": 13.2,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 13.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "mei",
+        "hero_name": "메이",
+        "meta_score": 47.1,
+        "pick_rate": 4.8,
+        "win_rate": 54.2,
+        "ban_rate": 0.0,
+        "presence_rate": 4.8,
+        "tier": "A"
+      },
+      {
+        "hero_id": "brigitte",
+        "hero_name": "브리기테",
+        "meta_score": 45.8,
+        "pick_rate": 3.4,
+        "win_rate": 54.2,
+        "ban_rate": 0.0,
+        "presence_rate": 3.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "juno",
+        "hero_name": "주노",
+        "meta_score": 45.4,
+        "pick_rate": 18.3,
+        "win_rate": 49.4,
+        "ban_rate": 0.0,
+        "presence_rate": 18.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "illari",
+        "hero_name": "일리아리",
+        "meta_score": 45.0,
+        "pick_rate": 8.3,
+        "win_rate": 52.4,
+        "ban_rate": 0.0,
+        "presence_rate": 8.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "domina",
+        "hero_name": "도미나",
+        "meta_score": 44.8,
+        "pick_rate": 7.8,
+        "win_rate": 52.5,
+        "ban_rate": 0.0,
+        "presence_rate": 7.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mauga",
+        "hero_name": "마우가",
+        "meta_score": 43.5,
+        "pick_rate": 13.4,
+        "win_rate": 50.3,
+        "ban_rate": 0.0,
+        "presence_rate": 13.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "doomfist",
+        "hero_name": "둠피스트",
+        "meta_score": 42.1,
+        "pick_rate": 5.5,
+        "win_rate": 52.3,
+        "ban_rate": 0.0,
+        "presence_rate": 5.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junkrat",
+        "hero_name": "정크랫",
+        "meta_score": 42.0,
+        "pick_rate": 9.3,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 9.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "reinhardt",
+        "hero_name": "라인하르트",
+        "meta_score": 41.7,
+        "pick_rate": 7.7,
+        "win_rate": 51.5,
+        "ban_rate": 0.0,
+        "presence_rate": 7.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "soldier76",
+        "hero_name": "솔저: 76",
+        "meta_score": 41.5,
+        "pick_rate": 19.3,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 19.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ramattra",
+        "hero_name": "라마트라",
+        "meta_score": 41.1,
+        "pick_rate": 8.9,
+        "win_rate": 50.9,
+        "ban_rate": 0.0,
+        "presence_rate": 8.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "bastion",
+        "hero_name": "바스티온",
+        "meta_score": 40.5,
+        "pick_rate": 14.7,
+        "win_rate": 48.9,
+        "ban_rate": 0.0,
+        "presence_rate": 14.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "hazard",
+        "hero_name": "해저드",
+        "meta_score": 40.2,
+        "pick_rate": 2.9,
+        "win_rate": 52.5,
+        "ban_rate": 0.0,
+        "presence_rate": 2.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "genji",
+        "hero_name": "겐지",
+        "meta_score": 39.2,
+        "pick_rate": 9.5,
+        "win_rate": 50.1,
+        "ban_rate": 0.0,
+        "presence_rate": 9.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "winston",
+        "hero_name": "윈스턴",
+        "meta_score": 39.2,
+        "pick_rate": 4.4,
+        "win_rate": 51.7,
+        "ban_rate": 0.0,
+        "presence_rate": 4.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lucio",
+        "hero_name": "루시우",
+        "meta_score": 39.1,
+        "pick_rate": 9.7,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 9.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "pharah",
+        "hero_name": "파라",
+        "meta_score": 39.0,
+        "pick_rate": 5.7,
+        "win_rate": 51.2,
+        "ban_rate": 0.0,
+        "presence_rate": 5.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "vendetta",
+        "hero_name": "벤데타",
+        "meta_score": 36.7,
+        "pick_rate": 3.6,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 3.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lifeweaver",
+        "hero_name": "라이프위버",
+        "meta_score": 36.4,
+        "pick_rate": 6.5,
+        "win_rate": 50.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "zarya",
+        "hero_name": "자리야",
+        "meta_score": 36.4,
+        "pick_rate": 4.9,
+        "win_rate": 50.6,
+        "ban_rate": 0.0,
+        "presence_rate": 4.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "cassidy",
+        "hero_name": "캐서디",
+        "meta_score": 36.3,
+        "pick_rate": 13.4,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 13.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junker_queen",
+        "hero_name": "정커퀸",
+        "meta_score": 35.6,
+        "pick_rate": 2.1,
+        "win_rate": 51.2,
+        "ban_rate": 0.0,
+        "presence_rate": 2.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "hanzo",
+        "hero_name": "한조",
+        "meta_score": 35.3,
+        "pick_rate": 6.0,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 6.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "orisa",
+        "hero_name": "오리사",
+        "meta_score": 35.0,
+        "pick_rate": 13.0,
+        "win_rate": 47.6,
+        "ban_rate": 0.0,
+        "presence_rate": 13.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "emre",
+        "hero_name": "엠레",
+        "meta_score": 34.4,
+        "pick_rate": 10.8,
+        "win_rate": 48.1,
+        "ban_rate": 0.0,
+        "presence_rate": 10.8,
+        "tier": "C"
+      },
+      {
+        "hero_id": "freja",
+        "hero_name": "프레야",
+        "meta_score": 31.6,
+        "pick_rate": 5.2,
+        "win_rate": 48.9,
+        "ban_rate": 0.0,
+        "presence_rate": 5.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "echo",
+        "hero_name": "에코",
+        "meta_score": 31.5,
+        "pick_rate": 3.8,
+        "win_rate": 49.3,
+        "ban_rate": 0.0,
+        "presence_rate": 3.8,
+        "tier": "C"
+      },
+      {
+        "hero_id": "ashe",
+        "hero_name": "애쉬",
+        "meta_score": 31.1,
+        "pick_rate": 8.2,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 8.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "tracer",
+        "hero_name": "트레이서",
+        "meta_score": 29.7,
+        "pick_rate": 5.4,
+        "win_rate": 48.2,
+        "ban_rate": 0.0,
+        "presence_rate": 5.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "hero_name": "제트팩 캣",
+        "meta_score": 29.0,
+        "pick_rate": 7.2,
+        "win_rate": 47.4,
+        "ban_rate": 0.0,
+        "presence_rate": 7.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "baptiste",
+        "hero_name": "바티스트",
+        "meta_score": 28.8,
+        "pick_rate": 5.8,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 5.8,
+        "tier": "C"
+      },
+      {
+        "hero_id": "dva",
+        "hero_name": "D.Va",
+        "meta_score": 28.5,
+        "pick_rate": 11.5,
+        "win_rate": 45.9,
+        "ban_rate": 0.0,
+        "presence_rate": 11.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "hero_name": "레킹볼",
+        "meta_score": 25.8,
+        "pick_rate": 2.2,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 2.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sojourn",
+        "hero_name": "소전",
+        "meta_score": 25.0,
+        "pick_rate": 11.3,
+        "win_rate": 44.8,
+        "ban_rate": 0.0,
+        "presence_rate": 11.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sombra",
+        "hero_name": "솜브라",
+        "meta_score": 24.5,
+        "pick_rate": 4.7,
+        "win_rate": 46.7,
+        "ban_rate": 0.0,
+        "presence_rate": 4.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "mercy",
+        "hero_name": "메르시",
+        "meta_score": 20.7,
+        "pick_rate": 12.5,
+        "win_rate": 43.0,
+        "ban_rate": 0.0,
+        "presence_rate": 12.5,
+        "tier": "D"
+      },
+      {
+        "hero_id": "roadhog",
+        "hero_name": "로드호그",
+        "meta_score": 17.4,
+        "pick_rate": 5.4,
+        "win_rate": 44.1,
+        "ban_rate": 0.0,
+        "presence_rate": 5.4,
+        "tier": "D"
+      },
+      {
+        "hero_id": "widowmaker",
+        "hero_name": "위도우메이커",
+        "meta_score": 14.1,
+        "pick_rate": 5.1,
+        "win_rate": 43.1,
+        "ban_rate": 0.0,
+        "presence_rate": 5.1,
+        "tier": "D"
+      }
     ]
   },
   "골드": {
@@ -113385,6 +116457,518 @@
         "presence_rate": 9.5,
         "tier": "D"
       }
+    ],
+    "2026-05-29": [
+      {
+        "hero_id": "kiriko",
+        "hero_name": "키리코",
+        "meta_score": 64.6,
+        "pick_rate": 43.2,
+        "win_rate": 49.0,
+        "ban_rate": 0.0,
+        "presence_rate": 43.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "ana",
+        "hero_name": "아나",
+        "meta_score": 62.8,
+        "pick_rate": 45.9,
+        "win_rate": 47.6,
+        "ban_rate": 0.0,
+        "presence_rate": 45.9,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sierra",
+        "hero_name": "시에라",
+        "meta_score": 58.0,
+        "pick_rate": 25.6,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 25.6,
+        "tier": "A"
+      },
+      {
+        "hero_id": "zenyatta",
+        "hero_name": "젠야타",
+        "meta_score": 53.4,
+        "pick_rate": 11.4,
+        "win_rate": 54.5,
+        "ban_rate": 0.0,
+        "presence_rate": 11.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "symmetra",
+        "hero_name": "시메트라",
+        "meta_score": 52.2,
+        "pick_rate": 3.1,
+        "win_rate": 56.5,
+        "ban_rate": 0.0,
+        "presence_rate": 3.1,
+        "tier": "A"
+      },
+      {
+        "hero_id": "anran",
+        "hero_name": "안란",
+        "meta_score": 51.9,
+        "pick_rate": 12.7,
+        "win_rate": 53.6,
+        "ban_rate": 0.0,
+        "presence_rate": 12.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reaper",
+        "hero_name": "리퍼",
+        "meta_score": 51.8,
+        "pick_rate": 12.3,
+        "win_rate": 53.7,
+        "ban_rate": 0.0,
+        "presence_rate": 12.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "wuyang",
+        "hero_name": "우양",
+        "meta_score": 50.6,
+        "pick_rate": 13.0,
+        "win_rate": 53.1,
+        "ban_rate": 0.0,
+        "presence_rate": 13.0,
+        "tier": "A"
+      },
+      {
+        "hero_id": "torbjorn",
+        "hero_name": "토르비욘",
+        "meta_score": 50.5,
+        "pick_rate": 3.5,
+        "win_rate": 55.8,
+        "ban_rate": 0.0,
+        "presence_rate": 3.5,
+        "tier": "A"
+      },
+      {
+        "hero_id": "mizuki",
+        "hero_name": "미즈키",
+        "meta_score": 46.1,
+        "pick_rate": 11.9,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 11.9,
+        "tier": "A"
+      },
+      {
+        "hero_id": "mei",
+        "hero_name": "메이",
+        "meta_score": 45.3,
+        "pick_rate": 5.5,
+        "win_rate": 53.5,
+        "ban_rate": 0.0,
+        "presence_rate": 5.5,
+        "tier": "A"
+      },
+      {
+        "hero_id": "junker_queen",
+        "hero_name": "정커퀸",
+        "meta_score": 45.3,
+        "pick_rate": 3.4,
+        "win_rate": 54.1,
+        "ban_rate": 0.0,
+        "presence_rate": 3.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reinhardt",
+        "hero_name": "라인하르트",
+        "meta_score": 44.9,
+        "pick_rate": 7.8,
+        "win_rate": 52.7,
+        "ban_rate": 0.0,
+        "presence_rate": 7.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "sigma",
+        "hero_name": "시그마",
+        "meta_score": 44.7,
+        "pick_rate": 9.0,
+        "win_rate": 52.3,
+        "ban_rate": 0.0,
+        "presence_rate": 9.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "domina",
+        "hero_name": "도미나",
+        "meta_score": 44.4,
+        "pick_rate": 6.9,
+        "win_rate": 52.8,
+        "ban_rate": 0.0,
+        "presence_rate": 6.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "doomfist",
+        "hero_name": "둠피스트",
+        "meta_score": 44.1,
+        "pick_rate": 8.9,
+        "win_rate": 52.1,
+        "ban_rate": 0.0,
+        "presence_rate": 8.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "genji",
+        "hero_name": "겐지",
+        "meta_score": 43.2,
+        "pick_rate": 12.7,
+        "win_rate": 50.7,
+        "ban_rate": 0.0,
+        "presence_rate": 12.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "illari",
+        "hero_name": "일리아리",
+        "meta_score": 42.5,
+        "pick_rate": 8.2,
+        "win_rate": 51.8,
+        "ban_rate": 0.0,
+        "presence_rate": 8.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "pharah",
+        "hero_name": "파라",
+        "meta_score": 42.3,
+        "pick_rate": 6.2,
+        "win_rate": 52.3,
+        "ban_rate": 0.0,
+        "presence_rate": 6.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "venture",
+        "hero_name": "벤처",
+        "meta_score": 41.7,
+        "pick_rate": 2.7,
+        "win_rate": 53.1,
+        "ban_rate": 0.0,
+        "presence_rate": 2.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "juno",
+        "hero_name": "주노",
+        "meta_score": 40.6,
+        "pick_rate": 11.1,
+        "win_rate": 50.3,
+        "ban_rate": 0.0,
+        "presence_rate": 11.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "moira",
+        "hero_name": "모이라",
+        "meta_score": 40.3,
+        "pick_rate": 12.9,
+        "win_rate": 49.7,
+        "ban_rate": 0.0,
+        "presence_rate": 12.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lifeweaver",
+        "hero_name": "라이프위버",
+        "meta_score": 40.1,
+        "pick_rate": 9.9,
+        "win_rate": 50.5,
+        "ban_rate": 0.0,
+        "presence_rate": 9.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mauga",
+        "hero_name": "마우가",
+        "meta_score": 39.8,
+        "pick_rate": 12.6,
+        "win_rate": 49.6,
+        "ban_rate": 0.0,
+        "presence_rate": 12.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junkrat",
+        "hero_name": "정크랫",
+        "meta_score": 39.5,
+        "pick_rate": 6.8,
+        "win_rate": 51.2,
+        "ban_rate": 0.0,
+        "presence_rate": 6.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "brigitte",
+        "hero_name": "브리기테",
+        "meta_score": 38.9,
+        "pick_rate": 5.1,
+        "win_rate": 51.5,
+        "ban_rate": 0.0,
+        "presence_rate": 5.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "winston",
+        "hero_name": "윈스턴",
+        "meta_score": 38.4,
+        "pick_rate": 5.8,
+        "win_rate": 51.1,
+        "ban_rate": 0.0,
+        "presence_rate": 5.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "cassidy",
+        "hero_name": "캐서디",
+        "meta_score": 38.0,
+        "pick_rate": 18.8,
+        "win_rate": 47.2,
+        "ban_rate": 0.0,
+        "presence_rate": 18.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ashe",
+        "hero_name": "애쉬",
+        "meta_score": 37.8,
+        "pick_rate": 8.6,
+        "win_rate": 50.1,
+        "ban_rate": 0.0,
+        "presence_rate": 8.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "hazard",
+        "hero_name": "해저드",
+        "meta_score": 37.8,
+        "pick_rate": 4.5,
+        "win_rate": 51.3,
+        "ban_rate": 0.0,
+        "presence_rate": 4.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "tracer",
+        "hero_name": "트레이서",
+        "meta_score": 37.2,
+        "pick_rate": 8.9,
+        "win_rate": 49.8,
+        "ban_rate": 0.0,
+        "presence_rate": 8.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ramattra",
+        "hero_name": "라마트라",
+        "meta_score": 36.5,
+        "pick_rate": 7.5,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 7.5,
+        "tier": "B"
+      },
+      {
+        "hero_id": "soldier76",
+        "hero_name": "솔저: 76",
+        "meta_score": 36.2,
+        "pick_rate": 13.7,
+        "win_rate": 48.1,
+        "ban_rate": 0.0,
+        "presence_rate": 13.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lucio",
+        "hero_name": "루시우",
+        "meta_score": 36.1,
+        "pick_rate": 6.3,
+        "win_rate": 50.2,
+        "ban_rate": 0.0,
+        "presence_rate": 6.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "echo",
+        "hero_name": "에코",
+        "meta_score": 34.2,
+        "pick_rate": 4.5,
+        "win_rate": 50.1,
+        "ban_rate": 0.0,
+        "presence_rate": 4.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "hanzo",
+        "hero_name": "한조",
+        "meta_score": 32.4,
+        "pick_rate": 6.2,
+        "win_rate": 49.0,
+        "ban_rate": 0.0,
+        "presence_rate": 6.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "hero_name": "레킹볼",
+        "meta_score": 32.2,
+        "pick_rate": 2.9,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 2.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "zarya",
+        "hero_name": "자리야",
+        "meta_score": 32.1,
+        "pick_rate": 6.9,
+        "win_rate": 48.7,
+        "ban_rate": 0.0,
+        "presence_rate": 6.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "emre",
+        "hero_name": "엠레",
+        "meta_score": 31.7,
+        "pick_rate": 10.9,
+        "win_rate": 47.4,
+        "ban_rate": 0.0,
+        "presence_rate": 10.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "bastion",
+        "hero_name": "바스티온",
+        "meta_score": 31.6,
+        "pick_rate": 9.1,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 9.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "vendetta",
+        "hero_name": "벤데타",
+        "meta_score": 31.4,
+        "pick_rate": 3.7,
+        "win_rate": 49.4,
+        "ban_rate": 0.0,
+        "presence_rate": 3.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "hero_name": "제트팩 캣",
+        "meta_score": 31.0,
+        "pick_rate": 6.7,
+        "win_rate": 48.4,
+        "ban_rate": 0.0,
+        "presence_rate": 6.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "mercy",
+        "hero_name": "메르시",
+        "meta_score": 30.8,
+        "pick_rate": 8.5,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 8.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "orisa",
+        "hero_name": "오리사",
+        "meta_score": 28.4,
+        "pick_rate": 10.6,
+        "win_rate": 46.4,
+        "ban_rate": 0.0,
+        "presence_rate": 10.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "freja",
+        "hero_name": "프레야",
+        "meta_score": 26.8,
+        "pick_rate": 6.7,
+        "win_rate": 47.0,
+        "ban_rate": 0.0,
+        "presence_rate": 6.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "baptiste",
+        "hero_name": "바티스트",
+        "meta_score": 26.7,
+        "pick_rate": 5.9,
+        "win_rate": 47.2,
+        "ban_rate": 0.0,
+        "presence_rate": 5.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "dva",
+        "hero_name": "D.Va",
+        "meta_score": 25.8,
+        "pick_rate": 7.2,
+        "win_rate": 46.5,
+        "ban_rate": 0.0,
+        "presence_rate": 7.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sombra",
+        "hero_name": "솜브라",
+        "meta_score": 24.5,
+        "pick_rate": 5.1,
+        "win_rate": 46.7,
+        "ban_rate": 0.0,
+        "presence_rate": 5.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "widowmaker",
+        "hero_name": "위도우메이커",
+        "meta_score": 24.3,
+        "pick_rate": 4.1,
+        "win_rate": 46.9,
+        "ban_rate": 0.0,
+        "presence_rate": 4.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "roadhog",
+        "hero_name": "로드호그",
+        "meta_score": 21.3,
+        "pick_rate": 6.2,
+        "win_rate": 45.3,
+        "ban_rate": 0.0,
+        "presence_rate": 6.2,
+        "tier": "D"
+      },
+      {
+        "hero_id": "sojourn",
+        "hero_name": "소전",
+        "meta_score": 18.3,
+        "pick_rate": 8.6,
+        "win_rate": 43.6,
+        "ban_rate": 0.0,
+        "presence_rate": 8.6,
+        "tier": "D"
+      }
     ]
   },
   "플래티넘": {
@@ -128651,6 +132235,518 @@
         "win_rate": 42.7,
         "ban_rate": 3.7,
         "presence_rate": 10.0,
+        "tier": "D"
+      }
+    ],
+    "2026-05-29": [
+      {
+        "hero_id": "ana",
+        "hero_name": "아나",
+        "meta_score": 62.2,
+        "pick_rate": 52.7,
+        "win_rate": 47.4,
+        "ban_rate": 0.0,
+        "presence_rate": 52.7,
+        "tier": "A"
+      },
+      {
+        "hero_id": "kiriko",
+        "hero_name": "키리코",
+        "meta_score": 59.3,
+        "pick_rate": 42.5,
+        "win_rate": 49.0,
+        "ban_rate": 0.0,
+        "presence_rate": 42.5,
+        "tier": "A"
+      },
+      {
+        "hero_id": "zenyatta",
+        "hero_name": "젠야타",
+        "meta_score": 52.6,
+        "pick_rate": 11.2,
+        "win_rate": 54.7,
+        "ban_rate": 0.0,
+        "presence_rate": 11.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "symmetra",
+        "hero_name": "시메트라",
+        "meta_score": 52.0,
+        "pick_rate": 3.3,
+        "win_rate": 56.5,
+        "ban_rate": 0.0,
+        "presence_rate": 3.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "sierra",
+        "hero_name": "시에라",
+        "meta_score": 51.9,
+        "pick_rate": 22.9,
+        "win_rate": 51.5,
+        "ban_rate": 0.0,
+        "presence_rate": 22.9,
+        "tier": "A"
+      },
+      {
+        "hero_id": "reaper",
+        "hero_name": "리퍼",
+        "meta_score": 51.6,
+        "pick_rate": 11.5,
+        "win_rate": 54.3,
+        "ban_rate": 0.0,
+        "presence_rate": 11.5,
+        "tier": "A"
+      },
+      {
+        "hero_id": "anran",
+        "hero_name": "안란",
+        "meta_score": 49.6,
+        "pick_rate": 12.4,
+        "win_rate": 53.4,
+        "ban_rate": 0.0,
+        "presence_rate": 12.4,
+        "tier": "A"
+      },
+      {
+        "hero_id": "wuyang",
+        "hero_name": "우양",
+        "meta_score": 49.1,
+        "pick_rate": 13.3,
+        "win_rate": 53.0,
+        "ban_rate": 0.0,
+        "presence_rate": 13.3,
+        "tier": "A"
+      },
+      {
+        "hero_id": "torbjorn",
+        "hero_name": "토르비욘",
+        "meta_score": 46.2,
+        "pick_rate": 3.2,
+        "win_rate": 54.6,
+        "ban_rate": 0.0,
+        "presence_rate": 3.2,
+        "tier": "A"
+      },
+      {
+        "hero_id": "junker_queen",
+        "hero_name": "정커퀸",
+        "meta_score": 45.2,
+        "pick_rate": 3.8,
+        "win_rate": 54.1,
+        "ban_rate": 0.0,
+        "presence_rate": 3.8,
+        "tier": "A"
+      },
+      {
+        "hero_id": "domina",
+        "hero_name": "도미나",
+        "meta_score": 44.7,
+        "pick_rate": 6.3,
+        "win_rate": 53.3,
+        "ban_rate": 0.0,
+        "presence_rate": 6.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "sigma",
+        "hero_name": "시그마",
+        "meta_score": 44.3,
+        "pick_rate": 8.2,
+        "win_rate": 52.7,
+        "ban_rate": 0.0,
+        "presence_rate": 8.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "genji",
+        "hero_name": "겐지",
+        "meta_score": 43.7,
+        "pick_rate": 14.1,
+        "win_rate": 51.0,
+        "ban_rate": 0.0,
+        "presence_rate": 14.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mei",
+        "hero_name": "메이",
+        "meta_score": 43.4,
+        "pick_rate": 5.4,
+        "win_rate": 53.1,
+        "ban_rate": 0.0,
+        "presence_rate": 5.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "doomfist",
+        "hero_name": "둠피스트",
+        "meta_score": 43.1,
+        "pick_rate": 10.9,
+        "win_rate": 51.6,
+        "ban_rate": 0.0,
+        "presence_rate": 10.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "pharah",
+        "hero_name": "파라",
+        "meta_score": 42.7,
+        "pick_rate": 6.4,
+        "win_rate": 52.6,
+        "ban_rate": 0.0,
+        "presence_rate": 6.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "reinhardt",
+        "hero_name": "라인하르트",
+        "meta_score": 42.2,
+        "pick_rate": 7.8,
+        "win_rate": 52.1,
+        "ban_rate": 0.0,
+        "presence_rate": 7.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mizuki",
+        "hero_name": "미즈키",
+        "meta_score": 41.7,
+        "pick_rate": 11.4,
+        "win_rate": 51.0,
+        "ban_rate": 0.0,
+        "presence_rate": 11.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "illari",
+        "hero_name": "일리아리",
+        "meta_score": 40.8,
+        "pick_rate": 7.9,
+        "win_rate": 51.6,
+        "ban_rate": 0.0,
+        "presence_rate": 7.9,
+        "tier": "B"
+      },
+      {
+        "hero_id": "venture",
+        "hero_name": "벤처",
+        "meta_score": 40.1,
+        "pick_rate": 2.7,
+        "win_rate": 52.7,
+        "ban_rate": 0.0,
+        "presence_rate": 2.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "brigitte",
+        "hero_name": "브리기테",
+        "meta_score": 40.0,
+        "pick_rate": 5.6,
+        "win_rate": 51.9,
+        "ban_rate": 0.0,
+        "presence_rate": 5.6,
+        "tier": "B"
+      },
+      {
+        "hero_id": "juno",
+        "hero_name": "주노",
+        "meta_score": 39.3,
+        "pick_rate": 9.1,
+        "win_rate": 50.8,
+        "ban_rate": 0.0,
+        "presence_rate": 9.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "junkrat",
+        "hero_name": "정크랫",
+        "meta_score": 39.2,
+        "pick_rate": 5.8,
+        "win_rate": 51.6,
+        "ban_rate": 0.0,
+        "presence_rate": 5.8,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lifeweaver",
+        "hero_name": "라이프위버",
+        "meta_score": 38.9,
+        "pick_rate": 10.1,
+        "win_rate": 50.4,
+        "ban_rate": 0.0,
+        "presence_rate": 10.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "mauga",
+        "hero_name": "마우가",
+        "meta_score": 38.9,
+        "pick_rate": 12.1,
+        "win_rate": 49.9,
+        "ban_rate": 0.0,
+        "presence_rate": 12.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "winston",
+        "hero_name": "윈스턴",
+        "meta_score": 38.5,
+        "pick_rate": 6.4,
+        "win_rate": 51.2,
+        "ban_rate": 0.0,
+        "presence_rate": 6.4,
+        "tier": "B"
+      },
+      {
+        "hero_id": "tracer",
+        "hero_name": "트레이서",
+        "meta_score": 38.0,
+        "pick_rate": 11.3,
+        "win_rate": 49.8,
+        "ban_rate": 0.0,
+        "presence_rate": 11.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "moira",
+        "hero_name": "모이라",
+        "meta_score": 37.7,
+        "pick_rate": 10.2,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 10.2,
+        "tier": "B"
+      },
+      {
+        "hero_id": "hazard",
+        "hero_name": "해저드",
+        "meta_score": 37.7,
+        "pick_rate": 5.0,
+        "win_rate": 51.3,
+        "ban_rate": 0.0,
+        "presence_rate": 5.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "ashe",
+        "hero_name": "애쉬",
+        "meta_score": 37.5,
+        "pick_rate": 8.7,
+        "win_rate": 50.3,
+        "ban_rate": 0.0,
+        "presence_rate": 8.7,
+        "tier": "B"
+      },
+      {
+        "hero_id": "cassidy",
+        "hero_name": "캐서디",
+        "meta_score": 37.4,
+        "pick_rate": 22.0,
+        "win_rate": 46.9,
+        "ban_rate": 0.0,
+        "presence_rate": 22.0,
+        "tier": "B"
+      },
+      {
+        "hero_id": "soldier76",
+        "hero_name": "솔저: 76",
+        "meta_score": 36.6,
+        "pick_rate": 12.3,
+        "win_rate": 49.1,
+        "ban_rate": 0.0,
+        "presence_rate": 12.3,
+        "tier": "B"
+      },
+      {
+        "hero_id": "echo",
+        "hero_name": "에코",
+        "meta_score": 36.0,
+        "pick_rate": 5.1,
+        "win_rate": 50.7,
+        "ban_rate": 0.0,
+        "presence_rate": 5.1,
+        "tier": "B"
+      },
+      {
+        "hero_id": "lucio",
+        "hero_name": "루시우",
+        "meta_score": 34.0,
+        "pick_rate": 5.3,
+        "win_rate": 50.0,
+        "ban_rate": 0.0,
+        "presence_rate": 5.3,
+        "tier": "C"
+      },
+      {
+        "hero_id": "ramattra",
+        "hero_name": "라마트라",
+        "meta_score": 32.2,
+        "pick_rate": 6.4,
+        "win_rate": 49.1,
+        "ban_rate": 0.0,
+        "presence_rate": 6.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "emre",
+        "hero_name": "엠레",
+        "meta_score": 31.7,
+        "pick_rate": 10.6,
+        "win_rate": 47.9,
+        "ban_rate": 0.0,
+        "presence_rate": 10.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "mercy",
+        "hero_name": "메르시",
+        "meta_score": 31.4,
+        "pick_rate": 8.2,
+        "win_rate": 48.4,
+        "ban_rate": 0.0,
+        "presence_rate": 8.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "hanzo",
+        "hero_name": "한조",
+        "meta_score": 31.4,
+        "pick_rate": 6.2,
+        "win_rate": 48.9,
+        "ban_rate": 0.0,
+        "presence_rate": 6.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "wrecking_ball",
+        "hero_name": "레킹볼",
+        "meta_score": 31.2,
+        "pick_rate": 3.5,
+        "win_rate": 49.5,
+        "ban_rate": 0.0,
+        "presence_rate": 3.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "zarya",
+        "hero_name": "자리야",
+        "meta_score": 30.5,
+        "pick_rate": 7.0,
+        "win_rate": 48.4,
+        "ban_rate": 0.0,
+        "presence_rate": 7.0,
+        "tier": "C"
+      },
+      {
+        "hero_id": "jetpack_cat",
+        "hero_name": "제트팩 캣",
+        "meta_score": 29.6,
+        "pick_rate": 6.6,
+        "win_rate": 48.2,
+        "ban_rate": 0.0,
+        "presence_rate": 6.6,
+        "tier": "C"
+      },
+      {
+        "hero_id": "bastion",
+        "hero_name": "바스티온",
+        "meta_score": 28.9,
+        "pick_rate": 7.2,
+        "win_rate": 47.8,
+        "ban_rate": 0.0,
+        "presence_rate": 7.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "orisa",
+        "hero_name": "오리사",
+        "meta_score": 27.3,
+        "pick_rate": 9.5,
+        "win_rate": 46.7,
+        "ban_rate": 0.0,
+        "presence_rate": 9.5,
+        "tier": "C"
+      },
+      {
+        "hero_id": "vendetta",
+        "hero_name": "벤데타",
+        "meta_score": 26.9,
+        "pick_rate": 3.4,
+        "win_rate": 48.1,
+        "ban_rate": 0.0,
+        "presence_rate": 3.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "baptiste",
+        "hero_name": "바티스트",
+        "meta_score": 26.7,
+        "pick_rate": 5.9,
+        "win_rate": 47.4,
+        "ban_rate": 0.0,
+        "presence_rate": 5.9,
+        "tier": "C"
+      },
+      {
+        "hero_id": "freja",
+        "hero_name": "프레야",
+        "meta_score": 25.6,
+        "pick_rate": 7.2,
+        "win_rate": 46.7,
+        "ban_rate": 0.0,
+        "presence_rate": 7.2,
+        "tier": "C"
+      },
+      {
+        "hero_id": "dva",
+        "hero_name": "D.Va",
+        "meta_score": 24.9,
+        "pick_rate": 6.7,
+        "win_rate": 46.6,
+        "ban_rate": 0.0,
+        "presence_rate": 6.7,
+        "tier": "C"
+      },
+      {
+        "hero_id": "widowmaker",
+        "hero_name": "위도우메이커",
+        "meta_score": 24.1,
+        "pick_rate": 4.1,
+        "win_rate": 47.0,
+        "ban_rate": 0.0,
+        "presence_rate": 4.1,
+        "tier": "C"
+      },
+      {
+        "hero_id": "sombra",
+        "hero_name": "솜브라",
+        "meta_score": 23.9,
+        "pick_rate": 5.4,
+        "win_rate": 46.6,
+        "ban_rate": 0.0,
+        "presence_rate": 5.4,
+        "tier": "C"
+      },
+      {
+        "hero_id": "roadhog",
+        "hero_name": "로드호그",
+        "meta_score": 19.9,
+        "pick_rate": 6.4,
+        "win_rate": 45.0,
+        "ban_rate": 0.0,
+        "presence_rate": 6.4,
+        "tier": "D"
+      },
+      {
+        "hero_id": "sojourn",
+        "hero_name": "소전",
+        "meta_score": 18.8,
+        "pick_rate": 8.6,
+        "win_rate": 44.1,
+        "ban_rate": 0.0,
+        "presence_rate": 8.6,
         "tier": "D"
       }
     ]

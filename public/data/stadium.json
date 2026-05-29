@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 210,
+      "upvotes": 213,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -156,7 +156,7 @@
       "code": "H49C5",
       "description": "탑49 브리기테 원트릭이 만든 GM 10시즌 연속 달성 빌드, 이동 속도 극대화가 핵심.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 965,
+      "upvotes": 964,
       "stats": {
         "LIFE": 314,
         "Armor": 50,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 635,
+      "upvotes": 637,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -208,7 +208,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "능력 파워",
-      "upvotes": 133,
+      "upvotes": 135,
       "stats": {
         "LIFE": 327,
         "Armor": 200,
@@ -442,7 +442,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 293,
+      "upvotes": 294,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -527,7 +527,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 200,
+      "upvotes": 202,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -545,7 +545,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 199,
+      "upvotes": 200,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -711,7 +711,7 @@
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 134,
+      "upvotes": 135,
       "stats": {
         "LIFE": 729,
         "Armor": 225,
@@ -759,19 +759,19 @@
       "cost": "$$"
     },
     {
-      "name": "124K 데미지?! 랭크 1 해저드 빌드는 너무 강력하다",
-      "code": "T06Q4",
-      "description": "",
-      "playstyle": "메타 · 고체력",
+      "name": "87% 승률, 무적 (전설 빌드)",
+      "code": "PVE8F",
+      "description": "해저드: 멈출 수 없는 도약 스팸 빌드 우리의 목표는 벽을 쌓는 것이 아니라 적의 숫자를 줄이는 것이다. 플레이 방법은 다음과 같다. 적의 후방에서 지원가의 화면을 영원히 회색으로 유지하는 것이 목표이다.",
+      "playstyle": "능력 파워 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 704,
+        "LIFE": 706,
         "Armor": 225,
-        "Total LIFE": 929,
+        "Total LIFE": 931,
         "Weapon Power": 0,
-        "Ability Power": 85,
+        "Ability Power": 70,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 10
+        "Cooldown Reduction": 5
       },
       "cost": "$$$"
     }
@@ -782,7 +782,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 67,
+      "upvotes": 69,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -814,7 +814,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 14,
+      "upvotes": 15,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -1233,7 +1233,7 @@
       "code": "GCMH6",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 86,
+      "upvotes": 87,
       "stats": {
         "LIFE": 390,
         "Armor": 100,
@@ -1452,7 +1452,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1319,
+      "upvotes": 1323,
       "stats": {
         "LIFE": 418,
         "Total LIFE": 418,
@@ -1768,7 +1768,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 19,
+      "upvotes": 20,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -2333,7 +2333,7 @@
       "code": "C90AR",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 23,
+      "upvotes": 24,
       "stats": {
         "LIFE": 370,
         "Armor": 200,
@@ -2525,7 +2525,7 @@
       "code": "SE0JQ",
       "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
       "playstyle": "능력 파워",
-      "upvotes": 15,
+      "upvotes": 16,
       "stats": {
         "LIFE": 322,
         "Armor": 175,
@@ -2617,7 +2617,7 @@
       "code": "ACKTS",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 66,
+      "upvotes": 67,
       "stats": {
         "LIFE": 690,
         "Armor": 225,
@@ -2653,7 +2653,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 221,
+      "upvotes": 223,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
@@ -2755,7 +2755,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 108,
+      "upvotes": 109,
       "stats": {
         "LIFE": 569,
         "Armor": 25,
