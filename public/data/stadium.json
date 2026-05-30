@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 213,
+      "upvotes": 215,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 637,
+      "upvotes": 638,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -246,7 +246,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 732,
+      "upvotes": 734,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -299,7 +299,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 58,
+      "upvotes": 59,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -352,9 +352,9 @@
       "cost": "$$$"
     },
     {
-      "name": "GODFIST V2 [딜러, 생존력, 효율성]",
-      "code": "JNKZ7",
-      "description": "둠피스트 기술 위력 버스트 빌드. 생존성과 가동 시간 확보로 초반 자원 확보와 지속 전투 능력 강화.",
+      "name": "GODFIST V3 [딜, 생존력, 효과]",
+      "code": "DB97V",
+      "description": "GODFIST V3 시즌 2 - 고급 하이브리드 둠피스트 빌드로, 높은 버스트 데미지 콤보와 생존 가능성을 유지하며, 기본 공격과 기술 데미지를 모두 강화합니다.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 53,
       "stats": {
@@ -711,7 +711,7 @@
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 135,
+      "upvotes": 136,
       "stats": {
         "LIFE": 729,
         "Armor": 225,
@@ -759,19 +759,19 @@
       "cost": "$$"
     },
     {
-      "name": "87% 승률, 무적 (전설 빌드)",
-      "code": "PVE8F",
-      "description": "해저드: 멈출 수 없는 도약 스팸 빌드 우리의 목표는 벽을 쌓는 것이 아니라 적의 숫자를 줄이는 것이다. 플레이 방법은 다음과 같다. 적의 후방에서 지원가의 화면을 영원히 회색으로 유지하는 것이 목표이다.",
-      "playstyle": "능력 파워 · 고체력",
+      "name": "124K 데미지?! 랭크 1 해저드 빌드는 너무 강력하다",
+      "code": "T06Q4",
+      "description": "",
+      "playstyle": "메타 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 706,
+        "LIFE": 704,
         "Armor": 225,
-        "Total LIFE": 931,
+        "Total LIFE": 929,
         "Weapon Power": 0,
-        "Ability Power": 70,
+        "Ability Power": 85,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 5
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -782,7 +782,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 69,
+      "upvotes": 71,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -814,7 +814,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 15,
+      "upvotes": 16,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -844,21 +844,20 @@
       "cost": "$$$"
     },
     {
-      "name": "완벽한 기술 위력 빌드!",
-      "code": "KXT9C",
-      "description": "이 빌드는 많은 게임에서 승리했으며 지금까지 본 가장 강력한 빌드 중 하나일 수 있습니다. 각 기술이 함께 작동하여 퍼(Purr)로 좋은 회복량을 제공하고,同時에 일부 피해를 줄 수 있습니다.",
-      "playstyle": "능력 파워 · 생명력 흡수",
+      "name": "83% 승률 메타 캣 캐리",
+      "code": "3YNSM",
+      "description": "우리는 모두 스타디움에서 고양이를 사용해봤습니다. 하지만 모든 빌드는 \"기관총\" 스타일을 사용합니다. 이 빌드는 절대적인 메타입니다. 라운드 4 이후에 적을 다이빙하는 고양이로 플레이하며, 동시에 생존을 유지합니다.",
+      "playstyle": "메타 · 능력 파워",
       "upvotes": 4,
       "stats": {
-        "LIFE": 400,
-        "Total LIFE": 400,
+        "LIFE": 369,
+        "Armor": 50,
+        "Total LIFE": 419,
         "Weapon Power": 10,
-        "Ability Power": 85,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
+        "Ability Power": 95,
+        "Cooldown Reduction": 10
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Junker Queen": [
@@ -867,7 +866,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1746,
+      "upvotes": 1748,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -899,7 +898,7 @@
       "code": "2ZGTY",
       "description": "무기 공격력 중심 정커 퀸으로 광란과 호령으로 재미있게 플레이.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 83,
+      "upvotes": 82,
       "stats": {
         "LIFE": 916,
         "Move Speed": 5,
@@ -951,7 +950,7 @@
       "code": "Z54ST",
       "description": "정크랫 원거리 스나이퍼 스타일. 오리사·라인하르트 같은 정면 영웅 상대에 최적.",
       "playstyle": "혼합 파워",
-      "upvotes": 392,
+      "upvotes": 391,
       "stats": {
         "LIFE": 325,
         "Total LIFE": 325,
@@ -1233,7 +1232,7 @@
       "code": "GCMH6",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 87,
+      "upvotes": 88,
       "stats": {
         "LIFE": 390,
         "Armor": 100,
@@ -1264,7 +1263,7 @@
       "code": "1RFME",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 29,
+      "upvotes": 30,
       "stats": {
         "LIFE": 402,
         "Armor": 50,
@@ -1384,7 +1383,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 923,
+      "upvotes": 924,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1483,7 +1482,7 @@
       "code": "VHN67",
       "description": "최소한의 노력으로 전설 등급에 오른 완성형 빌드. 최대한 많은 바이오틱 구체를 뿌리며 지속 피해를 주는 것이 핵심.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 219,
+      "upvotes": 218,
       "stats": {
         "LIFE": 378,
         "Total LIFE": 378,
@@ -1711,7 +1710,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 206,
+      "upvotes": 207,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1732,7 +1731,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 41,
+      "upvotes": 44,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1768,7 +1767,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 20,
+      "upvotes": 23,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -1804,7 +1803,7 @@
       "code": "XR8B2",
       "description": "생명력 흡수 기반 힐링+무기 공격력 리퍼 빌드. 지속 업데이트 예정.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 207,
+      "upvotes": 206,
       "stats": {
         "LIFE": 480,
         "Armor": 25,
@@ -1823,7 +1822,7 @@
       "code": "16XHY",
       "description": "리퍼의 사형 집행으로 지속적인 회복과 생명력 흡수로 살아남으며 광역 딜링을 하는 빌드. 올스타 달성.",
       "playstyle": "재미용 · 생명력 흡수",
-      "upvotes": 193,
+      "upvotes": 192,
       "stats": {
         "LIFE": 438,
         "Move Speed": 20,
@@ -2135,7 +2134,7 @@
       "code": "64TYG",
       "description": "",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 20,
+      "upvotes": 21,
       "stats": {
         "LIFE": 431,
         "Total LIFE": 431,
@@ -2562,7 +2561,7 @@
       "code": "A6K8A",
       "description": "광역 버블로 지속적인 둔화와 힐 차단 디버프를 걸며, 기술 위력에 비례해 튼튼한 방어막 제공",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 162,
+      "upvotes": 161,
       "stats": {
         "LIFE": 706,
         "Armor": 200,
@@ -2814,7 +2813,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1205,
+      "upvotes": 1206,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
