@@ -759,19 +759,19 @@
       "cost": "$$"
     },
     {
-      "name": "124K 데미지?! 랭크 1 해저드 빌드는 너무 강력하다",
-      "code": "T06Q4",
-      "description": "",
-      "playstyle": "메타 · 고체력",
+      "name": "87% 승률, 불사신 (전설 빌드)",
+      "code": "PVE8F",
+      "description": "해저드: 멈출 수 없는 도약 스팸 빌드. 우리의 목표는 적의 지원가가 사망하는 것을 유지하는 것입니다. 플레이 방법은 간단합니다. 적의 후방에서 적의 지원가를 공격하여 그들의 화면을 영원히 회색으로 유지하는 것입니다.",
+      "playstyle": "능력 파워 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 704,
+        "LIFE": 706,
         "Armor": 225,
-        "Total LIFE": 929,
+        "Total LIFE": 931,
         "Weapon Power": 0,
-        "Ability Power": 85,
+        "Ability Power": 70,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 10
+        "Cooldown Reduction": 5
       },
       "cost": "$$$"
     }
@@ -1783,21 +1783,19 @@
       "cost": "$$$"
     },
     {
-      "name": "라마트라 그랜드마스터 가이드: 이 AP 소용돌이 빌드는 완전히 깨졌습니다",
-      "code": "42JPW",
-      "description": "",
+      "name": "Lebron Ram - 미친 캐리 [멈출 수 없음]",
+      "code": "3DTYN",
+      "description": "라마트라를 이용하여 적을 공격하고, 수류탄을 적의 후방에 많이 투하하여 큰 피해를 입히거나, Swirling Ward로 적에게 점프하여 공격합니다. 일반적인 회전은 방어막 + 포킹 -> 소용돌이입니다.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 16,
       "stats": {
-        "LIFE": 722,
+        "LIFE": 734,
         "Armor": 100,
-        "Total LIFE": 822,
+        "Total LIFE": 834,
         "Attack Speed": 10,
-        "Weapon Power": 20,
-        "Ability Power": 80,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
+        "Weapon Power": 0,
+        "Ability Power": 100,
+        "Cooldown Reduction": 25
       },
       "cost": "$$$"
     }
