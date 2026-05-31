@@ -3,8 +3,8 @@
 
 수집 순서:
 1. overwatch.blizzard.com/ko-kr/rates/data/ JSON API 호출
-   - rq=1: 역할 고정 경쟁전 (픽률·승률·밴률 모두 포함)
-   - rq=2/3: 빠른대전 (밴률 없음 — 사용 안 함)
+   - rq 파라미터를 _RQ_CANDIDATES 순서로 시도해 ban_rate > 0 응답을 찾음
+   - Blizzard가 API 파라미터 의미를 변경하는 경우를 자동으로 감지
 2. 실패 시 data/meta_baseline.json fallback
 
 메타 점수 공식 (밴 데이터 있을 때):
@@ -29,6 +29,9 @@ import aiohttp
 logger = logging.getLogger(__name__)
 
 BLIZZARD_RATES_URL = "https://overwatch.blizzard.com/ko-kr/rates/data/"
+# rq 파라미터: ban_rate > 0 응답이 나올 때까지 순서대로 시도
+# Blizzard가 파라미터 의미를 변경할 경우 자동으로 다음 후보로 전환됨
+_RQ_CANDIDATES = ["2", "1", "3"]
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -90,38 +93,49 @@ async def fetch_meta(
 ) -> list[HeroMeta] | None:
     """Blizzard 공식 사이트에서 메타 통계를 가져옵니다. 실패 시 None.
 
-    rq=1: 역할 고정 경쟁전 — 픽률·승률·밴률 모두 포함.
+    _RQ_CANDIDATES 순서로 rq 값을 시도해 ban_rate > 0 응답을 찾는다.
     """
     tier_val = RANK_PARAM.get(rank, "All")
-    params = {
+    base_params = {
         "input": "PC",
         "map": map_id,
         "region": "Asia",
         "role": "All",
-        "rq": "1",      # 경쟁전 - 역할 고정 (밴률 포함)
         "tier": tier_val,
     }
 
-    try:
-        async with session.get(
-            BLIZZARD_RATES_URL,
-            params=params,
-            headers=HEADERS,
-            timeout=aiohttp.ClientTimeout(total=20),
-        ) as resp:
-            resp.raise_for_status()
-            data = await resp.json(content_type=None)
+    last_heroes: list[HeroMeta] | None = None
+    for rq in _RQ_CANDIDATES:
+        try:
+            async with session.get(
+                BLIZZARD_RATES_URL,
+                params={**base_params, "rq": rq},
+                headers=HEADERS,
+                timeout=aiohttp.ClientTimeout(total=20),
+            ) as resp:
+                resp.raise_for_status()
+                data = await resp.json(content_type=None)
 
-        rates = data.get("rates", [])
-        if isinstance(rates, dict):
-            rates = rates.get("rates", [])
-        heroes = _parse_rows(rates)
-        if heroes:
-            return _calculate_scores(heroes)
-        logger.warning("Blizzard 데이터 파싱 결과 없음")
-    except Exception as e:
-        logger.warning(f"Blizzard 메타 스크래핑 실패: {e}")
+            rates = data.get("rates", [])
+            if isinstance(rates, dict):
+                rates = rates.get("rates", [])
+            heroes = _parse_rows(rates)
+            if not heroes:
+                continue
 
+            scored = _calculate_scores(heroes)
+            if any(h.ban_rate > 0 for h in scored):
+                if rq != _RQ_CANDIDATES[0]:
+                    logger.info(f"ban_rate 활성 rq 변경: {_RQ_CANDIDATES[0]} → {rq}")
+                return scored
+
+            last_heroes = scored  # ban_rate 없지만 유효한 결과 보존
+        except Exception as e:
+            logger.warning(f"Blizzard 메타 스크래핑 실패 (rq={rq}): {e}")
+
+    if last_heroes:
+        logger.warning(f"모든 rq({_RQ_CANDIDATES})에서 ban_rate 없음 — fallback 공식 사용")
+        return last_heroes
     return None
 
 
@@ -203,6 +217,8 @@ def _calculate_scores(heroes: list[HeroMeta]) -> list[HeroMeta]:
 
     max_pick = max((h.pick_rate for h in heroes), default=1) or 1
     has_ban = any(h.ban_rate > 0 for h in heroes)
+    if not has_ban:
+        logger.warning("ban_rate 데이터 없음 — fallback 공식 적용 (win×0.60 + pick×0.40)")
 
     if has_ban:
         max_ban = max(h.ban_rate for h in heroes) or 1

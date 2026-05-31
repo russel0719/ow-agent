@@ -33,7 +33,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from bot.utils import cache
-from bot.utils.scrapers.meta_scraper import RANK_PARAM, fetch_meta, load_fallback, _score_to_tier
+from bot.utils.scrapers.meta_scraper import RANK_PARAM, fetch_meta, load_fallback, _score_to_tier, _calculate_scores
 from bot.utils.scrapers.patch_scraper import fetch_recent_patches
 from bot.utils.scrapers.stadium_scraper import fetch_all_builds
 
@@ -141,26 +141,44 @@ async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
                     saved_portrait_map[pid] = h["portrait_url"]
 
     all_ranks: dict[str, list] = {}
+    all_heroes_raw: dict[str, list] = {}  # HeroMeta 보존 (ban_rate fallback용)
     failed = 0
 
     for rank_ko in set(RANK_PARAM.keys()) - {"챔피언"}:
         try:
             heroes = await fetch_meta(session, rank_ko)
             if heroes:
+                all_heroes_raw[rank_ko] = heroes
                 all_ranks[rank_ko] = [_hero_to_dict(h) for h in heroes]
-                logger.info(f"  메타 완료: {rank_ko} ({len(heroes)}명)")
+                has_ban = any(h.ban_rate > 0 for h in heroes)
+                logger.info(f"  메타 완료: {rank_ko} ({len(heroes)}명, 밴률={'있음' if has_ban else '없음'})")
             else:
                 raise ValueError("빈 데이터")
         except Exception as e:
             logger.warning(f"  메타 실패 {rank_ko}: {e} — fallback 사용")
             fallback = load_fallback(rank_ko)
             if fallback:
+                all_heroes_raw[rank_ko] = fallback
                 all_ranks[rank_ko] = [_hero_to_dict(h) for h in fallback]
             else:
                 failed += 1
 
     if not all_ranks:
         return None
+
+    # 모든 rq에서 ban_rate 없는 랭크: meta_history.json 최근값으로 보완 후 재계산
+    for rank_ko, heroes in list(all_heroes_raw.items()):
+        if any(h.ban_rate > 0 for h in heroes):
+            continue
+        date, last_ban = _get_last_known_ban_rates(rank_ko)
+        if not last_ban:
+            continue
+        for h in heroes:
+            h.ban_rate = last_ban.get(h.hero_id, 0.0)
+        recalculated = _calculate_scores(heroes)
+        all_heroes_raw[rank_ko] = recalculated
+        all_ranks[rank_ko] = [_hero_to_dict(h) for h in recalculated]
+        logger.warning(f"  {rank_ko}: ban_rate 없음 → {date} 히스토리 값으로 보완 후 재계산")
 
     # Blizzard API가 tier 파라미터를 무시하고 전 랭크에 동일 데이터를 반환할 때 감지 후 stale 캐시로 교체
     if "전체" in all_ranks:
@@ -201,6 +219,16 @@ async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
 
     _save(DOCS_DATA / "meta.json", all_ranks)
     return all_ranks
+
+
+def _get_last_known_ban_rates(rank_ko: str) -> tuple[str, dict[str, float]]:
+    """meta_history.json에서 가장 최근 ban_rate > 0 데이터를 반환. 없으면 ("", {})."""
+    history: dict = _load(DOCS_DATA / "meta_history.json")  # type: ignore
+    for date in sorted(history.get(rank_ko, {}).keys(), reverse=True):
+        heroes = history[rank_ko][date]
+        if any(h.get("ban_rate", 0) > 0 for h in heroes):
+            return date, {h["hero_id"]: h["ban_rate"] for h in heroes}
+    return "", {}
 
 
 def _update_history(all_ranks: dict) -> None:
@@ -603,11 +631,17 @@ async def main() -> None:
         logger.info("  --force-stadium: 스타디움 전체 재번역 모드")
     sources: dict[str, str] = {}
 
+    has_ban_rate = False
     async with aiohttp.ClientSession() as session:
         # 1. 메타 통계
         all_ranks = await _generate_meta(session)
         if all_ranks:
             sources["meta"] = "live"
+            has_ban_rate = any(
+                h.get("ban_rate", 0) > 0
+                for heroes in all_ranks.values()
+                for h in heroes
+            )
             _update_history(all_ranks)
             _sync_heroes_json(all_ranks)
         else:
@@ -637,6 +671,7 @@ async def main() -> None:
     _save(DOCS_DATA / "last_updated.json", {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "sources": sources,
+        "has_ban_rate": has_ban_rate,
     })
 
     logger.info(f"=== 완료: {sources} ===")
