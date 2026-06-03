@@ -91,7 +91,7 @@
       "code": "6PZFF",
       "description": "",
       "playstyle": "재미용 · 능력 파워",
-      "upvotes": 508,
+      "upvotes": 509,
       "stats": {
         "LIFE": 373,
         "Total LIFE": 373,
@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 218,
+      "upvotes": 220,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 643,
+      "upvotes": 645,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -246,7 +246,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 735,
+      "upvotes": 736,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -299,7 +299,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 61,
+      "upvotes": 62,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -406,7 +406,7 @@
       "code": "P572C",
       "description": "",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 11,
+      "upvotes": 12,
       "stats": {
         "LIFE": 833,
         "Armor": 50,
@@ -527,7 +527,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 206,
+      "upvotes": 208,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -545,7 +545,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 202,
+      "upvotes": 204,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -759,19 +759,19 @@
       "cost": "$$"
     },
     {
-      "name": "124K 데미지?! 랭크 1 해저드 빌드는 너무 강력함",
-      "code": "T06Q4",
-      "description": "",
-      "playstyle": "메타 · 고체력",
+      "name": "87% 승률, 무적 (전설 빌드)",
+      "code": "PVE8F",
+      "description": "해저드: 멈출 수 없는 도약 스팸 빌드 우리의 목표는 벽을 쌓는 것이 아니라 적의 체력을 깎아내리는 것이다. 적의 지원가가 화면을 계속해서 회색으로 유지하게 만들어라. 이렇게 하면 된다. --- HOW TO PLAY: 단순한 플레이 방법",
+      "playstyle": "능력 파워 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 704,
+        "LIFE": 706,
         "Armor": 225,
-        "Total LIFE": 929,
+        "Total LIFE": 931,
         "Weapon Power": 0,
-        "Ability Power": 85,
+        "Ability Power": 70,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 10
+        "Cooldown Reduction": 5
       },
       "cost": "$$$"
     }
@@ -782,7 +782,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 77,
+      "upvotes": 80,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -866,7 +866,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1750,
+      "upvotes": 1751,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1009,20 +1009,23 @@
       "cost": "$"
     },
     {
-      "name": "Just Hold Left Click!",
-      "code": "99GEF",
-      "description": "정크랫 빌드는 초보자에게 적합하며, 다양한 변형이 가능합니다. 주요 전략은 파편 유탄을 가능한 많이 사용하여 일관된 피해를 제공하는 것입니다.",
-      "playstyle": "무기 파워",
+      "name": "끝없는 수류탄 스팸 (3x 전설 & 탑 500)",
+      "code": "H8C1X",
+      "description": "",
+      "playstyle": "메타 · 생명력 흡수",
       "upvotes": 66,
       "stats": {
-        "LIFE": 381,
+        "LIFE": 398,
+        "Armor": 25,
         "Max Ammo": 40,
-        "Total LIFE": 381,
-        "Attack Speed": 55,
-        "Weapon Power": 25,
-        "Ability Power": 5
+        "Total LIFE": 423,
+        "Attack Speed": 40,
+        "Weapon Power": 45,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 25,
+        "Ability Lifesteal": 15
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Juno": [
@@ -1065,7 +1068,7 @@
       "code": "T5QKR",
       "description": "Beesting 빌드의 업데이트판. 장단점을 계속 파악하며 개선 중.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 338,
+      "upvotes": 339,
       "stats": {
         "LIFE": 112,
         "Armor": 160,
@@ -1182,7 +1185,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 128,
+      "upvotes": 130,
       "stats": {
         "LIFE": 480,
         "Total LIFE": 480,
@@ -1281,7 +1284,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "고체력",
-      "upvotes": 302,
+      "upvotes": 303,
       "stats": {
         "LIFE": 538,
         "Armor": 110,
@@ -1383,7 +1386,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 927,
+      "upvotes": 929,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1731,7 +1734,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 50,
+      "upvotes": 51,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -2451,7 +2454,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 219,
+      "upvotes": 220,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2525,7 +2528,7 @@
       "code": "SE0JQ",
       "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
       "playstyle": "능력 파워",
-      "upvotes": 18,
+      "upvotes": 19,
       "stats": {
         "LIFE": 322,
         "Armor": 175,
@@ -2653,7 +2656,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 228,
+      "upvotes": 230,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
@@ -2814,7 +2817,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1209,
+      "upvotes": 1212,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
