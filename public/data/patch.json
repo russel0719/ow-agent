@@ -11,28 +11,5 @@
       "나노 강화제의 대상에게 적절한 시각 효과가 표시되지 않던 문제를 수정했습니다."
     ],
     "translation_source": "official"
-  },
-  {
-    "title": "오버워치 패치 노트 - 2026년 5월 22일",
-    "date": "2026년 5월 21일",
-    "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
-    "hero_changes": [
-      {
-        "hero": "제트팩 캣",
-        "changes": [
-          "튕기기 치유량이 25%에서 35%로 증가했습니다.",
-          "추가 사격 피해가 25%에서 30%로 증가했습니다.",
-          "폭발 피해가 100에서 120으로 증가했습니다.",
-          "연료 1%당 기술 피해가 10에서 7.5로 감소했습니다."
-        ],
-        "is_stadium": true,
-        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png"
-      }
-    ],
-    "general_changes": [
-      "제트팩 캣이 파워를 장착하지 않았을 때 방울 폭탄이 활성화된 상태가 유지되던 문제를 수정했습니다.",
-      "주노의 재정비 및 붉은 약속 제어기 사용 시, 글라이드 부스터 재사용 대기시간이 영구적으로 0으로 초기화되던 문제를 수정했습니다."
-    ],
-    "translation_source": "official"
   }
 ]
