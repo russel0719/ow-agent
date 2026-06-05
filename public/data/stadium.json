@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 220,
+      "upvotes": 221,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 645,
+      "upvotes": 646,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -246,7 +246,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 736,
+      "upvotes": 737,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -527,7 +527,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 209,
+      "upvotes": 210,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -782,7 +782,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 82,
+      "upvotes": 83,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -810,6 +810,23 @@
       "cost": "$$"
     },
     {
+      "name": "제트팩 캣은 공식적으로 S-티어다 (최고의 스타디움 빌드)",
+      "code": "PHX7F",
+      "description": "",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 16,
+      "stats": {
+        "LIFE": 361,
+        "Total LIFE": 361,
+        "Weapon Power": 20,
+        "Ability Power": 65,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "[2X 탑 500] 마이크로웨이브 키티",
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
@@ -825,23 +842,6 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$"
-    },
-    {
-      "name": "제트팩 캣은 공식적으로 S-티어다 (최고의 스타디움 빌드)",
-      "code": "PHX7F",
-      "description": "",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 14,
-      "stats": {
-        "LIFE": 361,
-        "Total LIFE": 361,
-        "Weapon Power": 20,
-        "Ability Power": 65,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$$"
     },
     {
       "name": "83% 승률 메타 캣 캐리",
@@ -866,7 +866,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1750,
+      "upvotes": 1752,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -996,7 +996,7 @@
       "code": "VEJ9Z",
       "description": "컴페티티브와 QP 모두 가능한 정크랫 빌드. 조준 없이 폭탄만 마구 던지면서 킬과 승리를 노림.",
       "playstyle": "재미용 · 무기 파워",
-      "upvotes": 110,
+      "upvotes": 111,
       "stats": {
         "LIFE": 378,
         "Shield": 50,
@@ -1009,20 +1009,23 @@
       "cost": "$"
     },
     {
-      "name": "좌클릭만 계속 누르세요!",
-      "code": "99GEF",
-      "description": "정크랫 빌드입니다. 핵심은 파편 유탄을 많이 사용하여 지속적인 피해를 주는 것입니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 66,
+      "name": "끝없는 수류탄 스팸 (3회 전설 & 탑 500)",
+      "code": "H8C1X",
+      "description": "",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 68,
       "stats": {
-        "LIFE": 381,
+        "LIFE": 398,
+        "Armor": 25,
         "Max Ammo": 40,
-        "Total LIFE": 381,
-        "Attack Speed": 55,
-        "Weapon Power": 25,
-        "Ability Power": 5
+        "Total LIFE": 423,
+        "Attack Speed": 40,
+        "Weapon Power": 45,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 25,
+        "Ability Lifesteal": 15
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Juno": [
@@ -1101,7 +1104,7 @@
       "code": "35AAN",
       "description": "주노 메디마스터 빌드로 2026 시즌 2 기준 최신 설정. 메디블래스터와 하이퍼 링 중심으로 팀원 회복과 기동성을 극대화하는 지원형 플레이.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 202,
+      "upvotes": 203,
       "stats": {
         "LIFE": 208,
         "Shield": 175,
@@ -1182,7 +1185,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 132,
+      "upvotes": 133,
       "stats": {
         "LIFE": 480,
         "Total LIFE": 480,
@@ -1368,7 +1371,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 930,
+      "upvotes": 929,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1451,7 +1454,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1330,
+      "upvotes": 1331,
       "stats": {
         "LIFE": 418,
         "Total LIFE": 418,
@@ -1767,7 +1770,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 27,
+      "upvotes": 28,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -1780,19 +1783,21 @@
       "cost": "$$$"
     },
     {
-      "name": "라마트라 - 미친 캐리 [멈출 수 없다]",
-      "code": "3DTYN",
-      "description": "라마트라 빌드입니다. 핵심은 공허 가속기와 탐욕스러운 소용돌이를 사용하여 큰 피해를 주는 것입니다.",
+      "name": "라마트라 그랜드마스터 가이드: 이 기술 위력 소용돌이 빌드는 완전히 깨졌습니다",
+      "code": "42JPW",
+      "description": "",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 16,
       "stats": {
-        "LIFE": 734,
+        "LIFE": 722,
         "Armor": 100,
-        "Total LIFE": 834,
+        "Total LIFE": 822,
         "Attack Speed": 10,
-        "Weapon Power": 0,
-        "Ability Power": 100,
-        "Cooldown Reduction": 25
+        "Weapon Power": 20,
+        "Ability Power": 80,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
       },
       "cost": "$$$"
     }
@@ -2080,7 +2085,7 @@
       "code": "1VQW5",
       "description": "소전 솔로 캐리 빌드: 무기 공격력 극대화로 레일건 원샷 가능",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 402,
+      "upvotes": 401,
       "stats": {
         "LIFE": 345,
         "Armor": 25,
@@ -2114,7 +2119,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 53,
+      "upvotes": 55,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2150,7 +2155,7 @@
       "code": "DB1X6",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 11,
+      "upvotes": 12,
       "stats": {
         "LIFE": 377,
         "Armor": 50,
@@ -2591,6 +2596,24 @@
       "cost": "$$$"
     },
     {
+      "name": "궁극의 윈스턴 스타디움 빌드 (3x 전설 & 탑 500)",
+      "code": "ACKTS",
+      "description": "",
+      "playstyle": "무기 파워 · 고체력",
+      "upvotes": 70,
+      "stats": {
+        "LIFE": 690,
+        "Armor": 225,
+        "Total LIFE": 915,
+        "Attack Speed": 10,
+        "Weapon Power": 65,
+        "Ability Power": 20,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "9V Tesla Cannon (#1 윈스턴 NA)",
       "code": "XR4KP",
       "description": "높은 생명력 흡수와 피해량으로 장시간 교전 지속, 적이 많을수록 회복과 피해가 증가해 게임 내내 안정적인 성능",
@@ -2607,24 +2630,6 @@
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
         "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "궁극의 윈스턴 스타디움 빌드 (3x 전설 & 탑 500)",
-      "code": "ACKTS",
-      "description": "",
-      "playstyle": "무기 파워 · 고체력",
-      "upvotes": 70,
-      "stats": {
-        "LIFE": 690,
-        "Armor": 225,
-        "Total LIFE": 915,
-        "Attack Speed": 10,
-        "Weapon Power": 65,
-        "Ability Power": 20,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
       },
       "cost": "$$$"
     }
@@ -2651,7 +2656,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 233,
+      "upvotes": 235,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
