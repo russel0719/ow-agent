@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 221,
+      "upvotes": 222,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 646,
+      "upvotes": 647,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -208,7 +208,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "능력 파워",
-      "upvotes": 137,
+      "upvotes": 138,
       "stats": {
         "LIFE": 327,
         "Armor": 200,
@@ -299,7 +299,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 63,
+      "upvotes": 64,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -356,7 +356,7 @@
       "code": "DB97V",
       "description": "GODFIST V3 시즌 2 - 고급 하이브리드 둠피스트 빌드로, 높은 버스트 데미지 콤보와 생존 가능성을 유지하며, 기본 공격과 기술 데미지를 모두 강화합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 58,
+      "upvotes": 59,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -425,7 +425,7 @@
       "code": "E7NA2",
       "description": "D.Va 방어 매트릭스+자폭 빌드로 생존 극대화.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 393,
+      "upvotes": 392,
       "stats": {
         "LIFE": 771,
         "Armor": 345,
@@ -527,7 +527,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 210,
+      "upvotes": 211,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -638,7 +638,7 @@
       "code": "GALHIR",
       "description": "겐지 중~고난이도 난전 빌드로 불사신처럼 싸우며 꾸준한 성과",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 102,
+      "upvotes": 101,
       "stats": {
         "LIFE": 382,
         "Armor": 50,
@@ -810,6 +810,23 @@
       "cost": "$$"
     },
     {
+      "name": "[2X 탑 500] 마이크로웨이브 키티",
+      "code": "BDPF8",
+      "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 17,
+      "stats": {
+        "LIFE": 375,
+        "Total LIFE": 375,
+        "Weapon Power": 20,
+        "Ability Power": 75,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$"
+    },
+    {
       "name": "제트팩 캣은 공식적으로 S-티어다 (최고의 스타디움 빌드)",
       "code": "PHX7F",
       "description": "",
@@ -825,23 +842,6 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$$"
-    },
-    {
-      "name": "[2X 탑 500] 마이크로웨이브 키티",
-      "code": "BDPF8",
-      "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 16,
-      "stats": {
-        "LIFE": 375,
-        "Total LIFE": 375,
-        "Weapon Power": 20,
-        "Ability Power": 75,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$"
     },
     {
       "name": "83% 승률 메타 캣 캐리",
@@ -1068,7 +1068,7 @@
       "code": "T5QKR",
       "description": "Beesting 빌드의 업데이트판. 장단점을 계속 파악하며 개선 중.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 339,
+      "upvotes": 338,
       "stats": {
         "LIFE": 112,
         "Armor": 160,
@@ -1104,7 +1104,7 @@
       "code": "35AAN",
       "description": "주노 메디마스터 빌드로 2026 시즌 2 기준 최신 설정. 메디블래스터와 하이퍼 링 중심으로 팀원 회복과 기동성을 극대화하는 지원형 플레이.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 203,
+      "upvotes": 202,
       "stats": {
         "LIFE": 208,
         "Shield": 175,
@@ -1155,7 +1155,7 @@
       "code": "6TG55",
       "description": "키리코의 치유 부적 효율을 극대화해 Mercy보다 강력한 힐량을 발휘, 동시에 피해량 증폭까지 지원하는 힐봇 스타일.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 209,
+      "upvotes": 208,
       "stats": {
         "LIFE": 331,
         "Total LIFE": 331,
@@ -1185,7 +1185,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 133,
+      "upvotes": 134,
       "stats": {
         "LIFE": 480,
         "Total LIFE": 480,
@@ -1266,7 +1266,7 @@
       "code": "1RFME",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 31,
+      "upvotes": 32,
       "stats": {
         "LIFE": 402,
         "Armor": 50,
@@ -1352,7 +1352,7 @@
       "code": "ECYWB",
       "description": "무기 공격력 극대화로 매치 골드 순환, 메이는 이미 탱크라 생존성은 낮춤",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 111,
+      "upvotes": 110,
       "stats": {
         "LIFE": 445,
         "Armor": 50,
@@ -1371,7 +1371,7 @@
       "code": "EF7WN",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 929,
+      "upvotes": 931,
       "stats": {
         "LIFE": 338,
         "Armor": 50,
@@ -1454,7 +1454,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1331,
+      "upvotes": 1332,
       "stats": {
         "LIFE": 418,
         "Total LIFE": 418,
@@ -1571,7 +1571,7 @@
       "code": "008C9",
       "description": "라운드 3부터 라운드당 1.2만 피해와 75% 이상 피해 감소로 ‘불사 오리사’를 구현한 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 125,
+      "upvotes": 124,
       "stats": {
         "LIFE": 696,
         "Armor": 506,
@@ -1770,7 +1770,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 28,
+      "upvotes": 29,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -1783,21 +1783,19 @@
       "cost": "$$$"
     },
     {
-      "name": "라마트라 그랜드마스터 가이드: 이 기술 위력 소용돌이 빌드는 완전히 깨졌습니다",
-      "code": "42JPW",
-      "description": "",
+      "name": "Lebron Ram - 무정지 캐리 [UNSTOPPABLE]",
+      "code": "3DTYN",
+      "description": "레브론 람으로 상대 팀을 공격하고, 매 게임에서 두 자릿수 공격과 방어를 기록한다. 많은 소용돌이를 상대 팀의 후방으로 보내서 큰 피해를 입히거나, Swirling Ward로 그들을 공격한다.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 16,
       "stats": {
-        "LIFE": 722,
+        "LIFE": 734,
         "Armor": 100,
-        "Total LIFE": 822,
+        "Total LIFE": 834,
         "Attack Speed": 10,
-        "Weapon Power": 20,
-        "Ability Power": 80,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
+        "Weapon Power": 0,
+        "Ability Power": 100,
+        "Cooldown Reduction": 25
       },
       "cost": "$$$"
     }
@@ -1880,7 +1878,7 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 29,
+      "upvotes": 30,
       "stats": {
         "LIFE": 548,
         "Armor": 55,
@@ -1997,7 +1995,7 @@
       "code": "V4HCE",
       "description": "시그마 버프 반영 빌드, 실제 구성은 큰 변화 없음",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 385,
+      "upvotes": 384,
       "stats": {
         "LIFE": 585,
         "Shield": 325,
@@ -2151,20 +2149,20 @@
       "cost": "$$$"
     },
     {
-      "name": "%125 기술 위력 SOJOURN 원샷 빌드 (3x 전설 & 탑 500)",
-      "code": "DB1X6",
-      "description": "",
-      "playstyle": "능력 파워",
+      "name": "Sojourn AP \"원샷\" Disruptor 빌드",
+      "code": "56VC2",
+      "description": "빌드 코드: 56VC2 충전된 사격으로 공격하면 교란 사격의 재사용 대기시간이 초기화된다. 재사용 대기시간을 가능한 한 빠르게 유지하기 위해, 계속 충전하여 발사한다.",
+      "playstyle": "메타 · 능력 파워",
       "upvotes": 12,
       "stats": {
-        "LIFE": 377,
-        "Armor": 50,
-        "Total LIFE": 427,
-        "Weapon Power": 10,
-        "Ability Power": 100,
+        "LIFE": 411,
+        "Armor": 55,
+        "Total LIFE": 466,
+        "Weapon Power": 0,
+        "Ability Power": 75,
         "Cooldown Reduction": 10
       },
-      "cost": "$$$"
+      "cost": "$$"
     }
   ],
   "Soldier: 76": [
@@ -2265,7 +2263,7 @@
       "code": "PTGPY",
       "description": "",
       "playstyle": "무기 파워",
-      "upvotes": 89,
+      "upvotes": 90,
       "stats": {
         "LIFE": 387,
         "Armor": 100,
@@ -2395,7 +2393,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워",
-      "upvotes": 83,
+      "upvotes": 82,
       "stats": {
         "LIFE": 251,
         "Armor": 16,
@@ -2454,7 +2452,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 220,
+      "upvotes": 219,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2596,6 +2594,26 @@
       "cost": "$$$"
     },
     {
+      "name": "9V Tesla Cannon (#1 윈스턴 NA)",
+      "code": "XR4KP",
+      "description": "높은 생명력 흡수와 피해량으로 장시간 교전 지속, 적이 많을수록 회복과 피해가 증가해 게임 내내 안정적인 성능",
+      "playstyle": "무기 파워 · 고체력",
+      "upvotes": 71,
+      "stats": {
+        "LIFE": 637,
+        "Armor": 200,
+        "Max Ammo": 40,
+        "Total LIFE": 837,
+        "Attack Speed": 30,
+        "Weapon Power": 45,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "궁극의 윈스턴 스타디움 빌드 (3x 전설 & 탑 500)",
       "code": "ACKTS",
       "description": "",
@@ -2610,26 +2628,6 @@
         "Ability Power": 20,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "9V Tesla Cannon (#1 윈스턴 NA)",
-      "code": "XR4KP",
-      "description": "높은 생명력 흡수와 피해량으로 장시간 교전 지속, 적이 많을수록 회복과 피해가 증가해 게임 내내 안정적인 성능",
-      "playstyle": "무기 파워 · 고체력",
-      "upvotes": 70,
-      "stats": {
-        "LIFE": 637,
-        "Armor": 200,
-        "Max Ammo": 40,
-        "Total LIFE": 837,
-        "Attack Speed": 30,
-        "Weapon Power": 45,
-        "Ability Power": 10,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -2880,22 +2878,20 @@
       "cost": "$$"
     },
     {
-      "name": "👑 탱크야타 [절대 죽지 않음]",
-      "code": "HKBQP",
-      "description": "젠야타 탱커 서스테인: 내적 평화로 솔로 캐리 가능한 무적 승리 빌드",
-      "playstyle": "메타 · 고체력",
-      "upvotes": 63,
+      "name": "Zenlightenment | 매 게임 최상위 대미지와 회복량?",
+      "code": "G0QZX",
+      "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 64,
       "stats": {
-        "LIFE": 261,
-        "Armor": 150,
+        "LIFE": 162,
         "Shield": 175,
-        "Move Speed": 10,
-        "Total LIFE": 586,
-        "Melee Damage": 15,
-        "Weapon Power": 15,
-        "Ability Power": 10,
+        "Total LIFE": 337,
+        "Weapon Power": 25,
+        "Ability Power": 55,
         "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
       },
       "cost": "$$"
     }
