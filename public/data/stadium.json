@@ -54,7 +54,7 @@
       "code": "XFEPG",
       "description": "아나의 숙련도 요구를 보완해 게임 주도권을 잡고 캐리할 수 있도록 설계된 빌드.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 160,
+      "upvotes": 159,
       "stats": {
         "LIFE": 373,
         "Shield": 50,
@@ -91,7 +91,7 @@
       "code": "6PZFF",
       "description": "",
       "playstyle": "재미용 · 능력 파워",
-      "upvotes": 510,
+      "upvotes": 509,
       "stats": {
         "LIFE": 373,
         "Total LIFE": 373,
@@ -137,7 +137,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 222,
+      "upvotes": 223,
       "stats": {
         "LIFE": 344,
         "Total LIFE": 344,
@@ -172,7 +172,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 647,
+      "upvotes": 648,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -299,7 +299,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 64,
+      "upvotes": 65,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -356,7 +356,7 @@
       "code": "DB97V",
       "description": "GODFIST V3 시즌 2 - 고급 하이브리드 둠피스트 빌드로, 높은 버스트 데미지 콤보와 생존 가능성을 유지하며, 기본 공격과 기술 데미지를 모두 강화합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 59,
+      "upvotes": 61,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -406,7 +406,7 @@
       "code": "P572C",
       "description": "",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 13,
+      "upvotes": 14,
       "stats": {
         "LIFE": 833,
         "Armor": 50,
@@ -527,7 +527,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 211,
+      "upvotes": 212,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -545,7 +545,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 205,
+      "upvotes": 206,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -782,7 +782,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 83,
+      "upvotes": 84,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -814,7 +814,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 17,
+      "upvotes": 18,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -1087,7 +1087,7 @@
       "code": "5KA9K",
       "description": "주노 기술 위력 중심 어뢰+링 빌드. 재사용 대기시간과 기술 위력 극대화.",
       "playstyle": "능력 파워",
-      "upvotes": 311,
+      "upvotes": 310,
       "stats": {
         "LIFE": 210,
         "Armor": 50,
@@ -1185,7 +1185,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 134,
+      "upvotes": 135,
       "stats": {
         "LIFE": 480,
         "Total LIFE": 480,
@@ -1266,7 +1266,7 @@
       "code": "1RFME",
       "description": "",
       "playstyle": "능력 파워",
-      "upvotes": 32,
+      "upvotes": 33,
       "stats": {
         "LIFE": 402,
         "Armor": 50,
@@ -1404,9 +1404,9 @@
       "playstyle": "능력 파워",
       "upvotes": 221,
       "stats": {
-        "LIFE": 366,
+        "LIFE": 359,
         "Armor": 50,
-        "Total LIFE": 416,
+        "Total LIFE": 409,
         "Weapon Power": 0,
         "Ability Power": 80,
         "Cooldown Reduction": 10
@@ -1418,10 +1418,10 @@
       "code": "3P594",
       "description": "무기 공격력과 공격 속도로 치유량을 극대화하며 Threads of Fate 아이템을 활용한 메르시 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 145,
+      "upvotes": 148,
       "stats": {
-        "LIFE": 436,
-        "Total LIFE": 436,
+        "LIFE": 429,
+        "Total LIFE": 429,
         "Attack Speed": 20,
         "Weapon Power": 65,
         "Ability Power": 0,
@@ -1713,7 +1713,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 209,
+      "upvotes": 210,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1770,7 +1770,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 29,
+      "upvotes": 30,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -1878,7 +1878,7 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 30,
+      "upvotes": 31,
       "stats": {
         "LIFE": 548,
         "Armor": 55,
@@ -1995,7 +1995,7 @@
       "code": "V4HCE",
       "description": "시그마 버프 반영 빌드, 실제 구성은 큰 변화 없음",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 384,
+      "upvotes": 383,
       "stats": {
         "LIFE": 585,
         "Shield": 325,
@@ -2153,7 +2153,7 @@
       "code": "56VC2",
       "description": "빌드 코드: 56VC2 충전된 사격으로 공격하면 교란 사격의 재사용 대기시간이 초기화된다. 재사용 대기시간을 가능한 한 빠르게 유지하기 위해, 계속 충전하여 발사한다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 12,
+      "upvotes": 13,
       "stats": {
         "LIFE": 411,
         "Armor": 55,
@@ -2452,7 +2452,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 219,
+      "upvotes": 220,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2654,7 +2654,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 235,
+      "upvotes": 236,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
