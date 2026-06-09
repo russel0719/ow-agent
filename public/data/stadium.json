@@ -21,7 +21,7 @@
       "code": "7N8VV",
       "description": "S21 최적화 아나 무기 공격력 빌드, 여러 테스트 중 최고 성능.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 176,
+      "upvotes": 175,
       "stats": {
         "LIFE": 397,
         "Armor": 25,
@@ -442,7 +442,7 @@
       "code": "PMS1B",
       "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 297,
+      "upvotes": 300,
       "stats": {
         "LIFE": 693,
         "Armor": 325,
@@ -545,7 +545,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 206,
+      "upvotes": 207,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -759,19 +759,19 @@
       "cost": "$$"
     },
     {
-      "name": "87% 승률, 무적 (전설 빌드)",
-      "code": "PVE8F",
-      "description": "해저드: 멈출 수 없는 도약 스팸 빌드 우리의 목표는 벽을 쌓는 것이 아니라 적의 체력을 깎아내리는 것이다. 적의 지원가가 화면을 계속해서 회색으로 유지하게 만들어라. 이렇게 하면 된다. --- HOW TO PLAY: 단순한 플레이 방법",
-      "playstyle": "능력 파워 · 고체력",
+      "name": "124K DAMAGE?! Rank 1 Hazard Build is BROKEN",
+      "code": "T06Q4",
+      "description": "Video Guide & Ranked Gameplay: YouTube Video(https://youtube.com/embed/XQscTs6YNhQ \"large\")",
+      "playstyle": "메타 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 706,
+        "LIFE": 704,
         "Armor": 225,
-        "Total LIFE": 931,
+        "Total LIFE": 929,
         "Weapon Power": 0,
-        "Ability Power": 70,
+        "Ability Power": 85,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 5
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -782,7 +782,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 85,
+      "upvotes": 88,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -814,7 +814,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 18,
+      "upvotes": 19,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -866,7 +866,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1752,
+      "upvotes": 1753,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1013,7 +1013,7 @@
       "code": "H8C1X",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 68,
+      "upvotes": 69,
       "stats": {
         "LIFE": 398,
         "Armor": 25,
@@ -1122,7 +1122,7 @@
       "code": "SXXQG",
       "description": "키리코 전용 기술 위력 빌드. 지속적으로 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1531,
+      "upvotes": 1532,
       "stats": {
         "LIFE": 416,
         "Shield": 25,
@@ -1185,7 +1185,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 137,
+      "upvotes": 138,
       "stats": {
         "LIFE": 480,
         "Total LIFE": 480,
@@ -1734,7 +1734,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 53,
+      "upvotes": 54,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1880,7 +1880,7 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 31,
+      "upvotes": 32,
       "stats": {
         "LIFE": 548,
         "Armor": 55,
@@ -2138,7 +2138,7 @@
       "code": "64TYG",
       "description": "",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 25,
+      "upvotes": 27,
       "stats": {
         "LIFE": 431,
         "Total LIFE": 431,
@@ -2155,7 +2155,7 @@
       "code": "56VC2",
       "description": "빌드 코드: 56VC2 충전된 사격으로 공격하면 교란 사격의 재사용 대기시간이 초기화된다. 재사용 대기시간을 가능한 한 빠르게 유지하기 위해, 계속 충전하여 발사한다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 14,
+      "upvotes": 16,
       "stats": {
         "LIFE": 411,
         "Armor": 55,
@@ -2210,7 +2210,7 @@
       "code": "9M583",
       "description": "솔저: 76 솔로 캐리 빌드, 무기 공격력+공격 속도로 즉사",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 305,
+      "upvotes": 306,
       "stats": {
         "LIFE": 366,
         "Armor": 25,
@@ -2596,6 +2596,24 @@
       "cost": "$$$"
     },
     {
+      "name": "궁극의 윈스턴 스타디움 빌드 (3x 전설 & 탑 500)",
+      "code": "ACKTS",
+      "description": "",
+      "playstyle": "무기 파워 · 고체력",
+      "upvotes": 72,
+      "stats": {
+        "LIFE": 690,
+        "Armor": 225,
+        "Total LIFE": 915,
+        "Attack Speed": 10,
+        "Weapon Power": 65,
+        "Ability Power": 20,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "9V Tesla Cannon (#1 윈스턴 NA)",
       "code": "XR4KP",
       "description": "높은 생명력 흡수와 피해량으로 장시간 교전 지속, 적이 많을수록 회복과 피해가 증가해 게임 내내 안정적인 성능",
@@ -2612,24 +2630,6 @@
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
         "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "궁극의 윈스턴 스타디움 빌드 (3x 전설 & 탑 500)",
-      "code": "ACKTS",
-      "description": "",
-      "playstyle": "무기 파워 · 고체력",
-      "upvotes": 71,
-      "stats": {
-        "LIFE": 690,
-        "Armor": 225,
-        "Total LIFE": 915,
-        "Attack Speed": 10,
-        "Weapon Power": 65,
-        "Ability Power": 20,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
       },
       "cost": "$$$"
     }
@@ -2740,7 +2740,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 110,
+      "upvotes": 111,
       "stats": {
         "LIFE": 569,
         "Armor": 25,
@@ -2884,7 +2884,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 64,
+      "upvotes": 65,
       "stats": {
         "LIFE": 162,
         "Shield": 175,

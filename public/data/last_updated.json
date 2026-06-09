@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-08T11:09:42.866741+00:00",
+  "timestamp": "2026-06-09T09:58:06.730124+00:00",
   "sources": {
     "meta": "live",
     "map_meta": "live",
     "stadium": "live",
-    "patch": "live"
+    "patch": "fallback"
   },
   "has_ban_rate": true
 }
