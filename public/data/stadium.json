@@ -276,25 +276,6 @@
       "cost": "$$"
     },
     {
-      "name": "죽지 않는 생명력 흡수/피해 캐시디 빌드 [시즌 20]",
-      "code": "X1VH7",
-      "description": "새로운 능력 반영. 플래시뱅 효과 강화.",
-      "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 66,
-      "stats": {
-        "LIFE": 423,
-        "Armor": 25,
-        "Shield": 50,
-        "Total LIFE": 498,
-        "Weapon Power": 60,
-        "Ability Power": 10,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "IT'S PAST YOUR BEDTIME (탑 500 빌드) [UPGRADED FOR MORE IN",
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
@@ -312,6 +293,25 @@
         "Cooldown Reduction": 10
       },
       "cost": "$$"
+    },
+    {
+      "name": "죽지 않는 생명력 흡수/피해 캐시디 빌드 [시즌 20]",
+      "code": "X1VH7",
+      "description": "새로운 능력 반영. 플래시뱅 효과 강화.",
+      "playstyle": "무기 파워 · 생명력 흡수",
+      "upvotes": 66,
+      "stats": {
+        "LIFE": 423,
+        "Armor": 25,
+        "Shield": 50,
+        "Total LIFE": 498,
+        "Weapon Power": 60,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
     },
     {
       "name": "스피디 곤잘레스 - 높은 랭크 솔로 큐에서 재미를 위한 콘셉트",
@@ -356,7 +356,7 @@
       "code": "DB97V",
       "description": "GODFIST V3 시즌 2 - 고급 하이브리드 둠피스트 빌드로, 높은 버스트 데미지 콤보와 생존 가능성을 유지하며, 기본 공격과 기술 데미지를 모두 강화합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 61,
+      "upvotes": 62,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -527,7 +527,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 212,
+      "upvotes": 213,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -674,7 +674,7 @@
       "code": "6V2XC",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 56,
+      "upvotes": 57,
       "stats": {
         "LIFE": 396,
         "Armor": 100,
@@ -759,19 +759,19 @@
       "cost": "$$"
     },
     {
-      "name": "124K DAMAGE?! Rank 1 Hazard Build is BROKEN",
-      "code": "T06Q4",
-      "description": "Video Guide & Ranked Gameplay: YouTube Video(https://youtube.com/embed/XQscTs6YNhQ \"large\")",
-      "playstyle": "메타 · 고체력",
+      "name": "87% 승률, 무적 (전설 빌드)",
+      "code": "PVE8F",
+      "description": "해저드: 멈출 수 없는 도약 스팸 빌드. 우리의 목표는 적의 지원가의 화면을 영원히 회색으로 유지하는 것입니다. 이 빌드는 적의 후방에서 살아남고 적의 지원가를 괴롭히는 것을 목표로 합니다.",
+      "playstyle": "능력 파워 · 고체력",
       "upvotes": 51,
       "stats": {
-        "LIFE": 704,
+        "LIFE": 706,
         "Armor": 225,
-        "Total LIFE": 929,
+        "Total LIFE": 931,
         "Weapon Power": 0,
-        "Ability Power": 85,
+        "Ability Power": 70,
         "Ability Lifesteal": 10,
-        "Cooldown Reduction": 10
+        "Cooldown Reduction": 5
       },
       "cost": "$$$"
     }
@@ -1418,7 +1418,7 @@
       "code": "3P594",
       "description": "무기 공격력과 공격 속도로 치유량을 극대화하며 Threads of Fate 아이템을 활용한 메르시 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 148,
+      "upvotes": 149,
       "stats": {
         "LIFE": 429,
         "Total LIFE": 429,
@@ -1858,6 +1858,23 @@
       "cost": "$$"
     },
     {
+      "name": "리퍼 르네상스",
+      "code": "W8BNS",
+      "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
+      "playstyle": "능력 파워 · 고체력",
+      "upvotes": 35,
+      "stats": {
+        "LIFE": 548,
+        "Armor": 55,
+        "Total LIFE": 603,
+        "Weapon Power": 20,
+        "Ability Power": 90,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$"
+    },
+    {
       "name": "[전설] Do It All Build (S19 UPDATE)",
       "code": "A5CWR",
       "description": "시즌 19 리퍼 너프 대응용 빌드로 탱커·지원·딜러 모두 상대 가능, 후방 포지션과 측면 기습을 오가며 팀 캐리.",
@@ -1874,23 +1891,6 @@
         "Ability Lifesteal": 15
       },
       "cost": "$$$"
-    },
-    {
-      "name": "리퍼 르네상스",
-      "code": "W8BNS",
-      "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
-      "playstyle": "능력 파워 · 고체력",
-      "upvotes": 32,
-      "stats": {
-        "LIFE": 548,
-        "Armor": 55,
-        "Total LIFE": 603,
-        "Weapon Power": 20,
-        "Ability Power": 90,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
-      },
-      "cost": "$$"
     }
   ],
   "Reinhardt": [
@@ -2656,7 +2656,7 @@
       "code": "6YRQ6",
       "description": "파도 창 기본 공격 속도 150% 증가, 해안 방어 활성화로 우양 S티어 가능.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 237,
+      "upvotes": 239,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
