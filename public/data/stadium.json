@@ -1185,7 +1185,7 @@
       "code": "P8BTP",
       "description": "무기 공격력과 공격 속도를 높여 치유 부적의 효율을 극대화하는 순수 힐량 중심 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 138,
+      "upvotes": 139,
       "stats": {
         "LIFE": 480,
         "Total LIFE": 480,
@@ -1454,7 +1454,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1333,
+      "upvotes": 1334,
       "stats": {
         "LIFE": 418,
         "Total LIFE": 418,
@@ -1734,7 +1734,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 54,
+      "upvotes": 55,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1753,7 +1753,7 @@
       "code": "QQ393",
       "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 35,
+      "upvotes": 36,
       "stats": {
         "LIFE": 673,
         "Armor": 125,
@@ -1862,7 +1862,7 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 35,
+      "upvotes": 36,
       "stats": {
         "LIFE": 548,
         "Armor": 55,
@@ -2454,7 +2454,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 222,
+      "upvotes": 223,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
