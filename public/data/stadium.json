@@ -135,15 +135,15 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 231,
+      "upvotes": 233,
       "stats": {
-        "LIFE": 344,
-        "Total LIFE": 344,
-        "Weapon Power": 10,
-        "Ability Power": 65,
+        "LIFE": 391,
+        "Total LIFE": 391,
+        "Weapon Power": 20,
+        "Ability Power": 45,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
-        "Cooldown Reduction": 10
+        "Cooldown Reduction": 15
       },
       "cost": "$$"
     }
@@ -170,7 +170,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 652,
+      "upvotes": 653,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -491,15 +491,15 @@
       "playstyle": "무기 파워 · 고체력",
       "upvotes": 94,
       "stats": {
-        "LIFE": 642,
-        "Armor": 350,
-        "Shield": 50,
-        "Total LIFE": 1042,
+        "LIFE": 810,
+        "Armor": 440,
+        "Shield": 55,
+        "Total LIFE": 1305,
         "Attack Speed": 20,
-        "Weapon Power": 15,
+        "Weapon Power": 5,
         "Ability Power": 0
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Freja": [
@@ -543,7 +543,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 209,
+      "upvotes": 210,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -673,7 +673,7 @@
       "code": "N1MZE",
       "description": "겐지 빌드는 매우 공격적인 플레이 스타일을 위한 것으로, 높은 버스트 데미지와 팀 와이프를 위한 것입니다. 이는 유리 대포 같은 빌드로, 매우 공격적으로 플레이하는 것을 보상하지만,同時에 팀워크를 알고 있어야 합니다.",
       "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 60,
+      "upvotes": 61,
       "stats": {
         "LIFE": 403,
         "Total LIFE": 403,
@@ -725,7 +725,7 @@
       "code": "S27YB",
       "description": "기술 위력 110%, 체력 1,100 이상, 기술 생명력 흡수 25%로 버스트 딜과 생존을 동시에 갖춘 S급 탱커.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 117,
+      "upvotes": 118,
       "stats": {
         "LIFE": 675,
         "Armor": 275,
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 97,
+      "upvotes": 99,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -842,20 +842,20 @@
       "cost": "$$$"
     },
     {
-      "name": "83% 승률 메타 제트팩 캣 캐리",
-      "code": "3YNSM",
-      "description": "이 빌드는 라운드 4 이후에 적을 다이빙하는 것에 중점을 둡니다. 이 빌드는 절대적인 메타입니다.",
-      "playstyle": "메타 · 능력 파워",
-      "upvotes": 5,
+      "name": "( 시즌 3: 신규! WP 제트팩 캣 버프 적용 | 유연한, 파밍 $$$,",
+      "code": "G7CCE",
+      "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 6,
       "stats": {
-        "LIFE": 369,
-        "Armor": 50,
-        "Total LIFE": 419,
-        "Weapon Power": 10,
-        "Ability Power": 95,
-        "Cooldown Reduction": 10
+        "LIFE": 364,
+        "Shield": 75,
+        "Total LIFE": 439,
+        "Attack Speed": 35,
+        "Weapon Power": 40,
+        "Ability Power": 0
       },
-      "cost": "$$$"
+      "cost": "$$"
     }
   ],
   "Junker Queen": [
@@ -864,7 +864,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1761,
+      "upvotes": 1760,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1050,7 +1050,7 @@
       "code": "N7CGY",
       "description": "주노 어뢰 강화 빌드의 업데이트 버전.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 532,
+      "upvotes": 531,
       "stats": {
         "LIFE": 181,
         "Shield": 150,
@@ -1120,7 +1120,7 @@
       "code": "21ZNN",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1540,
+      "upvotes": 1543,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1183,7 +1183,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 154,
+      "upvotes": 155,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1217,11 +1217,11 @@
       "code": "EP27C",
       "description": "시즌 5: EU 지원 1위, 시즌 6: EU 지원 2위, 시즌 7: EU 지원 2위, EU 지원 3위",
       "playstyle": "능력 파워",
-      "upvotes": 98,
+      "upvotes": 100,
       "stats": {
-        "LIFE": 382,
+        "LIFE": 383,
         "Armor": 100,
-        "Total LIFE": 482,
+        "Total LIFE": 483,
         "Attack Speed": 10,
         "Weapon Power": 10,
         "Ability Power": 45
@@ -1283,7 +1283,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "고체력",
-      "upvotes": 309,
+      "upvotes": 310,
       "stats": {
         "LIFE": 566,
         "Armor": 110,
@@ -1370,7 +1370,7 @@
       "code": "0X6QN",
       "description": "메르시를 주로 사용하는 지원가로서, 이 빌드는 치유, 강화, 소생을 통해 팀을 지원합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 952,
+      "upvotes": 955,
       "stats": {
         "LIFE": 336,
         "Armor": 50,
@@ -1733,7 +1733,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 62,
+      "upvotes": 61,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1752,7 +1752,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 42,
+      "upvotes": 44,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -1786,7 +1786,7 @@
       "code": "X3A8F",
       "description": "이 빌드는 퀵플레이에서 더 효과적일 것입니다. 랭크 경기에서 테스트해 보시고 피드백을 주시기 바랍니다.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 21,
+      "upvotes": 23,
       "stats": {
         "LIFE": 641,
         "Armor": 100,
@@ -2153,7 +2153,7 @@
       "code": "RXEHN",
       "description": "소전의 충전 사격을 사용하여 재사용 대기시간을 초기화하고, 빠른 사격과 연계하여 적을 공격합니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 22,
+      "upvotes": 23,
       "stats": {
         "LIFE": 411,
         "Armor": 55,
@@ -2225,7 +2225,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 301,
+      "upvotes": 302,
       "stats": {
         "LIFE": 374,
         "Armor": 25,
@@ -2452,7 +2452,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 224,
+      "upvotes": 226,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2638,7 +2638,7 @@
       "code": "9C489",
       "description": "와양의 '쓰나미' 빌드는 실제로 최상위 티어입니다. 플로우 스테이트와 비퍼케이션을 6라운드에 사용하고 있습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 263,
+      "upvotes": 264,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
@@ -2723,7 +2723,7 @@
       "code": "VRV9T",
       "description": "격리 방패로 교전/탈출이 쉬워지고 생명력 상승으로 생존성이 강화된 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 154,
+      "upvotes": 155,
       "stats": {
         "LIFE": 691,
         "Armor": 28,
@@ -2883,7 +2883,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 74,
+      "upvotes": 76,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
