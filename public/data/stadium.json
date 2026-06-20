@@ -135,7 +135,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 233,
+      "upvotes": 236,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -382,6 +382,23 @@
       "cost": "$$"
     },
     {
+      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
+      "code": "P572C",
+      "description": "",
+      "playstyle": "혼합 파워 · 고체력",
+      "upvotes": 16,
+      "stats": {
+        "LIFE": 833,
+        "Armor": 50,
+        "Total LIFE": 883,
+        "Weapon Power": 55,
+        "Ability Power": 70,
+        "Critical Damage": 10,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "👑 궁극의 캐리 [로비 관리자]",
       "code": "W8WBM",
       "description": "둠피스트 무기 공격력·기술 위력·생존성 극대화 빌드.",
@@ -398,23 +415,6 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$"
-    },
-    {
-      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
-      "code": "P572C",
-      "description": "",
-      "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 16,
-      "stats": {
-        "LIFE": 833,
-        "Armor": 50,
-        "Total LIFE": 883,
-        "Weapon Power": 55,
-        "Ability Power": 70,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 20
-      },
-      "cost": "$$$"
     }
   ],
   "D.Va": [
@@ -525,7 +525,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 217,
+      "upvotes": 218,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -563,7 +563,7 @@
       "code": "ZJ925",
       "description": "프레야 고버스트 빌드로 단 몇 초 만에 적 처치 가능",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 124,
+      "upvotes": 125,
       "stats": {
         "LIFE": 380,
         "Shield": 50,
@@ -864,7 +864,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1760,
+      "upvotes": 1759,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1116,11 +1116,11 @@
   ],
   "Kiriko": [
     {
-      "name": "🎨[창의적인 불꽃] AP% 키츠네 (재작업)",
-      "code": "21ZNN",
+      "name": "🎨[CREATIVE SPARK] 기술 위력% 키츠네 (재작업)",
+      "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1543,
+      "upvotes": 1549,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1283,7 +1283,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "고체력",
-      "upvotes": 310,
+      "upvotes": 311,
       "stats": {
         "LIFE": 566,
         "Armor": 110,
@@ -1370,7 +1370,7 @@
       "code": "0X6QN",
       "description": "메르시를 주로 사용하는 지원가로서, 이 빌드는 치유, 강화, 소생을 통해 팀을 지원합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 955,
+      "upvotes": 958,
       "stats": {
         "LIFE": 336,
         "Armor": 50,
@@ -1386,7 +1386,7 @@
       "code": "93RNG",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 928,
+      "upvotes": 927,
       "stats": {
         "LIFE": 336,
         "Total LIFE": 336,
@@ -1417,7 +1417,7 @@
       "code": "3P594",
       "description": "무기 공격력과 공격 속도로 치유량을 극대화하며 Threads of Fate 아이템을 활용한 메르시 빌드.",
       "playstyle": "무기 파워",
-      "upvotes": 156,
+      "upvotes": 155,
       "stats": {
         "LIFE": 429,
         "Total LIFE": 429,
@@ -1455,11 +1455,11 @@
       "playstyle": "능력 파워",
       "upvotes": 1349,
       "stats": {
-        "LIFE": 418,
-        "Total LIFE": 418,
-        "Attack Speed": 15,
+        "LIFE": 373,
+        "Total LIFE": 373,
+        "Attack Speed": 10,
         "Weapon Power": 10,
-        "Ability Power": 55,
+        "Ability Power": 40,
         "Cooldown Reduction": 5
       },
       "cost": "$$"
@@ -1860,7 +1860,7 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 48,
+      "upvotes": 50,
       "stats": {
         "LIFE": 548,
         "Armor": 55,
@@ -2153,7 +2153,7 @@
       "code": "RXEHN",
       "description": "소전의 충전 사격을 사용하여 재사용 대기시간을 초기화하고, 빠른 사격과 연계하여 적을 공격합니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 23,
+      "upvotes": 24,
       "stats": {
         "LIFE": 411,
         "Armor": 55,
@@ -2225,7 +2225,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 302,
+      "upvotes": 301,
       "stats": {
         "LIFE": 374,
         "Armor": 25,
@@ -2519,24 +2519,24 @@
       "cost": "$$"
     },
     {
-      "name": "복수 [무기 공격력] 빌드 가이드 - 당신의 영향을 최대화 하세요! (구식)",
-      "code": "7M8YH",
-      "description": "베네데타의 빌드를 소개하며, 탑 100 스타디움에서 클라이밍한 경험을 기반으로 그녀의 강점과 약점을 강조합니다.",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 20,
+      "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
+      "code": "9A5K2",
+      "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
+      "playstyle": "메타 · 고체력",
+      "upvotes": 21,
       "stats": {
-        "LIFE": 278,
-        "Armor": 175,
-        "Shield": 50,
+        "LIFE": 385,
+        "Armor": 193,
+        "Shield": 55,
         "Move Speed": 10,
-        "Total LIFE": 503,
+        "Total LIFE": 633,
         "Attack Speed": 10,
         "Melee Damage": 15,
-        "Weapon Power": 55,
-        "Ability Power": 0,
+        "Weapon Power": 30,
+        "Ability Power": 10,
         "Critical Damage": 10
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Winston": [
@@ -2883,7 +2883,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 76,
+      "upvotes": 80,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
