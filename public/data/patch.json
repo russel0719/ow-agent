@@ -5,16 +5,16 @@
     "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
     "hero_changes": [],
     "general_changes": [
-      "션의 조이라이드가 적에게 투척된 후 일시적으로 충돌을 남기는 문제를 해결했습니다",
-      "키리코의 오후다의 사거리가 잘못된 값으로 설정되는 문제를 해결했습니다",
-      "라마트라의 보이드 장벽의 재사용 대기시간이 잘못된 상태에서 초기화되는 문제를 해결했습니다",
-      "션의 조이라이드에서 일부 애니메이션을 우회할 수 있는 버그를 수정했습니다",
-      "도미나의 코퍼레이트 리트리트와 관련된 버그를 수정했습니다",
-      "에어리얼 디스트레서가 애쉬의 캘러미티 파워를 의도보다 더 많이 트리거하는 문제를 수정했습니다",
-      "트레이서의 템포럴 파워를 사용할 때 상호작용과 리콜을 동시에 사용하면 리콜의 재사용 대기시간이 초기화되는 문제를 수정했습니다",
-      "윈스턴의 서지 프로텍터 파워에서 회복이 포켓 프로젝터가 활성화된 경우 의도보다 더 오래 지속되는 문제를 수정했습니다",
-      "모이라의 익스텐드릴 아이템이 에테럴 엑시전에서 추가 피해 또는 회복량을 부여하지 못하는 문제를 수정했습니다",
-      "쓰리 탭 토미건의 지속 피해가 캐시디의 불스아이 파워와 키리코의 킨 쿠나이 파워에서 치명타로 계산되는 문제를 수정했습니다"
+      "Resolved an issue with Shion's Joyride leaving collision behind for a period of time after throwing it at an enemy",
+      "Resolved an issue with Kiriko's Ofuda range being set to the incorrect value",
+      "Fixed an instance of Ramattra's Void Barrier's cooldown incorrectly resetting",
+      "Fixed a bug with Shion's Joyride that allowed for bypassing of some animations",
+      "Fixed bugs related to Domina's Corporate Retreat",
+      "Fixed an issue where Aerial Distresser was procing Ashe's Calamity Power more than intended.",
+      "Fixed an issue where when using Tracer's Temportal Power, Interacting and Recalling at the same time would reset Recall's cooldown.",
+      "Fixed an issue where healing from Winston's Surge Protector Power would continue longer than intended if Pocket Projector is active.",
+      "Fixed an issue where Moira's Extendrils item prevented Ethereal Excision from granting bonus damage or healing.",
+      "Fixed an issue where Three Tap Tommygun's DOT counted as Critical Hits for Cassidy's Bullseye Power and Kiriko's Keen Kunai Power."
     ],
     "translation_source": "llm"
   }

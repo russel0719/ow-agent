@@ -104,7 +104,7 @@
       "code": "VP16Q",
       "description": "S18 파라 대응 무기 공격력 빌드, 기본적으로 대공 능력 내장.",
       "playstyle": "무기 파워",
-      "upvotes": 392,
+      "upvotes": 391,
       "stats": {
         "LIFE": 421,
         "Total LIFE": 421,
@@ -154,7 +154,7 @@
       "code": "H49C5",
       "description": "탑49 브리기테 원트릭이 만든 GM 10시즌 연속 달성 빌드, 이동 속도 극대화가 핵심.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 962,
+      "upvotes": 961,
       "stats": {
         "LIFE": 314,
         "Armor": 50,
@@ -338,7 +338,7 @@
       "code": "XFE6F",
       "description": "둠피스트 원샷 빌드. 강화 주먹으로 딜러/지원 즉사.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 106,
+      "upvotes": 105,
       "stats": {
         "LIFE": 767,
         "Armor": 50,
@@ -525,7 +525,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 218,
+      "upvotes": 219,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -618,7 +618,7 @@
       "code": "KAS01",
       "description": "겐지 고난이도 빌드로 1v5 상황에서도 로비 초토화, 67% 승률로 전설 5 달성",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 143,
+      "upvotes": 142,
       "stats": {
         "LIFE": 399,
         "Total LIFE": 399,
@@ -725,7 +725,7 @@
       "code": "S27YB",
       "description": "기술 위력 110%, 체력 1,100 이상, 기술 생명력 흡수 25%로 버스트 딜과 생존을 동시에 갖춘 S급 탱커.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 118,
+      "upvotes": 117,
       "stats": {
         "LIFE": 675,
         "Armor": 275,
@@ -796,7 +796,7 @@
       "code": "96GA5",
       "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
       "playstyle": "무기 파워",
-      "upvotes": 26,
+      "upvotes": 27,
       "stats": {
         "LIFE": 444,
         "Shield": 75,
@@ -846,7 +846,7 @@
       "code": "G7CCE",
       "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 6,
+      "upvotes": 10,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -947,16 +947,16 @@
       "name": "폭탄이 넘쳐난다! [스나이퍼 화염방사기] 정크랫",
       "code": "Z54ST",
       "description": "정크랫 원거리 스나이퍼 스타일. 오리사·라인하르트 같은 정면 영웅 상대에 최적.",
-      "playstyle": "혼합 파워",
+      "playstyle": "능력 파워",
       "upvotes": 391,
       "stats": {
-        "LIFE": 325,
-        "Total LIFE": 325,
-        "Weapon Power": 25,
-        "Ability Power": 25,
+        "LIFE": 277,
+        "Total LIFE": 277,
+        "Weapon Power": 20,
+        "Ability Power": 30,
         "Cooldown Reduction": 5
       },
-      "cost": "$"
+      "cost": ""
     },
     {
       "name": "SPAM. (블리자드가 이거 때문에 정크 너프할 거임)",
@@ -1201,7 +1201,7 @@
       "code": "MQS4A",
       "description": "생존과 재사용 대기시간 단축에 특화된 루시우 빌드. 강한 유틸리티로 팀 지원에 초점, CC기와 힐 차단 주의 필요.",
       "playstyle": "능력 파워",
-      "upvotes": 1016,
+      "upvotes": 1015,
       "stats": {
         "LIFE": 283,
         "Armor": 160,
@@ -1217,7 +1217,7 @@
       "code": "EP27C",
       "description": "시즌 5: EU 지원 1위, 시즌 6: EU 지원 2위, 시즌 7: EU 지원 2위, EU 지원 3위",
       "playstyle": "능력 파워",
-      "upvotes": 100,
+      "upvotes": 102,
       "stats": {
         "LIFE": 383,
         "Armor": 100,
@@ -1283,7 +1283,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "고체력",
-      "upvotes": 311,
+      "upvotes": 312,
       "stats": {
         "LIFE": 566,
         "Armor": 110,
@@ -1366,15 +1366,15 @@
   ],
   "Mercy": [
     {
-      "name": "✨ 무적의 대천사 ✨ [S3 큰 업데이트] (미친 기술 위력 회복량)",
-      "code": "0X6QN",
-      "description": "메르시를 주로 사용하는 지원가로서, 이 빌드는 치유, 강화, 소생을 통해 팀을 지원합니다.",
+      "name": "✨ 무적의 천사 ✨ (미친 기술 위력 회복량) [S3]",
+      "code": "FZGY3",
+      "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 958,
+      "upvotes": 963,
       "stats": {
-        "LIFE": 336,
+        "LIFE": 361,
         "Armor": 50,
-        "Total LIFE": 386,
+        "Total LIFE": 411,
         "Weapon Power": 10,
         "Ability Power": 60,
         "Cooldown Reduction": 10
@@ -1455,11 +1455,11 @@
       "playstyle": "능력 파워",
       "upvotes": 1349,
       "stats": {
-        "LIFE": 373,
-        "Total LIFE": 373,
-        "Attack Speed": 10,
+        "LIFE": 418,
+        "Total LIFE": 418,
+        "Attack Speed": 15,
         "Weapon Power": 10,
-        "Ability Power": 40,
+        "Ability Power": 55,
         "Cooldown Reduction": 5
       },
       "cost": "$$"
@@ -1752,7 +1752,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 44,
+      "upvotes": 45,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -1825,7 +1825,7 @@
       "code": "16XHY",
       "description": "리퍼의 사형 집행으로 지속적인 회복과 생명력 흡수로 살아남으며 광역 딜링을 하는 빌드. 올스타 달성.",
       "playstyle": "재미용 · 생명력 흡수",
-      "upvotes": 192,
+      "upvotes": 191,
       "stats": {
         "LIFE": 438,
         "Move Speed": 20,
@@ -2060,21 +2060,23 @@
       "cost": "$$$"
     },
     {
-      "name": "플라잉 더치맨 (S20 HAZARD & DF 킬러 with conservativ",
-      "code": "SPX0Z",
-      "description": "하자드 상대로도 문제없이 탱킹 가능한 빌드로, 시즌 18에서도 효과적인 탱커 구성.",
-      "playstyle": "메타 · 고체력",
-      "upvotes": 35,
+      "name": "중력의 신 - 전면 생존 [혼자서도 죽지 않는 악마 같은 캐리]",
+      "code": "BZHWH",
+      "description": "시즌 3 업데이트: 호랑이의 굴로",
+      "playstyle": "무기 파워 · 고체력",
+      "upvotes": 36,
       "stats": {
-        "LIFE": 646,
+        "LIFE": 658,
         "Shield": 325,
-        "Total LIFE": 971,
-        "Attack Speed": 20,
-        "Weapon Power": 40,
-        "Ability Power": 0,
-        "Cooldown Reduction": 20
+        "Total LIFE": 983,
+        "Weapon Power": 60,
+        "Ability Power": 20,
+        "Critical Damage": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Sojourn": [
@@ -2117,7 +2119,7 @@
       "code": "E9A14",
       "description": "숙련된 소전 플레이어용 순수 무기 공격력 빌드, 포지셔닝·슬라이드·에임 필수.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 55,
+      "upvotes": 54,
       "stats": {
         "LIFE": 361,
         "Shield": 25,
@@ -2487,7 +2489,7 @@
       "code": "SE0JQ",
       "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
       "playstyle": "능력 파워",
-      "upvotes": 24,
+      "upvotes": 25,
       "stats": {
         "LIFE": 322,
         "Armor": 175,
@@ -2579,7 +2581,7 @@
       "code": "GMNBT",
       "description": "상대가 데스볼 조합일 때만 사용하고, 다이브 조합이면 다른 빌드로 교체 필요.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 96,
+      "upvotes": 95,
       "stats": {
         "LIFE": 673,
         "Armor": 225,
@@ -2687,7 +2689,7 @@
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
       "playstyle": "재미용 · 생명력 흡수",
-      "upvotes": 87,
+      "upvotes": 86,
       "stats": {
         "LIFE": 393,
         "Shield": 25,
@@ -2723,7 +2725,7 @@
       "code": "VRV9T",
       "description": "격리 방패로 교전/탈출이 쉬워지고 생명력 상승으로 생존성이 강화된 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 155,
+      "upvotes": 156,
       "stats": {
         "LIFE": 691,
         "Armor": 28,
@@ -2883,7 +2885,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 80,
+      "upvotes": 84,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
