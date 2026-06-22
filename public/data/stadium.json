@@ -135,7 +135,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 236,
+      "upvotes": 238,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -382,23 +382,6 @@
       "cost": "$$"
     },
     {
-      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
-      "code": "P572C",
-      "description": "",
-      "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 16,
-      "stats": {
-        "LIFE": 833,
-        "Armor": 50,
-        "Total LIFE": 883,
-        "Weapon Power": 55,
-        "Ability Power": 70,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 20
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "👑 궁극의 캐리 [로비 관리자]",
       "code": "W8WBM",
       "description": "둠피스트 무기 공격력·기술 위력·생존성 극대화 빌드.",
@@ -415,6 +398,23 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$"
+    },
+    {
+      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
+      "code": "P572C",
+      "description": "",
+      "playstyle": "혼합 파워 · 고체력",
+      "upvotes": 16,
+      "stats": {
+        "LIFE": 833,
+        "Armor": 50,
+        "Total LIFE": 883,
+        "Weapon Power": 55,
+        "Ability Power": 70,
+        "Critical Damage": 10,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$$"
     }
   ],
   "D.Va": [
@@ -489,7 +489,7 @@
       "code": "MZVH7",
       "description": "D.Va 브루이저형 생존 중심 빌드. 피해 감소와 체력/방어구 중첩으로 장시간 교전.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 94,
+      "upvotes": 95,
       "stats": {
         "LIFE": 810,
         "Armor": 440,
@@ -618,7 +618,7 @@
       "code": "KAS01",
       "description": "겐지 고난이도 빌드로 1v5 상황에서도 로비 초토화, 67% 승률로 전설 5 달성",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 142,
+      "upvotes": 141,
       "stats": {
         "LIFE": 399,
         "Total LIFE": 399,
@@ -673,7 +673,7 @@
       "code": "N1MZE",
       "description": "겐지 빌드는 매우 공격적인 플레이 스타일을 위한 것으로, 높은 버스트 데미지와 팀 와이프를 위한 것입니다. 이는 유리 대포 같은 빌드로, 매우 공격적으로 플레이하는 것을 보상하지만,同時에 팀워크를 알고 있어야 합니다.",
       "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 61,
+      "upvotes": 62,
       "stats": {
         "LIFE": 403,
         "Total LIFE": 403,
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 99,
+      "upvotes": 100,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -846,7 +846,7 @@
       "code": "G7CCE",
       "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 10,
+      "upvotes": 12,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -948,7 +948,7 @@
       "code": "Z54ST",
       "description": "정크랫 원거리 스나이퍼 스타일. 오리사·라인하르트 같은 정면 영웅 상대에 최적.",
       "playstyle": "능력 파워",
-      "upvotes": 391,
+      "upvotes": 393,
       "stats": {
         "LIFE": 277,
         "Total LIFE": 277,
@@ -978,7 +978,7 @@
       "code": "RNG1V",
       "description": "딜 포커스 빌드. 스쿼시는 원샷, 다른 영웅은 투샷 가능.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 190,
+      "upvotes": 189,
       "stats": {
         "LIFE": 404,
         "Shield": 25,
@@ -1183,7 +1183,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 155,
+      "upvotes": 156,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1217,7 +1217,7 @@
       "code": "EP27C",
       "description": "시즌 5: EU 지원 1위, 시즌 6: EU 지원 2위, 시즌 7: EU 지원 2위, EU 지원 3위",
       "playstyle": "능력 파워",
-      "upvotes": 102,
+      "upvotes": 103,
       "stats": {
         "LIFE": 383,
         "Armor": 100,
@@ -1370,14 +1370,14 @@
       "code": "FZGY3",
       "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 963,
+      "upvotes": 964,
       "stats": {
-        "LIFE": 361,
+        "LIFE": 355,
         "Armor": 50,
-        "Total LIFE": 411,
+        "Total LIFE": 405,
         "Weapon Power": 10,
-        "Ability Power": 60,
-        "Cooldown Reduction": 10
+        "Ability Power": 40,
+        "Cooldown Reduction": 5
       },
       "cost": "$$"
     },
@@ -1453,7 +1453,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1349,
+      "upvotes": 1348,
       "stats": {
         "LIFE": 418,
         "Total LIFE": 418,
@@ -1516,7 +1516,7 @@
       "code": "H0V3E",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 149,
+      "upvotes": 148,
       "stats": {
         "LIFE": 353,
         "Armor": 50,
@@ -1712,7 +1712,7 @@
       "code": "RHWGK",
       "description": "라마트라 '탱커형 레이드 보스' 빌드, 네메시스 형태 지속시간 극대화로 전선 장악",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 210,
+      "upvotes": 211,
       "stats": {
         "LIFE": 749,
         "Armor": 150,
@@ -1806,7 +1806,7 @@
       "code": "XR8B2",
       "description": "생명력 흡수 기반 힐링+무기 공격력 리퍼 빌드. 지속 업데이트 예정.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 206,
+      "upvotes": 205,
       "stats": {
         "LIFE": 480,
         "Armor": 25,
@@ -2064,7 +2064,7 @@
       "code": "BZHWH",
       "description": "시즌 3 업데이트: 호랑이의 굴로",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 36,
+      "upvotes": 39,
       "stats": {
         "LIFE": 658,
         "Shield": 325,
@@ -2085,7 +2085,7 @@
       "code": "1VQW5",
       "description": "소전 솔로 캐리 빌드: 무기 공격력 극대화로 레일건 원샷 가능",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 401,
+      "upvotes": 400,
       "stats": {
         "LIFE": 345,
         "Armor": 25,
@@ -2155,7 +2155,7 @@
       "code": "RXEHN",
       "description": "소전의 충전 사격을 사용하여 재사용 대기시간을 초기화하고, 빠른 사격과 연계하여 적을 공격합니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 24,
+      "upvotes": 25,
       "stats": {
         "LIFE": 411,
         "Armor": 55,
@@ -2395,16 +2395,17 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워",
-      "upvotes": 82,
+      "upvotes": 83,
       "stats": {
-        "LIFE": 251,
+        "LIFE": 250,
         "Armor": 16,
         "Shield": 32,
         "Max Ammo": 20,
-        "Total LIFE": 299,
+        "Total LIFE": 298,
         "Attack Speed": 10,
-        "Weapon Power": 55,
+        "Weapon Power": 50,
         "Ability Power": 0,
+        "Critical Damage": 10,
         "Cooldown Reduction": 10
       },
       "cost": "$$"
@@ -2489,7 +2490,7 @@
       "code": "SE0JQ",
       "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
       "playstyle": "능력 파워",
-      "upvotes": 25,
+      "upvotes": 26,
       "stats": {
         "LIFE": 322,
         "Armor": 175,
@@ -2498,6 +2499,26 @@
         "Weapon Power": 0,
         "Ability Power": 80,
         "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
+    },
+    {
+      "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
+      "code": "9A5K2",
+      "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
+      "playstyle": "메타 · 고체력",
+      "upvotes": 23,
+      "stats": {
+        "LIFE": 385,
+        "Armor": 193,
+        "Shield": 55,
+        "Move Speed": 10,
+        "Total LIFE": 633,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 30,
+        "Ability Power": 10,
+        "Critical Damage": 10
       },
       "cost": "$$$"
     },
@@ -2519,26 +2540,6 @@
         "Ability Lifesteal": 15
       },
       "cost": "$$"
-    },
-    {
-      "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
-      "code": "9A5K2",
-      "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
-      "playstyle": "메타 · 고체력",
-      "upvotes": 21,
-      "stats": {
-        "LIFE": 385,
-        "Armor": 193,
-        "Shield": 55,
-        "Move Speed": 10,
-        "Total LIFE": 633,
-        "Attack Speed": 10,
-        "Melee Damage": 15,
-        "Weapon Power": 30,
-        "Ability Power": 10,
-        "Critical Damage": 10
-      },
-      "cost": "$$$"
     }
   ],
   "Winston": [
@@ -2640,7 +2641,7 @@
       "code": "9C489",
       "description": "와양의 '쓰나미' 빌드는 실제로 최상위 티어입니다. 플로우 스테이트와 비퍼케이션을 6라운드에 사용하고 있습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 264,
+      "upvotes": 265,
       "stats": {
         "LIFE": 333,
         "Armor": 50,
@@ -2657,7 +2658,7 @@
       "code": "JV8W7",
       "description": "급류 돌진과 광역 회복을 중심으로 한 우양 빌드.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 260,
+      "upvotes": 259,
       "stats": {
         "LIFE": 343,
         "Shield": 25,
@@ -2673,7 +2674,7 @@
       "code": "DH9V8",
       "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 88,
+      "upvotes": 87,
       "stats": {
         "LIFE": 338,
         "Shield": 75,
@@ -2689,7 +2690,7 @@
       "code": "VF0TC",
       "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
       "playstyle": "재미용 · 생명력 흡수",
-      "upvotes": 86,
+      "upvotes": 85,
       "stats": {
         "LIFE": 393,
         "Shield": 25,
@@ -2725,7 +2726,7 @@
       "code": "VRV9T",
       "description": "격리 방패로 교전/탈출이 쉬워지고 생명력 상승으로 생존성이 강화된 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 156,
+      "upvotes": 158,
       "stats": {
         "LIFE": 691,
         "Armor": 28,
@@ -2885,7 +2886,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 84,
+      "upvotes": 92,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
