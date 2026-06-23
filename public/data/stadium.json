@@ -135,7 +135,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 238,
+      "upvotes": 241,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -170,7 +170,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 653,
+      "upvotes": 654,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -400,21 +400,21 @@
       "cost": "$$"
     },
     {
-      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
-      "code": "P572C",
-      "description": "",
-      "playstyle": "혼합 파워 · 고체력",
+      "name": "고급 플레이를 위한 최선의 둠피스트 빌드 [업데이트",
+      "code": "N40BS",
+      "description": "이 빌드는 높은 레벨 플레이를 위한 최고의 둠피스트 빌드로, 생존과 기술 위력의 하이브리드로 적당한 치명타와 생존성을 결합합니다. 주요 역할은 모든 적을 괴롭히고, 후방을 보호하며, 공간을 제어하고 사이버독약을 적용하는 것입니다.",
+      "playstyle": "능력 파워 · 고체력",
       "upvotes": 16,
       "stats": {
-        "LIFE": 833,
+        "LIFE": 788,
         "Armor": 50,
-        "Total LIFE": 883,
-        "Weapon Power": 55,
-        "Ability Power": 70,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 20
+        "Shield": 50,
+        "Total LIFE": 888,
+        "Weapon Power": 0,
+        "Ability Power": 65,
+        "Cooldown Reduction": 5
       },
-      "cost": "$$$"
+      "cost": "$$"
     }
   ],
   "D.Va": [
@@ -489,7 +489,7 @@
       "code": "MZVH7",
       "description": "D.Va 브루이저형 생존 중심 빌드. 피해 감소와 체력/방어구 중첩으로 장시간 교전.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 95,
+      "upvotes": 96,
       "stats": {
         "LIFE": 810,
         "Armor": 440,
@@ -651,6 +651,23 @@
       "cost": "$$$"
     },
     {
+      "name": "탑 500 원샷 다이브 암살자. (AP/WP 밸런스)",
+      "code": "N1MZE",
+      "description": "겐지 빌드는 매우 공격적인 플레이 스타일을 위한 것으로, 높은 버스트 데미지와 팀 와이프를 위한 것입니다. 이는 유리 대포 같은 빌드로, 매우 공격적으로 플레이하는 것을 보상하지만,同時에 팀워크를 알고 있어야 합니다.",
+      "playstyle": "혼합 파워 · 생명력 흡수",
+      "upvotes": 63,
+      "stats": {
+        "LIFE": 403,
+        "Total LIFE": 403,
+        "Melee Damage": 25,
+        "Weapon Power": 55,
+        "Ability Power": 65,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "🐉불사의 오니🐉 - [90% 승률 / 랭크 64] (Super in depth)",
       "code": "6V2XC",
       "description": "",
@@ -665,23 +682,6 @@
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
         "Cooldown Reduction": 5
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "탑 500 원샷 다이브 암살자. (AP/WP 밸런스)",
-      "code": "N1MZE",
-      "description": "겐지 빌드는 매우 공격적인 플레이 스타일을 위한 것으로, 높은 버스트 데미지와 팀 와이프를 위한 것입니다. 이는 유리 대포 같은 빌드로, 매우 공격적으로 플레이하는 것을 보상하지만,同時에 팀워크를 알고 있어야 합니다.",
-      "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 62,
-      "stats": {
-        "LIFE": 403,
-        "Total LIFE": 403,
-        "Melee Damage": 25,
-        "Weapon Power": 55,
-        "Ability Power": 65,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
       },
       "cost": "$$$"
     }
@@ -846,7 +846,7 @@
       "code": "G7CCE",
       "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 12,
+      "upvotes": 14,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -1120,7 +1120,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1549,
+      "upvotes": 1551,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1183,7 +1183,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 156,
+      "upvotes": 158,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1217,7 +1217,7 @@
       "code": "EP27C",
       "description": "시즌 5: EU 지원 1위, 시즌 6: EU 지원 2위, 시즌 7: EU 지원 2위, EU 지원 3위",
       "playstyle": "능력 파워",
-      "upvotes": 103,
+      "upvotes": 102,
       "stats": {
         "LIFE": 383,
         "Armor": 100,
@@ -1283,7 +1283,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "고체력",
-      "upvotes": 312,
+      "upvotes": 314,
       "stats": {
         "LIFE": 566,
         "Armor": 110,
@@ -1370,7 +1370,7 @@
       "code": "FZGY3",
       "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 964,
+      "upvotes": 966,
       "stats": {
         "LIFE": 355,
         "Armor": 50,
@@ -2490,7 +2490,7 @@
       "code": "SE0JQ",
       "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
       "playstyle": "능력 파워",
-      "upvotes": 26,
+      "upvotes": 27,
       "stats": {
         "LIFE": 322,
         "Armor": 175,
@@ -2886,7 +2886,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 92,
+      "upvotes": 95,
       "stats": {
         "LIFE": 217,
         "Shield": 225,

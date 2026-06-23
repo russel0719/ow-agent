@@ -5,17 +5,725 @@
     "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
     "hero_changes": [],
     "general_changes": [
-      "Resolved an issue with Shion's Joyride leaving collision behind for a period of time after throwing it at an enemy",
-      "Resolved an issue with Kiriko's Ofuda range being set to the incorrect value",
-      "Fixed an instance of Ramattra's Void Barrier's cooldown incorrectly resetting",
-      "Fixed a bug with Shion's Joyride that allowed for bypassing of some animations",
-      "Fixed bugs related to Domina's Corporate Retreat",
-      "Fixed an issue where Aerial Distresser was procing Ashe's Calamity Power more than intended.",
-      "Fixed an issue where when using Tracer's Temportal Power, Interacting and Recalling at the same time would reset Recall's cooldown.",
-      "Fixed an issue where healing from Winston's Surge Protector Power would continue longer than intended if Pocket Projector is active.",
-      "Fixed an issue where Moira's Extendrils item prevented Ethereal Excision from granting bonus damage or healing.",
-      "Fixed an issue where Three Tap Tommygun's DOT counted as Critical Hits for Cassidy's Bullseye Power and Kiriko's Keen Kunai Power."
+      "션의 조이라이드가 적에게 투척된 후 일시적으로 충돌을 남기는 문제를 해결했습니다",
+      "키리코의 오후다의 사거리가 잘못된 값으로 설정되는 문제를 해결했습니다",
+      "라마트라의 보이드 장벽의 재사용 대기시간이 잘못된 상태에서 초기화되는 문제를 수정했습니다",
+      "션의 조이라이드에서 일부 애니메이션을 우회할 수 있는 버그를 수정했습니다",
+      "도미나의 코퍼레이트 리트리트와 관련된 버그를 수정했습니다",
+      "에어리어 디스트레서가 애쉬의 캘러미티 파워를 의도보다 더 많이 트리거하는 문제를 수정했습니다",
+      "트레이서의 템포럴 파워를 사용할 때 상호작용과 리콜을 동시에 사용하면 리콜의 재사용 대기시간이 초기화되는 문제를 수정했습니다",
+      "윈스턴의 서지 프로텍터 파워에서 회복이 포켓 프로젝터가 활성화된 경우 의도보다 더 오래 지속되는 문제를 수정했습니다",
+      "모이라의 익스텐드릴 아이템이 에테럴 엑시전에서 추가 피해나 회복을 부여하지 못하는 문제를 수정했습니다",
+      "쓰리 탭 토미건의 지속 피해가 캐시디의 불스아이 파워와 키리코의 킨 쿠나이 파워에서 치명타로 계산되는 문제를 수정했습니다"
     ],
     "translation_source": "llm"
+  },
+  {
+    "title": "오버워치 2 패치 노트 - 2026년 6월 17일",
+    "date": "2026년 6월 16일",
+    "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
+    "hero_changes": [
+      {
+        "hero": "D.Va",
+        "changes": [
+          "보호막 시스템 - 주요 특전보호막 전환도가 150에서 100으로 감소합니다.",
+          "보호막 전환도가 150에서 100으로 감소합니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/df5a5532862d9292634fb3dc0e51a4705aa601de65e5e815513ccc663d84de56.png"
+      },
+      {
+        "hero": "도미나",
+        "changes": [
+          "사업장 이전 - 주요 특전추가되었습니다.방벽 배열이 활성화되어 있는 동안, 다른 위치로 1회 옮길 수 있습니다.",
+          "추가되었습니다.",
+          "방벽 배열이 활성화되어 있는 동안, 다른 위치로 1회 옮길 수 있습니다.",
+          "서열 정리 - 주요 특전제거되었습니다.",
+          "제거되었습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1161c112292c56c052c0ae711792fcde06e3251b98bc9709e582dd7585b5dcd6.png"
+      },
+      {
+        "hero": "둠피스트",
+        "changes": [
+          "파워 매트릭스 - 주요 특전지속 시간이 1초에서 0.8초로 감소했습니다.",
+          "지속 시간이 1초에서 0.8초로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ff5c54f43ad253c7faeda9c4ed31d42582ea6b19205d197866f3dd0c0aa14c16.png"
+      },
+      {
+        "hero": "해저드",
+        "changes": [
+          "날카로운 저항: 최대 지속 시간이 3초에서 2.5초로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca48b96dbae6ea7f58ce8a5e73513c8c62b1685bdbf258020fb78bb21a008b5f.png"
+      },
+      {
+        "hero": "라마트라",
+        "changes": [
+          "맹공 형태 - 보조 특전지속 시간 보너스가 1초에서 2초로 증가했습니다.절멸 도중에는 효율이 절반이 됩니다.",
+          "지속 시간 보너스가 1초에서 2초로 증가했습니다.",
+          "절멸 도중에는 효율이 절반이 됩니다.",
+          "나노머신 수리 - 주요 특전치유량이 75에서 100으로 증가했습니다.",
+          "치유량이 75에서 100으로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ddef7c9fb8ce4256e8508196b486f81950efe7aaa6cf27fec4668beb4cd15774.png"
+      },
+      {
+        "hero": "라인하르트",
+        "changes": [
+          "화염 강타 (E): 피해가 120에서 125로 증가했습니다.",
+          "화염 강타 (E): 투사체 속도가 30에서 33으로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/551fbe070c16fdfcc17f7f1de63af22c53e7d2f1340fc2f3172441504527bc4e.png"
+      },
+      {
+        "hero": "자리야",
+        "changes": [
+          "에너지: 에너지 감소량이 초당 2.5에서 2.0 에너지로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9b6f63cc66ddf9d5e0862173c733cc0d2e574c5c89357798d91b93b2f95a7080.png"
+      },
+      {
+        "hero": "안란",
+        "changes": [
+          "맹염 질주: 기술 사용 후 회복 시간이 0.3초에서 0.1초로 감소했습니다.",
+          "춤추는 불꽃: 기술 사용 후 회복 시간이 0.2초에서 0.1초로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2c38b41d79a1ce9a08b9ad8eb7edf3ff819bd448af16a5815be8c7fdb7203aa0.png"
+      },
+      {
+        "hero": "애쉬",
+        "changes": [
+          "이중 총열 - 보조 특전두 번째 발사의 밀쳐내기 감소가 제거되었습니다.",
+          "두 번째 발사의 밀쳐내기 감소가 제거되었습니다.",
+          "독사의 침 - 주요 특전탄약 획득이 제거되었습니다.",
+          "탄약 획득이 제거되었습니다.",
+          "공중 폭발 - 주요 특전탄약 획득량이 3에서 6으로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4076bbaa2eb52a0bfe612434071e56e7702d5454473dbbea2f9e392a9d997a94.png"
+      },
+      {
+        "hero": "바스티온",
+        "changes": [
+          "무장 포격기 - 보조 특전제거되었습니다.",
+          "제거되었습니다.",
+          "스마트 폭탄 - 보조 특전A-36 전술 수류탄의 자신 밀쳐내기 효과가 25% 증가하고, 더 이상 자신에게 피해를 주지 않습니다.",
+          "A-36 전술 수류탄의 자신 밀쳐내기 효과가 25% 증가하고, 더 이상 자신에게 피해를 주지 않습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4ede795c2a681aaccfa72d0c901cba0cb8a2c292fd6a97b2ba9faed161c2d184.png"
+      },
+      {
+        "hero": "캐서디",
+        "changes": [
+          "공평한 승부 - 보조 특전치유량이 초당 30에서 40으로 증가했습니다.",
+          "치유량이 초당 30에서 40으로 증가했습니다.",
+          "은탄환 - 주요 특전총 지속 출혈 피해가 70에서 50으로 감소했습니다.지속 시간이 2.5초에서 1.5초로 감소했습니다.",
+          "총 지속 출혈 피해가 70에서 50으로 감소했습니다.",
+          "지속 시간이 2.5초에서 1.5초로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9240cd64cc8ef58df9acbf55204ab1b5d8578f743fda5931f0dbccbd75ab841b.png"
+      },
+      {
+        "hero": "에코",
+        "changes": [
+          "부분 스캔 - 보조 특전획득하는 궁극기 충전량이 50%에서 30%로 감소했습니다.",
+          "획득하는 궁극기 충전량이 50%에서 30%로 감소했습니다.",
+          "전탄 발사 - 주요 특전추가 투사체 수가 3발에서 2발로 감소했습니다.",
+          "추가 투사체 수가 3발에서 2발로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4f2d5b0c2b7e82d61353186c5f23152ccba9d3569b50839aa580dca3e9114ba.png"
+      },
+      {
+        "hero": "엠레",
+        "changes": [
+          "오버라이드 프로토콜: 궁극기 비용이 10% 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c51e2f698138861c0e3b6cfab3c3ca9d67fd709be175e7c397aa6f2649712a30.png"
+      },
+      {
+        "hero": "겐지",
+        "changes": [
+          "튕겨내기: 재사용 대기시간이 10초에서 8초로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
+      },
+      {
+        "hero": "정크랫",
+        "changes": [
+          "빵 터지는 여행 - 보조 특전공격 속도 보너스가 25%에서 35%로 증가했습니다.",
+          "공격 속도 보너스가 25%에서 35%로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7660b9fc6f25f30858fdd8797fe0d52b2306f1e78fef99843f58a274e69af046.png"
+      },
+      {
+        "hero": "메이",
+        "changes": [
+          "냉각총: 거리가 10미터에서 12미터로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4a55ced3bd597fb08e0fde9dc007f8543ac616ba98ca3db9b0e4d871a8ae17f8.png"
+      },
+      {
+        "hero": "리퍼",
+        "changes": [
+          "생명력이 300에서 275로 감소했습니다.",
+          "잔존하는 망령 - 보조 특전이동 속도 보너스가 40%에서 30%로 감소했습니다.",
+          "이동 속도 보너스가 40%에서 30%로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
+      },
+      {
+        "hero": "시에라",
+        "changes": [
+          "헬릭스 소총: 기본 투사체 크기가 0.175에서 0.15미터로 감소했습니다.",
+          "앵커 드론: 드론 배치 속도가 초당 30미터에서 40미터로 증가했습니다.",
+          "앵커 드론: 드론 배치 거리가 14미터에서 16미터로 증가했습니다.",
+          "앵커 드론: 드론에 갈고리를 걸 수 있는 거리가 17미터에서 19미터로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4bfd3d8b95844231115cb5bf4db03344c71bc3e865189c52403b2dc51438e63a.png"
+      },
+      {
+        "hero": "소전",
+        "changes": [
+          "마찰 생성기 - 주요 특전최대 에너지 획득량이 50에서 75로 증가했습니다.",
+          "최대 에너지 획득량이 50에서 75로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
+      },
+      {
+        "hero": "트레이서",
+        "changes": [
+          "키네틱 재장전 - 보조 특전탄약 획득량이 20에서 12로 감소했습니다.",
+          "탄약 획득량이 20에서 12로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4504f6f15cb3feaa92ecd38e01dcf751cb5abdac2e0bb52d0555727e53277502.png"
+      },
+      {
+        "hero": "벤데타",
+        "changes": [
+          "갈라내는 칼날: 궁극기 비용이 15% 감소했습니다.",
+          "맹공: 중첩당 이동 속도 증폭이 2%에서 3%로 증가했습니다.",
+          "맹공: 최대 지속 시간이 5.5초에서 7.5초로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf8ffb52b6f315546d5e94e9d6defad5a2c570798776956de23f47536f9529da.png"
+      },
+      {
+        "hero": "아나",
+        "changes": [
+          "가속 혈청 - 보조 특전이동 속도 보너스가 40%에서 30%로 감소했습니다.",
+          "이동 속도 보너스가 40%에서 30%로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/985b06beae46b7ba3ca87d1512d0fc62ca7f206ceca58ef16fc44d43a1cc84ed.png"
+      },
+      {
+        "hero": "브리기테",
+        "changes": [
+          "채찍질 - 주요 특전피해가 50에서 60으로 증가했습니다.",
+          "피해가 50에서 60으로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/795fba91376d87d441a7f359ae12a3175dfa95825ccc4414cc6b95b129fc4cb0.png"
+      },
+      {
+        "hero": "일리아리",
+        "changes": [
+          "빠른 조립 - 보조 특전재사용 대기시간 감소량이 1.5초에서 2초로 증가했습니다.",
+          "재사용 대기시간 감소량이 1.5초에서 2초로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce42d1455e03e79f321345fea84b27a8918b5db8bd7ab9b2ca9e569606ede9e4.png"
+      },
+      {
+        "hero": "제트팩 캣",
+        "changes": [
+          "정신 없는 비행: 대상 운송 중 연료 재생량 불이익이 2배에서 3배 느려지도록 증가했습니다.",
+          "생체 냥냥탄: 피해 및 치유량이 산탄당 4에서 4.5로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png"
+      },
+      {
+        "hero": "주노",
+        "changes": [
+          "고속 블라스터 - 주요 특전초당 발사 수가 20발에서 22발로 증가했습니다.",
+          "초당 발사 수가 20발에서 22발로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c0167d251e57b0aa2b1e16c37d87f0e7c77263db9dd0503d77b5f2589bf3e4a0.png"
+      },
+      {
+        "hero": "라이프위버",
+        "changes": [
+          "생명의 나무 (Q): 궁극기 비용이 9% 증가했습니다.",
+          "생명의 나무 (Q): 추가 치유를 통한 추가 생명력 전환율이 100%에서 50%로 감소했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3376515cebed0904012e67e956f6d1b9c12e03da642845eeaf787b7e4c7b339d.png"
+      },
+      {
+        "hero": "메르시",
+        "changes": [
+          "카두세우스 지팡이: 피해 증폭 효과가 30%에서 25%로 감소했습니다.",
+          "발키리 (Q): 궁극기 비용이 7% 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3bfb8bd8ec827e53d870f1238ab73d8aa1f5dbfbcfaaf7f96ffcd35b5c6102ab.png"
+      },
+      {
+        "hero": "미즈키",
+        "changes": [
+          "종이 인형 분신술: 재사용 대기시간이 12초에서 11초로 감소했습니다.",
+          "종이 인형 분신술: 지속 시간이 4.5초에서 5.5초로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9733c2367e0cbd70b9316fd2e1e17028653ec56d0051ea6ff098531dc4f99fc.png"
+      },
+      {
+        "hero": "모이라",
+        "changes": [
+          "생체 구슬: 초당 피해가 50에서 60으로 증가했습니다.",
+          "생체 구슬: 초당 치유량이 65에서 75로 증가했습니다.",
+          "생체 구슬: 구슬당 최대 피해가 200에서 250으로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f48f8485056d5d00dad195859188d23e50f7126b8b08b5646f46ef1b42f5e1de.png"
+      },
+      {
+        "hero": "우양",
+        "changes": [
+          "밀물과 썰물 - 주요 특전되돌아오는 파도의 치유량이 50%에서 100%로 증가했습니다.",
+          "되돌아오는 파도의 치유량이 50%에서 100%로 증가했습니다."
+        ],
+        "is_stadium": false,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
+      },
+      {
+        "hero": "D.Va",
+        "changes": [
+          "\"[메카 호출] 반경 +50%\"가 추가되었습니다.",
+          "추가 폭발 피해가 325%에서 375%로 증가했습니다.",
+          "파워로 개편되었습니다.",
+          "파워로 개편되었습니다.",
+          "\"메카에서 비상 탈출하면 4초 동안 [나노 강화제]를 얻습니다\"에서 \"메카에서 비상 탈출한 동안 최대 생명력이 40%, 이동 속도가 30% 증가합니다\"로 개편되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/df5a5532862d9292634fb3dc0e51a4705aa601de65e5e815513ccc663d84de56.png"
+      },
+      {
+        "hero": "둠피스트",
+        "changes": [
+          "피해가 60%에서 40%로 감소했습니다.",
+          "이제 범위 내 적을 끌어내립니다.",
+          "최대 피해가 200에서 150으로 감소했습니다.",
+          "기본 명중 피해가 50에서 75로 증가했습니다.",
+          "이제 단순 근접 공격 속도가 아닌 추가 공격 속도를 부여합니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ff5c54f43ad253c7faeda9c4ed31d42582ea6b19205d197866f3dd0c0aa14c16.png"
+      },
+      {
+        "hero": "해저드",
+        "changes": [
+          "이제 추가 피해가 기술 위력이 아닌 무기 위력에 비례합니다.",
+          "추가 피해가 10에서 8로 감소했습니다.",
+          "\"[날카로운 저항]으로 얻은 탄약이 20의 추가 피해를 줍니다. [날카로운 저항]의 탄약 재생 속도가 25% 증가합니다\"에서 \"무기 피해를 6번 주면 대상에게 표식을 남깁니다. [빠른 근접 공격]과 [덤벼들기]로 상대를 베면 가시가 폭발하여 50(무기 위력)의 피해를 ",
+          "아이템에서 파워로 변경되었습니다.",
+          "덤벼들기 사용 후 \"3초 동안 내 최대 생명력의 10%에 해당하는 추가 생명력을 주변 아군에게 부여합니다\"가 추가되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca48b96dbae6ea7f58ce8a5e73513c8c62b1685bdbf258020fb78bb21a008b5f.png"
+      },
+      {
+        "hero": "정커퀸",
+        "changes": [
+          "완전 충전 후 1초 더 유지할 수 있습니다.",
+          "추가 피해가 100%에서 75%로 감소했습니다.",
+          "이제 충전한 시간에 따라 투사체 속도가 최대 200%까지 증가합니다.",
+          "더 이상 밀쳐내지 않습니다.",
+          "\"[살육] 시전 중 저지 불가 상태가 되며, 모든 기술 재사용 대기시간이 초기화됩니다\"가 추가되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/06eeecb359f311f43a8f5121d4f9f3a93c565d70b30e94ef543c05596c9a39dc.png"
+      },
+      {
+        "hero": "오리사",
+        "changes": [
+          "신규",
+          "\"[방어 강화]가 활성화되어 있을 때 생성되는 [열기]가 90% 감소하고 공격 속도가 10% 증가합니다.\"",
+          "신규",
+          "\"[투창]이 치명타로 적중할 수 있으며, 치명타 적중 시 50%의 추가 피해를 줍니다. [투창]을 충전해 투사체 속도를 최대 200%까지 증가시킬 수 있습니다. 최대 위력에 도달하면 적을 관통합니다.\"",
+          "제거되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a73958a28551f5254f3ab3f97c5f5f8d698a95c0b6a515d1a2b1caac169205a6.png"
+      },
+      {
+        "hero": "라마트라",
+        "changes": [
+          "비용이 4,500에서 5,000으로 증가했습니다.",
+          "비용이 11,000에서 9,000으로 감소했습니다.",
+          "이제 증가한 점프 높이가 아군이 아닌 자신에게만 영향을 줍니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ddef7c9fb8ce4256e8508196b486f81950efe7aaa6cf27fec4668beb4cd15774.png"
+      },
+      {
+        "hero": "라인하르트",
+        "changes": [
+          "제거되었습니다.",
+          "이제 방벽 방패 내구도 회복이 로켓 해머 피해만이 아닌 모든 근접 피해를 줄 때도 발동합니다.",
+          "신규",
+          "\"기술: [방벽 방패]가 활성화되어 있는 동안 [기본 발사]를 사용하면 적을 띄우고 [방벽 방패] 내구도의 5%에 해당하는 근접 피해를 줍니다. (재사용 대기시간 8초).\"",
+          "신규"
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/551fbe070c16fdfcc17f7f1de63af22c53e7d2f1340fc2f3172441504527bc4e.png"
+      },
+      {
+        "hero": "시그마",
+        "changes": [
+          "피해가 50%에서 75%로 증가했습니다.",
+          "강착 피해가 20%에서 25% 추가 피해로 증가했습니다.",
+          "실험용 방벽 내구도 회복량이 100에서 150으로 증가했습니다.",
+          "피해 감소 10%가 제거되었습니다.",
+          "지속 시간이 1.5초에서 2.5초로 증가했습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c032fa466c9a6d9c6974747635d7ef910027f91cd58892af0c899db565f92d.png"
+      },
+      {
+        "hero": "윈스턴",
+        "changes": [
+          "이제 방벽 생성기가 기술 위력과 비례하며, 더 이상 지속 재화에 비례하지 않습니다.",
+          "전기 피해 생명력 흡수량이 15%에서 10%로 감소했습니다.",
+          "증가한 전기 피해가 제거되었습니다.",
+          "거리가 20%에서 15%로 감소했습니다.",
+          "튕김 거리가 6미터에서 8미터로 증가했습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/46a10db3aa908c590ddc4e7606376a88143d1f1306ecfbea043263040f9529a5.png"
+      },
+      {
+        "hero": "자리야",
+        "changes": [
+          "신규",
+          "\"[입자포] 보조 발사 적중 시 [에너지]가 2 증가하고 [입자포]의 기본 발사 사거리가 3초 동안 20% 증가합니다.\"",
+          "지속 시간 감소가 50%에서 25%로 완화되었습니다.",
+          "\"[방벽 씌우기] 거리 +20%\"가 추가되었습니다.",
+          "치유량이 20%에서 30%로 증가했습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9b6f63cc66ddf9d5e0862173c733cc0d2e574c5c89357798d91b93b2f95a7080.png"
+      },
+      {
+        "hero": "애쉬",
+        "changes": [
+          "피해 또는 치유로 얻는 재화량이 5% 감소했습니다.",
+          "바이퍼 조준 기본 피해가 75에서 72로 감소했습니다.",
+          "탄약 회복량이 20%에서 25%로 증가했습니다.",
+          "빗나간 사격이 이제 재앙 중첩을 소모합니다.",
+          "3초의 재사용 대기시간을 추가해, 적을 처치하지 않고도 돌진을 다시 활성화할 수 있도록 했습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4076bbaa2eb52a0bfe612434071e56e7702d5454473dbbea2f9e392a9d997a94.png"
+      },
+      {
+        "hero": "캐서디",
+        "changes": [
+          "피해 또는 치유로 얻는 재화량이 14.3% 증가했습니다.",
+          "피스키퍼 기본 피해가 70에서 65로 감소했습니다.",
+          "제거되었습니다.",
+          "신규",
+          "\"[피스키퍼 난사]가 활성화된 동안 탄약이 처음으로 떨어지면 자동으로 모든 탄약을 재장전하고 피해가 60% 감소한 상태로 계속 발사합니다.\""
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9240cd64cc8ef58df9acbf55204ab1b5d8578f743fda5931f0dbccbd75ab841b.png"
+      },
+      {
+        "hero": "프레야",
+        "changes": [
+          "정조준 폭발 기본 피해가 80에서 75로 감소했습니다.",
+          "피해가 40에서 60으로 증가했습니다.",
+          "공중에 떠 있는 동안 \"이동 속도 20%를 얻습니다\"가 추가되었습니다.",
+          "비용이 4,000에서 5,000으로 증가했습니다.",
+          "강화 효과 지속 시간이 3초에서 2초로 감소했습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/811963897c352d9f178bec882d94bd0281074feee7c429c5145b6b8ea8ebe862.png"
+      },
+      {
+        "hero": "겐지",
+        "changes": [
+          "중첩당 공격 속도가 2%에서 3%로 증가했습니다.",
+          "\"튕겨낸 투사체 속도 +200%. [튕겨내기] 첫 2초 동안 적에게 자동으로 투사체를 튕깁니다\"에서 \"튕겨낸 투사체 속도 +200%. 적에게 자동으로 투사체를 튕깁니다. 튕겨내기 첫 0.3초 동안 튕겨낸 공격이 50%의 추가 치명타 피해를 줍니다\"로 개편되었습니다.",
+          "\"공중에 뜬 적에게 25%의 추가 피해를 줍니다\"가 추가되었습니다.",
+          "용검 증가량이 50%에서 100%로 증가했습니다.",
+          "튕겨내기 치유량이 125%에서 100%로 감소했습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156b12c20b1aea872c1eeb5bb37a7de1047b2ab30ecefd0663a8925badde1ea8.png"
+      },
+      {
+        "hero": "정크랫",
+        "changes": [
+          "\"[완전 난장판] 폭발 범위 +25%\"가 추가되었습니다.",
+          "폭탄 투하 간격이 0.25초에서 0.35초로 증가했습니다.",
+          "\"죽이는 타이어가 파괴되거나 폭발하면 [완전 난장판]을 발사하고 발동합니다\"가 추가되었습니다.",
+          "\"기술: [빠른 근접 공격]이 폭발하여 최대 100%의 [빠른 근접 공격] 피해를 주고 자신과 주변의 적을 밀쳐냅니다. (재사용 대기시간: 6초)\"에서 \"기술: [빠른 근접 공격] 시 [충격 지뢰]를 터뜨려 20%의 피해를 주고, 자신을 날려보내고 대상을 뒤로 밀쳐냅니",
+          "신규"
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7660b9fc6f25f30858fdd8797fe0d52b2306f1e78fef99843f58a274e69af046.png"
+      },
+      {
+        "hero": "메이",
+        "changes": [
+          "\"[눈보라] 안에 있을 때 매초 생명력을 15% 치유합니다\"에서 \"[눈보라] 안에 있는 아군이 1초마다 내 최대 생명력의 8%만큼 치유됩니다\"로 개편되었습니다.",
+          "제거되었습니다.",
+          "신규",
+          "\"[냉각총] 기본 발사로 적을 계속해서 적중하면 0.75초 동안 빙결시킵니다.\"",
+          "크기 증가가 제거되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4a55ced3bd597fb08e0fde9dc007f8543ac616ba98ca3db9b0e4d871a8ae17f8.png"
+      },
+      {
+        "hero": "파라",
+        "changes": [
+          "제거되었습니다.",
+          "신규",
+          "\"기술: 공중에 떠 있는 동안 [웅크리기]를 사용하면 지면으로 돌진해 연료를 50% 회복합니다. (재사용 대기시간 6초).\"",
+          "제거되었습니다.",
+          "무기 위력 10%"
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/60ac2d5de4a6d34644d8872233da402f1436c87f804bb11a21661bb30bf4a51f.png"
+      },
+      {
+        "hero": "리퍼",
+        "changes": [
+          "제거되었습니다.",
+          "확률이 10%에서 20%로 증가했습니다.",
+          "생명력 재생량이 25%에서 15%로 감소했습니다.",
+          "탄약 회복량이 25%에서 15%로 감소했습니다.",
+          "이동 속도가 25%에서 15%로 감소했습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc6ff07ac790c00dc95a40882449617bb6e0e38906b353a630cffe0c815270a9.png"
+      },
+      {
+        "hero": "소전",
+        "changes": [
+          "충전된 사격 최대 기본 피해가 120에서 115로 감소했습니다.",
+          "\"[충전된 사격]의 결정타가 준 피해의 75%에 해당하는 폭발을 일으킵니다\"에서 \"완전히 충전된 [충전된 사격] 또는 [충전된 사격] 치명타 적중 시, 폭발이 일어나 주변 다른 적에게 50%의 피해를 줍니다\"로 개편되었습니다.",
+          "이제 분열 사격뿐만 아니라 모든 기술의 재사용 대기시간을 감소시킵니다.",
+          "\"레일건 충전이 25% 증가합니다. 레일건 충전 감소 속도가 75% 느려집니다\"에서 \"[파워 슬라이드] 사용 중 혹은 점프 후에 [레일건]이 1초마다 10% 충전되고 최대 탄약의 50%만큼을 회복합니다. [레일건] 충전 감소 속도가 75% 느려집니다\"로 개편되었습니다.",
+          "신규"
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82b8c1b8765dcb9a0ba16e343c3516bf324c771ac81e9878473280216e70a889.png"
+      },
+      {
+        "hero": "솔저: 76",
+        "changes": [
+          "펄스 소총 기본 피해가 19에서 18로 감소했습니다.",
+          "\"물러나\"에서 이름이 변경되었습니다.",
+          "\"생체장 반경 +40%\"가 추가되었습니다.",
+          "탄약 회복량이 10%에서 20%로 증가했습니다.",
+          "생체장 안에 있을 때 \"궁극기 충전 50%를 추가로 얻습니다\"가 추가되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c93b5f0a528c40473188f77cc2a267aee7d5b6cf5c9e104105d634b4388674e2.png"
+      },
+      {
+        "hero": "토르비욘",
+        "changes": [
+          "치유량이 66%에서 75%로 증가했습니다.",
+          "신규",
+          "\"기술: [대장간 망치]를 장착한 동안 [보조 발사]를 사용해 던집니다. [포탑] 및 아군을 상대로는 효과가 200%입니다. (재사용 대기시간 2초).\"",
+          "과부하 재사용 대기시간 감소가 10%에서 8%로 감소했습니다.",
+          "제거되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce17118cedc29b0d2ac1e059666bed36b9531c85079b0b894bb402d12c917ba9.png"
+      },
+      {
+        "hero": "트레이서",
+        "changes": [
+          "피해 또는 치유로 얻는 재화량이 14.3% 증가했습니다.",
+          "펄스 쌍권총 기본 피해가 5.75에서 5.25로 감소했습니다.",
+          "신규",
+          "\"[점멸] 순간이동 거리가 3미터 증가합니다. 공중에서 [점멸] 사용 시 공중 점프를 얻고, [점멸]의 재사용 대기시간이 0.2초 감소합니다.\"",
+          "제거되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4504f6f15cb3feaa92ecd38e01dcf751cb5abdac2e0bb52d0555727e53277502.png"
+      },
+      {
+        "hero": "벤데타",
+        "changes": [
+          "신규",
+          "\"[맹공] 중첩 하나당 5%의 생명력 흡수를 얻고 기술 재사용 대기시간이 5% 빠르게 충전됩니다.\"",
+          "치솟는 베기 피해 또한 폭발을 발동합니다.",
+          "재사용 대기시간 감소가 0.7초에서 0.5초로 감소했습니다.",
+          "\"[칼날 투영]으로 피해를 주면 3초 동안 추가로 50% 증가합니다\"가 추가되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf8ffb52b6f315546d5e94e9d6defad5a2c570798776956de23f47536f9529da.png"
+      },
+      {
+        "hero": "아나",
+        "changes": [
+          "피해 및 치유로 얻는 재화량이 10% 감소했습니다.",
+          "[수면총] 기본 피해 +75가 추가되었습니다.",
+          "신규",
+          "\"[수면총] 적중 시 5초 동안 1초마다 자신과 근처 아군을 내 최대 생명력의 10%만큼 치유합니다.\"",
+          "제거되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/985b06beae46b7ba3ca87d1512d0fc62ca7f206ceca58ef16fc44d43a1cc84ed.png"
+      },
+      {
+        "hero": "브리기테",
+        "changes": [
+          "추가 생명력이 5%에서 4%로 감소했습니다.",
+          "\"기술: [재장전] 사용 시 [수리 팩] 충전을 모두 소모합니다. 소모한 충전 하나당 최대 생명력의 25%만큼 치유하고 3초 동안 공격 속도가 10% 증가합니다. (재사용 대기시간 10초)에서 \"기술: [재장전] 사용 시 [수리 팩] 충전을 1 소모하고, 최대 생명력의",
+          "자가 치유량이 5%에서 4%로 감소했습니다.",
+          "미터당 피해가 4%에서 5%로 증가했습니다.",
+          "분류가 생존에서 무기로 변경되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/795fba91376d87d441a7f359ae12a3175dfa95825ccc4414cc6b95b129fc4cb0.png"
+      },
+      {
+        "hero": "제트팩 캣",
+        "changes": [
+          "추가 사격 효율이 25%에서 35%로 증가했습니다.",
+          "튕겨낸 투사체 효율이 35%에서 50%로 증가했습니다.",
+          "재사용 대기시간이 12초에서 8초로 감소했습니다.",
+          "감속 효과가 30%에서 20%로 감소했습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03a184cd0de27091e0099ac22635ad9615a8f6997881a5c25cc5f2444764f729.png"
+      },
+      {
+        "hero": "주노",
+        "changes": [
+          "재사용 대기시간 감소가 66%에서 50%로 감소했습니다.",
+          "신규",
+          "\"[하이퍼 링]이 옆으로 배치되며, 점프 높이가 250%로 증가합니다. 아군이 [하이퍼 링]을 지나면 재사용 대기시간이 1초 감소합니다.\"",
+          "추가 치유가 제거되었습니다.",
+          "아이템에서 파워로 개편되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c0167d251e57b0aa2b1e16c37d87f0e7c77263db9dd0503d77b5f2589bf3e4a0.png"
+      },
+      {
+        "hero": "키리코",
+        "changes": [
+          "이제 분신이 파워를 발동합니다.",
+          "분신 피해 및 치유량이 65% 적음에서 75% 적도록 감소했습니다.",
+          "제거되었습니다.",
+          "아이템에서 파워로 개편되었습니다.",
+          "재사용 대기시간 감소 5%가 제거되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/408603fe037e8576078eaac5eab2fb251489ced4003b11f5f522776d43d0b83d.png"
+      },
+      {
+        "hero": "루시우",
+        "changes": [
+          "\"궁극기 비용이 20% 감소합니다. [소리 방벽]으로 적 위에 착지하면 최대 250의 피해를 줍니다\"에서 \"[소리 방벽]으로 착지하면 폭발해 75(기술 위력)의 피해를 주고, 치명타 적중 시 300%의 피해를 줍니다. 궁극기 충전을 소모할 경우 [소리 방벽] 피해가 두",
+          "\"이동 속도가 50%를 초과할 때 피해가 25% 증가합니다\"에서 \"현재 이동 속도 및 가속도에 따라 피해와 치유량이 최대 30% 증가합니다\"로 개편되었습니다.",
+          "아이템에서 파워로 개편되었습니다.",
+          "무기 위력 10%와 기술 위력 10%가 제거되었습니다.",
+          "\"[벽 타기] 중이거나 공중에 떠 있을 때 기술 재사용 대기시간이 10% 빠르게 초기화됩니다\"가 추가되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/040bb13f5123ab93faad2f95627ba184608aef4b2469a4d3003859c7087df044.png"
+      },
+      {
+        "hero": "메르시",
+        "changes": [
+          "기본 공격력 증폭량이 20%에서 15%로 감소했습니다.",
+          "아이템에서 파워로 개편되었습니다.",
+          "수호천사 발사 속도 15%가 추가되었습니다.",
+          "수호천사 이동 속도 15%가 제거되었습니다.",
+          "15% 기술 위력이 삭제되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3bfb8bd8ec827e53d870f1238ab73d8aa1f5dbfbcfaaf7f96ffcd35b5c6102ab.png"
+      },
+      {
+        "hero": "모이라",
+        "changes": [
+          "초당 생체 구슬 피해가 60에서 50으로 감소했습니다.",
+          "초당 생체 구슬 치유량이 75에서 65로 감소했습니다.",
+          "최대 구슬 피해가 250에서 200으로 감소했습니다.",
+          "\"[생체 구슬] 사용 후, [생체 손아귀]의 보조 발사가 10미터 이내에 있는 2명의 추가 대상에게 4초 동안 연쇄됩니다\"에서 \"기술 또는 가젯 사용 후, [생체 손아귀]의 보조 발사가 10미터 이내에 있는 2명의 추가 대상에게 2초 동안 연쇄됩니다\"로 개편되었습니다.",
+          "제거되었습니다."
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f48f8485056d5d00dad195859188d23e50f7126b8b08b5646f46ef1b42f5e1de.png"
+      },
+      {
+        "hero": "우양",
+        "changes": [
+          "신규",
+          "\"기술 사용 후, 활성 [회복의 물결]이 이전 대상에게 연쇄되어 4초 동안 100%만큼 치유합니다. 추가 지속 [회복의 물결] 하나를 배치할 수 있습니다.\"",
+          "신규",
+          "\"[회복의 물결] 지속 시간이 +25% 증가합니다. 지속 [회복의 물결] 또는 [수호의 파도]의 증가한 치유 효과에 영향을 받는 아군이 내가 주는 피해의 30%만큼 치유됩니다.\"",
+          "\"[격류]가 활성화된 동안, 활성 [회복의 물결]로 50만큼 치유할 때마다 [격류]의 지속 시간이 2초씩 증가합니다.\"에서 \"[격류]가 활성화된 동안, 50만큼 피해를 주거나 75만큼 치유할 때마다 [격류]의 지속 시간이 1초씩 증가합니다(최대 5초).\"로 개편되었습니"
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4959500b495b35c0908be2abda56b53f2601b2c5cc39a1cfde8df1bffd38d66d.png"
+      },
+      {
+        "hero": "젠야타",
+        "changes": [
+          "이제 내면의 평화가 자신에 대한 깨달음 치유 효율을 감소시킵니다.",
+          "치유량이 20%에서 40%로 증가했습니다.",
+          "발차기에 25% 추가 피해가 추가되었습니다.",
+          "치유량이 35%에서 25%로 감소했습니다.",
+          "신규"
+        ],
+        "is_stadium": true,
+        "portrait_url": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d1546b1541a8afc39353f9337a408d6275a141b0432b7e560ef61579996b0fc.png"
+      }
+    ],
+    "general_changes": [
+      "네온 교차로",
+      "요괴 은신처",
+      "하시모토 본부",
+      "전리품 상자 18개",
+      "특급 전리품 상자 3개",
+      "Nintendo Switch™ 클라이언트가 전면 재구축되므로, 해당 플랫폼 사용자의 다운로드 시간이 길어집니다.",
+      "일부 불분명한 기술 상호작용의 고급 정보 패널 키워드, 즉 분쇄, 치유 증폭 상한, 에너지 무시, 감소 상한, 강한 감소 등이 계속해서 확장됩니다. 자세한 내용을 확인해 보세요!",
+      "오디오 → 일반 → 오디오에 팀원/적 처치 음향 효과 볼륨 제어 신규 옵션이 추가되었습니다.",
+      "UI 보기/숨기기 기본 단축키가 제거되었습니다(변경 전: Alt+Z). 이 기능을 사용하고자 하는 플레이어는 옵션 > 조작법에서 수동으로 다시 지정할 수 있습니다.",
+      "접근성 → 일반 → 대화에 신규 옵션 2개이 추가되었습니다."
+    ],
+    "translation_source": "official"
   }
 ]
