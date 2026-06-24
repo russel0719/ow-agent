@@ -135,7 +135,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 241,
+      "upvotes": 242,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -400,21 +400,21 @@
       "cost": "$$"
     },
     {
-      "name": "고급 플레이를 위한 최선의 둠피스트 빌드 [업데이트",
-      "code": "N40BS",
-      "description": "이 빌드는 높은 레벨 플레이를 위한 최고의 둠피스트 빌드로, 생존과 기술 위력의 하이브리드로 적당한 치명타와 생존성을 결합합니다. 주요 역할은 모든 적을 괴롭히고, 후방을 보호하며, 공간을 제어하고 사이버독약을 적용하는 것입니다.",
-      "playstyle": "능력 파워 · 고체력",
+      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
+      "code": "P572C",
+      "description": "",
+      "playstyle": "혼합 파워 · 고체력",
       "upvotes": 16,
       "stats": {
-        "LIFE": 788,
+        "LIFE": 833,
         "Armor": 50,
-        "Shield": 50,
-        "Total LIFE": 888,
-        "Weapon Power": 0,
-        "Ability Power": 65,
-        "Cooldown Reduction": 5
+        "Total LIFE": 883,
+        "Weapon Power": 55,
+        "Ability Power": 70,
+        "Critical Damage": 10,
+        "Cooldown Reduction": 20
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "D.Va": [
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 100,
+      "upvotes": 101,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -796,7 +796,7 @@
       "code": "96GA5",
       "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
       "playstyle": "무기 파워",
-      "upvotes": 27,
+      "upvotes": 26,
       "stats": {
         "LIFE": 444,
         "Shield": 75,
@@ -812,7 +812,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 23,
+      "upvotes": 24,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -846,7 +846,7 @@
       "code": "G7CCE",
       "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 14,
+      "upvotes": 16,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -1120,7 +1120,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1551,
+      "upvotes": 1555,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1183,7 +1183,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 158,
+      "upvotes": 160,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1370,7 +1370,7 @@
       "code": "FZGY3",
       "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 966,
+      "upvotes": 969,
       "stats": {
         "LIFE": 355,
         "Armor": 50,
@@ -2138,7 +2138,7 @@
       "code": "64TYG",
       "description": "",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 28,
+      "upvotes": 29,
       "stats": {
         "LIFE": 431,
         "Total LIFE": 431,
@@ -2455,7 +2455,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 226,
+      "upvotes": 225,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2472,7 +2472,7 @@
       "code": "SCD8T",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 78,
+      "upvotes": 77,
       "stats": {
         "LIFE": 359,
         "Armor": 220,
@@ -2507,7 +2507,7 @@
       "code": "9A5K2",
       "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 23,
+      "upvotes": 25,
       "stats": {
         "LIFE": 385,
         "Armor": 193,
@@ -2523,23 +2523,21 @@
       "cost": "$$$"
     },
     {
-      "name": "한 방에 죽여줘 [500+ 데미지 벤데타 빌드]",
-      "code": "Z1P6V",
-      "description": "Vendetta 생존·버스트·암살 특화, 2초 내 500~830 대미지 콤보 후 투사체 차단 탈출",
-      "playstyle": "혼합 파워 · 생명력 흡수",
+      "name": "VENDETTA [AP] 빌드 가이드 - 죽지 않는 여우 (업데이트)",
+      "code": "F45R9",
+      "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
+      "playstyle": "메타 · 생명력 흡수",
       "upvotes": 21,
       "stats": {
-        "LIFE": 309,
+        "LIFE": 324,
         "Armor": 175,
-        "Move Speed": 10,
-        "Total LIFE": 484,
-        "Melee Damage": 15,
-        "Weapon Power": 55,
-        "Ability Power": 55,
+        "Total LIFE": 499,
+        "Weapon Power": 20,
+        "Ability Power": 80,
         "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "Ability Lifesteal": 30
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Winston": [
@@ -2637,21 +2635,20 @@
   ],
   "Wuyang": [
     {
-      "name": "우양은 실제로 최상위 티어 🌊👑시즌 3",
-      "code": "9C489",
-      "description": "와양의 '쓰나미' 빌드는 실제로 최상위 티어입니다. 플로우 스테이트와 비퍼케이션을 6라운드에 사용하고 있습니다.",
+      "name": "Wuyang은 실제로 S-Tier 🌊👑시즌 3",
+      "code": "F8R1P",
+      "description": "체인 힐러 빌드: 왜 우양은 실제로 S-Tier인지에 대해 설명합니다. 우양에 많은 변경 사항이 적용되었습니다. 개발자들은 이전의 Streamline 설정을 완전히 변경하였습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 265,
+      "upvotes": 266,
       "stats": {
-        "LIFE": 333,
-        "Armor": 50,
-        "Shield": 75,
-        "Total LIFE": 458,
+        "LIFE": 323,
+        "Shield": 100,
+        "Total LIFE": 423,
         "Weapon Power": 10,
-        "Ability Power": 40,
-        "Cooldown Reduction": 15
+        "Ability Power": 45,
+        "Cooldown Reduction": 10
       },
-      "cost": "$$"
+      "cost": "$"
     },
     {
       "name": "🌊 돌진하는 급류 (무한 회복) ✨ [시즌 20]",
@@ -2726,7 +2723,7 @@
       "code": "VRV9T",
       "description": "격리 방패로 교전/탈출이 쉬워지고 생명력 상승으로 생존성이 강화된 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 158,
+      "upvotes": 160,
       "stats": {
         "LIFE": 691,
         "Armor": 28,
@@ -2886,7 +2883,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 95,
+      "upvotes": 97,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
