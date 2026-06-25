@@ -135,7 +135,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 242,
+      "upvotes": 246,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -170,7 +170,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 654,
+      "upvotes": 655,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -382,6 +382,23 @@
       "cost": "$$"
     },
     {
+      "name": "고급 플레이를 위한 최선의 둠피스트 빌드 [업데이트",
+      "code": "N40BS",
+      "description": "이 빌드는 고급 플레이를 위한 둠피스트 빌드로, 생존과 기술 위력을 결합하여 적당한 치명타와 생존력을 제공합니다. 주요 역할은 모든 적을 괴롭히고, 후방을 보호하며, 공간을 제어하고 사이버독약을 적용하는 것입니다.",
+      "playstyle": "능력 파워 · 고체력",
+      "upvotes": 16,
+      "stats": {
+        "LIFE": 788,
+        "Armor": 50,
+        "Shield": 50,
+        "Total LIFE": 888,
+        "Weapon Power": 0,
+        "Ability Power": 65,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$"
+    },
+    {
       "name": "👑 궁극의 캐리 [로비 관리자]",
       "code": "W8WBM",
       "description": "둠피스트 무기 공격력·기술 위력·생존성 극대화 빌드.",
@@ -398,23 +415,6 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$"
-    },
-    {
-      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
-      "code": "P572C",
-      "description": "",
-      "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 16,
-      "stats": {
-        "LIFE": 833,
-        "Armor": 50,
-        "Total LIFE": 883,
-        "Weapon Power": 55,
-        "Ability Power": 70,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 20
-      },
-      "cost": "$$$"
     }
   ],
   "D.Va": [
@@ -846,7 +846,7 @@
       "code": "G7CCE",
       "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 16,
+      "upvotes": 17,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -1152,16 +1152,16 @@
       "name": "🦊폭발적인 회복🦊",
       "code": "6TG55",
       "description": "키리코의 치유 부적 효율을 극대화해 Mercy보다 강력한 힐량을 발휘, 동시에 피해량 증폭까지 지원하는 힐봇 스타일.",
-      "playstyle": "메타 · 재사용 단축",
+      "playstyle": "메타 · 능력 파워",
       "upvotes": 208,
       "stats": {
-        "LIFE": 331,
-        "Total LIFE": 331,
+        "LIFE": 282,
+        "Total LIFE": 282,
         "Weapon Power": 0,
-        "Ability Power": 90,
-        "Cooldown Reduction": 20
+        "Ability Power": 75,
+        "Cooldown Reduction": 15
       },
-      "cost": "$$"
+      "cost": "$"
     },
     {
       "name": "[S19] 경쟁 레전-다리 키리코! 최고의 클론 빌드 🥷🥷💨",
@@ -1183,7 +1183,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 160,
+      "upvotes": 161,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1213,11 +1213,11 @@
       "cost": "$$"
     },
     {
-      "name": "[70% 승률] 1티어 루시우 빌드 (업데이트)",
-      "code": "EP27C",
-      "description": "시즌 5: EU 지원 1위, 시즌 6: EU 지원 2위, 시즌 7: EU 지원 2위, EU 지원 3위",
+      "name": "[70% 승률] 1위 루시우 빌드 (업데이트)",
+      "code": "QPJZM",
+      "description": "이 빌드로 얻은 개인 성과: 시즌 5: EU 지원 1위 (Eviki), 시즌 6: EU 지원 2위 (Eviki), 시즌 7: EU 지원 2위 (Eviki), EU 지원 3위 (NewbieNewb). 순위는 챌린저 점수가 아닌 순위로 정렬합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 102,
+      "upvotes": 104,
       "stats": {
         "LIFE": 383,
         "Armor": 100,
@@ -1372,12 +1372,12 @@
       "playstyle": "능력 파워",
       "upvotes": 969,
       "stats": {
-        "LIFE": 355,
-        "Armor": 50,
-        "Total LIFE": 405,
-        "Weapon Power": 10,
-        "Ability Power": 40,
-        "Cooldown Reduction": 5
+        "LIFE": 335,
+        "Armor": 100,
+        "Total LIFE": 435,
+        "Weapon Power": 0,
+        "Ability Power": 60,
+        "Cooldown Reduction": 15
       },
       "cost": "$$"
     },
@@ -1733,7 +1733,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 61,
+      "upvotes": 62,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1752,7 +1752,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 45,
+      "upvotes": 46,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -1769,7 +1769,7 @@
       "code": "QQ393",
       "description": "공허 격류로 스태프를 산탄총처럼 만들어 근·중·원거리 모두 강력한 딜을 뿌리는 라마트라 빌드.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 37,
+      "upvotes": 38,
       "stats": {
         "LIFE": 673,
         "Armor": 125,
@@ -1786,7 +1786,7 @@
       "code": "X3A8F",
       "description": "이 빌드는 퀵플레이에서 더 효과적일 것입니다. 랭크 경기에서 테스트해 보시고 피드백을 주시기 바랍니다.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 23,
+      "upvotes": 24,
       "stats": {
         "LIFE": 641,
         "Armor": 100,
@@ -2064,7 +2064,7 @@
       "code": "BZHWH",
       "description": "시즌 3 업데이트: 호랑이의 굴로",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 39,
+      "upvotes": 41,
       "stats": {
         "LIFE": 658,
         "Shield": 325,
@@ -2155,7 +2155,7 @@
       "code": "RXEHN",
       "description": "소전의 충전 사격을 사용하여 재사용 대기시간을 초기화하고, 빠른 사격과 연계하여 적을 공격합니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 25,
+      "upvotes": 28,
       "stats": {
         "LIFE": 411,
         "Armor": 55,
@@ -2227,7 +2227,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 301,
+      "upvotes": 302,
       "stats": {
         "LIFE": 374,
         "Armor": 25,
@@ -2527,7 +2527,7 @@
       "code": "F45R9",
       "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 21,
+      "upvotes": 23,
       "stats": {
         "LIFE": 324,
         "Armor": 175,
@@ -2639,7 +2639,7 @@
       "code": "F8R1P",
       "description": "체인 힐러 빌드: 왜 우양은 실제로 S-Tier인지에 대해 설명합니다. 우양에 많은 변경 사항이 적용되었습니다. 개발자들은 이전의 Streamline 설정을 완전히 변경하였습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 266,
+      "upvotes": 268,
       "stats": {
         "LIFE": 323,
         "Shield": 100,
@@ -2723,7 +2723,7 @@
       "code": "VRV9T",
       "description": "격리 방패로 교전/탈출이 쉬워지고 생명력 상승으로 생존성이 강화된 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 160,
+      "upvotes": 162,
       "stats": {
         "LIFE": 691,
         "Armor": 28,
@@ -2816,7 +2816,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1221,
+      "upvotes": 1222,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
