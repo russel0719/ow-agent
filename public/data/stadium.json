@@ -135,7 +135,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 246,
+      "upvotes": 248,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -382,23 +382,6 @@
       "cost": "$$"
     },
     {
-      "name": "고급 플레이를 위한 최선의 둠피스트 빌드 [업데이트",
-      "code": "N40BS",
-      "description": "이 빌드는 고급 플레이를 위한 둠피스트 빌드로, 생존과 기술 위력을 결합하여 적당한 치명타와 생존력을 제공합니다. 주요 역할은 모든 적을 괴롭히고, 후방을 보호하며, 공간을 제어하고 사이버독약을 적용하는 것입니다.",
-      "playstyle": "능력 파워 · 고체력",
-      "upvotes": 16,
-      "stats": {
-        "LIFE": 788,
-        "Armor": 50,
-        "Shield": 50,
-        "Total LIFE": 888,
-        "Weapon Power": 0,
-        "Ability Power": 65,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$"
-    },
-    {
       "name": "👑 궁극의 캐리 [로비 관리자]",
       "code": "W8WBM",
       "description": "둠피스트 무기 공격력·기술 위력·생존성 극대화 빌드.",
@@ -415,6 +398,23 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$"
+    },
+    {
+      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
+      "code": "P572C",
+      "description": "",
+      "playstyle": "혼합 파워 · 고체력",
+      "upvotes": 16,
+      "stats": {
+        "LIFE": 833,
+        "Armor": 50,
+        "Total LIFE": 883,
+        "Weapon Power": 55,
+        "Ability Power": 70,
+        "Critical Damage": 10,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$$"
     }
   ],
   "D.Va": [
@@ -489,7 +489,7 @@
       "code": "MZVH7",
       "description": "D.Va 브루이저형 생존 중심 빌드. 피해 감소와 체력/방어구 중첩으로 장시간 교전.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 96,
+      "upvotes": 98,
       "stats": {
         "LIFE": 810,
         "Armor": 440,
@@ -812,7 +812,7 @@
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 24,
+      "upvotes": 25,
       "stats": {
         "LIFE": 375,
         "Total LIFE": 375,
@@ -1120,7 +1120,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1555,
+      "upvotes": 1556,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1183,7 +1183,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 161,
+      "upvotes": 162,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1217,7 +1217,7 @@
       "code": "QPJZM",
       "description": "이 빌드로 얻은 개인 성과: 시즌 5: EU 지원 1위 (Eviki), 시즌 6: EU 지원 2위 (Eviki), 시즌 7: EU 지원 2위 (Eviki), EU 지원 3위 (NewbieNewb). 순위는 챌린저 점수가 아닌 순위로 정렬합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 104,
+      "upvotes": 105,
       "stats": {
         "LIFE": 383,
         "Armor": 100,
@@ -1370,7 +1370,7 @@
       "code": "FZGY3",
       "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 969,
+      "upvotes": 970,
       "stats": {
         "LIFE": 335,
         "Armor": 100,
@@ -1733,7 +1733,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 62,
+      "upvotes": 63,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -1860,35 +1860,35 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 50,
+      "upvotes": 51,
       "stats": {
-        "LIFE": 548,
+        "LIFE": 549,
         "Armor": 55,
-        "Total LIFE": 603,
+        "Total LIFE": 604,
         "Weapon Power": 20,
-        "Ability Power": 90,
+        "Ability Power": 85,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15
       },
       "cost": "$$"
     },
     {
-      "name": "[전설] Do It All Build (S19 UPDATE)",
-      "code": "A5CWR",
-      "description": "시즌 19 리퍼 너프 대응용 빌드로 탱커·지원·딜러 모두 상대 가능, 후방 포지션과 측면 기습을 오가며 팀 캐리.",
-      "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 33,
+      "name": "[S7] 죽을 수 없는 탑 500 리퍼 | 각 라운드 전략",
+      "code": "KPK1Q",
+      "description": "이 빌드는 기술 위력과 기술 생명력 흡수를 중점으로 하며, 처치와 생존성을 위해 디어 트리거를 사용합니다. 4라운드에서는 유령 형태를 사용합니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 34,
       "stats": {
-        "LIFE": 414,
-        "Shield": 50,
-        "Total LIFE": 464,
-        "Attack Speed": 5,
-        "Weapon Power": 65,
-        "Ability Power": 10,
+        "LIFE": 470,
+        "Armor": 50,
+        "Total LIFE": 520,
+        "Weapon Power": 15,
+        "Ability Power": 60,
         "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
       },
-      "cost": "$$$"
+      "cost": "$$"
     }
   ],
   "Reinhardt": [
@@ -2335,19 +2335,20 @@
       "cost": "$$$"
     },
     {
-      "name": "그냥 좌클릭만 누르세요 | 최고의 Torb NA (탑 250) | ImmortalJere",
-      "code": "4G2JF",
-      "description": "무기 공격력 중심 빌드로 원거리 조준 필요, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
-      "playstyle": "무기 파워",
+      "name": "시즌 3 포탑 빌드",
+      "code": "V2Y86",
+      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
       "upvotes": 25,
       "stats": {
-        "LIFE": 356,
+        "LIFE": 374,
         "Armor": 75,
-        "Total LIFE": 431,
-        "Weapon Power": 95,
-        "Ability Power": 0,
-        "Critical Damage": 10,
-        "Weapon Lifesteal": 10
+        "Total LIFE": 449,
+        "Weapon Power": 30,
+        "Ability Power": 55,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 25
       },
       "cost": "$$"
     }
@@ -2527,7 +2528,7 @@
       "code": "F45R9",
       "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 23,
+      "upvotes": 24,
       "stats": {
         "LIFE": 324,
         "Armor": 175,
@@ -2639,7 +2640,7 @@
       "code": "F8R1P",
       "description": "체인 힐러 빌드: 왜 우양은 실제로 S-Tier인지에 대해 설명합니다. 우양에 많은 변경 사항이 적용되었습니다. 개발자들은 이전의 Streamline 설정을 완전히 변경하였습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 268,
+      "upvotes": 270,
       "stats": {
         "LIFE": 323,
         "Shield": 100,
@@ -2883,7 +2884,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 97,
+      "upvotes": 99,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
