@@ -170,7 +170,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 655,
+      "upvotes": 656,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -382,19 +382,18 @@
       "cost": "$$"
     },
     {
-      "name": "👑 궁극의 캐리 [로비 관리자]",
-      "code": "W8WBM",
-      "description": "둠피스트 무기 공격력·기술 위력·생존성 극대화 빌드.",
-      "playstyle": "메타 · 고체력",
-      "upvotes": 16,
+      "name": "고급 플레이를 위한 최고의 둠피스트 빌드 [UPDATE",
+      "code": "N40BS",
+      "description": "이 빌드는 생존과 기술 위력의 하이브리드로, 적당한 치명타와 생존력을 결합합니다. 주된 역할은 모든 적을 괴롭히고, 후방을 보호하며, 공간을 제어하고 사이버독액을 적용하는 것입니다.",
+      "playstyle": "능력 파워 · 고체력",
+      "upvotes": 17,
       "stats": {
-        "LIFE": 763,
+        "LIFE": 788,
+        "Armor": 50,
         "Shield": 50,
-        "Total LIFE": 813,
-        "Weapon Power": 50,
-        "Ability Power": 35,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
+        "Total LIFE": 888,
+        "Weapon Power": 0,
+        "Ability Power": 65,
         "Cooldown Reduction": 5
       },
       "cost": "$$"
@@ -792,6 +791,23 @@
       "cost": "$$$"
     },
     {
+      "name": "[2X 탑 500] 마이크로웨이브 키티",
+      "code": "BDPF8",
+      "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 26,
+      "stats": {
+        "LIFE": 375,
+        "Total LIFE": 375,
+        "Weapon Power": 20,
+        "Ability Power": 75,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$"
+    },
+    {
       "name": "아펠카 캣 오버파워 빌드",
       "code": "96GA5",
       "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
@@ -804,23 +820,6 @@
         "Attack Speed": 15,
         "Weapon Power": 30,
         "Ability Power": 0
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "[2X 탑 500] 마이크로웨이브 키티",
-      "code": "BDPF8",
-      "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 25,
-      "stats": {
-        "LIFE": 375,
-        "Total LIFE": 375,
-        "Weapon Power": 20,
-        "Ability Power": 75,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
       },
       "cost": "$$"
     },
@@ -846,7 +845,7 @@
       "code": "G7CCE",
       "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 17,
+      "upvotes": 18,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -1153,7 +1152,7 @@
       "code": "6TG55",
       "description": "키리코의 치유 부적 효율을 극대화해 Mercy보다 강력한 힐량을 발휘, 동시에 피해량 증폭까지 지원하는 힐봇 스타일.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 208,
+      "upvotes": 209,
       "stats": {
         "LIFE": 282,
         "Total LIFE": 282,
@@ -1217,7 +1216,7 @@
       "code": "QPJZM",
       "description": "이 빌드로 얻은 개인 성과: 시즌 5: EU 지원 1위 (Eviki), 시즌 6: EU 지원 2위 (Eviki), 시즌 7: EU 지원 2위 (Eviki), EU 지원 3위 (NewbieNewb). 순위는 챌린저 점수가 아닌 순위로 정렬합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 105,
+      "upvotes": 107,
       "stats": {
         "LIFE": 383,
         "Armor": 100,
@@ -1370,7 +1369,7 @@
       "code": "FZGY3",
       "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 970,
+      "upvotes": 972,
       "stats": {
         "LIFE": 335,
         "Armor": 100,
@@ -1413,16 +1412,16 @@
       "cost": "$$$"
     },
     {
-      "name": "💞 영원한 광선 · 힐링 멈추지 마! (무기 공격력/공격 속도) [S1]",
-      "code": "3P594",
-      "description": "무기 공격력과 공격 속도로 치유량을 극대화하며 Threads of Fate 아이템을 활용한 메르시 빌드.",
+      "name": "💞 영원한 빔 · 절대 중단되지 않는 힐! (WP/AS) [S3 T500]",
+      "code": "YNGCE",
+      "description": "무한으로 회복하고, 우아하게 생존합니다. 이 빌드는 무기 공격력을 높이고 공격 속도를 증가시켜서 적들을 효과적으로 공격할 수 있습니다.",
       "playstyle": "무기 파워",
       "upvotes": 155,
       "stats": {
         "LIFE": 429,
         "Total LIFE": 429,
         "Attack Speed": 20,
-        "Weapon Power": 65,
+        "Weapon Power": 60,
         "Ability Power": 0,
         "Cooldown Reduction": 10
       },
@@ -1733,7 +1732,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 63,
+      "upvotes": 64,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -2064,7 +2063,7 @@
       "code": "BZHWH",
       "description": "시즌 3 업데이트: 호랑이의 굴로",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 41,
+      "upvotes": 42,
       "stats": {
         "LIFE": 658,
         "Shield": 325,
@@ -2227,7 +2226,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 302,
+      "upvotes": 303,
       "stats": {
         "LIFE": 374,
         "Armor": 25,
@@ -2315,6 +2314,24 @@
       "cost": "$$$"
     },
     {
+      "name": "시즌 3 포탑 빌드",
+      "code": "V2Y86",
+      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 28,
+      "stats": {
+        "LIFE": 374,
+        "Armor": 75,
+        "Total LIFE": 449,
+        "Weapon Power": 30,
+        "Ability Power": 55,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 25
+      },
+      "cost": "$$"
+    },
+    {
       "name": "1위 근거리 토르비욘 빌드는 너무 강력하다 🛠️",
       "code": "C90AR",
       "description": "",
@@ -2333,24 +2350,6 @@
         "Ability Lifesteal": 15
       },
       "cost": "$$$"
-    },
-    {
-      "name": "시즌 3 포탑 빌드",
-      "code": "V2Y86",
-      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 25,
-      "stats": {
-        "LIFE": 374,
-        "Armor": 75,
-        "Total LIFE": 449,
-        "Weapon Power": 30,
-        "Ability Power": 55,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 25
-      },
-      "cost": "$$"
     }
   ],
   "Tracer": [
@@ -2504,6 +2503,23 @@
       "cost": "$$$"
     },
     {
+      "name": "VENDETTA [AP] 빌드 가이드 - 죽지 않는 여우 (업데이트)",
+      "code": "F45R9",
+      "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 26,
+      "stats": {
+        "LIFE": 324,
+        "Armor": 175,
+        "Total LIFE": 499,
+        "Weapon Power": 20,
+        "Ability Power": 80,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 30
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
       "code": "9A5K2",
       "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
@@ -2520,23 +2536,6 @@
         "Weapon Power": 30,
         "Ability Power": 10,
         "Critical Damage": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "VENDETTA [AP] 빌드 가이드 - 죽지 않는 여우 (업데이트)",
-      "code": "F45R9",
-      "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 24,
-      "stats": {
-        "LIFE": 324,
-        "Armor": 175,
-        "Total LIFE": 499,
-        "Weapon Power": 20,
-        "Ability Power": 80,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 30
       },
       "cost": "$$$"
     }
@@ -2640,7 +2639,7 @@
       "code": "F8R1P",
       "description": "체인 힐러 빌드: 왜 우양은 실제로 S-Tier인지에 대해 설명합니다. 우양에 많은 변경 사항이 적용되었습니다. 개발자들은 이전의 Streamline 설정을 완전히 변경하였습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 270,
+      "upvotes": 274,
       "stats": {
         "LIFE": 323,
         "Shield": 100,
@@ -2740,7 +2739,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 113,
+      "upvotes": 114,
       "stats": {
         "LIFE": 569,
         "Armor": 25,
@@ -2884,7 +2883,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 99,
+      "upvotes": 101,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
