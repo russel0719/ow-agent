@@ -135,7 +135,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 248,
+      "upvotes": 249,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -418,36 +418,37 @@
   ],
   "D.Va": [
     {
-      "name": "🛡️ 매트릭스 봄버! (방어 매트릭스 & 무기 공격력)💥[S1]",
-      "code": "E7NA2",
-      "description": "D.Va 방어 매트릭스+자폭 빌드로 생존 극대화.",
+      "name": "🛡️ 매트릭스 폭파자 💥 (무기 공격력, 방어 매트릭스) [S3]",
+      "code": "CNJEZ",
+      "description": "방어 매트릭스와 자폭으로 무적이 되는 빌드입니다.",
       "playstyle": "무기 파워 · 고체력",
       "upvotes": 393,
       "stats": {
-        "LIFE": 771,
-        "Armor": 345,
-        "Total LIFE": 1116,
-        "Weapon Power": 55,
+        "LIFE": 732,
+        "Armor": 325,
+        "Total LIFE": 1057,
+        "Weapon Power": 50,
         "Ability Power": 0,
-        "Critical Damage": 10,
-        "Ability Lifesteal": 15
+        "Critical Damage": 10
       },
       "cost": "$$"
     },
     {
-      "name": "🔥 화염 추진기 (기술 위력 & 궁극기 파밍) 🔥[S2]",
-      "code": "PMS1B",
-      "description": "D.Va 추진기+궁극기 파밍 빌드. 현재 업데이트 중.",
+      "name": "화산 메카 펀치! 💥 (추진기, 근접 공격, 궁극기) [S3]",
+      "code": "ZSNZH",
+      "description": "S3 시즌을 위해 업데이트 중입니다. 불꽃 부스터와 근거리 자기 지속 빌드입니다.",
       "playstyle": "혼합 파워 · 고체력",
       "upvotes": 307,
       "stats": {
-        "LIFE": 693,
-        "Armor": 325,
-        "Total LIFE": 1018,
+        "LIFE": 701,
+        "Armor": 425,
+        "Move Speed": 10,
+        "Total LIFE": 1126,
+        "Melee Damage": 15,
         "Weapon Power": 20,
-        "Ability Power": 25,
+        "Ability Power": 20,
         "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 30
+        "Ability Lifesteal": 15
       },
       "cost": "$$"
     },
@@ -1119,7 +1120,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1556,
+      "upvotes": 1557,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1152,7 +1153,7 @@
       "code": "6TG55",
       "description": "키리코의 치유 부적 효율을 극대화해 Mercy보다 강력한 힐량을 발휘, 동시에 피해량 증폭까지 지원하는 힐봇 스타일.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 209,
+      "upvotes": 210,
       "stats": {
         "LIFE": 282,
         "Total LIFE": 282,
@@ -1218,9 +1219,9 @@
       "playstyle": "능력 파워",
       "upvotes": 107,
       "stats": {
-        "LIFE": 383,
+        "LIFE": 384,
         "Armor": 100,
-        "Total LIFE": 483,
+        "Total LIFE": 484,
         "Attack Speed": 10,
         "Weapon Power": 10,
         "Ability Power": 45
@@ -1369,7 +1370,7 @@
       "code": "FZGY3",
       "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 972,
+      "upvotes": 976,
       "stats": {
         "LIFE": 335,
         "Armor": 100,
@@ -1432,7 +1433,7 @@
       "code": "6QMR3",
       "description": "",
       "playstyle": "무기 파워",
-      "upvotes": 120,
+      "upvotes": 119,
       "stats": {
         "LIFE": 388,
         "Shield": 25,
@@ -1859,7 +1860,7 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 51,
+      "upvotes": 53,
       "stats": {
         "LIFE": 549,
         "Armor": 55,
@@ -1876,7 +1877,7 @@
       "code": "KPK1Q",
       "description": "이 빌드는 기술 위력과 기술 생명력 흡수를 중점으로 하며, 처치와 생존성을 위해 디어 트리거를 사용합니다. 4라운드에서는 유령 형태를 사용합니다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 34,
+      "upvotes": 35,
       "stats": {
         "LIFE": 470,
         "Armor": 50,
@@ -2133,6 +2134,22 @@
       "cost": "$$"
     },
     {
+      "name": "소전 기술 위력 \"원샷\" 교란 빌드",
+      "code": "RXEHN",
+      "description": "소전의 충전 사격을 사용하여 재사용 대기시간을 초기화하고, 빠른 사격과 연계하여 적을 공격합니다.",
+      "playstyle": "메타 · 능력 파워",
+      "upvotes": 29,
+      "stats": {
+        "LIFE": 411,
+        "Armor": 55,
+        "Total LIFE": 466,
+        "Weapon Power": 0,
+        "Ability Power": 70,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$"
+    },
+    {
       "name": "11만 6천 캐시?! 랭크 1 소전 빌드가 미쳤어요",
       "code": "64TYG",
       "description": "",
@@ -2148,22 +2165,6 @@
         "Ability Lifesteal": 15
       },
       "cost": "$$$"
-    },
-    {
-      "name": "소전 기술 위력 \"원샷\" 교란 빌드",
-      "code": "RXEHN",
-      "description": "소전의 충전 사격을 사용하여 재사용 대기시간을 초기화하고, 빠른 사격과 연계하여 적을 공격합니다.",
-      "playstyle": "메타 · 능력 파워",
-      "upvotes": 28,
-      "stats": {
-        "LIFE": 411,
-        "Armor": 55,
-        "Total LIFE": 466,
-        "Weapon Power": 0,
-        "Ability Power": 70,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$"
     }
   ],
   "Soldier: 76": [
@@ -2318,7 +2319,7 @@
       "code": "V2Y86",
       "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 28,
+      "upvotes": 31,
       "stats": {
         "LIFE": 374,
         "Armor": 75,
@@ -2486,6 +2487,23 @@
       "cost": "$$"
     },
     {
+      "name": "VENDETTA [AP] 빌드 가이드 - 죽지 않는 여우 (업데이트)",
+      "code": "F45R9",
+      "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 28,
+      "stats": {
+        "LIFE": 324,
+        "Armor": 175,
+        "Total LIFE": 499,
+        "Weapon Power": 20,
+        "Ability Power": 80,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 30
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "1위 복수 가이드: 기술 위력 파괴 빌드는 너무 강력함",
       "code": "SE0JQ",
       "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
@@ -2499,23 +2517,6 @@
         "Weapon Power": 0,
         "Ability Power": 80,
         "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "VENDETTA [AP] 빌드 가이드 - 죽지 않는 여우 (업데이트)",
-      "code": "F45R9",
-      "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 26,
-      "stats": {
-        "LIFE": 324,
-        "Armor": 175,
-        "Total LIFE": 499,
-        "Weapon Power": 20,
-        "Ability Power": 80,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 30
       },
       "cost": "$$$"
     },
@@ -2739,7 +2740,7 @@
       "code": "QXHKV",
       "description": "자리야 무힐·무딜 빌드: 생존기로 버티고 아이템이 딜 대신, 딜러 보호하며 기회 때 딜러 처치",
       "playstyle": "메타 · 고체력",
-      "upvotes": 114,
+      "upvotes": 113,
       "stats": {
         "LIFE": 569,
         "Armor": 25,
@@ -2861,6 +2862,24 @@
       "cost": "$$"
     },
     {
+      "name": "Zenlightenment | 매 게임 최상위 대미지와 회복량?",
+      "code": "G0QZX",
+      "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 103,
+      "stats": {
+        "LIFE": 217,
+        "Shield": 225,
+        "Total LIFE": 442,
+        "Weapon Power": 25,
+        "Ability Power": 60,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$"
+    },
+    {
       "name": "올스타 MVP #1 최고의 캐리 진짜로 진짜 그런 빌드 for Filt",
       "code": "FKXXR",
       "description": "젠야타 변형 빌드: T500 원트릭 기반, 5라운드부터 달라지는 All Star 달성 솔로큐 빌드",
@@ -2875,24 +2894,6 @@
         "Attack Speed": 25,
         "Weapon Power": 25,
         "Ability Power": 35
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "Zenlightenment | 매 게임 최상위 대미지와 회복량?",
-      "code": "G0QZX",
-      "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 101,
-      "stats": {
-        "LIFE": 217,
-        "Shield": 225,
-        "Total LIFE": 442,
-        "Weapon Power": 25,
-        "Ability Power": 60,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
       },
       "cost": "$$"
     }
