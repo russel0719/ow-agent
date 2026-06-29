@@ -170,7 +170,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 656,
+      "upvotes": 657,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -422,7 +422,7 @@
       "code": "CNJEZ",
       "description": "방어 매트릭스와 자폭으로 무적이 되는 빌드입니다.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 393,
+      "upvotes": 394,
       "stats": {
         "LIFE": 732,
         "Armor": 325,
@@ -438,7 +438,7 @@
       "code": "ZSNZH",
       "description": "S3 시즌을 위해 업데이트 중입니다. 불꽃 부스터와 근거리 자기 지속 빌드입니다.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 307,
+      "upvotes": 308,
       "stats": {
         "LIFE": 701,
         "Armor": 425,
@@ -829,7 +829,7 @@
       "code": "PHX7F",
       "description": "",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 20,
+      "upvotes": 21,
       "stats": {
         "LIFE": 361,
         "Total LIFE": 361,
@@ -846,7 +846,7 @@
       "code": "G7CCE",
       "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 18,
+      "upvotes": 20,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -1120,7 +1120,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1557,
+      "upvotes": 1558,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1217,7 +1217,7 @@
       "code": "QPJZM",
       "description": "이 빌드로 얻은 개인 성과: 시즌 5: EU 지원 1위 (Eviki), 시즌 6: EU 지원 2위 (Eviki), 시즌 7: EU 지원 2위 (Eviki), EU 지원 3위 (NewbieNewb). 순위는 챌린저 점수가 아닌 순위로 정렬합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 107,
+      "upvotes": 109,
       "stats": {
         "LIFE": 384,
         "Armor": 100,
@@ -1370,7 +1370,7 @@
       "code": "FZGY3",
       "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 976,
+      "upvotes": 977,
       "stats": {
         "LIFE": 335,
         "Armor": 100,
@@ -1516,7 +1516,7 @@
       "code": "H0V3E",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 148,
+      "upvotes": 147,
       "stats": {
         "LIFE": 353,
         "Armor": 50,
@@ -1860,7 +1860,7 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 53,
+      "upvotes": 55,
       "stats": {
         "LIFE": 549,
         "Armor": 55,
@@ -2066,14 +2066,12 @@
       "playstyle": "무기 파워 · 고체력",
       "upvotes": 42,
       "stats": {
-        "LIFE": 658,
+        "LIFE": 638,
         "Shield": 325,
-        "Total LIFE": 983,
+        "Total LIFE": 963,
         "Weapon Power": 60,
-        "Ability Power": 20,
+        "Ability Power": 15,
         "Critical Damage": 10,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
         "Cooldown Reduction": 5
       },
       "cost": "$$$"
@@ -2138,7 +2136,7 @@
       "code": "RXEHN",
       "description": "소전의 충전 사격을 사용하여 재사용 대기시간을 초기화하고, 빠른 사격과 연계하여 적을 공격합니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 29,
+      "upvotes": 30,
       "stats": {
         "LIFE": 411,
         "Armor": 55,
@@ -2227,7 +2225,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 303,
+      "upvotes": 305,
       "stats": {
         "LIFE": 374,
         "Armor": 25,
@@ -2297,6 +2295,24 @@
       "cost": "$"
     },
     {
+      "name": "시즌 3 포탑 빌드",
+      "code": "V2Y86",
+      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 32,
+      "stats": {
+        "LIFE": 374,
+        "Armor": 75,
+        "Total LIFE": 449,
+        "Weapon Power": 30,
+        "Ability Power": 55,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 25
+      },
+      "cost": "$$"
+    },
+    {
       "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
       "code": "JR4PZ",
       "description": "5라운드 기준 빌드로 핵심은 무기 공격력 중심, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
@@ -2313,24 +2329,6 @@
         "Cooldown Reduction": 10
       },
       "cost": "$$$"
-    },
-    {
-      "name": "시즌 3 포탑 빌드",
-      "code": "V2Y86",
-      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 31,
-      "stats": {
-        "LIFE": 374,
-        "Armor": 75,
-        "Total LIFE": 449,
-        "Weapon Power": 30,
-        "Ability Power": 55,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 25
-      },
-      "cost": "$$"
     },
     {
       "name": "1위 근거리 토르비욘 빌드는 너무 강력하다 🛠️",
@@ -2395,19 +2393,18 @@
       "name": "최강",
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
-      "playstyle": "무기 파워",
+      "playstyle": "무기 파워 · 생명력 흡수",
       "upvotes": 83,
       "stats": {
-        "LIFE": 250,
-        "Armor": 16,
-        "Shield": 32,
-        "Max Ammo": 20,
-        "Total LIFE": 298,
+        "LIFE": 264,
+        "Armor": 32,
+        "Max Ammo": 10,
+        "Total LIFE": 296,
         "Attack Speed": 10,
         "Weapon Power": 50,
-        "Ability Power": 0,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 10
+        "Ability Power": 30,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
       },
       "cost": "$$"
     },
@@ -2525,7 +2522,7 @@
       "code": "9A5K2",
       "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 25,
+      "upvotes": 26,
       "stats": {
         "LIFE": 385,
         "Armor": 193,
@@ -2640,7 +2637,7 @@
       "code": "F8R1P",
       "description": "체인 힐러 빌드: 왜 우양은 실제로 S-Tier인지에 대해 설명합니다. 우양에 많은 변경 사항이 적용되었습니다. 개발자들은 이전의 Streamline 설정을 완전히 변경하였습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 274,
+      "upvotes": 275,
       "stats": {
         "LIFE": 323,
         "Shield": 100,
@@ -2684,19 +2681,20 @@
       "cost": "$$"
     },
     {
-      "name": "궤도 파도의 대가 🌊✨ (피해 & 파도) [S20]",
-      "code": "VF0TC",
-      "description": "수호 파동으로 고통 방울을 발동시켜 적에게 지속 피해를 주는 빌드.",
-      "playstyle": "재미용 · 생명력 흡수",
+      "name": "오비탈 웨이브마스터 🌊✨ (WP) [S3 업데이트]",
+      "code": "4NVE4",
+      "description": "파도 타고 적들에게 오브를 내리꽂아라! 이 빌드는 능력으로 Paindrops를 발동시켜 광역 피해를 입히는 것을 중점으로 합니다.",
+      "playstyle": "무기 파워 · 생명력 흡수",
       "upvotes": 85,
       "stats": {
-        "LIFE": 393,
+        "LIFE": 389,
         "Shield": 25,
-        "Total LIFE": 418,
-        "Weapon Power": 75,
-        "Ability Power": 20,
+        "Total LIFE": 414,
+        "Weapon Power": 55,
+        "Ability Power": 10,
         "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
       },
       "cost": "$$"
     },
@@ -2866,7 +2864,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 103,
+      "upvotes": 105,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
