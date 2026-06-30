@@ -135,7 +135,7 @@
       "code": "E0Q83",
       "description": "이전 시즌 인기 있던 애쉬 화상 빌드 업데이트 버전.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 249,
+      "upvotes": 250,
       "stats": {
         "LIFE": 391,
         "Total LIFE": 391,
@@ -244,7 +244,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 737,
+      "upvotes": 738,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -354,7 +354,7 @@
       "code": "DB97V",
       "description": "GODFIST V3 시즌 2 - 고급 하이브리드 둠피스트 빌드로, 높은 버스트 데미지 콤보와 생존 가능성을 유지하며, 기본 공격과 기술 데미지를 모두 강화합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 65,
+      "upvotes": 66,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -543,7 +543,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 210,
+      "upvotes": 211,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -655,7 +655,7 @@
       "code": "N1MZE",
       "description": "겐지 빌드는 매우 공격적인 플레이 스타일을 위한 것으로, 높은 버스트 데미지와 팀 와이프를 위한 것입니다. 이는 유리 대포 같은 빌드로, 매우 공격적으로 플레이하는 것을 보상하지만,同時에 팀워크를 알고 있어야 합니다.",
       "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 63,
+      "upvotes": 64,
       "stats": {
         "LIFE": 403,
         "Total LIFE": 403,
@@ -1120,7 +1120,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1558,
+      "upvotes": 1559,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1183,7 +1183,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 162,
+      "upvotes": 163,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1217,7 +1217,7 @@
       "code": "QPJZM",
       "description": "이 빌드로 얻은 개인 성과: 시즌 5: EU 지원 1위 (Eviki), 시즌 6: EU 지원 2위 (Eviki), 시즌 7: EU 지원 2위 (Eviki), EU 지원 3위 (NewbieNewb). 순위는 챌린저 점수가 아닌 순위로 정렬합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 109,
+      "upvotes": 111,
       "stats": {
         "LIFE": 384,
         "Armor": 100,
@@ -1366,18 +1366,18 @@
   ],
   "Mercy": [
     {
-      "name": "✨ 무적의 천사 ✨ (미친 기술 위력 회복량) [S3]",
-      "code": "FZGY3",
-      "description": "메르시 빌드로, 날아가며 회복하고 강화하고 소생시킵니다. 특히 죽지 않는 것이 중요합니다.",
-      "playstyle": "능력 파워",
-      "upvotes": 977,
+      "name": "✨ 무적의 천사 ✨ (기술 위력) [S3 T500] (Updated",
+      "code": "0HA91",
+      "description": "빌드는 재사용 대기시간 단축과 기술 위력을 극대화하여 광역 폭딜을 특화합니다. 주요 스탯은 이동 속도와 재사용 대기시간 단축입니다.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 979,
       "stats": {
-        "LIFE": 335,
+        "LIFE": 337,
         "Armor": 100,
-        "Total LIFE": 435,
-        "Weapon Power": 0,
-        "Ability Power": 60,
-        "Cooldown Reduction": 15
+        "Total LIFE": 437,
+        "Weapon Power": 10,
+        "Ability Power": 50,
+        "Cooldown Reduction": 25
       },
       "cost": "$$"
     },
@@ -2204,6 +2204,24 @@
       "cost": "$$"
     },
     {
+      "name": "👑궁극의 기관총🗡️ 5초 만에 팀 삭제!⚔️ SEAS",
+      "code": "WGVF0",
+      "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 306,
+      "stats": {
+        "LIFE": 374,
+        "Armor": 25,
+        "Max Ammo": 40,
+        "Total LIFE": 399,
+        "Attack Speed": 30,
+        "Weapon Power": 70,
+        "Ability Power": 0,
+        "Critical Damage": 10
+      },
+      "cost": "$$"
+    },
+    {
       "name": "👑 궁극의 캐리 [모두 삭제]",
       "code": "9M583",
       "description": "솔저: 76 솔로 캐리 빌드, 무기 공격력+공격 속도로 즉사",
@@ -2217,24 +2235,6 @@
         "Attack Speed": 30,
         "Weapon Power": 65,
         "Ability Power": 0
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "👑궁극의 기관총🗡️ 5초 만에 팀 삭제!⚔️ SEAS",
-      "code": "WGVF0",
-      "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 305,
-      "stats": {
-        "LIFE": 374,
-        "Armor": 25,
-        "Max Ammo": 40,
-        "Total LIFE": 399,
-        "Attack Speed": 30,
-        "Weapon Power": 70,
-        "Ability Power": 0,
-        "Critical Damage": 10
       },
       "cost": "$$"
     },
@@ -2685,7 +2685,7 @@
       "code": "4NVE4",
       "description": "파도 타고 적들에게 오브를 내리꽂아라! 이 빌드는 능력으로 Paindrops를 발동시켜 광역 피해를 입히는 것을 중점으로 합니다.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 85,
+      "upvotes": 86,
       "stats": {
         "LIFE": 389,
         "Shield": 25,
@@ -2722,7 +2722,7 @@
       "code": "VRV9T",
       "description": "격리 방패로 교전/탈출이 쉬워지고 생명력 상승으로 생존성이 강화된 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 162,
+      "upvotes": 163,
       "stats": {
         "LIFE": 691,
         "Armor": 28,
@@ -2864,7 +2864,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 105,
+      "upvotes": 106,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
