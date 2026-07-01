@@ -170,7 +170,7 @@
       "code": "GE5WH",
       "description": "키리코 기술 위력 극대화 빌드. 광역 폭딜과 클론 활용으로 팀 전투 지원.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 657,
+      "upvotes": 658,
       "stats": {
         "LIFE": 422,
         "Armor": 248,
@@ -399,21 +399,22 @@
       "cost": "$$"
     },
     {
-      "name": "랭크 1 둠피스트: 풀 대미지 원샷 빌드",
-      "code": "P572C",
-      "description": "",
-      "playstyle": "혼합 파워 · 고체력",
+      "name": "👑 The Ultimate Carry [Lobby Admin]",
+      "code": "W8WBM",
+      "description": "BUILD NOTES WILL BE UPDATED LATER!      The BEST Doomfist(hero_c3df15d1-619d-4d98-913b-4cc5b068d0c6) build, maximizing your Weapon Power(stat_weapon_power), Ability Power(stat_ability_power) and survivability!",
+      "playstyle": "메타 · 고체력",
       "upvotes": 16,
       "stats": {
-        "LIFE": 833,
-        "Armor": 50,
-        "Total LIFE": 883,
-        "Weapon Power": 55,
-        "Ability Power": 70,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 20
+        "LIFE": 763,
+        "Shield": 50,
+        "Total LIFE": 813,
+        "Weapon Power": 50,
+        "Ability Power": 35,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
       },
-      "cost": "$$$"
+      "cost": "$$"
     }
   ],
   "D.Va": [
@@ -422,7 +423,7 @@
       "code": "CNJEZ",
       "description": "방어 매트릭스와 자폭으로 무적이 되는 빌드입니다.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 394,
+      "upvotes": 397,
       "stats": {
         "LIFE": 732,
         "Armor": 325,
@@ -438,7 +439,7 @@
       "code": "ZSNZH",
       "description": "S3 시즌을 위해 업데이트 중입니다. 불꽃 부스터와 근거리 자기 지속 빌드입니다.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 308,
+      "upvotes": 309,
       "stats": {
         "LIFE": 701,
         "Armor": 425,
@@ -525,7 +526,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 219,
+      "upvotes": 218,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1066,7 +1067,7 @@
       "code": "T5QKR",
       "description": "Beesting 빌드의 업데이트판. 장단점을 계속 파악하며 개선 중.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 338,
+      "upvotes": 337,
       "stats": {
         "LIFE": 112,
         "Armor": 160,
@@ -1120,7 +1121,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1559,
+      "upvotes": 1560,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1183,7 +1184,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 163,
+      "upvotes": 164,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1213,9 +1214,9 @@
       "cost": "$$"
     },
     {
-      "name": "[70% 승률] 1위 루시우 빌드 (업데이트)",
-      "code": "QPJZM",
-      "description": "이 빌드로 얻은 개인 성과: 시즌 5: EU 지원 1위 (Eviki), 시즌 6: EU 지원 2위 (Eviki), 시즌 7: EU 지원 2위 (Eviki), EU 지원 3위 (NewbieNewb). 순위는 챌린저 점수가 아닌 순위로 정렬합니다.",
+      "name": "[70% WR] Rank 1 Lucio build (UPDATED)",
+      "code": "SEDXV",
+      "description": "LATEST UPDATE: Vivace(item_bde9f357-b950-4bde-94d1-3d2e472278a9) before Premium Streaming(item_e0a58a96-c17f-4c99-ba06-8daaa5fd5508). I haven't gotten the value I expected from Premium before Three-Tap Tommygun(item_39c5d2a4-1db0-444f-86d9-2a1e9a3314...",
       "playstyle": "능력 파워",
       "upvotes": 111,
       "stats": {
@@ -1386,7 +1387,7 @@
       "code": "93RNG",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 927,
+      "upvotes": 926,
       "stats": {
         "LIFE": 336,
         "Total LIFE": 336,
@@ -1417,7 +1418,7 @@
       "code": "YNGCE",
       "description": "무한으로 회복하고, 우아하게 생존합니다. 이 빌드는 무기 공격력을 높이고 공격 속도를 증가시켜서 적들을 효과적으로 공격할 수 있습니다.",
       "playstyle": "무기 파워",
-      "upvotes": 155,
+      "upvotes": 157,
       "stats": {
         "LIFE": 429,
         "Total LIFE": 429,
@@ -1860,7 +1861,7 @@
       "code": "W8BNS",
       "description": "트리거 핑거와 백스태버를 추가하여 모든 로비에서 캐리하고 지배할 수 있습니다. 이 빌드는 기술 위력을 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 55,
+      "upvotes": 56,
       "stats": {
         "LIFE": 549,
         "Armor": 55,
@@ -2208,7 +2209,7 @@
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 306,
+      "upvotes": 307,
       "stats": {
         "LIFE": 374,
         "Armor": 25,
@@ -2295,24 +2296,6 @@
       "cost": "$"
     },
     {
-      "name": "시즌 3 포탑 빌드",
-      "code": "V2Y86",
-      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 32,
-      "stats": {
-        "LIFE": 374,
-        "Armor": 75,
-        "Total LIFE": 449,
-        "Weapon Power": 30,
-        "Ability Power": 55,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 25
-      },
-      "cost": "$$"
-    },
-    {
       "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
       "code": "JR4PZ",
       "description": "5라운드 기준 빌드로 핵심은 무기 공격력 중심, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
@@ -2329,6 +2312,24 @@
         "Cooldown Reduction": 10
       },
       "cost": "$$$"
+    },
+    {
+      "name": "시즌 3 포탑 빌드",
+      "code": "V2Y86",
+      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 32,
+      "stats": {
+        "LIFE": 374,
+        "Armor": 75,
+        "Total LIFE": 449,
+        "Weapon Power": 30,
+        "Ability Power": 55,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 25
+      },
+      "cost": "$$"
     },
     {
       "name": "1위 근거리 토르비욘 빌드는 너무 강력하다 🛠️",
@@ -2488,7 +2489,7 @@
       "code": "F45R9",
       "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 28,
+      "upvotes": 29,
       "stats": {
         "LIFE": 324,
         "Armor": 175,
@@ -2864,7 +2865,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 106,
+      "upvotes": 107,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
