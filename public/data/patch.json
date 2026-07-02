@@ -1,44 +1,10 @@
 [
   {
-    "title": "오버워치 2 패치 노트 - 2026년 6월 25일",
-    "date": "2026년 6월 24일",
+    "title": "패치 노트",
+    "date": "",
     "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
     "hero_changes": [],
-    "general_changes": [
-      "일일 도전 과제의 플레이한 게임 수 요구사항이 3회, 7회, 12회에서 3회, 6회, 10회로 감소했습니다.",
-      "주간 도전 과제의 플레이한 게임 수 요구사항이 25회, 30회, 50회에서 20회, 30회, 45회로 감소했습니다."
-    ],
+    "general_changes": [],
     "translation_source": "official"
-  },
-  {
-    "title": "오버워치 2 패치 노트 - 2026년 6월 24일",
-    "date": "2026년 6월 23일",
-    "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
-    "hero_changes": [],
-    "general_changes": [
-      "화물 속도가 약간 감소했습니다.",
-      "점수 확보 후 화물 잠금 해제 시간이 증가했습니다.",
-      "제2 경유지 종점에서 화물 대기 시간이 증가했습니다."
-    ],
-    "translation_source": "official"
-  },
-  {
-    "title": "Overwatch Retail Patch Notes - June 18, 2026",
-    "date": "2026년 6월 18일",
-    "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
-    "hero_changes": [],
-    "general_changes": [
-      "Resolved an issue with Shion's Joyride leaving collision behind for a period of time after throwing it at an enemy",
-      "Resolved an issue with Kiriko's Ofuda range being set to the incorrect value",
-      "Fixed an instance of Ramattra's Void Barrier's cooldown incorrectly resetting",
-      "Fixed a bug with Shion's Joyride that allowed for bypassing of some animations",
-      "Fixed bugs related to Domina's Corporate Retreat",
-      "Fixed an issue where Aerial Distresser was procing Ashe's Calamity Power more than intended.",
-      "Fixed an issue where when using Tracer's Temportal Power, Interacting and Recalling at the same time would reset Recall's cooldown.",
-      "Fixed an issue where healing from Winston's Surge Protector Power would continue longer than intended if Pocket Projector is active.",
-      "Fixed an issue where Moira's Extendrils item prevented Ethereal Excision from granting bonus damage or healing.",
-      "Fixed an issue where Three Tap Tommygun's DOT counted as Critical Hits for Cassidy's Bullseye Power and Kiriko's Keen Kunai Power."
-    ],
-    "translation_source": "llm"
   }
 ]
