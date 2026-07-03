@@ -154,7 +154,7 @@
       "code": "H49C5",
       "description": "탑49 브리기테 원트릭이 만든 GM 10시즌 연속 달성 빌드, 이동 속도 극대화가 핵심.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 960,
+      "upvotes": 959,
       "stats": {
         "LIFE": 314,
         "Armor": 50,
@@ -188,7 +188,7 @@
       "code": "1ECK6",
       "description": "탑 100 브리기테 생존형 빌드. 모든 능력치 강화로 체력 유지.",
       "playstyle": "능력 파워",
-      "upvotes": 141,
+      "upvotes": 142,
       "stats": {
         "LIFE": 327,
         "Armor": 200,
@@ -244,7 +244,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 738,
+      "upvotes": 737,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -278,7 +278,7 @@
       "code": "14N84",
       "description": "캐시디 하이브리드 빌드로 균형 잡힌 성능 발휘. 작성자는 탑 500 및 전설 랭크 경험자.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 74,
+      "upvotes": 75,
       "stats": {
         "LIFE": 407,
         "Armor": 50,
@@ -508,7 +508,7 @@
       "code": "FTTB0",
       "description": "프레야 하이브리드 빌드. 우클릭 원샷과 생존성 중심으로 초반 돈 확보.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 811,
+      "upvotes": 810,
       "stats": {
         "LIFE": 383,
         "Shield": 75,
@@ -780,7 +780,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 102,
+      "upvotes": 103,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -790,22 +790,6 @@
         "Ability Power": 0
       },
       "cost": "$$$"
-    },
-    {
-      "name": "아펠카 캣 오버파워 빌드",
-      "code": "96GA5",
-      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 26,
-      "stats": {
-        "LIFE": 444,
-        "Shield": 75,
-        "Total LIFE": 519,
-        "Attack Speed": 15,
-        "Weapon Power": 30,
-        "Ability Power": 0
-      },
-      "cost": "$$"
     },
     {
       "name": "[2X 탑 500] 마이크로웨이브 키티",
@@ -825,17 +809,17 @@
       "cost": "$$"
     },
     {
-      "name": "( 시즌 3: 신규! WP 제트팩 캣 버프 적용 | 유연한, 파밍 $$$,",
-      "code": "G7CCE",
-      "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 21,
+      "name": "아펠카 캣 오버파워 빌드",
+      "code": "96GA5",
+      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
+      "playstyle": "무기 파워",
+      "upvotes": 26,
       "stats": {
-        "LIFE": 364,
+        "LIFE": 444,
         "Shield": 75,
-        "Total LIFE": 439,
-        "Attack Speed": 35,
-        "Weapon Power": 40,
+        "Total LIFE": 519,
+        "Attack Speed": 15,
+        "Weapon Power": 30,
         "Ability Power": 0
       },
       "cost": "$$"
@@ -856,6 +840,22 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$$"
+    },
+    {
+      "name": "( 시즌 3: 신규! WP 제트팩 캣 버프 적용 | 유연한, 파밍 $$$,",
+      "code": "G7CCE",
+      "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 21,
+      "stats": {
+        "LIFE": 364,
+        "Shield": 75,
+        "Total LIFE": 439,
+        "Attack Speed": 35,
+        "Weapon Power": 40,
+        "Ability Power": 0
+      },
+      "cost": "$$"
     }
   ],
   "Junker Queen": [
@@ -1120,7 +1120,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1560,
+      "upvotes": 1561,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1183,7 +1183,7 @@
       "code": "GZV1P",
       "description": "이 빌드는 어떻게 작동할까요? 치유 출력을 최대화하고, 무기 공격력과 공격 속도 같은 스탯을 증가시켜 치유 부다의 효과를 크게 증가시킵니다.",
       "playstyle": "무기 파워",
-      "upvotes": 165,
+      "upvotes": 166,
       "stats": {
         "LIFE": 477,
         "Total LIFE": 477,
@@ -1217,7 +1217,7 @@
       "code": "SEDXV",
       "description": "이 빌드는 솔로 파라나 모이라, 우양 같은 힐링이 불가능한 지원가와 함께 파라를 플레이하는 데 최적인 빌드입니다. 캐시디는 큰 문제지만...",
       "playstyle": "능력 파워",
-      "upvotes": 111,
+      "upvotes": 112,
       "stats": {
         "LIFE": 384,
         "Armor": 100,
@@ -1401,7 +1401,7 @@
       "code": "RHSFT",
       "description": "기술 위력으로 치유량을 폭발시키고 이동 속도를 극대화해 죽지 않는 메르시 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 225,
+      "upvotes": 226,
       "stats": {
         "LIFE": 359,
         "Armor": 50,
@@ -1453,7 +1453,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1348,
+      "upvotes": 1349,
       "stats": {
         "LIFE": 373,
         "Total LIFE": 373,
@@ -1516,7 +1516,7 @@
       "code": "H0V3E",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 147,
+      "upvotes": 146,
       "stats": {
         "LIFE": 353,
         "Armor": 50,
@@ -1689,21 +1689,21 @@
       "cost": "$$$"
     },
     {
-      "name": "원맨 아미",
-      "code": "N2KAW",
-      "description": "이 빌드는 파라를 플레이하는 데 최적인 빌드입니다. 캐시디와의 매치업에서 큰 문제를 겪을 수 있지만...",
-      "playstyle": "메타 · 무기 파워",
+      "name": "Lock on Queen WP AP Build",
+      "code": "3W1KW",
+      "description": "Small update! Instead of taking Evasive Maneuvers(item_3725ca88-f12a-4a00-8878-4fa39a18a394) round 2, I would recommend Launch Vector(item_7d4ef8eb-a008-4f63-802d-a67bd9d6989e). This makes use of the excess ability power you have until round 4 way be...",
+      "playstyle": "무기 파워 · 생명력 흡수",
       "upvotes": 43,
       "stats": {
-        "LIFE": 349,
-        "Armor": 25,
-        "Shield": 75,
-        "Total LIFE": 449,
-        "Attack Speed": 20,
-        "Weapon Power": 60,
-        "Ability Power": 0
+        "LIFE": 250,
+        "Total LIFE": 250,
+        "Weapon Power": 55,
+        "Ability Power": 40,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Ramattra": [
@@ -2047,7 +2047,7 @@
       "code": "QC7PQ",
       "description": "",
       "playstyle": "메타 · 고체력",
-      "upvotes": 64,
+      "upvotes": 65,
       "stats": {
         "LIFE": 708,
         "Shield": 350,
@@ -2064,7 +2064,7 @@
       "code": "BZHWH",
       "description": "시즌 3 업데이트: 호랑이의 굴로",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 43,
+      "upvotes": 44,
       "stats": {
         "LIFE": 638,
         "Shield": 325,
@@ -2295,24 +2295,6 @@
       "cost": "$"
     },
     {
-      "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
-      "code": "JR4PZ",
-      "description": "5라운드 기준 빌드로 핵심은 무기 공격력 중심, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 32,
-      "stats": {
-        "LIFE": 368,
-        "Armor": 75,
-        "Total LIFE": 443,
-        "Weapon Power": 10,
-        "Ability Power": 110,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "시즌 3 포탑 빌드",
       "code": "V2Y86",
       "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
@@ -2329,6 +2311,24 @@
         "Cooldown Reduction": 25
       },
       "cost": "$$"
+    },
+    {
+      "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
+      "code": "JR4PZ",
+      "description": "5라운드 기준 빌드로 핵심은 무기 공격력 중심, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 32,
+      "stats": {
+        "LIFE": 368,
+        "Armor": 75,
+        "Total LIFE": 443,
+        "Weapon Power": 10,
+        "Ability Power": 110,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
     },
     {
       "name": "1위 근거리 토르비욘 빌드는 너무 강력하다 🛠️",
@@ -2394,7 +2394,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 83,
+      "upvotes": 84,
       "stats": {
         "LIFE": 264,
         "Armor": 32,
@@ -2501,6 +2501,26 @@
       "cost": "$$$"
     },
     {
+      "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
+      "code": "9A5K2",
+      "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
+      "playstyle": "메타 · 고체력",
+      "upvotes": 27,
+      "stats": {
+        "LIFE": 385,
+        "Armor": 193,
+        "Shield": 55,
+        "Move Speed": 10,
+        "Total LIFE": 633,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 30,
+        "Ability Power": 10,
+        "Critical Damage": 10
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "1위 복수 가이드: 기술 위력 파괴 빌드는 너무 강력함",
       "code": "SE0JQ",
       "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
@@ -2514,26 +2534,6 @@
         "Weapon Power": 0,
         "Ability Power": 80,
         "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
-      "code": "9A5K2",
-      "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
-      "playstyle": "메타 · 고체력",
-      "upvotes": 26,
-      "stats": {
-        "LIFE": 385,
-        "Armor": 193,
-        "Shield": 55,
-        "Move Speed": 10,
-        "Total LIFE": 633,
-        "Attack Speed": 10,
-        "Melee Damage": 15,
-        "Weapon Power": 30,
-        "Ability Power": 10,
-        "Critical Damage": 10
       },
       "cost": "$$$"
     }
@@ -2864,7 +2864,7 @@
       "code": "G0QZX",
       "description": "이 빌드는 스타디움에서 젠야타가 매우 강력하다는 것을 보여준다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 109,
+      "upvotes": 110,
       "stats": {
         "LIFE": 217,
         "Shield": 225,
