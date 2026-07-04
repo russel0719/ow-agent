@@ -106,6 +106,20 @@ const MAP_LIST = [
 // ── 차트 높이 헬퍼 (모바일 반응형) ───────────────────────────────────────────
 const CHART_H    = () => window.innerWidth < 640 ? '300px' : '560px';
 const CHART_MAXH = () => window.innerWidth < 640 ? '320px' : '640px';
+const PX_PER_POINT = () => window.innerWidth < 640 ? 16 : 24;
+
+/**
+ * 전체 영웅 추이 차트를 데이터 길이에 비례해 넓게 그리고(가로 스크롤 가능),
+ * 렌더 직후 스크롤 위치를 오른쪽 끝(최신 데이터, 기본 약 1개월 분량)으로 이동.
+ */
+function fitWideChart(container, wrapper, pointCount) {
+  const scrollEl = container.querySelector('#chart-scroll');
+  const baseWidth = scrollEl?.clientWidth || wrapper.clientWidth || 0;
+  wrapper.style.width = Math.max(baseWidth, pointCount * PX_PER_POINT()) + 'px';
+  requestAnimationFrame(() => {
+    if (scrollEl) scrollEl.scrollLeft = scrollEl.scrollWidth;
+  });
+}
 
 // ── 상태 변수 ─────────────────────────────────────────────────────────────────
 let currentRank = '전체';
@@ -235,7 +249,7 @@ function buildHTML() {
           class="text-xs text-ow-blue hover:text-white transition-colors hidden px-2 py-1 rounded border border-ow-border hover:border-ow-blue"
           id="chart-back">← 전체 보기</button>
       </div>
-      <div id="chart-scroll" style="overflow-y:auto; max-height:${CHART_MAXH()};">
+      <div id="chart-scroll" style="overflow-y:auto; overflow-x:auto; max-height:${CHART_MAXH()};">
         <div id="chart-wrapper" class="px-4 pb-4" style="position:relative;">
           <canvas id="meta-chart"></canvas>
         </div>
@@ -569,6 +583,7 @@ function renderOverviewChart(container) {
 
   const dates = Object.keys(rankData).sort();
   const labelDates = dates.map(d => d.slice(5));
+  fitWideChart(container, wrapper, dates.length);
 
   const heroMap = {};
   for (const date of dates) {
@@ -632,7 +647,7 @@ function renderOverviewChart(container) {
         },
       },
       scales: {
-        x: { ticks: { color: '#6B7280', font: { size: 10 }, maxTicksLimit: 14 }, grid: { color: '#1F2937' } },
+        x: { ticks: { color: '#6B7280', font: { size: 10 }, maxTicksLimit: Math.min(dates.length, 30) }, grid: { color: '#1F2937' } },
         y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },
@@ -772,6 +787,7 @@ function renderMapOverviewChart(container) {
 
   const dates = Object.keys(mapData).sort();
   const labelDates = dates.map(d => d.slice(5));
+  fitWideChart(container, wrapper, dates.length);
 
   const infoMap = Object.fromEntries(
     (cachedMapMeta?.[currentMap] ?? []).map(h => [h.hero_id, h])
@@ -839,7 +855,7 @@ function renderMapOverviewChart(container) {
         },
       },
       scales: {
-        x: { ticks: { color: '#6B7280', font: { size: 10 }, maxTicksLimit: 14 }, grid: { color: '#1F2937' } },
+        x: { ticks: { color: '#6B7280', font: { size: 10 }, maxTicksLimit: Math.min(dates.length, 30) }, grid: { color: '#1F2937' } },
         y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: '#1F2937' } },
       },
     },

@@ -48,6 +48,10 @@ class StadiumBuild:
     upvotes: int = 0
     stats: dict = field(default_factory=dict)
     cost: str = ""
+    created_at: str = ""
+    popular_rank: int | None = None
+    latest_rank: int | None = None
+    items: list = field(default_factory=list)
 
 
 async def fetch_builds(session: aiohttp.ClientSession, hero: str) -> list[StadiumBuild]:
@@ -57,7 +61,8 @@ async def fetch_builds(session: aiohttp.ClientSession, hero: str) -> list[Stadiu
         logger.info(f"Supabase에서 영웅 ID 없음: {hero}, fallback 사용")
         return _load_fallback(hero)
 
-    builds = await _fetch_from_supabase(session, hero, hero_id)
+    items_map = await _fetch_items(session)
+    builds = await _fetch_from_supabase(session, hero, hero_id, items_map=items_map)
     if builds:
         return builds
 
@@ -66,16 +71,34 @@ async def fetch_builds(session: aiohttp.ClientSession, hero: str) -> list[Stadiu
 
 
 async def fetch_all_builds(session: aiohttp.ClientSession) -> list[StadiumBuild]:
-    """모든 영웅의 빌드를 가져옵니다. (일일 업데이트용)"""
+    """모든 영웅의 인기 TOP3 + 최신 TOP3 빌드를 가져옵니다. (일일 업데이트용)"""
     heroes = await _fetch_heroes(session)
+    items_map = await _fetch_items(session)
     all_builds: list[StadiumBuild] = []
 
     for supa_hero in heroes:
         hero_id = supa_hero["id"]
         hero_name = supa_hero["name"]
 
-        builds = await _fetch_from_supabase(session, hero_name, hero_id, limit=5)
-        all_builds.extend(builds)
+        popular = await _fetch_from_supabase(
+            session, hero_name, hero_id, limit=3, order="likes.desc", items_map=items_map
+        )
+        latest = await _fetch_from_supabase(
+            session, hero_name, hero_id, limit=3, order="created_at.desc", items_map=items_map
+        )
+
+        by_code: dict[str, StadiumBuild] = {}
+        for rank, b in enumerate(popular, start=1):
+            b.popular_rank = rank
+            by_code[b.code] = b
+        for rank, b in enumerate(latest, start=1):
+            if b.code in by_code:
+                by_code[b.code].latest_rank = rank
+            else:
+                b.latest_rank = rank
+                by_code[b.code] = b
+
+        all_builds.extend(by_code.values())
 
     return all_builds
 
@@ -136,16 +159,20 @@ async def _fetch_from_supabase(
     hero_name: str,
     hero_id: str,
     limit: int = 5,
+    order: str = "likes.desc",
+    items_map: dict | None = None,
 ) -> list[StadiumBuild]:
-    """Supabase에서 특정 영웅의 인기 빌드를 가져옵니다."""
+    """Supabase에서 특정 영웅의 빌드를 가져옵니다 (order 기준 정렬)."""
     try:
         url = f"{SUPABASE_URL}/rest/v1/builds"
         params = {
-            "select": "title,build_code,notes,likes,build_tag,final_round_stats,average_cost",
+            "select": (
+                "title,build_code,notes,likes,build_tag,final_round_stats,average_cost,created_at"
+            ),
             "hero_id": f"eq.{hero_id}",
             "public": "eq.true",
             "build_code": "not.is.null",
-            "order": "likes.desc",
+            "order": order,
             "limit": str(limit),
         }
         async with session.get(
@@ -171,6 +198,7 @@ async def _fetch_from_supabase(
         likes = item.get("likes") or 0
         build_tag = item.get("build_tag") or ""
         cost = item.get("average_cost") or ""
+        created_at = item.get("created_at") or ""
 
         raw_stats = item.get("final_round_stats") or {}
         always_keys = {"Weapon Power", "Ability Power", "Total LIFE"}
@@ -182,6 +210,7 @@ async def _fetch_from_supabase(
 
         description = _clean_description(notes, title)
         playstyle = _tag_to_playstyle(build_tag, title + " " + notes, stats)
+        items = _extract_items(notes, items_map or {})
 
         builds.append(
             StadiumBuild(
@@ -194,10 +223,67 @@ async def _fetch_from_supabase(
                 upvotes=likes,
                 stats=stats,
                 cost=cost,
+                created_at=created_at,
+                items=items,
             )
         )
 
     return builds
+
+
+async def _fetch_items(session: aiohttp.ClientSession) -> dict[str, dict]:
+    """스타디움 아이템 마스터 테이블을 한 번에 가져와 {item_id: info} 맵으로 반환."""
+    try:
+        url = f"{SUPABASE_URL}/rest/v1/items"
+        params = {
+            "select": "id,name,description,cost,rarity,portrait_url",
+            "is_enabled": "eq.true",
+        }
+        async with session.get(
+            url,
+            params=params,
+            headers=API_HEADERS,
+            timeout=aiohttp.ClientTimeout(total=15),
+        ) as resp:
+            resp.raise_for_status()
+            data = await resp.json()
+    except Exception as e:
+        logger.warning(f"Supabase 아이템 목록 조회 실패: {e}")
+        return {}
+
+    return {item["id"]: item for item in data if item.get("id")}
+
+
+_ITEM_REF_RE = re.compile(r"\[([^\[\]]+)\]\(item_([0-9a-fA-F-]{36})\)")
+
+
+def _extract_items(notes: str, items_map: dict) -> list[dict]:
+    """빌드 설명(notes)에 언급된 아이템 참조를 등장 순서대로 dedup 추출."""
+    if not notes or not items_map:
+        return []
+
+    seen: set[str] = set()
+    result: list[dict] = []
+    for _display_name, item_id in _ITEM_REF_RE.findall(notes):
+        if item_id in seen:
+            continue
+        seen.add(item_id)
+
+        info = items_map.get(item_id)
+        if not info:
+            continue
+
+        result.append(
+            {
+                "name_en": info.get("name") or "",
+                "effect_en": info.get("description") or "",
+                "cost": info.get("cost") or 0,
+                "rarity": info.get("rarity") or "",
+                "icon": info.get("portrait_url") or "",
+            }
+        )
+
+    return result
 
 
 def _clean_description(notes: str, title: str) -> str:

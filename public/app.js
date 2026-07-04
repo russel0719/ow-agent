@@ -3,10 +3,10 @@
  * Hash 기반 라우팅: #home | #meta | #stadium | #patch
  * 딥링크 지원: #meta?rank=그랜드마스터&hero=tracer
  */
-import { renderHome } from './views/home.js';
-import { renderMeta } from './views/meta.js?v=5';
+import { renderHome } from './views/home.js?v=1';
+import { renderMeta } from './views/meta.js?v=6';
 import { renderAnalysis } from './views/analysis.js?v=1';
-import { renderStadium } from './views/stadium.js?v=4';
+import { renderStadium } from './views/stadium.js?v=5';
 import { renderPatch } from './views/patch.js?v=4';
 import { mountChat } from './views/chat.js?v=1';
 

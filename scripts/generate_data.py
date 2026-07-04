@@ -371,6 +371,10 @@ async def _generate_stadium(session: aiohttp.ClientSession, force: bool = False)
                     "upvotes": b.upvotes,
                     "stats": b.stats,
                     "cost": b.cost,
+                    "created_at": b.created_at,
+                    "popular_rank": b.popular_rank,
+                    "latest_rank": b.latest_rank,
+                    "items": b.items,
                 }
             )
 
@@ -538,12 +542,17 @@ def _translate_patch_data(data: dict, existing: dict | None = None) -> dict:
 
 
 def _translate_stadium_data(by_hero: dict, force: bool = False) -> dict:
-    """스타디움 빌드 이름(번역) · 설명(3줄 요약) 한국어 처리 (빌드 코드 기반 캐시 활용)."""
-    from bot.utils.translator import summarize_list, translate_stadium_names
+    """스타디움 빌드 이름(번역)·설명(3줄 요약)·아이템 이름/효과 한국어 처리.
+
+    빌드는 `code`, 아이템은 `name_en`을 캐시 키로 삼아 기존 stadium.json에
+    이미 번역된 내용이 있으면 재사용한다 (재실행 시 중복 LLM 호출 방지).
+    """
+    from bot.utils.translator import summarize_list, translate_list, translate_stadium_names
 
     # 기존 stadium.json에서 이미 번역된 내용 로드 (재실행 시 중복 처리 방지)
     # force=True 시 캐시 무시 → 전체 재번역
     prev: dict[str, dict] = {}
+    item_prev: dict[str, dict] = {}
     if not force:
         existing = _load(DOCS_DATA / "stadium.json")
         if isinstance(existing, dict):
@@ -553,6 +562,12 @@ def _translate_stadium_data(by_hero: dict, force: bool = False) -> dict:
                     name = b.get("name", "")
                     if code and _has_korean(name):
                         prev[code] = {"name": name, "description": b.get("description", "")}
+                    for it in b.get("items", []):
+                        name_en = it.get("name_en", "")
+                        if name_en and _has_korean(it.get("name", "")):
+                            item_prev.setdefault(
+                                name_en, {"name": it["name"], "effect": it.get("effect", "")}
+                            )
 
     # 신규 빌드만 추출 (소속 영웅 함께 추적)
     new_builds: list[dict] = []
@@ -583,6 +598,43 @@ def _translate_stadium_data(by_hero: dict, force: bool = False) -> dict:
             build["description"] = desc
 
     logger.info(f"  스타디움 번역: 신규 {len(new_builds)}건, 캐시 재사용 {len(prev)}건")
+
+    # 아이템 이름/효과 번역 (전체 빌드에서 고유 아이템만 name_en 기준으로 수집)
+    all_items = [
+        it for builds in by_hero.values() for build in builds for it in build.get("items", [])
+    ]
+    unique_new_items: dict[str, dict] = {}
+    for it in all_items:
+        name_en = it.get("name_en", "")
+        if name_en and name_en not in item_prev and name_en not in unique_new_items:
+            unique_new_items[name_en] = it
+
+    if unique_new_items:
+        item_names = list(unique_new_items.keys())
+        item_effects = [it.get("effect_en") or "" for it in unique_new_items.values()]
+
+        logger.info(f"  스타디움 아이템 신규 처리: {len(item_names)}건 (이름/효과 번역)")
+        translated_item_names = translate_list(item_names, label="스타디움 아이템 이름 번역")
+        translated_item_effects = translate_list(item_effects, label="스타디움 아이템 효과 번역")
+
+        for name_en, tname, teffect in zip(
+            item_names, translated_item_names, translated_item_effects, strict=False
+        ):
+            item_prev[name_en] = {"name": tname, "effect": teffect}
+
+    for it in all_items:
+        cached = item_prev.get(it.get("name_en", ""))
+        if cached:
+            it["name"] = cached["name"]
+            it["effect"] = cached["effect"]
+        else:
+            it["name"] = it.get("name_en", "")
+            it["effect"] = it.get("effect_en") or ""
+
+    logger.info(
+        f"  스타디움 아이템 번역: 신규 {len(unique_new_items)}건, "
+        f"캐시 재사용 {len(item_prev) - len(unique_new_items)}건"
+    )
     return by_hero
 
 

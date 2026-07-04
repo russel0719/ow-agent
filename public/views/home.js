@@ -1,7 +1,7 @@
 /**
  * OW2 홈 대시보드
  * - AI 주간 메타 요약 (NVIDIA Llama 3.3 70B via Cloudflare Worker)
- * - 이번주 꿀/똥 영웅 TOP3
+ * - 이번 주 상승세/하락세 영웅 TOP3
  * - 픽률 vs 승률 버블 차트 (메타 맵)
  */
 import { loadJSON, getPortraitIndex, WORKER_URL } from '../app.js';
@@ -100,12 +100,18 @@ async function buildAISummaryContext(heroes, patches) {
   const sTier = heroes.filter(h => h.tier === 'S').map(h => h.hero_name).join(', ') || '없음';
   const aTier = heroes.filter(h => h.tier === 'A').map(h => h.hero_name).join(', ') || '없음';
 
+  const topBan = [...heroes].sort((a, b) => (b.ban_rate ?? 0) - (a.ban_rate ?? 0)).slice(0, 3)
+    .map(h => `${h.hero_name}(${h.ban_rate}%)`).join(', ');
+  const topPresence = [...heroes].sort((a, b) => (b.presence_rate ?? 0) - (a.presence_rate ?? 0)).slice(0, 3)
+    .map(h => `${h.hero_name}(${h.presence_rate}%)`).join(', ');
+
   const recentPatch = patches?.[0];
   let patchSummary = '';
   if (recentPatch) {
     const changes = (recentPatch.hero_changes ?? []).slice(0, 5)
       .map(hc => `[${hc.hero}] ${hc.changes[0] ?? ''}`).join(' / ');
-    patchSummary = `최근 패치(${recentPatch.date}): ${changes}`;
+    const general = (recentPatch.general_changes ?? []).slice(0, 2).join(' / ');
+    patchSummary = `최근 패치(${recentPatch.date}): ${changes}${general ? ` / 전체 방향성: ${general}` : ''}`;
   }
 
   return `오버워치 2 전체 랭크 메타 데이터 기준.
@@ -113,6 +119,8 @@ async function buildAISummaryContext(heroes, patches) {
 하락 TOP5: ${falling}
 현재 S티어: ${sTier}
 현재 A티어: ${aTier}
+밴률 TOP3: ${topBan}
+존재감 TOP3: ${topPresence}
 ${patchSummary}`;
 }
 
@@ -125,10 +133,10 @@ async function fetchAISummary(context) {
       messages: [
         {
           role: 'user',
-          content: `다음 오버워치 2 메타 데이터를 바탕으로 이번 주 메타 특징을 한국어로 3줄 요약해줘. 불릿 포인트(•) 형식으로, 각 줄 50자 이내로 간결하게:\n\n${context}`,
+          content: `다음 오버워치 2 메타 데이터를 바탕으로 이번 주 메타 특징을 한국어로 3줄 요약해줘. 불릿 포인트(•) 형식으로, 각 줄 80~100자 내외로 상승/하락의 배경이나 원인까지 자연스러운 문장으로 서술해줘:\n\n${context}`,
         },
       ],
-      max_tokens: 256,
+      max_tokens: 400,
       temperature: 0.4,
     }),
   });
@@ -366,16 +374,16 @@ export async function renderHome(container) {
         </div>
       </div>
 
-      <!-- 꿀/똥 영웅 -->
+      <!-- 상승세/하락세 영웅 -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="bg-ow-card border border-ow-border rounded-xl p-5">
-          <div class="text-sm font-semibold text-green-400 mb-3">이번주 꿀 영웅 TOP 3</div>
+          <div class="text-sm font-semibold text-green-400 mb-3">이번 주 상승세 영웅 TOP 3</div>
           <div id="top-rising" class="space-y-2">
             <div class="text-gray-500 text-sm">로딩 중...</div>
           </div>
         </div>
         <div class="bg-ow-card border border-ow-border rounded-xl p-5">
-          <div class="text-sm font-semibold text-red-400 mb-3">이번주 똥 영웅 TOP 3</div>
+          <div class="text-sm font-semibold text-red-400 mb-3">이번 주 하락세 영웅 TOP 3</div>
           <div id="top-falling" class="space-y-2">
             <div class="text-gray-500 text-sm">로딩 중...</div>
           </div>
@@ -415,7 +423,7 @@ export async function renderHome(container) {
     const metaHeroes = meta?.['전체'] ?? meta?.[Object.keys(meta ?? {})[0]] ?? heroes;
     await renderBubbleChart(container, metaHeroes, portraitIndex);
 
-    // TOP3 꿀/똥 영웅 (delta 기준, null 제외)
+    // TOP3 상승세/하락세 영웅 (delta 기준, null 제외)
     const withDelta = heroes.filter(h => h.delta != null);
     const rising = [...withDelta].sort((a, b) => b.delta - a.delta).slice(0, 3);
     const falling = [...withDelta].sort((a, b) => a.delta - b.delta).slice(0, 3);

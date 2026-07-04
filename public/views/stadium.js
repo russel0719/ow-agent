@@ -264,14 +264,29 @@ function renderBuilds(container, stadium) {
     return;
   }
 
+  const popular = builds.filter(b => b.popular_rank != null).sort((a, b) => a.popular_rank - b.popular_rank);
+  const latest = builds.filter(b => b.latest_rank != null).sort((a, b) => a.latest_rank - b.latest_rank);
+  const emptyMsg = '<p class="text-gray-500 text-sm">데이터 없음</p>';
+
   area.innerHTML = `
     <div class="mb-4 flex items-center gap-2">
       <span class="text-ow-orange font-bold text-lg">${escHtml(koName(currentHero))}</span>
       <span class="text-gray-500 text-sm">${escHtml(currentHero)}</span>
       <span class="text-gray-500 text-sm">· ${builds.length}개 빌드</span>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-      ${builds.map((b, i) => buildCard(b, i + 1)).join('')}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div>
+        <div class="text-sm font-semibold text-gray-300 mb-3">인기 빌드 TOP 3</div>
+        <div class="space-y-4">
+          ${popular.length ? popular.map((b, i) => buildCard(b, i + 1)).join('') : emptyMsg}
+        </div>
+      </div>
+      <div>
+        <div class="text-sm font-semibold text-gray-300 mb-3">최신 빌드 TOP 3</div>
+        <div class="space-y-4">
+          ${latest.length ? latest.map((b, i) => buildCard(b, i + 1)).join('') : emptyMsg}
+        </div>
+      </div>
     </div>
   `;
 
@@ -392,7 +407,34 @@ function buildStatBars(stats) {
   return `<div class="space-y-1.5 border-t border-ow-border pt-3">${bars}</div>`;
 }
 
+/** ISO 날짜 문자열 → "N일 전" 등 상대 시간 표기 */
+function relativeDate(iso) {
+  if (!iso) return '';
+  const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
+  if (days <= 0) return '오늘';
+  if (days === 1) return '1일 전';
+  if (days < 7) return `${days}일 전`;
+  if (days < 30) return `${Math.floor(days / 7)}주 전`;
+  if (days < 365) return `${Math.floor(days / 30)}개월 전`;
+  return `${Math.floor(days / 365)}년 전`;
+}
+
+/** 빌드에 언급된 아이템 칩 목록 (아이콘 + 이름 + 비용, 호버 시 효과 툴팁) */
+function buildItemChips(items) {
+  if (!items?.length) return '';
+  const chips = items.map(it => {
+    const icon = it.icon ? `
+      <img src="${escHtml(it.icon)}" alt="" class="item-chip-icon"
+           onerror="this.style.display='none'" loading="lazy">
+    ` : '';
+    const cost = it.cost ? ` · ${Number(it.cost).toLocaleString()}` : '';
+    return `<span class="item-chip" title="${escHtml(it.effect ?? '')}">${icon}${escHtml(it.name ?? it.name_en ?? '')}${cost}</span>`;
+  }).join('');
+  return `<div class="flex flex-wrap gap-1.5 border-t border-ow-border pt-3">${chips}</div>`;
+}
+
 function buildCard(b, rank) {
+  const dateTxt = relativeDate(b.created_at);
   return `
     <div class="stadium-card flex flex-col gap-3">
       <!-- 헤더: 순위 + 이름 + 플레이스타일 -->
@@ -403,11 +445,12 @@ function buildCard(b, rank) {
         </div>
         <span class="playstyle-badge shrink-0">${escHtml(b.playstyle)}</span>
       </div>
-      <!-- 빌드 코드 + 추천 수 + 비용 -->
+      <!-- 빌드 코드 + 등록일 + 추천 수 + 비용 -->
       <div class="flex items-center gap-3">
         <span class="text-xs text-gray-500">빌드 코드</span>
         <span class="code-badge" data-code="${escHtml(b.code)}">${escHtml(b.code)}</span>
         <span class="ml-auto text-sm text-gray-400 flex items-center gap-2">
+          ${dateTxt ? `<span class="text-xs text-gray-500">${dateTxt}</span>` : ''}
           ${b.cost ? `<span class="text-xs text-gray-500">${escHtml(b.cost)}</span>` : ''}
           <span class="flex items-center gap-1"><span class="text-ow-orange">↑</span>${(b.upvotes ?? 0).toLocaleString()}</span>
         </span>
@@ -418,6 +461,8 @@ function buildCard(b, rank) {
       ${b.description ? `
         <p class="text-sm text-gray-300 leading-relaxed border-t border-ow-border pt-3">${escHtml(b.description)}</p>
       ` : ''}
+      <!-- 포함 아이템 -->
+      ${buildItemChips(b.items)}
     </div>
   `;
 }
