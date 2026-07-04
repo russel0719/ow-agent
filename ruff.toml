@@ -1,0 +1,22 @@
+# 모든 uv 기반 Python 프로젝트가 공유하는 기본 ruff 설정.
+# 이 파일이 있는 디렉토리에서는 pyproject.toml의 [tool.ruff]는 무시되므로,
+# 프로젝트별 override가 필요하면 이 파일 자체(생성된 프로젝트의 루트 ruff.toml)를 수정한다.
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # isort
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "SIM", # flake8-simplify
+]
+ignore = []
+
+[lint.isort]
+known-first-party = ["bot", "scripts"]
+
+[format]
+quote-style = "double"
