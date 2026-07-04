@@ -17,6 +17,7 @@
 메타 점수 공식 (밴 데이터 없을 때 fallback):
   meta_score = win_score × 0.60 + pick_score × 0.40
 """
+
 from __future__ import annotations
 
 import json
@@ -69,16 +70,16 @@ ROLE_MAP = {
 
 @dataclass
 class HeroMeta:
-    hero_id: str          # heroes.json 키와 동일
+    hero_id: str  # heroes.json 키와 동일
     hero_name: str
     role: str
-    pick_rate: float      # %
-    win_rate: float       # %
-    ban_rate: float       # % (Blizzard 제공 시 실제값, 미제공 시 0.0)
+    pick_rate: float  # %
+    win_rate: float  # %
+    ban_rate: float  # % (Blizzard 제공 시 실제값, 미제공 시 0.0)
     portrait_url: str = ""  # Blizzard CDN 초상화 URL
-    meta_score: float    = field(init=False, default=0.0)
-    tier: str            = field(init=False, default="C")
-    presence_rate: float = field(init=False, default=0.0)   # pick_rate + ban_rate
+    meta_score: float = field(init=False, default=0.0)
+    tier: str = field(init=False, default="C")
+    presence_rate: float = field(init=False, default=0.0)  # pick_rate + ban_rate
     ban_efficiency: float = field(init=False, default=0.0)  # ban 가치 지수
 
     def __post_init__(self):
@@ -191,7 +192,8 @@ def _parse_rows(rows: list) -> list[HeroMeta]:
             portrait_url = hero_info.get("portrait", "")
 
             ban_rate_raw = cells.get("banrate", -1)
-            ban_rate = float(ban_rate_raw) if isinstance(ban_rate_raw, (int, float)) and ban_rate_raw >= 0 else 0.0
+            ban_rate_valid = isinstance(ban_rate_raw, (int, float)) and ban_rate_raw >= 0
+            ban_rate = float(ban_rate_raw) if ban_rate_valid else 0.0
 
             heroes.append(
                 HeroMeta(
@@ -225,21 +227,21 @@ def _calculate_scores(heroes: list[HeroMeta]) -> list[HeroMeta]:
         max_ban_eff_raw = max(h.ban_rate * (h.win_rate / 50) for h in heroes) or 1
 
     for h in heroes:
-        win_score  = max(0.0, min(1.0, (h.win_rate - 40) / 20)) * 100
+        win_score = max(0.0, min(1.0, (h.win_rate - 40) / 20)) * 100
         pick_score = (h.pick_rate / max_pick) * 100
 
         if has_ban:
-            ban_score       = (h.ban_rate / max_ban) * 100
+            ban_score = (h.ban_rate / max_ban) * 100
             # 통합 메타 지수: 승률 55% + 픽률 25% + 밴률 20%
-            h.meta_score    = round(win_score * 0.55 + pick_score * 0.25 + ban_score * 0.20, 1)
+            h.meta_score = round(win_score * 0.55 + pick_score * 0.25 + ban_score * 0.20, 1)
             # 존재감 지수: 픽률 + 밴률 (최대 100%)
             h.presence_rate = round(min(h.pick_rate + h.ban_rate, 100.0), 1)
             # 밴 효율 지수: ban × (win/50) 정규화
-            ban_eff_raw      = h.ban_rate * (h.win_rate / 50)
+            ban_eff_raw = h.ban_rate * (h.win_rate / 50)
             h.ban_efficiency = round((ban_eff_raw / max_ban_eff_raw) * 100, 1)
         else:
             # fallback: 밴 데이터 없을 때 기존 공식
-            h.meta_score    = round(win_score * 0.60 + pick_score * 0.40, 1)
+            h.meta_score = round(win_score * 0.60 + pick_score * 0.40, 1)
             h.presence_rate = round(h.pick_rate, 1)
             h.ban_efficiency = 0.0
 

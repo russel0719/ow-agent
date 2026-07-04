@@ -11,6 +11,7 @@
       - div.PatchNotesHeroUpdate-name → 영웅 이름
       - div.PatchNotesAbilityUpdate → 능력 변경 세부사항
 """
+
 import logging
 import re
 from dataclasses import dataclass, field
@@ -50,15 +51,13 @@ class PatchNote:
 
 def _parse_korean_date(date_str: str) -> datetime | None:
     """'2026년 4월 17일' 형식 → datetime. 파싱 실패 시 None."""
-    m = re.match(r'(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일', date_str)
+    m = re.match(r"(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일", date_str)
     if m:
         return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)))
     return None
 
 
-async def fetch_recent_patches(
-    session: aiohttp.ClientSession, days: int = 14
-) -> list[PatchNote]:
+async def fetch_recent_patches(session: aiohttp.ClientSession, days: int = 14) -> list[PatchNote]:
     """최근 N일 이내 패치 목록 반환."""
     try:
         async with session.get(
@@ -177,6 +176,7 @@ def _extract_hero_changes(hero_update_el) -> list[str]:
 
         if ability_name:
             from bot.utils.glossary import get_ability_key
+
             key = get_ability_key(ability_name)
             ability_label = f"{ability_name} ({key})" if key else ability_name
         else:

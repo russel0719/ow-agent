@@ -48,7 +48,8 @@ def set(key: str, data: Any, ttl: int) -> None:
     path = _cache_path(key)
     try:
         with path.open("w", encoding="utf-8") as f:
-            json.dump({"timestamp": time.time(), "ttl": ttl, "data": data}, f, ensure_ascii=False, indent=2)
+            payload = {"timestamp": time.time(), "ttl": ttl, "data": data}
+            json.dump(payload, f, ensure_ascii=False, indent=2)
     except Exception as e:
         logger.warning(f"Cache write error ({key}): {e}")
 

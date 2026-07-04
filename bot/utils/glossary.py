@@ -1,4 +1,5 @@
 """OW 번역 용어집 로더. data/ow_glossary.json 기반."""
+
 from __future__ import annotations
 
 import json

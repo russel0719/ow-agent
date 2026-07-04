@@ -1,7 +1,7 @@
 """영웅 데이터 로더 및 조회 유틸."""
+
 import json
 from pathlib import Path
-from typing import Any
 
 _DATA_PATH = Path(__file__).parent.parent.parent / "data" / "heroes.json"
 _data: dict = {}

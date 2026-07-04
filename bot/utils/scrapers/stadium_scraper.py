@@ -5,10 +5,11 @@
 1. stadiumbuilds.io Supabase API 호출
 2. 실패 시 data/stadium_builds.json 하드코딩 fallback
 """
+
 import json
 import logging
-import unicodedata
 import re
+import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -72,7 +73,6 @@ async def fetch_all_builds(session: aiohttp.ClientSession) -> list[StadiumBuild]
     for supa_hero in heroes:
         hero_id = supa_hero["id"]
         hero_name = supa_hero["name"]
-        hero_key = _normalize_name(hero_name)
 
         builds = await _fetch_from_supabase(session, hero_name, hero_id, limit=5)
         all_builds.extend(builds)
@@ -85,11 +85,9 @@ async def _resolve_hero_id(session: aiohttp.ClientSession, hero: str) -> str | N
     # heroes.json에서 영웅 정보 조회
     try:
         from bot.utils.hero_data import get_hero
+
         hero_data = get_hero(hero)
-        if hero_data:
-            en_name = hero_data.get("name", "")
-        else:
-            en_name = hero
+        en_name = hero_data.get("name", "") if hero_data else hero
     except Exception:
         en_name = hero
 
@@ -121,7 +119,9 @@ async def _fetch_heroes(session: aiohttp.ClientSession) -> list[dict]:
             "order": "name.asc",
         }
         async with session.get(
-            url, params=params, headers=API_HEADERS,
+            url,
+            params=params,
+            headers=API_HEADERS,
             timeout=aiohttp.ClientTimeout(total=15),
         ) as resp:
             resp.raise_for_status()
@@ -149,7 +149,9 @@ async def _fetch_from_supabase(
             "limit": str(limit),
         }
         async with session.get(
-            url, params=params, headers=API_HEADERS,
+            url,
+            params=params,
+            headers=API_HEADERS,
             timeout=aiohttp.ClientTimeout(total=15),
         ) as resp:
             resp.raise_for_status()
@@ -274,7 +276,9 @@ def _tag_to_playstyle(tag: str, content: str, stats: dict | None = None) -> str:
     if not parts:
         if any(w in content_lower for w in ["aggressive", "dive", "공격", "돌진", "carry"]):
             parts.append("공격형")
-        elif any(w in content_lower for w in ["tank", "bruiser", "버티기", "생존", "sustain", "survival"]):
+        elif any(
+            w in content_lower for w in ["tank", "bruiser", "버티기", "생존", "sustain", "survival"]
+        ):
             parts.append("생존형")
         elif any(w in content_lower for w in ["poke", "range", "원거리", "dps", "damage"]):
             parts.append("딜형")
@@ -304,6 +308,7 @@ def _load_fallback(hero: str) -> list[StadiumBuild]:
         # heroes.json을 통해 영문 이름 해석 시도
         try:
             from bot.utils.hero_data import get_hero
+
             hero_data = get_hero(hero)
             en_name = hero_data.get("name", hero) if hero_data else hero
         except Exception:

@@ -8,11 +8,11 @@
 
 갱신된 데이터는 캐시와 fallback 파일에 저장됩니다.
 """
+
 from __future__ import annotations
 
 import json
 import logging
-import time
 from pathlib import Path
 
 import aiohttp
@@ -22,15 +22,14 @@ from bot.utils.scrapers.meta_scraper import (
     RANK_PARAM,
     HeroMeta,
     fetch_meta,
-    _calculate_scores,
-)
-from bot.utils.scrapers.stadium_scraper import (
-    StadiumBuild,
-    fetch_all_builds,
 )
 from bot.utils.scrapers.patch_scraper import (
     PatchNote,
     fetch_latest_patch,
+)
+from bot.utils.scrapers.stadium_scraper import (
+    StadiumBuild,
+    fetch_all_builds,
 )
 
 logger = logging.getLogger(__name__)
@@ -39,9 +38,9 @@ DATA_DIR = Path(__file__).parent.parent.parent / "data"
 META_FALLBACK_PATH = DATA_DIR / "meta_baseline.json"
 STADIUM_FALLBACK_PATH = DATA_DIR / "stadium_builds.json"
 
-META_CACHE_TTL = 86400      # 24시간 (일일 업데이트)
-STADIUM_CACHE_TTL = 86400   # 24시간
-PATCH_CACHE_TTL = 43200     # 12시간
+META_CACHE_TTL = 86400  # 24시간 (일일 업데이트)
+STADIUM_CACHE_TTL = 86400  # 24시간
+PATCH_CACHE_TTL = 43200  # 12시간
 
 
 async def run_daily_update() -> dict:
@@ -65,9 +64,6 @@ async def _update_meta(session: aiohttp.ClientSession) -> str:
     all_rank_data: dict[str, list[dict]] = {}
 
     # 챔피언은 그랜드마스터와 동일하므로 중복 제외
-    unique_ranks = {v: k for k, v in RANK_PARAM.items() if v != "챔피언"}
-    ranks_to_fetch = {v: k for k, v in RANK_PARAM.items()}
-
     for rank_ko in set(RANK_PARAM.keys()) - {"챔피언"}:
         try:
             heroes = await fetch_meta(session, rank_ko)
@@ -101,6 +97,7 @@ async def _update_stadium_builds(session: aiohttp.ClientSession) -> str:
     """전 영웅 스타디움 빌드 갱신."""
     try:
         from bot.utils.scrapers.stadium_scraper import _normalize_name
+
         builds = await fetch_all_builds(session)
         if not builds:
             return "빌드 데이터 없음"
