@@ -39,7 +39,8 @@ python -m http.server 8080 --directory public
 
 | 변수 | 필수 | 용도 |
 |------|------|------|
-| `NVIDIA_API_KEY` | ✅ | 챗봇 AI + 번역·요약 (meta/llama-3.3-70b-instruct) |
+| `CEREBRAS_API_KEY` | ✅ | 번역·요약 (gpt-oss-120b, `scripts/generate_data.py` → `bot/utils/translator.py`) |
+| `NVIDIA_API_KEY` | ✅ | 챗봇 AI + 홈 화면 AI 요약 (meta/llama-3.3-70b-instruct, Cloudflare Worker 전용) |
 | `CLOUDFLARE_API_TOKEN` | ✅ | `cloudflare-worker-api/` 자동 배포 (GitHub Actions 전용) |
 
 GitHub Actions: **Settings → Secrets** 에 등록.

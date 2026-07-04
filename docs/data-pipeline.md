@@ -70,10 +70,11 @@ asyncio.run(run())
 ## 번역 파이프라인
 
 ### `bot/utils/translator.py`
-- **모델**: `meta/llama-3.3-70b-instruct` (NVIDIA API)
-- **배치 처리**: 최대 10건/요청
+- **모델**: `gpt-oss-120b` (Cerebras Inference API, OpenAI 호환 `/v1/chat/completions`)
+- **배치 처리**: 최대 10건/요청, 요청 간 2.1초 간격 (무료 티어 30 RPM 한도 준수)
 - **캐시**: 프로세스 내 메모리 캐시 (`_CACHE` dict)
 - **재시도**: 429 시 지수 백오프 (최대 5회)
+- **회로 차단**: 연속 3회 실패 시(API 장애 등) 이번 실행의 남은 배치는 호출 없이 원문 유지
 
 번역 함수:
 ```python
@@ -171,6 +172,6 @@ summarize_list(texts)              # 3줄 요약
 
 | 시크릿 | 용도 |
 |--------|------|
-| `NVIDIA_API_KEY` | NVIDIA API (Llama 3.3 70B, 번역·요약) |
+| `CEREBRAS_API_KEY` | Cerebras API (Llama 3.3 70B, 번역·요약) |
 
 Settings → Secrets and variables → Actions 에서 등록.

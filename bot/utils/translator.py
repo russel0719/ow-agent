@@ -1,7 +1,7 @@
 """
-영어 → 한국어 번역 / 요약 유틸리티 (NVIDIA API — meta/llama-3.3-70b-instruct).
+영어 → 한국어 번역 / 요약 유틸리티 (Cerebras Inference API — gpt-oss-120b).
 
-환경변수 NVIDIA_API_KEY 필요.
+환경변수 CEREBRAS_API_KEY 필요.
 배치 처리로 API 호출 최소화 (최대 10건/요청).
 """
 
@@ -18,12 +18,18 @@ logger = logging.getLogger(__name__)
 
 _CACHE: dict[str, str] = {}
 _BATCH_SIZE = 10
-_BATCH_DELAY = 1.0  # NVIDIA API rate limit 여유로움
+_BATCH_DELAY = 2.1  # Cerebras 무료 티어 30 RPM(요청/분) 한도를 넘지 않도록 여유
 _RETRY_COUNT = 5
 _RETRY_BASE = 10  # 429 시 첫 대기 시간(초), 이후 지수 증가 (최대 120초)
 _last_api_call: float = 0.0  # 마지막 API 호출 시각 (전역 rate limit 추적)
-_MODEL = "meta/llama-3.3-70b-instruct"
-_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
+
+# API 장애/타임아웃이 이어질 때 남은 배치를 60초씩 낭비하며 재시도하지 않도록
+# 연속 실패 시 이번 프로세스 실행 동안 호출 자체를 건너뛰는 회로 차단기.
+_CIRCUIT_FAIL_THRESHOLD = 3
+_consecutive_failures = 0
+_circuit_open = False
+_MODEL = "gpt-oss-120b"
+_API_URL = "https://api.cerebras.ai/v1/chat/completions"
 
 _TRANSLATE_PROMPT = (
     "다음 JSON의 각 값을 영어에서 한국어로 번역하세요.\n"
@@ -148,12 +154,29 @@ def _batch_process(
     return results
 
 
+def _register_api_failure() -> None:
+    """API 실패를 기록하고, 연속 실패가 임계치를 넘으면 회로를 차단한다."""
+    global _consecutive_failures, _circuit_open
+
+    _consecutive_failures += 1
+    if _consecutive_failures >= _CIRCUIT_FAIL_THRESHOLD and not _circuit_open:
+        _circuit_open = True
+        logger.warning(
+            f"  Cerebras API {_CIRCUIT_FAIL_THRESHOLD}회 연속 실패 — "
+            "이번 실행에서는 이후 번역을 모두 건너뛰고 원문을 유지합니다."
+        )
+
+
 def _call_api(texts: list[str], prompt_template: str, glossary_section: str = "") -> list[str]:
-    """NVIDIA API (Llama 3.3 70B Instruct) 배치 호출.
+    """Cerebras Inference API (gpt-oss-120b) 배치 호출.
 
     429 시 지수 대기 재시도. 최종 실패 시 원본 반환.
+    연속 실패가 잦으면(API 장애 등) 회로를 차단해 남은 배치를 즉시 원본으로 처리한다.
     """
-    global _last_api_call
+    global _last_api_call, _consecutive_failures
+
+    if _circuit_open:
+        return texts
 
     elapsed = time.time() - _last_api_call
     if elapsed < _BATCH_DELAY:
@@ -161,9 +184,9 @@ def _call_api(texts: list[str], prompt_template: str, glossary_section: str = ""
         logger.debug(f"  Rate limit 대기: {wait:.1f}초")
         time.sleep(wait)
 
-    api_key = os.getenv("NVIDIA_API_KEY")
+    api_key = os.getenv("CEREBRAS_API_KEY")
     if not api_key:
-        raise ValueError("NVIDIA_API_KEY 환경변수가 설정되지 않았습니다.")
+        raise ValueError("CEREBRAS_API_KEY 환경변수가 설정되지 않았습니다.")
 
     numbered = json.dumps(
         {str(i): t for i, t in enumerate(texts)},
@@ -204,15 +227,19 @@ def _call_api(texts: list[str], prompt_template: str, glossary_section: str = ""
 
             if not resp.ok:
                 logger.warning(f"  API HTTP {resp.status_code} (원본 유지): {resp.text[:200]}")
+                _register_api_failure()
                 return texts
 
             content = resp.json()["choices"][0]["message"]["content"]
             data: dict = json.loads(content)
+            _consecutive_failures = 0
             return [data.get(str(i), texts[i]) for i in range(len(texts))]
 
         except Exception as e:
             logger.warning(f"  API 호출 실패 (원본 유지): {e!r}")
+            _register_api_failure()
             return texts
 
     logger.warning(f"  {_RETRY_COUNT}회 재시도 후 실패, 원본 유지")
+    _register_api_failure()
     return texts

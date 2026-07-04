@@ -59,7 +59,7 @@ uv sync
 
 # 환경변수 설정
 cp .env.example .env
-# .env 에 NVIDIA_API_KEY 입력
+# .env 에 CEREBRAS_API_KEY 입력
 ```
 
 ### 데이터 생성
@@ -90,7 +90,7 @@ ow-agent/
 │   │   ├── meta_scraper.py    # Blizzard 공식 통계 크롤러
 │   │   ├── stadium_scraper.py # stadiumbuilds.io 크롤러
 │   │   └── patch_scraper.py   # Blizzard 패치 노트 크롤러
-│   └── translator.py          # NVIDIA API (Llama 3.3 70B) API 번역·요약 (배치 처리)
+│   └── translator.py          # Cerebras API (gpt-oss-120b) 번역·요약 (배치 처리)
 ├── data/
 │   ├── heroes.json            # 영웅 DB (자동 동기화)
 │   └── meta_baseline.json     # 크롤링 실패 시 fallback 데이터
@@ -113,9 +113,10 @@ ow-agent/
 
 | 변수 | 필수 | 설명 |
 |------|------|------|
-| `NVIDIA_API_KEY` | ✅ | NVIDIA API 키 (번역·요약·챗봇 AI). [NVIDIA build](https://build.nvidia.com/)에서 발급 |
+| `CEREBRAS_API_KEY` | ✅ | Cerebras API 키 (번역·요약). [Cerebras](https://cloud.cerebras.ai/)에서 발급 |
+| `NVIDIA_API_KEY` | - | 챗봇 AI (Cloudflare Worker 전용, Actions에서는 미사용). [NVIDIA build](https://build.nvidia.com/)에서 발급 |
 
-GitHub Actions에서는 **Settings → Secrets → `NVIDIA_API_KEY`** 로 등록합니다.
+GitHub Actions에서는 **Settings → Secrets → `CEREBRAS_API_KEY`** 로 등록합니다.
 
 ---
 
