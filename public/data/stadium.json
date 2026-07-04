@@ -710,7 +710,7 @@
       "code": "9GATG",
       "description": "해저드 시즌1 초보자 가이드. 기본 빌드와 플레이 스타일, 상성 익히기에 초점.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 140,
+      "upvotes": 139,
       "stats": {
         "LIFE": 729,
         "Armor": 225,
@@ -865,7 +865,7 @@
       "code": "XCYNZ",
       "description": "무기 공격력과 기술 위력 하이브리드로 폭딜과 자힐을 동시에 구현하는 다용도 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 1759,
+      "upvotes": 1758,
       "stats": {
         "LIFE": 790,
         "Total LIFE": 790,
@@ -1454,7 +1454,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1350,
+      "upvotes": 1351,
       "stats": {
         "LIFE": 373,
         "Total LIFE": 373,
@@ -1690,21 +1690,21 @@
       "cost": "$$$"
     },
     {
-      "name": "one man army",
-      "code": "N2KAW",
-      "description": "align:centercentered text[/align] this build is the best build for playing solo pharah or playing pharah with sups that can't heal you like moira and wuyang for matchups Cassidy(hero_3dd63854-7558-4344-86e4-b506f807129b) is a big problem the way to k...",
-      "playstyle": "메타 · 무기 파워",
+      "name": "Lock on Queen WP AP Build",
+      "code": "3W1KW",
+      "description": "Small update! Instead of taking Evasive Maneuvers(item_3725ca88-f12a-4a00-8878-4fa39a18a394) round 2, I would recommend Launch Vector(item_7d4ef8eb-a008-4f63-802d-a67bd9d6989e). This makes use of the excess ability power you have until round 4 way be...",
+      "playstyle": "무기 파워 · 생명력 흡수",
       "upvotes": 43,
       "stats": {
-        "LIFE": 349,
-        "Armor": 25,
-        "Shield": 75,
-        "Total LIFE": 449,
-        "Attack Speed": 20,
-        "Weapon Power": 60,
-        "Ability Power": 0
+        "LIFE": 250,
+        "Total LIFE": 250,
+        "Weapon Power": 55,
+        "Ability Power": 40,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
       },
-      "cost": "$$"
+      "cost": "$$$"
     }
   ],
   "Ramattra": [
@@ -2296,24 +2296,6 @@
       "cost": "$"
     },
     {
-      "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
-      "code": "JR4PZ",
-      "description": "5라운드 기준 빌드로 핵심은 무기 공격력 중심, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
-      "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 32,
-      "stats": {
-        "LIFE": 368,
-        "Armor": 75,
-        "Total LIFE": 443,
-        "Weapon Power": 10,
-        "Ability Power": 110,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "시즌 3 포탑 빌드",
       "code": "V2Y86",
       "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
@@ -2330,6 +2312,24 @@
         "Cooldown Reduction": 25
       },
       "cost": "$$"
+    },
+    {
+      "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
+      "code": "JR4PZ",
+      "description": "5라운드 기준 빌드로 핵심은 무기 공격력 중심, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 32,
+      "stats": {
+        "LIFE": 368,
+        "Armor": 75,
+        "Total LIFE": 443,
+        "Weapon Power": 10,
+        "Ability Power": 110,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
     },
     {
       "name": "1위 근거리 토르비욘 빌드는 너무 강력하다 🛠️",
@@ -2502,23 +2502,6 @@
       "cost": "$$$"
     },
     {
-      "name": "1위 복수 가이드: 기술 위력 파괴 빌드는 너무 강력함",
-      "code": "SE0JQ",
-      "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
-      "playstyle": "능력 파워",
-      "upvotes": 27,
-      "stats": {
-        "LIFE": 322,
-        "Armor": 175,
-        "Shield": 50,
-        "Total LIFE": 547,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$"
-    },
-    {
       "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
       "code": "9A5K2",
       "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
@@ -2535,6 +2518,23 @@
         "Weapon Power": 30,
         "Ability Power": 10,
         "Critical Damage": 10
+      },
+      "cost": "$$$"
+    },
+    {
+      "name": "1위 복수 가이드: 기술 위력 파괴 빌드는 너무 강력함",
+      "code": "SE0JQ",
+      "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
+      "playstyle": "능력 파워",
+      "upvotes": 27,
+      "stats": {
+        "LIFE": 322,
+        "Armor": 175,
+        "Shield": 50,
+        "Total LIFE": 547,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -2816,7 +2816,7 @@
       "code": "GNDNR",
       "description": "젠야타 최적 빌드: 최고 효율 피해량·치유·1대1 능력, 높은 경제 효율",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 1222,
+      "upvotes": 1221,
       "stats": {
         "LIFE": 270,
         "Armor": 25,
