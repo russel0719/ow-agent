@@ -216,8 +216,8 @@
           "cost": 12000,
           "rarity": "epic",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/gadgets/Refresher.png",
-          "name": "Refresher",
-          "effect": "25 체력. 모든 기술 재사용 대기시간을 8초 감소. (60초 재사용 대기시간)."
+          "name": "리프레셔",
+          "effect": "25 체력. 모든 재사용 대기시간을 8초 감소시킵니다. (60초 재사용 대기시간)."
         },
         {
           "name_en": "Gadget Maximizer",
@@ -225,7 +225,7 @@
           "cost": 9500,
           "rarity": "epic",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/GadgetMaximizer.png",
-          "name": "Gadget Maximizer",
+          "name": "가제트 극대화기",
           "effect": "10% 기술 위력. 5% 재사용 대기시간 감소. 25% 가젯 재사용 대기시간 감소."
         },
         {
@@ -234,8 +234,8 @@
           "cost": 4000,
           "rarity": "rare",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/ana/IVDrip.png",
-          "name": "I.V. Drip",
-          "effect": "25 체력. [Biotic Grenade]에 영향을 받는 동안, Ana는 150 초과 체력을 얻는다."
+          "name": "정맥 주입",
+          "effect": "25 체력. [Biotic Grenade]의 영향을 받는 동안, Ana는 150 초과 체력을 얻습니다."
         },
         {
           "name_en": "Our Turn",
@@ -243,8 +243,8 @@
           "cost": 0,
           "rarity": "power",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/ana/OurTurn.png",
-          "name": "Our Turn",
-          "effect": "[나노 부스트]도 시야 내 다른 아군에게 영향을 주지만, 지속 시간이 25% 감소한다."
+          "name": "우리 차례",
+          "effect": "[Nano Boost]은 시야 내의 다른 아군에게도 영향을 주지만, 그들의 지속 시간이 25% 감소합니다."
         },
         {
           "name_en": "Eye of Horus",
@@ -252,8 +252,8 @@
           "cost": 4000,
           "rarity": "rare",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/ana/EyeofHorusS3.png",
-          "name": "Eye of Horus",
-          "effect": "25 방어막. [나노 부스트]는 벽을 통과해 아군을 대상으로 할 수 있으며, 사거리가 60m로 증가한다."
+          "name": "호루스의 눈",
+          "effect": "25 방어막. [Nano Boost]은 벽을 통과해 아군을 대상으로 할 수 있으며, 사거리가 60m로 증가합니다."
         }
       ]
     },
@@ -427,8 +427,8 @@
           "cost": 0,
           "rarity": "power",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/kiriko/CloneConjuration.png",
-          "name": "Clone Conjuration",
-          "effect": "[Swift Step] 사용 후, 4초 지속되는 자신의 클론을 생성한다. 클론은 피해와 회복량이 75% 감소한다."
+          "name": "클론 소환",
+          "effect": "[Swift Step] 사용 후, 4초 지속되는 자신의 클론을 생성합니다. 클론은 데미지와 회복량이 75% 감소합니다."
         },
         {
           "name_en": "Sköldkastning",
@@ -436,8 +436,8 @@
           "cost": 0,
           "rarity": "power",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/brigitte/Skoldkastning.png",
-          "name": "Sköldkastning",
-          "effect": "Shield Bash 사용 후, 다음 Rocket Flail 휘두름이 방어막 부메랑을 투사하여 Shield Bash 피해의 40%를 입힌다."
+          "name": "방패 던지기",
+          "effect": "Shield Bash 사용 후, 다음 Rocket Flail 휘두름이 방어막 부메랑을 투사하여 Shield Bash 데미지의 40%를 입힙니다."
         },
         {
           "name_en": "Scavenged Steel",
@@ -445,8 +445,8 @@
           "cost": 11000,
           "rarity": "epic",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/brigitte/ScavangedSteel.png",
-          "name": "Scavenged Steel",
-          "effect": "50 방어구. 5% 재사용 대기시간 감소. 기술 피해는 궁극기 충전 2%를 부여한다."
+          "name": "수집된 강철",
+          "effect": "50 방어구. 5% 재사용 대기시간 감소. 스킬 데미지가 2% 궁극기 충전을 제공합니다."
         },
         {
           "name_en": "Dragons' Incinerator",
@@ -454,8 +454,8 @@
           "cost": 9000,
           "rarity": "epic",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/brigitte/DragonsIncinerator.png",
-          "name": "Dragons' Incinerator",
-          "effect": "25 방어구. Rally 지속 시간 20%. Rally 내 적은 매초 최대 체력의 5%만큼 화상 입으며, 같은 양만큼 회복한다."
+          "name": "용들의 소각기",
+          "effect": "25 방어구. 20% Rally 지속 시간. Rally 내의 적들은 매초 최대 생명력의 5%만큼 화상을 입으며, 동일량을 당신에게 회복시킵니다."
         },
         {
           "name_en": "Optimizer",
@@ -463,8 +463,8 @@
           "cost": 0,
           "rarity": "power",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/brigitte/Optimizer.png",
-          "name": "Optimizer",
-          "effect": "활성화된 Repair Pack당, Repair Pack 회복량을 10% 증가시키고, 매초 최대 체력의 4%만큼 자신을 회복한다."
+          "name": "최적화기",
+          "effect": "활성화된 수리 팩당, 수리 팩 회복량을 10% 증가시키고, 매초 최대 체력의 4%를 자신에게 회복합니다."
         },
         {
           "name_en": "Consecrated Ground",
@@ -652,7 +652,7 @@
     {
       "name": "Paparazzi (dubstep remix) brig",
       "code": "651RM",
-      "description": "팀을 짊어지는 역할을 위한 공격적인 브리기테 빌드이며, 공중 영웅이 적은 상황에서 최적이다. 지원이 부족하거나 비행 영웅이 많을 경우 효율이 떨어진다.",
+      "description": "공격적인 브리기테 빌드로 팀을 앞에서 끌고 가는 전략입니다. 비행 영웅이 있으면 효율이 떨어집니다.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 0,
       "stats": {
@@ -1810,8 +1810,8 @@
           "cost": 0,
           "rarity": "power",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/kiriko/CloneConjuration.png",
-          "name": "Clone Conjuration",
-          "effect": "[Swift Step] 사용 후, 4초 지속되는 자신의 클론을 생성한다. 클론은 피해와 회복량이 75% 감소한다."
+          "name": "클론 소환",
+          "effect": "[Swift Step] 사용 후, 4초 지속되는 자신의 클론을 생성합니다. 클론은 데미지와 회복량이 75% 감소합니다."
         }
       ]
     },
@@ -2599,26 +2599,6 @@
       ]
     },
     {
-      "name": "아펠카 캣 오버파워 빌드",
-      "code": "96GA5",
-      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 26,
-      "stats": {
-        "LIFE": 444,
-        "Shield": 75,
-        "Total LIFE": 519,
-        "Attack Speed": 15,
-        "Weapon Power": 30,
-        "Ability Power": 0
-      },
-      "cost": "$$",
-      "created_at": "2026-05-12T18:56:23.921563+00:00",
-      "popular_rank": 2,
-      "latest_rank": null,
-      "items": []
-    },
-    {
       "name": "[2X 탑 500] 마이크로웨이브 키티",
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
@@ -2635,7 +2615,7 @@
       },
       "cost": "$$",
       "created_at": "2026-05-13T01:53:00.631743+00:00",
-      "popular_rank": 3,
+      "popular_rank": 2,
       "latest_rank": null,
       "items": [
         {
@@ -2668,9 +2648,29 @@
       ]
     },
     {
+      "name": "아펠카 캣 오버파워 빌드",
+      "code": "96GA5",
+      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
+      "playstyle": "무기 파워",
+      "upvotes": 26,
+      "stats": {
+        "LIFE": 444,
+        "Shield": 75,
+        "Total LIFE": 519,
+        "Attack Speed": 15,
+        "Weapon Power": 30,
+        "Ability Power": 0
+      },
+      "cost": "$$",
+      "created_at": "2026-05-12T18:56:23.921563+00:00",
+      "popular_rank": 3,
+      "latest_rank": null,
+      "items": []
+    },
+    {
       "name": "CAT NUKE",
       "code": "KQC68",
-      "description": "이 Quick Play 빌드는 Catnapper 사용 횟수를 라운드당 5번까지 늘려 높은 승률을 달성합니다. 재사용 대기시간 감소와 능력 위력 강화에 중점을 두어 70% 이상의 승률을 기록합니다.",
+      "description": "퀵플레이에서 한 라운드에 카트냅퍼를 5번 사용해 70% 이상의 승률을 기록하는 빌드입니다.",
       "playstyle": "재미용 · 능력 파워",
       "upvotes": 0,
       "stats": {
@@ -3991,8 +3991,8 @@
           "cost": 0,
           "rarity": "power",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/kiriko/CloneConjuration.png",
-          "name": "Clone Conjuration",
-          "effect": "[Swift Step] 사용 후, 4초 지속되는 자신의 클론을 생성한다. 클론은 피해와 회복량이 75% 감소한다."
+          "name": "클론 소환",
+          "effect": "[Swift Step] 사용 후, 4초 지속되는 자신의 클론을 생성합니다. 클론은 데미지와 회복량이 75% 감소합니다."
         },
         {
           "name_en": "Fleet Foot",
@@ -4423,7 +4423,7 @@
     {
       "name": "🎨[CREATIVE SPARK] Four Boop",
       "code": "SNT46",
-      "description": "루시우 트롤 빌드는 방어막 방패와 충격을 이용해 적을 지속적으로 방해하고, 가능한 한 많은 적을 넉백시키는 것이 목표입니다.",
+      "description": "루시우를 이용해 적을 계속 끌어당기고 넉백시키는 트롤 빌드입니다.",
       "playstyle": "능력 파워 · 재사용 단축",
       "upvotes": 5,
       "stats": {
@@ -4740,7 +4740,7 @@
     {
       "name": "Cryo-Clicker",
       "code": "7PDWM",
-      "description": "슬로우볼 스나이퍼를 활용해 공중 및 기동성이 높은 영웅들을 제압합니다. Pharah와 Freja를 쉽게 잡을 수 있으며, Juno와 Mercy에게는 두 번의 바디샷을 노려야 합니다. 추가 기기로 충전량을 늘려 효율을 높입니다.",
+      "description": "슬로우볼 스나이퍼를 활용해 비행 및 기동성이 높은 영웅들을 저격하고, 가젯으로 충전량을 늘려 두 번 이상 몸통 사격을 노립니다.",
       "playstyle": "무기 파워",
       "upvotes": 6,
       "stats": {
@@ -5904,7 +5904,7 @@
     {
       "name": "Quick Play: \"YOU SAYING I CAN'T AIM? Ha. I. Can aim.\" - Dire",
       "code": "AV9JK",
-      "description": "퀵플레이용 Pharah OTP 빌드. 로켓 데미지를 최대로 올리고 미니 배러지를 피해 근접 전투에서의 혼란을 방지한다.",
+      "description": "퀵플레이용 파라 OTP 빌드로, 미니 배러지를 활용해 폭발적인 로켓 발사와 지속적인 사격을 목표합니다.",
       "playstyle": "무기 파워 · 생명력 흡수",
       "upvotes": 3,
       "stats": {
@@ -6219,7 +6219,7 @@
         "Ability Power": 10,
         "Cooldown Reduction": 5
       },
-      "cost": "$$$",
+      "cost": "$$",
       "created_at": "2026-06-28T16:02:06.544244+00:00",
       "popular_rank": null,
       "latest_rank": 1,
@@ -6228,7 +6228,7 @@
     {
       "name": "[S3] Just Reaper",
       "code": "8RY75",
-      "description": "다목적성을 갖춘 일반형 Reaper 빌드. 상황에 맞춰 공격과 방어를 조절할 수 있는 균형 잡힌 스탯 구성을 제공한다.",
+      "description": "특정 기믹에 얽매이지 않고 상황에 맞게 변형 가능한 리퍼 일반형 빌드입니다.",
       "playstyle": "무기 파워",
       "upvotes": 0,
       "stats": {
@@ -7853,54 +7853,26 @@
       ]
     },
     {
-      "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
-      "code": "JR4PZ",
-      "description": "5라운드 기준 빌드로 핵심은 무기 공격력 중심, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
-      "playstyle": "메타 · 생명력 흡수",
+      "name": "시즌 3 포탑 빌드",
+      "code": "V2Y86",
+      "description": "터렛과 몰튼 코어를 결합한 빌드로, 작년 탑 500에 진입했으며 능력 위력에만 의존하지 않아도 높은 효율을 보입니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
       "upvotes": 32,
       "stats": {
-        "LIFE": 368,
+        "LIFE": 374,
         "Armor": 75,
-        "Total LIFE": 443,
-        "Weapon Power": 10,
-        "Ability Power": 110,
+        "Total LIFE": 449,
+        "Weapon Power": 30,
+        "Ability Power": 55,
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
-        "Cooldown Reduction": 10
+        "Cooldown Reduction": 25
       },
-      "cost": "$$$",
-      "created_at": "2025-10-18T08:36:49.320303+00:00",
+      "cost": "$$",
+      "created_at": "2026-06-18T16:13:32.821329+00:00",
       "popular_rank": 3,
       "latest_rank": null,
-      "items": [
-        {
-          "name_en": "Magmini",
-          "effect_en": "After using Overload, gain 2 Ammo of Molten Core with 66% reduced damage and duration.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/torbjorn/Magmini.png",
-          "name": "Magmini",
-          "effect": "오버로드 사용 후, 몰튼 코어 탄약 2개를 얻으며, 피해와 지속 시간이 66% 감소한다."
-        },
-        {
-          "name_en": "Swedish Sauna",
-          "effect_en": "Molten Core heals allied heroes within it for 50% of Molten Core Damage every 1s.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/torbjorn/SwedishSauna.png",
-          "name": "스웨디시 사우나",
-          "effect": "몰튼 코어는 내부에 있는 아군 영웅들을 1초마다 몰튼 코어 피해의 50%만큼 회복한다."
-        },
-        {
-          "name_en": "Catalytic Crystal",
-          "effect_en": "15% Ability Power; Ability damage and healing grants 20% more ultimate charge.",
-          "cost": 10000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/CatalyticCrystalS1Mid.png",
-          "name": "촉매 크리스탈",
-          "effect": "15% 기술 위력; 기술 피해와 회복량이 궁극기 충전량을 20% 더 증가시킨다."
-        }
-      ]
+      "items": []
     },
     {
       "name": "Top 500 Triple Turret Cybervenom 63% 승률",
@@ -7965,7 +7937,7 @@
           "rarity": "power",
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/torbjorn/Magmini.png",
           "name": "Magmini",
-          "effect": "오버로드 사용 후, 몰튼 코어 탄약 2개를 얻으며, 피해와 지속 시간이 66% 감소한다."
+          "effect": "Overload 사용 후, Molten Core의 탄약 2개를 얻으며 피해와 지속 시간이 66% 감소합니다."
         },
         {
           "name_en": "Swedish Sauna",
@@ -8038,9 +8010,9 @@
       ]
     },
     {
-      "name": "[S3] Hightower Terror Turret Torb",
+      "name": "[S3] 하이타워 테러 터렛 Torb",
       "code": "5WSF2",
-      "description": "퀵플레이용 토르비욘 터렛 빌드로, Cybervenom과 Anchor Bolts를 결합해 압도적인 압박을 가합니다. 스마트한 위치 선정으로 적을 지속적으로 괴롭히는 것이 핵심입니다.",
+      "description": "터보른 터렛을 전략적으로 배치하고 사이버베놈·앵커 볼트로 지속 피해와 방어력을 강화해 적을 압박한다.\n스마트 포지셔닝으로 적을 지속적으로 괴롭히며 승률을 높인다.",
       "playstyle": "능력 파워",
       "upvotes": 6,
       "stats": {
@@ -8945,7 +8917,7 @@
       ]
     },
     {
-      "name": "Dubble Bubble Immortality",
+      "name": "더블 버블 불멸",
       "code": "934GT",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
@@ -8966,9 +8938,9 @@
       "items": []
     },
     {
-      "name": "Aerial Sniper Winton",
+      "name": "공중 저격수 Winton",
       "code": "EPAM4",
-      "description": "버스트 데미지와 공중 사격, 점프 리셋에 집중한 빌드이며, AP 아이템은 선택 사항입니다. 지속력과 슬램 데미지에 유리합니다.",
+      "description": "버스트 데미지와 공중 사격, 점프 리셋에 중점 둔 빌드.\n기술 위력 아이템은 선택 사항이며 지속 피해와 슬램 데미지에 유용.",
       "playstyle": "고체력",
       "upvotes": 2,
       "stats": {
@@ -8985,7 +8957,7 @@
       "items": []
     },
     {
-      "name": "Bounce on it Winton",
+      "name": "튕겨라 Winton",
       "code": "WINT0",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
