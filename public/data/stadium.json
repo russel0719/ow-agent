@@ -793,6 +793,22 @@
       "cost": "$$$"
     },
     {
+      "name": "아펠카 캣 오버파워 빌드",
+      "code": "96GA5",
+      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
+      "playstyle": "무기 파워",
+      "upvotes": 26,
+      "stats": {
+        "LIFE": 444,
+        "Shield": 75,
+        "Total LIFE": 519,
+        "Attack Speed": 15,
+        "Weapon Power": 30,
+        "Ability Power": 0
+      },
+      "cost": "$$"
+    },
+    {
       "name": "[2X 탑 500] 마이크로웨이브 키티",
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
@@ -806,22 +822,6 @@
         "Weapon Lifesteal": 15,
         "Ability Lifesteal": 15,
         "Cooldown Reduction": 5
-      },
-      "cost": "$$"
-    },
-    {
-      "name": "아펠카 캣 오버파워 빌드",
-      "code": "96GA5",
-      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 26,
-      "stats": {
-        "LIFE": 444,
-        "Shield": 75,
-        "Total LIFE": 519,
-        "Attack Speed": 15,
-        "Weapon Power": 30,
-        "Ability Power": 0
       },
       "cost": "$$"
     },
@@ -2205,23 +2205,6 @@
       "cost": "$$"
     },
     {
-      "name": "👑 궁극의 캐리 [모두 삭제]",
-      "code": "9M583",
-      "description": "솔저: 76 솔로 캐리 빌드, 무기 공격력+공격 속도로 즉사",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 307,
-      "stats": {
-        "LIFE": 366,
-        "Armor": 25,
-        "Max Ammo": 40,
-        "Total LIFE": 391,
-        "Attack Speed": 30,
-        "Weapon Power": 65,
-        "Ability Power": 0
-      },
-      "cost": "$$"
-    },
-    {
       "name": "👑궁극의 기관총🗡️ 5초 만에 팀 삭제!⚔️ SEAS",
       "code": "WGVF0",
       "description": "이동력 높은 영웅들을 상대로 효과적인 빌드로 랭크 상승에 도움",
@@ -2236,6 +2219,23 @@
         "Weapon Power": 70,
         "Ability Power": 0,
         "Critical Damage": 10
+      },
+      "cost": "$$"
+    },
+    {
+      "name": "👑 궁극의 캐리 [모두 삭제]",
+      "code": "9M583",
+      "description": "솔저: 76 솔로 캐리 빌드, 무기 공격력+공격 속도로 즉사",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 307,
+      "stats": {
+        "LIFE": 366,
+        "Armor": 25,
+        "Max Ammo": 40,
+        "Total LIFE": 391,
+        "Attack Speed": 30,
+        "Weapon Power": 65,
+        "Ability Power": 0
       },
       "cost": "$$"
     },
@@ -2502,6 +2502,23 @@
       "cost": "$$$"
     },
     {
+      "name": "1위 복수 가이드: 기술 위력 파괴 빌드는 너무 강력함",
+      "code": "SE0JQ",
+      "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
+      "playstyle": "능력 파워",
+      "upvotes": 27,
+      "stats": {
+        "LIFE": 322,
+        "Armor": 175,
+        "Shield": 50,
+        "Total LIFE": 547,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
       "code": "9A5K2",
       "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
@@ -2518,23 +2535,6 @@
         "Weapon Power": 30,
         "Ability Power": 10,
         "Critical Damage": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "1위 복수 가이드: 기술 위력 파괴 빌드는 너무 강력함",
-      "code": "SE0JQ",
-      "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
-      "playstyle": "능력 파워",
-      "upvotes": 27,
-      "stats": {
-        "LIFE": 322,
-        "Armor": 175,
-        "Shield": 50,
-        "Total LIFE": 547,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
