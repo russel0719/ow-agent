@@ -1341,6 +1341,14 @@
         "시에라",
         "sierra"
       ]
+    },
+    "shion": {
+      "name": "Shion",
+      "role": "damage",
+      "aliases": [
+        "시온",
+        "shion"
+      ]
     }
   },
   "roles": {
