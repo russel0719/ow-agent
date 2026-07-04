@@ -422,7 +422,7 @@
       "code": "CNJEZ",
       "description": "방어 매트릭스와 자폭으로 무적이 되는 빌드입니다.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 398,
+      "upvotes": 400,
       "stats": {
         "LIFE": 732,
         "Armor": 325,
@@ -508,7 +508,7 @@
       "code": "FTTB0",
       "description": "프레야 하이브리드 빌드. 우클릭 원샷과 생존성 중심으로 초반 돈 확보.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 810,
+      "upvotes": 809,
       "stats": {
         "LIFE": 383,
         "Shield": 75,
@@ -543,7 +543,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 211,
+      "upvotes": 212,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -792,6 +792,22 @@
       "cost": "$$$"
     },
     {
+      "name": "아펠카 캣 오버파워 빌드",
+      "code": "96GA5",
+      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
+      "playstyle": "무기 파워",
+      "upvotes": 26,
+      "stats": {
+        "LIFE": 444,
+        "Shield": 75,
+        "Total LIFE": 519,
+        "Attack Speed": 15,
+        "Weapon Power": 30,
+        "Ability Power": 0
+      },
+      "cost": "$$"
+    },
+    {
       "name": "[2X 탑 500] 마이크로웨이브 키티",
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
@@ -809,17 +825,17 @@
       "cost": "$$"
     },
     {
-      "name": "아펠카 캣 오버파워 빌드",
-      "code": "96GA5",
-      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 26,
+      "name": "( 시즌 3: 신규! WP 제트팩 캣 버프 적용 | 유연한, 파밍 $$$,",
+      "code": "G7CCE",
+      "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 22,
       "stats": {
-        "LIFE": 444,
+        "LIFE": 364,
         "Shield": 75,
-        "Total LIFE": 519,
-        "Attack Speed": 15,
-        "Weapon Power": 30,
+        "Total LIFE": 439,
+        "Attack Speed": 35,
+        "Weapon Power": 40,
         "Ability Power": 0
       },
       "cost": "$$"
@@ -840,22 +856,6 @@
         "Cooldown Reduction": 5
       },
       "cost": "$$$"
-    },
-    {
-      "name": "( 시즌 3: 신규! WP 제트팩 캣 버프 적용 | 유연한, 파밍 $$$,",
-      "code": "G7CCE",
-      "description": "제트팩 캣 빌드는 광역 폭딜 특화로 승률을 높이는 전략입니다. 주요 스탯은 무기 공격력과 기술 위력의 극대화이며, 이동 속도와 재사용 대기시간 단축을 통해 쉬지 않고 교전할 수 있습니다.",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 21,
-      "stats": {
-        "LIFE": 364,
-        "Shield": 75,
-        "Total LIFE": 439,
-        "Attack Speed": 35,
-        "Weapon Power": 40,
-        "Ability Power": 0
-      },
-      "cost": "$$"
     }
   ],
   "Junker Queen": [
@@ -1120,7 +1120,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1561,
+      "upvotes": 1562,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -1370,7 +1370,7 @@
       "code": "0HA91",
       "description": "빌드는 재사용 대기시간 단축과 기술 위력을 극대화하여 광역 폭딜을 특화합니다. 주요 스탯은 이동 속도와 재사용 대기시간 단축입니다.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 978,
+      "upvotes": 977,
       "stats": {
         "LIFE": 337,
         "Armor": 100,
@@ -1386,7 +1386,7 @@
       "code": "93RNG",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 926,
+      "upvotes": 925,
       "stats": {
         "LIFE": 336,
         "Total LIFE": 336,
@@ -1417,7 +1417,7 @@
       "code": "YNGCE",
       "description": "무한으로 회복하고, 우아하게 생존합니다. 이 빌드는 무기 공격력을 높이고 공격 속도를 증가시켜서 적들을 효과적으로 공격할 수 있습니다.",
       "playstyle": "무기 파워",
-      "upvotes": 157,
+      "upvotes": 158,
       "stats": {
         "LIFE": 429,
         "Total LIFE": 429,
@@ -1453,7 +1453,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1349,
+      "upvotes": 1350,
       "stats": {
         "LIFE": 373,
         "Total LIFE": 373,
@@ -1877,7 +1877,7 @@
       "code": "KPK1Q",
       "description": "이 빌드는 기술 위력과 기술 생명력 흡수를 중점으로 하며, 처치와 생존성을 위해 디어 트리거를 사용합니다. 4라운드에서는 유령 형태를 사용합니다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 35,
+      "upvotes": 36,
       "stats": {
         "LIFE": 470,
         "Armor": 50,
@@ -2226,7 +2226,7 @@
       "code": "9M583",
       "description": "솔저: 76 솔로 캐리 빌드, 무기 공격력+공격 속도로 즉사",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 306,
+      "upvotes": 307,
       "stats": {
         "LIFE": 366,
         "Armor": 25,
@@ -2295,24 +2295,6 @@
       "cost": "$"
     },
     {
-      "name": "시즌 3 포탑 빌드",
-      "code": "V2Y86",
-      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 32,
-      "stats": {
-        "LIFE": 374,
-        "Armor": 75,
-        "Total LIFE": 449,
-        "Weapon Power": 30,
-        "Ability Power": 55,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 25
-      },
-      "cost": "$$"
-    },
-    {
       "name": "🔥초토화 지대🔥 (무한 Torb 용암)",
       "code": "JR4PZ",
       "description": "5라운드 기준 빌드로 핵심은 무기 공격력 중심, 포탑 표식 뒤 돌격 가능한 하이브리드 플레이",
@@ -2331,11 +2313,29 @@
       "cost": "$$$"
     },
     {
+      "name": "시즌 3 포탑 빌드",
+      "code": "V2Y86",
+      "description": "저는 지난 시즌에 탑 500에 올랐고, 이번 시즌에는 변경 사항을 적용해 봤습니다. 결과적으로 이 빌드는 용암 핵과 함께 잘 작동하는 것으로 보입니다. 기술 위력에 100% 의존하지 않는 것이 좋습니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 32,
+      "stats": {
+        "LIFE": 374,
+        "Armor": 75,
+        "Total LIFE": 449,
+        "Weapon Power": 30,
+        "Ability Power": 55,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 25
+      },
+      "cost": "$$"
+    },
+    {
       "name": "1위 근거리 토르비욘 빌드는 너무 강력하다 🛠️",
       "code": "C90AR",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 26,
+      "upvotes": 27,
       "stats": {
         "LIFE": 370,
         "Armor": 200,
@@ -2394,7 +2394,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 84,
+      "upvotes": 85,
       "stats": {
         "LIFE": 264,
         "Armor": 32,
@@ -2453,7 +2453,7 @@
       "code": "RTPVW",
       "description": "검 자체가 빌드인 베네타 근접 무기 공격력 중심 빌드. 검으로 연속 타격하며 지속 피해와 생존을 동시에 확보.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 225,
+      "upvotes": 224,
       "stats": {
         "LIFE": 360,
         "Armor": 248,
@@ -2501,6 +2501,23 @@
       "cost": "$$$"
     },
     {
+      "name": "1위 복수 가이드: 기술 위력 파괴 빌드는 너무 강력함",
+      "code": "SE0JQ",
+      "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
+      "playstyle": "능력 파워",
+      "upvotes": 27,
+      "stats": {
+        "LIFE": 322,
+        "Armor": 175,
+        "Shield": 50,
+        "Total LIFE": 547,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$"
+    },
+    {
       "name": "VENDETTA [WP] 빌드 가이드 - Vendetta는 Thanos (업데이트)",
       "code": "9A5K2",
       "description": "벤데타의 무기 공격력과 기술 위력이 대폭 상향 조정되어 두 빌드가 최상위 티어가 되었습니다. 이에 따라 최적의 아이템을 소개하겠습니다.",
@@ -2517,23 +2534,6 @@
         "Weapon Power": 30,
         "Ability Power": 10,
         "Critical Damage": 10
-      },
-      "cost": "$$$"
-    },
-    {
-      "name": "1위 복수 가이드: 기술 위력 파괴 빌드는 너무 강력함",
-      "code": "SE0JQ",
-      "description": "YouTube Video(https://youtube.com/embed/HeZLzwvOG6k \"large center\")",
-      "playstyle": "능력 파워",
-      "upvotes": 27,
-      "stats": {
-        "LIFE": 322,
-        "Armor": 175,
-        "Shield": 50,
-        "Total LIFE": 547,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 10
       },
       "cost": "$$$"
     }
@@ -2637,7 +2637,7 @@
       "code": "F8R1P",
       "description": "체인 힐러 빌드: 왜 우양은 실제로 S-Tier인지에 대해 설명합니다. 우양에 많은 변경 사항이 적용되었습니다. 개발자들은 이전의 Streamline 설정을 완전히 변경하였습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 275,
+      "upvotes": 278,
       "stats": {
         "LIFE": 323,
         "Shield": 100,
