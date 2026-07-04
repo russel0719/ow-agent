@@ -38,6 +38,12 @@ cron: '0 6 * * *'   # 매일 15:00 KST
 
 ---
 
+## 외부 API
+
+`https://ow-agent-api.russel0719.workers.dev/v1/*` — 영웅 메타 점수·픽률·승률·밴률, 히스토리, 패치노트, 스타디움 빌드, 맵 메타를 외부에서 조회 가능한 REST API. 자세한 내용은 [docs/api.md](docs/api.md) 참고.
+
+---
+
 ## 로컬 실행
 
 ### 요구 사항

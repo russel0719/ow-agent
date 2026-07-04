@@ -20,3 +20,5 @@ data/cache/
 
 # Cloudflare Wrangler 로컬 캐시
 cloudflare-worker/.wrangler/
+cloudflare-worker-api/node_modules/
+cloudflare-worker-api/.wrangler/

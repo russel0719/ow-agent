@@ -1,0 +1,7 @@
+name = "ow-agent-api"
+main = "src/index.js"
+compatibility_date = "2025-04-01"
+account_id = "b88ea24642e8292dc752cac1675ea02f"
+
+[observability]
+enabled = true

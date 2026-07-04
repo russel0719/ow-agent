@@ -37,6 +37,15 @@ Cloudflare Worker (worker.js)
         │ 응답 + X-Remaining-Count 헤더
         ▼
 [브라우저: 남은 횟수 UI 업데이트]
+
+GitHub Pages (public/data/*.json)
+        │
+        └──→ Cloudflare Worker (ow-agent-api, 챗봇 워커와 별개)
+                ├── Cache API (원본 + 응답, 5분)
+                └── /v1/... REST 엔드포인트
+                        │
+                        ▼
+                [외부 제3자 소비자]
 ```
 
 ## 기술 스택
@@ -48,6 +57,7 @@ Cloudflare Worker (worker.js)
 | 챗봇 AI | NVIDIA API (Llama 3.3 70B Instruct) |
 | 프론트엔드 | Vanilla JS (ES Modules), Chart.js, Tailwind CSS |
 | 챗봇 프록시 | Cloudflare Worker + KV |
+| 외부 공개 API | Cloudflare Worker (wrangler) — `docs/api.md` 참고 |
 | 배포 | GitHub Pages + GitHub Actions (Actions 기반 배포) |
 
 ## 주요 파일 역할
@@ -67,6 +77,7 @@ Cloudflare Worker (worker.js)
 | `public/views/home.js` | 홈 대시보드 (AI 요약, 꿀/똥 TOP3, 초상화 버블 차트) |
 | `public/views/analysis.js` | 메타 분석 탭 (통합 메타·존재감·밴 효율 지수 + 버블 차트 + 테이블) |
 | `cloudflare-worker/worker.js` | CORS 프록시 + KV 일일 제한 + GET 남은 횟수 조회 |
+| `cloudflare-worker-api/src/index.js` | 외부 공개 REST API(`/v1/*`) 진입점 — 라우팅 + Cache API 응답 캐싱 |
 
 ## 데이터 흐름
 

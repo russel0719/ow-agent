@@ -31,13 +31,16 @@ python -m http.server 8080 --directory public
 | `data/ow_glossary.json` | 번역 용어집 — 영웅명·스킬명 (수동 관리) |
 | `public/views/analysis.js` | 메타 분석 탭 — 통합 지수·존재감·밴 효율 시각화 |
 | `cloudflare-worker/worker.js` | 챗봇·AI 요약 프록시 (NVIDIA API + KV 일일 제한) |
+| `cloudflare-worker-api/` | 외부 공개 REST API (`/v1/*`, wrangler 기반 Cloudflare Worker) |
 | `.github/workflows/update-data.yml` | 매일 15:00 KST 자동 갱신 + Pages 배포 |
+| `.github/workflows/deploy-api-worker.yml` | `cloudflare-worker-api/**` 변경 시 자동 `wrangler deploy` |
 
 ## 환경변수
 
 | 변수 | 필수 | 용도 |
 |------|------|------|
 | `NVIDIA_API_KEY` | ✅ | 챗봇 AI + 번역·요약 (meta/llama-3.3-70b-instruct) |
+| `CLOUDFLARE_API_TOKEN` | ✅ | `cloudflare-worker-api/` 자동 배포 (GitHub Actions 전용) |
 
 GitHub Actions: **Settings → Secrets** 에 등록.
 로컬 개발: `.env` 파일에 설정 (`.env.example` 참고).
@@ -48,3 +51,4 @@ GitHub Actions: **Settings → Secrets** 에 등록.
 - [데이터 파이프라인](docs/data-pipeline.md) — 크롤러, 번역, 새 영웅 추가 방법
 - [프론트엔드](docs/frontend.md) — 라우팅, 뷰 컴포넌트, 로컬 개발
 - [챗봇 / Cloudflare](docs/chatbot.md) — Worker 배포, KV 제한 설정
+- [외부 공개 API](docs/api.md) — `/v1/*` 엔드포인트 레퍼런스, Worker 배포
