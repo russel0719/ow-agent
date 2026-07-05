@@ -52,10 +52,3 @@ def set(key: str, data: Any, ttl: int) -> None:
             json.dump(payload, f, ensure_ascii=False, indent=2)
     except Exception as e:
         logger.warning(f"Cache write error ({key}): {e}")
-
-
-def invalidate(key: str) -> None:
-    """캐시 항목 삭제."""
-    path = _cache_path(key)
-    if path.exists():
-        path.unlink()

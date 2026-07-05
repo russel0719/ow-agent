@@ -72,12 +72,6 @@ async def fetch_recent_patches(session: aiohttp.ClientSession, days: int = 14) -
     return _parse_patches(html, days)
 
 
-async def fetch_latest_patch(session: aiohttp.ClientSession) -> PatchNote | None:
-    """최신 패치 1개 반환 (하위 호환용)."""
-    patches = await fetch_recent_patches(session, days=365)
-    return patches[0] if patches else None
-
-
 def _parse_patches(html: str, days: int = 30) -> list[PatchNote]:
     """HTML에서 최근 N일 이내 패치 목록 파싱."""
     soup = BeautifulSoup(html, "lxml")
@@ -235,9 +229,3 @@ def _fallback_parse(soup: BeautifulSoup) -> PatchNote | None:
         hero_changes=[],
         general_changes=general_changes,
     )
-
-
-def filter_by_hero(patch: PatchNote, hero_name: str) -> list[HeroChange]:
-    """특정 영웅 이름이 포함된 변경 사항만 필터링."""
-    keyword = hero_name.lower()
-    return [hc for hc in patch.hero_changes if keyword in hc.hero.lower()]

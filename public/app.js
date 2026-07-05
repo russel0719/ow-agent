@@ -24,13 +24,6 @@ export async function loadJSON(name) {
   return cache[name];
 }
 
-// ── 영웅 초상화 URL ───────────────────────────────────────────────────────────
-// meta.json의 portrait_url(Blizzard CDN 해시 URL)을 우선 사용.
-// 없는 경우(stadium/patch 등) null 반환 → 이니셜 폴백.
-export function heroPortraitUrl(portraitUrl) {
-  return portraitUrl || null;
-}
-
 // meta.json에서 hero_id → portrait_url 인덱스 빌드 (stadium/patch 뷰에서 사용)
 let _portraitIndex = null;
 export async function getPortraitIndex() {

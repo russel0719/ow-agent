@@ -30,16 +30,3 @@ def get_hero(name: str) -> dict | None:
             return {"id": hero_id, **hero}
 
     return None
-
-
-def all_heroes() -> list[dict]:
-    heroes = _load()["heroes"]
-    return [{"id": k, **v} for k, v in heroes.items()]
-
-
-def heroes_by_role(role: str) -> list[dict]:
-    return [h for h in all_heroes() if h.get("role") == role]
-
-
-def get_role_info(role: str) -> dict | None:
-    return _load()["roles"].get(role)

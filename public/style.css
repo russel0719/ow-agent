@@ -46,15 +46,6 @@
 .delta-down    { color: #ef4444; font-size: 0.65rem; font-weight: 600; }
 .delta-neutral { color: #6b7280; font-size: 0.65rem; }
 
-/* 히스토리 차트 컨테이너 */
-.chart-container {
-  background: #0D1117;
-  border: 1px solid #30363D;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  padding: 16px;
-}
-
 /* 티어 배지 */
 .tier-S { background: rgba(239, 68, 68, 0.12); border-color: #ef4444; color: #ef4444; }
 .tier-A { background: rgba(249, 115, 22, 0.12); border-color: #f97316; color: #f97316; }
@@ -198,14 +189,6 @@
 }
 .patch-hero-card.is-stadium {
   border-color: rgba(245, 166, 35, 0.4);
-}
-
-/* 영웅 정보 패널 */
-.hero-detail-panel {
-  background: #161B22;
-  border: 1px solid #30363D;
-  border-radius: 8px;
-  padding: 20px;
 }
 
 /* 모드 탭 (랭크별 / 맵별) */
@@ -363,30 +346,12 @@
   transition: color 0.15s;
 }
 .meta-table th:hover { color: #E5E7EB; }
-.meta-table th.sort-active { color: #F5A623; }
 .meta-table-row td {
   padding: 8px 12px;
   border-bottom: 1px solid #21262D;
   vertical-align: middle;
 }
 .meta-table-row:hover td { background: rgba(255,255,255,0.03); cursor: pointer; }
-.meta-table-row.selected td { background: rgba(245, 166, 35, 0.06); }
-
-/* 영웅 상세 패널 내 빌드 코드 배지 */
-.detail-code-badge {
-  font-family: monospace;
-  letter-spacing: 0.08em;
-  cursor: pointer;
-  background: #0D1117;
-  border: 1px solid #30363D;
-  border-radius: 4px;
-  padding: 3px 8px;
-  font-size: 0.8rem;
-  color: #4FC3F7;
-  transition: border-color 0.15s, color 0.15s;
-}
-.detail-code-badge:hover { border-color: #4FC3F7; color: #fff; }
-.detail-code-badge.copied { border-color: #22c55e; color: #22c55e; }
 
 /* 패치 카드 티어 배지 */
 .patch-tier-badge {

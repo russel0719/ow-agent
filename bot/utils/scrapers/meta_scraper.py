@@ -274,17 +274,3 @@ def _blizzard_id_to_key(blizzard_id: str) -> str:
         return mapping[blizzard_id]
     # 하이픈을 언더스코어로, 소문자로
     return blizzard_id.lower().replace("-", "_")
-
-
-def meta_dict(heroes: list[HeroMeta]) -> dict[str, dict]:
-    """hero_id → 메타 정보 dict 변환 (recommend.py에서 사용)."""
-    return {
-        h.hero_id: {
-            "meta_score": h.meta_score,
-            "pick_rate": h.pick_rate,
-            "win_rate": h.win_rate,
-            "ban_rate": h.ban_rate,
-            "tier": h.tier,
-        }
-        for h in heroes
-    }

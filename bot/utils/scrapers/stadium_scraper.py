@@ -54,22 +54,6 @@ class StadiumBuild:
     items: list = field(default_factory=list)
 
 
-async def fetch_builds(session: aiohttp.ClientSession, hero: str) -> list[StadiumBuild]:
-    """영웅 이름으로 스타디움 빌드를 stadiumbuilds.io에서 검색."""
-    hero_id = await _resolve_hero_id(session, hero)
-    if not hero_id:
-        logger.info(f"Supabase에서 영웅 ID 없음: {hero}, fallback 사용")
-        return _load_fallback(hero)
-
-    items_map = await _fetch_items(session)
-    builds = await _fetch_from_supabase(session, hero, hero_id, items_map=items_map)
-    if builds:
-        return builds
-
-    logger.info(f"Supabase 빌드 없음, fallback 사용: {hero}")
-    return _load_fallback(hero)
-
-
 async def fetch_all_builds(session: aiohttp.ClientSession) -> list[StadiumBuild]:
     """모든 영웅의 인기 TOP3 + 최신 TOP3 빌드를 가져옵니다. (일일 업데이트용)"""
     heroes = await _fetch_heroes(session)

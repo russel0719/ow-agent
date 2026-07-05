@@ -79,11 +79,6 @@ def translate(text: str) -> str:
     return translate_list([text])[0]
 
 
-def summarize(text: str) -> str:
-    """단일 텍스트 3줄 이내 한국어 요약. 실패 시 원본 반환."""
-    return summarize_list([text])[0]
-
-
 def translate_list(
     texts: list[str], label: str = "번역", heroes: list[str] | None = None
 ) -> list[str]:

@@ -1,4 +1,4 @@
-export const RANK_ALIASES = {
+const RANK_ALIASES = {
   all: '전체',
   bronze: '브론즈',
   silver: '실버',
@@ -10,12 +10,12 @@ export const RANK_ALIASES = {
   champion: '챔피언',
 };
 
-export const RANKS = new Set(Object.values(RANK_ALIASES));
+const RANKS = new Set(Object.values(RANK_ALIASES));
 
 // meta_history.json에는 '챔피언'이 없음 (그랜드마스터와 동일해서 미저장)
 export const HISTORY_RANKS = new Set([...RANKS].filter((r) => r !== '챔피언'));
 
-export const ROLES = new Set(['tank', 'damage', 'support']);
+const ROLES = new Set(['tank', 'damage', 'support']);
 
 export function resolveRank(input) {
   if (!input) return '전체';
