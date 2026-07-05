@@ -175,9 +175,9 @@
       ]
     },
     {
-      "name": "🎨[CREATIVE SPARK] 궁극기 NANO SLOP 빌드",
-      "code": "159W1",
-      "description": "아나의 나노 강화(Nano Boost)를 팀 전체에 적용하는 빌드로, 팀원의 피해량과 생존력을 크게 끌어올린다. 아이템과 스탯을 통해 나노 강화 효과를 극대화한다. 지속적인 업데이트가 예정되어 있다.",
+      "name": "🎨[CREATIVE SPARK] The 궁극기 NANO SLOP 빌드",
+      "code": "0X2XW",
+      "description": "팀 전체에 향상된 나노 강화제를 제공해 아나의 지원을 극대화합니다. 전투 개시와 팀 전투 지속력을 높이는 전략입니다.",
       "playstyle": "능력 파워",
       "upvotes": 12,
       "stats": {
@@ -384,7 +384,7 @@
       "code": "H49C5",
       "description": "탑49 브리기테 원트릭이 만든 GM 10시즌 연속 달성 빌드, 이동 속도 극대화가 핵심.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 959,
+      "upvotes": 958,
       "stats": {
         "LIFE": 314,
         "Armor": 50,
@@ -710,7 +710,7 @@
     {
       "name": "Paparazzi (dubstep remix) brig",
       "code": "651RM",
-      "description": "공격적인 브리기테 빌드로 팀을 짊어지고 전진하지만, 파라와 같은 공중 영웅 상대 시 어려움이 있다.",
+      "description": "공격적인 브리기테 빌드로 팀을 짊어지고 전투를 주도합니다. 비행 영웅이 있을 경우 효율이 떨어지는 상황에 주의합니다.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 0,
       "stats": {
@@ -736,7 +736,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 737,
+      "upvotes": 736,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -824,7 +824,7 @@
       "code": "CBENT",
       "description": "시즌 7 탑 500에 오른 캐시디 빌드로, 3인칭 시점에서 커버 근처에 머물며 적을 엿보고 사격한다. Dashing Skates로 빠른 이동과 포지션 전환을 활용한다. 근접 전투와 정보 수집에 중점한다.",
       "playstyle": "재미용 · 고체력",
-      "upvotes": 10,
+      "upvotes": 9,
       "stats": {
         "LIFE": 500,
         "Shield": 110,
@@ -2489,7 +2489,7 @@
       "code": "7A10M",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 19,
+      "upvotes": 18,
       "stats": {
         "LIFE": 710,
         "Armor": 225,
@@ -2638,6 +2638,26 @@
       ]
     },
     {
+      "name": "아펠카 캣 오버파워 빌드",
+      "code": "96GA5",
+      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
+      "playstyle": "무기 파워",
+      "upvotes": 26,
+      "stats": {
+        "LIFE": 444,
+        "Shield": 75,
+        "Total LIFE": 519,
+        "Attack Speed": 15,
+        "Weapon Power": 30,
+        "Ability Power": 0
+      },
+      "cost": "$$",
+      "created_at": "2026-05-12T18:56:23.921563+00:00",
+      "popular_rank": 2,
+      "latest_rank": null,
+      "items": []
+    },
+    {
       "name": "[2X 탑 500] 마이크로웨이브 키티",
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
@@ -2654,7 +2674,7 @@
       },
       "cost": "$$",
       "created_at": "2026-05-13T01:53:00.631743+00:00",
-      "popular_rank": 2,
+      "popular_rank": 3,
       "latest_rank": null,
       "items": [
         {
@@ -2687,29 +2707,9 @@
       ]
     },
     {
-      "name": "아펠카 캣 오버파워 빌드",
-      "code": "96GA5",
-      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 26,
-      "stats": {
-        "LIFE": 444,
-        "Shield": 75,
-        "Total LIFE": 519,
-        "Attack Speed": 15,
-        "Weapon Power": 30,
-        "Ability Power": 0
-      },
-      "cost": "$$",
-      "created_at": "2026-05-12T18:56:23.921563+00:00",
-      "popular_rank": 3,
-      "latest_rank": null,
-      "items": []
-    },
-    {
       "name": "CAT NUKE",
       "code": "KQC68",
-      "description": "퀵플레이에서 한 라운드에 5번 연속 캣냅퍼 사용이 가능하며, 승률 70% 이상을 달성한다.",
+      "description": "퀵플레이에서 5번 연속 캣냅퍼 사용이 가능하고 승률 70% 이상을 기록하는 빌드입니다. 연속 수면 다트 활용으로 적을 지속적으로 제압합니다.",
       "playstyle": "재미용 · 능력 파워",
       "upvotes": 0,
       "stats": {
@@ -4295,7 +4295,7 @@
     {
       "name": "🎨[CREATIVE SPARK] Four Boop",
       "code": "SNT46",
-      "description": "루시우를 이용해 적을 지속적으로 밀어내고 방해하는 트롤 빌드다. 적을 자꾸 Boop하는 것이 핵심 전략이다.",
+      "description": "루시우를 이용해 적을 넉백시키며 방해하는 트롤 빌드입니다. 이동 속도와 넉백 효과를 최대화해 전투를 방해합니다.",
       "playstyle": "능력 파워 · 재사용 단축",
       "upvotes": 5,
       "stats": {
@@ -4612,7 +4612,7 @@
     {
       "name": "Cryo-Clicker",
       "code": "7PDWM",
-      "description": "슬로우볼을 활용한 저격 빌드로 공중 및 기동성 영웅을 제압하고, 두 번 이상 몸통 사격을 목표한다.",
+      "description": "슬로우볼 스나이퍼를 활용해 비행 및 기동성이 높은 영웅들을 제압합니다. 가젯을 사용해 충전량을 늘려 두 번 이상의 바디샷을 확보합니다.",
       "playstyle": "무기 파워",
       "upvotes": 7,
       "stats": {
@@ -4637,7 +4637,7 @@
       "code": "0HA91",
       "description": "빌드는 재사용 대기시간 단축과 기술 위력을 극대화하여 광역 폭딜을 특화합니다. 주요 스탯은 이동 속도와 재사용 대기시간 단축입니다.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 978,
+      "upvotes": 979,
       "stats": {
         "LIFE": 337,
         "Armor": 100,
@@ -6781,7 +6781,7 @@
       "code": "1VQW5",
       "description": "소전 솔로 캐리 빌드: 무기 공격력 극대화로 레일건 원샷 가능",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 400,
+      "upvotes": 399,
       "stats": {
         "LIFE": 345,
         "Armor": 25,
@@ -7136,7 +7136,7 @@
       "code": "JNQQR",
       "description": "",
       "playstyle": "무기 파워",
-      "upvotes": 7,
+      "upvotes": 9,
       "stats": {
         "LIFE": 358,
         "Shield": 50,
@@ -7280,9 +7280,9 @@
       ]
     },
     {
-      "name": "WUJANG",
+      "name": "👑The 궁극기 Machine Gun🗡️ Delete Team in 5 seconds!⚔️ STIL",
       "code": "WGVF0",
-      "description": "플라잉 영웅과 고이동성 히어로에 특화된 빌드로, 이동 속도와 반동 제어에 중점을 둡니다. 근접 탱크에 대해서는 사용을 권장하지 않습니다.",
+      "description": "비행 및 고기동성 영웅에 특화된 빌드로 순위 상승에 도움됩니다. 방어형 영웅에게는 효율이 낮으니 주의가 필요합니다.",
       "playstyle": "메타 · 무기 파워",
       "upvotes": 308,
       "stats": {
@@ -8116,7 +8116,7 @@
       "code": "GSB2E",
       "description": "",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 12,
+      "upvotes": 14,
       "stats": {
         "LIFE": 255,
         "Armor": 32,
