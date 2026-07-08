@@ -179,7 +179,7 @@
       "code": "0X2XW",
       "description": "팀 전체에 향상된 나노 강화제를 제공해 아나의 지원을 극대화합니다. 전투 개시와 팀 전투 지속력을 높이는 전략입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 13,
+      "upvotes": 16,
       "stats": {
         "LIFE": 421,
         "Shield": 25,
@@ -710,7 +710,7 @@
     {
       "name": "Paparazzi (dubstep remix) brig",
       "code": "651RM",
-      "description": "공격적인 브리기테 빌드로 팀을 앞에서 끌고 가는 것이 목표이며, 파라와 같은 공중 영웅에게는 효율이 떨어진다.",
+      "description": "공격적인 브리기테 빌드로 팀을 뒤에서 끌고 가는 것이 목표입니다. 비행 영웅이 있으면 타격이 어려워 상황에 따라 사용합니다.",
       "playstyle": "능력 파워 · 고체력",
       "upvotes": 0,
       "stats": {
@@ -1518,7 +1518,7 @@
       "code": "ZSNZH",
       "description": "S3 시즌을 위해 업데이트 중입니다. 불꽃 부스터와 근거리 자기 지속 빌드입니다.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 310,
+      "upvotes": 311,
       "stats": {
         "LIFE": 701,
         "Armor": 425,
@@ -1657,6 +1657,67 @@
       "items": []
     },
     {
+      "name": "( LOW EFFORT ) HYPERFLEX HARDCARRY D.VA",
+      "code": "DG0BB",
+      "description": "",
+      "playstyle": "능력 파워 · 고체력",
+      "upvotes": 7,
+      "stats": {
+        "LIFE": 737,
+        "Armor": 468,
+        "Move Speed": 10,
+        "Total LIFE": 1205,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 10,
+        "Ability Power": 20,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-07T23:45:41.837032+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": [
+        {
+          "name_en": "Siphon Gloves",
+          "effect_en": "25 Health. Quick melee damage heals for 25 Health.",
+          "cost": 1500,
+          "rarity": "common",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/SiphonGlovesS1MID.png",
+          "name": "흡수 장갑",
+          "effect": "25 체력. 빠른 근접 피해가 25 체력을 회복합니다."
+        },
+        {
+          "name_en": "MEKA Punch",
+          "effect_en": "While using [Boosters], [Quick Melee] has 50% more Attack Speed. [Quick Melee] eliminations reset the cooldown of [Boosters].",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/dva/MekaPunch.png",
+          "name": "MEKA 펀치",
+          "effect": "부스터를 사용하는 동안, 퀵 근접 공격의 공격 속도가 50% 증가한다. 퀵 근접 공격으로 처치하면 부스터의 재사용 대기시간이 초기화된다."
+        },
+        {
+          "name_en": "Plot Armor",
+          "effect_en": "25 Armor. While [Defense Matrix] is active, gain 65% damage reduction against beams.",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/dva/PlotArmor.png",
+          "name": "플롯 방어구",
+          "effect": "25 방어구. [Defense Matrix]가 활성화된 동안, 빔에 대해 65% 피해 감소를 얻는다."
+        },
+        {
+          "name_en": "Dae-hyun's Detonator",
+          "effect_en": "25 Armor. 15% Starting Ultimate Charge. If your [Mech] detonates mid-air, increase [Self-Destruct] explosion damage by 100% and range by 100%.",
+          "cost": 9000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/dva/Dae-hyunsDetonator.png",
+          "name": "대현의 폭탄",
+          "effect": "25 방어구. 15% 시작 궁극기 충전. [Mech]가 공중에서 폭발하면, [Self-Destruct] 폭발 피해를 100% 증가시키고 사거리를 100% 증가시킨다."
+        }
+      ]
+    },
+    {
       "name": "폭발적인 Tokki!!!",
       "code": "B00M",
       "description": "폭발을 중심으로 한 빌드로 토키 슬램과 마이크로 미사일을 강화해 광역 폭발 피해를 극대화한다. 아이템과 스킬을 조합해 연속 폭발을 퍼뜨리는 것이 핵심이다.",
@@ -1673,7 +1734,7 @@
       "cost": "$$$",
       "created_at": "2026-06-27T05:45:41.76821+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": [
         {
           "name_en": "Tokki Slam",
@@ -1720,29 +1781,6 @@
       },
       "cost": "$$$",
       "created_at": "2026-06-27T00:37:59.93733+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "최고의 D.Va 빌드",
-      "code": "4AH4M",
-      "description": "설명 없이 바로 다이브해 즐기는 빌드이며, 아이템 파워에 크게 의존한다. 빠른 진입과 전투가 핵심이다.",
-      "playstyle": "무기 파워 · 고체력",
-      "upvotes": 0,
-      "stats": {
-        "LIFE": 656,
-        "Armor": 425,
-        "Move Speed": 10,
-        "Total LIFE": 1081,
-        "Melee Damage": 15,
-        "Weapon Power": 40,
-        "Ability Power": 20,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$$",
-      "created_at": "2026-06-24T13:40:40.877298+00:00",
       "popular_rank": null,
       "latest_rank": 3,
       "items": []
@@ -1816,7 +1854,7 @@
       "code": "K8KNH",
       "description": "시즌 2 전설 랭크에서 업데이트됨. 너프에도 불구하고 이 플레이 스타일을 선호하는데, 이는 볼라와 비교했을 때 가동 시간이 훨씬 더 많기 때문이다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 212,
+      "upvotes": 213,
       "stats": {
         "LIFE": 343,
         "Shield": 50,
@@ -2287,6 +2325,27 @@
       ]
     },
     {
+      "name": "Blood Demon Art: Destructive Death",
+      "code": "6BEKA",
+      "description": "원거리 용의 칼날 사용을 강조한 빌드로, 빠른 연속 공격을 목표로 합니다.",
+      "playstyle": "능력 파워 · 생명력 흡수",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 368,
+        "Total LIFE": 368,
+        "Melee Damage": 25,
+        "Weapon Power": 25,
+        "Ability Power": 70,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$",
+      "created_at": "2026-07-07T12:28:40.373816+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "멈출 수 없는 사이보그 // 75%+ 승률",
       "code": "9GF2S",
       "description": "Genji 빌드에서는 기술 위력과 기술 생명력 흡수를 극대화해 지속적인 데미지와 생존성을 높입니다. 높은 AP와 Lifesteal 덕분에 적을 빠르게 처치하며 Top 500 진입에 기여합니다.",
@@ -2304,7 +2363,7 @@
       "cost": "$$$",
       "created_at": "2026-06-26T16:01:05.800656+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     }
   ],
@@ -2468,7 +2527,7 @@
       "code": "HTJHE",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 2,
+      "upvotes": 3,
       "stats": {
         "LIFE": 889,
         "Armor": 266,
@@ -2489,7 +2548,7 @@
       "code": "7A10M",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 19,
+      "upvotes": 20,
       "stats": {
         "LIFE": 710,
         "Armor": 225,
@@ -2709,7 +2768,7 @@
     {
       "name": "CAT NUKE",
       "code": "KQC68",
-      "description": "퀵플레이에서 Catnapper 스킬을 라운드당 최대 5번 사용해 70% 이상의 승률을 기록하는 빌드이다.",
+      "description": "퀵플레이에서 5번 연속 사용 가능한 스킬을 활용해 70% 이상의 승률을 기록하는 빌드입니다.",
       "playstyle": "재미용 · 능력 파워",
       "upvotes": 0,
       "stats": {
@@ -3365,7 +3424,7 @@
       "code": "Z54ST",
       "description": "정크랫 원거리 스나이퍼 스타일. 오리사·라인하르트 같은 정면 영웅 상대에 최적.",
       "playstyle": "능력 파워",
-      "upvotes": 393,
+      "upvotes": 394,
       "stats": {
         "LIFE": 277,
         "Total LIFE": 277,
@@ -3607,7 +3666,7 @@
       "code": "QCNNP",
       "description": "주노 빌드는 하이퍼 링을 최대한 유지하면서 무기를 빠른 연사 머신건으로 전환합니다. 팀을 지속적으로 가속시키고 이동성을 유지하며 안정적인 데미지를 입힙니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 2,
+      "upvotes": 3,
       "stats": {
         "LIFE": 219,
         "Armor": 50,
@@ -3666,7 +3725,7 @@
       "code": "VBC6G",
       "description": "",
       "playstyle": "메타 · 혼합 파워",
-      "upvotes": 22,
+      "upvotes": 24,
       "stats": {
         "LIFE": 203,
         "Armor": 100,
@@ -3795,7 +3854,7 @@
       "code": "RXBH8",
       "description": "키리코의 리워크 이후, 기술 위력 빌드는 새로운 모습을 갖추게 됩니다. 이 빌드는 정기적으로 업데이트될 예정입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 1564,
+      "upvotes": 1566,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -4061,7 +4120,7 @@
       "code": "SEDXV",
       "description": "이 빌드는 솔로 파라나 모이라, 우양 같은 힐링이 불가능한 지원가와 함께 파라를 플레이하는 데 최적인 빌드입니다. 캐시디는 큰 문제지만...",
       "playstyle": "능력 파워",
-      "upvotes": 115,
+      "upvotes": 116,
       "stats": {
         "LIFE": 384,
         "Armor": 100,
@@ -4332,7 +4391,7 @@
     {
       "name": "🎨[CREATIVE SPARK] Four Boop",
       "code": "SNT46",
-      "description": "루시우 트롤 빌드로, 적을 계속 방해하고 푸시(boop)하는 것이 목표이며, 지속적으로 업데이트될 예정이다.",
+      "description": "루시우를 이용해 적을 계속 방해하고 넉백시키는 트롤 빌드입니다. 지속적인 업데이트 예정.",
       "playstyle": "능력 파워 · 재사용 단축",
       "upvotes": 5,
       "stats": {
@@ -4447,7 +4506,7 @@
       "code": "9RSSP",
       "description": "메이의 생존성을 극대화하고 약간의 무기 공격력을 추가한 방해형 빌드. 높은 피해 대신 적을 귀찮게 만드는 것이 목적.",
       "playstyle": "고체력",
-      "upvotes": 317,
+      "upvotes": 316,
       "stats": {
         "LIFE": 566,
         "Armor": 110,
@@ -4649,7 +4708,7 @@
     {
       "name": "Cryo-Clicker",
       "code": "7PDWM",
-      "description": "슬로우볼 스나이퍼를 활용해 공중 및 기동성이 높은 영웅(예: 파라, 프레야)을 상대하고, 가젯으로 충전량을 늘려 두 번 이상 바디샷을 노린다.",
+      "description": "슬로우볼을 이용한 저격 빌드로 비행 및 기동성이 높은 영웅들을 상대합니다. 가젯을 활용해 충전량을 늘려 두 번 이상 명중을 목표로 합니다.",
       "playstyle": "무기 파워",
       "upvotes": 8,
       "stats": {
@@ -5142,9 +5201,9 @@
     {
       "name": "Fantastical Flash Heal | Skiesti",
       "code": "H1111",
-      "description": "플래시 힐 빌드로 기술 위력과 재사용 대기시간 감소를 중점으로, 유틸리티와 높은 버스트를 제공하는 아이템 조합을 사용한다.",
+      "description": "플래시 힐 빌드로 기술 위력과 재사용 대기시간 감소를 중점으로, 유틸리티와 높은 버스트를 제공하는 지원가 빌드입니다.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 18,
+      "upvotes": 20,
       "stats": {
         "LIFE": 343,
         "Armor": 50,
@@ -5219,7 +5278,7 @@
       "code": "1N3A3",
       "description": "메르시 AP 빌드는 생존성을 극대화하는 상세 가이드이며, 상황별 아이템 선택 팁을 포함합니다. 모든 상황에 대비한 고급 전략을 제공합니다.",
       "playstyle": "능력 파워",
-      "upvotes": 8,
+      "upvotes": 11,
       "stats": {
         "LIFE": 325,
         "Armor": 100,
@@ -5269,7 +5328,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1353,
+      "upvotes": 1355,
       "stats": {
         "LIFE": 373,
         "Total LIFE": 373,
@@ -5344,6 +5403,26 @@
       "items": []
     },
     {
+      "name": "I'LL SHOW YOU META! (Coalescence 빌드) HIGHLY ADAPTABLE",
+      "code": "20Z1W",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 363,
+        "Total LIFE": 363,
+        "Attack Speed": 10,
+        "Weapon Power": 0,
+        "Ability Power": 80,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$",
+      "created_at": "2026-07-07T20:08:53.928829+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "모두 다 해요",
       "code": "BOOMG",
       "description": "",
@@ -5360,7 +5439,7 @@
       "cost": "$$",
       "created_at": "2026-07-04T06:48:28.19562+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -5382,7 +5461,7 @@
       "cost": "$$",
       "created_at": "2026-07-03T06:15:10.11729+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
+      "latest_rank": 3,
       "items": [
         {
           "name_en": "Ethereal Excision",
@@ -5503,7 +5582,7 @@
     {
       "name": "Orisa Minigun",
       "code": "AR2TX",
-      "description": "",
+      "description": "공격 속도를 높여 빠르게 골드를 획득하는 빌드로, 파밍 효율을 크게 향상시킵니다.",
       "playstyle": "재미용 · 고체력",
       "upvotes": 2,
       "stats": {
@@ -5770,7 +5849,7 @@
       "code": "N2KAW",
       "description": "솔로 혹은 힐 없는 지원과 함께 사용하는 Pharah 빌드. 로켓 직접 타격을 극대화해 캐시디 등 저격 영웅을 상대한다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 43,
+      "upvotes": 44,
       "stats": {
         "LIFE": 349,
         "Armor": 25,
@@ -5913,7 +5992,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 46,
+      "upvotes": 47,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -6133,7 +6212,7 @@
       "code": "A6RPV",
       "description": "",
       "playstyle": "고체력",
-      "upvotes": 1,
+      "upvotes": 2,
       "stats": {
         "LIFE": 658,
         "Armor": 59,
@@ -6734,7 +6813,7 @@
       "code": "FGMAZ",
       "description": "",
       "playstyle": "메타 · 고체력",
-      "upvotes": 10,
+      "upvotes": 11,
       "stats": {
         "LIFE": 753,
         "Shield": 303,
@@ -7128,6 +7207,84 @@
       "items": []
     },
     {
+      "name": "무적 근접 SOJ",
+      "code": "X9G9V",
+      "description": "소전(Sojourn)을 백라인 레일건 스나이퍼가 아니라 히트‑앤‑런 브루저로 전환한다. 파워 슬라이드 충전을 드릴 킥과 연계하고, 정밀 추진기로 이동 속도를 극대화해 근접 전투와 빠른 재진입을 목표한다.",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 3,
+      "stats": {
+        "LIFE": 414,
+        "Armor": 50,
+        "Move Speed": 10,
+        "Total LIFE": 464,
+        "Attack Speed": 10,
+        "Melee Damage": 15,
+        "Weapon Power": 45,
+        "Ability Power": 10,
+        "Critical Damage": 10
+      },
+      "cost": "$$",
+      "created_at": "2026-07-07T16:44:51.451038+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": [
+        {
+          "name_en": "Drill Kick",
+          "effect_en": "+50% [Power Slide] Speed. During [Power Slide], gain 25% damage reduction and deal 75 damage to nearby enemies.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/sojourn/LockAndLoad.png",
+          "name": "드릴 킥",
+          "effect": "+50% [Power Slide] 속도. [Power Slide] 중에 25% 피해 감소와 주변 적에게 75 피해를 입힌다."
+        },
+        {
+          "name_en": "Fine-Tuned Thrusters",
+          "effect_en": "+1s [Power Slide] Duration. Eliminations reset [Power Slide] cooldown",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/sojourn/Fine-TunedThrusters.png",
+          "name": "정밀 조정된 추진기",
+          "effect": "+1초 [Power Slide] 지속 시간. 처치가 [Power Slide] 재사용 대기시간을 재설정한다."
+        },
+        {
+          "name_en": "Commotion Cycle",
+          "effect_en": "Charged Shot refunds up to 35% ability cooldowns, based on the Charge spent.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/sojourn/CommotionCycle.png",
+          "name": "소란 사이클",
+          "effect": "충전된 발사는 사용된 충전을 기준으로 스킬 재사용 대기시간을 최대 35% 반환한다."
+        },
+        {
+          "name_en": "Afterburners",
+          "effect_en": "25 Health. 25% Power Slide Length and jump height.",
+          "cost": 3750,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/sojourn/Afterburners.png",
+          "name": "애프터버너",
+          "effect": "25 체력. Power Slide 길이와 점프 높이를 25% 증가시킨다."
+        },
+        {
+          "name_en": "Repulsion Greaves",
+          "effect_en": "25 Armor. 5% Movement Speed. After taking damage from an enemy within 5m, knockback all enemies within 6m and gain 75 Overhealth for 3s. (15s Cooldown)",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/RepulsionGreavesS1MID.png",
+          "name": "반발 정강이 보호대",
+          "effect": "25 방어구. 이동 속도 5% 증가. 5m 이내 적에게 피해를 받으면, 6m 이내 모든 적을 넉백하고 3초 동안 75 초과 회복 획득. (15초 재사용 대기시간)."
+        },
+        {
+          "name_en": "Three-Tap Tommygun",
+          "effect_en": "10% Ability Power. 10% Attack Speed. After using an ability or Gadget, your next 3 instances of Weapon Damage deals additional damage equal to 5% of the target's current Life over 5s.",
+          "cost": 10500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/ThreeTapTommygunS1MID.png",
+          "name": "3연사 톰미건",
+          "effect": "기술 위력 10%·공격 속도 10%. 능력이나 Gadget을 사용한 후, 다음 3번의 무기 공격력이 5초 동안 대상의 현재 생명력의 5%에 해당하는 추가 피해를 입힙니다."
+        }
+      ]
+    },
+    {
       "name": "이 Sojourn 슬라이드 빌드는 스타디움에서 S-TIER",
       "code": "JNQQR",
       "description": "",
@@ -7146,50 +7303,7 @@
       "cost": "$$$",
       "created_at": "2026-07-02T16:59:48.305865+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
-      "items": []
-    },
-    {
-      "name": "[S3 Top 500 Legend] 내 놀라운 종아리! - 드릴 킥 근접",
-      "code": "9GS52",
-      "description": "",
-      "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 0,
-      "stats": {
-        "LIFE": 386,
-        "Armor": 50,
-        "Shield": 25,
-        "Total LIFE": 461,
-        "Attack Speed": 30,
-        "Weapon Power": 25,
-        "Ability Power": 30,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
-      },
-      "cost": "$$",
-      "created_at": "2026-06-24T02:21:09.94684+00:00",
-      "popular_rank": null,
       "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "그들의 전체 팀을 녹인다 ✨Solo carry✨",
-      "code": "ZTJGJ",
-      "description": "팀 전체를 빠르게 제압하는 고폭력 빌드. 무기 공격력 아이템을 최대화하고, 체력이 부족하면 생존성을 강화한다.",
-      "playstyle": "메타 · 무기 파워",
-      "upvotes": 5,
-      "stats": {
-        "LIFE": 346,
-        "Max Ammo": 40,
-        "Total LIFE": 346,
-        "Attack Speed": 50,
-        "Weapon Power": 45,
-        "Ability Power": 10
-      },
-      "cost": "$$",
-      "created_at": "2026-06-23T02:08:39.956103+00:00",
-      "popular_rank": null,
-      "latest_rank": 3,
       "items": []
     }
   ],
@@ -7281,7 +7395,7 @@
       "code": "WGVF0",
       "description": "비행 및 고기동성 영웅에 특화된 빌드로 순위 상승에 도움됩니다. 방어형 영웅에게는 효율이 낮으니 주의가 필요합니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 308,
+      "upvotes": 309,
       "stats": {
         "LIFE": 374,
         "Armor": 25,
@@ -7516,7 +7630,7 @@
       "code": "PPR7S",
       "description": "터렛을 적 뒤에 배치해 적을 교전 선택하게 만든다. 터렛은 지속 피해와 적 표시 효과로 전투를 제어한다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 7,
+      "upvotes": 9,
       "stats": {
         "LIFE": 475,
         "Armor": 148,
@@ -8109,6 +8223,25 @@
       ]
     },
     {
+      "name": "시계가 똑딱거린다!!!",
+      "code": "PUL53",
+      "description": "폭발물 중심의 빌드로 적을 대규모 폭발로 제압한다. 폭탄을 연속 사용해 광역 피해를 입히고, 적에게 큰 충격을 주는 플레이를 강조한다.",
+      "playstyle": "재미용 · 능력 파워",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 265,
+        "Total LIFE": 265,
+        "Weapon Power": 10,
+        "Ability Power": 105,
+        "Cooldown Reduction": 15
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-08T07:00:34.768151+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "TTT Tracer 빌드가 완전히 깨짐",
       "code": "GSB2E",
       "description": "",
@@ -8128,7 +8261,7 @@
       "cost": "$$$",
       "created_at": "2026-06-28T08:26:14.419223+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -8150,7 +8283,7 @@
       "cost": "$$$",
       "created_at": "2026-06-26T15:41:31.975426+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
+      "latest_rank": 3,
       "items": []
     }
   ],
@@ -8213,7 +8346,7 @@
       "code": "F45R9",
       "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 30,
+      "upvotes": 31,
       "stats": {
         "LIFE": 324,
         "Armor": 175,
@@ -8558,7 +8691,7 @@
       "code": "HBK34",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 1,
+      "upvotes": 3,
       "stats": {
         "LIFE": 669,
         "Armor": 325,
@@ -8580,7 +8713,7 @@
       "code": "934GT",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 13,
+      "upvotes": 16,
       "stats": {
         "LIFE": 657,
         "Armor": 200,
@@ -8601,7 +8734,7 @@
       "code": "EPAM4",
       "description": "버스트 데미지와 공중 사격, 점프 리셋에 중점 둔 빌드.\n기술 위력 아이템은 선택 사항이며 지속 피해와 슬램 데미지에 유용.",
       "playstyle": "고체력",
-      "upvotes": 2,
+      "upvotes": 3,
       "stats": {
         "LIFE": 425,
         "Armor": 200,
@@ -8622,7 +8755,7 @@
       "code": "F8R1P",
       "description": "체인 힐러 빌드: 왜 우양은 실제로 S-Tier인지에 대해 설명합니다. 우양에 많은 변경 사항이 적용되었습니다. 개발자들은 이전의 Streamline 설정을 완전히 변경하였습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 278,
+      "upvotes": 280,
       "stats": {
         "LIFE": 323,
         "Shield": 100,
@@ -9162,7 +9295,7 @@
       "code": "DFQW1",
       "description": "조준과 우클릭에 크게 의존하는 빌드로, 레전드 5에서 승률 65%를 기록하며 높은 현상금 획득이 특징입니다. 다만 비행 유닛에 약점이 있습니다.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 1,
+      "upvotes": 2,
       "stats": {
         "LIFE": 321,
         "Armor": 165,
