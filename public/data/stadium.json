@@ -121,7 +121,7 @@
       "code": "96PY4",
       "description": "3번째 궁극기 사용 시 팀 전체의 궁극기 충전량을 크게 늘리고, 나노를 연속 사용해 전투를 주도한다. 초반에 3번째 파워를 얻으면 효과가 극대화된다.",
       "playstyle": "능력 파워",
-      "upvotes": 1,
+      "upvotes": 2,
       "stats": {
         "LIFE": 412,
         "Total LIFE": 412,
@@ -548,7 +548,7 @@
       "code": "7UT4V",
       "description": "기술 위력과 Scavenged Steel를 활용해 라운드당 궁극기 획득을 극대화합니다. 첫 전투가 끝나기 전에 2~3개의 궁극기를 모을 수 있습니다.",
       "playstyle": "능력 파워",
-      "upvotes": 0,
+      "upvotes": 2,
       "stats": {
         "LIFE": 297,
         "Armor": 150,
@@ -855,7 +855,7 @@
       "code": "CBENT",
       "description": "시즌 7 탑 500에 오른 캐시디 빌드로, 3인칭 시점에서 커버 근처에 머물며 적을 엿보고 사격한다. Dashing Skates로 빠른 이동과 포지션 전환을 활용한다. 근접 전투와 정보 수집에 중점한다.",
       "playstyle": "재미용 · 고체력",
-      "upvotes": 12,
+      "upvotes": 13,
       "stats": {
         "LIFE": 500,
         "Shield": 110,
@@ -1904,6 +1904,25 @@
       ]
     },
     {
+      "name": "Bola 현상금 사냥꾼",
+      "code": "B0L4",
+      "description": "",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 1,
+      "stats": {
+        "LIFE": 359,
+        "Total LIFE": 359,
+        "Weapon Power": 0,
+        "Ability Power": 100,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-10T00:46:23.80424+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "조준 WP Three Tap",
       "code": "YXGAY",
       "description": "프레야의 AP·WP 빌드를 모두 사용해 보았으며, 현재 편안한 무기 공격력 빌드를 찾고 있다. 시즌 성과를 바탕으로 새로운 빌드를 탐색 중이다.",
@@ -1921,7 +1940,7 @@
       "cost": "$$",
       "created_at": "2026-06-28T18:43:27.356978+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": [
         {
           "name_en": "Salvaged Slugs",
@@ -1996,26 +2015,6 @@
       },
       "cost": "$$",
       "created_at": "2026-06-17T18:58:02.87099+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "[ANTI-META] 히트스캔 파멸자 (Mini Bola / Permaflight)",
-      "code": "1XV71",
-      "description": "",
-      "playstyle": "능력 파워",
-      "upvotes": 9,
-      "stats": {
-        "LIFE": 368,
-        "Armor": 50,
-        "Total LIFE": 418,
-        "Weapon Power": 0,
-        "Ability Power": 95,
-        "Cooldown Reduction": 15
-      },
-      "cost": "$$",
-      "created_at": "2026-06-14T03:49:28.475889+00:00",
       "popular_rank": null,
       "latest_rank": 3,
       "items": []
@@ -2336,11 +2335,115 @@
       ]
     },
     {
+      "name": "Shimada 비밀 (True Balance)",
+      "code": "K522Z",
+      "description": "하이브리드 암살자 빌드로 폭발적인 데미지와 지속적인 데미지를 동시에 추구합니다.\n초반에 스위프트 스트라이크로 적을 포킹해 현금과 궁극기 충전을 확보하고, 다양한 조합에 유연하게 들어갈 수 있습니다.",
+      "playstyle": "무기 파워 · 생명력 흡수",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 437,
+        "Max Ammo": 30,
+        "Total LIFE": 437,
+        "Attack Speed": 10,
+        "Weapon Power": 50,
+        "Ability Power": 20,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$",
+      "created_at": "2026-07-09T06:42:10.482394+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": [
+        {
+          "name_en": "Hashimoto's Bane",
+          "effect_en": "After using an ability, your next secondary fire throws 2 extra [Shuriken] that seek enemies but that deal 50% less damage.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/genji/HashimotosBane.png",
+          "name": "하시모토의 파멸",
+          "effect": "능력을 사용한 후, 다음 보조 사격에서 적을 추적하는 [Shuriken] 2개를 추가로 발사하지만 피해가 50% 감소합니다."
+        },
+        {
+          "name_en": "Swift-Loader",
+          "effect_en": "10% Attack Speed. 30% Max Ammo. Using [Swift Strike] restores 20% ammo and gives 20% Attack Speed for 2.5s.",
+          "cost": 12000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/genji/SwiftLoader.png",
+          "name": "스위프트 로더",
+          "effect": "공격 속도 10%. 최대 탄약 30%. [Swift Strike] 사용 시 탄약 20%를 회복하고 2.5초 동안 공격 속도 20%를 부여한다."
+        },
+        {
+          "name_en": "Phantasmic Flux",
+          "effect_en": "10% Weapon Power; 10% Ability Power; 15% Weapon Lifesteal; 15% Ability Lifesteal; While at full Life, Lifesteal grants up to 50 Overhealth.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/PhantasmicFluxS1MID.png",
+          "name": "환상 플럭스",
+          "effect": "10% 무기 공격력; 10% 기술 위력; 15% 무기 생명력 흡수; 15% 기술 생명력 흡수; 체력이 가득 찼을 때, 생명력 흡수가 최대 50 초과 회복을 부여합니다."
+        },
+        {
+          "name_en": "Wyrm's Maw",
+          "effect_en": "After dealing [Shuriken] Damage, your next [Swift Strike] gains 10% Damage and 5% Range, stacking up to 5 times",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/genji/WyrmsMaw.png",
+          "name": "웜의 입",
+          "effect": "[Shuriken] 피해를 입힌 후, 다음 [Swift Strike]가 피해 10%와 사거리 5%를 얻으며, 최대 5회 중첩됩니다."
+        },
+        {
+          "name_en": "Laceration",
+          "effect_en": "[Swift Strike] deals 30% additional damage over 3s to enemies hit. For each enemy [Swift Strike] damages beyond the initial target, reduce [Swift Strike] cooldown by 2s.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/genji/Laceration.png",
+          "name": "절단",
+          "effect": "[Swift Strike]는 적에게 3초 동안 추가 피해 30%를 입힌다. 최초 대상 외에 추가로 적에게 [Swift Strike]가 피해를 줄 때마다, [Swift Strike] 재사용 대기시간을 2초 감소시킨다."
+        },
+        {
+          "name_en": "Volskaya Ordnance",
+          "effect_en": "10% Attack Speed. Deal 5% increased Weapon Damage for every 100 Bonus Max Life the target has, up to 25%.",
+          "cost": 9500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/VolskayaOrdnanceS1MID.png",
+          "name": "볼스카야 탄약",
+          "effect": "공격 속도 10%. 대상이 가진 보너스 최대 체력 100당 무기 피해 5% 증가, 최대 25%까지."
+        },
+        {
+          "name_en": "Three-Tap Tommygun",
+          "effect_en": "10% Ability Power. 10% Attack Speed. After using an ability or Gadget, your next 3 instances of Weapon Damage deals additional damage equal to 5% of the target's current Life over 5s.",
+          "cost": 10500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/ThreeTapTommygunS1MID.png",
+          "name": "3연사 톰미건",
+          "effect": "기술 위력 10%·공격 속도 10%. 능력이나 Gadget을 사용한 후, 다음 3번의 무기 공격력이 5초 동안 대상의 현재 생명력의 5%에 해당하는 추가 피해를 입힙니다."
+        },
+        {
+          "name_en": "Emergency Chip",
+          "effect_en": "25 Shields. 5% Weapon Power. Once per Life, when you are below 150 Life, gain 15% Weapon Lifesteal and 50 Overhealth for 5s.",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/EmergencyChipS1MID.png",
+          "name": "긴급 칩",
+          "effect": "방어막 25. 무기 공격력 5%. 생명당 1회, 체력이 150 이하일 때, 무기 생명력 흡수 15%와 초과 체력 50을 5초 동안 얻는다."
+        },
+        {
+          "name_en": "Nebula Conduit",
+          "effect_en": "50 Health; 5% Weapon Power; Prevent 15% of incoming damage and instead take that prevented damage over 3s.",
+          "cost": 11000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/NebulaConduitS1MID.png",
+          "name": "성운 전도체",
+          "effect": "50 체력; 5% 무기 공격력; 들어오는 피해의 15%를 방어하고 대신 그 방어된 피해를 3초에 걸쳐 받는다."
+        }
+      ]
+    },
+    {
       "name": "당신이 필요한 유일한 TTT Genji 빌드",
       "code": "32QFG",
       "description": "",
       "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 1,
+      "upvotes": 2,
       "stats": {
         "LIFE": 293,
         "Armor": 150,
@@ -2355,7 +2458,7 @@
       "cost": "$$",
       "created_at": "2026-07-08T16:05:09.52358+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -2376,7 +2479,7 @@
       "cost": "$$",
       "created_at": "2026-07-07T12:28:40.373816+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
+      "latest_rank": 3,
       "items": []
     }
   ],
@@ -2781,7 +2884,7 @@
     {
       "name": "CAT NUKE",
       "code": "KQC68",
-      "description": "Catnapper 스킬을 라운드당 최대 5번 사용해 빠른 전투를 주도합니다. Quick Play에서 70% 이상의 승률을 기록합니다.",
+      "description": "퀵플레이에서 1라운드에 최대 5번까지 캣냅퍼를 사용할 수 있는 빌드이며, 승률이 70% 이상입니다.\n빠른 캣냅퍼 활용으로 적을 지속적으로 제압하는 것이 핵심 전략입니다.",
       "playstyle": "재미용 · 능력 파워",
       "upvotes": 0,
       "stats": {
@@ -3679,7 +3782,7 @@
       "code": "QCNNP",
       "description": "주노 빌드는 하이퍼 링을 최대한 유지하면서 무기를 빠른 연사 머신건으로 전환합니다. 팀을 지속적으로 가속시키고 이동성을 유지하며 안정적인 데미지를 입힙니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 3,
+      "upvotes": 4,
       "stats": {
         "LIFE": 219,
         "Armor": 50,
@@ -3705,6 +3808,33 @@
           "effect": "[Mediblaster]는 50% 증가된 치명타 피해를 입히며 아군에게도 치명타를 가할 수 있다. 치명타는 [Hyper Ring]의 재사용 대기시간을 0.2초 감소시킨다."
         },
         {
+          "name_en": "Compensator",
+          "effect_en": "5% Weapon Power",
+          "cost": 1000,
+          "rarity": "common",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/CompensatorS1MID.png",
+          "name": "보상기",
+          "effect": "5% 무기 공격력"
+        },
+        {
+          "name_en": "Weapon Grease",
+          "effect_en": "5% Attack Speed",
+          "cost": 1000,
+          "rarity": "common",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/WeaponGreaseS1MID.png",
+          "name": "무기 그리스",
+          "effect": "공격 속도 5%."
+        },
+        {
+          "name_en": "Power Playbook",
+          "effect_en": "10% Ability Power",
+          "cost": 1000,
+          "rarity": "common",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/PowerPlaybookS1MID.png",
+          "name": "파워 플레이북",
+          "effect": "10% 기술 위력"
+        },
+        {
           "name_en": "Fission Chamber",
           "effect_en": "While affected by [Hyper Ring], [Medi-Blaster] fires continuously.",
           "cost": 0,
@@ -3712,6 +3842,42 @@
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/juno/FissionChamber.png",
           "name": "핵분열 챔버",
           "effect": "[Hyper Ring]의 영향을 받는 동안, [Medi-Blaster]가 연속으로 발사한다."
+        },
+        {
+          "name_en": "Vantage Shot",
+          "effect_en": "5% Weapon Power. While airborne, [Mediblaster] deals 15% more damage.",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/juno/VantageShotS2.png",
+          "name": "우위 샷",
+          "effect": "무기 공격력 5%. 공중에 있을 때, [Mediblaster]는 피해가 15% 증가한다."
+        },
+        {
+          "name_en": "Custom Stock",
+          "effect_en": "10 Health. 5% Weapon Power; 10% Ability Power",
+          "cost": 3750,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/CustomStockS1MID.png",
+          "name": "맞춤형 스톡",
+          "effect": "10 체력. 5% 무기 공격력; 10% 기술 위력"
+        },
+        {
+          "name_en": "Talon Modification Module",
+          "effect_en": "15% Weapon Power",
+          "cost": 6500,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/TalonModificationModuleS1MID.png",
+          "name": "타론 수정 모듈",
+          "effect": "15% 무기 공격력"
+        },
+        {
+          "name_en": "Wrist Wraps",
+          "effect_en": "10 Health. 5% Ability Power; 10% Attack Speed",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/WristWrapsS1MID.png",
+          "name": "손목 랩",
+          "effect": "체력 10. 기술 위력 5%; 공격 속도 10%."
         },
         {
           "name_en": "Marswalking",
@@ -3723,6 +3889,42 @@
           "effect": "[Hyper Ring]이 옆으로 배치되고 점프 높이를 250% 부여한다. 아군이 통과하면 [Hyper Ring]의 재사용 대기시간을 1초 감소시킨다."
         },
         {
+          "name_en": "Lux Loop",
+          "effect_en": "5% Ability Power. 5% Weapon Power. 25% [Hyper Ring] Duration.",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/juno/LuxLoopS2.png",
+          "name": "럭스 루프",
+          "effect": "기술 위력 5%. 무기 공격력 5%. [Hyper Ring] 지속 시간 25%."
+        },
+        {
+          "name_en": "Icy Coolant",
+          "effect_en": "10% Weapon Power; 5% Cooldown Reduction",
+          "cost": 5500,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/IcyCoolantS1MID.png",
+          "name": "얼음 냉각수",
+          "effect": "10% 무기 공격력; 5% 재사용 대기시간 감소"
+        },
+        {
+          "name_en": "Booster Jets",
+          "effect_en": "20% Attack Speed; When you use an ability or Gadget, gain 10% Move Speed for 2s",
+          "cost": 11000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/BoosterJetsS1MID.png",
+          "name": "부스터 제트",
+          "effect": "공격 속도 20%; 능력 또는 가젯을 사용할 때, 이동 속도 10%를 2초 동안 얻습니다."
+        },
+        {
+          "name_en": "Superflexor",
+          "effect_en": "25 Health; 10 Weapon Power; When you deal Weapon Damage or Healing, gain 5% Ability Power for 3s, stacking up to 5 times.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/SuperflexorS1MID.png",
+          "name": "슈퍼플렉서",
+          "effect": "25 체력; 10 무기 공격력; 무기 피해 또는 회복량을 입힐 때, 3초 동안 5% 기술 위력을 얻으며, 최대 5번 중첩됩니다."
+        },
+        {
           "name_en": "Stinger",
           "effect_en": "[Mediblaster] deals an additional 10 damage to enemies over 1s. (Does not stack)",
           "cost": 0,
@@ -3730,6 +3932,33 @@
           "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/juno/StingerS2.png",
           "name": "스팅어",
           "effect": "[Mediblaster]는 적에게 1초 동안 추가 10 피해를 입힌다. (중첩되지 않음)"
+        },
+        {
+          "name_en": "Eye of the Spider",
+          "effect_en": "20% Weapon Power.  10% Critical Damage. Critical Hits Reveal the target for 3s.",
+          "cost": 14000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/TheCloserS1MID.png",
+          "name": "거미의 눈",
+          "effect": "무기 공격력 20%; 치명타 피해 10%; 치명타가 대상에게 3초 동안 표시됩니다."
+        },
+        {
+          "name_en": "LumériCo Fusion Drive",
+          "effect_en": "50 Armor; 10% Ability Power; When you use an ability or Gadget, restore 50 armor or shields over 3s.",
+          "cost": 11000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/LumericoFusionDriveS1MID.png",
+          "name": "루메리코 융합 추진기",
+          "effect": "50 방어구; 10% 기술 위력; 능력을 사용하거나 가젯을 사용할 때, 3초에 걸쳐 50 방어구 또는 방어막을 회복합니다."
+        },
+        {
+          "name_en": "The Closer",
+          "effect_en": "20% Weapon Power. Deal 10% increased damage to enemies below 30% life.",
+          "cost": 13000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/EyeOfTheSpiderS1MID.png",
+          "name": "클로저",
+          "effect": "무기 공격력 20%; 체력이 30% 이하인 적에게 피해 10% 증가."
         }
       ]
     },
@@ -4029,7 +4258,7 @@
       "code": "97MTB",
       "description": "",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 3,
+      "upvotes": 4,
       "stats": {
         "LIFE": 473,
         "Total LIFE": 473,
@@ -4050,7 +4279,7 @@
       "code": "0CAQT",
       "description": "Juno 빌드는 AP nerf에 대응해 Healing Ofuda와 Self‑Care를 활용, 팀 이동 속도를 높이고 탈출 능력을 강화해 근접 DPS 빌드에 맞섭니다.",
       "playstyle": "무기 파워",
-      "upvotes": 5,
+      "upvotes": 6,
       "stats": {
         "LIFE": 370,
         "Move Speed": 10,
@@ -4133,7 +4362,7 @@
       "code": "SEDXV",
       "description": "이 빌드는 솔로 파라나 모이라, 우양 같은 힐링이 불가능한 지원가와 함께 파라를 플레이하는 데 최적인 빌드입니다. 캐시디는 큰 문제지만...",
       "playstyle": "능력 파워",
-      "upvotes": 116,
+      "upvotes": 115,
       "stats": {
         "LIFE": 384,
         "Armor": 100,
@@ -4359,6 +4588,26 @@
       "items": []
     },
     {
+      "name": "빨리 가자 | DPS + 좋은 회복",
+      "code": "XTWBP",
+      "description": "치유량을 유지하면서 동시에 DPS를 목표로 하는 빌드로, 생존 아이템은 사용하지 않습니다.\n끊임없이 움직이며 적을 마크하고, 탱크를 녹이는 데에 강점이 있습니다.",
+      "playstyle": "무기 파워",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 401,
+        "Total LIFE": 401,
+        "Attack Speed": 10,
+        "Weapon Power": 40,
+        "Ability Power": 25,
+        "Critical Damage": 10
+      },
+      "cost": "$$",
+      "created_at": "2026-07-09T22:06:11.312379+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "TerroLucio (하이브리드)",
       "code": "BMASM",
       "description": "",
@@ -4376,7 +4625,7 @@
       "cost": "$$",
       "created_at": "2026-05-18T03:21:22.679205+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -4398,119 +4647,8 @@
       "cost": "$$",
       "created_at": "2026-05-18T00:38:29.218364+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "🎨[CREATIVE SPARK] Four Boop",
-      "code": "SNT46",
-      "description": "루시우를 이용해 적을 지속적으로 방해하고 방패 강타로 넉백시키는 트롤 빌드입니다.",
-      "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 5,
-      "stats": {
-        "LIFE": 363,
-        "Armor": 100,
-        "Total LIFE": 463,
-        "Weapon Power": 0,
-        "Ability Power": 55,
-        "Cooldown Reduction": 20
-      },
-      "cost": "$$",
-      "created_at": "2026-04-29T09:39:25.064413+00:00",
-      "popular_rank": null,
       "latest_rank": 3,
-      "items": [
-        {
-          "name_en": "Reverb",
-          "effect_en": "After using Soundwave, within 3s you can use it again with 50% reduced effectiveness.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/lucio/Reverb.png",
-          "name": "리버브",
-          "effect": "Soundwave 사용 후, 3초 이내에 50% 감소된 효율로 다시 사용할 수 있음."
-        },
-        {
-          "name_en": "Aura Repellant",
-          "effect_en": "25 Health. On Use: Knockback all enemies within 8m. (20s Cooldown).",
-          "cost": 1500,
-          "rarity": "common",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/gadgets/AuraRepellant.png",
-          "name": "오라 방지제",
-          "effect": "25 체력. 사용 시: 8m 이내 모든 적을 넉백. (20초 재사용 대기시간)."
-        },
-        {
-          "name_en": "Repulsion Greaves",
-          "effect_en": "25 Armor. 5% Movement Speed. After taking damage from an enemy within 5m, knockback all enemies within 6m and gain 75 Overhealth for 3s. (15s Cooldown)",
-          "cost": 4000,
-          "rarity": "rare",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/RepulsionGreavesS1MID.png",
-          "name": "반발 정강이 보호대",
-          "effect": "25 방어구. 이동 속도 5% 증가. 5m 이내 적에게 피해를 받으면, 6m 이내 모든 적을 넉백하고 3초 동안 75 초과 회복 획득. (15초 재사용 대기시간)."
-        },
-        {
-          "name_en": "Crowd Pleaser",
-          "effect_en": "After using [Soundwave], heal all allies affected by [Crossfade] for 33% of [Soundwave]'s damage. This healing is doubled while [Amp It Up] is active.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/lucio/CrowdPleaser.png",
-          "name": "군중 매력",
-          "effect": "Soundwave 사용 후, [Crossfade]에 영향을 받은 모든 아군을 Soundwave 피해량의 33%만큼 회복시킴. [Amp It Up]이 활성화된 동안 이 회복량이 두 배가 됨."
-        },
-        {
-          "name_en": "Rhythm Rail",
-          "effect_en": "[Wallriding] for 3s charges your next [Soundwave], increasing its knockback by 25% and damage by 75%.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/lucio/LetsBounce.png",
-          "name": "리듬 레일",
-          "effect": "[Wallriding]을 3초 동안 사용하면 다음 [Soundwave]를 충전하여 넉백이 25% 증가하고 피해가 75% 증가함."
-        },
-        {
-          "name_en": "Ironclad Exhaust Ports",
-          "effect_en": "10 Health. 5% Cooldown Reduction; When you use an ability or Gadget, gain 25 Overhealth over 3s.",
-          "cost": 4000,
-          "rarity": "rare",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/IroncladExhaustPortsS1MID.png",
-          "name": "아이언클래드 배기 포트",
-          "effect": "10 체력. 5% 재사용 대기시간 감소; 능력이나 장치를 사용할 때, 3초에 걸쳐 25 초과 회복을 얻는다."
-        },
-        {
-          "name_en": "LumériCo Fusion Drive",
-          "effect_en": "50 Armor; 10% Ability Power; When you use an ability or Gadget, restore 50 armor or shields over 3s.",
-          "cost": 11000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/LumericoFusionDriveS1MID.png",
-          "name": "루메리코 융합 추진기",
-          "effect": "50 방어구; 10% 기술 위력; 능력을 사용하거나 가젯을 사용할 때, 3초에 걸쳐 50 방어구 또는 방어막을 회복합니다."
-        },
-        {
-          "name_en": "All-Out Auditiva",
-          "effect_en": "10% Ability Power. 10% Weapon Power. 33% [Amp It Up] Duration.",
-          "cost": 11000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/lucio/AllOutAuditiva.png",
-          "name": "전력 청각",
-          "effect": "기술 위력 10%. 무기 공격력 10%. [Amp It Up] 지속 시간 33%."
-        },
-        {
-          "name_en": "Megaphone",
-          "effect_en": "While [Amp It Up] is active, [Crossfade] radius is increased by 150% and Weapon Damage increases [Amp It Up] duration by 0.25s, up to 3s.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/lucio/Megaphone.png",
-          "name": "확성기",
-          "effect": "[Amp It Up]이 활성화된 동안, [Crossfade] 반경이 150% 증가하고 무기 피해가 [Amp It Up] 지속 시간을 0.25초 증가시킴(최대 3초)."
-        },
-        {
-          "name_en": "#1 Single",
-          "effect_en": "5% Ability Power. When allies leave your [Crossfade] area, the effect lingers for 2s.",
-          "cost": 4500,
-          "rarity": "rare",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/lucio/1Single.png",
-          "name": "#1 싱글",
-          "effect": "기술 위력 5%. 아군이 [Crossfade] 영역을 떠나면 효과가 2초 동안 지속됩니다."
-        }
-      ]
+      "items": []
     }
   ],
   "Mei": [
@@ -4700,6 +4838,25 @@
       ]
     },
     {
+      "name": "Cold Play By Mei!",
+      "code": "TH4W",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 2,
+      "stats": {
+        "LIFE": 395,
+        "Armor": 50,
+        "Total LIFE": 445,
+        "Weapon Power": 0,
+        "Ability Power": 65
+      },
+      "cost": "$$",
+      "created_at": "2026-07-10T00:40:33.32552+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "‘Snow’가 메이를 막는다!!!",
       "code": "1C3D",
       "description": "",
@@ -4714,27 +4871,6 @@
       },
       "cost": "$$$",
       "created_at": "2026-06-27T06:20:02.437665+00:00",
-      "popular_rank": null,
-      "latest_rank": 1,
-      "items": []
-    },
-    {
-      "name": "Cryo-Clicker",
-      "code": "7PDWM",
-      "description": "Slowball 스나이퍼를 활용해 공중 및 기동성이 높은 영웅들을 조준, 두 번 이상 몸통 사격을 목표로 합니다. 추가 장치를 사용해 충전량을 늘립니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 8,
-      "stats": {
-        "LIFE": 448,
-        "Max Ammo": 115,
-        "Total LIFE": 448,
-        "Attack Speed": 45,
-        "Weapon Power": 45,
-        "Ability Power": 10,
-        "Critical Damage": 10
-      },
-      "cost": "$$",
-      "created_at": "2026-06-22T12:56:59.280223+00:00",
       "popular_rank": null,
       "latest_rank": 2,
       "items": []
@@ -5091,248 +5227,66 @@
       ]
     },
     {
-      "name": "[🔥 S3 - 전설 RANK 8 ] UNBEATABLE 재사용 대기시간/RES MERCY | Cre",
-      "code": "Q1W9W",
-      "description": "메르시 고랭크 빌드로, 전 시즌 T200 및 전설 등급을 유지한 플레이어가 사용합니다. 스트리밍에서 자주 소개되는 전략과 아이템 구성이 포함됩니다.",
-      "playstyle": "혼합 파워 · 재사용 단축",
-      "upvotes": 0,
+      "name": "전투 메딕",
+      "code": "B47L3",
+      "description": "",
+      "playstyle": "무기 파워",
+      "upvotes": 1,
       "stats": {
-        "LIFE": 330,
-        "Armor": 50,
-        "Shield": 50,
-        "Total LIFE": 430,
-        "Weapon Power": 10,
-        "Ability Power": 10,
-        "Cooldown Reduction": 25
-      },
-      "cost": "$$",
-      "created_at": "2026-07-05T14:21:20.052931+00:00",
-      "popular_rank": null,
-      "latest_rank": 1,
-      "items": [
-        {
-          "name_en": "Crepuscular Circle",
-          "effect_en": "5% Weapon Power. 5% Ability Power. While [Valkyrie] is active, automatically apply [Caduceus Staff]'s healing beam at 100% effectiveness and damage boost at 50% effectiveness to nearby allies.",
-          "cost": 10000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/CrepuscularCircleS3.png",
-          "name": "황혼의 원",
-          "effect": "5% 무기 공격력. 5% 기술 위력. [Valkyrie]가 활성화된 동안, 자동으로 [Caduceus Staff]의 회복량 빔을 100% 효율로 적용하고, 주변 아군에게 50% 효율의 데미지 증가를 적용합니다."
-        },
-        {
-          "name_en": "Distortion",
-          "effect_en": "When you use [Flash Heal], grant the target Overhealth equal to 30% of your Max Life for 2s and knockback enemies 5m around the target.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/Distortion.png",
-          "name": "왜곡",
-          "effect": "플래시 힐을 사용할 때, 대상에게 최대 체력의 30%에 해당하는 초과 체력을 2초 동안 부여하고 대상 주변 5m 안의 적들을 넉백합니다."
-        },
-        {
-          "name_en": "Supply Surge",
-          "effect_en": "[Flash Heal] grants 20% Move Speed, 100% increased cooldown refresh rate, and 20% Lifesteal to the target and you for 2s.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/SupplySurge.png",
-          "name": "보급 급증",
-          "effect": "[Flash Heal]는 대상과 자신에게 2초 동안 20% 이동 속도, 100% 증가된 재사용 대기시간 재충전 비율, 그리고 20% 생명력 흡수를 부여합니다."
-        },
-        {
-          "name_en": "Double Dose",
-          "effect_en": "Gain 1 additional charge of [Flash Heal]. When [Valkyrie] is activated, refresh a charge of [Flash Heal].",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/ProtectiveBeam.png",
-          "name": "이중 투여",
-          "effect": "[Flash Heal]의 충전 1개를 추가로 획득합니다. [Valkyrie]가 활성화될 때, [Flash Heal]의 충전 1개를 재충전합니다."
-        },
-        {
-          "name_en": "Flash Feedback",
-          "effect_en": "50 Armor. 5% Cooldown Reduction. [Flash Heal] also targets you with 25% healing.",
-          "cost": 9500,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/FlashFeedbackS3.png",
-          "name": "플래시 피드백",
-          "effect": "50 방어구. 5% 재사용 대기시간 감소. [Flash Heal]이 당신에게도 25% 회복을 적용합니다."
-        },
-        {
-          "name_en": "Renaissance",
-          "effect_en": "After successfully using [Resurrect], activate [Valkyrie] for 5s.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/Renaissance.png",
-          "name": "르네상스",
-          "effect": "[Resurrect]를 성공적으로 사용한 후, [Valkyrie]를 5초 동안 활성화합니다."
-        },
-        {
-          "name_en": "Equivalent Exchange",
-          "effect_en": "You have 3 charges of [Resurrect] with 33% reduced cast time, but their cooldowns only reset at the start of a round. Dealing 750 [Caduceus Blaster] damage restores 1 charge.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/EquivalentExchange.png",
-          "name": "동등 교환",
-          "effect": "[Resurrect]를 33% 감소된 시전 시간으로 3 충전 보유하지만, 재사용 대기시간은 라운드 시작 시에만 초기화된다. 750 [Caduceus Blaster] 피해를 입히면 1 충전이 회복된다."
-        },
-        {
-          "name_en": "Resurrection Rangefinder",
-          "effect_en": "10% Cooldown Reduction. 75% [Resurrection] Range.",
-          "cost": 10000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/ResurrectionRangefinder.png",
-          "name": "부활 거리 측정기",
-          "effect": "10% 재사용 대기시간 감소. 75% [Resurrection] 사거리."
-        },
-        {
-          "name_en": "Kitsune Charm",
-          "effect_en": "50 Shields. -40% Incoming Negative Effect Duration. On Use: Cleanse most negative effects, restore 75 Life, and gain Invulnerability and 75% Move Speed for 0.65s. (25s Cooldown).",
-          "cost": 11000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/gadgets/KanezakaCharm.png",
-          "name": "키츠네 부적",
-          "effect": "50 방어막. -40% 받는 부정 효과 지속 시간. 사용 시: 대부분의 부정 효과를 정화하고, 75 체력을 회복하며, 무적과 이동 속도 75%를 0.65초 동안 얻는다. (25초 재사용 대기시간)."
-        },
-        {
-          "name_en": "Ironclad Exhaust Ports",
-          "effect_en": "10 Health. 5% Cooldown Reduction; When you use an ability or Gadget, gain 25 Overhealth over 3s.",
-          "cost": 4000,
-          "rarity": "rare",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/IroncladExhaustPortsS1MID.png",
-          "name": "아이언클래드 배기 포트",
-          "effect": "10 체력. 5% 재사용 대기시간 감소; 능력이나 장치를 사용할 때, 3초에 걸쳐 25 초과 회복을 얻는다."
-        },
-        {
-          "name_en": "Iridescent Iris",
-          "effect_en": "20% Ability Power; 10% Cooldown Reduction; After spending your Ultimate Charge, gain 100 Overhealth for 3s.",
-          "cost": 12000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/IridescentIrisS1MID.png",
-          "name": "무지개빛 홍채",
-          "effect": "20% 기술 위력; 10% 재사용 대기시간 감소; 궁극기 충전을 사용한 후, 3초 동안 100 초과 체력을 얻습니다."
-        }
-      ]
-    },
-    {
-      "name": "환상적인 Flash Heal | Skiesti",
-      "code": "H1111",
-      "description": "플래시 힐 빌드는 기술 위력과 재사용 대기시간 감소에 집중해 지원 능력을 극대화합니다. 탑 500·전설 지원 플레이어에게 적합한 유틸리티 중심 빌드입니다.",
-      "playstyle": "메타 · 재사용 단축",
-      "upvotes": 22,
-      "stats": {
-        "LIFE": 343,
-        "Armor": 50,
-        "Total LIFE": 393,
-        "Weapon Power": 0,
-        "Ability Power": 45,
-        "Cooldown Reduction": 25
-      },
-      "cost": "$$",
-      "created_at": "2026-07-04T00:51:00.39903+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": [
-        {
-          "name_en": "Crepuscular Circle",
-          "effect_en": "5% Weapon Power. 5% Ability Power. While [Valkyrie] is active, automatically apply [Caduceus Staff]'s healing beam at 100% effectiveness and damage boost at 50% effectiveness to nearby allies.",
-          "cost": 10000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/CrepuscularCircleS3.png",
-          "name": "황혼의 원",
-          "effect": "5% 무기 공격력. 5% 기술 위력. [Valkyrie]가 활성화된 동안, 자동으로 [Caduceus Staff]의 회복량 빔을 100% 효율로 적용하고, 주변 아군에게 50% 효율의 데미지 증가를 적용합니다."
-        },
-        {
-          "name_en": "Distortion",
-          "effect_en": "When you use [Flash Heal], grant the target Overhealth equal to 30% of your Max Life for 2s and knockback enemies 5m around the target.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/Distortion.png",
-          "name": "왜곡",
-          "effect": "플래시 힐을 사용할 때, 대상에게 최대 체력의 30%에 해당하는 초과 체력을 2초 동안 부여하고 대상 주변 5m 안의 적들을 넉백합니다."
-        },
-        {
-          "name_en": "Flash Feedback",
-          "effect_en": "50 Armor. 5% Cooldown Reduction. [Flash Heal] also targets you with 25% healing.",
-          "cost": 9500,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/FlashFeedbackS3.png",
-          "name": "플래시 피드백",
-          "effect": "50 방어구. 5% 재사용 대기시간 감소. [Flash Heal]이 당신에게도 25% 회복을 적용합니다."
-        },
-        {
-          "name_en": "Supply Surge",
-          "effect_en": "[Flash Heal] grants 20% Move Speed, 100% increased cooldown refresh rate, and 20% Lifesteal to the target and you for 2s.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/SupplySurge.png",
-          "name": "보급 급증",
-          "effect": "[Flash Heal]는 대상과 자신에게 2초 동안 20% 이동 속도, 100% 증가된 재사용 대기시간 재충전 비율, 그리고 20% 생명력 흡수를 부여합니다."
-        },
-        {
-          "name_en": "Renaissance",
-          "effect_en": "After successfully using [Resurrect], activate [Valkyrie] for 5s.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/Renaissance.png",
-          "name": "르네상스",
-          "effect": "[Resurrect]를 성공적으로 사용한 후, [Valkyrie]를 5초 동안 활성화합니다."
-        },
-        {
-          "name_en": "Double Dose",
-          "effect_en": "Gain 1 additional charge of [Flash Heal]. When [Valkyrie] is activated, refresh a charge of [Flash Heal].",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/ProtectiveBeam.png",
-          "name": "이중 투여",
-          "effect": "[Flash Heal]의 충전 1개를 추가로 획득합니다. [Valkyrie]가 활성화될 때, [Flash Heal]의 충전 1개를 재충전합니다."
-        }
-      ]
-    },
-    {
-      "name": "[S3] Mika's Rank 1/전설 1 기술 위력 Mercy 빌드! (Very Detailed F",
-      "code": "1N3A3",
-      "description": "메르시 AP 빌드는 생존성을 극대화하는 상세 가이드이며, 상황별 아이템 선택 팁을 포함합니다. 모든 상황에 대비한 고급 전략을 제공합니다.",
-      "playstyle": "능력 파워",
-      "upvotes": 11,
-      "stats": {
-        "LIFE": 325,
-        "Armor": 100,
-        "Total LIFE": 425,
-        "Weapon Power": 10,
-        "Ability Power": 40,
-        "Cooldown Reduction": 15
+        "LIFE": 351,
+        "Move Speed": 5,
+        "Total LIFE": 351,
+        "Attack Speed": 35,
+        "Weapon Power": 55,
+        "Ability Power": 0,
+        "Critical Damage": 10
       },
       "cost": "$$$",
-      "created_at": "2026-07-03T16:33:17.357543+00:00",
+      "created_at": "2026-07-10T00:32:19.766791+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
+      "name": "완벽한 포켓 ^_^",
+      "code": "H3AL",
+      "description": "전담 포켓 힐러 역할을 수행하는 빌드로, 탱크와 함께 머무르며 부동적인 힐을 제공합니다.\n팀을 지속적으로 지원하면서 안전하게 전장을 유지합니다.",
+      "playstyle": "무기 파워",
+      "upvotes": 1,
+      "stats": {
+        "LIFE": 354,
+        "Total LIFE": 354,
+        "Weapon Power": 50,
+        "Ability Power": 10,
+        "Critical Damage": 10,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-10T00:15:32.735317+00:00",
+      "popular_rank": null,
+      "latest_rank": 2,
+      "items": []
+    },
+    {
+      "name": "[S3] 샷건을 든 천사! MASS HEALING GLOCK! UNKILLABLE FL",
+      "code": "RBNTN",
+      "description": "머시 빌드로 빠르고 위협적인 딜러가 되면서도 팀을 치유합니다.\n글록으로 반격하며 힐과 속도 버프를 동시에 제공해 전투를 주도합니다.",
+      "playstyle": "무기 파워",
+      "upvotes": 2,
+      "stats": {
+        "LIFE": 379,
+        "Max Ammo": 33,
+        "Total LIFE": 379,
+        "Attack Speed": 20,
+        "Weapon Power": 65,
+        "Ability Power": 0,
+        "Critical Damage": 10
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-09T20:56:19.953763+00:00",
       "popular_rank": null,
       "latest_rank": 3,
-      "items": [
-        {
-          "name_en": "Flash Feedback",
-          "effect_en": "50 Armor. 5% Cooldown Reduction. [Flash Heal] also targets you with 25% healing.",
-          "cost": 9500,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/FlashFeedbackS3.png",
-          "name": "플래시 피드백",
-          "effect": "50 방어구. 5% 재사용 대기시간 감소. [Flash Heal]이 당신에게도 25% 회복을 적용합니다."
-        },
-        {
-          "name_en": "Caduceus EX",
-          "effect_en": "10% Weapon Power. 33% [Caduceus Staff] Range.",
-          "cost": 10000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/CaduceusEx.png",
-          "name": "카두세우스 EX",
-          "effect": "10% 무기 공격력. 33% [Caduceus Staff] 사거리."
-        },
-        {
-          "name_en": "Triage Unit",
-          "effect_en": "10% Ability Power. 15% [Guardian Angel] Move Speed. When using [Guardian Angel] on allies below 50% Life, they receive 20% more healing from you for 3s.",
-          "cost": 11000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/TriageUnitS3.png",
-          "name": "응급 처치 유닛",
-          "effect": "10% 기술 위력. 15% [Guardian Angel] 이동 속도. [Guardian Angel]을 체력이 50% 이하인 아군에게 사용할 때, 그들은 3초 동안 당신으로부터 20% 더 많은 회복을 받습니다."
-        }
-      ]
+      "items": []
     }
   ],
   "Moira": [
@@ -5416,6 +5370,25 @@
       "items": []
     },
     {
+      "name": "오브스 풍부",
+      "code": "4RWT9",
+      "description": "모이라 기술 위력(AP) 중심 빌드로, 스킬과 궁극기의 피해량을 극대화해 원거리에서 지속적인 데미지를 줍니다. 생존력은 기본 체력에 의존합니다.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 1,
+      "stats": {
+        "LIFE": 332,
+        "Total LIFE": 332,
+        "Weapon Power": 0,
+        "Ability Power": 105,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$",
+      "created_at": "2026-07-09T16:17:29.405529+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "🌹 당신은 내 손아귀에 - 무기 공격력 & 공격 속도 🌹",
       "code": "DPZW0",
       "description": "무기 공격력과 발사 속도에 집중한 빌드로, 뒤에서 기다리지 않고 직접 전투에 뛰어들어 빠른 연속 공격을 할 수 있습니다.",
@@ -5432,7 +5405,7 @@
       "cost": "$$",
       "created_at": "2026-07-08T10:46:58.575754+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -5451,26 +5424,6 @@
       },
       "cost": "$$",
       "created_at": "2026-07-07T20:08:53.928829+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "모두 다 해요",
-      "code": "BOOMG",
-      "description": "",
-      "playstyle": "능력 파워",
-      "upvotes": 0,
-      "stats": {
-        "LIFE": 377,
-        "Total LIFE": 377,
-        "Attack Speed": 50,
-        "Weapon Power": 0,
-        "Ability Power": 65,
-        "Weapon Lifesteal": 10
-      },
-      "cost": "$$",
-      "created_at": "2026-07-04T06:48:28.19562+00:00",
       "popular_rank": null,
       "latest_rank": 3,
       "items": []
@@ -5583,7 +5536,7 @@
     {
       "name": "Orisa Minigun",
       "code": "AR2TX",
-      "description": "공격 속도 상승으로 빠른 골드 파밍이 가능해 대기 시간을 최소화합니다.",
+      "description": "",
       "playstyle": "재미용 · 고체력",
       "upvotes": 2,
       "stats": {
@@ -5993,7 +5946,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 47,
+      "upvotes": 48,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -6067,7 +6020,7 @@
       "code": "X3A8F",
       "description": "이 빌드는 퀵플레이에서 더 효과적일 것입니다. 랭크 경기에서 테스트해 보시고 피드백을 주시기 바랍니다.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 24,
+      "upvotes": 25,
       "stats": {
         "LIFE": 641,
         "Armor": 100,
@@ -6209,11 +6162,33 @@
       "items": []
     },
     {
+      "name": "날아다니는 고양이 소년",
+      "code": "0RBG6",
+      "description": "",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 477,
+        "Armor": 50,
+        "Total LIFE": 527,
+        "Weapon Power": 10,
+        "Ability Power": 85,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 15
+      },
+      "cost": "$$",
+      "created_at": "2026-07-09T13:08:28.439585+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "[S3] 최대 탱커 리퍼",
       "code": "A6RPV",
       "description": "",
       "playstyle": "고체력",
-      "upvotes": 2,
+      "upvotes": 3,
       "stats": {
         "LIFE": 658,
         "Armor": 59,
@@ -6226,7 +6201,7 @@
       "cost": "$$$",
       "created_at": "2026-06-28T16:02:06.544244+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -6245,7 +6220,7 @@
       "cost": "$$$",
       "created_at": "2026-06-23T22:41:19.981795+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
+      "latest_rank": 3,
       "items": [
         {
           "name_en": "Bloodletters",
@@ -6338,28 +6313,6 @@
           "effect": "25 체력. 3m 이상 공중에 있는 대상에게 주는 피해는 10 추가 피해를 입히고, 적의 이동 속도를 25% 감소시킨다 (3초 동안). (15초 재사용 대기시간)."
         }
       ]
-    },
-    {
-      "name": "리퍼의 치명적인 Dire Trigger 빌드! // 83% 승률!",
-      "code": "20C2A",
-      "description": "Dire Trigger에 집중한 파괴적인 Reaper 빌드. 트리거를 맞히기만 하면 즉시 적을 제거하는 단순하고 강력한 전략이다.",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 1,
-      "stats": {
-        "LIFE": 416,
-        "Armor": 50,
-        "Total LIFE": 466,
-        "Weapon Power": 10,
-        "Ability Power": 100,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$",
-      "created_at": "2026-06-23T04:14:39.218825+00:00",
-      "popular_rank": null,
-      "latest_rank": 3,
-      "items": []
     }
   ],
   "Reinhardt": [
@@ -6518,6 +6471,75 @@
       "items": []
     },
     {
+      "name": "엔진 45",
+      "code": "GVTH8",
+      "description": "라인하르트를 돌진 중심 빌드로 전환해 Charge의 파괴력을 크게 강화합니다. 아이템으로 공격력과 이동 속도를 상승시켜 연속 돌진과 전방 압박이 가능하도록 합니다.",
+      "playstyle": "능력 파워 · 고체력",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 707,
+        "Armor": 225,
+        "Total LIFE": 932,
+        "Attack Speed": 10,
+        "Weapon Power": 10,
+        "Ability Power": 105,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
+      },
+      "cost": "$$",
+      "created_at": "2026-07-08T05:55:29.094985+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": [
+        {
+          "name_en": "Iron Drift",
+          "effect_en": "+200% [Charge] Duration. [Charge] can pin multiple enemies and can be slowed by holding backwards.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/reinhardt/IronDriftS3.png",
+          "name": "아이언 드리프트",
+          "effect": "[Charge] 지속 시간 +200%. [Charge]는 여러 적을 고정시킬 수 있으며, 뒤로 이동하면서 속도를 늦출 수 있다."
+        },
+        {
+          "name_en": "Vroom Boom Boom",
+          "effect_en": "During [Charge], colliding with a wall triggers an explosion that deals 30% of [Charge]’s pin damage.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/reinhardt/VroomBoomBoom.png",
+          "name": "브룸 붐 붐",
+          "effect": "[Charge] 중에 벽과 충돌하면 폭발이 발생하여 [Charge]의 고정 피해의 30%를 입힌다."
+        },
+        {
+          "name_en": "Shield Stampede",
+          "effect_en": "+50% [Charge] Knockback Power. During [Charge], automatically deploy [Barrier Field].",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/reinhardt/ShieldStampede.png",
+          "name": "방어막 돌진",
+          "effect": "+50% [충전] 넉백 파워. [충전] 중에 자동으로 [장벽 필드] 배치합니다."
+        },
+        {
+          "name_en": "Boost Recycler",
+          "effect_en": "10% Ability Power. If [Charge] is interrupted by the enemy, refund 50% of [Charge] cooldown.",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/reinhardt/BoostRecycler.png",
+          "name": "부스트 재활용기",
+          "effect": "10% 기술 위력. 적에게 [충전]이 방해받으면, [충전] 재사용 대기시간의 50%를 반환합니다."
+        },
+        {
+          "name_en": "Dampener Grip",
+          "effect_en": "15% Ability Power. 10% Attack Speed. When you deal damage with [Rocket Hammer], reduce the cooldown of your abilities by 1s.",
+          "cost": 11000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/reinhardt/DampenerGrip.png",
+          "name": "감쇠기 그립",
+          "effect": "15% 기술 위력. 10% 공격 속도. [로켓 해머]로 피해를 입힐 때, 당신의 기술들의 재사용 대기시간을 1초 감소시킵니다."
+        }
+      ]
+    },
+    {
       "name": "게임에서 가장 강력한 ability rein 스팸",
       "code": "94XD8",
       "description": "고데미지 파괴형 빌드로, 랭크전에서 높은 파괴력을 발휘해 적을 빠르게 제압한다.",
@@ -6537,7 +6559,7 @@
       "cost": "$$",
       "created_at": "2026-07-03T08:44:28.255479+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     }
   ],
@@ -7377,7 +7399,7 @@
       "code": "WGVF0",
       "description": "비행 및 고기동성 영웅에 특화된 빌드로 순위 상승에 도움됩니다. 방어형 영웅에게는 효율이 낮으니 주의가 필요합니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 309,
+      "upvotes": 310,
       "stats": {
         "LIFE": 374,
         "Armor": 25,
@@ -7392,6 +7414,49 @@
       "created_at": "2025-11-11T00:53:31.809052+00:00",
       "popular_rank": 3,
       "latest_rank": null,
+      "items": []
+    },
+    {
+      "name": "PAPACITOGABO 대공",
+      "code": "Q4JJM",
+      "description": "",
+      "playstyle": "무기 파워",
+      "upvotes": 1,
+      "stats": {
+        "LIFE": 346,
+        "Shield": 25,
+        "Max Ammo": 65,
+        "Move Speed": 5,
+        "Total LIFE": 371,
+        "Attack Speed": 35,
+        "Weapon Power": 35,
+        "Ability Power": 0
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-10T01:34:55.560445+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
+      "name": "PAPACITOGABO 76",
+      "code": "MKJAQ",
+      "description": "",
+      "playstyle": "무기 파워",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 377,
+        "Max Ammo": 65,
+        "Total LIFE": 377,
+        "Attack Speed": 35,
+        "Weapon Power": 55,
+        "Ability Power": 0,
+        "Critical Damage": 10
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-10T00:20:55.825046+00:00",
+      "popular_rank": null,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -7411,48 +7476,6 @@
       },
       "cost": "$$$",
       "created_at": "2026-07-08T19:14:02.379893+00:00",
-      "popular_rank": null,
-      "latest_rank": 1,
-      "items": []
-    },
-    {
-      "name": "내 조준에 들어갔어!!!",
-      "code": "H3L1X",
-      "description": "",
-      "playstyle": "무기 파워",
-      "upvotes": 2,
-      "stats": {
-        "LIFE": 392,
-        "Max Ammo": 40,
-        "Total LIFE": 392,
-        "Attack Speed": 30,
-        "Weapon Power": 50,
-        "Ability Power": 35,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$",
-      "created_at": "2026-06-27T05:15:37.567996+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "lol 악",
-      "code": "Q61GA",
-      "description": "",
-      "playstyle": "무기 파워",
-      "upvotes": 0,
-      "stats": {
-        "LIFE": 384,
-        "Total LIFE": 384,
-        "Attack Speed": 10,
-        "Weapon Power": 50,
-        "Ability Power": 10,
-        "Critical Damage": 25
-      },
-      "cost": "$$$",
-      "created_at": "2026-06-25T07:30:37.212301+00:00",
       "popular_rank": null,
       "latest_rank": 3,
       "items": []
@@ -7612,7 +7635,7 @@
       "code": "PPR7S",
       "description": "터렛을 적 뒤에 배치해 적을 교전 선택하게 만든다. 터렛은 지속 피해와 적 표시 효과로 전투를 제어한다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 10,
+      "upvotes": 11,
       "stats": {
         "LIFE": 475,
         "Armor": 148,
@@ -8228,7 +8251,7 @@
       "code": "GSB2E",
       "description": "",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 15,
+      "upvotes": 16,
       "stats": {
         "LIFE": 255,
         "Armor": 32,
@@ -8306,7 +8329,7 @@
       "code": "F45R9",
       "description": "시즌 2의 Ability Power 변경으로 벤데타가 매우 강력해졌으며, Ability Lifesteal 빌드로 인해 상대하기 어려웠지만 일부 변경 사항이 적용되었습니다.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 31,
+      "upvotes": 32,
       "stats": {
         "LIFE": 324,
         "Armor": 175,
@@ -8735,7 +8758,7 @@
       "code": "JV8W7",
       "description": "급류 돌진과 광역 회복을 중심으로 한 우양 빌드.",
       "playstyle": "메타 · 재사용 단축",
-      "upvotes": 259,
+      "upvotes": 258,
       "stats": {
         "LIFE": 343,
         "Shield": 25,
@@ -8797,11 +8820,11 @@
       "playstyle": "메타 · 고체력",
       "upvotes": 167,
       "stats": {
-        "LIFE": 691,
+        "LIFE": 687,
         "Armor": 28,
         "Shield": 248,
-        "Total LIFE": 967,
-        "Weapon Power": 75,
+        "Total LIFE": 963,
+        "Weapon Power": 70,
         "Ability Power": 10
       },
       "cost": "$$",
