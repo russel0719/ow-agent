@@ -548,7 +548,7 @@
       "code": "7UT4V",
       "description": "기술 위력과 Scavenged Steel를 활용해 라운드당 궁극기 획득을 극대화합니다. 첫 전투가 끝나기 전에 2~3개의 궁극기를 모을 수 있습니다.",
       "playstyle": "능력 파워",
-      "upvotes": 2,
+      "upvotes": 3,
       "stats": {
         "LIFE": 297,
         "Armor": 150,
@@ -744,7 +744,7 @@
       "code": "ZYYN4",
       "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 736,
+      "upvotes": 735,
       "stats": {
         "LIFE": 405,
         "Armor": 50,
@@ -766,7 +766,7 @@
       "code": "V87TC",
       "description": "시즌 1 업데이트 예정.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 342,
+      "upvotes": 341,
       "stats": {
         "LIFE": 455,
         "Shield": 54,
@@ -1843,7 +1843,7 @@
       "code": "58SYP",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 218,
+      "upvotes": 217,
       "stats": {
         "LIFE": 411,
         "Armor": 50,
@@ -2335,6 +2335,28 @@
       ]
     },
     {
+      "name": "시마다 비밀 (무기 공격력 연회)",
+      "code": "EAPZ5",
+      "description": "무기 공격력에 집중해 고속 콤보를 목표로 하는 빌드이며, 높은 스킬 한계가 특징입니다.",
+      "playstyle": "무기 파워 · 생명력 흡수",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 417,
+        "Max Ammo": 30,
+        "Total LIFE": 417,
+        "Attack Speed": 20,
+        "Weapon Power": 50,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15
+      },
+      "cost": "$$",
+      "created_at": "2026-07-09T07:57:09.089236+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "Shimada 비밀 (True Balance)",
       "code": "K522Z",
       "description": "하이브리드 암살자 빌드로 폭발적인 데미지와 지속적인 데미지를 동시에 추구합니다.\n초반에 스위프트 스트라이크로 적을 포킹해 현금과 궁극기 충전을 확보하고, 다양한 조합에 유연하게 들어갈 수 있습니다.",
@@ -2353,7 +2375,7 @@
       "cost": "$$",
       "created_at": "2026-07-09T06:42:10.482394+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": [
         {
           "name_en": "Hashimoto's Bane",
@@ -2457,27 +2479,6 @@
       },
       "cost": "$$",
       "created_at": "2026-07-08T16:05:09.52358+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "Blood Demon Art: 파괴적인 죽음",
-      "code": "6BEKA",
-      "description": "원거리 용의 칼날 공격을 중심으로 파괴적인 공중 데미지를 목표합니다.",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 2,
-      "stats": {
-        "LIFE": 368,
-        "Total LIFE": 368,
-        "Melee Damage": 25,
-        "Weapon Power": 25,
-        "Ability Power": 70,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
-      },
-      "cost": "$$",
-      "created_at": "2026-07-07T12:28:40.373816+00:00",
       "popular_rank": null,
       "latest_rank": 3,
       "items": []
@@ -2787,7 +2788,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 104,
+      "upvotes": 105,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -2813,6 +2814,99 @@
       ]
     },
     {
+      "name": "( 시즌 3: NEW! 무기 공격력 Jetpack Cat 버프됨 | 유연함, 파밍 $$$,",
+      "code": "G7CCE",
+      "description": "전 시즌부터 꾸준히 플레이해 DPS 레전드와 지원 올스타 등급을 달성했으며, Jetpack Cat을 중심으로 한 빌드입니다.",
+      "playstyle": "메타 · 무기 파워",
+      "upvotes": 28,
+      "stats": {
+        "LIFE": 364,
+        "Shield": 75,
+        "Total LIFE": 439,
+        "Attack Speed": 35,
+        "Weapon Power": 40,
+        "Ability Power": 0
+      },
+      "cost": "$$",
+      "created_at": "2026-06-18T02:19:06.503658+00:00",
+      "popular_rank": 2,
+      "latest_rank": null,
+      "items": [
+        {
+          "name_en": "Bouncing Biscuits",
+          "effect_en": "When hitting an ally with [Biotic Pawjectiles], it bounces to 1 nearby ally within 15m at 50% effectiveness.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/jetpackcat/BouncingBiscuits.png",
+          "name": "튕기는 비스킷",
+          "effect": "[Biotic Pawjectiles]로 아군을 적중하면, 15미터 이내의 근처 아군 1명에게 50% 효율로 튕겨집니다."
+        },
+        {
+          "name_en": "Ambidex-fur-ous",
+          "effect_en": "While [Purr] is active, shoot both guns. The bonus shot deals 35% damage.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/jetpackcat/AmbidexFurOus.png",
+          "name": "양손잡이-털-적인",
+          "effect": "[Purr]이 활성화된 동안, 두 총을 발사한다. 보너스 샷이 35% 데미지를 입힌다."
+        },
+        {
+          "name_en": "Aerial Distresser",
+          "effect_en": "25 Shields. 10% Attack Speed. Weapon damage to airborne enemies deal 30% bonus damage over 3s.",
+          "cost": 9000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/AerialDistresserS1MID.png",
+          "name": "공중 교란기",
+          "effect": "25 방어막. 10% Attack Speed. 공중에 있는 적에게 주는 무기 피해가 3초 동안 30% 추가 피해를 입힙니다."
+        },
+        {
+          "name_en": "Skyline Nanites",
+          "effect_en": "10% Ability Lifesteal. Ability damage to airborne enemies deal 25% bonus damage over 2s.",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/SkylineNanitesS1MID.png",
+          "name": "스카이라인 나노 입자",
+          "effect": "기술 위력 생명력 흡수 10%. 공중에 있는 적에게 주는 기술 피해가 2초 동안 25% 추가 피해를 입힙니다."
+        },
+        {
+          "name_en": "Express Detonation",
+          "effect_en": " +50% [Call Mech] Radius. [Self-Destruct] explodes 15% faster.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/dva/ExpressDetonation.png",
+          "name": "익스프레스 폭발",
+          "effect": "+50% [Call Mech] 반경. [Self-Destruct]가 15% 더 빠르게 폭발한다."
+        },
+        {
+          "name_en": "Dae-hyun's Detonator",
+          "effect_en": "25 Armor. 15% Starting Ultimate Charge. If your [Mech] detonates mid-air, increase [Self-Destruct] explosion damage by 100% and range by 100%.",
+          "cost": 9000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/dva/Dae-hyunsDetonator.png",
+          "name": "대현의 폭탄",
+          "effect": "25 방어구. 15% 시작 궁극기 충전. [Mech]가 공중에서 폭발하면, [Self-Destruct] 폭발 피해를 100% 증가시키고 사거리를 100% 증가시킨다."
+        },
+        {
+          "name_en": "Quick Scope",
+          "effect_en": "10% Weapon Power. 200% Faster Scope Speed. Deal 20% more damage to airborne enemies.",
+          "cost": 5000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/ana/QuickScope.png",
+          "name": "빠른 조준경",
+          "effect": "무기 공격력 10%. 조준 속도 200% 증가. 공중 적에게 20% 더 많은 데미지를 입힙니다."
+        },
+        {
+          "name_en": "Vanadium Injection",
+          "effect_en": "50 Shields; While at 100% Ultimate Charge, gain: 50 Health, 10% Weapon Power, 10% Ability Power, 10% Attack Speed, 10% Cooldown Reduction, 10% Move Speed.",
+          "cost": 12000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/VanadiumInjectionS1MID.png",
+          "name": "바나듐 주입",
+          "effect": "방어막 50; 궁극기 충전이 100%일 때, 다음을 얻습니다: 체력 50, 무기 공격력 10%, 기술 위력 10%, 공격 속도 10%, 재사용 대기시간 감소 10%, 이동 속도 10%."
+        }
+      ]
+    },
+    {
       "name": "[2X 탑 500] 마이크로웨이브 키티",
       "code": "BDPF8",
       "description": "지속적인 치유와 피해를 주는 오라로 인해 Purr이 이 빌드에서 가장 좋은 친구가 될 것입니다.",
@@ -2829,7 +2923,7 @@
       },
       "cost": "$$",
       "created_at": "2026-05-13T01:53:00.631743+00:00",
-      "popular_rank": 2,
+      "popular_rank": 3,
       "latest_rank": null,
       "items": [
         {
@@ -2862,29 +2956,9 @@
       ]
     },
     {
-      "name": "아펠카 캣 오버파워 빌드",
-      "code": "96GA5",
-      "description": "이 빌드는 탱커 뒤에서 머물 수 있게 해주며, 팀에게 많은 체력을 제공합니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 26,
-      "stats": {
-        "LIFE": 444,
-        "Shield": 75,
-        "Total LIFE": 519,
-        "Attack Speed": 15,
-        "Weapon Power": 30,
-        "Ability Power": 0
-      },
-      "cost": "$$",
-      "created_at": "2026-05-12T18:56:23.921563+00:00",
-      "popular_rank": 3,
-      "latest_rank": null,
-      "items": []
-    },
-    {
       "name": "CAT NUKE",
       "code": "KQC68",
-      "description": "퀵플레이에서 1라운드에 최대 5번까지 캣냅퍼를 사용할 수 있는 빌드이며, 승률이 70% 이상입니다.\n빠른 캣냅퍼 활용으로 적을 지속적으로 제압하는 것이 핵심 전략입니다.",
+      "description": "퀵플레이 빌드로 한 라운드에 최대 5번 Catnapper를 사용하고, 승률이 70% 이상입니다.",
       "playstyle": "재미용 · 능력 파워",
       "upvotes": 0,
       "stats": {
@@ -3466,43 +3540,26 @@
       ]
     },
     {
-      "name": "최고 퀸 빌드 시즌 3",
-      "code": "NT36C",
-      "description": "Junker Queen 최고의 빌드는 상처 지속시간을 최대화해 생존성을 높이고 궁극기 충전을 빠르게 합니다. 두 번째로 중요한 요소는 데미지 출력 향상으로 전투를 주도합니다.",
-      "playstyle": "메타 · 고체력",
-      "upvotes": 7,
+      "name": "심판의 시간! Vampire Queen | 높은 자체 지속, T",
+      "code": "J3PFG",
+      "description": "탱커 빌드인 Vampire Queen으로, Jetpack Cat 팬이 만든 첫 탱크 스태디움 빌드입니다.",
+      "playstyle": "재미용 · 고체력",
+      "upvotes": 2,
       "stats": {
-        "LIFE": 835,
-        "Total LIFE": 835,
-        "Attack Speed": 10,
-        "Weapon Power": 60,
-        "Ability Power": 30,
-        "Critical Damage": 10
-      },
-      "cost": "$$$",
-      "created_at": "2026-06-30T07:30:41.293694+00:00",
-      "popular_rank": null,
-      "latest_rank": 1,
-      "items": []
-    },
-    {
-      "name": "[S3] 정크타운 최종 보스",
-      "code": "BSNH0",
-      "description": "",
-      "playstyle": "무기 파워 · 고체력",
-      "upvotes": 8,
-      "stats": {
-        "LIFE": 908,
-        "Total LIFE": 908,
-        "Weapon Power": 65,
+        "LIFE": 803,
+        "Max Ammo": 33,
+        "Total LIFE": 803,
+        "Attack Speed": 15,
+        "Weapon Power": 45,
         "Ability Power": 10,
         "Critical Damage": 10,
-        "Cooldown Reduction": 5
+        "Weapon Lifesteal": 45,
+        "Ability Lifesteal": 15
       },
-      "cost": "$$$",
-      "created_at": "2026-06-21T12:32:30.576661+00:00",
+      "cost": "$$",
+      "created_at": "2026-07-09T17:58:20.25385+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
+      "latest_rank": 1,
       "items": [
         {
           "name_en": "Royal Bullets",
@@ -3523,15 +3580,62 @@
           "effect": "[Adrenaline Rush]는 12m 이내의 아군에게도 당신이 회복한 양의 100%를 치유합니다."
         },
         {
-          "name_en": "Bow Down",
-          "effect_en": "While casting [Rampage], become Unstoppable and reset all ability cooldowns. [Rampage] knocks down enemies hit for 2s.",
+          "name_en": "Come Get Yer Armor",
+          "effect_en": "After using Overload, throw 2 Armor Packs that grants Armor equal to 20% of your Max Life. Armor Packs do not stack.",
           "cost": 0,
           "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/junkerqueen/BowDown.png",
-          "name": "절하라",
-          "effect": "시전 중에 [Rampage]를 사용하면 Unstoppable이 되고 모든 능력 재사용 대기시간을 초기화합니다. [Rampage]는 적을 2초 동안 넉백시킵니다."
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/torbjorn/ComeGetYerArmor.png",
+          "name": "와서 네 방어구를 가져가라",
+          "effect": "오버로드 사용 후, 2개의 방어구 팩을 던지며, 각각 당신의 최대 체력의 20%에 해당하는 방어구를 부여한다. 방어구 팩은 중첩되지 않는다."
+        },
+        {
+          "name_en": "Surge Protector",
+          "effect_en": "Allies within [Barrier Projector] are healed for 30 (AP) every 1s.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/winston/SurgeProtector.png",
+          "name": "서지 보호기",
+          "effect": "[장벽 투사기] 내의 아군은 매 1초마다 30 (기술 위력) 회복량을 얻는다."
+        },
+        {
+          "name_en": "Cushioned Padding",
+          "effect_en": "25 Shields; -40% Incoming Negative Effect Duration; When affected by Stun, Sleep, or hinder, restore 10% of your max Life over 3s.",
+          "cost": 3750,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/CushionedPaddingS1MID.png",
+          "name": "쿠션 패딩",
+          "effect": "25 방어막; -40% 들어오는 부정 효과 지속 시간; 기절, 수면, 혹은 방해에 영향을 받을 때, 3초에 걸쳐 최대 생명력의 10%를 회복한다."
+        },
+        {
+          "name_en": "Cybervenom",
+          "effect_en": "10% Ability Power; 5% Cooldown Reduction; Dealing ability damage applies 35% healing reduction for 2s.",
+          "cost": 10500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/CybervenomS1MID.png",
+          "name": "사이버베놈",
+          "effect": "10% 기술 위력; 5% 재사용 대기시간 감소; 능력 피해를 입히면 2초 동안 35% 회복량 감소를 적용합니다."
         }
       ]
+    },
+    {
+      "name": "최고 퀸 빌드 시즌 3",
+      "code": "NT36C",
+      "description": "Junker Queen 최고의 빌드는 상처 지속시간을 최대화해 생존성을 높이고 궁극기 충전을 빠르게 합니다. 두 번째로 중요한 요소는 데미지 출력 향상으로 전투를 주도합니다.",
+      "playstyle": "메타 · 고체력",
+      "upvotes": 7,
+      "stats": {
+        "LIFE": 835,
+        "Total LIFE": 835,
+        "Attack Speed": 10,
+        "Weapon Power": 60,
+        "Ability Power": 30,
+        "Critical Damage": 10
+      },
+      "cost": "$$$",
+      "created_at": "2026-06-30T07:30:41.293694+00:00",
+      "popular_rank": null,
+      "latest_rank": 2,
+      "items": []
     }
   ],
   "Junkrat": [
@@ -3759,7 +3863,7 @@
       "code": "T5QKR",
       "description": "Beesting 빌드의 업데이트판. 장단점을 계속 파악하며 개선 중.",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 338,
+      "upvotes": 337,
       "stats": {
         "LIFE": 112,
         "Armor": 160,
@@ -3778,11 +3882,81 @@
       "items": []
     },
     {
+      "name": "🏏그랜드마스터 트리플 t Juno 🏏[meta]",
+      "code": "O3CTS",
+      "description": "",
+      "playstyle": "메타 · 재사용 단축",
+      "upvotes": 6,
+      "stats": {
+        "LIFE": 205,
+        "Armor": 50,
+        "Shield": 150,
+        "Total LIFE": 405,
+        "Attack Speed": 10,
+        "Weapon Power": 30,
+        "Ability Power": 50,
+        "Cooldown Reduction": 20
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-09T23:29:41.305473+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": [
+        {
+          "name_en": "Three-Tap Tommygun",
+          "effect_en": "10% Ability Power. 10% Attack Speed. After using an ability or Gadget, your next 3 instances of Weapon Damage deals additional damage equal to 5% of the target's current Life over 5s.",
+          "cost": 10500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/ThreeTapTommygunS1MID.png",
+          "name": "3연사 톰미건",
+          "effect": "기술 위력 10%·공격 속도 10%. 능력이나 Gadget을 사용한 후, 다음 3번의 무기 공격력이 5초 동안 대상의 현재 생명력의 5%에 해당하는 추가 피해를 입힙니다."
+        },
+        {
+          "name_en": "Mark of the Kitsune",
+          "effect_en": "10% Ability Power; When you use an ability or Gadget, your next instance of weapon damage or healing deals 25 bonus damage or healing.",
+          "cost": 11000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/MarkOfTheKitsuneS1MID.png",
+          "name": "키츠네의 표식",
+          "effect": "10% 기술 위력; 능력을 사용하거나 가젯을 사용할 때, 다음 무기 피해 또는 회복량이 25 추가 피해 또는 회복을 입힙니다."
+        },
+        {
+          "name_en": "Blink Boosts",
+          "effect_en": "[Glide Boost] becomes 3 short charges with 75% reduced duration and 30% reduced cooldown.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/juno/BlinkBoostsS2.png",
+          "name": "순간이동 증강",
+          "effect": "[Glide Boost]은 75% 감소된 지속 시간과 30% 감소된 재사용 대기시간을 가진 3개의 짧은 충전으로 변한다."
+        }
+      ]
+    },
+    {
+      "name": "수학적으로 정확한 Juno (v2)",
+      "code": "7XWGZ",
+      "description": "",
+      "playstyle": "능력 파워",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 183,
+        "Shield": 150,
+        "Total LIFE": 333,
+        "Weapon Power": 0,
+        "Ability Power": 95,
+        "Cooldown Reduction": 15
+      },
+      "cost": "$$",
+      "created_at": "2026-07-09T01:26:18.793304+00:00",
+      "popular_rank": null,
+      "latest_rank": 2,
+      "items": []
+    },
+    {
       "name": "무한 Hyper Ring + Machine Gun Juno! // 탑 500",
       "code": "QCNNP",
       "description": "주노 빌드는 하이퍼 링을 최대한 유지하면서 무기를 빠른 연사 머신건으로 전환합니다. 팀을 지속적으로 가속시키고 이동성을 유지하며 안정적인 데미지를 입힙니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 4,
+      "upvotes": 5,
       "stats": {
         "LIFE": 219,
         "Armor": 50,
@@ -3796,7 +3970,7 @@
       "cost": "$$",
       "created_at": "2026-07-06T08:59:14.166789+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 3,
       "items": [
         {
           "name_en": "MediMaster",
@@ -3961,133 +4135,6 @@
           "effect": "무기 공격력 20%; 체력이 30% 이하인 적에게 피해 10% 증가."
         }
       ]
-    },
-    {
-      "name": "TTT 주노는 Nerfs 이후에도 여전히 크게 깨졌음!",
-      "code": "VBC6G",
-      "description": "",
-      "playstyle": "메타 · 혼합 파워",
-      "upvotes": 24,
-      "stats": {
-        "LIFE": 203,
-        "Armor": 100,
-        "Shield": 150,
-        "Total LIFE": 453,
-        "Attack Speed": 10,
-        "Weapon Power": 30,
-        "Ability Power": 30,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$",
-      "created_at": "2026-06-29T15:56:32.772545+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "Mosquito 빌드",
-      "code": "5QGAZ",
-      "description": "Juno 빌드는 Blink Boost와 높은 DPS에 초점을 맞추며, Stinger 아이템으로 빠른 킬을 확보하고 Blink Boost로 이동성을 강화해 전투 효율을 높입니다.",
-      "playstyle": "능력 파워",
-      "upvotes": 2,
-      "stats": {
-        "LIFE": 205,
-        "Armor": 50,
-        "Shield": 150,
-        "Total LIFE": 405,
-        "Attack Speed": 10,
-        "Weapon Power": 30,
-        "Ability Power": 40,
-        "Critical Damage": 10,
-        "Cooldown Reduction": 15
-      },
-      "cost": "$$$",
-      "created_at": "2026-06-26T05:58:26.759567+00:00",
-      "popular_rank": null,
-      "latest_rank": 3,
-      "items": [
-        {
-          "name_en": "Blink Boosts",
-          "effect_en": "[Glide Boost] becomes 3 short charges with 75% reduced duration and 30% reduced cooldown.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/juno/BlinkBoostsS2.png",
-          "name": "순간이동 증강",
-          "effect": "[Glide Boost]은 75% 감소된 지속 시간과 30% 감소된 재사용 대기시간을 가진 3개의 짧은 충전으로 변한다."
-        },
-        {
-          "name_en": "Stinger",
-          "effect_en": "[Mediblaster] deals an additional 10 damage to enemies over 1s. (Does not stack)",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/juno/StingerS2.png",
-          "name": "스팅어",
-          "effect": "[Mediblaster]는 적에게 1초 동안 추가 10 피해를 입힌다. (중첩되지 않음)"
-        },
-        {
-          "name_en": "Mark of the Kitsune",
-          "effect_en": "10% Ability Power; When you use an ability or Gadget, your next instance of weapon damage or healing deals 25 bonus damage or healing.",
-          "cost": 11000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/MarkOfTheKitsuneS1MID.png",
-          "name": "키츠네의 표식",
-          "effect": "10% 기술 위력; 능력을 사용하거나 가젯을 사용할 때, 다음 무기 피해 또는 회복량이 25 추가 피해 또는 회복을 입힙니다."
-        },
-        {
-          "name_en": "LumériCo Fusion Drive",
-          "effect_en": "50 Armor; 10% Ability Power; When you use an ability or Gadget, restore 50 armor or shields over 3s.",
-          "cost": 11000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/LumericoFusionDriveS1MID.png",
-          "name": "루메리코 융합 추진기",
-          "effect": "50 방어구; 10% 기술 위력; 능력을 사용하거나 가젯을 사용할 때, 3초에 걸쳐 50 방어구 또는 방어막을 회복합니다."
-        },
-        {
-          "name_en": "Three-Tap Tommygun",
-          "effect_en": "10% Ability Power. 10% Attack Speed. After using an ability or Gadget, your next 3 instances of Weapon Damage deals additional damage equal to 5% of the target's current Life over 5s.",
-          "cost": 10500,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/ThreeTapTommygunS1MID.png",
-          "name": "3연사 톰미건",
-          "effect": "기술 위력 10%·공격 속도 10%. 능력이나 Gadget을 사용한 후, 다음 3번의 무기 공격력이 5초 동안 대상의 현재 생명력의 5%에 해당하는 추가 피해를 입힙니다."
-        },
-        {
-          "name_en": "Hardlight Accelerator",
-          "effect_en": "10% Weapon Power; 10% Cooldown Reduction; When you use an ability or Gadget, gain 5% Weapon Power for 3s, stacking up to 3 times",
-          "cost": 12000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/HardlightAcceleratorS1MID.png",
-          "name": "하드라이트 가속기",
-          "effect": "10% 무기 공격력; 10% 재사용 대기시간 감소; 능력이나 장치를 사용할 때, 3초 동안 5% 무기 공격력을 얻으며, 최대 3번 중첩됩니다."
-        },
-        {
-          "name_en": "Superflexor",
-          "effect_en": "25 Health; 10 Weapon Power; When you deal Weapon Damage or Healing, gain 5% Ability Power for 3s, stacking up to 5 times.",
-          "cost": 10000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/SuperflexorS1MID.png",
-          "name": "슈퍼플렉서",
-          "effect": "25 체력; 10 무기 공격력; 무기 피해 또는 회복량을 입힐 때, 3초 동안 5% 기술 위력을 얻으며, 최대 5번 중첩됩니다."
-        },
-        {
-          "name_en": "Eye of the Spider",
-          "effect_en": "20% Weapon Power.  10% Critical Damage. Critical Hits Reveal the target for 3s.",
-          "cost": 14000,
-          "rarity": "epic",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/TheCloserS1MID.png",
-          "name": "거미의 눈",
-          "effect": "무기 공격력 20%; 치명타 피해 10%; 치명타가 대상에게 3초 동안 표시됩니다."
-        },
-        {
-          "name_en": "MediMaster",
-          "effect_en": "[Mediblaster] deals 50% increased Critical Damage and can crit allies. Critical hits reduce [Hyper Ring]'s cooldown by 0.2s.",
-          "cost": 0,
-          "rarity": "power",
-          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/juno/MedimasterS2.png",
-          "name": "메디마스터",
-          "effect": "[Mediblaster]는 50% 증가된 치명타 피해를 입히며 아군에게도 치명타를 가할 수 있다. 치명타는 [Hyper Ring]의 재사용 대기시간을 0.2초 감소시킨다."
-        }
-      ]
     }
   ],
   "Kiriko": [
@@ -4202,7 +4249,7 @@
       "code": "6TG55",
       "description": "키리코의 치유 부적 효율을 극대화해 Mercy보다 강력한 힐량을 발휘, 동시에 피해량 증폭까지 지원하는 힐봇 스타일.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 210,
+      "upvotes": 211,
       "stats": {
         "LIFE": 282,
         "Total LIFE": 282,
@@ -4254,9 +4301,9 @@
       ]
     },
     {
-      "name": "HYPERFLEX KIRI CARRY",
+      "name": "HYPERFLEX Kiriko 캐리",
       "code": "97MTB",
-      "description": "",
+      "description": "적 팀 구성을 파악해 아이템·파워를 예측하고 스마트하게 플레이하라는 전략 조언입니다.",
       "playstyle": "무기 파워 · 생명력 흡수",
       "upvotes": 4,
       "stats": {
@@ -4362,7 +4409,7 @@
       "code": "SEDXV",
       "description": "이 빌드는 솔로 파라나 모이라, 우양 같은 힐링이 불가능한 지원가와 함께 파라를 플레이하는 데 최적인 빌드입니다. 캐시디는 큰 문제지만...",
       "playstyle": "능력 파워",
-      "upvotes": 115,
+      "upvotes": 116,
       "stats": {
         "LIFE": 384,
         "Armor": 100,
@@ -4838,9 +4885,9 @@
       ]
     },
     {
-      "name": "Cold Play By Mei!",
+      "name": "Mei가 만든 콜드 플레이!",
       "code": "TH4W",
-      "description": "",
+      "description": "상대를 얼려 제압하는 간단한 전략을 강조합니다.",
       "playstyle": "능력 파워",
       "upvotes": 2,
       "stats": {
@@ -4882,7 +4929,7 @@
       "code": "0HA91",
       "description": "빌드는 재사용 대기시간 단축과 기술 위력을 극대화하여 광역 폭딜을 특화합니다. 주요 스탯은 이동 속도와 재사용 대기시간 단축입니다.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 980,
+      "upvotes": 982,
       "stats": {
         "LIFE": 337,
         "Armor": 100,
@@ -5002,7 +5049,7 @@
       "code": "93RNG",
       "description": "",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 925,
+      "upvotes": 924,
       "stats": {
         "LIFE": 336,
         "Total LIFE": 336,
@@ -5272,7 +5319,7 @@
       "code": "RBNTN",
       "description": "머시 빌드로 빠르고 위협적인 딜러가 되면서도 팀을 치유합니다.\n글록으로 반격하며 힐과 속도 버프를 동시에 제공해 전투를 주도합니다.",
       "playstyle": "무기 파워",
-      "upvotes": 2,
+      "upvotes": 5,
       "stats": {
         "LIFE": 379,
         "Max Ammo": 33,
@@ -5295,7 +5342,7 @@
       "code": "ZQQQR",
       "description": "모이라의 최대 치유량을 우선시하며 극단적인 치유량 극대화 빌드.",
       "playstyle": "능력 파워",
-      "upvotes": 1355,
+      "upvotes": 1356,
       "stats": {
         "LIFE": 373,
         "Total LIFE": 373,
@@ -5370,6 +5417,26 @@
       "items": []
     },
     {
+      "name": "MOIRA 플렉스 하이퍼캐리",
+      "code": "6VHS0",
+      "description": "Moira 하이브리드 빌드로 팀 지원과 DPS를 상황에 맞게 전환하며, 필요 시 혼자서도 높은 딜을 낼 수 있습니다.",
+      "playstyle": "능력 파워",
+      "upvotes": 2,
+      "stats": {
+        "LIFE": 490,
+        "Armor": 55,
+        "Total LIFE": 545,
+        "Attack Speed": 10,
+        "Weapon Power": 25,
+        "Ability Power": 35
+      },
+      "cost": "$$",
+      "created_at": "2026-07-10T15:30:12.86909+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "오브스 풍부",
       "code": "4RWT9",
       "description": "모이라 기술 위력(AP) 중심 빌드로, 스킬과 궁극기의 피해량을 극대화해 원거리에서 지속적인 데미지를 줍니다. 생존력은 기본 체력에 의존합니다.",
@@ -5385,7 +5452,7 @@
       "cost": "$$",
       "created_at": "2026-07-09T16:17:29.405529+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -5404,26 +5471,6 @@
       },
       "cost": "$$",
       "created_at": "2026-07-08T10:46:58.575754+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "I'LL SHOW YOU META! (Coalescence 빌드) HIGHLY ADAPTABLE",
-      "code": "20Z1W",
-      "description": "",
-      "playstyle": "능력 파워",
-      "upvotes": 0,
-      "stats": {
-        "LIFE": 363,
-        "Total LIFE": 363,
-        "Attack Speed": 10,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 5
-      },
-      "cost": "$$",
-      "created_at": "2026-07-07T20:08:53.928829+00:00",
       "popular_rank": null,
       "latest_rank": 3,
       "items": []
@@ -5967,7 +6014,7 @@
       "code": "P1RKV",
       "description": "Ramattra 장거리 지원 빌드. 긴 사거리와 높은 내구성을 활용해 공중 및 지상에서 지속적인 데미지를 제공한다.",
       "playstyle": "재미용 · 고체력",
-      "upvotes": 5,
+      "upvotes": 6,
       "stats": {
         "LIFE": 679,
         "Armor": 125,
@@ -6044,7 +6091,7 @@
       "code": "XR8B2",
       "description": "생명력 흡수 기반 힐링+무기 공격력 리퍼 빌드. 지속 업데이트 예정.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 205,
+      "upvotes": 204,
       "stats": {
         "LIFE": 480,
         "Armor": 25,
@@ -6166,7 +6213,7 @@
       "code": "0RBG6",
       "description": "",
       "playstyle": "메타 · 생명력 흡수",
-      "upvotes": 0,
+      "upvotes": 1,
       "stats": {
         "LIFE": 477,
         "Armor": 50,
@@ -6475,7 +6522,7 @@
       "code": "GVTH8",
       "description": "라인하르트를 돌진 중심 빌드로 전환해 Charge의 파괴력을 크게 강화합니다. 아이템으로 공격력과 이동 속도를 상승시켜 연속 돌진과 전방 압박이 가능하도록 합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 0,
+      "upvotes": 1,
       "stats": {
         "LIFE": 707,
         "Armor": 225,
@@ -6538,29 +6585,6 @@
           "effect": "15% 기술 위력. 10% 공격 속도. [로켓 해머]로 피해를 입힐 때, 당신의 기술들의 재사용 대기시간을 1초 감소시킵니다."
         }
       ]
-    },
-    {
-      "name": "게임에서 가장 강력한 ability rein 스팸",
-      "code": "94XD8",
-      "description": "고데미지 파괴형 빌드로, 랭크전에서 높은 파괴력을 발휘해 적을 빠르게 제압한다.",
-      "playstyle": "재미용 · 고체력",
-      "upvotes": 9,
-      "stats": {
-        "LIFE": 739,
-        "Armor": 375,
-        "Move Speed": 10,
-        "Total LIFE": 1114,
-        "Attack Speed": 10,
-        "Melee Damage": 15,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$",
-      "created_at": "2026-07-03T08:44:28.255479+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
     }
   ],
   "Sigma": [
@@ -6793,6 +6817,27 @@
       "items": []
     },
     {
+      "name": "IMMORTAL 비행 Sigma 빌드가 UNSTOPPABLE",
+      "code": "8GXKS",
+      "description": "",
+      "playstyle": "무기 파워 · 고체력",
+      "upvotes": 3,
+      "stats": {
+        "LIFE": 677,
+        "Armor": 50,
+        "Shield": 375,
+        "Total LIFE": 1102,
+        "Weapon Power": 25,
+        "Ability Power": 0,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-10T11:39:42.992923+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "날아다니는 혜성 Sigma",
       "code": "0107M",
       "description": "",
@@ -6809,7 +6854,7 @@
       "cost": "$$",
       "created_at": "2026-06-24T02:07:23.985511+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -6829,27 +6874,6 @@
       "cost": "$$$",
       "created_at": "2026-06-19T19:38:06.621065+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "👑궁극기 기관총🗡️ 5초 안에 팀을 삭제!⚔️ STIL",
-      "code": "EBKYD",
-      "description": "",
-      "playstyle": "능력 파워 · 고체력",
-      "upvotes": 2,
-      "stats": {
-        "LIFE": 542,
-        "Shield": 275,
-        "Total LIFE": 817,
-        "Weapon Power": 0,
-        "Ability Power": 75,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 35
-      },
-      "cost": "$$",
-      "created_at": "2026-06-18T05:00:43.282831+00:00",
-      "popular_rank": null,
       "latest_rank": 3,
       "items": []
     }
@@ -6860,7 +6884,7 @@
       "code": "1VQW5",
       "description": "소전 솔로 캐리 빌드: 무기 공격력 극대화로 레일건 원샷 가능",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 399,
+      "upvotes": 398,
       "stats": {
         "LIFE": 345,
         "Armor": 25,
@@ -7293,7 +7317,7 @@
       "code": "JNQQR",
       "description": "",
       "playstyle": "무기 파워",
-      "upvotes": 11,
+      "upvotes": 12,
       "stats": {
         "LIFE": 358,
         "Shield": 50,
@@ -7464,7 +7488,7 @@
       "code": "RAF9K",
       "description": "사전 고민 없이 빠른 이동과 사격에 집중하는 빌드입니다.",
       "playstyle": "메타 · 혼합 파워",
-      "upvotes": 2,
+      "upvotes": 1,
       "stats": {
         "LIFE": 433,
         "Shield": 50,
@@ -8199,7 +8223,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 89,
+      "upvotes": 88,
       "stats": {
         "LIFE": 264,
         "Armor": 32,
@@ -8244,29 +8268,6 @@
       "created_at": "2026-07-08T07:00:34.768151+00:00",
       "popular_rank": null,
       "latest_rank": 1,
-      "items": []
-    },
-    {
-      "name": "TTT Tracer 빌드가 완전히 깨짐",
-      "code": "GSB2E",
-      "description": "",
-      "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 16,
-      "stats": {
-        "LIFE": 255,
-        "Armor": 32,
-        "Total LIFE": 287,
-        "Attack Speed": 10,
-        "Weapon Power": 20,
-        "Ability Power": 75,
-        "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$",
-      "created_at": "2026-06-28T08:26:14.419223+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
       "items": []
     }
   ],
@@ -8674,7 +8675,7 @@
       "code": "HBK34",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 3,
+      "upvotes": 5,
       "stats": {
         "LIFE": 669,
         "Armor": 325,
@@ -8738,7 +8739,7 @@
       "code": "F8R1P",
       "description": "체인 힐러 빌드: 왜 우양은 실제로 S-Tier인지에 대해 설명합니다. 우양에 많은 변경 사항이 적용되었습니다. 개발자들은 이전의 Streamline 설정을 완전히 변경하였습니다.",
       "playstyle": "메타 · 능력 파워",
-      "upvotes": 281,
+      "upvotes": 282,
       "stats": {
         "LIFE": 323,
         "Shield": 100,
