@@ -148,6 +148,7 @@ async function fetchAISummary(context) {
 // ── 버블 차트 ─────────────────────────────────────────────────────────────────
 
 let homeChart = null;
+let bubbleRenderGen = 0;
 
 async function preloadPortraits(heroes, portraitIndex) {
   const map = new Map();
@@ -165,13 +166,10 @@ async function preloadPortraits(heroes, portraitIndex) {
 }
 
 async function renderBubbleChart(container, heroes, portraitIndex) {
+  // 동시 렌더 경합 감지용 세대 토큰 — 더 최신 렌더가 시작되면 이 렌더는 중단한다
+  const gen = ++bubbleRenderGen;
   const canvas = container.querySelector('#home-bubble-chart');
   if (!canvas) return;
-
-  // Chart.getChart으로 이 canvas에 붙은 차트를 확실히 제거
-  const existing = Chart.getChart(canvas);
-  if (existing) existing.destroy();
-  homeChart = null;
 
   const isMobile = window.innerWidth < 640;
 
@@ -183,8 +181,8 @@ async function renderBubbleChart(container, heroes, portraitIndex) {
 
   const imageMap = await preloadPortraits(validHeroes, portraitIndex);
 
-  // 이미지 로딩 중 canvas가 DOM에서 사라졌으면 중단
-  if (!canvas.isConnected) return;
+  // 이미지 로딩 중 더 최신 렌더가 시작됐거나 canvas가 DOM에서 사라졌으면 중단
+  if (gen !== bubbleRenderGen || !canvas.isConnected) return;
 
   const bubbleR = (score) =>
     Math.max(isMobile ? 10 : 14, Math.sqrt(score) * (isMobile ? 1.1 : 1.6));
@@ -297,6 +295,9 @@ async function renderBubbleChart(container, heroes, portraitIndex) {
     },
   };
 
+  // 생성 직전에 같은 canvas에 남은 차트를 동기적으로 제거한다 (await 없이 바로 이어서
+  // new Chart를 호출해야 동시 렌더의 "Canvas is already in use" 경합이 사라진다)
+  Chart.getChart(canvas)?.destroy();
   homeChart = new Chart(canvas, {
     type: 'bubble',
     data: { datasets },
