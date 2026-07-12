@@ -107,8 +107,14 @@ def build_adsense_snippet(config: dict) -> str:
     )
 
 
-def build_seo_block(config: dict, *, title: str, description: str, path: str) -> str:
-    """<head>에 들어갈 SEO/분석/광고 블록. path는 ''(홈) 또는 'meta.html' 등."""
+def build_seo_block(
+    config: dict, *, title: str, description: str, path: str, asset_prefix: str = ""
+) -> str:
+    """<head>에 들어갈 SEO/분석/광고 블록.
+
+    path는 ''(홈) 또는 'meta.html'·'hero/tracer.html' 등 base 기준 상대 경로.
+    asset_prefix는 파비콘 등 상대 경로 리소스의 접두사(하위 폴더 페이지는 '../').
+    """
     base = site_base(config)
     url = f"{base}/{path}" if path else f"{base}/"
     og_image = f"{base}/og-image.png"
@@ -131,8 +137,9 @@ def build_seo_block(config: dict, *, title: str, description: str, path: str) ->
         f'  <meta name="twitter:title" content="{esc_title}">',
         f'  <meta name="twitter:description" content="{esc_desc}">',
         f'  <meta name="twitter:image" content="{og_image}">',
-        '  <link rel="apple-touch-icon" href="apple-touch-icon.png">',
-        '  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">',
+        f'  <link rel="apple-touch-icon" href="{asset_prefix}apple-touch-icon.png">',
+        f'  <link rel="icon" type="image/png" sizes="192x192" '
+        f'href="{asset_prefix}favicon-192.png">',
     ]
 
     verification = config.get("google_site_verification", "").strip()
@@ -365,12 +372,194 @@ def build_meta_page(config: dict, meta: dict, last_updated: dict) -> str:
 """
 
 
+# ── 영웅별 정적 페이지 (SEO 롱테일) ────────────────────────────────────────────
+
+def _hero_index(meta: dict) -> dict:
+    """hero_id → {name, role, portrait, ranks:{rank:stat}} (전체 랭크 통합)."""
+    idx: dict = {}
+    for rank, heroes in meta.items():
+        for h in heroes:
+            hid = h.get("hero_id")
+            if not hid:
+                continue
+            entry = idx.setdefault(
+                hid,
+                {
+                    "name": h.get("hero_name", hid),
+                    "role": h.get("role", ""),
+                    "portrait": h.get("portrait_url", ""),
+                    "ranks": {},
+                },
+            )
+            if not entry["portrait"] and h.get("portrait_url"):
+                entry["portrait"] = h["portrait_url"]
+            entry["ranks"][rank] = h
+    return idx
+
+
+def _hero_link(hid: str, index: dict, idset: set) -> str:
+    name = index[hid]["name"] if hid in index else hid
+    if hid in idset:
+        return f'<a href="{html.escape(hid)}.html">{html.escape(name)}</a>'
+    return html.escape(name)
+
+
+def _matchup_section(title: str, ids: list, index: dict, idset: set) -> str:
+    if not ids:
+        return ""
+    links = ", ".join(_hero_link(i, index, idset) for i in ids)
+    return f"<h2>{title}</h2>\n<p>{links}</p>"
+
+
+def _render_hero_page(
+    config: dict, hid: str, index: dict, db: dict | None, updated: str, idset: set
+) -> str:
+    info = index[hid]
+    name = info["name"]
+    role = ROLE_LABEL.get(info["role"], info["role"])
+    esc_name = html.escape(name)
+
+    seo = build_seo_block(
+        config,
+        title=f"{name} 카운터·승률·티어 | {SITE_NAME}",
+        description=(
+            f"오버워치 2 {name}의 랭크별 픽률·승률·밴률·메타 점수와 카운터·시너지·플레이 팁. "
+            "Blizzard 공식 통계 기반 매일 갱신."
+        ),
+        path=f"hero/{hid}.html",
+        asset_prefix="../",
+    )
+
+    # 랭크별 통계 표
+    ranks = [r for r in RANK_ORDER if r in info["ranks"]]
+    rank_rows = []
+    for rank in ranks:
+        h = info["ranks"][rank]
+        rank_rows.append(
+            f"<tr><td>{html.escape(rank)}</td>"
+            f"<td>{fmt_pct(h.get('pick_rate'))}</td>"
+            f"<td>{fmt_pct(h.get('win_rate'))}</td>"
+            f"<td>{fmt_pct(h.get('ban_rate'))}</td>"
+            f"<td>{h.get('meta_score', '–')}</td>"
+            f"<td>{html.escape(str(h.get('tier', '')))}</td></tr>"
+        )
+    stat_table = (
+        "<table><thead><tr><th>랭크</th><th>픽률</th><th>승률</th>"
+        "<th>밴률</th><th>메타 점수</th><th>티어</th></tr></thead><tbody>"
+        + "".join(rank_rows)
+        + "</tbody></table>"
+    )
+
+    portrait = ""
+    if info["portrait"]:
+        portrait = (
+            f'<img src="{html.escape(info["portrait"])}" alt="{esc_name}" '
+            'width="64" height="64" '
+            'style="border-radius:50%;border:2px solid #30363D;vertical-align:middle;'
+            'margin-right:0.6rem">'
+        )
+
+    desc = ""
+    matchups = ""
+    tips_html = ""
+    if db:
+        if db.get("description"):
+            desc = f'<p>{html.escape(db["description"])}</p>'
+        matchups = "\n".join(
+            s
+            for s in [
+                _matchup_section(f"{name}의 약점 (카운터당하는 상대)",
+                                 db.get("countered_by", []), index, idset),
+                _matchup_section(f"{name}(으)로 잡기 좋은 상대",
+                                 db.get("counters", []), index, idset),
+                _matchup_section(f"{name} 시너지 조합", db.get("synergies", []), index, idset),
+            ]
+            if s
+        )
+        tips = db.get("tips", [])
+        if tips:
+            items = "".join(f"<li>{html.escape(t)}</li>" for t in tips)
+            tips_html = f"<h2>플레이 팁</h2>\n<ul>{items}</ul>"
+
+    updated_note = f" · 마지막 업데이트 {updated}" if updated else ""
+
+    return f"""<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#161B22">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+{seo}
+  <style>
+    body {{ background:#0D1117; color:#e5e7eb; font-family:system-ui,sans-serif; margin:0; }}
+    main {{ max-width:56rem; margin:0 auto; padding:1.5rem 1rem; }}
+    h1 {{ font-size:1.5rem; color:#F5A623; }}
+    h2 {{ font-size:1.15rem; margin:1.75rem 0 0.25rem; color:#F5A623; }}
+    a {{ color:#4FC3F7; }}
+    p {{ color:#9ca3af; }}
+    ul {{ color:#c9d1d9; }}
+    table {{ border-collapse:collapse; width:100%; margin:0.5rem 0 1rem; }}
+    th, td {{
+      border:1px solid #30363D; padding:0.35rem 0.6rem;
+      text-align:left; font-size:0.85rem;
+    }}
+    th {{ color:#F5A623; background:#161B22; }}
+    footer {{
+      margin-top:2rem; padding-top:1rem; border-top:1px solid #30363D;
+      font-size:0.75rem; color:#6b7280;
+    }}
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="../index.html">← {SITE_NAME}</a> · <a href="../meta.html">전체 티어표</a></p>
+    <h1>{portrait}{esc_name} — 오버워치 2 메타 통계</h1>
+    <p>역할: {html.escape(role)}{updated_note}</p>
+    {desc}
+    <h2>랭크별 통계</h2>
+    {stat_table}
+    <p><a href="../index.html#meta?hero={html.escape(hid)}">대시보드에서 {esc_name} 보기</a></p>
+    {matchups}
+    {tips_html}
+  </main>
+  <footer>
+    <p>{DISCLAIMER}</p>
+    <p>데이터 출처:
+      <a href="https://overwatch.blizzard.com/ko-kr/rates/" rel="noopener">Blizzard 공식 통계</a> ·
+      <a href="../privacy.html">개인정보처리방침</a>
+    </p>
+  </footer>
+</body>
+</html>
+"""
+
+
+def build_hero_pages(config: dict, meta: dict, heroes_db: dict, updated: str) -> list[str]:
+    """public/hero/<id>.html 생성. 생성된 hero_id 목록 반환."""
+    index = _hero_index(meta)
+    ids = sorted(index.keys())
+    idset = set(ids)
+
+    hero_dir = PUBLIC / "hero"
+    hero_dir.mkdir(exist_ok=True)
+    # 더 이상 존재하지 않는 영웅 페이지 정리
+    for old in hero_dir.glob("*.html"):
+        if old.stem not in idset:
+            old.unlink()
+
+    for hid in ids:
+        page = _render_hero_page(config, hid, index, heroes_db.get(hid), updated, idset)
+        (hero_dir / f"{hid}.html").write_text(page, encoding="utf-8")
+    return ids
+
+
 # ── sitemap / robots / ads.txt ────────────────────────────────────────────────
 
-def build_sitemap(config: dict, lastmod: str) -> str:
+def build_sitemap(config: dict, lastmod: str, extra_paths: list[str] | None = None) -> str:
     base = site_base(config)
     entries = []
-    for path in ["", "meta.html", "privacy.html"]:
+    for path in ["", "meta.html", "privacy.html", *(extra_paths or [])]:
         url = f"{base}/{path}" if path else f"{base}/"
         entries.append(
             f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{lastmod}</lastmod>\n  </url>"
@@ -422,7 +611,16 @@ def main() -> int:
     )
     print("✓ public/meta.html")
 
-    (PUBLIC / "sitemap.xml").write_text(build_sitemap(config, lastmod), encoding="utf-8")
+    # 영웅별 SEO 페이지
+    heroes_raw = load_json(DATA / "heroes.json")
+    heroes_db = heroes_raw.get("heroes", heroes_raw) if isinstance(heroes_raw, dict) else {}
+    hero_ids = build_hero_pages(config, meta, heroes_db, updated=lastmod)
+    print(f"✓ public/hero/*.html ({len(hero_ids)}개)")
+
+    hero_paths = [f"hero/{hid}.html" for hid in hero_ids]
+    (PUBLIC / "sitemap.xml").write_text(
+        build_sitemap(config, lastmod, extra_paths=hero_paths), encoding="utf-8"
+    )
     (PUBLIC / "robots.txt").write_text(build_robots(config), encoding="utf-8")
     (PUBLIC / "ads.txt").write_text(build_ads_txt(config), encoding="utf-8")
     print("✓ public/sitemap.xml, robots.txt, ads.txt")
