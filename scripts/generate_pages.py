@@ -107,6 +107,27 @@ def build_adsense_snippet(config: dict) -> str:
     )
 
 
+def build_supabase_block(config: dict) -> str:
+    """브라우저가 Supabase(ow_agent)에서 데이터를 직접 읽도록 접속 정보 주입.
+
+    supabase_anon_key는 공개 키(RLS로 읽기 전용 보호)라 클라이언트 임베드가 안전하다.
+    값이 비면 미출력 → app.js가 로컬 ./data/*.json 폴백(개발/전환 과도기).
+    """
+    url = config.get("supabase_url", "").strip().rstrip("/")
+    key = config.get("supabase_anon_key", "").strip()
+    if not (url and key):
+        return (
+            "  <!-- Supabase: data/site_config.json의 supabase_url + "
+            "supabase_anon_key 설정 시 활성화 (데이터 소스) -->"
+        )
+    return (
+        "  <script>\n"
+        f"    window.SUPABASE_URL = {json.dumps(url)};\n"
+        f"    window.SUPABASE_ANON_KEY = {json.dumps(key)};\n"
+        "  </script>"
+    )
+
+
 def build_seo_block(
     config: dict, *, title: str, description: str, path: str, asset_prefix: str = ""
 ) -> str:
@@ -601,6 +622,7 @@ def main() -> int:
         build_seo_block(config, title=SITE_NAME + " — 오버워치 2 티어·픽률·승률 통계",
                         description=SITE_DESC, path=""),
     )
+    text = replace_block(text, "SUPABASE", build_supabase_block(config))
     text = replace_block(text, "STATIC", build_static_block(meta, patch, last_updated))
     text = replace_block(text, "ADFIT", build_adfit_block(config))
     index_path.write_text(text, encoding="utf-8")

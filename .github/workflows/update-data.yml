@@ -42,6 +42,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          # 매일 갱신 데이터를 Supabase(ow_agent)에 저장 (미설정 시 로컬 파일 폴백)
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
       - name: Generate pages (SEO/정적 콘텐츠/sitemap)
         run: uv run python scripts/generate_pages.py

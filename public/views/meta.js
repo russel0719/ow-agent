@@ -5,7 +5,7 @@
  * - 티어별 카드 그리드 / 테이블 뷰 전환
  * - 딥링크: #meta?rank=그랜드마스터&hero=tracer
  */
-import { loadJSON } from '../app.js';
+import { loadJSON, loadHistory, loadMapHistory } from '../app.js';
 
 const RANKS = ['전체', '브론즈', '실버', '골드', '플래티넘', '다이아몬드', '마스터', '그랜드마스터', '챔피언'];
 const ROLES = ['전체', '탱커', '딜러', '지원가'];
@@ -161,6 +161,33 @@ let cachedMapHistory = null;
 let cachedPatches = null;
 let cachedMaps = null;
 
+// ── 히스토리 지연 로드 ────────────────────────────────────────────────────────
+// meta_history/map_meta_history 는 Supabase에서 필요한 랭크/맵만 조회한다.
+// cachedHistory/cachedMapHistory 는 키별로 채워지는 캐시 — 동기 렌더 전에 ensure.
+const _historyRank = r => (r === '챔피언' ? '그랜드마스터' : r);
+
+async function ensureHistory(rank) {
+  const hr = _historyRank(rank);
+  cachedHistory ??= {};
+  if (hr in cachedHistory) return;
+  try {
+    cachedHistory[hr] = await loadHistory(hr);
+  } catch {
+    cachedHistory[hr] = {};
+  }
+}
+
+async function ensureMapHistory(mapId) {
+  if (!mapId) return;
+  cachedMapHistory ??= {};
+  if (mapId in cachedMapHistory) return;
+  try {
+    cachedMapHistory[mapId] = await loadMapHistory(mapId);
+  } catch {
+    cachedMapHistory[mapId] = {};
+  }
+}
+
 // ── 진입점 ────────────────────────────────────────────────────────────────────
 
 export async function renderMeta(container, params) {
@@ -170,16 +197,17 @@ export async function renderMeta(container, params) {
     if (rank && RANKS.includes(rank)) currentRank = rank;
   }
 
-  [cachedMeta, cachedHistory, cachedMapMeta, cachedMapHistory, cachedPatches, cachedMaps] =
-    await Promise.all([
-      loadJSON('meta'),
-      loadJSON('meta_history').catch(() => null),
-      loadJSON('map_meta').catch(() => null),
-      loadJSON('map_meta_history').catch(() => null),
-      loadJSON('patch').catch(() => null),
-      loadJSON('maps').catch(() => null),
-    ]);
+  [cachedMeta, cachedMapMeta, cachedPatches, cachedMaps] = await Promise.all([
+    loadJSON('meta'),
+    loadJSON('map_meta').catch(() => null),
+    loadJSON('patch').catch(() => null),
+    loadJSON('maps').catch(() => null),
+  ]);
+  cachedHistory = {};
+  cachedMapHistory = {};
   rebuildMapList(cachedMaps);
+  await ensureHistory(currentRank);
+  if (currentMode === 'map' && currentMap) await ensureMapHistory(currentMap);
 
   container.innerHTML = buildHTML();
   attachEvents(container);
@@ -294,10 +322,12 @@ function buildHTML() {
 function attachEvents(container) {
   // 모드 탭
   container.querySelectorAll('.mode-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
       if (btn.dataset.mode === currentMode) return;
       currentMode = btn.dataset.mode;
       resetSelection(container);
+      if (currentMode === 'map') await ensureMapHistory(currentMap);
+      else await ensureHistory(currentRank);
       container.innerHTML = buildHTML();
       attachEvents(container);
       if (currentMode === 'rank') renderWeeklyChanges(container);
@@ -307,9 +337,10 @@ function attachEvents(container) {
   });
 
   // 랭크 선택
-  container.querySelector('#rank-select')?.addEventListener('change', e => {
+  container.querySelector('#rank-select')?.addEventListener('change', async e => {
     currentRank = e.target.value;
     resetSelection(container);
+    await ensureHistory(currentRank);
     renderWeeklyChanges(container);
     renderChart(container);
     renderCards(container);
@@ -338,12 +369,13 @@ function attachEvents(container) {
   });
 
   // 맵 선택
-  container.querySelector('#map-btn-grid')?.addEventListener('click', e => {
+  container.querySelector('#map-btn-grid')?.addEventListener('click', async e => {
     const btn = e.target.closest('.map-btn');
     if (!btn || btn.disabled) return;
     currentMap = btn.dataset.mapId;
     resetSelection(container);
     container.querySelectorAll('.map-btn').forEach(b => b.classList.toggle('active', b.dataset.mapId === currentMap));
+    await ensureMapHistory(currentMap);
     renderChart(container);
     renderCards(container);
   });

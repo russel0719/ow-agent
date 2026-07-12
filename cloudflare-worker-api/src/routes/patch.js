@@ -1,7 +1,7 @@
 import { getDataset } from '../lib/github.js';
 import { ok, notFound, badRequest } from '../lib/http.js';
 
-export async function handlePatchList(request, params, query, ctx) {
+export async function handlePatchList(request, params, query, ctx, env) {
   const limitParam = query.get('limit');
   let limit = null;
   if (limitParam != null) {
@@ -11,13 +11,13 @@ export async function handlePatchList(request, params, query, ctx) {
     }
   }
 
-  const patches = await getDataset('patch', ctx);
+  const patches = await getDataset('patch', ctx, env);
   const list = limit ? patches.slice(0, limit) : patches;
   return ok(list, { count: list.length });
 }
 
-export async function handlePatchLatest(request, params, query, ctx) {
-  const patches = await getDataset('patch', ctx);
+export async function handlePatchLatest(request, params, query, ctx, env) {
+  const patches = await getDataset('patch', ctx, env);
   if (patches.length === 0) {
     return notFound('patch_not_found', '패치노트 데이터가 없습니다.');
   }

@@ -1,8 +1,8 @@
 import { getDataset } from '../lib/github.js';
 import { ok } from '../lib/http.js';
 
-export async function handleHealth(request, params, query, ctx) {
-  const lastUpdated = await getDataset('last_updated', ctx);
+export async function handleHealth(request, params, query, ctx, env) {
+  const lastUpdated = await getDataset('last_updated', ctx, env);
   return ok({
     status: 'ok',
     worker: 'ow-agent-api',

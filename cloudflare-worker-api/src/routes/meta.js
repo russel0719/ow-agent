@@ -2,7 +2,7 @@ import { getDataset } from '../lib/github.js';
 import { ok, notFound, badRequest } from '../lib/http.js';
 import { resolveRank, isValidRole } from '../lib/validate.js';
 
-export async function handleMetaList(request, params, query, ctx) {
+export async function handleMetaList(request, params, query, ctx, env) {
   const rank = resolveRank(query.get('rank'));
   if (rank === null) {
     return notFound('rank_not_found', `rank '${query.get('rank')}'를 찾을 수 없습니다.`);
@@ -12,7 +12,7 @@ export async function handleMetaList(request, params, query, ctx) {
     return badRequest('invalid_role', `role은 tank/damage/support 중 하나여야 합니다: '${role}'`);
   }
 
-  const meta = await getDataset('meta', ctx);
+  const meta = await getDataset('meta', ctx, env);
   const rows = meta[rank];
   if (!rows) {
     return notFound('rank_not_found', `rank '${rank}'를 찾을 수 없습니다.`);
@@ -22,13 +22,13 @@ export async function handleMetaList(request, params, query, ctx) {
   return ok(filtered, { rank, role: role ?? null, count: filtered.length });
 }
 
-export async function handleMetaByHero(request, params, query, ctx) {
+export async function handleMetaByHero(request, params, query, ctx, env) {
   const rank = resolveRank(query.get('rank'));
   if (rank === null) {
     return notFound('rank_not_found', `rank '${query.get('rank')}'를 찾을 수 없습니다.`);
   }
 
-  const meta = await getDataset('meta', ctx);
+  const meta = await getDataset('meta', ctx, env);
   const rows = meta[rank];
   if (!rows) {
     return notFound('rank_not_found', `rank '${rank}'를 찾을 수 없습니다.`);

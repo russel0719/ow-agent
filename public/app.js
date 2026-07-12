@@ -3,23 +3,87 @@
  * Hash 기반 라우팅: #home | #meta | #analysis | #divergence | #stadium | #patch
  * 딥링크 지원: #meta?rank=그랜드마스터&hero=tracer
  */
-import { renderHome } from './views/home.js?v=2';
-import { renderMeta } from './views/meta.js?v=7';
+import { renderHome } from './views/home.js?v=3';
+import { renderMeta } from './views/meta.js?v=8';
 import { renderAnalysis } from './views/analysis.js?v=1';
 import { renderDivergence } from './views/divergence.js?v=1';
 import { renderStadium } from './views/stadium.js?v=5';
 import { renderPatch } from './views/patch.js?v=4';
 
-// ── 데이터 캐시 ───────────────────────────────────────────────────────────────
+// ── 데이터 소스 ───────────────────────────────────────────────────────────────
+// 매일 갱신 데이터는 Supabase(ow_agent)에서 직접 읽는다. window.SUPABASE_* 는
+// generate_pages.py 가 index.html <head> 에 주입 (data/site_config.json 값).
+// 정적 lookup(heroes/maps)과 Supabase 미설정 과도기에는 로컬 ./data/*.json 폴백.
 const cache = {};
 const BASE = import.meta.url.replace('app.js', '') + 'data/';
 
+const SB_URL = (window.SUPABASE_URL || '').replace(/\/$/, '');
+const SB_KEY = window.SUPABASE_ANON_KEY || '';
+const SB_ENABLED = !!(SB_URL && SB_KEY);
+
+// Supabase datasets 테이블(blob)에서 읽는 이름. 그 외는 repo(./data).
+const SUPABASE_DATASETS = new Set(['meta', 'map_meta', 'stadium', 'patch', 'last_updated']);
+
+function sbHeaders() {
+  return { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}`, 'Accept-Profile': 'ow_agent' };
+}
+
+async function fetchLocal(name) {
+  const res = await fetch(`${BASE}${name}.json?v=${Date.now()}`);
+  if (!res.ok) throw new Error(`${name}.json 로드 실패: ${res.status}`);
+  return res.json();
+}
+
+async function fetchDataset(name) {
+  const url = `${SB_URL}/rest/v1/datasets?name=eq.${encodeURIComponent(name)}&select=data`;
+  const res = await fetch(url, { headers: sbHeaders() });
+  if (!res.ok) throw new Error(`${name} 로드 실패: ${res.status}`);
+  const rows = await res.json();
+  if (!rows.length) throw new Error(`${name} 데이터 없음`);
+  return rows[0].data;
+}
+
 export async function loadJSON(name) {
   if (cache[name]) return cache[name];
-  const res = await fetch(BASE + name + '.json?v=' + Date.now());
-  if (!res.ok) throw new Error(`${name}.json 로드 실패: ${res.status}`);
-  cache[name] = await res.json();
+  const useSupabase = SB_ENABLED && SUPABASE_DATASETS.has(name);
+  cache[name] = await (useSupabase ? fetchDataset(name) : fetchLocal(name));
   return cache[name];
+}
+
+// ── 정규화 히스토리 ───────────────────────────────────────────────────────────
+// 필요한 랭크/맵만 조회해 egress 최소화. 키별 캐시. 반환 형태는 {date: 배열} —
+// 기존 meta_history[rank] / map_meta_history[mapId] 와 동일해 소비부 변경 최소.
+const _historyCache = {};
+const _mapHistoryCache = {};
+
+async function _loadNormalizedHistory(table, filterCol, key, valueCol, cacheObj, fallbackName) {
+  if (key in cacheObj) return cacheObj[key];
+  let byDate = {};
+  if (SB_ENABLED) {
+    const url = `${SB_URL}/rest/v1/${table}?${filterCol}=eq.${encodeURIComponent(key)}`
+      + `&select=snapshot_date,${valueCol}&order=snapshot_date`;
+    const res = await fetch(url, { headers: sbHeaders() });
+    if (!res.ok) throw new Error(`${table} 로드 실패: ${res.status}`);
+    for (const r of await res.json()) byDate[r.snapshot_date] = r[valueCol];
+  } else {
+    // 폴백: 로컬 전체 blob에서 해당 키 슬라이스
+    const all = await loadJSON(fallbackName).catch(() => ({}));
+    byDate = all?.[key] ?? {};
+  }
+  cacheObj[key] = byDate;
+  return byDate;
+}
+
+export function loadHistory(rank) {
+  return _loadNormalizedHistory(
+    'meta_history', 'rank', rank, 'heroes', _historyCache, 'meta_history'
+  );
+}
+
+export function loadMapHistory(mapId) {
+  return _loadNormalizedHistory(
+    'map_meta_history', 'map_id', mapId, 'entries', _mapHistoryCache, 'map_meta_history'
+  );
 }
 
 // meta.json에서 hero_id → portrait_url 인덱스 빌드 (stadium/patch 뷰에서 사용)

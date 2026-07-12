@@ -3,7 +3,7 @@
  * - 이번 주 상승세/하락세 영웅 TOP3
  * - 픽률 vs 승률 버블 차트 (메타 맵)
  */
-import { loadJSON, getPortraitIndex } from '../app.js';
+import { loadJSON, loadHistory, getPortraitIndex } from '../app.js';
 
 const ROLE_COLOR = {
   tank:    '#60a5fa',
@@ -383,13 +383,11 @@ export async function renderHome(container) {
     </div>`;
 
   try {
-    const [history, patch, portraitIndex] = await Promise.all([
-      loadJSON('meta_history'),
+    const [allHistory, patch, portraitIndex] = await Promise.all([
+      loadHistory('전체').catch(() => ({})),
       loadJSON('patch').catch(() => null),
       getPortraitIndex(),
     ]);
-
-    const allHistory = history?.['전체'] ?? {};
     const heroes = calcWeeklyDeltas(allHistory);
 
     if (!heroes.length) {

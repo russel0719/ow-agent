@@ -22,3 +22,17 @@ data/cache/
 cloudflare-worker/.wrangler/
 cloudflare-worker-api/node_modules/
 cloudflare-worker-api/.wrangler/
+
+# Supabase(ow_agent)에서 관리하는 매일 갱신 데이터 (CI 로컬 산출물 — 커밋 안 함).
+# heroes.json·maps.json 은 repo 유지(추적). 활성화 시 아래 파일은 git rm --cached 로 추적 해제.
+public/data/meta.json
+public/data/meta_history.json
+public/data/map_meta.json
+public/data/map_meta_history.json
+public/data/stadium.json
+public/data/patch.json
+public/data/last_updated.json
+
+# Supabase CLI 로컬 상태
+supabase/.temp/
+supabase/.branches/

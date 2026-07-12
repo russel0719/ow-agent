@@ -21,7 +21,7 @@ import json
 import logging
 import shutil
 import sys
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 # 프로젝트 루트를 sys.path에 추가 (bot.utils.* import 가능하도록)
@@ -44,6 +44,7 @@ from bot.utils.scrapers.meta_scraper import (  # noqa: E402
 )
 from bot.utils.scrapers.patch_scraper import fetch_recent_patches  # noqa: E402
 from bot.utils.scrapers.stadium_scraper import fetch_all_builds  # noqa: E402
+from bot.utils.supabase_sync import SupabaseStore  # noqa: E402
 
 logging.basicConfig(
     level=logging.INFO,
@@ -73,6 +74,10 @@ def _hero_id_to_en_name(hero_id: str) -> str:
 
 DOCS_DATA = ROOT / "public" / "data"
 DOCS_DATA.mkdir(parents=True, exist_ok=True)
+
+# 매일 갱신 데이터의 원본 저장소 (Supabase ow_agent 스키마).
+# 자격증명 없으면 비활성 → 로컬 파일 폴백(아래 _prev_dataset).
+STORE = SupabaseStore()
 
 HISTORY_RANKS = {  # 히스토리 저장 대상 랭크 (챔피언은 그랜드마스터와 동일하여 제외)
     "전체",
@@ -141,14 +146,26 @@ def _load(path: Path) -> object:
         return json.load(f)
 
 
+def _prev_dataset(name: str) -> object:
+    """이전 스냅샷 로드 — Supabase 우선, 없으면 로컬 파일 폴백.
+
+    portrait_url 보존·번역 캐시 재사용 등 '이전 실행 결과'가 필요한 지점에서 사용.
+    커밋을 중단해도(로컬 파일 미존재) Supabase에서 이전 상태를 복원한다.
+    """
+    data = STORE.get_dataset(name)
+    if data is not None:
+        return data
+    return _load(DOCS_DATA / f"{name}.json")
+
+
 # ── 메타 통계 ────────────────────────────────────────────────────────────────
 
 
 async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
     """전 랭크 메타 통계 스크래핑 → meta.json 생성."""
-    # 기존 meta.json에서 portrait_url 보존 맵 구축 — 업데이트 중 덮어쓰기 방지
+    # 기존 meta에서 portrait_url 보존 맵 구축 — 업데이트 중 덮어쓰기 방지
     saved_portrait_map: dict[str, str] = {}
-    existing_meta = _load(DOCS_DATA / "meta.json")
+    existing_meta = _prev_dataset("meta")
     if isinstance(existing_meta, dict):
         for heroes in existing_meta.values():
             for h in heroes if isinstance(heroes, list) else []:
@@ -239,33 +256,39 @@ async def _generate_meta(session: aiohttp.ClientSession) -> dict | None:
         all_ranks["챔피언"] = all_ranks["그랜드마스터"]
 
     _save(DOCS_DATA / "meta.json", all_ranks)
+    STORE.put_dataset("meta", all_ranks)
     return all_ranks
 
 
 def _get_last_known_ban_rates(rank_ko: str) -> tuple[str, dict[str, float]]:
-    """meta_history.json에서 가장 최근 ban_rate > 0 데이터를 반환. 없으면 ("", {})."""
-    history: dict = _load(DOCS_DATA / "meta_history.json")  # type: ignore
-    for date in sorted(history.get(rank_ko, {}).keys(), reverse=True):
-        heroes = history[rank_ko][date]
+    """가장 최근 ban_rate > 0 히스토리 스냅샷 반환 — Supabase 우선, 없으면 로컬 파일.
+
+    없으면 ("", {}).
+    """
+    by_date = STORE.get_meta_history(rank_ko).get(rank_ko)
+    if not by_date:
+        history: dict = _load(DOCS_DATA / "meta_history.json")  # type: ignore
+        by_date = history.get(rank_ko, {})
+    for date in sorted(by_date.keys(), reverse=True):
+        heroes = by_date[date]
         if any(h.get("ban_rate", 0) > 0 for h in heroes):
             return date, {h["hero_id"]: h["ban_rate"] for h in heroes}
     return "", {}
 
 
 def _update_history(all_ranks: dict) -> None:
-    """meta_history.json 에 오늘 날짜 데이터 추가 (90일 rolling)."""
+    """meta_history 오늘 스냅샷 추가 (90일 rolling) — Supabase upsert + 로컬 파일 폴백."""
     today = datetime.now(UTC).strftime("%Y-%m-%d")
     history_path = DOCS_DATA / "meta_history.json"
     history: dict[str, dict] = _load(history_path)  # type: ignore
 
+    rows: list[dict] = []
     for rank_ko in HISTORY_RANKS:
         if rank_ko not in all_ranks:
             continue
-        if rank_ko not in history:
-            history[rank_ko] = {}
 
-        # 오늘 스냅샷 저장 (점수·픽률·승률·밴률·존재감·티어만 저장해 크기 절약)
-        history[rank_ko][today] = [
+        # 오늘 스냅샷 (점수·픽률·승률·밴률·존재감·티어만 저장해 크기 절약)
+        snapshot = [
             {
                 "hero_id": h["hero_id"],
                 "hero_name": h["hero_name"],
@@ -278,14 +301,22 @@ def _update_history(all_ranks: dict) -> None:
             }
             for h in all_ranks[rank_ko]
         ]
+        rows.append({"rank": rank_ko, "snapshot_date": today, "heroes": snapshot})
 
-        # 최근 HISTORY_DAYS 일치만 유지
+        # 로컬 파일 롤링 (dev 폴백용, gitignore 대상 — 최근 HISTORY_DAYS 유지)
+        history.setdefault(rank_ko, {})[today] = snapshot
         sorted_dates = sorted(history[rank_ko].keys())
         if len(sorted_dates) > HISTORY_DAYS:
             for old_date in sorted_dates[: len(sorted_dates) - HISTORY_DAYS]:
                 del history[rank_ko][old_date]
 
     _save(history_path, history)
+
+    # Supabase: 오늘 행 upsert + 보존기간 초과 행 삭제
+    if STORE.upsert_meta_history(rows):
+        cutoff = (datetime.now(UTC) - timedelta(days=HISTORY_DAYS)).strftime("%Y-%m-%d")
+        STORE.delete_history_before("meta_history", cutoff)
+        logger.info(f"  → Supabase meta_history upsert ({len(rows)}랭크, cutoff {cutoff})")
 
 
 async def _generate_map_meta(session: aiohttp.ClientSession) -> bool:
@@ -324,6 +355,7 @@ async def _generate_map_meta(session: aiohttp.ClientSession) -> bool:
 
     if result:
         _save(DOCS_DATA / "map_meta.json", result)
+        STORE.put_dataset("map_meta", result)
         logger.info(f"  맵별 메타 완료: {ok}/{len(map_ids)}개 맵")
         _update_map_history(result)
         return True
@@ -332,23 +364,30 @@ async def _generate_map_meta(session: aiohttp.ClientSession) -> bool:
 
 
 def _update_map_history(map_result: dict) -> None:
-    """map_meta_history.json에 오늘 날짜 맵별 스냅샷 추가 (14일 rolling)."""
+    """map_meta_history 오늘 스냅샷 추가 (14일 rolling) — Supabase upsert + 로컬 파일 폴백."""
     today = datetime.now(UTC).strftime("%Y-%m-%d")
     history_path = DOCS_DATA / "map_meta_history.json"
     history: dict = _load(history_path)  # type: ignore
 
+    rows: list[dict] = []
     for map_id, heroes in map_result.items():
-        if map_id not in history:
-            history[map_id] = {}
-        history[map_id][today] = [
+        entries = [
             {"hero_id": h["hero_id"], "meta_score": h["meta_score"]} for h in heroes
         ]
+        rows.append({"map_id": map_id, "snapshot_date": today, "entries": entries})
+
+        history.setdefault(map_id, {})[today] = entries
         sorted_dates = sorted(history[map_id].keys())
         if len(sorted_dates) > MAP_HISTORY_DAYS:
             for old_date in sorted_dates[: len(sorted_dates) - MAP_HISTORY_DAYS]:
                 del history[map_id][old_date]
 
     _save(history_path, history)
+
+    if STORE.upsert_map_history(rows):
+        cutoff = (datetime.now(UTC) - timedelta(days=MAP_HISTORY_DAYS)).strftime("%Y-%m-%d")
+        STORE.delete_history_before("map_meta_history", cutoff)
+        logger.info(f"  → Supabase map_meta_history upsert ({len(rows)}맵, cutoff {cutoff})")
 
 
 def _hero_to_dict(h) -> dict:
@@ -399,6 +438,7 @@ async def _generate_stadium(session: aiohttp.ClientSession, force: bool = False)
 
         by_hero = _translate_stadium_data(by_hero, force=force)
         _save(DOCS_DATA / "stadium.json", by_hero)
+        STORE.put_dataset("stadium", by_hero)
         logger.info(f"  스타디움 완료: {len(builds)}개 빌드, {len(by_hero)}개 영웅")
         return True
     except Exception as e:
@@ -419,8 +459,8 @@ async def _generate_patch(
         if not patches:
             raise ValueError("패치 데이터 없음")
 
-        # 기존 patch.json 로드 (리스트 or 레거시 단일 객체)
-        existing_raw = _load(DOCS_DATA / "patch.json")
+        # 기존 patch 로드 (리스트 or 레거시 단일 객체) — Supabase 우선
+        existing_raw = _prev_dataset("patch")
         existing_list: list[dict] = existing_raw if isinstance(existing_raw, list) else []
         existing_by_date = {p["date"]: p for p in existing_list if isinstance(p, dict)}
 
@@ -457,6 +497,7 @@ async def _generate_patch(
             result.append(data)
 
         _save(DOCS_DATA / "patch.json", result)
+        STORE.put_dataset("patch", result)
         logger.info(f"  패치 완료: {len(result)}개 ({', '.join(p['date'] for p in result)})")
         return True
     except Exception as e:
@@ -573,7 +614,7 @@ def _translate_stadium_data(by_hero: dict, force: bool = False) -> dict:
     prev: dict[str, dict] = {}
     item_prev: dict[str, dict] = {}
     if not force:
-        existing = _load(DOCS_DATA / "stadium.json")
+        existing = _prev_dataset("stadium")
         if isinstance(existing, dict):
             for builds in existing.values():
                 for b in builds:
@@ -766,15 +807,14 @@ async def main() -> None:
     # 4. 영웅 DB 복사
     _copy_heroes()
 
-    # 5. last_updated.json
-    _save(
-        DOCS_DATA / "last_updated.json",
-        {
-            "timestamp": datetime.now(UTC).isoformat(),
-            "sources": sources,
-            "has_ban_rate": has_ban_rate,
-        },
-    )
+    # 5. last_updated
+    last_updated = {
+        "timestamp": datetime.now(UTC).isoformat(),
+        "sources": sources,
+        "has_ban_rate": has_ban_rate,
+    }
+    _save(DOCS_DATA / "last_updated.json", last_updated)
+    STORE.put_dataset("last_updated", last_updated)
 
     logger.info(f"=== 완료: {sources} ===")
 

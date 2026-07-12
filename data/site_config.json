@@ -1,6 +1,8 @@
 {
   "site_url": "https://russel0719.github.io/ow-agent",
   "custom_domain": "",
+  "supabase_url": "https://ffvtssnvwqdhlyiwrofv.supabase.co",
+  "supabase_anon_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZmdnRzc252d3FkaGx5aXdyb2Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1ODQ2ODYsImV4cCI6MjA5MzE2MDY4Nn0.f_j9iMzFZPzL2I-KxsgeIpZu7zBQbf1ATPp5KBeRGEQ",
   "ga4_id": "",
   "google_site_verification": "",
   "adsense_pub_id": "",

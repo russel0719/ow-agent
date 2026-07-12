@@ -10,10 +10,11 @@ scripts/generate_data.py
   ├── Blizzard 크롤링 (meta_scraper.py)
   ├── stadiumbuilds.io 크롤링 (stadium_scraper.py)
   ├── Blizzard 패치노트 크롤링 (patch_scraper.py)
-  └── NVIDIA API 번역/요약 (translator.py + glossary.py)
+  └── Cerebras API 번역/요약 (translator.py + glossary.py)
         │
         ▼
-public/data/*.json  ──→  git commit & push
+Supabase(ow_agent) upsert  ──→  브라우저·공개 API가 직접 읽음
+  (heroes.json·maps.json 등 정적 lookup + 생성 페이지만 git commit & push)
         │
         ▼
 GitHub Pages (Actions 기반 배포)
@@ -38,9 +39,9 @@ Cloudflare Worker (worker.js)
         ▼
 [브라우저: 남은 횟수 UI 업데이트]
 
-GitHub Pages (public/data/*.json)
+Supabase(ow_agent) + GitHub Pages(heroes/maps)
         │
-        └──→ Cloudflare Worker (ow-agent-api, 챗봇 워커와 별개)
+        └──→ Cloudflare Worker (ow-agent-api)
                 ├── Cache API (원본 + 응답, 5분)
                 └── /v1/... REST 엔드포인트
                         │

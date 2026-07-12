@@ -25,15 +25,20 @@ GitHub Actions가 **매일 오후 3시 KST (06:00 UTC)** 에 자동으로 실행
 cron: '0 6 * * *'   # 매일 15:00 KST
 ```
 
+매일 갱신되는 데이터(meta·history·map·stadium·patch·last_updated)는 **Supabase(`ow_agent` 스키마)**에
+저장되고, 브라우저·공개 API가 Supabase에서 직접 읽는다. `heroes.json`·`maps.json` 같은 정적 lookup만 repo에 커밋한다.
+
 실행 순서:
-1. Blizzard 공식 통계 (`overwatch.blizzard.com/ko-kr/rates/`) 크롤링 → `public/data/meta.json`
-2. 90일 히스토리 롤링 갱신 → `public/data/meta_history.json`
+1. Blizzard 공식 통계 (`overwatch.blizzard.com/ko-kr/rates/`) 크롤링 → Supabase `datasets['meta']`
+2. 90일 히스토리 롤링 갱신 → Supabase `meta_history` (랭크×날짜)
 3. **신규 영웅 자동 감지** → `data/heroes.json` 자동 추가
-4. stadiumbuilds.io 빌드 크롤링 + Cerebras API (gpt-oss-120b) 한국어 번역/요약 → `public/data/stadium.json`
-5. Blizzard 패치 노트 크롤링 + Cerebras API (gpt-oss-120b) 한국어 번역 → `public/data/patch.json`
-6. `data/heroes.json` → `public/data/heroes.json` 복사
+4. stadiumbuilds.io 빌드 크롤링 + Cerebras API (gpt-oss-120b) 번역/요약 → Supabase `datasets['stadium']`
+5. Blizzard 패치 노트 크롤링 + Cerebras API (gpt-oss-120b) 번역 → Supabase `datasets['patch']`
+6. `data/heroes.json` → `public/data/heroes.json` 복사 (repo 유지)
 7. `scripts/generate_pages.py` 실행 → SEO 메타·정적 콘텐츠·`meta.html`·`sitemap.xml` 갱신
-8. `public/` 커밋 & push → GitHub Pages 자동 배포
+8. `public/`(생성 페이지·heroes/maps) 커밋 & push → GitHub Pages 자동 배포
+
+> Supabase 자격증명(`SUPABASE_URL`·`SUPABASE_SERVICE_ROLE_KEY`)이 없으면 로컬 `public/data/*.json`으로 폴백한다.
 
 수동 실행: GitHub Actions 탭 → **Update OW Data** → **Run workflow**
 

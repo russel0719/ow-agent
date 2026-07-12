@@ -26,7 +26,7 @@ router.get('/v1/maps', handleMapList);
 router.get('/v1/maps/:mapId/history', handleMapHistory);
 router.get('/v1/maps/:mapId', handleMapDetail);
 
-async function route(request, ctx) {
+async function route(request, env, ctx) {
   const url = new URL(request.url);
   const match = router.match(url.pathname);
   if (!match) {
@@ -34,7 +34,7 @@ async function route(request, ctx) {
   }
 
   try {
-    return await match.handler(request, match.params, url.searchParams, ctx);
+    return await match.handler(request, match.params, url.searchParams, ctx, env);
   } catch (err) {
     if (err instanceof UpstreamError) {
       return upstreamError(err.message);
@@ -52,7 +52,7 @@ export default {
     const cached = await cache.match(request);
     if (cached) return cached;
 
-    const response = await route(request, ctx);
+    const response = await route(request, env, ctx);
     if (response.status === 200) {
       const toCache = response.clone();
       toCache.headers.set('Cache-Control', 'public, max-age=300');

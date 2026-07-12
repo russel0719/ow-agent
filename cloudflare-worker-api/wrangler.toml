@@ -5,3 +5,10 @@ account_id = "b88ea24642e8292dc752cac1675ea02f"
 
 [observability]
 enabled = true
+
+[vars]
+# 매일 갱신 데이터 소스 (Supabase ow_agent 스키마).
+# anon 키는 공개 키(RLS 읽기 전용)라 vars로 커밋해도 안전하며, GitHub Actions
+# 자동 배포(deploy-api-worker.yml)가 그대로 반영한다 (시크릿은 자동 배포에 안 실림).
+SUPABASE_URL = "https://ffvtssnvwqdhlyiwrofv.supabase.co"
+SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZmdnRzc252d3FkaGx5aXdyb2Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1ODQ2ODYsImV4cCI6MjA5MzE2MDY4Nn0.f_j9iMzFZPzL2I-KxsgeIpZu7zBQbf1ATPp5KBeRGEQ"

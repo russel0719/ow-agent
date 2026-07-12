@@ -3,14 +3,19 @@
 ## 전체 실행 순서 (`scripts/generate_data.py`)
 
 ```
-1. meta 크롤링      → public/data/meta.json, meta_history.json
-2. map_meta 크롤링  → public/data/map_meta.json, map_meta_history.json
-3. 영웅 DB 동기화   → data/heroes.json (신규 영웅 자동 추가)
-4. stadium 크롤링   → public/data/stadium.json (번역·요약 포함)
-5. patch 크롤링     → public/data/patch.json (번역 + translation_source 태깅)
-6. heroes.json 복사 → public/data/heroes.json
-7. last_updated.json 저장
+1. meta 크롤링      → Supabase datasets['meta'] + meta_history (랭크×날짜)
+2. map_meta 크롤링  → Supabase datasets['map_meta'] + map_meta_history (맵×날짜)
+3. 영웅 DB 동기화   → data/heroes.json (신규 영웅 자동 추가, repo 유지)
+4. stadium 크롤링   → Supabase datasets['stadium'] (번역·요약 포함)
+5. patch 크롤링     → Supabase datasets['patch'] (번역 + translation_source 태깅)
+6. heroes.json 복사 → public/data/heroes.json (repo 유지)
+7. last_updated     → Supabase datasets['last_updated']
 ```
+
+> 매일 갱신 데이터는 Supabase(`ow_agent`)에 upsert된다 (`bot/utils/supabase_sync.py`).
+> 로컬 `public/data/*.json`도 함께 쓰지만 gitignore 대상(CI 산출물·generate_pages 입력·dev 폴백)이다.
+> Supabase 자격증명이 없으면 로컬 파일만 쓰는 기존 동작으로 폴백한다. 이전 상태(롤링 히스토리·
+> 번역 캐시·portrait)는 Supabase에서 읽어 유지한다.
 
 수동 실행:
 ```bash

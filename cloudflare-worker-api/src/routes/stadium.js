@@ -1,8 +1,8 @@
 import { getDataset } from '../lib/github.js';
 import { ok, notFound, badRequest } from '../lib/http.js';
 
-async function buildHeroIdIndex(ctx) {
-  const heroes = await getDataset('heroes', ctx);
+async function buildHeroIdIndex(ctx, env) {
+  const heroes = await getDataset('heroes', ctx, env);
   const nameToId = {};
   for (const [hero_id, h] of Object.entries(heroes.heroes)) {
     nameToId[h.name] = hero_id;
@@ -10,10 +10,10 @@ async function buildHeroIdIndex(ctx) {
   return nameToId;
 }
 
-export async function handleStadiumSummary(request, params, query, ctx) {
+export async function handleStadiumSummary(request, params, query, ctx, env) {
   const [stadium, nameToId] = await Promise.all([
-    getDataset('stadium', ctx),
-    buildHeroIdIndex(ctx),
+    getDataset('stadium', ctx, env),
+    buildHeroIdIndex(ctx, env),
   ]);
 
   const summary = Object.entries(stadium).map(([displayName, builds]) => ({
@@ -25,7 +25,7 @@ export async function handleStadiumSummary(request, params, query, ctx) {
   return ok(summary, { count: summary.length });
 }
 
-export async function handleStadiumByHero(request, params, query, ctx) {
+export async function handleStadiumByHero(request, params, query, ctx, env) {
   const limitParam = query.get('limit');
   let limit = null;
   if (limitParam != null) {
@@ -36,8 +36,8 @@ export async function handleStadiumByHero(request, params, query, ctx) {
   }
 
   const [stadium, nameToId] = await Promise.all([
-    getDataset('stadium', ctx),
-    buildHeroIdIndex(ctx),
+    getDataset('stadium', ctx, env),
+    buildHeroIdIndex(ctx, env),
   ]);
 
   const displayName = Object.keys(nameToId).find((name) => nameToId[name] === params.heroId);
