@@ -179,7 +179,7 @@
       "code": "0X2XW",
       "description": "팀 전체에 향상된 나노 강화제를 제공해 아나의 지원을 극대화합니다. 전투 개시와 팀 전투 지속력을 높이는 전략입니다.",
       "playstyle": "능력 파워",
-      "upvotes": 18,
+      "upvotes": 19,
       "stats": {
         "LIFE": 421,
         "Shield": 25,
@@ -338,7 +338,7 @@
       "items": []
     },
     {
-      "name": "MiniBob",
+      "name": "미니Bob",
       "code": "RZD3V",
       "description": "",
       "playstyle": "능력 파워",
@@ -548,7 +548,7 @@
       "code": "7UT4V",
       "description": "기술 위력과 Scavenged Steel를 활용해 라운드당 궁극기 획득을 극대화합니다. 첫 전투가 끝나기 전에 2~3개의 궁극기를 모을 수 있습니다.",
       "playstyle": "능력 파워",
-      "upvotes": 3,
+      "upvotes": 4,
       "stats": {
         "LIFE": 297,
         "Armor": 150,
@@ -952,7 +952,7 @@
       "code": "DB97V",
       "description": "GODFIST V3 시즌 2 - 고급 하이브리드 둠피스트 빌드로, 높은 버스트 데미지 콤보와 생존 가능성을 유지하며, 기본 공격과 기술 데미지를 모두 강화합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 66,
+      "upvotes": 67,
       "stats": {
         "LIFE": 938,
         "Armor": 110,
@@ -1282,7 +1282,7 @@
       "code": "B7746",
       "description": "공격 속도와 탄약을 극대화해 로켓 펀치로 적을 벽에 밀어넣고 좌클릭 지속 공격으로 빠르게 처치한다. 빠른 전투 전개가 핵심이다.",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 6,
+      "upvotes": 7,
       "stats": {
         "LIFE": 779,
         "Armor": 75,
@@ -1529,7 +1529,7 @@
       "code": "ZSNZH",
       "description": "S3 시즌을 위해 업데이트 중입니다. 불꽃 부스터와 근거리 자기 지속 빌드입니다.",
       "playstyle": "혼합 파워 · 고체력",
-      "upvotes": 312,
+      "upvotes": 313,
       "stats": {
         "LIFE": 701,
         "Armor": 425,
@@ -2465,7 +2465,7 @@
       "code": "32QFG",
       "description": "",
       "playstyle": "혼합 파워 · 생명력 흡수",
-      "upvotes": 2,
+      "upvotes": 3,
       "stats": {
         "LIFE": 293,
         "Armor": 150,
@@ -2788,7 +2788,7 @@
       "code": "ZGAS3",
       "description": "공격 속도와 함께 사용하면 치유가 원래 치유하는 사람 근처의 근접한 동맹군에게 반사됩니다. ",
       "playstyle": "무기 파워",
-      "upvotes": 105,
+      "upvotes": 106,
       "stats": {
         "LIFE": 445,
         "Shield": 25,
@@ -2818,7 +2818,7 @@
       "code": "G7CCE",
       "description": "전 시즌부터 꾸준히 플레이해 DPS 레전드와 지원 올스타 등급을 달성했으며, Jetpack Cat을 중심으로 한 빌드입니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 28,
+      "upvotes": 31,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -2956,9 +2956,9 @@
       ]
     },
     {
-      "name": "CAT NUKE",
+      "name": "고양이 NUKE",
       "code": "KQC68",
-      "description": "퀵플레이 빌드로 한 라운드에 최대 5번 Catnapper를 사용하고, 승률이 70% 이상입니다.",
+      "description": "Catnapper 스킬을 연속 사용해 라운드당 최대 5번까지 발동시키는 빌드로, 퀵플레이 승률 70% 이상을 기록합니다. 빠른 교전과 지속적인 스킬 활용이 핵심 전략입니다.",
       "playstyle": "재미용 · 능력 파워",
       "upvotes": 0,
       "stats": {
@@ -3544,7 +3544,7 @@
       "code": "J3PFG",
       "description": "탱커 빌드인 Vampire Queen으로, Jetpack Cat 팬이 만든 첫 탱크 스태디움 빌드입니다.",
       "playstyle": "재미용 · 고체력",
-      "upvotes": 2,
+      "upvotes": 3,
       "stats": {
         "LIFE": 803,
         "Max Ammo": 33,
@@ -3622,7 +3622,7 @@
       "code": "NT36C",
       "description": "Junker Queen 최고의 빌드는 상처 지속시간을 최대화해 생존성을 높이고 궁극기 충전을 빠르게 합니다. 두 번째로 중요한 요소는 데미지 출력 향상으로 전투를 주도합니다.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 7,
+      "upvotes": 8,
       "stats": {
         "LIFE": 835,
         "Total LIFE": 835,
@@ -3956,7 +3956,7 @@
       "code": "QCNNP",
       "description": "주노 빌드는 하이퍼 링을 최대한 유지하면서 무기를 빠른 연사 머신건으로 전환합니다. 팀을 지속적으로 가속시키고 이동성을 유지하며 안정적인 데미지를 입힙니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 5,
+      "upvotes": 6,
       "stats": {
         "LIFE": 219,
         "Armor": 50,
@@ -4409,7 +4409,7 @@
       "code": "SEDXV",
       "description": "이 빌드는 솔로 파라나 모이라, 우양 같은 힐링이 불가능한 지원가와 함께 파라를 플레이하는 데 최적인 빌드입니다. 캐시디는 큰 문제지만...",
       "playstyle": "능력 파워",
-      "upvotes": 116,
+      "upvotes": 117,
       "stats": {
         "LIFE": 384,
         "Armor": 100,
@@ -4929,7 +4929,7 @@
       "code": "0HA91",
       "description": "빌드는 재사용 대기시간 단축과 기술 위력을 극대화하여 광역 폭딜을 특화합니다. 주요 스탯은 이동 속도와 재사용 대기시간 단축입니다.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 982,
+      "upvotes": 983,
       "stats": {
         "LIFE": 337,
         "Armor": 100,
@@ -5441,7 +5441,7 @@
       "code": "4RWT9",
       "description": "모이라 기술 위력(AP) 중심 빌드로, 스킬과 궁극기의 피해량을 극대화해 원거리에서 지속적인 데미지를 줍니다. 생존력은 기본 체력에 의존합니다.",
       "playstyle": "능력 파워 · 재사용 단축",
-      "upvotes": 1,
+      "upvotes": 2,
       "stats": {
         "LIFE": 332,
         "Total LIFE": 332,
@@ -5550,6 +5550,37 @@
       "items": []
     },
     {
+      "name": "NUMBANI의 수호자",
+      "code": "2NPJT",
+      "description": "",
+      "playstyle": "재미용 · 고체력",
+      "upvotes": 2,
+      "stats": {
+        "LIFE": 569,
+        "Armor": 400,
+        "Total LIFE": 969,
+        "Attack Speed": 40,
+        "Weapon Power": 20,
+        "Ability Power": 20,
+        "Weapon Lifesteal": 10
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-11T01:40:39.109731+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": [
+        {
+          "name_en": "Three-Tap Tommygun",
+          "effect_en": "10% Ability Power. 10% Attack Speed. After using an ability or Gadget, your next 3 instances of Weapon Damage deals additional damage equal to 5% of the target's current Life over 5s.",
+          "cost": 10500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/ThreeTapTommygunS1MID.png",
+          "name": "3연사 톰미건",
+          "effect": "기술 위력 10%·공격 속도 10%. 능력이나 Gadget을 사용한 후, 다음 3번의 무기 공격력이 5초 동안 대상의 현재 생명력의 5%에 해당하는 추가 피해를 입힙니다."
+        }
+      ]
+    },
+    {
       "name": "기술 위력 Helicopter",
       "code": "1F2XB",
       "description": "올라델 코프터 블레이드 파워를 중심으로 빠른 궁극기 충전과 쿨다운 순환을 목표합니다. 궁극기를 생존 및 쿨다운 리프레시 수단으로 활용합니다.",
@@ -5567,7 +5598,7 @@
       "cost": "$$",
       "created_at": "2026-06-19T21:05:20.702144+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": [
         {
           "name_en": "Oladele-copter Blades",
@@ -5581,7 +5612,7 @@
       ]
     },
     {
-      "name": "Orisa Minigun",
+      "name": "Orisa 미니건",
       "code": "AR2TX",
       "description": "",
       "playstyle": "재미용 · 고체력",
@@ -5599,27 +5630,6 @@
       },
       "cost": "$$$",
       "created_at": "2026-06-17T15:57:16.373014+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "Raid Boss Orisa: Solo Carry Overheat 탱커",
-      "code": "TBD",
-      "description": "오리사 빌드는 혼자 포인트를 잡고 장기전에서도 살아남으며 충분한 데미지를 제공하도록 설계되었습니다. 실드 다이버전스와 핫 로테이트-O를 결합해 과열을 전략적으로 활용합니다.",
-      "playstyle": "메타 · 고체력",
-      "upvotes": 6,
-      "stats": {
-        "LIFE": 507,
-        "Armor": 400,
-        "Total LIFE": 907,
-        "Attack Speed": 30,
-        "Weapon Power": 0,
-        "Ability Power": 15,
-        "Ability Lifesteal": 20
-      },
-      "cost": "$$",
-      "created_at": "2026-05-25T16:23:53.51714+00:00",
       "popular_rank": null,
       "latest_rank": 3,
       "items": []
@@ -5970,7 +5980,7 @@
       "code": "3KXTT",
       "description": "돌격+펀치+소용돌이 연사로 적진을 쓸어버리며 감속 디버프까지 겹쳐 지속 압박을 주는 빌드.",
       "playstyle": "메타 · 고체력",
-      "upvotes": 66,
+      "upvotes": 67,
       "stats": {
         "LIFE": 746,
         "Armor": 100,
@@ -5993,7 +6003,7 @@
       "code": "WW50N",
       "description": "이 빌드는 라마트라가 가장 부족한 이동 속도를 보완하면서 매우 높은 피해 출력을 가능하게 합니다. 네메시스 형태와 강타를 주로 사용하여 적들을 빠르게 격파할 수 있습니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 48,
+      "upvotes": 49,
       "stats": {
         "LIFE": 718,
         "Armor": 100,
@@ -6518,11 +6528,90 @@
       "items": []
     },
     {
+      "name": "Darksteel 콜로서스",
+      "code": "FWW4K",
+      "description": "라인하르트의 자체 회복과 피해 감소를 극대화하고 CC 보호까지 제공해, Orisa·둠피스트·아나 등 상대에게도 견고하게 버틸 수 있게 하는 빌드입니다.",
+      "playstyle": "무기 파워 · 고체력",
+      "upvotes": 0,
+      "stats": {
+        "LIFE": 786,
+        "Armor": 375,
+        "Move Speed": 10,
+        "Total LIFE": 1161,
+        "Melee Damage": 15,
+        "Weapon Power": 15,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 5
+      },
+      "cost": "$$",
+      "created_at": "2026-07-10T14:40:21.874832+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": [
+        {
+          "name_en": "To Me, My Friends!",
+          "effect_en": "While [Barrier Field] is active, allies within 5m are healed equal to 3% of your max Life every 1s.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/reinhardt/ToMeMyFriends.png",
+          "name": "나에게, 내 친구들!",
+          "effect": "[Barrier Field]가 활성화된 동안, 5m 이내의 아군은 매 1초마다 최대 생명력의 3%만큼 회복됩니다."
+        },
+        {
+          "name_en": "Gloomgauntlet",
+          "effect_en": "50 Armor; 15% Melee Damage; Melee Damage grants 10% Move Speed and restores 5% of Max Life over 2s.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/GloomgauntletS1MID.png",
+          "name": "그룸 건틀릿",
+          "effect": "50 방어구; 15% 근접 피해; 근접 피해가 10% 이동 속도를 부여하고 2초에 걸쳐 최대 체력의 5%를 회복합니다."
+        },
+        {
+          "name_en": "Martian Mender",
+          "effect_en": "25 Health; 5% Cooldown Reduction; Restore 3% of your Life every 1s.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/MartianMenderS1MID.png",
+          "name": "화성인 수리공",
+          "effect": "25 체력; 5% 재사용 대기시간 감소; 1초마다 생명력의 3%를 회복합니다."
+        },
+        {
+          "name_en": "Phantasmic Flux",
+          "effect_en": "10% Weapon Power; 10% Ability Power; 15% Weapon Lifesteal; 15% Ability Lifesteal; While at full Life, Lifesteal grants up to 50 Overhealth.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/PhantasmicFluxS1MID.png",
+          "name": "환상 플럭스",
+          "effect": "10% 무기 공격력; 10% 기술 위력; 15% 무기 생명력 흡수; 15% 기술 생명력 흡수; 체력이 가득 찼을 때, 생명력 흡수가 최대 50 초과 회복을 부여합니다."
+        },
+        {
+          "name_en": "Nebula Conduit",
+          "effect_en": "50 Health; 5% Weapon Power; Prevent 15% of incoming damage and instead take that prevented damage over 3s.",
+          "cost": 11000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/NebulaConduitS1MID.png",
+          "name": "성운 전도체",
+          "effect": "50 체력; 5% 무기 공격력; 들어오는 피해의 15%를 방어하고 대신 그 방어된 피해를 3초에 걸쳐 받는다."
+        },
+        {
+          "name_en": "Ogundimu Reduction Field",
+          "effect_en": "50 Armor; When you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times.",
+          "cost": 10500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/OgundimuReductionFieldS1MID.png",
+          "name": "오군디무 감소 필드",
+          "effect": "50 방어구; 피해를 받을 때, 1초 동안 0.5% 피해 감소를 얻으며, 최대 20번 중첩됩니다."
+        }
+      ]
+    },
+    {
       "name": "엔진 45",
       "code": "GVTH8",
       "description": "라인하르트를 돌진 중심 빌드로 전환해 Charge의 파괴력을 크게 강화합니다. 아이템으로 공격력과 이동 속도를 상승시켜 연속 돌진과 전방 압박이 가능하도록 합니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 1,
+      "upvotes": 2,
       "stats": {
         "LIFE": 707,
         "Armor": 225,
@@ -6537,7 +6626,7 @@
       "cost": "$$",
       "created_at": "2026-07-08T05:55:29.094985+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": [
         {
           "name_en": "Iron Drift",
@@ -6821,7 +6910,7 @@
       "code": "8GXKS",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 3,
+      "upvotes": 5,
       "stats": {
         "LIFE": 677,
         "Armor": 50,
@@ -7317,7 +7406,7 @@
       "code": "JNQQR",
       "description": "",
       "playstyle": "무기 파워",
-      "upvotes": 12,
+      "upvotes": 13,
       "stats": {
         "LIFE": 358,
         "Shield": 50,
@@ -7441,6 +7530,26 @@
       "items": []
     },
     {
+      "name": "TTT 날아다니는 솔저가 Stadium에서 완전히 깨짐",
+      "code": "4MHM2",
+      "description": "",
+      "playstyle": "능력 파워 · 고체력",
+      "upvotes": 7,
+      "stats": {
+        "LIFE": 527,
+        "Shield": 55,
+        "Total LIFE": 582,
+        "Attack Speed": 10,
+        "Weapon Power": 15,
+        "Ability Power": 20
+      },
+      "cost": "$$$",
+      "created_at": "2026-07-11T10:43:08.148386+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "PAPACITOGABO 대공",
       "code": "Q4JJM",
       "description": "",
@@ -7459,7 +7568,7 @@
       "cost": "$$$",
       "created_at": "2026-07-10T01:34:55.560445+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -7480,27 +7589,6 @@
       "cost": "$$$",
       "created_at": "2026-07-10T00:20:55.825046+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "Soldier 76 FLYING TTT 탱커 DMG MOBILITY SLOP",
-      "code": "RAF9K",
-      "description": "사전 고민 없이 빠른 이동과 사격에 집중하는 빌드입니다.",
-      "playstyle": "메타 · 혼합 파워",
-      "upvotes": 1,
-      "stats": {
-        "LIFE": 433,
-        "Shield": 50,
-        "Total LIFE": 483,
-        "Attack Speed": 10,
-        "Weapon Power": 25,
-        "Ability Power": 20,
-        "Cooldown Reduction": 10
-      },
-      "cost": "$$$",
-      "created_at": "2026-07-08T19:14:02.379893+00:00",
-      "popular_rank": null,
       "latest_rank": 3,
       "items": []
     }
@@ -7511,7 +7599,7 @@
       "code": "PTGPY",
       "description": "",
       "playstyle": "무기 파워",
-      "upvotes": 91,
+      "upvotes": 92,
       "stats": {
         "LIFE": 387,
         "Armor": 100,
@@ -7637,7 +7725,7 @@
       "code": "V2Y86",
       "description": "터렛과 몰튼 코어를 결합한 빌드로, 작년 탑 500에 진입했으며 능력 위력에만 의존하지 않아도 높은 효율을 보입니다.",
       "playstyle": "능력 파워 · 생명력 흡수",
-      "upvotes": 35,
+      "upvotes": 36,
       "stats": {
         "LIFE": 374,
         "Armor": 75,
@@ -7880,7 +7968,7 @@
       "code": "DDB4Y",
       "description": "트레이서 최상위 딜러 빌드로 죽지 않고 끊임없이 플랭킹",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 233,
+      "upvotes": 232,
       "stats": {
         "LIFE": 256,
         "Armor": 16,
@@ -8675,7 +8763,7 @@
       "code": "HBK34",
       "description": "",
       "playstyle": "무기 파워 · 고체력",
-      "upvotes": 5,
+      "upvotes": 6,
       "stats": {
         "LIFE": 669,
         "Armor": 325,
@@ -8775,24 +8863,45 @@
       "items": []
     },
     {
-      "name": "🌊 불멸의 우양 // 무한 회복 빌드 🩸[시즌 20] [업",
-      "code": "DH9V8",
-      "description": "패시브 흐름을 전 아군에게 즉시 적용하고 수호 파동 효과를 두 배로 증폭.",
-      "playstyle": "능력 파워 · 재사용 단축",
+      "name": "궤도 파도 마스터 🌊✨ (WP) [S3 UPDATE]",
+      "code": "4NVE4",
+      "description": "마스터 서포트와 탑 500 레전드 서포트가 사용하는 빌드로, 능력을 활용해 Paindrops를 트리거해 적에게 지속적인 광역 피해를 입히는 것이 핵심 전략입니다.",
+      "playstyle": "무기 파워 · 생명력 흡수",
       "upvotes": 87,
       "stats": {
-        "LIFE": 338,
-        "Shield": 75,
-        "Total LIFE": 413,
-        "Weapon Power": 0,
-        "Ability Power": 80,
-        "Cooldown Reduction": 20
+        "LIFE": 389,
+        "Shield": 25,
+        "Total LIFE": 414,
+        "Weapon Power": 55,
+        "Ability Power": 10,
+        "Weapon Lifesteal": 15,
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
       },
       "cost": "$$",
-      "created_at": "2025-12-09T20:38:46.795924+00:00",
+      "created_at": "2025-12-09T21:26:24.237701+00:00",
       "popular_rank": 3,
       "latest_rank": null,
-      "items": []
+      "items": [
+        {
+          "name_en": "Paindrops",
+          "effect_en": "After you use an ability or Gadget, your next 2 [Water Orbs] shoot 2 additional orbs that each deal 20% damage.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/wuyang/PainDrops.png",
+          "name": "페인드롭스",
+          "effect": "능력이나 장치를 사용한 후, 다음 2개의 [Water Orbs]가 추가로 2개의 구슬을 발사하며 각각 20%의 피해를 입힙니다."
+        },
+        {
+          "name_en": "Current Confluence",
+          "effect_en": "+25% [Restorative Stream] Duration. Allies affected by Passive [Restorative Stream] or [Guardian Wave]'s increaed healing effect are healed for 30% of damage you deal.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/wuyang/ShoreUp.png",
+          "name": "현재 합류점",
+          "effect": "+25% [Restorative Stream] 지속 시간. 패시브 [Restorative Stream] 또는 [Guardian Wave]의 증가된 회복 효과를 받은 아군은 당신이 입힌 피해의 30%만큼 회복됩니다."
+        }
+      ]
     },
     {
       "name": "우장",
@@ -8976,7 +9085,7 @@
       "code": "C2JNN",
       "description": "무기 공격력, 기술 위력, 재사용 대기시간 감소, 그리고 방어막(버블) 생성에 집중해 적을 괴롭히는 빌드입니다. Zarya에게 기술 위력이 큰 효과를 줍니다.",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 14,
+      "upvotes": 16,
       "stats": {
         "LIFE": 757,
         "Shield": 248,
