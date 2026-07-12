@@ -8,9 +8,6 @@ import { renderMeta } from './views/meta.js?v=6';
 import { renderAnalysis } from './views/analysis.js?v=1';
 import { renderStadium } from './views/stadium.js?v=5';
 import { renderPatch } from './views/patch.js?v=4';
-import { mountChat } from './views/chat.js?v=1';
-
-export const WORKER_URL = 'https://withered-disk-becf.russel0719.workers.dev/';
 
 // ── 데이터 캐시 ───────────────────────────────────────────────────────────────
 const cache = {};
@@ -131,4 +128,3 @@ document.querySelectorAll('.nav-tab').forEach(btn => {
 window.addEventListener('hashchange', navigate);
 showLastUpdated();
 navigate();
-mountChat();

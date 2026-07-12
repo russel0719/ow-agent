@@ -30,9 +30,6 @@
 - [ ] Search Console에 `sitemap.xml` 제출
 - [ ] **GA4 속성 생성**: https://analytics.google.com → 관리 → 속성 만들기 → 웹 스트림 추가
       → 측정 ID(`G-...`)를 `ga4_id`에 입력 → 생성기 실행·커밋
-- [ ] **Cloudflare 대시보드에서 챗봇 Worker 재배포**: `cloudflare-worker/worker.js` 최신본을
-      붙여넣고, KV 바인딩(`CHAT_KV`)이 연결되어 있는지 확인.
-      ⚠️ 최신 코드는 KV 미바인딩 시 챗봇이 503으로 차단된다(비용 보호 fail-closed).
 
 ### 1단계 — 커스텀 도메인
 
@@ -43,7 +40,6 @@
 - [ ] GitHub 계정 Settings → Pages → **Verified domains**에 도메인 추가 (서브도메인 탈취 방지)
 - [ ] `public/CNAME` 파일 추가 (도메인 한 줄) — Actions 배포 아티팩트에 포함되어야 유지됨
 - [ ] `site_config.json`의 `custom_domain` 채움 → 생성기 실행·커밋
-- [ ] `cloudflare-worker/worker.js`의 `ALLOWED_ORIGINS`에 새 도메인 주석 해제 → 재배포
 - [ ] **Search Console 도메인 속성 재등록**: DNS TXT 레코드 방식 — http/https·모든 서브도메인 포괄.
       기존 URL 접두어 속성(메타 태그)은 병행 유지 가능. sitemap 재제출
 - [ ] GA4 ↔ Search Console 연결 (GA4 관리 → Search Console 링크) — 검색 유입 쿼리를 GA4에서 조회
@@ -85,10 +81,7 @@
 
 ## 비용 보호 현황
 
-- 챗봇 Worker: origin 화이트리스트 + IP별 일 5회 + 전체 일 20회 + max_tokens 1024 상한 +
-  입력 8000자 상한 + KV 미바인딩 시 fail-closed. 한도는 Worker 환경변수
-  `DAILY_LIMIT`/`IP_DAILY_LIMIT`로 조정 가능.
-- 홈 AI 요약은 KV 응답 캐시(25시간) 공유 — 하루 첫 방문자 1회만 NVIDIA 호출, 이후 쿼터 미소모.
 - 공개 REST API(`cloudflare-worker-api/`): 정적 공개 데이터의 프록시라 인증 없음(의도된 정책,
   [api.md](api.md) 참고). Cloudflare Free 일 10만 요청 한도 내 운용.
-- 번역(Cerebras)·챗봇(NVIDIA)은 현재 무료 티어 — 과금 전환 시 이 문서에 기록할 것.
+- 번역·요약(Cerebras)은 현재 무료 티어 — 과금 전환 시 이 문서에 기록할 것.
+- AI 챗봇·홈 AI 요약 기능은 NVIDIA 무료 티어 불안정으로 제거됨 (런타임 LLM 의존 없음).

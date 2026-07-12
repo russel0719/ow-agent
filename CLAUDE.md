@@ -27,7 +27,7 @@ python -m http.server 8080 --directory public
 |------|------|
 | `public/` | GitHub Pages 서빙 루트 (웹 앱 정적 파일) |
 | `public/data/` | 자동 생성 JSON (GitHub Actions가 매일 커밋) |
-| `public/views/` | 뷰 컴포넌트 (home, meta, analysis, stadium, patch, chat) |
+| `public/views/` | 뷰 컴포넌트 (home, meta, analysis, stadium, patch) |
 | `bot/utils/` | 크롤러, 번역기, 용어집 유틸리티 |
 | `scripts/generate_data.py` | 전체 데이터 생성 스크립트 (Actions 진입점) |
 | `scripts/generate_pages.py` | SEO 메타·정적 콘텐츠·sitemap 생성기 (데이터 생성 후 실행) |
@@ -38,7 +38,6 @@ python -m http.server 8080 --directory public
 | `public/meta.html` | 랭크별 티어표 정적 페이지 (전체 자동 생성 — 직접 수정 금지) |
 | `public/privacy.html` | 개인정보처리방침 (수동 관리) |
 | `public/views/analysis.js` | 메타 분석 탭 — 통합 지수·존재감·밴 효율 시각화 |
-| `cloudflare-worker/worker.js` | 챗봇·AI 요약 프록시 (NVIDIA API + KV 일일 제한) |
 | `cloudflare-worker-api/` | 외부 공개 REST API (`/v1/*`, wrangler 기반 Cloudflare Worker) |
 | `.github/workflows/update-data.yml` | 매일 15:00 KST 자동 갱신 + Pages 배포 |
 | `.github/workflows/deploy-api-worker.yml` | `cloudflare-worker-api/**` 변경 시 자동 `wrangler deploy` |
@@ -48,7 +47,6 @@ python -m http.server 8080 --directory public
 | 변수 | 필수 | 용도 |
 |------|------|------|
 | `CEREBRAS_API_KEY` | ✅ | 번역·요약 (gpt-oss-120b, `scripts/generate_data.py` → `bot/utils/translator.py`) |
-| `NVIDIA_API_KEY` | ✅ | 챗봇 AI + 홈 화면 AI 요약 (meta/llama-3.3-70b-instruct, Cloudflare Worker 전용) |
 | `CLOUDFLARE_API_TOKEN` | ✅ | `cloudflare-worker-api/` 자동 배포 (GitHub Actions 전용) |
 
 GitHub Actions: **Settings → Secrets** 에 등록.
@@ -59,6 +57,5 @@ GitHub Actions: **Settings → Secrets** 에 등록.
 - [아키텍처](docs/architecture.md) — 시스템 구성, 기술 스택, 데이터 흐름
 - [데이터 파이프라인](docs/data-pipeline.md) — 크롤러, 번역, 새 영웅 추가 방법
 - [프론트엔드](docs/frontend.md) — 라우팅, 뷰 컴포넌트, 로컬 개발
-- [챗봇 / Cloudflare](docs/chatbot.md) — Worker 배포, KV 제한 설정
 - [외부 공개 API](docs/api.md) — `/v1/*` 엔드포인트 레퍼런스, Worker 배포
 - [수익화 가이드](docs/monetization.md) — AdSense/AdFit/GA4/Search Console 체크리스트, 법적 리스크, site_config.json 사용법

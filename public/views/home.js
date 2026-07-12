@@ -1,10 +1,9 @@
 /**
  * OW2 홈 대시보드
- * - AI 주간 메타 요약 (NVIDIA Llama 3.3 70B via Cloudflare Worker)
  * - 이번 주 상승세/하락세 영웅 TOP3
  * - 픽률 vs 승률 버블 차트 (메타 맵)
  */
-import { loadJSON, getPortraitIndex, WORKER_URL } from '../app.js';
+import { loadJSON, getPortraitIndex } from '../app.js';
 
 const ROLE_COLOR = {
   tank:    '#60a5fa',
@@ -86,64 +85,6 @@ function heroCard(h, portraitIndex, rank) {
       </div>
       <span class="text-sm font-semibold ${deltaColor} shrink-0">${deltaTxt}</span>
     </div>`;
-}
-
-// ── AI 주간 요약 ──────────────────────────────────────────────────────────────
-
-async function buildAISummaryContext(heroes, patches) {
-  const sorted = [...heroes].sort((a, b) => (b.delta ?? 0) - (a.delta ?? 0));
-  const rising = sorted.filter(h => h.delta != null).slice(0, 5)
-    .map(h => `${h.hero_name}(${h.delta > 0 ? '+' : ''}${h.delta})`).join(', ');
-  const falling = [...sorted].reverse().filter(h => h.delta != null).slice(0, 5)
-    .map(h => `${h.hero_name}(${h.delta > 0 ? '+' : ''}${h.delta})`).join(', ');
-
-  const sTier = heroes.filter(h => h.tier === 'S').map(h => h.hero_name).join(', ') || '없음';
-  const aTier = heroes.filter(h => h.tier === 'A').map(h => h.hero_name).join(', ') || '없음';
-
-  const topBan = [...heroes].sort((a, b) => (b.ban_rate ?? 0) - (a.ban_rate ?? 0)).slice(0, 3)
-    .map(h => `${h.hero_name}(${h.ban_rate}%)`).join(', ');
-  const topPresence = [...heroes].sort((a, b) => (b.presence_rate ?? 0) - (a.presence_rate ?? 0)).slice(0, 3)
-    .map(h => `${h.hero_name}(${h.presence_rate}%)`).join(', ');
-
-  const recentPatch = patches?.[0];
-  let patchSummary = '';
-  if (recentPatch) {
-    const changes = (recentPatch.hero_changes ?? []).slice(0, 5)
-      .map(hc => `[${hc.hero}] ${hc.changes[0] ?? ''}`).join(' / ');
-    const general = (recentPatch.general_changes ?? []).slice(0, 2).join(' / ');
-    patchSummary = `최근 패치(${recentPatch.date}): ${changes}${general ? ` / 전체 방향성: ${general}` : ''}`;
-  }
-
-  return `오버워치 2 전체 랭크 메타 데이터 기준.
-상승 TOP5: ${rising}
-하락 TOP5: ${falling}
-현재 S티어: ${sTier}
-현재 A티어: ${aTier}
-밴률 TOP3: ${topBan}
-존재감 TOP3: ${topPresence}
-${patchSummary}`;
-}
-
-async function fetchAISummary(context) {
-  if (!WORKER_URL) return null;
-  const resp = await fetch(WORKER_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      messages: [
-        {
-          role: 'user',
-          content: `다음 오버워치 2 메타 데이터를 바탕으로 이번 주 메타 특징을 한국어로 3줄 요약해줘. 불릿 포인트(•) 형식으로, 각 줄 80~100자 내외로 상승/하락의 배경이나 원인까지 자연스러운 문장으로 서술해줘:\n\n${context}`,
-        },
-      ],
-      max_tokens: 400,
-      temperature: 0.4,
-      cache: true, // 모든 사용자 공통 요청 — Worker가 KV에 25시간 캐시 (쿼터 미소모)
-    }),
-  });
-  if (!resp.ok) return null;
-  const data = await resp.json();
-  return data?.choices?.[0]?.message?.content ?? null;
 }
 
 // ── 버블 차트 ─────────────────────────────────────────────────────────────────
@@ -362,20 +303,6 @@ export async function renderHome(container) {
   container.innerHTML = `
     <div class="max-w-5xl mx-auto space-y-5 pb-10">
 
-      <!-- AI 요약 -->
-      <div class="bg-ow-card border border-ow-border rounded-xl p-5">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="text-base font-semibold text-ow-blue">AI 주간 메타 요약</span>
-          <span class="text-xs text-gray-500">Llama 3.3 70B</span>
-          <span id="ai-data-date" class="text-xs text-gray-600"></span>
-        </div>
-        <div id="ai-summary" class="text-sm text-gray-300 leading-relaxed space-y-1">
-          <div class="flex items-center gap-2 text-gray-500">
-            <div class="loading-spinner shrink-0"></div> AI 분석 중...
-          </div>
-        </div>
-      </div>
-
       <!-- 상승세/하락세 영웅 -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="bg-ow-card border border-ow-border rounded-xl p-5">
@@ -404,9 +331,8 @@ export async function renderHome(container) {
     </div>`;
 
   try {
-    const [history, patches, portraitIndex] = await Promise.all([
+    const [history, portraitIndex] = await Promise.all([
       loadJSON('meta_history'),
-      loadJSON('patch').catch(() => null),
       getPortraitIndex(),
     ]);
 
@@ -416,7 +342,6 @@ export async function renderHome(container) {
     if (!heroes.length) {
       container.querySelector('#top-rising').innerHTML = '<p class="text-gray-500 text-sm">데이터 없음</p>';
       container.querySelector('#top-falling').innerHTML = '<p class="text-gray-500 text-sm">데이터 없음</p>';
-      container.querySelector('#ai-summary').innerHTML = '<p class="text-gray-500 text-sm">데이터를 불러올 수 없습니다.</p>';
       return;
     }
 
@@ -439,42 +364,11 @@ export async function renderHome(container) {
       falling.length
         ? falling.map((h, i) => heroCard(h, portraitIndex, i + 1)).join('')
         : '<p class="text-gray-500 text-sm">데이터 없음</p>';
-
-    // AI 요약 (sessionStorage 캐시)
-    const dates = Object.keys(allHistory).sort();
-    const latestDate = dates[dates.length - 1] ?? 'unknown';
-
-    // 기준일 표시
-    if (latestDate !== 'unknown') {
-      const [, m, d] = latestDate.split('-');
-      container.querySelector('#ai-data-date').textContent = `· ${+m}월 ${+d}일 데이터 기준`;
-    }
-    const cacheKey = `ow2-summary-${latestDate}`;
-    const cached = sessionStorage.getItem(cacheKey);
-    const summaryEl = container.querySelector('#ai-summary');
-
-    if (cached) {
-      summaryEl.innerHTML = formatSummary(cached);
-    } else {
-      const context = await buildAISummaryContext(heroes, patches);
-      const summary = await fetchAISummary(context).catch(() => null);
-      if (summary) {
-        sessionStorage.setItem(cacheKey, summary);
-        summaryEl.innerHTML = formatSummary(summary);
-      } else {
-        summaryEl.innerHTML = '<p class="text-gray-500 text-sm">AI 요약을 불러올 수 없습니다.</p>';
-      }
-    }
   } catch (e) {
-    container.querySelector('#ai-summary').innerHTML =
-      `<p class="text-red-400 text-sm">오류: ${e.message}</p>`;
+    const msg = `<p class="text-red-400 text-sm">데이터를 불러올 수 없습니다: ${e.message}</p>`;
+    const rise = container.querySelector('#top-rising');
+    const fall = container.querySelector('#top-falling');
+    if (rise) rise.innerHTML = msg;
+    if (fall) fall.innerHTML = '';
   }
-}
-
-function formatSummary(text) {
-  return text
-    .split('\n')
-    .filter(l => l.trim())
-    .map(l => `<p>${l.trim()}</p>`)
-    .join('');
 }
