@@ -740,20 +740,22 @@
   ],
   "Cassidy": [
     {
-      "name": "평균 플레이어를 위한 최고의 빌드 (시즌 1)",
-      "code": "ZYYN4",
-      "description": "캐시디 대중적 빌드. 높은 조회수 대신 실용성 추구.",
-      "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 735,
+      "name": "평균 플레이어를 위한 최고의 빌드 (시즌 3 업데이트)",
+      "code": "3EHTF",
+      "description": "평균 플레이어를 위한 캐시디 빌드로, 사이트에서 가장 많이 사용되는 로드아웃입니다. 기본적인 기술 위력과 이동 속도에 중점을 두어 안정적인 전투를 목표합니다.",
+      "playstyle": "메타 · 생명력 흡수",
+      "upvotes": 736,
       "stats": {
-        "LIFE": 405,
-        "Armor": 50,
-        "Total LIFE": 455,
-        "Weapon Power": 80,
-        "Ability Power": 35,
+        "LIFE": 373,
+        "Shield": 50,
+        "Total LIFE": 423,
+        "Attack Speed": 10,
+        "Weapon Power": 55,
+        "Ability Power": 20,
         "Critical Damage": 10,
         "Weapon Lifesteal": 15,
-        "Ability Lifesteal": 15
+        "Ability Lifesteal": 15,
+        "Cooldown Reduction": 10
       },
       "cost": "$$$",
       "created_at": "2025-05-13T02:23:29.537672+00:00",
@@ -2665,7 +2667,7 @@
       "code": "7A10M",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 20,
+      "upvotes": 19,
       "stats": {
         "LIFE": 710,
         "Armor": 225,
@@ -2818,7 +2820,7 @@
       "code": "G7CCE",
       "description": "전 시즌부터 꾸준히 플레이해 DPS 레전드와 지원 올스타 등급을 달성했으며, Jetpack Cat을 중심으로 한 빌드입니다.",
       "playstyle": "메타 · 무기 파워",
-      "upvotes": 31,
+      "upvotes": 32,
       "stats": {
         "LIFE": 364,
         "Shield": 75,
@@ -3644,7 +3646,7 @@
       "code": "Z54ST",
       "description": "정크랫 원거리 스나이퍼 스타일. 오리사·라인하르트 같은 정면 영웅 상대에 최적.",
       "playstyle": "능력 파워",
-      "upvotes": 394,
+      "upvotes": 393,
       "stats": {
         "LIFE": 277,
         "Total LIFE": 277,
@@ -4305,7 +4307,7 @@
       "code": "97MTB",
       "description": "적 팀 구성을 파악해 아이템·파워를 예측하고 스마트하게 플레이하라는 전략 조언입니다.",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 4,
+      "upvotes": 5,
       "stats": {
         "LIFE": 473,
         "Total LIFE": 473,
@@ -4885,6 +4887,24 @@
       ]
     },
     {
+      "name": "스나이퍼 메이 파리채",
+      "code": "RXJ68",
+      "description": "슬로우볼과 가젯 r1, 스노우볼 비행 r2를 조합한 빌드이며, 스탯 우선순위는 무기 공격력 > 재사용 대기시간 감소 > 체력입니다. 라운드별 가이드 없이도 전투에 바로 적용할 수 있습니다.",
+      "playstyle": "공격형",
+      "upvotes": 1,
+      "stats": {
+        "LIFE": 300,
+        "Total LIFE": 300,
+        "Weapon Power": 0,
+        "Ability Power": 0
+      },
+      "cost": "",
+      "created_at": "2026-07-12T04:46:07.948756+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": []
+    },
+    {
       "name": "Mei가 만든 콜드 플레이!",
       "code": "TH4W",
       "description": "상대를 얼려 제압하는 간단한 전략을 강조합니다.",
@@ -4900,7 +4920,7 @@
       "cost": "$$",
       "created_at": "2026-07-10T00:40:33.32552+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -4919,7 +4939,7 @@
       "cost": "$$$",
       "created_at": "2026-06-27T06:20:02.437665+00:00",
       "popular_rank": null,
-      "latest_rank": 2,
+      "latest_rank": 3,
       "items": []
     }
   ],
@@ -5274,6 +5294,153 @@
       ]
     },
     {
+      "name": "[S3] 기술 위력/무기 공격력 | Floor is lava. (Flash Heal & Aerodynamic Feathe",
+      "code": "CZYW3",
+      "description": "항상 60% 이동 속도를 유지하며 공중에서 활공하는 것이 핵심이며, Aerodynamic Feathers 아이템을 필수로 사용합니다. 일반적인 플래시 빌드와 동일한 구성을 기반으로 합니다.",
+      "playstyle": "능력 파워 · 재사용 단축",
+      "upvotes": 1,
+      "stats": {
+        "LIFE": 410,
+        "Armor": 50,
+        "Total LIFE": 460,
+        "Weapon Power": 10,
+        "Ability Power": 30,
+        "Cooldown Reduction": 25
+      },
+      "cost": "$$",
+      "created_at": "2026-07-10T10:06:06.127789+00:00",
+      "popular_rank": null,
+      "latest_rank": 1,
+      "items": [
+        {
+          "name_en": "Aerodynamic Feathers",
+          "effect_en": "25 Health. While affected by [Angelic Descent], continuously gain 15% Move Speed every 1s up to 60%.",
+          "cost": 3750,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/AerodynamicFeathers.png",
+          "name": "공기역학 깃털",
+          "effect": "25 체력. [Angelic Descent]의 영향을 받는 동안, 매 1초마다 15% 이동 속도를 지속적으로 얻으며 최대 60%까지 증가합니다."
+        },
+        {
+          "name_en": "Flash Feedback",
+          "effect_en": "50 Armor. 5% Cooldown Reduction. [Flash Heal] also targets you with 25% healing.",
+          "cost": 9500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/FlashFeedbackS3.png",
+          "name": "플래시 피드백",
+          "effect": "50 방어구. 5% 재사용 대기시간 감소. [Flash Heal]이 당신에게도 25% 회복을 적용합니다."
+        },
+        {
+          "name_en": "Distortion",
+          "effect_en": "When you use [Flash Heal], grant the target Overhealth equal to 30% of your Max Life for 2s and knockback enemies 5m around the target.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/Distortion.png",
+          "name": "왜곡",
+          "effect": "플래시 힐을 사용할 때, 대상에게 최대 체력의 30%에 해당하는 초과 체력을 2초 동안 부여하고 대상 주변 5m 안의 적들을 넉백합니다."
+        },
+        {
+          "name_en": "Chain Evoker",
+          "effect_en": "50 Health. 5% [Caduceus Staff] Damage Boost. 15% Ultimate Charge from Damage Boost.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/ChainEvoker.png",
+          "name": "연쇄 소환사",
+          "effect": "50 체력. 5% [Caduceus Staff] Damage Boost. 15% 궁극기 충전 (Damage Boost에서)."
+        },
+        {
+          "name_en": "Resurrection Rangefinder",
+          "effect_en": "10% Cooldown Reduction. 75% [Resurrection] Range.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/ResurrectionRangefinder.png",
+          "name": "부활 거리 측정기",
+          "effect": "10% 재사용 대기시간 감소. 75% [Resurrection] 사거리."
+        },
+        {
+          "name_en": "Booster Jets",
+          "effect_en": "20% Attack Speed; When you use an ability or Gadget, gain 10% Move Speed for 2s",
+          "cost": 11000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/BoosterJetsS1MID.png",
+          "name": "부스터 제트",
+          "effect": "공격 속도 20%; 능력 또는 가젯을 사용할 때, 이동 속도 10%를 2초 동안 얻습니다."
+        },
+        {
+          "name_en": "Long Distance Wings",
+          "effect_en": "10% Ability Power. 33% [Guardian Angel] Range.",
+          "cost": 4000,
+          "rarity": "rare",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/LongDistanceWings.png",
+          "name": "장거리 날개",
+          "effect": "10% 기술 위력. 33% [Guardian Angel] 사거리."
+        },
+        {
+          "name_en": "Triage Unit",
+          "effect_en": "10% Ability Power. 15% [Guardian Angel] Move Speed. When using [Guardian Angel] on allies below 50% Life, they receive 20% more healing from you for 3s.",
+          "cost": 11000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/TriageUnitS3.png",
+          "name": "응급 처치 부대",
+          "effect": "10% 기술 위력. 15% [Guardian Angel] 이동 속도. [Guardian Angel]을(를) 체력이 50% 이하인 아군에게 사용할 때, 3초 동안 당신으로부터 20% 더 많은 회복량을 받습니다."
+        },
+        {
+          "name_en": "Caduceus EX",
+          "effect_en": "10% Weapon Power. 33% [Caduceus Staff] Range.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/CaduceusEx.png",
+          "name": "카두세우스 EX",
+          "effect": "10% 무기 공격력. 33% [Caduceus Staff] 사거리."
+        },
+        {
+          "name_en": "Crepuscular Circle",
+          "effect_en": "5% Weapon Power. 5% Ability Power. While [Valkyrie] is active, automatically apply [Caduceus Staff]'s healing beam at 100% effectiveness and damage boost at 50% effectiveness to nearby allies.",
+          "cost": 10000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/CrepuscularCircleS3.png",
+          "name": "황혼 원",
+          "effect": "5% 무기 공격력. 5% 기술 위력. [Valkyrie]가 활성화된 동안, 주변 아군에게 [Caduceus Staff]의 회복 빔을 100% 효율로, Damage Boost를 50% 효율로 자동 적용합니다."
+        },
+        {
+          "name_en": "Hardlight Accelerator",
+          "effect_en": "10% Weapon Power; 10% Cooldown Reduction; When you use an ability or Gadget, gain 5% Weapon Power for 3s, stacking up to 3 times",
+          "cost": 12000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/HardlightAcceleratorS1MID.png",
+          "name": "하드라이트 가속기",
+          "effect": "10% 무기 공격력; 10% 재사용 대기시간 감소; 능력이나 장치를 사용할 때, 3초 동안 5% 무기 공격력을 얻으며, 최대 3번 중첩됩니다."
+        },
+        {
+          "name_en": "Iridescent Iris",
+          "effect_en": "20% Ability Power; 10% Cooldown Reduction; After spending your Ultimate Charge, gain 100 Overhealth for 3s.",
+          "cost": 12000,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/IridescentIrisS1MID.png",
+          "name": "무지개빛 홍채",
+          "effect": "20% 기술 위력; 10% 재사용 대기시간 감소; 궁극기 충전을 사용한 후, 3초 동안 100 초과 체력을 얻습니다."
+        },
+        {
+          "name_en": "Supply Surge",
+          "effect_en": "[Flash Heal] grants 20% Move Speed, 100% increased cooldown refresh rate, and 20% Lifesteal to the target and you for 2s.",
+          "cost": 0,
+          "rarity": "power",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/mercy/SupplySurge.png",
+          "name": "보급 급증",
+          "effect": "[Flash Heal]은 대상과 당신에게 2초 동안 20% 이동 속도, 100% 증가된 재사용 대기시간 재충전 속도, 그리고 20% 생명력 흡수를 부여합니다."
+        },
+        {
+          "name_en": "Champion's Kit",
+          "effect_en": "35% Ability Power",
+          "cost": 14500,
+          "rarity": "epic",
+          "icon": "https://api.stadiumbuilds.io/storage/v1/object/public/images/items/universal/ChampionsKitS1MID.png",
+          "name": "챔피언 키트",
+          "effect": "35% 기술 위력"
+        }
+      ]
+    },
+    {
       "name": "전투 메딕",
       "code": "B47L3",
       "description": "",
@@ -5291,7 +5458,7 @@
       "cost": "$$$",
       "created_at": "2026-07-10T00:32:19.766791+00:00",
       "popular_rank": null,
-      "latest_rank": 1,
+      "latest_rank": 2,
       "items": []
     },
     {
@@ -5310,27 +5477,6 @@
       },
       "cost": "$$$",
       "created_at": "2026-07-10T00:15:32.735317+00:00",
-      "popular_rank": null,
-      "latest_rank": 2,
-      "items": []
-    },
-    {
-      "name": "[S3] 샷건을 든 천사! MASS HEALING GLOCK! UNKILLABLE FL",
-      "code": "RBNTN",
-      "description": "머시 빌드로 빠르고 위협적인 딜러가 되면서도 팀을 치유합니다.\n글록으로 반격하며 힐과 속도 버프를 동시에 제공해 전투를 주도합니다.",
-      "playstyle": "무기 파워",
-      "upvotes": 5,
-      "stats": {
-        "LIFE": 379,
-        "Max Ammo": 33,
-        "Total LIFE": 379,
-        "Attack Speed": 20,
-        "Weapon Power": 65,
-        "Ability Power": 0,
-        "Critical Damage": 10
-      },
-      "cost": "$$$",
-      "created_at": "2026-07-09T20:56:19.953763+00:00",
       "popular_rank": null,
       "latest_rank": 3,
       "items": []
@@ -5554,7 +5700,7 @@
       "code": "2NPJT",
       "description": "",
       "playstyle": "재미용 · 고체력",
-      "upvotes": 2,
+      "upvotes": 4,
       "stats": {
         "LIFE": 569,
         "Armor": 400,
@@ -7534,7 +7680,7 @@
       "code": "4MHM2",
       "description": "",
       "playstyle": "능력 파워 · 고체력",
-      "upvotes": 7,
+      "upvotes": 9,
       "stats": {
         "LIFE": 527,
         "Shield": 55,
@@ -8311,7 +8457,7 @@
       "code": "2H7XC",
       "description": "시즌 21용 트레이서 빌드로 3인칭 시점 사용, T.Racer 사거리 익히기",
       "playstyle": "무기 파워 · 생명력 흡수",
-      "upvotes": 88,
+      "upvotes": 86,
       "stats": {
         "LIFE": 264,
         "Armor": 32,
