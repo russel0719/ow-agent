@@ -49,13 +49,19 @@ jobs:
       - name: Generate pages (SEO/정적 콘텐츠/sitemap)
         run: uv run python scripts/generate_pages.py
 
-      - name: Commit and push data
+      - name: Commit lookup changes (heroes/maps only)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/
-          git diff --staged --quiet || git commit -m "chore: update OW data [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
-          git push
+          # 매일 재생성되는 정적 페이지·데이터는 Pages 아티팩트로 배포되므로 커밋하지 않는다.
+          # 신규 영웅/맵으로 lookup(heroes.json·maps.json)이 바뀔 때만 커밋해 영구 보존.
+          git add data/heroes.json public/data/heroes.json public/data/maps.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update hero/map lookups [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+            git push
+          else
+            echo "lookup 변경 없음 — 커밋 생략"
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

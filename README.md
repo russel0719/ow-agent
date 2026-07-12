@@ -36,7 +36,7 @@ cron: '0 6 * * *'   # 매일 15:00 KST
 5. Blizzard 패치 노트 크롤링 + Cerebras API (gpt-oss-120b) 번역 → Supabase `datasets['patch']`
 6. `data/heroes.json` → `public/data/heroes.json` 복사 (repo 유지)
 7. `scripts/generate_pages.py` 실행 → SEO 메타·정적 콘텐츠·`meta.html`·`sitemap.xml` 갱신
-8. `public/`(생성 페이지·heroes/maps) 커밋 & push → GitHub Pages 자동 배포
+8. Pages 아티팩트 배포(항상 최신). 커밋은 `heroes.json`·`maps.json`이 바뀔 때만(신규 영웅/맵) → 평소 일일 커밋 없음
 
 > Supabase 자격증명(`SUPABASE_URL`·`SUPABASE_SERVICE_ROLE_KEY`)이 없으면 로컬 `public/data/*.json`으로 폴백한다.
 
