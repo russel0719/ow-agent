@@ -38,6 +38,7 @@ from bot.utils.scrapers.meta_scraper import (  # noqa: E402
     RANK_PARAM,
     _calculate_scores,
     _score_to_tier,
+    fetch_map_list,
     fetch_meta,
     load_fallback,
 )
@@ -288,10 +289,25 @@ def _update_history(all_ranks: dict) -> None:
 
 
 async def _generate_map_meta(session: aiohttp.ClientSession) -> bool:
-    """맵별 메타 통계 스크래핑 → map_meta.json 생성 (전체 랭크 기준)."""
+    """맵별 메타 통계 스크래핑 → map_meta.json 생성 (전체 랭크 기준).
+
+    맵 목록은 Blizzard rates 페이지에서 동적으로 수집해 신규 맵을 자동 등록한다.
+    수집 실패 시 하드코딩 MAP_IDS로 폴백. 슬러그→한글명은 maps.json으로 저장해
+    프론트엔드가 맵 목록을 동적으로 구성하도록 한다.
+    """
+    map_ids = await fetch_map_list(session)
+    if map_ids:
+        new_maps = sorted(set(map_ids) - set(MAP_IDS))
+        if new_maps:
+            names = ", ".join(f"{map_ids[m]}({m})" for m in new_maps)
+            logger.info(f"  신규 맵 자동 감지: {names}")
+    else:
+        logger.warning("  맵 목록 동적 수집 실패 — 하드코딩 MAP_IDS 사용")
+        map_ids = MAP_IDS
+
     result: dict[str, list] = {}
     ok = 0
-    for map_id, map_ko in MAP_IDS.items():
+    for map_id, map_ko in map_ids.items():
         try:
             heroes = await fetch_meta(session, rank="전체", map_id=map_id)
             if heroes:
@@ -303,9 +319,12 @@ async def _generate_map_meta(session: aiohttp.ClientSession) -> bool:
         except Exception as e:
             logger.warning(f"  맵 실패 {map_ko}: {e}")
 
+    # 프론트엔드 맵 목록용 슬러그→한글명 (전체 드롭다운 기준, 데이터 유무와 무관)
+    _save(DOCS_DATA / "maps.json", dict(map_ids))
+
     if result:
         _save(DOCS_DATA / "map_meta.json", result)
-        logger.info(f"  맵별 메타 완료: {ok}/{len(MAP_IDS)}개 맵")
+        logger.info(f"  맵별 메타 완료: {ok}/{len(map_ids)}개 맵")
         _update_map_history(result)
         return True
     logger.warning("  맵별 메타: 수집된 데이터 없음")

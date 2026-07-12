@@ -22,14 +22,17 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
 import aiohttp
+from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
 BLIZZARD_RATES_URL = "https://overwatch.blizzard.com/ko-kr/rates/data/"
+BLIZZARD_RATES_PAGE = "https://overwatch.blizzard.com/ko-kr/rates/"
 # rq 파라미터: ban_rate > 0 응답이 나올 때까지 순서대로 시도
 # Blizzard가 파라미터 의미를 변경할 경우 자동으로 다음 후보로 전환됨
 _RQ_CANDIDATES = ["2", "1", "3"]
@@ -138,6 +141,48 @@ async def fetch_meta(
         logger.warning(f"모든 rq({_RQ_CANDIDATES})에서 ban_rate 없음 — fallback 공식 사용")
         return last_heroes
     return None
+
+
+async def fetch_map_list(session: aiohttp.ClientSession) -> dict[str, str] | None:
+    """rates 페이지 맵 드롭다운에서 {슬러그: 한글명} 추출. 신규 맵 자동 감지용.
+
+    맵 옵션은 `<option data-rqs="0,2" value="kings-row">왕의 길</option>` 형태로,
+    data-rqs 속성 유무 + 슬러그 형식 value로 역할/모드 옵션과 구분한다.
+    실패 시 None (호출부가 하드코딩 목록으로 폴백).
+    """
+    try:
+        async with session.get(
+            BLIZZARD_RATES_PAGE,
+            headers=HEADERS,
+            timeout=aiohttp.ClientTimeout(total=20),
+        ) as resp:
+            resp.raise_for_status()
+            page = await resp.text()
+    except Exception as e:
+        logger.warning(f"맵 목록 페이지 로드 실패: {e}")
+        return None
+
+    try:
+        soup = BeautifulSoup(page, "lxml")
+    except Exception:
+        soup = BeautifulSoup(page, "html.parser")
+
+    maps: dict[str, str] = {}
+    for opt in soup.find_all("option"):
+        if not opt.has_attr("data-rqs"):
+            continue
+        slug = (opt.get("value") or "").strip()
+        if not slug or slug == "all-maps":
+            continue
+        if not re.match(r"^[a-z][a-z0-9-]+$", slug):  # 모드 옵션(value="0"/"2") 배제
+            continue
+        name = (opt.get("data-title") or opt.get_text(strip=True) or slug).strip()
+        maps[slug] = name
+
+    if not maps:
+        logger.warning("맵 목록 파싱 결과 0개 — 페이지 구조 변경 가능성")
+        return None
+    return maps
 
 
 def load_fallback(rank: str = "전체") -> list[HeroMeta]:

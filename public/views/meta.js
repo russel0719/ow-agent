@@ -102,6 +102,28 @@ const MAP_LIST = [
   { id: 'throne-of-anubis',    name: '아누비스의 왕좌',    type: '격돌' },
 ];
 
+// 실제 사용하는 맵 목록/타입 — maps.json(백엔드가 매일 스크래핑)으로 런타임에 재구성.
+// 신규 맵은 자동 포함되며, 게임 모드 타입을 모르는 맵은 '기타'로 분류한다.
+let mapList = MAP_LIST;
+let mapTypes = MAP_TYPES;
+
+function rebuildMapList(mapsJson) {
+  if (!mapsJson || typeof mapsJson !== 'object') {
+    mapList = MAP_LIST;
+    mapTypes = MAP_TYPES;
+    return;
+  }
+  const typeById = Object.fromEntries(MAP_LIST.map(m => [m.id, m.type]));
+  const nameById = Object.fromEntries(MAP_LIST.map(m => [m.id, m.name]));
+  mapList = Object.entries(mapsJson).map(([id, name]) => ({
+    id,
+    name: name || nameById[id] || id,
+    type: typeById[id] ?? '기타',
+  }));
+  const hasEtc = mapList.some(m => m.type === '기타');
+  mapTypes = hasEtc ? [...MAP_TYPES, '기타'] : MAP_TYPES;
+}
+
 // ── 차트 높이 헬퍼 (모바일 반응형) ───────────────────────────────────────────
 const CHART_H    = () => window.innerWidth < 640 ? '300px' : '560px';
 const CHART_MAXH = () => window.innerWidth < 640 ? '320px' : '640px';
@@ -137,6 +159,7 @@ let cachedHistory = null;
 let cachedMapMeta = null;
 let cachedMapHistory = null;
 let cachedPatches = null;
+let cachedMaps = null;
 
 // ── 진입점 ────────────────────────────────────────────────────────────────────
 
@@ -147,13 +170,16 @@ export async function renderMeta(container, params) {
     if (rank && RANKS.includes(rank)) currentRank = rank;
   }
 
-  [cachedMeta, cachedHistory, cachedMapMeta, cachedMapHistory, cachedPatches] = await Promise.all([
-    loadJSON('meta'),
-    loadJSON('meta_history').catch(() => null),
-    loadJSON('map_meta').catch(() => null),
-    loadJSON('map_meta_history').catch(() => null),
-    loadJSON('patch').catch(() => null),
-  ]);
+  [cachedMeta, cachedHistory, cachedMapMeta, cachedMapHistory, cachedPatches, cachedMaps] =
+    await Promise.all([
+      loadJSON('meta'),
+      loadJSON('meta_history').catch(() => null),
+      loadJSON('map_meta').catch(() => null),
+      loadJSON('map_meta_history').catch(() => null),
+      loadJSON('patch').catch(() => null),
+      loadJSON('maps').catch(() => null),
+    ]);
+  rebuildMapList(cachedMaps);
 
   container.innerHTML = buildHTML();
   attachEvents(container);
@@ -194,11 +220,11 @@ function buildHTML() {
     `<button class="filter-btn${r === currentRole ? ' active' : ''}" data-role="${r}">${r}</button>`
   ).join('');
 
-  const mapTypeButtons = MAP_TYPES.map(t =>
+  const mapTypeButtons = mapTypes.map(t =>
     `<button class="filter-btn${t === currentMapType ? ' active' : ''}" data-map-type="${t}">${t}</button>`
   ).join('');
 
-  const visibleMaps = currentMapType === '전체' ? MAP_LIST : MAP_LIST.filter(m => m.type === currentMapType);
+  const visibleMaps = currentMapType === '전체' ? mapList : mapList.filter(m => m.type === currentMapType);
   const mapButtons = visibleMaps.map(m => {
     const hasData = !!(cachedMapMeta?.[m.id]);
     return `<button class="map-btn${m.id === currentMap ? ' active' : ''}"
@@ -764,7 +790,7 @@ function renderHistoryChart(container) {
 // ── 맵별 차트 ─────────────────────────────────────────────────────────────────
 
 function renderMapOverviewChart(container) {
-  const mapName = MAP_LIST.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
+  const mapName = mapList.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
   container.querySelector('#chart-title').textContent =
     currentMap ? `전체 영웅 메타 점수 추이 — ${mapName}` : '맵을 선택하세요';
   container.querySelector('#chart-scroll').style.maxHeight = CHART_MAXH();
@@ -864,7 +890,7 @@ function renderMapOverviewChart(container) {
 
 function renderMapHistoryChart(container) {
   const color = HERO_COLOR[selectedHeroId] ?? FALLBACK_COLOR;
-  const mapName = MAP_LIST.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
+  const mapName = mapList.find(m => m.id === currentMap)?.name ?? currentMap ?? '';
   container.querySelector('#chart-title').textContent =
     `${selectedHeroName} — 메타 점수 추이 (${mapName})`;
   container.querySelector('#chart-scroll').style.maxHeight = CHART_MAXH();
@@ -1203,7 +1229,7 @@ function heroCard(h, prevScore) {
 function renderMapButtons(container) {
   const grid = container.querySelector('#map-btn-grid');
   if (!grid) return;
-  const maps = currentMapType === '전체' ? MAP_LIST : MAP_LIST.filter(m => m.type === currentMapType);
+  const maps = currentMapType === '전체' ? mapList : mapList.filter(m => m.type === currentMapType);
   grid.innerHTML = maps.map(m => {
     const hasData = !!(cachedMapMeta?.[m.id]);
     return `<button class="map-btn${m.id === currentMap ? ' active' : ''}"

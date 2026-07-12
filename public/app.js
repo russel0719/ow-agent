@@ -4,7 +4,7 @@
  * 딥링크 지원: #meta?rank=그랜드마스터&hero=tracer
  */
 import { renderHome } from './views/home.js?v=2';
-import { renderMeta } from './views/meta.js?v=6';
+import { renderMeta } from './views/meta.js?v=7';
 import { renderAnalysis } from './views/analysis.js?v=1';
 import { renderDivergence } from './views/divergence.js?v=1';
 import { renderStadium } from './views/stadium.js?v=5';
