@@ -47,6 +47,47 @@ function subtractDays(dateStr, days) {
   return d.toISOString().slice(0, 10);
 }
 
+// ── 이번 주 메타 브리핑 (규칙 기반, 외부 API 없음) ─────────────────────────────
+
+function buildBriefing(heroes, patch) {
+  const lines = [];
+  const withDelta = heroes.filter(h => h.delta != null);
+
+  const risers = [...withDelta].filter(h => h.delta > 0)
+    .sort((a, b) => b.delta - a.delta).slice(0, 2);
+  const fallers = [...withDelta].filter(h => h.delta < 0)
+    .sort((a, b) => a.delta - b.delta).slice(0, 2);
+
+  if (risers.length) {
+    lines.push(`📈 가장 크게 상승 — ${risers.map(h => `${h.hero_name} (+${h.delta})`).join(', ')}`);
+  }
+  if (fallers.length) {
+    lines.push(`📉 가장 크게 하락 — ${fallers.map(h => `${h.hero_name} (${h.delta})`).join(', ')}`);
+  }
+
+  const sTier = heroes.filter(h => h.tier === 'S').map(h => h.hero_name);
+  const topBan = [...heroes].sort((a, b) => (b.ban_rate ?? 0) - (a.ban_rate ?? 0))[0];
+  const parts = [];
+  if (sTier.length) parts.push(`S티어 ${sTier.join(', ')}`);
+  if (topBan && (topBan.ban_rate ?? 0) > 0) parts.push(`최다 밴 ${topBan.hero_name} (${topBan.ban_rate}%)`);
+  if (parts.length) lines.push(`🏆 ${parts.join(' · ')}`);
+
+  const recentPatch = patch?.[0];
+  if (recentPatch) {
+    const changed = (recentPatch.hero_changes ?? []).map(hc => hc.hero).filter(Boolean);
+    if (changed.length) {
+      const shown = changed.slice(0, 6).join(', ');
+      const more = changed.length > 6 ? ` 외 ${changed.length - 6}명` : '';
+      lines.push(`🔧 최근 패치(${recentPatch.date}) — ${changed.length}개 영웅 조정: ${shown}${more}`);
+    } else if (recentPatch.date) {
+      lines.push(`🔧 최근 패치(${recentPatch.date}) 반영됨`);
+    }
+  }
+
+  if (!lines.length) return '<p class="text-gray-500 text-sm">브리핑을 생성할 데이터가 부족합니다.</p>';
+  return lines.map(l => `<p>${l}</p>`).join('');
+}
+
 // ── 영웅 초상화 ───────────────────────────────────────────────────────────────
 
 function portraitImg(url, name, size = 40) {
@@ -303,6 +344,17 @@ export async function renderHome(container) {
   container.innerHTML = `
     <div class="max-w-5xl mx-auto space-y-5 pb-10">
 
+      <!-- 이번 주 메타 브리핑 -->
+      <div class="bg-ow-card border border-ow-border rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-base font-semibold text-ow-orange">이번 주 메타 브리핑</span>
+          <span id="briefing-date" class="text-xs text-gray-600"></span>
+        </div>
+        <div id="meta-briefing" class="text-sm text-gray-300 leading-relaxed space-y-1.5">
+          <div class="text-gray-500 text-sm">불러오는 중...</div>
+        </div>
+      </div>
+
       <!-- 상승세/하락세 영웅 -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="bg-ow-card border border-ow-border rounded-xl p-5">
@@ -331,8 +383,9 @@ export async function renderHome(container) {
     </div>`;
 
   try {
-    const [history, portraitIndex] = await Promise.all([
+    const [history, patch, portraitIndex] = await Promise.all([
       loadJSON('meta_history'),
+      loadJSON('patch').catch(() => null),
       getPortraitIndex(),
     ]);
 
@@ -340,9 +393,21 @@ export async function renderHome(container) {
     const heroes = calcWeeklyDeltas(allHistory);
 
     if (!heroes.length) {
+      container.querySelector('#meta-briefing').innerHTML = '<p class="text-gray-500 text-sm">데이터 없음</p>';
       container.querySelector('#top-rising').innerHTML = '<p class="text-gray-500 text-sm">데이터 없음</p>';
       container.querySelector('#top-falling').innerHTML = '<p class="text-gray-500 text-sm">데이터 없음</p>';
       return;
+    }
+
+    // 이번 주 메타 브리핑 (규칙 기반)
+    const briefingEl = container.querySelector('#meta-briefing');
+    if (briefingEl) briefingEl.innerHTML = buildBriefing(heroes, patch);
+    const briefDates = Object.keys(allHistory).sort();
+    const briefLatest = briefDates[briefDates.length - 1];
+    if (briefLatest) {
+      const [, bm, bd] = briefLatest.split('-');
+      const dEl = container.querySelector('#briefing-date');
+      if (dEl) dEl.textContent = `· ${+bm}월 ${+bd}일 기준`;
     }
 
     // 버블 차트 — meta.json 전체 랭크 데이터 사용
@@ -366,9 +431,11 @@ export async function renderHome(container) {
         : '<p class="text-gray-500 text-sm">데이터 없음</p>';
   } catch (e) {
     const msg = `<p class="text-red-400 text-sm">데이터를 불러올 수 없습니다: ${e.message}</p>`;
+    const brief = container.querySelector('#meta-briefing');
     const rise = container.querySelector('#top-rising');
     const fall = container.querySelector('#top-falling');
-    if (rise) rise.innerHTML = msg;
+    if (brief) brief.innerHTML = msg;
+    if (rise) rise.innerHTML = '';
     if (fall) fall.innerHTML = '';
   }
 }
