@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://russel0719.github.io/ow-agent/sitemap.xml

@@ -3,11 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OW2 메타 대시보드</title>
-  <meta name="description" content="오버워치 2 영웅 픽률·승률·밴률 메타 통계 대시보드. 랭크별 티어표, 히스토리 차트, 밴 효율 분석 제공.">
   <meta name="theme-color" content="#161B22">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="manifest" href="site.webmanifest">
+  <!-- ==SEO:BEGIN== -->
+  <title>OW2 메타 대시보드 — 오버워치 2 티어·픽률·승률 통계</title>
+  <meta name="description" content="오버워치 2 영웅 픽률·승률·밴률 메타 통계 대시보드. 랭크별 티어표, 히스토리 차트, 밴 효율 분석 제공.">
+  <meta name="keywords" content="오버워치2, 오버워치 2 메타, 오버워치 티어, 영웅 픽률, 승률, 밴률, 경쟁전 통계, 패치노트, 스타디움 빌드, Overwatch 2 meta">
+  <link rel="canonical" href="https://russel0719.github.io/ow-agent/">
+  <meta property="og:title" content="OW2 메타 대시보드 — 오버워치 2 티어·픽률·승률 통계">
+  <meta property="og:description" content="오버워치 2 영웅 픽률·승률·밴률 메타 통계 대시보드. 랭크별 티어표, 히스토리 차트, 밴 효율 분석 제공.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://russel0719.github.io/ow-agent/">
+  <meta property="og:image" content="https://russel0719.github.io/ow-agent/og-image.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="OW2 메타 대시보드">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OW2 메타 대시보드 — 오버워치 2 티어·픽률·승률 통계">
+  <meta name="twitter:description" content="오버워치 2 영웅 픽률·승률·밴률 메타 통계 대시보드. 랭크별 티어표, 히스토리 차트, 밴 효율 분석 제공.">
+  <meta name="twitter:image" content="https://russel0719.github.io/ow-agent/og-image.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "OW2 메타 대시보드", "url": "https://russel0719.github.io/ow-agent/", "description": "오버워치 2 영웅 픽률·승률·밴률 메타 통계 대시보드. 랭크별 티어표, 히스토리 차트, 밴 효율 분석 제공.", "inLanguage": "ko"}</script>
+  <!-- GA4: data/site_config.json의 ga4_id 설정 시 활성화 -->
+  <!-- AdSense: adsense_pub_id + adsense_auto_ads 설정 시 활성화 -->
+  <!-- ==SEO:END== -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
   <link rel="stylesheet" href="style.css" />
@@ -45,15 +65,89 @@
     </div>
   </nav>
 
-  <!-- 메인 컨텐츠 -->
+  <!-- 메인 컨텐츠 (초기 정적 콘텐츠는 generate_pages.py가 주입, JS 로드 시 뷰로 대체) -->
   <main class="max-w-7xl mx-auto px-4 py-6" id="app">
-    <div class="flex items-center justify-center h-64 text-gray-500">
-      <div class="text-center">
-        <div class="loading-spinner mx-auto mb-3"></div>
-        <p>데이터 로드 중...</p>
-      </div>
-    </div>
+  <!-- ==STATIC:BEGIN== -->
+  <section id="static-content">
+    <style>
+      #static-content h1 { font-size: 1.5rem; font-weight: 700; margin: 0.5rem 0; }
+      #static-content h2 {
+        font-size: 1.2rem; font-weight: 600; margin: 1.25rem 0 0.25rem;
+      }
+      #static-content h3 {
+        font-size: 1rem; font-weight: 600; margin: 1rem 0 0.25rem;
+      }
+      #static-content p { margin: 0.4rem 0; color: #9ca3af; }
+      #static-content a { color: #4FC3F7; }
+      #static-content table {
+        border-collapse: collapse; width: 100%; margin: 0.5rem 0 1rem;
+      }
+      #static-content th, #static-content td {
+        border: 1px solid #30363D; padding: 0.35rem 0.6rem;
+        text-align: left; font-size: 0.85rem;
+      }
+      #static-content th { color: #F5A623; }
+    </style>
+    <h1>OW2 메타 대시보드 — 오버워치 2 영웅 티어·픽률·승률 통계</h1>
+    <p>오버워치 2 경쟁전의 영웅 픽률·승률·밴률을 Blizzard 공식 통계에서 매일 자동 수집해 랭크별 티어표와 메타 변화 추이를 제공하는 비공식 팬 사이트입니다. 메타 통계, 메타 분석, 스타디움 빌드, 한국어 번역 패치 노트를 확인할 수 있습니다.</p>
+    <p>마지막 업데이트: 2026-07-11</p>
+    <p>최신 패치: <a href="#patch">오버워치 패치 노트 - 2026년 7월 2일</a> (2026년 7월 1일)</p>
+    <h2>전체 랭크 영웅 티어 요약</h2>
+<h3>돌격 영웅 티어 (S~B)</h3>
+<table>
+<thead><tr><th>티어</th><th>영웅</th><th>역할</th><th>픽률</th><th>승률</th><th>밴률</th><th>메타 점수</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>자리야</td><td>돌격</td><td>7.1%</td><td>52.6%</td><td>54.8%</td><td>58.0</td></tr>
+<tr><td>A</td><td>둠피스트</td><td>돌격</td><td>6.7%</td><td>51.7%</td><td>42.3%</td><td>50.7</td></tr>
+<tr><td>A</td><td>시그마</td><td>돌격</td><td>14.7%</td><td>53.4%</td><td>8.4%</td><td>46.8</td></tr>
+<tr><td>B</td><td>해저드</td><td>돌격</td><td>4.9%</td><td>52.7%</td><td>3.2%</td><td>38.4</td></tr>
+<tr><td>B</td><td>라인하르트</td><td>돌격</td><td>9.5%</td><td>51.0%</td><td>2.2%</td><td>35.5</td></tr>
+<tr><td>B</td><td>윈스턴</td><td>돌격</td><td>8.6%</td><td>50.5%</td><td>6.2%</td><td>35.1</td></tr>
+</tbody></table>
+<h3>공격 영웅 티어 (S~B)</h3>
+<table>
+<thead><tr><th>티어</th><th>영웅</th><th>역할</th><th>픽률</th><th>승률</th><th>밴률</th><th>메타 점수</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>시온</td><td>공격</td><td>26.6%</td><td>53.3%</td><td>27.0%</td><td>58.8</td></tr>
+<tr><td>A</td><td>파라</td><td>공격</td><td>5.1%</td><td>53.3%</td><td>36.8%</td><td>52.4</td></tr>
+<tr><td>B</td><td>안란</td><td>공격</td><td>9.2%</td><td>52.2%</td><td>9.4%</td><td>41.3</td></tr>
+<tr><td>B</td><td>시메트라</td><td>공격</td><td>3.6%</td><td>53.5%</td><td>6.3%</td><td>41.1</td></tr>
+<tr><td>B</td><td>솜브라</td><td>공격</td><td>2.8%</td><td>48.0%</td><td>47.0%</td><td>40.5</td></tr>
+<tr><td>B</td><td>겐지</td><td>공격</td><td>11.9%</td><td>52.3%</td><td>1.7%</td><td>40.0</td></tr>
+<tr><td>B</td><td>메이</td><td>공격</td><td>8.5%</td><td>51.6%</td><td>5.1%</td><td>37.7</td></tr>
+</tbody></table>
+<h3>지원 영웅 티어 (S~B)</h3>
+<table>
+<thead><tr><th>티어</th><th>영웅</th><th>역할</th><th>픽률</th><th>승률</th><th>밴률</th><th>메타 점수</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>키리코</td><td>지원</td><td>53.7%</td><td>49.5%</td><td>2.5%</td><td>52.0</td></tr>
+<tr><td>A</td><td>아나</td><td>지원</td><td>42.7%</td><td>48.9%</td><td>8.0%</td><td>47.3</td></tr>
+<tr><td>A</td><td>미즈키</td><td>지원</td><td>14.4%</td><td>52.8%</td><td>13.4%</td><td>46.8</td></tr>
+<tr><td>B</td><td>모이라</td><td>지원</td><td>24.3%</td><td>50.9%</td><td>4.5%</td><td>42.9</td></tr>
+<tr><td>B</td><td>젠야타</td><td>지원</td><td>13.0%</td><td>52.3%</td><td>1.8%</td><td>40.5</td></tr>
+<tr><td>B</td><td>우양</td><td>지원</td><td>11.7%</td><td>51.7%</td><td>0.6%</td><td>37.8</td></tr>
+</tbody></table>
+    <p><a href="meta.html">랭크별 전체 티어표 보기</a> · <a href="#meta">메타 통계 대시보드</a> · <a href="#patch">패치 노트</a></p>
+  </section>
+  <!-- ==STATIC:END== -->
   </main>
+
+  <!-- ==ADFIT:BEGIN== -->
+  <!-- AdFit: data/site_config.json의 adfit_units.footer_banner 설정 시 활성화 -->
+  <!-- ==ADFIT:END== -->
+
+  <footer class="max-w-7xl mx-auto px-4 py-6 mt-4 border-t border-ow-border text-xs text-gray-500 space-y-1.5">
+    <p>본 사이트는 Blizzard Entertainment와 무관한 비공식 팬 사이트입니다. Overwatch는 Blizzard Entertainment, Inc.의 상표 또는 등록상표입니다.</p>
+    <p>
+      데이터 출처:
+      <a class="underline hover:text-gray-300" href="https://overwatch.blizzard.com/ko-kr/rates/" target="_blank" rel="noopener">Blizzard 공식 통계</a> ·
+      <a class="underline hover:text-gray-300" href="https://stadiumbuilds.io" target="_blank" rel="noopener">stadiumbuilds.io</a>
+    </p>
+    <p>
+      <a class="underline hover:text-gray-300" href="privacy.html">개인정보처리방침</a> ·
+      <a class="underline hover:text-gray-300" href="https://github.com/russel0719/ow-agent" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
 
   <script type="module" src="app.js?v=4"></script>
 </body>

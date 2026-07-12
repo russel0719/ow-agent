@@ -210,10 +210,17 @@ async function askAI(question, contextData) {
 
   if (resp.status === 429) {
     const errData = await resp.json().catch(() => ({}));
+    if (errData.error === 'ip_daily_limit_exceeded') {
+      throw new Error('오늘 이 네트워크에서 사용할 수 있는 AI 질문 횟수를 모두 사용했습니다. 내일 다시 이용해주세요.');
+    }
     if (errData.error === 'daily_limit_exceeded') {
       throw new Error('오늘 AI 질문 횟수(20회)가 모두 소진되었습니다. 내일 다시 이용해주세요.');
     }
     throw new Error(`API 오류: ${resp.status}`);
+  }
+
+  if (resp.status === 503) {
+    throw new Error('AI 챗봇이 일시적으로 비활성화되어 있습니다. 잠시 후 다시 시도해주세요.');
   }
 
   if (!resp.ok) throw new Error(`API 오류: ${resp.status}`);

@@ -32,7 +32,8 @@ cron: '0 6 * * *'   # 매일 15:00 KST
 4. stadiumbuilds.io 빌드 크롤링 + NVIDIA API (Llama 3.3 70B) 한국어 번역/요약 → `public/data/stadium.json`
 5. Blizzard 패치 노트 크롤링 + NVIDIA API (Llama 3.3 70B) 한국어 번역 → `public/data/patch.json`
 6. `data/heroes.json` → `public/data/heroes.json` 복사
-7. `public/data/` 커밋 & push → GitHub Pages 자동 배포
+7. `scripts/generate_pages.py` 실행 → SEO 메타·정적 콘텐츠·`meta.html`·`sitemap.xml` 갱신
+8. `public/` 커밋 & push → GitHub Pages 자동 배포
 
 수동 실행: GitHub Actions 탭 → **Update OW Data** → **Run workflow**
 
@@ -65,10 +66,12 @@ cp .env.example .env
 ### 데이터 생성
 
 ```bash
-uv run python scripts/generate_data.py
+uv run python scripts/generate_data.py    # public/data/ JSON 생성
+uv run python scripts/generate_pages.py   # SEO 메타·정적 콘텐츠·sitemap 생성
 ```
 
-`public/data/` 하위에 JSON 파일이 생성됩니다.
+`public/data/` 하위에 JSON 파일이 생성되고, `index.html`의 SEO/정적 콘텐츠 블록과
+`meta.html`·`sitemap.xml`·`robots.txt`·`ads.txt`가 갱신됩니다.
 
 ### 로컬 서버 실행
 
@@ -93,7 +96,8 @@ ow-agent/
 │   └── translator.py          # Cerebras API (gpt-oss-120b) 번역·요약 (배치 처리)
 ├── data/
 │   ├── heroes.json            # 영웅 DB (자동 동기화)
-│   └── meta_baseline.json     # 크롤링 실패 시 fallback 데이터
+│   ├── meta_baseline.json     # 크롤링 실패 시 fallback 데이터
+│   └── site_config.json       # 사이트 설정 (도메인, GA4, AdSense/AdFit ID)
 ├── public/                      # GitHub Pages 서빙 루트
 │   ├── data/                  # 자동 생성 JSON (Actions이 커밋)
 │   ├── views/
@@ -101,10 +105,13 @@ ow-agent/
 │   │   ├── stadium.js         # 스타디움 빌드 뷰 (역할군별 분류)
 │   │   └── patch.js           # 패치 노트 뷰
 │   ├── app.js                 # 라우팅 및 공통 유틸
-│   ├── index.html             # 진입점
+│   ├── index.html             # 진입점 (SEO/정적 콘텐츠 블록은 자동 생성)
+│   ├── meta.html              # 랭크별 티어표 정적 페이지 (자동 생성)
+│   ├── privacy.html           # 개인정보처리방침
 │   └── style.css              # 다크 테마
 └── scripts/
-    └── generate_data.py       # 전체 데이터 생성 스크립트
+    ├── generate_data.py       # 전체 데이터 생성 스크립트
+    └── generate_pages.py      # SEO 메타·정적 콘텐츠·sitemap 생성기
 ```
 
 ---

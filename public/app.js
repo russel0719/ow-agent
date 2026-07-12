@@ -54,6 +54,7 @@ const VIEWS = {
 };
 
 const app = document.getElementById('app');
+let firstNavigation = true;
 
 async function navigate() {
   const raw = location.hash.slice(1) || 'home';
@@ -68,14 +69,28 @@ async function navigate() {
     btn.classList.toggle('active', btn.dataset.tab === activeTab);
   });
 
-  // 로딩 표시
-  app.innerHTML = `
-    <div class="flex items-center justify-center h-64 text-gray-500">
-      <div class="text-center">
-        <div class="loading-spinner mx-auto mb-3"></div>
-        <p>데이터 로드 중...</p>
-      </div>
-    </div>`;
+  if (firstNavigation) {
+    // 최초 로드: SEO용 정적 콘텐츠(generate_pages.py 주입)를 뷰가 준비될 때까지 유지.
+    // GA4 초기 page_view는 gtag('config')가 전송하므로 여기서는 생략.
+    firstNavigation = false;
+  } else {
+    // 로딩 표시
+    app.innerHTML = `
+      <div class="flex items-center justify-center h-64 text-gray-500">
+        <div class="text-center">
+          <div class="loading-spinner mx-auto mb-3"></div>
+          <p>데이터 로드 중...</p>
+        </div>
+      </div>`;
+
+    // SPA 가상 페이지뷰 (GA4는 hashchange를 페이지뷰로 집계하지 않음)
+    if (window.gtag) {
+      window.gtag('event', 'page_view', {
+        page_location: location.href,
+        page_title: `${document.title} — ${activeTab}`,
+      });
+    }
+  }
 
   try {
     await render(app, params);

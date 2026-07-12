@@ -138,6 +138,7 @@ async function fetchAISummary(context) {
       ],
       max_tokens: 400,
       temperature: 0.4,
+      cache: true, // 모든 사용자 공통 요청 — Worker가 KV에 25시간 캐시 (쿼터 미소모)
     }),
   });
   if (!resp.ok) return null;
