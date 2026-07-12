@@ -1,11 +1,12 @@
 /**
  * OW2 메타 대시보드 — SPA 라우터
- * Hash 기반 라우팅: #home | #meta | #stadium | #patch
+ * Hash 기반 라우팅: #home | #meta | #analysis | #divergence | #stadium | #patch
  * 딥링크 지원: #meta?rank=그랜드마스터&hero=tracer
  */
-import { renderHome } from './views/home.js?v=1';
+import { renderHome } from './views/home.js?v=2';
 import { renderMeta } from './views/meta.js?v=6';
 import { renderAnalysis } from './views/analysis.js?v=1';
+import { renderDivergence } from './views/divergence.js?v=1';
 import { renderStadium } from './views/stadium.js?v=5';
 import { renderPatch } from './views/patch.js?v=4';
 
@@ -43,11 +44,12 @@ export async function getPortraitIndex() {
 
 // ── 라우터 ────────────────────────────────────────────────────────────────────
 const VIEWS = {
-  home:     renderHome,
-  meta:     renderMeta,
-  analysis: renderAnalysis,
-  stadium:  renderStadium,
-  patch:    renderPatch,
+  home:       renderHome,
+  meta:       renderMeta,
+  analysis:   renderAnalysis,
+  divergence: renderDivergence,
+  stadium:    renderStadium,
+  patch:      renderPatch,
 };
 
 const app = document.getElementById('app');
