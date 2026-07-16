@@ -71,3 +71,21 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "VERCEL_TOKEN 미설정 — Vercel 배포 생략 (Pages 배포는 완료)"
+            exit 0
+          fi
+          # Pages 아티팩트와 동일한 public/ 을 Vercel에도 올린다. Build Output API(v3)로
+          # 직접 구성해 --prebuilt 로 업로드하면 Vercel의 프레임워크 자동 감지를 건너뛴다
+          # (repo 루트의 pyproject.toml 을 Python 앱으로 오탐해 빌드가 깨지던 문제 회피).
+          mkdir -p .vercel/output/static
+          cp -r public/. .vercel/output/static/
+          echo '{"version":3}' > .vercel/output/config.json
+          npx --yes vercel@latest deploy --prebuilt --prod --yes --token="$VERCEL_TOKEN"

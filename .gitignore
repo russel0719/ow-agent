@@ -36,3 +36,6 @@ public/data/last_updated.json
 # Supabase CLI 로컬 상태
 supabase/.temp/
 supabase/.branches/
+
+# Vercel CLI 로컬 상태 + Build Output API 산출물 (CI에서 public/ 로부터 매번 생성)
+.vercel/
