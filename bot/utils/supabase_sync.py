@@ -72,9 +72,7 @@ class SupabaseStore:
         try:
             r = requests.post(
                 self._rest(table),
-                headers=self._headers(
-                    write=True, extra={"Prefer": "resolution=merge-duplicates"}
-                ),
+                headers=self._headers(write=True, extra={"Prefer": "resolution=merge-duplicates"}),
                 json=rows,
                 timeout=_TIMEOUT,
             )
@@ -104,9 +102,7 @@ class SupabaseStore:
             return None
 
     def put_dataset(self, name: str, data) -> bool:
-        ok = self._upsert(
-            "datasets", [{"name": name, "data": data, "updated_at": _now_iso()}]
-        )
+        ok = self._upsert("datasets", [{"name": name, "data": data, "updated_at": _now_iso()}])
         if ok:
             logger.info(f"  → Supabase datasets['{name}'] upsert")
         return ok

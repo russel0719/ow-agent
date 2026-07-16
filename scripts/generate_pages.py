@@ -40,8 +40,15 @@ KEYWORDS = (
 ROLE_LABEL = {"tank": "돌격", "damage": "공격", "support": "지원"}
 ROLE_ORDER = ["tank", "damage", "support"]
 RANK_ORDER = [
-    "전체", "챔피언", "그랜드마스터", "마스터", "다이아몬드",
-    "플래티넘", "골드", "실버", "브론즈",
+    "전체",
+    "챔피언",
+    "그랜드마스터",
+    "마스터",
+    "다이아몬드",
+    "플래티넘",
+    "골드",
+    "실버",
+    "브론즈",
 ]
 STATIC_TIERS = ["S", "A", "B"]
 
@@ -72,6 +79,7 @@ def normalize_pub_id(raw: str) -> str:
 
 # ── 마커 치환 ─────────────────────────────────────────────────────────────────
 
+
 def replace_block(text: str, name: str, content: str, indent: str = "  ") -> str:
     begin = f"<!-- =={name}:BEGIN== -->"
     end = f"<!-- =={name}:END== -->"
@@ -83,6 +91,7 @@ def replace_block(text: str, name: str, content: str, indent: str = "  ") -> str
 
 
 # ── head 스니펫 ───────────────────────────────────────────────────────────────
+
 
 def build_ga4_snippet(config: dict) -> str:
     ga4_id = config.get("ga4_id", "").strip()
@@ -187,6 +196,7 @@ def build_seo_block(
 
 # ── 정적 콘텐츠 (크롤러 가시성) ────────────────────────────────────────────────
 
+
 def fmt_pct(v) -> str:
     return f"{v}%" if v is not None else "–"
 
@@ -229,7 +239,7 @@ def build_static_block(meta: dict, patch: list, last_updated: dict) -> str:
         p = patch[0]
         patch_line = (
             f'<p>최신 패치: <a href="#patch">{html.escape(p.get("title", ""))}</a>'
-            f' ({html.escape(p.get("date", ""))})</p>'
+            f" ({html.escape(p.get('date', ''))})</p>"
         )
 
     heroes = meta.get("전체", [])
@@ -292,6 +302,7 @@ def build_static_block(meta: dict, patch: list, last_updated: dict) -> str:
 
 # ── AdFit 배너 ────────────────────────────────────────────────────────────────
 
+
 def build_adfit_block(config: dict) -> str:
     unit = config.get("adfit_units", {}).get("footer_banner", "").strip()
     if not unit:
@@ -306,6 +317,7 @@ def build_adfit_block(config: dict) -> str:
 
 
 # ── meta.html (랭크별 전체 티어표 정적 페이지) ─────────────────────────────────
+
 
 def build_meta_page(config: dict, meta: dict, last_updated: dict) -> str:
     updated = ""
@@ -330,15 +342,11 @@ def build_meta_page(config: dict, meta: dict, last_updated: dict) -> str:
         esc_rank = html.escape(rank)
         sections.append(f'<section>\n<h2 id="{esc_rank}">{esc_rank}</h2>')
         deep_link = f"index.html#meta?rank={esc_rank}"
-        sections.append(
-            f'<p><a href="{deep_link}">대시보드에서 {esc_rank} 통계 보기</a></p>'
-        )
+        sections.append(f'<p><a href="{deep_link}">대시보드에서 {esc_rank} 통계 보기</a></p>')
         sections.append(tier_table(meta[rank]))
         sections.append("</section>")
 
-    toc = " · ".join(
-        f'<a href="#{html.escape(r)}">{html.escape(r)}</a>' for r in ranks
-    )
+    toc = " · ".join(f'<a href="#{html.escape(r)}">{html.escape(r)}</a>' for r in ranks)
     updated_note = f" 마지막 업데이트: {updated}" if updated else ""
 
     return f"""<!DOCTYPE html>
@@ -394,6 +402,7 @@ def build_meta_page(config: dict, meta: dict, last_updated: dict) -> str:
 
 
 # ── 영웅별 정적 페이지 (SEO 롱테일) ────────────────────────────────────────────
+
 
 def _hero_index(meta: dict) -> dict:
     """hero_id → {name, role, portrait, ranks:{rank:stat}} (전체 랭크 통합)."""
@@ -485,14 +494,16 @@ def _render_hero_page(
     tips_html = ""
     if db:
         if db.get("description"):
-            desc = f'<p>{html.escape(db["description"])}</p>'
+            desc = f"<p>{html.escape(db['description'])}</p>"
         matchups = "\n".join(
             s
             for s in [
-                _matchup_section(f"{name}의 약점 (카운터당하는 상대)",
-                                 db.get("countered_by", []), index, idset),
-                _matchup_section(f"{name}(으)로 잡기 좋은 상대",
-                                 db.get("counters", []), index, idset),
+                _matchup_section(
+                    f"{name}의 약점 (카운터당하는 상대)", db.get("countered_by", []), index, idset
+                ),
+                _matchup_section(
+                    f"{name}(으)로 잡기 좋은 상대", db.get("counters", []), index, idset
+                ),
                 _matchup_section(f"{name} 시너지 조합", db.get("synergies", []), index, idset),
             ]
             if s
@@ -577,14 +588,13 @@ def build_hero_pages(config: dict, meta: dict, heroes_db: dict, updated: str) ->
 
 # ── sitemap / robots / ads.txt ────────────────────────────────────────────────
 
+
 def build_sitemap(config: dict, lastmod: str, extra_paths: list[str] | None = None) -> str:
     base = site_base(config)
     entries = []
     for path in ["", "meta.html", "privacy.html", *(extra_paths or [])]:
         url = f"{base}/{path}" if path else f"{base}/"
-        entries.append(
-            f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{lastmod}</lastmod>\n  </url>"
-        )
+        entries.append(f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{lastmod}</lastmod>\n  </url>")
     body = "\n".join(entries)
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -606,6 +616,7 @@ def build_ads_txt(config: dict) -> str:
 
 # ── main ─────────────────────────────────────────────────────────────────────
 
+
 def main() -> int:
     config = load_json(CONFIG_PATH)
     meta = load_json(DATA / "meta.json")
@@ -618,9 +629,14 @@ def main() -> int:
     index_path = PUBLIC / "index.html"
     text = index_path.read_text(encoding="utf-8")
     text = replace_block(
-        text, "SEO",
-        build_seo_block(config, title=SITE_NAME + " — 오버워치 2 티어·픽률·승률 통계",
-                        description=SITE_DESC, path=""),
+        text,
+        "SEO",
+        build_seo_block(
+            config,
+            title=SITE_NAME + " — 오버워치 2 티어·픽률·승률 통계",
+            description=SITE_DESC,
+            path="",
+        ),
     )
     text = replace_block(text, "SUPABASE", build_supabase_block(config))
     text = replace_block(text, "STATIC", build_static_block(meta, patch, last_updated))
@@ -628,9 +644,7 @@ def main() -> int:
     index_path.write_text(text, encoding="utf-8")
     print("✓ public/index.html (SEO/STATIC/ADFIT 블록)")
 
-    (PUBLIC / "meta.html").write_text(
-        build_meta_page(config, meta, last_updated), encoding="utf-8"
-    )
+    (PUBLIC / "meta.html").write_text(build_meta_page(config, meta, last_updated), encoding="utf-8")
     print("✓ public/meta.html")
 
     # 영웅별 SEO 페이지

@@ -371,9 +371,7 @@ def _update_map_history(map_result: dict) -> None:
 
     rows: list[dict] = []
     for map_id, heroes in map_result.items():
-        entries = [
-            {"hero_id": h["hero_id"], "meta_score": h["meta_score"]} for h in heroes
-        ]
+        entries = [{"hero_id": h["hero_id"], "meta_score": h["meta_score"]} for h in heroes]
         rows.append({"map_id": map_id, "snapshot_date": today, "entries": entries})
 
         history.setdefault(map_id, {})[today] = entries
